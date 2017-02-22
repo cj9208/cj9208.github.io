@@ -10,8 +10,8 @@
 * Computer Vision
 
 ## Education
-* 2015-2017 Chinese University of Hong Kong  Mathematics
-* 2010-2014 University of Science and Technology of China  Mathematics
+* 2015-2017, Chinese University of Hong Kong, Mathematics
+* 2010-2014, University of Science and Technology of China, Mathematics
 
 ## Relevant Expriences & Skills
 * Good at calculus, linear algebra, probability
