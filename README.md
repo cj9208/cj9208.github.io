@@ -2,7 +2,7 @@
 
 ## Contact
 * Email : cjdyx2012@gmail.com
-* Linkedin : [www.linkedin.com/in/jie-chen](www.linkedin.com/in/jie-chen)
+* Linkedin : www.linkedin.com/in/jie-chen
 
 ## Research Interest
 * Machine Learning
@@ -10,10 +10,8 @@
 * Computer Vision
 
 ## Education
-Time | University | Major
---------- | ----------------------------------------------|-------------
-2015-2017 | Chinese University of Hong Kong | Mathematics
-2010-2014 | University of Science and Technology of China | Mathematics
+* 2015-2017 Chinese University of Hong Kong  Mathematics
+* 2010-2014 University of Science and Technology of China  Mathematics
 
 ## Relevant Expriences & Skills
 * Good at calculus, linear algebra, probability
