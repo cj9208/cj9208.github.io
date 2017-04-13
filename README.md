@@ -5,9 +5,10 @@
 * Linkedin : www.linkedin.com/in/jie-chen
 
 ## Research Interest
-* Machine Learning
 * Deep Learning
 * Computer Vision
+* Generata Adversarial Netowrk(GAN)
+* Reinforcement Learning
 
 ## Education
 * 2015-2017, Chinese University of Hong Kong, Mathematics
@@ -19,7 +20,7 @@
 * Good at C, C++, Familiar with Python, Matlab
 * Familiar with basic machine learning algorithms
 * Courses Taken
+    * Currently take ”Deep Learning” by Wang Xiaogang
     * Finish ”Machine Learning” by Andrew Ng (Including all programming)
     * Finish ”Convolutional Neural Network for Visual Recongnition” by Karpathy (Have
 done half programming assignments)
-    * Currently take ”Deep Learning” by Wang Xiaogang
