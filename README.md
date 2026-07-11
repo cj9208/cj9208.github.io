@@ -52,3 +52,12 @@ PhD-educated GenAI Specialist with strong mathematical foundations and a proven 
 * **GenAI & RAG Backend:** Production RAG Pipelines, Hybrid Search, Reranking, Prompt Orchestration, Graph RAG (Community Detection), Agentic Search (Multi-step Retrieval), Tool/Function Calling.
 * **Data Pipelines & Infrastructure:** Document Ingestion (OCR, Custom Chunking, Enrichment), Data Schema Design, Python, SQL, Databricks, AWS, Azure, End-to-End ML Pipelines.
 * **System Evaluation & ML:** Offline/Online Validation (Groundedness, Faithfulness, Citation Coverage), Run-Time Control Harnesses, PyTorch, Scikit-learn, Predictive Modeling.
+
+---
+
+## Personal Works
+
+* [AI Study](./AI_Study.md)
+* [Communication](./沟通与交流.md)
+* [Organizational Behavior](./组织行为学.md)
+* [Analysis of Chinese Government Behavior](./中国政府行为分析.md)
