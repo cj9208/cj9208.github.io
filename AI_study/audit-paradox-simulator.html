@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>AI 商业账本：破局审计师陷阱</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0f172a; color: #f8fafc; padding: 20px; }
+        .container { max-width: 1300px; margin: 0 auto; background: #1e293b; padding: 30px; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.3); border: 1px solid #334155; }
+        h2 { text-align: center; margin-bottom: 5px; color: #fff; font-size: 24px; }
+        .subtitle { text-align: center; color: #94a3b8; margin-bottom: 30px; font-size: 14px; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 35px; }
+        .chart-box { background: #0f172a; padding: 15px; border-radius: 12px; border: 1px solid #334155; }
+        .controls { background: #1e293b; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+        .control-group { background: #111827; padding: 15px 20px; border-radius: 12px; border: 1px solid #334155; }
+        label { display: block; font-weight: 600; margin-bottom: 4px; font-size: 14px; color: #cbd5e1; }
+        input[type="range"] { width: 100%; margin-top: 6px; cursor: pointer; }
+        .val { color: #38bdf8; font-weight: bold; float: right; font-size: 15px; }
+        .desc { font-size: 12px; color: #64748b; margin-top: 4px; display: block; line-height: 1.4; }
+        
+        .ledger { background: #020617; color: #94a3b8; padding: 22px; border-radius: 12px; font-family: monospace; font-size: 14px; margin-top: 15px; border: 1px solid #1e293b; }
+        .ledger h3 { margin-top: 0; color: #f8fafc; border-bottom: 2px solid #334155; padding-bottom: 10px; font-size: 16px; }
+        .ledger-row { display: flex; justify-content: space-between; margin-bottom: 10px; padding: 4px 0; }
+        .ledger-row.highlight { color: #fbbf24; border-top: 1px dashed #334155; margin-top: 12px; padding-top: 12px; }
+        
+        .status-badge { text-align: center; padding: 15px; border-radius: 8px; font-weight: bold; font-size: 18px; margin-top: 15px; letter-spacing: 1px; }
+        .profit { background: rgba(22, 163, 74, 0.2); color: #4ade80; border: 1px solid #22c55e; }
+        .loss { background: rgba(220, 38, 38, 0.2); color: #f87171; border: 1px solid #ef4444; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>高风险实体产业：AI Expected Cost 运筹学沙盘</h2>
+    <div class="subtitle">六维解耦：探索初始高额算力、密集校验与专家成本在通缩背景下的真实对冲边界</div>
+    
+    <div class="grid">
+        <!-- 左侧：图表与实时账本 -->
+        <div>
+            <div class="chart-box">
+                <canvas id="chart" width="450" height="230"></canvas>
+            </div>
+            <div class="ledger">
+                <h3>🧾 风险调节型 ROI 损益账本 (基于 1,000 次总任务量)</h3>
+                <div class="ledger-row">
+                    <span>👥 传统纯人工总成本基准 (Baseline Cost):</span>
+                    <span id="lbl-baseline" style="color:#f8fafc; font-weight:bold;"></span>
+                </div>
+                <div class="ledger-row">
+                    <span>🚨 拦截后剩余人工成本 (Human Auditing Cost):</span>
+                    <span id="lbl-human"></span>
+                </div>
+                <div class="ledger-row">
+                    <span>🖥️ 系统流控算力总开支 (Compute Infra Cost):</span>
+                    <span id="lbl-infra"></span>
+                </div>
+                <div class="ledger-row">
+                    <span>💥 长尾幻觉灾难风险敞口 (Expected Risk Penalty):</span>
+                    <span id="lbl-risk" style="color:#ef4444; font-weight:bold;"></span>
+                </div>
+                <div id="lbl-status" class="status-badge"></div>
+            </div>
+        </div>
+        
+        <!-- 右侧：六维控制面板 -->
+        <div class="controls">
+            <div class="control-group">
+                <label>🛠️ Harness 提纯力度: <span id="v-harness" class="val"></span></label>
+                <input type="range" id="harness" min="0" max="100" value="10">
+                <span class="desc">控制确定性流控强度。拉大滑块强行将“犹豫区”样本过滤并推向自动通关区，同时将基础错误率从 10% 逼近至 1%。</span>
+            </div>
+
+            <div class="control-group">
+                <label>👨‍💼 高级专家单位人力成本 (单次): <span id="v-expert" class="val"></span></label>
+                <input type="range" id="expert" min="100" max="2000" step="50" value="600">
+                <span class="desc">高级合伙人、投行核心专家或资深架构师单次盲审/纠错（Debugging）的认知时间成本。</span>
+            </div>
+
+            <div class="control-group">
+                <label>🌐 初始单位算力成本 (单次基准): <span id="v-base-compute" class="val"></span></label>
+                <input type="range" id="base-compute" min="5" max="600" step="5" value="150">
+                <span class="desc">在没有发生任何硬件通缩前，跑完单次高价值领域复杂 RAG 或知识图谱深度推理的基础 Token 成本。</span>
+            </div>
+
+            <div class="control-group">
+                <label>🔄 Harness 多重校验算力惩罚系数: <span id="v-multiplier" class="val"></span></label>
+                <input type="range" id="multiplier" min="1" max="30" step="1" value="8">
+                <span class="desc">为拦截错误，流控网络在后台启动多智能体一致性投票、对抗影子审计的并发密度。系统算力开支将直接乘以该系数。</span>
+            </div>
+            
+            <div class="control-group">
+                <label>⚡ 算力基础设施通缩倍数: <span id="v-deflation" class="val"></span></label>
+                <input type="range" id="deflation" min="1" max="100" value="1">
+                <span class="desc">芯片制造及底座 Token 价格的宏观技术通缩（1x 到 100x）。它是上面的“密集校验系数”和“初始高算力成本”敢于开满的最终财务护甲。</span>
+            </div>
+            
+            <div class="control-group">
+                <label>⚠️ 行业单次灾难性损失惩罚 (C_damage): <span id="v-risk" class="val"></span></label>
+                <input type="range" id="risk" min="10000" max="1000000" step="20000" value="400000">
+                <span class="desc">单次幻觉漏洞直接引发的极端连带灾难代价（如合规巨额罚单、系统崩溃资损、重大法律诉讼）。</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+const ctx = document.getElementById('chart').getContext('2d');
+let chart;
+
+function update() {
+    const harness = parseFloat(document.getElementById('harness').value) / 100;
+    const expertRate = parseFloat(document.getElementById('expert').value);
+    const baseComputePerTask = parseFloat(document.getElementById('base-compute').value);
+    const verificationMultiplier = parseFloat(document.getElementById('multiplier').value);
+    const deflation = parseFloat(document.getElementById('deflation').value);
+    const riskPenalty = parseFloat(document.getElementById('risk').value);
+
+    // 映射实时数值到前端
+    document.getElementById('v-harness').innerText = (harness * 100).toFixed(0) + '%';
+    document.getElementById('expert').nextElementSibling.value = expertRate; // Sync input elements text if needed
+    document.getElementById('v-expert').innerText = '$' + expertRate.toLocaleString();
+    document.getElementById('v-base-compute').innerText = '$' + baseComputePerTask.toLocaleString();
+    document.getElementById('v-multiplier').innerText = verificationMultiplier + ' 倍 Token 消耗';
+    document.getElementById('v-deflation').innerText = deflation + 'x';
+    document.getElementById('v-risk').innerText = '$' + riskPenalty.toLocaleString();
+
+    const totalTasks = 1000;
+    
+    // 1. 纯人工总成本基准
+    const baseManualCost = totalTasks * expertRate;
+    document.getElementById('lbl-baseline').innerText = '$' + Math.round(baseManualCost).toLocaleString();
+    
+    // 2. 人工介入流量：无 Harness 时 25% 降级。Harness 越高，人工介入比例降到极限 2%
+    const humanRatio = Math.max(0.02, 0.25 * (1 - harness)); 
+    const autoRatio = 1 - humanRatio;
+    const humanCost = totalTasks * humanRatio * expertRate;
+
+    // 3. 流控算力开支：由【初始算力成本】驱动，乘以【多重校验系数】，再除以【通缩倍数】
+    const infraCost = (totalTasks * autoRatio * baseComputePerTask * verificationMultiplier) / deflation;
+
+    // 4. 长尾错误率逻辑：无 Harness 时基础错误率 10%，满配 Harness 压缩至 1%
+    const errorRate = 0.10 - (harness * 0.09);
+    const expectedRisk = totalTasks * autoRatio * errorRate * riskPenalty;
+
+    // 5. 综合成本计算与对冲
+    const totalSystemCost = humanCost + infraCost + expectedRisk;
+    const netSavings = baseManualCost - totalSystemCost;
+
+    // 更新界面数据
+    document.getElementById('lbl-human').innerText = '$' + Math.round(humanCost).toLocaleString();
+    document.getElementById('lbl-infra').innerText = '$' + Math.round(infraCost).toLocaleString();
+    document.getElementById('lbl-risk').innerText = '$' + Math.round(expectedRisk).toLocaleString();
+    
+    const statusEl = document.getElementById('lbl-status');
+    if (netSavings > 0) {
+        statusEl.className = 'status-badge profit';
+        statusEl.innerText = `🟢 账本跑通：实现规模化套利 (净节省 $${Math.round(netSavings).toLocaleString()})`;
+    } else {
+        statusEl.className = 'status-badge loss';
+        statusEl.innerText = `🔴 审计师陷阱死局：综合成本超支 $${Math.round(Math.abs(netSavings)).toLocaleString()}`;
+    }
+
+    // 动态渲染双峰置信度曲线
+    const labels = Array.from({length: 21}, (_, i) => (i * 0.05).toFixed(2));
+    const dataRaw = labels.map(x => {
+        return Math.exp(-Math.pow(x - 0.4, 2) / 0.03) * 35 + Math.exp(-Math.pow(x - 0.95, 2) / 0.01) * 55;
+    });
+    const dataOpt = labels.map(x => {
+        const drain = harness * 30;
+        const leftPeak = Math.max(0, Math.exp(-Math.pow(x - 0.4, 2) / 0.03) * (35 - drain));
+        const rightPeak = Math.exp(-Math.pow(x - 0.95, 2) / 0.01) * (55 + harness * 75);
+        return leftPeak + rightPeak;
+    });
+
+    if (chart) chart.destroy();
+    chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: labels,
+            datasets: [
+                { label: '原始模型分布 (犹豫区大)', data: dataRaw, borderColor: '#64748b', borderDash: [4, 4], fill: false, tension: 0.3 },
+                { label: 'Harness 运行时提纯后', data: dataOpt, borderColor: '#0ea5e9', borderWidth: 2.5, fill: false, tension: 0.3 }
+            ]
+        },
+        options: {
+            responsive: true,
+            plugins: { 
+                legend: { labels: { color: '#cbd5e1' } },
+                title: { display: true, text: '任务流量置信度 (Confidence Score) 分布趋势', color: '#fff' } 
+            },
+            scales: { 
+                y: { display: false }, 
+                x: { ticks: { color: '#94a3b8' }, title: { display: true, text: '置信度评分 (s)', color: '#94a3b8' }, grid: { color: '#334155' } } 
+            }
+        }
+    });
+}
+
+document.getElementById('harness').addEventListener('input', update);
+document.getElementById('expert').addEventListener('input', update);
+document.getElementById('base-compute').addEventListener('input', update);
+document.getElementById('multiplier').addEventListener('input', update);
+document.getElementById('deflation').addEventListener('input', update);
+document.getElementById('risk').addEventListener('input', update);
+update();
+</script>
+</body>
+</html>
