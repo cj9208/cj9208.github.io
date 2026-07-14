@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on Jack Blog</title><link>https://cj9208.github.io/blog/</link><description>Recent content in Blog on Jack Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 14 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://cj9208.github.io/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>My First Post</title><link>https://cj9208.github.io/blog/first-post/</link><pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate><guid>https://cj9208.github.io/blog/first-post/</guid><description>&lt;h1 id="hello-hugo--docsy"&gt;Hello Hugo + Docsy&lt;/h1&gt;
+&lt;p&gt;This is my first blog post.&lt;/p&gt;
+&lt;h2 id="why-hugo"&gt;Why Hugo?&lt;/h2&gt;
+&lt;p&gt;I chose Hugo because:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It is fast&lt;/li&gt;
+&lt;li&gt;It generates static websites&lt;/li&gt;
+&lt;li&gt;It works well with GitHub Pages&lt;/li&gt;
+&lt;li&gt;Markdown makes writing easy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="my-goals"&gt;My goals&lt;/h2&gt;
+&lt;p&gt;I will use this blog to document:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Learning notes&lt;/li&gt;
+&lt;li&gt;Engineering projects&lt;/li&gt;
+&lt;li&gt;AI experiments&lt;/li&gt;
+&lt;li&gt;Technical discoveries&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thanks for visiting!&lt;/p&gt;</description></item></channel></rss>

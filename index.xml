@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jack Blog</title><link>https://cj9208.github.io/</link><description>Recent content on Jack Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 14 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://cj9208.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>My First Post</title><link>https://cj9208.github.io/blog/first-post/</link><pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate><guid>https://cj9208.github.io/blog/first-post/</guid><description>&lt;h1 id="hello-hugo--docsy"&gt;Hello Hugo + Docsy&lt;/h1&gt;
+&lt;p&gt;This is my first blog post.&lt;/p&gt;
+&lt;h2 id="why-hugo"&gt;Why Hugo?&lt;/h2&gt;
+&lt;p&gt;I chose Hugo because:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It is fast&lt;/li&gt;
+&lt;li&gt;It generates static websites&lt;/li&gt;
+&lt;li&gt;It works well with GitHub Pages&lt;/li&gt;
+&lt;li&gt;Markdown makes writing easy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="my-goals"&gt;My goals&lt;/h2&gt;
+&lt;p&gt;I will use this blog to document:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Learning notes&lt;/li&gt;
+&lt;li&gt;Engineering projects&lt;/li&gt;
+&lt;li&gt;AI experiments&lt;/li&gt;
+&lt;li&gt;Technical discoveries&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thanks for visiting!&lt;/p&gt;</description></item><item><title>About</title><link>https://cj9208.github.io/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cj9208.github.io/about/</guid><description>&lt;h1 id="chen-jie-phd"&gt;CHEN Jie (PhD)&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;GenAI Specialist&lt;/strong&gt;, &lt;em&gt;Fast Learner and Willing to Take Challenges&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;📧 &lt;a href="mailto:cjdyx2012@gmail.com"&gt;cjdyx2012@gmail.com&lt;/a&gt; | &lt;a href="mailto:cjdyx2020@163.com"&gt;cjdyx2020@163.com&lt;/a&gt; | 💼 &lt;a href="https://www.linkedin.com/in/jie-chen"&gt;Linkedin&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="personal-summary"&gt;Personal Summary&lt;/h2&gt;
+&lt;p&gt;PhD-educated GenAI Specialist with strong mathematical foundations and a proven track record of deploying production-grade RAG systems in the financial and technology sectors. Experienced in building high-performance GenAI solutions, data extraction pipelines, and automated benchmarking frameworks using a spec-driven, contract-first architecture. Adept at establishing clear technical specifications to standardize cross-functional delivery across distributed teams, and skilled in communicating the core intuition of complex quantitative and AI models to key stakeholders. Proficient in Python, SQL, AWS, and Databricks.&lt;/p&gt;</description></item></channel></rss>
