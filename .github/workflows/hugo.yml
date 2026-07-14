@@ -6,10 +6,16 @@ on:
       - main
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   deploy:
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     runs-on: ubuntu-latest
 
@@ -32,14 +38,17 @@ jobs:
         node-version: '22'
         cache: npm
 
-    - name: Install npm packages
+    - name: Install npm
       run: npm ci
 
     - name: Build
       run: hugo --minify
 
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v4
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./public
+        path: ./public
+
+    - name: Deploy
+      id: deployment
+      uses: actions/deploy-pages@v4
