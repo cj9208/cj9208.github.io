@@ -1,5 +1,5 @@
 ---
-title: "Jack Blog"
+title: "Jack's Blog"
 ---
 
 # Welcome to Jack's Blog
