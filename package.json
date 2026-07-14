@@ -1,0 +1,26 @@
+{
+  "name": "cj9208.github.io",
+  "version": "1.0.0",
+  "description": "**GenAI Specialist**, *Fast Learner and Willing to Take Challenges*",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cj9208/cj9208.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/cj9208/cj9208.github.io/issues"
+  },
+  "homepage": "https://github.com/cj9208/cj9208.github.io#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.5.2",
+    "postcss": "^8.5.19",
+    "postcss-cli": "^11.0.1"
+  }
+}
