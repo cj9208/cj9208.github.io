@@ -16,11 +16,11 @@ description: Update markdown index files so they include links to markdown files
    - 仅处理 `.md` 文件
    - 跳过当前 `_index.md`
    - 如果尚未在当前 `_index.md` 中被链接，则添加链接
-   - 链接格式为 `* [文件名](./文件名.md)`，显示文本使用不带后缀的文件名
+   - 链接格式为 `* [文件名]({{< relref "./文件名.md" >}})`，显示文本使用不带后缀的文件名
 5. 处理同目录下的子目录：
    - 查找该子目录下是否存在 `_index.md`
    - 若存在且尚未在当前 `_index.md` 中被链接，则直接链接到对应 `_index.md`
-   - 默认链接格式为 `* [文件夹名](./子文件夹/_index.md)`
+   - 默认链接格式为 `* [文件夹名]({{< relref "./子文件夹/_index.md" >}})`
    - 只有当该子目录中不存在 `_index.md` 时，才进入备用选择
    - 备用选择包括：让用户在该子目录中选择一个文件作为链接目标，例如 overview/introduction 页面；或改为纯文本，不添加链接
 6. 若链接是否应加入、加入到哪个位置或分组方式不明确，先询问用户
