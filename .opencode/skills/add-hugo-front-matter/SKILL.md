@@ -1,6 +1,6 @@
 ---
 name: add-hugo-front-matter
-description: Add Hugo front matter to new content markdown files that do not already contain front matter, using this repo's standard fields such as title, date, lastmod, draft, description, summary, categories, tags, and slug.
+description: Add Hugo front matter to new content markdown files that do not already contain front matter, using this repo's standard fields such as title, date, lastmod, draft, categories, tags, and slug.
 ---
 
 # SKILL: Add Hugo Front Matter
@@ -25,9 +25,6 @@ date: 2026-07-15T09:00:00+08:00
 lastmod: 2026-07-15T09:00:00+08:00
 draft: false
 
-description: "1-2 句简短说明这篇文章讲什么。"
-summary: "用于列表页展示的短摘要。"
-
 categories:
   - "AI Study"
 tags:
@@ -46,9 +43,6 @@ title: "栏目标题"
 date: 2026-07-15T09:00:00+08:00
 lastmod: 2026-07-15T09:00:00+08:00
 draft: false
-
-description: "栏目说明。"
-summary: "栏目摘要。"
 
 categories:
   - "Section"
@@ -69,15 +63,11 @@ slug: "section-slug"
    - 表示最近一次重要修改时间
 4. `draft`
    - 发布控制，默认使用 `false`，除非用户明确要保留草稿
-5. `description`
-   - 用于页面说明与摘要展示，通常 1-2 句
-6. `summary`
-   - 用于列表页或卡片摘要
-7. `categories`
+5. `categories`
    - 使用较稳定、较宽泛的分类，如 `AI Study`、`Communication`、`Organizational Behavior`
-8. `tags`
+6. `tags`
    - 使用更细粒度主题词，如 `RAG`、`AWS`、`Architecture`
-9. `slug`
+7. `slug`
    - 推荐添加，用于稳定、可控的 URL
 
 ## 内容结构规则
