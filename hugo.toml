@@ -1,5 +1,4 @@
 baseURL = "https://cj9208.github.io/"
-title = "Jack Blog"
 
 theme = ["github.com/google/docsy"]
 
