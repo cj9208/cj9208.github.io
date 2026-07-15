@@ -1,17 +1,28 @@
 # AGENTS.md
 
 ## Repo purpose
-Personal GitHub Pages site (resume + long-form writing). No build step, no CI, no tests, no dev server.
+Personal blog site rendered with Hugo and deployed to GitHub Pages.
+
+## Site structure
+- Hugo content lives under `content/`.
+- Supplemental static assets and standalone files live under `static/`.
+- Hugo configuration is in `hugo.toml`.
+- Deployment is handled by `.github/workflows/hugo.yml`.
+- Do not modify files outside `content/` and `static/` unless the user explicitly gives permission.
 
 ## Content structure
-- `README.md` — resume (entrypoint for gh-pages).
-- Topic areas follow a paired convention: `Topic.md` (table-of-contents) + `Topic/` subfolder (full articles).
-  - `中国政府行为分析/` — the only populated section (8 articles + `analyze_birth.py`).
-  - `AI_study/`, `communication/`, `organizational_behavior/` — empty placeholders (root `.md` files are also empty).
-- Root `.md` files use `## H2` headings grouping bullet links: `* [title](./Topic/filename.md)`.
+- The main site sections live under `content/`, especially `content/blog/`.
+- Section landing pages are stored as `_index.md` inside the corresponding folder.
+- Section folders are the canonical location for both article collections and their landing-page content.
+- `_index.md` is not just a table of contents. It may also contain introductions, notes, navigation guidance, section structure, or other editorial content that improves the section page.
+- Article markdown files live alongside or below the section `_index.md` inside the matching folder.
+
+## Editing guidance
+- When working on blog content, assume the authoritative source is under `content/`, not the repo root.
+- When moving or adding non-rendered support files, place them under `static/` unless there is a Hugo-specific reason to put them elsewhere.
+- When editing `_index.md`, preserve any introductory or structural content; do not assume it should be reduced to a pure link list.
 
 ## Key rule: Chinese filenames with special Unicode
 Never type literal Chinese filenames (especially those containing `"`, `'`, `「`, `」`) in code or scripts. Always read from filesystem via `Get-ChildItem` / `os.listdir` and use keyword matching (`-match` / regex) instead of exact string comparison.
 
 This is the **single most common mistake** to avoid in this repo.
-

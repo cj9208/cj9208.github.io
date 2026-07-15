@@ -1,0 +1,102 @@
+---
+name: add-hugo-front-matter
+description: Add Hugo front matter to new content markdown files that do not already contain front matter, using this repo's standard fields such as title, date, lastmod, draft, description, summary, categories, tags, and slug.
+---
+
+# SKILL: Add Hugo Front Matter
+
+为 `content/` 下尚未包含 front matter 的新 Hugo markdown 文件补充标准 front matter。
+
+## 适用范围
+
+- 仅处理 `content/` 下的 markdown 文件
+- 同时适用于普通文章 `.md` 与栏目页/入口页 `_index.md`
+- 若用户未明确允许，不要修改 `content/` 以外的文件
+- 仅在目标文件当前**没有** front matter 时执行；若文件已包含 front matter，则跳过，不负责覆盖或规范化
+
+## 标准字段
+
+普通文章建议使用：
+
+```yaml
+---
+title: "文章标题"
+date: 2026-07-15T09:00:00+08:00
+lastmod: 2026-07-15T09:00:00+08:00
+draft: false
+
+description: "1-2 句简短说明这篇文章讲什么。"
+summary: "用于列表页展示的短摘要。"
+
+categories:
+  - "AI Study"
+tags:
+  - "Tag A"
+  - "Tag B"
+
+slug: "stable-url-slug"
+---
+```
+
+栏目页或 `_index.md` 建议使用：
+
+```yaml
+---
+title: "栏目标题"
+date: 2026-07-15T09:00:00+08:00
+lastmod: 2026-07-15T09:00:00+08:00
+draft: false
+
+description: "栏目说明。"
+summary: "栏目摘要。"
+
+categories:
+  - "Section"
+tags:
+  - "Blog"
+
+slug: "section-slug"
+---
+```
+
+## 字段约定
+
+1. `title`
+   - front matter 中的 `title` 是标题的单一事实来源
+2. `date`
+   - 表示创建时间
+3. `lastmod`
+   - 表示最近一次重要修改时间
+4. `draft`
+   - 发布控制，默认使用 `false`，除非用户明确要保留草稿
+5. `description`
+   - 用于页面说明与摘要展示，通常 1-2 句
+6. `summary`
+   - 用于列表页或卡片摘要
+7. `categories`
+   - 使用较稳定、较宽泛的分类，如 `AI Study`、`Communication`、`Organizational Behavior`
+8. `tags`
+   - 使用更细粒度主题词，如 `RAG`、`AWS`、`Architecture`
+9. `slug`
+   - 推荐添加，用于稳定、可控的 URL
+
+## 内容结构规则
+
+1. 若文章已经有 front matter，则直接跳过，不做补齐、覆盖或规范化
+2. 若文章没有 front matter，则在文件顶部新增
+3. 对普通文章，新增 front matter 后，通常应移除正文顶部重复的 `# 标题`，使 front matter `title` 成为单一事实来源
+4. 若新增 front matter 后，正文中紧跟着存在多余的分隔线（例如标题后单独一个 `---`），应一并清理
+5. 若需要新增的 `title` 与正文 H1 明显冲突，先询问用户
+
+## 执行要求
+
+1. 先读取目标文件，确认其当前没有 front matter
+2. 仅对缺少 front matter 的文件新增标准字段
+3. 若分类、标签或 slug 不明确，先给出建议并询问用户
+4. 修改后确保 markdown 结构仍然合法，front matter 位于文件最顶部
+
+## 注意事项
+
+1. 该技能只负责为缺少 front matter 的新文件新增标准 front matter，不负责重命名文件，也不负责批量规范化已有 front matter
+2. `toc` 不作为默认字段，因为当前 Docsy 主题通常已处理目录显示
+3. `showBreadcrumbs` 不作为默认字段，因为当前仓库没有证据表明它已被使用或依赖

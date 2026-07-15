@@ -1,5 +1,18 @@
 ---
 title: "About"
+date: 2026-07-15T09:00:00+08:00
+lastmod: 2026-07-15T09:00:00+08:00
+draft: false
+
+description: "个人简介页面，介绍 CHEN Jie 的背景、工作经历、教育经历与专业技能。"
+summary: "关于 CHEN Jie 的个人简介、履历与专业技能概览。"
+
+categories:
+  - "About"
+tags:
+  - "Profile"
+
+slug: "about"
 ---
 
 # CHEN Jie (PhD)
