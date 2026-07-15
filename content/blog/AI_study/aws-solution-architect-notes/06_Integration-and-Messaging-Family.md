@@ -71,7 +71,7 @@ Integration and messaging services decouple systems, absorb spikes, route events
 
 ## Per-Service Drill-Down
 
-Use [`00_Architect-Study-Template.md`](./00_Architect-Study-Template.md) for:
+Use [`00_Architect-Study-Template.md`]({{< relref "./00_Architect-Study-Template.md" >}}) for:
 
 - `SQS`
 - `SNS`

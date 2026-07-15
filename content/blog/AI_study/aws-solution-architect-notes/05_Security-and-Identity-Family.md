@@ -77,7 +77,7 @@ Security and identity services control access, protect data, manage secrets, and
 
 ## Per-Service Drill-Down
 
-Use [`00_Architect-Study-Template.md`](./00_Architect-Study-Template.md) for:
+Use [`00_Architect-Study-Template.md`]({{< relref "./00_Architect-Study-Template.md" >}}) for:
 
 - `IAM`
 - `IAM Identity Center`

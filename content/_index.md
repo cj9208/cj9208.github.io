@@ -21,9 +21,9 @@ Welcome to my personal blog.
 
 I write about:
 
-- [Artificial Intelligence](./blog/AI_study/_index.md)
-- [Communication](./blog/communication/_index.md)
-- [Organizational Behavior](./blog/organizational_behavior/_index.md)
+- [Artificial Intelligence]({{< relref "./blog/AI_study/_index.md" >}})
+- [Communication]({{< relref "./blog/communication/_index.md" >}})
+- [Organizational Behavior]({{< relref "./blog/organizational_behavior/_index.md" >}})
 
 ## Latest Posts
 

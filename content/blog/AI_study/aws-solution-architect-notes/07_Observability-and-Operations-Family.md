@@ -69,7 +69,7 @@ Observability and operations services provide metrics, logs, tracing, auditing, 
 
 ## Per-Service Drill-Down
 
-Use [`00_Architect-Study-Template.md`](./00_Architect-Study-Template.md) for:
+Use [`00_Architect-Study-Template.md`]({{< relref "./00_Architect-Study-Template.md" >}}) for:
 
 - `CloudWatch`
 - `CloudTrail`

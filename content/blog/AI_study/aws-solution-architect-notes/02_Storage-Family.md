@@ -76,7 +76,7 @@ Storage services persist data outside compute. The main architect question is wh
 
 ## Per-Service Drill-Down
 
-Use [`00_Architect-Study-Template.md`](./00_Architect-Study-Template.md) for:
+Use [`00_Architect-Study-Template.md`]({{< relref "./00_Architect-Study-Template.md" >}}) for:
 
 - `S3`
 - `EBS`

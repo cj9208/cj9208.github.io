@@ -36,17 +36,17 @@ Study in 3 layers:
 
 | Family | Role | Main Architect Question | File |
 |---|---|---|---|
-| Compute | Run application logic | Where should code run? | [`01_Compute-Family.md`](./01_Compute-Family.md) |
-| Storage | Persist objects, blocks, and files | How should data be stored and accessed? | [`02_Storage-Family.md`](./02_Storage-Family.md) |
-| Databases | Persist and query application data | What data model and engine fit the workload? | [`03_Databases-Family.md`](./03_Databases-Family.md) |
-| Networking and Delivery | Connect, route, protect, and accelerate traffic | How do systems communicate and get exposed? | [`04_Networking-and-Delivery-Family.md`](./04_Networking-and-Delivery-Family.md) |
-| Security and Identity | Control access and protect assets | Who can do what, and how is risk reduced? | [`05_Security-and-Identity-Family.md`](./05_Security-and-Identity-Family.md) |
-| Integration and Messaging | Decouple systems and coordinate workflows | How should services exchange work and events? | [`06_Integration-and-Messaging-Family.md`](./06_Integration-and-Messaging-Family.md) |
-| Observability and Operations | Monitor, audit, automate, and operate | How will the platform be seen and run? | [`07_Observability-and-Operations-Family.md`](./07_Observability-and-Operations-Family.md) |
-| Analytics and Data Engineering | Process and analyze large-scale data | How is data ingested, transformed, queried, and visualized? | [`08_Analytics-and-Data-Engineering-Family.md`](./08_Analytics-and-Data-Engineering-Family.md) |
-| DevOps and Infrastructure | Define infra and deliver changes safely | How do teams build, deploy, and standardize systems? | [`09_DevOps-and-Infrastructure-Family.md`](./09_DevOps-and-Infrastructure-Family.md) |
-| Migration, Backup, and DR | Move, protect, and recover workloads | How do workloads migrate and recover? | [`10_Migration-Backup-and-DR-Family.md`](./10_Migration-Backup-and-DR-Family.md) |
-| End-User and Application Services | Add user-facing and app-level managed capabilities | Which managed app services reduce custom build effort? | [`11_End-User-and-Application-Services-Family.md`](./11_End-User-and-Application-Services-Family.md) |
+| Compute | Run application logic | Where should code run? | [`01_Compute-Family.md`]({{< relref "./01_Compute-Family.md" >}}) |
+| Storage | Persist objects, blocks, and files | How should data be stored and accessed? | [`02_Storage-Family.md`]({{< relref "./02_Storage-Family.md" >}}) |
+| Databases | Persist and query application data | What data model and engine fit the workload? | [`03_Databases-Family.md`]({{< relref "./03_Databases-Family.md" >}}) |
+| Networking and Delivery | Connect, route, protect, and accelerate traffic | How do systems communicate and get exposed? | [`04_Networking-and-Delivery-Family.md`]({{< relref "./04_Networking-and-Delivery-Family.md" >}}) |
+| Security and Identity | Control access and protect assets | Who can do what, and how is risk reduced? | [`05_Security-and-Identity-Family.md`]({{< relref "./05_Security-and-Identity-Family.md" >}}) |
+| Integration and Messaging | Decouple systems and coordinate workflows | How should services exchange work and events? | [`06_Integration-and-Messaging-Family.md`]({{< relref "./06_Integration-and-Messaging-Family.md" >}}) |
+| Observability and Operations | Monitor, audit, automate, and operate | How will the platform be seen and run? | [`07_Observability-and-Operations-Family.md`]({{< relref "./07_Observability-and-Operations-Family.md" >}}) |
+| Analytics and Data Engineering | Process and analyze large-scale data | How is data ingested, transformed, queried, and visualized? | [`08_Analytics-and-Data-Engineering-Family.md`]({{< relref "./08_Analytics-and-Data-Engineering-Family.md" >}}) |
+| DevOps and Infrastructure | Define infra and deliver changes safely | How do teams build, deploy, and standardize systems? | [`09_DevOps-and-Infrastructure-Family.md`]({{< relref "./09_DevOps-and-Infrastructure-Family.md" >}}) |
+| Migration, Backup, and DR | Move, protect, and recover workloads | How do workloads migrate and recover? | [`10_Migration-Backup-and-DR-Family.md`]({{< relref "./10_Migration-Backup-and-DR-Family.md" >}}) |
+| End-User and Application Services | Add user-facing and app-level managed capabilities | Which managed app services reduce custom build effort? | [`11_End-User-and-Application-Services-Family.md`]({{< relref "./11_End-User-and-Application-Services-Family.md" >}}) |
 
 ## Recommended Comparison Dimensions
 
@@ -96,4 +96,4 @@ Use this sequence for any service:
 
 Use this file when going from overview to deep study:
 
-- [`00_Architect-Study-Template.md`](./00_Architect-Study-Template.md)
+- [`00_Architect-Study-Template.md`]({{< relref "./00_Architect-Study-Template.md" >}})

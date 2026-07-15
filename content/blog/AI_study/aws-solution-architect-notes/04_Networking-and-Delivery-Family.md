@@ -80,7 +80,7 @@ Networking and delivery services connect systems, isolate environments, route tr
 
 ## Per-Service Drill-Down
 
-Use [`00_Architect-Study-Template.md`](./00_Architect-Study-Template.md) for:
+Use [`00_Architect-Study-Template.md`]({{< relref "./00_Architect-Study-Template.md" >}}) for:
 
 - `VPC`
 - `Route 53`
