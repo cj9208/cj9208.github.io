@@ -1,7 +1,7 @@
 ---
 title: "AI Study"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-15T09:00:00+08:00
+lastmod: 2026-07-16T00:00:00+08:00
 draft: false
 
 description: "Section page for AI Study."
@@ -16,9 +16,7 @@ slug: "ai-study"
 ---
 
 ## AI coding
-* [aws-solution-architect-notes]({{< relref "./aws-solution-architect-notes/AWS-Solution-Architect-Study-Map.md" >}})
 * harness-engineering
-* [rag-orchestration-architecture]({{< relref "./rag-orchestration-architecture/CH00_Preface.md" >}})
 * [AI-Coding的防御性进化：平台化、业务解耦与结构的自然生长]({{< relref "./AI-Coding的防御性进化-平台化-业务解耦与结构的自然生长.md" >}})
 * [文艺复兴：从Linux老派教条看AI时代的函数开发]({{< relref "./文艺复兴-从Linux老派教条看AI时代的函数开发.md" >}})
 
