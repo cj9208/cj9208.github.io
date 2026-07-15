@@ -4,8 +4,8 @@ date: 2026-07-15T09:00:00+08:00
 lastmod: 2026-07-15T09:00:00+08:00
 draft: false
 
-description: "在《AI Coding 的防御性进化：平台化、业务解耦与结构的自然生长》中，我们讨论了 AI 时代 repository（代码仓库）的设计和管理。本文将进一步讨论在 AI 时代，具体函数的编写方法。读者可以参考以下背景资料："
-summary: "在《AI Coding 的防御性进化：平台化、业务解耦与结构的自然生长》中，我们讨论了 AI 时代 repository（代码仓库）的设计和管理。本文将进一步讨论在 AI 时代，具体函数的编写方法。读者可以参考以下背景资料："
+description: "在[《AI Coding 的防御性进化：平台化、业务解耦与结构的自然生长》]({{< relref \"./AI-Coding的防御性进化-平台化-业务解耦与结构的自然生长.md\" >}})中，我们讨论了 AI 时代 repository（代码仓库）的设计和管理。本文将进一步讨论在 AI 时代，具体函数的编写方法。读者可以参考以下背景资料："
+summary: "在[《AI Coding 的防御性进化：平台化、业务解耦与结构的自然生长》]({{< relref \"./AI-Coding的防御性进化-平台化-业务解耦与结构的自然生长.md\" >}})中，我们讨论了 AI 时代 repository（代码仓库）的设计和管理。本文将进一步讨论在 AI 时代，具体函数的编写方法。读者可以参考以下背景资料："
 
 categories:
   - "AI Study"
@@ -14,7 +14,7 @@ tags:
 
 slug: "文艺复兴-从Linux老派教条看AI时代的函数开发"
 ---
-在《AI Coding 的防御性进化：平台化、业务解耦与结构的自然生长》中，我们讨论了 AI 时代 repository（代码仓库）的设计和管理。本文将进一步讨论在 AI 时代，具体函数的编写方法。读者可以参考以下背景资料：
+在[《AI Coding 的防御性进化：平台化、业务解耦与结构的自然生长》]({{< relref "./AI-Coding的防御性进化-平台化-业务解耦与结构的自然生长.md" >}})中，我们讨论了 AI 时代 repository（代码仓库）的设计和管理。本文将进一步讨论在 AI 时代，具体函数的编写方法。读者可以参考以下背景资料：
 
 * **The Comparator Trap: Why High-Stakes AI Fails**（关于如何用确定性工程管控大模型的学习笔记）
 * **Basics of the Unix Philosophy**（Linux/Unix 哲学）
