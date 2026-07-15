@@ -1,0 +1,16 @@
+{{ define "main" -}}
+<div class="td-content">
+  {{ .Content }}
+
+  {{ $pages := where .Site.RegularPages "Section" "blog" }}
+  {{ if $pages }}
+  <h2>Latest Posts</h2>
+  <ul>
+    {{ range first 5 $pages.ByDate.Reverse }}
+    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a> <small class="text-body-secondary">{{ .Date.Format "2006-01-02" }}</small></li>
+    {{ end }}
+  </ul>
+  <p><a href="{{ "/blog/" | relURL }}">View all posts →</a></p>
+  {{ end }}
+</div>
+{{- end }}
