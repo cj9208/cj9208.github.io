@@ -18,11 +18,13 @@ description: Add Hugo front matter to new content markdown files that do not alr
 
 `date` 和 `lastmod` 必须使用**创建/修改时的实际当前时间**，精确到分/秒（例如 `2026-07-15T14:30:00+08:00`），不要写死为固定值。
 
+当标题较长时，可额外添加 `shorttitle` 字段用于网页显示（如列表、卡片等），模板会优先使用 `shorttitle`，若未设置则回退为 `title`。
+
 普通文章建议使用：
 
 ```yaml
 ---
-title: "文章标题"
+title: "完整文章标题"
 date: <当前实际时间>
 lastmod: <当前实际时间>
 draft: false
@@ -34,6 +36,8 @@ tags:
   - "Tag B"
 
 slug: "stable-url-slug"
+
+# shorttitle: "精简标题"  # 可选，用于网页显示，省略时默认显示 title
 ---
 ```
 
@@ -59,7 +63,11 @@ slug: "section-slug"
 
 1. `title`
    - front matter 中的 `title` 是标题的单一事实来源
-2. `date`
+2. `shorttitle`（可选）
+   - 用于网页显示的简短标题，当完整标题过长时可设置此字段
+   - 模板渲染优先级：`shorttitle` > `title`
+   - 若未设置，网页默认使用 `title`
+3. `date`
    - 表示创建时间，使用创建时的实际时间
 3. `lastmod`
    - 表示最近一次重要修改时间，使用修改时的实际时间
