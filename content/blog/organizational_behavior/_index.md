@@ -14,7 +14,6 @@ tags:
 
 slug: "organizational-behavior"
 ---
-# Organizational Behavior
 
 ## 组织管理和架构
 * [Chinese_government]({{< relref "./Chinese_government/_index.md" >}})

@@ -14,7 +14,6 @@ tags:
 
 slug: "ai-study"
 ---
-# AI Study
 
 ## AI coding
 * [aws-solution-architect-notes]({{< relref "./aws-solution-architect-notes/AWS-Solution-Architect-Study-Map.md" >}})
