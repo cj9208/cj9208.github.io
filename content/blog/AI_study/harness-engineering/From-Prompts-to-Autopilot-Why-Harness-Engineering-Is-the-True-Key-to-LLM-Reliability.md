@@ -75,8 +75,35 @@ When we map the **ETCLOVG Seven-Layer Taxonomy** onto a classic control loop, we
 | **V**erification & Evaluation | The Comparator | Evaluates outputs against tests to calculate error, routing corrections back into the loop. |
 | **G**overnance & Security | The Saturation Limiter | Intercepts commands and revokes permissions if the system violates safety boundaries. |
 
+```mermaid
+flowchart TD
+    %% Nodes Definition
+    Setpoint([Target Setpoint])
+    
+    Comparator["Comparator [ V: Verification]"]
+    
+    Controller["Controller [ L: Lifecycle, C: Context]"]
+    
+    Governance["[ G: Governance ] (Safety Gate)"]
+    
+    Actuator["Actuator [T: Tooling ]"]
+    
+    Plant["Plant [ E: Execution ]"]
+    
+    Sensors["Sensors [ O: Observability ]"]
 
+    %% Flow Connections
+    Setpoint --> Comparator
+    Comparator --> Controller
+    Controller --> Governance
+    Governance --> Actuator
+    Actuator --> Plant
+    
+    %% Feedback Loop
+    Plant --> Sensors
+    Sensors --> Comparator
 
+```
 
 #### Architectural Refinement: Splitting the Controller (L and C)
 
@@ -106,6 +133,28 @@ $$P(\text{Tokens} \mid \text{Context}_t) = \prod_{i=1}^n P(\text{token}_i \mid \
 Because it relies on statistical dice rolls, the LLM is inherently volatile. It can execute a task perfectly nine times in a row, and on the tenth time, output a typo, a broken JSON bracket, or an invalid system command.
 
 Harness engineering solves this paradox by constructing a rigid, deterministic shell around this probabilistic core. Every single layer surrounding the LLM in the ETCLOVG framework is built using traditional, zero-tolerance software engineering. The Tool layer ($T$) forces chaotic text strings into rigid JSON validation schemas; the Verification layer ($V$) uses hard boolean assertions (`assert code == 200`). The harness does not make the LLM deterministic—it uses a deterministic architecture to contain and channel the LLM's probability.
+
+```
+ ┌────────────────────────────────────────────────────────┐
+ │ DETERMINISTIC HARNESS                                  │
+ │                                                        │
+ │  ┌───────────────────┐        ┌────────────────────┐   │
+ │  │   INPUT BUFFERS   │ ─────> │ PROBABILISTIC CORE │   │
+ │  │   (C: Context)    │        │     (The LLM)      │   │
+ │  └───────────────────┘        └─────────┬──────────┘   │
+ │                                         │              │
+ │                                         ▼              │
+ │  ┌───────────────────┐        ┌────────────────────┐   │
+ │  │    SANITIZERS     │ <───── │RAW CHAOTIC STRINGS │   │
+ │  │    (V: Verify)    │        │(e.g., Syntax Errors│   │
+ │  └─────────┬─────────┘        └────────────────────┘   │
+ └────────────┼───────────────────────────────────────────┘
+              │
+              ▼
+    Deterministic Output
+        to Plant (E)
+
+```
 
 #### 2. The Unique Necessity of Governance (G)
 
