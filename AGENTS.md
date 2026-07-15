@@ -22,6 +22,9 @@ Personal blog site rendered with Hugo and deployed to GitHub Pages.
 - When moving or adding non-rendered support files, place them under `static/` unless there is a Hugo-specific reason to put them elsewhere.
 - When editing `_index.md`, preserve any introductory or structural content; do not assume it should be reduced to a pure link list.
 
+## lastmod 维护规则
+每次修改 `content/` 下的文章内容时（包括正文、front matter、标签、分类等实质性变更），**必须同步更新 front matter 中的 `lastmod` 字段**到当前实际时间（精确到分钟/秒），例如 `2026-07-15T14:30:00+08:00`。不要沿用旧的 `09:00:00` 占位时间。
+
 ## Key rule: Chinese filenames with special Unicode
 Never type literal Chinese filenames (especially those containing `"`, `'`, `「`, `」`) in code or scripts. Always read from filesystem via `Get-ChildItem` / `os.listdir` and use keyword matching (`-match` / regex) instead of exact string comparison.
 

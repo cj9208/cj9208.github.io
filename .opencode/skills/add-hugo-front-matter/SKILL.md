@@ -16,13 +16,15 @@ description: Add Hugo front matter to new content markdown files that do not alr
 
 ## 标准字段
 
+`date` 和 `lastmod` 必须使用**创建/修改时的实际当前时间**，精确到分/秒（例如 `2026-07-15T14:30:00+08:00`），不要写死为固定值。
+
 普通文章建议使用：
 
 ```yaml
 ---
 title: "文章标题"
-date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-15T09:00:00+08:00
+date: <当前实际时间>
+lastmod: <当前实际时间>
 draft: false
 
 categories:
@@ -40,8 +42,8 @@ slug: "stable-url-slug"
 ```yaml
 ---
 title: "栏目标题"
-date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-15T09:00:00+08:00
+date: <当前实际时间>
+lastmod: <当前实际时间>
 draft: false
 
 categories:
@@ -58,9 +60,9 @@ slug: "section-slug"
 1. `title`
    - front matter 中的 `title` 是标题的单一事实来源
 2. `date`
-   - 表示创建时间
+   - 表示创建时间，使用创建时的实际时间
 3. `lastmod`
-   - 表示最近一次重要修改时间
+   - 表示最近一次重要修改时间，使用修改时的实际时间
 4. `draft`
    - 发布控制，默认使用 `false`，除非用户明确要保留草稿
 5. `categories`
