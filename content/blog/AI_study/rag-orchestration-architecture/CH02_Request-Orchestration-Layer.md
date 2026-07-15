@@ -2,7 +2,7 @@
 title: "Request Orchestration Layer"
 date: 2026-07-15T09:00:00+08:00
 lastmod: 2026-07-15T09:00:00+08:00
-draft: false
+draft: true
 
 description: "The request orchestration layer is the shared control layer for a company-wide agent system."
 summary: "The request orchestration layer is the shared control layer for a company-wide agent system."

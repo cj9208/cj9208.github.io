@@ -2,7 +2,7 @@
 title: "Grounded Answering Layer"
 date: 2026-07-15T09:00:00+08:00
 lastmod: 2026-07-15T09:00:00+08:00
-draft: false
+draft: true
 
 description: "The grounded answering layer turns retrieved evidence into a user-facing output that remains tied to sources."
 summary: "The grounded answering layer turns retrieved evidence into a user-facing output that remains tied to sources."

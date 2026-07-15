@@ -2,7 +2,7 @@
 title: "Databases Family"
 date: 2026-07-15T09:00:00+08:00
 lastmod: 2026-07-15T09:00:00+08:00
-draft: false
+draft: true
 
 description: "Database services persist and query application data. The main architect question is which data model, access pattern, and operational model best fit the workload."
 summary: "Database services persist and query application data. The main architect question is which data model, access pattern, and operational model best fit the workload."

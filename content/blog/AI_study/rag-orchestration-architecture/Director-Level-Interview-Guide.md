@@ -2,7 +2,7 @@
 title: "Director-Level Interview Guide"
 date: 2026-07-15T09:00:00+08:00
 lastmod: 2026-07-15T09:00:00+08:00
-draft: false
+draft: true
 
 description: "This document is for explaining the design in interviews for a senior engineer, staff engineer, or junior director level role, especially where the role may include leading or managing a small team of engineers."
 summary: "This document is for explaining the design in interviews for a senior engineer, staff engineer, or junior director level role, especially where the role may include leading or managing a small team of engineers."

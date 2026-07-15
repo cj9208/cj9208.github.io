@@ -2,7 +2,7 @@
 title: "Storage Family"
 date: 2026-07-15T09:00:00+08:00
 lastmod: 2026-07-15T09:00:00+08:00
-draft: false
+draft: true
 
 description: "Storage services persist data outside compute. The main architect question is what storage model matches the workload: object, block, file, or archive."
 summary: "Storage services persist data outside compute. The main architect question is what storage model matches the workload: object, block, file, or archive."

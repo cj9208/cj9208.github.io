@@ -2,7 +2,7 @@
 title: "RAG Layer"
 date: 2026-07-15T09:00:00+08:00
 lastmod: 2026-07-15T09:00:00+08:00
-draft: false
+draft: true
 
 description: "The RAG layer is the knowledge access and grounding layer that sits downstream of request understanding and upstream of answer generation."
 summary: "The RAG layer is the knowledge access and grounding layer that sits downstream of request understanding and upstream of answer generation."

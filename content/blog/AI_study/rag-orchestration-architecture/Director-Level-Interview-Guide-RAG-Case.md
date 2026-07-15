@@ -2,7 +2,7 @@
 title: "Director-Level Interview Guide: RAG Case"
 date: 2026-07-15T09:00:00+08:00
 lastmod: 2026-07-15T09:00:00+08:00
-draft: false
+draft: true
 
 description: "One of the strongest arguments for this design is that upstream request conditioning can create multiplicative downstream savings in RAG, while also improving answer quality and user experience."
 summary: "One of the strongest arguments for this design is that upstream request conditioning can create multiplicative downstream savings in RAG, while also improving answer quality and user experience."

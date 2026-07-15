@@ -2,7 +2,7 @@
 title: "Ingestion Validation Layer"
 date: 2026-07-15T09:00:00+08:00
 lastmod: 2026-07-15T09:00:00+08:00
-draft: false
+draft: true
 
 description: "The ingestion validation layer is the upstream data production layer for the RAG system."
 summary: "The ingestion validation layer is the upstream data production layer for the RAG system."

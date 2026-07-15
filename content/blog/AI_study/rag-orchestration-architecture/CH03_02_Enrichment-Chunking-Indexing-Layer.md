@@ -2,7 +2,7 @@
 title: "Enrichment Chunking Indexing Layer"
 date: 2026-07-15T09:00:00+08:00
 lastmod: 2026-07-15T09:00:00+08:00
-draft: false
+draft: true
 
 description: "The enrichment, chunking, and indexing layer is the downstream preparation layer that turns validated canonical documents into retrievable knowledge units."
 summary: "The enrichment, chunking, and indexing layer is the downstream preparation layer that turns validated canonical documents into retrievable knowledge units."

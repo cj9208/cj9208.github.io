@@ -2,7 +2,7 @@
 title: "Compute Family"
 date: 2026-07-15T09:00:00+08:00
 lastmod: 2026-07-15T09:00:00+08:00
-draft: false
+draft: true
 
 description: "Compute services run application logic. The main architect question is where code should run and how much operational responsibility the team should keep."
 summary: "Compute services run application logic. The main architect question is where code should run and how much operational responsibility the team should keep."

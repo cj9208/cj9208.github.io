@@ -2,7 +2,7 @@
 title: "Director-Level Interview Guide: Orchestration Case"
 date: 2026-07-15T09:00:00+08:00
 lastmod: 2026-07-15T09:00:00+08:00
-draft: false
+draft: true
 
 description: "This document is the orchestration-specific companion to Director-Level-Interview-Guide.md."
 summary: "This document is the orchestration-specific companion to Director-Level-Interview-Guide.md."

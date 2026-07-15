@@ -2,7 +2,7 @@
 title: "Intention Recognition Layer"
 date: 2026-07-15T09:00:00+08:00
 lastmod: 2026-07-15T09:00:00+08:00
-draft: false
+draft: true
 
 description: "The intention recognition layer is the control layer that sits between raw user input and retrieval/reasoning."
 summary: "The intention recognition layer is the control layer that sits between raw user input and retrieval/reasoning."

@@ -2,7 +2,7 @@
 title: "AWS Solution Architect Study Map"
 date: 2026-07-15T09:00:00+08:00
 lastmod: 2026-07-15T09:00:00+08:00
-draft: false
+draft: true
 
 description: "This folder is a structured study set for building an architect-level overview of AWS."
 summary: "This folder is a structured study set for building an architect-level overview of AWS."

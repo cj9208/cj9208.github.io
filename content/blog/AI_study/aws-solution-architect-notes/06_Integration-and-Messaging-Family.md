@@ -2,7 +2,7 @@
 title: "Integration And Messaging Family"
 date: 2026-07-15T09:00:00+08:00
 lastmod: 2026-07-15T09:00:00+08:00
-draft: false
+draft: true
 
 description: "Integration and messaging services decouple systems, absorb spikes, route events, and coordinate workflows."
 summary: "Integration and messaging services decouple systems, absorb spikes, route events, and coordinate workflows."

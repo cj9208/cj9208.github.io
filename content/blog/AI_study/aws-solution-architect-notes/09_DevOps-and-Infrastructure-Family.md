@@ -2,7 +2,7 @@
 title: "DevOps And Infrastructure Family"
 date: 2026-07-15T09:00:00+08:00
 lastmod: 2026-07-15T09:00:00+08:00
-draft: false
+draft: true
 
 description: "DevOps and infrastructure services define environments, package artifacts, and deliver changes safely and repeatedly."
 summary: "DevOps and infrastructure services define environments, package artifacts, and deliver changes safely and repeatedly."
