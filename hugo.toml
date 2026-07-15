@@ -32,6 +32,10 @@ showLightDarkModeMenu = true
 
 unsafe = true
 
+[security]
+  [security.allowContent]
+    "text/html" = true
+
 
 [[menu.main]]
 name = "Blog"
