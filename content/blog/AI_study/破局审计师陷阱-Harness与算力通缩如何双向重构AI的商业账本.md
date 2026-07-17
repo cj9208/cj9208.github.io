@@ -1,7 +1,7 @@
 ---
 title: "破局“审计师陷阱”：Harness 与算力通缩如何双向重构 AI 的商业账本"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-15T09:00:00+08:00
+lastmod: 2026-07-17T12:00:00+08:00
 draft: false
 
 description: "在生成式 AI 技术步入深水区的 2026 年，行业正在经历一场悄无声息的认知大洗牌。过去，企业疯狂迷恋大模型在刷榜时展现出的\"高智商\"；而如今，当大模型试图走出\"纯文本、纯创意\"的舒适区，切入金融、法务、核心重构代码等实体高价值产业时，它们迎面撞上了一堵冰冷的高墙——审计师陷阱（Auditing Paradox）。"
@@ -37,7 +37,7 @@ slug: "破局审计师陷阱-Harness与算力通缩如何双向重构AI的商业
 
 ## 二、 Harness：重塑概率分布，解绑高成本人力瓶颈
 
-> *详见[《The Comparator Trap: Why High-Stakes AI Fails》]({{< relref "./harness-engineering/The-Comparator-Trap-Why-High-Stakes-AI-Fails.md" >}})，通过研究 Harness，并发现其在金融，法律，医学等领域的问题，从而提出的一个解决方案，下面简述其逻辑：*
+> *详见[《The Comparator Trap: Why High-Stakes AI Fails》]({{< relref "./harness-engineering/06-The-Comparator-Trap-Why-High-Stakes-AI-Fails.md" >}})，通过研究 Harness，并发现其在金融，法律，医学等领域的问题，从而提出的一个解决方案，下面简述其逻辑：*
 
 为了破开这个死局，系统工程引入了 **Harness（控制流校验与评估架构）**。它的核心经济学使命，不是去盲目提升基础模型本身的智慧，而是聚焦于解决阈值附近的中间态样本，强行重塑任务流的概率分布。
 
