@@ -101,6 +101,16 @@ slug: "section-slug"
 2. `toc` 不作为默认字段，因为当前 Docsy 主题通常已处理目录显示
 3. `showBreadcrumbs` 不作为默认字段，因为当前仓库没有证据表明它已被使用或依赖
 
+## 第一步：搜索无 Front Matter 的文件
+
+在执行补齐操作前，先运行搜索脚本定位需要处理的目标文件：
+
+```bash
+python .opencode\skills\add-hugo-front-matter\scripts\find-no-frontmatter.py
+```
+
+该脚本会递归扫描 `content/` 下所有 `.md` 文件，检测文件开头（跳过空行后）是否以 `---` 开头（同时处理带 BOM 和不带 BOM 的情况），并输出缺少 front matter 的文件列表。
+
 ## 编码安全（重要历史教训）
 
 **绝对禁止使用 PowerShell 的 `Get-Content` / `Set-Content` 读取或写入含中文的 markdown 文件，除非明确指定 `-Encoding UTF8`。**
