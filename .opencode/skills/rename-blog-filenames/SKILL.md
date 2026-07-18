@@ -44,16 +44,28 @@ Normalize markdown filenames under `content/blog/` using the document title whil
   - If removing them reads better and does not collapse important structure, remove them.
 - Decorative quotes such as `“ ”`, `「 」`, `《 》`, `〈 〉` should usually be removed.
 
+## Scripts
+
+```bash
+# Step 1: Analyze all files and propose renames
+python .opencode\skills\rename-blog-filenames\scripts\propose-renames.py
+```
+
+```bash
+# Step 2 (after user approval): Execute renames for numbered bare-name files
+python .opencode\skills\rename-blog-filenames\scripts\execute-renames.py
+```
+
 ## Process
 
-1. Scan `content/blog/**/*.md` excluding `_index.md`.
-2. Build a proposed rename list from document titles, using H1 first and front matter `title` as fallback.
+1. Scan `content/blog/**/*.md` excluding `_index.md` using `propose-renames.py`.
+2. Build a proposed rename list from document titles, using front matter `title` as primary source.
 3. Split the results into:
    - high-confidence renames
    - ambiguous cases that need user confirmation
 4. Present the proposal to the user before applying if the rename is a second-pass cleanup or changes an existing convention.
 5. After approval:
-   - rename the files
+   - rename the files using `execute-renames.py` (for numbered bare-name files) or manually
    - update affected links under `content/`
    - verify that no stale references remain
 

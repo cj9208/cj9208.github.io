@@ -25,6 +25,13 @@ description: Update markdown index files so they include links to markdown files
    - 备用选择包括：让用户在该子目录中选择一个文件作为链接目标，例如 overview/introduction 页面；或改为纯文本，不添加链接
 6. 若链接是否应加入、加入到哪个位置或分组方式不明确，先询问用户
 
+## 脚本
+
+```bash
+# 验证所有 _index.md 中的 relref 链接是否指向真实文件
+python .opencode\skills\sync-subfolder-links\scripts\verify-links.py
+```
+
 ## 注意事项
 
 ### 核心原则：始终从文件系统读取文件名，切勿手动输入或字符串匹配
@@ -55,3 +62,10 @@ description: Update markdown index files so they include links to markdown files
 3. 不再负责文件名清洗、规范化或重命名，这部分由独立技能处理
 4. 如果链接位置、分组、归类不明确，或子目录缺少 `_index.md` 需要备用目标时，先向用户确认再修改
 5. 修改后验证所有新增链接都指向真实文件或真实子目录入口
+
+## 待处理清单（上次遗留）
+
+以下子目录因缺少 `_index.md` 被跳过，下次执行时需确认是否补齐：
+
+- `AI_study/aws-solution-architect-notes/`（13 篇 AWS 笔记，无 `_index.md`）
+- `AI_study/rag-orchestration-architecture/`（11 篇 RAG 架构文章，无 `_index.md`）

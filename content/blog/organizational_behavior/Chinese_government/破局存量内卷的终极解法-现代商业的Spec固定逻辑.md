@@ -1,5 +1,18 @@
-# 破局存量内卷的终极解法：现代商业的“Spec 固定逻辑”
+---
+title: "破局存量内卷的终极解法：现代商业的“Spec 固定逻辑”"
+date: 2026-07-18T21:22:29+08:00
+lastmod: 2026-07-18T21:22:29+08:00
+draft: false
 
+categories:
+  - "Organizational Behavior"
+tags:
+  - "Chinese Government"
+  - "Business"
+  - "Involution"
+
+slug: "breaking-involution-spec-fixed-logic"
+---
 
 在中文互联网与实体商业急速奔跑了二十年后，我们正目睹一场由于“长期信任坍塌”导致的系统性生态危机。从清远长隆饱受诟病的“高价劣质餐饮”，到美团大众点评评分系统被“刷单工业化”彻底污染，再到国内网盘、App令人窒息的“俄罗斯套娃式花式会员”……商业大盘看似庞大，内部却因为“短视收割”而面临全员恶性内卷。
 
