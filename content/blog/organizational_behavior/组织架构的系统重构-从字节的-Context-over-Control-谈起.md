@@ -1,11 +1,16 @@
+---
+title: '组织架构的系统重构：从字节的"Context over Control"谈起'
+date: 2026-07-19T00:03:35+08:00
+lastmod: 2026-07-19T00:03:35+08:00
+draft: false
 
+categories:
+  - "Organizational Behavior"
+tags:
+  - "Organizational Structure"
+  - "Management"
 
-# 组织架构的系统重构：从字节的“Context over Control”谈起
-
-
-
-
-
+slug: "organizational-restructuring-context-over-control"
 ---
 
 在大厂或各类大型组织步入成熟期后，“管理熵增”几乎是一个不可避免的宿命。字节跳动 CEO 梁汝波近期向全员发布邮件，宣布时隔四年更新公司领导力原则。在流传出的新版调整中，有两条更新格外引人注目：

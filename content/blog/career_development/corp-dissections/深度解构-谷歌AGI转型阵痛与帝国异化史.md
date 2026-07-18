@@ -1,9 +1,17 @@
+---
+title: "深度解构：谷歌 AGI 转型阵痛与帝国异化史"
+date: 2026-07-19T00:03:35+08:00
+lastmod: 2026-07-19T00:03:35+08:00
+draft: false
 
+categories:
+  - "Career Development"
+tags:
+  - "Google"
+  - "AI"
+  - "Corporate Analysis"
 
-# 深度解构：谷歌 AGI 转型阵痛与帝国异化史
-
-
-
+slug: "google-agi-transformation"
 ---
 
 ## 引言：当最高壁垒异化为最沉重的棺材板

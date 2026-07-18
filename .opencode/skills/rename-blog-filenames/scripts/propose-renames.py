@@ -30,9 +30,12 @@ def get_title(filepath):
             fm_end = second
 
     # Use front matter title as primary source
+    # Match title: "..." or title: '...' - greedy match to last quote on line handles embedded quotes
+    fm_text = content[:fm_end] if fm_end > 0 else content
     fm_match = re.search(
-        r"title:\s*[\"'](.+?)[\"']",
-        content[:fm_end] if fm_end > 0 else content,
+        r'^title:\s*(["\'])(.*)\1\s*$',
+        fm_text,
+        re.MULTILINE,
     )
     if fm_match:
         return {"source": "frontmatter", "title": fm_match.group(1)}
@@ -49,9 +52,10 @@ def get_title(filepath):
 
 
 def extract_ordering_prefix(filename):
-    """Extract ordering prefix like 00_, 01_, CH01_, CH03_02_ from filename."""
-    m = re.match(r"^([A-Z]*\d+(?:_\d+)*_?)", filename)
-    return m.group(1) if m else ""
+    """Extract ordering prefix like 01_, CH01_, CH03_02_ from filename.
+    Bare numbers (e.g. '2' from '2.md') are NOT treated as prefixes."""
+    m = re.match(r"^(?:[A-Z]+\d+(?:_\d+)*_|\d+_)", filename)
+    return m.group(0) if m else ""
 
 
 def normalize_title(title):

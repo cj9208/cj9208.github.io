@@ -23,8 +23,9 @@ Normalize markdown filenames under `content/blog/` using the document title whil
 
 ## Naming Rules
 
-1. Preserve ordering prefixes when they already exist or are clearly part of the folder structure.
+1. Preserve explicit ordering prefixes that end with `_` when they already exist.
    - Examples: `01_`, `00_`, `CH01_`, `CH03_02_`
+   - Bare numbers (e.g. `2` from `2.md`) are NOT ordering prefixes and should be dropped.
 2. Remove decorative punctuation instead of blindly converting everything to separators.
    - Examples: quotes, book-title marks, full-width punctuation used only for styling
 3. Use `-` only for meaningful structure boundaries.
