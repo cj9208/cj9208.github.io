@@ -29,6 +29,17 @@ description: Update markdown index files so they include links to markdown files
 
 ### 核心原则：始终从文件系统读取文件名，切勿手动输入或字符串匹配
 
+### 编码安全：所有文件读写必须使用 UTF-8
+
+本技能需要读取和写入 `_index.md` 文件（含中文），必须正确使用 UTF-8 编码：
+
+- **不要用 PowerShell `Get-Content` 的默认编码**——默认使用 ANSI(GBK)，会破坏 UTF-8 中文。
+- **始终使用** `Get-Content -Path $file -Raw -Encoding UTF8` 和 `Set-Content -Path $file -Value $data -Encoding UTF8`。
+- **Python 始终正确**——使用 `open(path, 'r', encoding='utf-8')` / `open(path, 'w', encoding='utf-8')`。
+- **`edit` 工具最可靠**——读写 UTF-8 始终正确，优先使用。
+
+### 核心原则：始终从文件系统读取文件名，切勿手动输入或字符串匹配
+
 文件名中若包含特殊 Unicode 字符时，即使肉眼看起来一样，手动输入的字符与文件系统实际存储的字符在字节层面可能不同。
 
 **关键经验：**

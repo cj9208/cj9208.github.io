@@ -29,3 +29,21 @@ Personal blog site rendered with Hugo and deployed to GitHub Pages.
 Never type literal Chinese filenames (especially those containing `"`, `'`, `「`, `」`) in code or scripts. Always read from filesystem via `Get-ChildItem` / `os.listdir` and use keyword matching (`-match` / regex) instead of exact string comparison.
 
 This is the **single most common mistake** to avoid in this repo.
+
+## CRITICAL: Encoding safety for Chinese content
+
+**PowerShell file I/O destroys UTF-8 Chinese text if `-Encoding UTF8` is omitted.**
+
+- `Get-Content -Path $file` (without `-Encoding UTF8`) uses the system ANSI code page (GBK on Chinese Windows). Reading a UTF-8 file this way corrupts all non-ASCII characters irreversibly.
+- `Set-Content / Out-File` without `-Encoding UTF8` also defaults to ANSI, causing data loss.
+- **Always use** `Get-Content -Path $file -Raw -Encoding UTF8` and `Set-Content -Path $file -Value $data -Encoding UTF8`.
+- For byte-level safety, use `[System.IO.File]::ReadAllBytes($path)` + `[System.Text.Encoding]::UTF8.GetString($bytes)`.
+
+**Python file I/O is safe for Chinese text:**
+- `open(path, 'r', encoding='utf-8')` / `open(path, 'w', encoding='utf-8')` works correctly.
+
+**Encoding corruption cannot be reversed.**
+- Once UTF-8 bytes are misread as GBK/ANSI and re-saved, the original byte alignment is destroyed. GBK ↔ UTF-8 round-trip fixes fail because byte boundaries differ between the two encodings.
+- Recovery is only possible from the original source (backup, read records, git before corruption).
+
+**Prefer the `edit` tool over PowerShell for modifying files with Chinese content.** The `edit` tool reads and writes UTF-8 correctly.

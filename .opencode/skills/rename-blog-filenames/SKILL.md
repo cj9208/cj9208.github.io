@@ -67,3 +67,15 @@ Normalize markdown filenames under `content/blog/` using the document title whil
 
 - Do not manually type special Unicode filenames in scripts when an automated filesystem-based approach is available.
 - When showing rename proposals to the user, group them by folder and keep the list concise.
+
+## 编码安全（涉及文件读取时注意）
+
+本技能涉及读取文件内容（提取 H1/front matter title）以生成新文件名，需注意：
+
+1. **不要用 PowerShell `Get-Content` 的默认编码读取文件**——它会用 ANSI(GBK) 解码 UTF-8 文件，破坏中文。
+2. **`rename` 操作本身不涉及文件内容修改**，但如果先前的操作已导致文件正文编码损坏，重命名不会修复它。
+3. **读取正确 UTF-8 中文标题的可靠性排序：**
+   - `edit` 工具（最可靠）
+   - Python `open(path, 'r', encoding='utf-8')`（可靠）
+   - PowerShell `Get-Content -Path $file -Raw -Encoding UTF8`（需显式指定）
+4. **只读操作不影响文件内容**，但如果技能流程中包含写入（如修改 `_index.md`），写入也必须使用 UTF-8。

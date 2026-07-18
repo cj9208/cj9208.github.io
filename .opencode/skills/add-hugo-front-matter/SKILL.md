@@ -100,3 +100,53 @@ slug: "section-slug"
 1. 该技能只负责为缺少 front matter 的新文件新增标准 front matter，不负责重命名文件，也不负责批量规范化已有 front matter
 2. `toc` 不作为默认字段，因为当前 Docsy 主题通常已处理目录显示
 3. `showBreadcrumbs` 不作为默认字段，因为当前仓库没有证据表明它已被使用或依赖
+
+## 编码安全（重要历史教训）
+
+**绝对禁止使用 PowerShell 的 `Get-Content` / `Set-Content` 读取或写入含中文的 markdown 文件，除非明确指定 `-Encoding UTF8`。**
+
+### 事故复现路径（避免重犯）
+
+1. 用 `Get-Content -Path $file -Raw`（无 `-Encoding UTF8`）读取 UTF-8 中文件
+2. PowerShell 使用系统 ANSI 代码页（中文 Windows 下为 GBK）解码文件字节
+3. 字节边界在 GBK 与 UTF-8 之间错位，产生乱码（mojibake）
+4. 用 `Set-Content -Path $file -Value $data -Encoding UTF8` 写回
+5. 乱码被持久化到磁盘，原始 UTF-8 字节永久丢失
+
+### 为什么无法通过编码转换修复
+
+- UTF-8 使用 1-4 字节变长编码，GBK 使用 1-2 字节变长编码
+- 文件被误读为 GBK 后，3 字节的 UTF-8 序列被拆解为 2 字节的 GBK 字符序列
+- 重新编码为 GBK 再解码为 UTF-8 时，字节边界无法对齐，产生无效 UTF-8 序列
+- 部分乱码字符落入 GBK 未定义的私有使用区（PUA, U+E000-U+F8FF），根本无法编码回 GBK
+- **结论：一旦乱码，不可逆修复。唯一恢复途径是从原始备份、读取记录或 git 历史还原。**
+
+### 正确的操作方式
+
+```powershell
+# ✅ 正确：读取 UTF-8 文件
+Get-Content -Path $file -Raw -Encoding UTF8
+
+# ✅ 正确：写入 UTF-8 文件
+Set-Content -Path $file -Value $data -Encoding UTF8
+
+# ✅ 更安全的字节级操作
+$bytes = [System.IO.File]::ReadAllBytes($path)
+$text = [System.Text.Encoding]::UTF8.GetString($bytes)
+[System.IO.File]::WriteAllBytes($path, [System.Text.Encoding]::UTF8.GetBytes($text))
+```
+
+```python
+# ✅ Python 始终正确
+with open(path, 'r', encoding='utf-8') as f:
+    content = f.read()
+with open(path, 'w', encoding='utf-8') as f:
+    f.write(content)
+```
+
+### 最佳实践
+
+- **优先使用 `edit` 工具**修改含中文的 markdown 文件，它读写 UTF-8 正确
+- **优先使用 Python**处理文件 I/O，`open(path, 'r', encoding='utf-8')` 始终可靠
+- **如需使用 PowerShell**，每次读取和写入都显式指定 `-Encoding UTF8`
+- **恢复乱码**的唯一可靠途径：从 conversation 中的读取记录（read tool output）重建正文
