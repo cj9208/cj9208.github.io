@@ -4,13 +4,38 @@
 
   {{ $pages := where .Site.RegularPages "Section" "blog" }}
   {{ if $pages }}
+  {{ $groups := ($pages.GroupByDate "2006-01").Reverse }}
+  <p class="lead">共 {{ len $pages }} 篇文章</p>
+
+  <div class="mb-3">
+    <select id="month-select" class="form-select w-auto" aria-label="Filter by month">
+      {{ range $groups }}
+      <option value="{{ .Key }}">{{ .Key }}</option>
+      {{ end }}
+    </select>
+  </div>
+
   <h2>Latest Posts</h2>
-  <ul>
-    {{ range first 5 $pages.ByDate.Reverse }}
-    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a> <small class="text-body-secondary">{{ .Date.Format "2006-01-02" }}</small></li>
+  <ul id="post-list">
+    {{ range $pages.ByDate.Reverse }}
+    <li data-date="{{ .Date.Format "2006-01" }}"><a href="{{ .RelPermalink }}">{{ .Title }}</a> <small class="text-body-secondary">{{ .Date.Format "2006-01-02" }}</small></li>
     {{ end }}
   </ul>
   <p><a href="{{ "/blog/" | relURL }}">View all posts →</a></p>
+
+  <script>
+  (function() {
+    var sel = document.getElementById('month-select');
+    var items = document.querySelectorAll('#post-list li');
+    function filter(month) {
+      items.forEach(function(el) {
+        el.style.display = el.getAttribute('data-date') === month ? '' : 'none';
+      });
+    }
+    sel.addEventListener('change', function() { filter(this.value); });
+    filter(sel.value);
+  })();
+  </script>
   {{ end }}
 </div>
 {{- end }}
