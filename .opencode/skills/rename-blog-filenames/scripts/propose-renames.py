@@ -38,7 +38,7 @@ def get_title(filepath):
         re.MULTILINE,
     )
     if fm_match:
-        return {"source": "frontmatter", "title": fm_match.group(1)}
+        return {"source": "frontmatter", "title": fm_match.group(2)}
 
     # Fall back to first body H1
     body = content[fm_end + 3 :] if fm_end > 0 else content

@@ -1,7 +1,7 @@
 ---
 title: "AI Study"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-17T22:51:52+08:00
+lastmod: 2026-07-19T11:12:51+08:00
 draft: false
 
 description: "Section page for AI Study."
@@ -16,6 +16,7 @@ slug: "ai-study"
 ---
 
 ## AI coding
+* [生态式架构：AI 时代的 EMD 演进逻辑]({{< relref "./生态式架构-AI时代的EMD演进逻辑.md" >}})
 * [AI-Coding的防御性进化：平台化、业务解耦与结构的自然生长]({{< relref "./AI-Coding的防御性进化-平台化-业务解耦与结构的自然生长.md" >}})
 * [文艺复兴：从Linux老派教条看AI时代的函数开发]({{< relref "./文艺复兴-从Linux老派教条看AI时代的函数开发.md" >}})
 
