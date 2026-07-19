@@ -95,8 +95,10 @@ Operational discipline dominates this phase. Code must be modular, highly struct
 
 > **Phase 1: The Smoke Test (Proof of Concept)**
 > Run the new method through a single dataset and a single isolated problem. If the baseline mechanics cannot pass this initial test, halt the project immediately before wasting scaled compute.
+> 
 > **Phase 2: The Generality Test**
 > Expand the system across multiple distinct scenarios, edge cases, and diverse datasets to prove that the architecture is robust and universally effective under varying conditions.
+> 
 > **Phase 3: The Ablation Study (Isolation of Variables)**
 > Conduct a meticulous, controlled variable study. Strip away or isolate individual components of your architecture one by one to pinpoint exactly which internal mechanism drives the performance boost. This proves the system's success is due to structural design rather than a lucky configuration.
 
