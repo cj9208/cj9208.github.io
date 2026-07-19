@@ -1,7 +1,7 @@
 ---
 title: "Career Development"
 date: 2026-07-18T10:01:28+08:00
-lastmod: 2026-07-18T21:22:29+08:00
+lastmod: 2026-07-19T11:12:51+08:00
 draft: false
 
 categories:
@@ -14,6 +14,7 @@ slug: "career-development"
 
 ## 职业发展
 
+* [The State Machine of Technical Research: Balancing Exploration and Bounded Execution]({{< relref "./The-State-Machine-of-Technical-Research-Balancing-Exploration-and-Bounded-Execution.md" >}})
 * [从波利亚解题法到技术专家的生存闭环：用同理心换空间，用硬约束造引擎]({{< relref "./从波利亚解题法到技术专家的生存闭环-用同理心换空间-用硬约束造引擎.md" >}})
 * [大模型 FDE 深度解析：价值方程与产业现实]({{< relref "./大模型FDE深度解析-价值方程与产业现实.md" >}})
 * [编码向左，工程向右：AI时代程序员的生存突围]({{< relref "./编码向左-工程向右-AI时代程序员的生存突围.md" >}})

@@ -17,15 +17,20 @@ def repo_root():
 
 
 def normalize_title(title):
+    """Convert title to a filename following the naming rules.
+    Must stay identical to propose-renames.py::normalize_title."""
     title = title.replace("\u201c", "").replace("\u201d", "")
     title = title.replace("\u300c", "").replace("\u300d", "")
     title = title.replace("\u300e", "").replace("\u300f", "")
     title = title.replace("\u300a", "").replace("\u300b", "")
-    title = title.replace("\uff08", "").replace("\uff09", "")
-    title = title.replace("\u3001", "")
-    title = title.replace("\uff1a", "-")
-    title = title.replace("\u2014\u2014", "-")
+    title = title.replace("\u2329", "").replace("\u232a", "")
+    title = title.replace("\uff08", "-").replace("\uff09", "-")
+    title = title.replace("\u3001", "-")
+    title = title.replace("\u3000", "")
+    title = title.replace("\uff1a", " - ")
+    title = title.replace("\u2014\u2014", " - ")
     title = title.replace("\u2014", "-")
+    title = title.replace("\u2026", "")
     title = re.sub(r"(\w)\s+([\u4e00-\u9fff])", r"\1\2", title)
     title = re.sub(r"([\u4e00-\u9fff])\s+(\w)", r"\1\2", title)
     title = re.sub(r"\s+", " ", title).strip()
@@ -36,10 +41,23 @@ def normalize_title(title):
 
 
 def get_title(filepath):
+    """Extract title from front matter.
+    Uses greedy match + backreference to handle embedded quotes correctly.
+    Must stay identical to propose-renames.py::get_title logic."""
     with open(filepath, "r", encoding="utf-8-sig") as f:
         content = f.read()
-    m = re.search(r"title:\s*[\"'](.+?)[\"']", content)
-    return m.group(1) if m else None
+    fm_end = -1
+    if content.startswith("---"):
+        second = content.find("---", 3)
+        if second > 0:
+            fm_end = second
+    fm_text = content[:fm_end] if fm_end > 0 else content
+    m = re.search(
+        r'^title:\s*(["\'])(.*)\1\s*$',
+        fm_text,
+        re.MULTILINE,
+    )
+    return m.group(2) if m else None
 
 
 def main():
