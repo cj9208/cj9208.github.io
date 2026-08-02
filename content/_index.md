@@ -21,5 +21,4 @@ I write about:
 - [Investment]({{< relref "./blog/investment/_index.md" >}})
 - [Organizational Behavior]({{< relref "./blog/organizational_behavior/_index.md" >}})
 
-<a class="btn btn-primary" href="mailto:cjdyx2012@gmail.com" role="button">Connect Me</a>
 
