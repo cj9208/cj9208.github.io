@@ -1,7 +1,7 @@
 ---
 title: "Career Development"
 date: 2026-07-18T10:01:28+08:00
-lastmod: 2026-07-19T11:12:51+08:00
+lastmod: 2026-08-02T17:51:47+08:00
 draft: false
 
 categories:
@@ -25,4 +25,4 @@ slug: "career-development"
 * [为什么非科技巨头的 IT 注定搞不好？]({{< relref "./为什么非科技巨头的IT注定搞不好.md" >}})
 
 ## 企业组织解构
-* [架构的宿命：康威定律下的组织基因与系统演进]({{< relref "./corp-dissections/架构的宿命-康威定律下的组织基因与系统演进.md" >}})
+* [企业组织解构合集]({{< relref "./corp-dissections/_index.md" >}})

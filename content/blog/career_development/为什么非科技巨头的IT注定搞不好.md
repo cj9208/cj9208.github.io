@@ -2,7 +2,7 @@
 title: "为什么非科技巨头的 IT 注定搞不好？"
 date: 2026-08-02T17:37:14+08:00
 lastmod: 2026-08-02T17:37:14+08:00
-draft: false
+draft: true
 
 categories:
   - "Career Development"
