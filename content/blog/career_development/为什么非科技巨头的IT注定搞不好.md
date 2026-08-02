@@ -1,5 +1,19 @@
+---
+title: "为什么非科技巨头的 IT 注定搞不好？"
+date: 2026-08-02T17:37:14+08:00
+lastmod: 2026-08-02T17:37:14+08:00
+draft: false
 
-# 为什么非科技巨头的 IT 注定搞不好？
+categories:
+  - "Career Development"
+tags:
+  - "IT"
+  - "Career"
+  - "Enterprise"
+
+slug: "why-non-tech-giant-it-fails"
+---
+
 ## ——从渣打 David Hardoon 离职到工程师的生存真话
 
 前段时间，渣打银行（Standard Chartered）发生了一场典型的“AI 组织大戏”：曾任新加坡央行（MAS）首席数据官、持有机器学习 PhD 学位的渣打全球 AI 赋能主管（Global Head of AI Enablement）David Hardoon 在任职约 15 个月后宣布离职并转向咨询领域；紧接着，集团高层迅速对外发声，宣布全面推行“Fit for Growth（降本提效）”重组计划，甚至传出数千人级别的裁员预期。

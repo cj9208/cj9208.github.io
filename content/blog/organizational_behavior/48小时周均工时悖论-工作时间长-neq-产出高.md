@@ -1,7 +1,17 @@
+---
+title: '48小时周均工时悖论：工作时间长 $\neq$ 产出高'
+date: 2026-08-02T17:37:14+08:00
+lastmod: 2026-08-02T17:37:14+08:00
+draft: false
 
+categories:
+  - "Organizational Behavior"
+tags:
+  - "Working Hours"
+  - "Productivity"
+  - "Management"
 
-# 48小时周均工时悖论：工作时间长 $\neq$ 产出高
-
+slug: "48-hour-workweek-paradox"
 ---
 
 > **前言：** 本篇是最近的工作上的观察“很多看上去工作很忙的人，产出反而很少”引发的思考。这是由系统设计和团队管理等多方面失败的结果。
