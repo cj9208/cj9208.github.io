@@ -1,14 +1,14 @@
 ---
 title: "Integration And Messaging Family"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-15T09:00:00+08:00
+lastmod: 2026-07-27T09:46:25+08:00
 draft: true
 
 description: "Integration and messaging services decouple systems, absorb spikes, route events, and coordinate workflows."
 summary: "Integration and messaging services decouple systems, absorb spikes, route events, and coordinate workflows."
 
 categories:
-  - "AI Study"
+  - "Study Notes"
 tags:
   - "AWS"
   - "Solution Architecture"
@@ -69,9 +69,31 @@ Integration and messaging services decouple systems, absorb spikes, route events
 - event schema and governance
 - cost per message, event, or state transition
 
+## When Not To Start Here
+
+- Do not start with `Step Functions` for trivial fire-and-forget integration that does not need durable orchestration.
+- Do not start with `SNS` when ordering, replay control, or workflow state is central.
+- Do not start with `SQS` when the main need is many-target event routing based on event attributes.
+- Do not keep `Amazon MQ` unless broker compatibility is a real constraint rather than an inherited habit.
+
+## Practical Architect Checks
+
+- Define idempotency, retry behavior, and dead-letter handling up front.
+- Confirm whether ordering, deduplication, replay, and retention requirements are real or assumed.
+- Review consumer backpressure, concurrency, and poison-message strategy.
+- Version event schemas and ownership before many teams depend on them.
+- Model message, event, and state-transition costs for normal and failure-heavy traffic.
+
+## Expert-Level Coverage Additions
+
+- Describe replay, deduplication, and ordering strategy as first-class architecture decisions.
+- Include event ownership and schema governance across multiple teams or accounts.
+- Record when orchestration creates useful control vs harmful central coupling.
+- Document failure amplification patterns, especially retry storms and fan-out cascades.
+
 ## Per-Service Drill-Down
 
-Use [`00_Architect-Study-Template.md`]({{< relref "./00_Architect-Study-Template.md" >}}) for:
+Use [`00_Architect-Study-Template.md`]({{< relref "../00_Architect-Study-Template.md" >}}) for:
 
 - `SQS`
 - `SNS`
@@ -79,3 +101,12 @@ Use [`00_Architect-Study-Template.md`]({{< relref "./00_Architect-Study-Template
 - `Step Functions`
 - `Amazon MQ`
 - `AppSync`
+
+## Flagship Service Plan
+
+| Service | Why It Belongs | Link | Status |
+|---|---|---|---|
+| `SQS` | Default durable queue and async decoupling boundary | [`sqs.md`]({{< relref "./sqs.md" >}}) | done |
+| `EventBridge` | Main event-bus and rule-based fan-out model | [`eventbridge.md`]({{< relref "./eventbridge.md" >}}) | done |
+| `Step Functions` | Main durable orchestration model when workflow state matters | [`step-functions.md`]({{< relref "./step-functions.md" >}}) | done |
+| `SNS` | Add when fan-out and notification patterns need their own explicit architectural note | - | conditional |

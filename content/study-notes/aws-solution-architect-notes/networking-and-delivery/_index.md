@@ -1,14 +1,14 @@
 ---
 title: "Networking And Delivery Family"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-15T09:00:00+08:00
+lastmod: 2026-07-27T09:46:25+08:00
 draft: true
 
 description: "Networking and delivery services connect systems, isolate environments, route traffic, and improve reachability and performance."
 summary: "Networking and delivery services connect systems, isolate environments, route traffic, and improve reachability and performance."
 
 categories:
-  - "AI Study"
+  - "Study Notes"
 tags:
   - "AWS"
   - "Solution Architecture"
@@ -78,9 +78,31 @@ Networking and delivery services connect systems, isolate environments, route tr
 - cost under traffic scale
 - logging and observability hooks
 
+## When Not To Start Here
+
+- Do not start with `API Gateway` when a simpler `ALB`-fronted service already fits the API and governance needs.
+- Do not start with `CloudFront` or `Global Accelerator` unless global reach, caching, or path optimization really matter.
+- Do not start with `Transit Gateway` for very small environments where simpler VPC connectivity is enough.
+- Do not assume a public endpoint is acceptable before evaluating private connectivity and service exposure boundaries.
+
+## Practical Architect Checks
+
+- Draw the internet entry points, private paths, and east-west traffic flows explicitly.
+- Check DNS failover behavior, cache TTL effects, and certificate ownership boundaries.
+- Review NAT, data transfer, and inter-AZ traffic costs because they often surprise teams later.
+- Decide whether private endpoints, VPC peering, or hub-and-spoke connectivity are required early.
+- Confirm which logs and flow signals exist for incident response and traffic troubleshooting.
+
+## Expert-Level Coverage Additions
+
+- Add multi-account network boundary patterns, including shared services, centralized ingress, and egress control.
+- Document the cost and blast-radius implications of east-west traffic design.
+- Record failover realism for DNS, edge, and regional traffic management patterns.
+- Include where private connectivity is mandatory even when public endpoints look simpler.
+
 ## Per-Service Drill-Down
 
-Use [`00_Architect-Study-Template.md`]({{< relref "./00_Architect-Study-Template.md" >}}) for:
+Use [`00_Architect-Study-Template.md`]({{< relref "../00_Architect-Study-Template.md" >}}) for:
 
 - `VPC`
 - `Route 53`
@@ -91,3 +113,13 @@ Use [`00_Architect-Study-Template.md`]({{< relref "./00_Architect-Study-Template
 - `Transit Gateway`
 - `Direct Connect`
 - `VPN`
+
+## Flagship Service Plan
+
+| Service | Why It Belongs | Link | Status |
+|---|---|---|---|
+| `VPC` | Primary network boundary and isolation model in AWS | [`vpc.md`]({{< relref "./vpc.md" >}}) | done |
+| `CloudFront` | Main edge, caching, and origin-protection service for public delivery | [`cloudfront.md`]({{< relref "./cloudfront.md" >}}) | done |
+| `API Gateway` | Main managed API-boundary and ingress-governance service | [`api-gateway.md`]({{< relref "./api-gateway.md" >}}) | done |
+| `Route 53` | DNS and traffic-steering control layer that shapes availability behavior | [`route-53.md`]({{< relref "./route-53.md" >}}) | done |
+| `Transit Gateway` | Add when multi-account or hybrid network scale makes shared transit architecture a first-class design concern | - | conditional |

@@ -1,7 +1,7 @@
 ---
 title: "Request Orchestration Layer"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-15T09:00:00+08:00
+lastmod: 2026-07-22T20:20:19+08:00
 draft: true
 
 description: "The request orchestration layer is the shared control layer for a company-wide agent system."
@@ -93,6 +93,97 @@ What extends:
 - execution is routed through domain-scoped subsystems
 - tool schemas are loaded adaptively by capability
 - execution is governed by the harness rather than delegated to the model
+
+## Why This Chapter Splits Into Three Subsections
+
+Up to this point, this chapter is still describing the request orchestration layer at the architecture level.
+
+That is useful for explaining the overall shape of the system, but it is not yet enough to explain how the runtime actually works during execution.
+
+The moment we move from architecture description into runtime design, the questions change.
+
+We are no longer asking only:
+
+- what modules exist
+- how responsibilities are divided
+- where RAG fits in the broader system
+
+We also have to ask:
+
+- what runtime objects must exist while a request is live
+- how the request moves from one state to the next
+- what rules decide whether the next action is allowed, safe, or good enough
+
+That is the point where one chapter becomes too dense.
+
+Those concerns are related, but they are not the same design question.
+
+This is why the detailed runtime design is split into three focused subchapters:
+
+1. [`CH02_01_Runtime-Objects.md`]({{< relref "./CH02_01_Runtime-Objects.md" >}})
+2. [`CH02_02_State-Machine-and-Control-Loop.md`]({{< relref "./CH02_02_State-Machine-and-Control-Loop.md" >}})
+3. [`CH02_03_Confidence-Safety-and-Validation.md`]({{< relref "./CH02_03_Confidence-Safety-and-Validation.md" >}})
+
+The split is intentional because the orchestration runtime has three different aspects:
+
+- what the system stores
+- how the system moves
+- how the system decides safely
+
+Another way to say this is:
+
+- `State`: what exists now?
+- `Transition`: what can happen next?
+- `Policy`: what should be allowed next?
+
+This is the natural bridge from `CH02` into the runtime notes.
+
+`CH02_Request-Orchestration-Layer.md` explains the architecture and responsibility model.
+The three subchapters explain the runtime implementation shape of that architecture.
+
+### 1. Runtime Objects: What The System Stores
+
+`CH02_01_Runtime-Objects.md` defines the durable artifacts such as request envelope, interpretation record, routing decision, execution record, final outcome, and handoff packet.
+
+This answers:
+
+- what objects exist
+- why those objects are separated
+- what each object is responsible for
+
+### 2. State Machine And Control Loop: How The System Moves
+
+`CH02_02_State-Machine-and-Control-Loop.md` defines lifecycle movement, retry boundaries, fallback control, and event emission.
+
+This answers:
+
+- what states a request can enter
+- how control returns to routing
+- how loops are bounded
+- how fallback remains harness-owned
+
+### 3. Confidence, Safety, And Validation: How The System Decides Safely
+
+`CH02_03_Confidence-Safety-and-Validation.md` defines input safety, scope control, confidence policy, and validation rules.
+
+This answers:
+
+- when the system should refuse or constrain a request
+- how evidence turns into route decisions
+- when an output is acceptable to return
+
+### Why Three Is The Right Split
+
+Three is useful here because it matches the natural architecture boundary:
+
+1. data and artifacts
+2. lifecycle and control movement
+3. decision quality and safety
+
+If these are merged into one note, the runtime becomes hard to read.
+If they are split more aggressively, the design becomes fragmented.
+
+So three subchapters is the smallest split that still keeps the runtime understandable.
 
 ## Core Principles
 

@@ -1,14 +1,14 @@
 ---
 title: "Security And Identity Family"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-15T09:00:00+08:00
+lastmod: 2026-07-27T09:46:25+08:00
 draft: true
 
 description: "Security and identity services control access, protect data, manage secrets, and improve security posture."
 summary: "Security and identity services control access, protect data, manage secrets, and improve security posture."
 
 categories:
-  - "AI Study"
+  - "Study Notes"
 tags:
   - "AWS"
   - "Solution Architecture"
@@ -75,9 +75,31 @@ Security and identity services control access, protect data, manage secrets, and
 - detection coverage and response expectations
 - integration points with logging and audit services
 
+## When Not To Start Here
+
+- Do not start with `Cognito` if the required identity flows, federation model, or UX constraints are a poor fit.
+- Do not use `Parameter Store` as the default for secrets that need strong rotation lifecycle and audit-focused handling.
+- Do not treat `WAF` or `Shield` as a substitute for IAM, patching, or secure application design.
+- Do not delay multi-account access design until after account sprawl has already happened.
+
+## Practical Architect Checks
+
+- Lock down root-account usage, MFA posture, and break-glass access first.
+- Review least-privilege design for both humans and workloads before service rollout scales.
+- Decide who owns keys, key policies, and cross-account encryption access.
+- Check where secrets live, how they rotate, and which workloads can read them.
+- Ensure audit trails, finding aggregation, and response ownership are defined, not implied.
+
+## Expert-Level Coverage Additions
+
+- Add organization-level identity and access design, not just per-account controls.
+- Include SCP interaction, break-glass patterns, and centralized security-account ownership.
+- Distinguish detective control maturity from preventive control maturity.
+- Record how security posture changes during incident response and recovery, not just during normal operation.
+
 ## Per-Service Drill-Down
 
-Use [`00_Architect-Study-Template.md`]({{< relref "./00_Architect-Study-Template.md" >}}) for:
+Use [`00_Architect-Study-Template.md`]({{< relref "../00_Architect-Study-Template.md" >}}) for:
 
 - `IAM`
 - `IAM Identity Center`
@@ -87,3 +109,13 @@ Use [`00_Architect-Study-Template.md`]({{< relref "./00_Architect-Study-Template
 - `WAF`
 - `GuardDuty`
 - `Security Hub`
+
+## Flagship Service Plan
+
+| Service | Why It Belongs | Link | Status |
+|---|---|---|---|
+| `IAM` | Core authorization and trust-boundary service for all AWS design | [`iam.md`]({{< relref "./iam.md" >}}) | done |
+| `KMS` | Core key-governance service for encryption ownership and blast radius | [`kms.md`]({{< relref "./kms.md" >}}) | done |
+| `Secrets Manager` | Main secret-lifecycle service for application credentials and rotation | [`secrets-manager.md`]({{< relref "./secrets-manager.md" >}}) | done |
+| `IAM Identity Center` | Main workforce-access model for multi-account AWS environments | [`iam-identity-center.md`]({{< relref "./iam-identity-center.md" >}}) | done |
+| `GuardDuty` | Add when detection maturity and security-operations workflow become a stronger focus than access and key fundamentals | - | conditional |

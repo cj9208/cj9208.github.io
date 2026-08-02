@@ -1,14 +1,14 @@
 ---
 title: "Analytics And Data Engineering Family"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-15T09:00:00+08:00
+lastmod: 2026-07-27T09:46:25+08:00
 draft: true
 
 description: "Analytics and data engineering services ingest, process, transform, store, search, and visualize large-scale data."
 summary: "Analytics and data engineering services ingest, process, transform, store, search, and visualize large-scale data."
 
 categories:
-  - "AI Study"
+  - "Study Notes"
 tags:
   - "AWS"
   - "Solution Architecture"
@@ -73,9 +73,31 @@ Analytics and data engineering services ingest, process, transform, store, searc
 - query latency vs cost tradeoff
 - data retention and lifecycle strategy
 
+## When Not To Start Here
+
+- Do not start with `Redshift` for OLTP application data or tiny ad hoc datasets.
+- Do not start with `Athena` for repetitive low-latency dashboards if the data layout is poor and query frequency is high.
+- Do not start with `EMR` when the main goal is the lowest operational overhead.
+- Do not use `OpenSearch Service` as a replacement for the primary transactional data store.
+
+## Practical Architect Checks
+
+- Define data freshness, latency, and query-cost expectations before selecting tooling.
+- Review partitioning, file layout, indexing, and schema evolution early.
+- Check data retention, lifecycle, and reprocessing strategy for both batch and stream paths.
+- Confirm governance for sensitive data, access control, and auditability.
+- Model spend by data scanned, cluster uptime, stream throughput, and storage growth.
+
+## Expert-Level Coverage Additions
+
+- Distinguish exploratory analytics patterns from governed enterprise data-platform patterns.
+- Include data contract, schema evolution, and replay strategy across producers and consumers.
+- Record where query-in-place stops being economical or operationally clean.
+- Add cross-account data-sharing and data-sovereignty considerations for mature platforms.
+
 ## Per-Service Drill-Down
 
-Use [`00_Architect-Study-Template.md`]({{< relref "./00_Architect-Study-Template.md" >}}) for:
+Use [`00_Architect-Study-Template.md`]({{< relref "../00_Architect-Study-Template.md" >}}) for:
 
 - `Athena`
 - `Glue`
@@ -85,3 +107,12 @@ Use [`00_Architect-Study-Template.md`]({{< relref "./00_Architect-Study-Template
 - `OpenSearch Service`
 - `MSK`
 - `QuickSight`
+
+## Flagship Service Plan
+
+| Service | Why It Belongs | Link | Status |
+|---|---|---|---|
+| `Athena` | Default query-in-place model for AWS-native lake exploration | [`athena.md`]({{< relref "./athena.md" >}}) | done |
+| `Glue` | Main metadata and managed-transformation backbone for the AWS data platform | [`glue.md`]({{< relref "./glue.md" >}}) | done |
+| `Redshift` | Add when curated warehouse serving becomes important enough to deserve a dedicated flagship note | - | conditional |
+| `Kinesis` | Add when real-time ingestion and streaming become a stronger focus than batch and lake patterns | - | conditional |

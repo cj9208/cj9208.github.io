@@ -1,14 +1,14 @@
 ---
 title: "End User And Application Services Family"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-15T09:00:00+08:00
+lastmod: 2026-07-27T09:46:25+08:00
 draft: true
 
 description: "These services provide managed application-facing capabilities that reduce custom implementation effort for common product features."
 summary: "These services provide managed application-facing capabilities that reduce custom implementation effort for common product features."
 
 categories:
-  - "AI Study"
+  - "Study Notes"
 tags:
   - "AWS"
   - "Solution Architecture"
@@ -67,9 +67,31 @@ These services provide managed application-facing capabilities that reduce custo
 - tenant and environment separation patterns
 - pricing model at scale
 
+## When Not To Start Here
+
+- Do not start with `Amplify` when the team needs strong platform control and low framework lock-in.
+- Do not start with `Cognito` if tenant identity, federation, or branded UX requirements exceed the managed fit.
+- Do not adopt `Pinpoint` unless engagement messaging is a real product capability with ownership.
+- Do not start with `AppSync` when GraphQL is not central to the client and domain model.
+
+## Practical Architect Checks
+
+- Confirm identity flow, tenant isolation, and environment separation before product scale increases.
+- Review email deliverability, domain reputation, and regulatory messaging constraints where relevant.
+- Check data residency, logging, and privacy obligations for user-facing managed services.
+- Understand migration or exit cost if a managed user-facing capability later stops fitting.
+- Model cost at user growth levels, not just at prototype scale.
+
+## Expert-Level Coverage Additions
+
+- Document tenant isolation, privacy, and regional boundary implications explicitly.
+- Record where managed user-facing services constrain product UX or identity architecture.
+- Include migration risk if the team later needs deeper customization or provider portability.
+- Distinguish prototype speed benefits from enterprise operating constraints.
+
 ## Per-Service Drill-Down
 
-Use [`00_Architect-Study-Template.md`]({{< relref "./00_Architect-Study-Template.md" >}}) for:
+Use [`00_Architect-Study-Template.md`]({{< relref "../00_Architect-Study-Template.md" >}}) for:
 
 - `Cognito`
 - `SES`
@@ -77,3 +99,11 @@ Use [`00_Architect-Study-Template.md`]({{< relref "./00_Architect-Study-Template
 - `Connect`
 - `AppSync`
 - `Amplify`
+
+## Flagship Service Plan
+
+| Service | Why It Belongs | Link | Status |
+|---|---|---|---|
+| `Cognito` | Main managed application-user identity service in AWS | [`cognito.md`]({{< relref "./cognito.md" >}}) | done |
+| `SES` | Add when application email delivery and deliverability patterns become important enough to deserve a dedicated note | - | conditional |
+| `AppSync` | Add only when GraphQL or client-sync architecture becomes central to the product model | - | conditional |

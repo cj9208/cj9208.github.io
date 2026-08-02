@@ -1,14 +1,14 @@
 ---
 title: "Observability And Operations Family"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-15T09:00:00+08:00
+lastmod: 2026-07-27T09:46:25+08:00
 draft: true
 
 description: "Observability and operations services provide metrics, logs, tracing, auditing, configuration visibility, and operational automation."
 summary: "Observability and operations services provide metrics, logs, tracing, auditing, configuration visibility, and operational automation."
 
 categories:
-  - "AI Study"
+  - "Study Notes"
 tags:
   - "AWS"
   - "Solution Architecture"
@@ -67,12 +67,44 @@ Observability and operations services provide metrics, logs, tracing, auditing, 
 - cross-account visibility patterns
 - integration with incident workflows
 
+## When Not To Start Here
+
+- Do not start with `X-Ray` everywhere if the workload does not need distributed trace depth.
+- Do not treat `CloudWatch Logs` alone as a long-term analytics lake or audit strategy.
+- Do not rely on `EventBridge` alone as a complete incident-management process.
+- Do not collect every signal by default without a retention and noise-control plan.
+
+## Practical Architect Checks
+
+- Define service-level objectives and alert thresholds before creating dashboards.
+- Review log retention, trace sampling, and metric cardinality for cost control.
+- Ensure audit history is centralized, protected, and reviewed.
+- Decide how cross-account visibility, runbooks, and on-call workflows work in practice.
+- Remove noisy alarms aggressively so important failures remain visible.
+
+## Expert-Level Coverage Additions
+
+- Distinguish telemetry collection from actual operational readiness.
+- Include cross-account aggregation, retention strategy, and forensic-readiness requirements.
+- Record cost shape for high-cardinality metrics, trace sampling, and long-term log retention.
+- Document what level of observability is necessary for each architecture stage, not just the maximum ideal state.
+
 ## Per-Service Drill-Down
 
-Use [`00_Architect-Study-Template.md`]({{< relref "./00_Architect-Study-Template.md" >}}) for:
+Use [`00_Architect-Study-Template.md`]({{< relref "../00_Architect-Study-Template.md" >}}) for:
 
 - `CloudWatch`
 - `CloudTrail`
 - `X-Ray`
 - `AWS Config`
 - `Systems Manager`
+
+## Flagship Service Plan
+
+| Service | Why It Belongs | Link | Status |
+|---|---|---|---|
+| `CloudWatch` | Operational monitoring and alerting baseline | [`cloudwatch.md`]({{< relref "./cloudwatch.md" >}}) | done |
+| `CloudTrail` | API-audit and change-forensics baseline | [`cloudtrail.md`]({{< relref "./cloudtrail.md" >}}) | done |
+| `Systems Manager` | Core fleet-operations and automation toolbox | [`systems-manager.md`]({{< relref "./systems-manager.md" >}}) | done |
+| `AWS Config` | Main drift and compliance-visibility layer | [`aws-config.md`]({{< relref "./aws-config.md" >}}) | done |
+| `X-Ray` | Add when distributed-tracing depth becomes central enough to justify a dedicated flagship note | - | conditional |

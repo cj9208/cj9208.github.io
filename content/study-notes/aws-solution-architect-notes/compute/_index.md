@@ -1,14 +1,14 @@
 ---
 title: "Compute Family"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-15T09:00:00+08:00
+lastmod: 2026-07-27T09:46:25+08:00
 draft: true
 
 description: "Compute services run application logic. The main architect question is where code should run and how much operational responsibility the team should keep."
 summary: "Compute services run application logic. The main architect question is where code should run and how much operational responsibility the team should keep."
 
 categories:
-  - "AI Study"
+  - "Study Notes"
 tags:
   - "AWS"
   - "Solution Architecture"
@@ -74,9 +74,31 @@ Compute services run application logic. The main architect question is where cod
 - observability model
 - cost shape under steady vs bursty load
 
+## When Not To Start Here
+
+- Do not start with `EC2` when the main goal is delivery speed and the team does not want to own patching, AMIs, and host operations.
+- Do not start with `Lambda` for long-running, heavily stateful, or host-dependent workloads.
+- Do not start with `EKS` unless Kubernetes is a real platform requirement, not just a resume-driven preference.
+- Do not start with `Fargate` when host-level tuning, daemon access, or specialized node controls are mandatory.
+
+## Practical Architect Checks
+
+- Confirm who owns the OS, runtime patching, and image lifecycle.
+- Check startup behavior, scaling latency, and deployment blast radius for the chosen model.
+- Validate quotas and hard limits early, especially concurrency, task counts, instance family availability, and regional capacity.
+- Tie the compute choice to network attachment, secret delivery, logging, and rollback patterns.
+- Compare unit economics under steady load and bursty load before committing to a default.
+
+## Expert-Level Coverage Additions
+
+- Document the redesign path from `Lambda` to containers or from simple containers to platform-managed Kubernetes.
+- Compare operational burden across team maturity levels, not just service features.
+- Include dependency bottlenecks such as database connection pressure, cold-start tradeoffs, and deployment blast radius.
+- Record account-boundary decisions for shared build systems, registries, and runtime isolation.
+
 ## Per-Service Drill-Down
 
-Use [`00_Architect-Study-Template.md`]({{< relref "./00_Architect-Study-Template.md" >}}) for:
+Use [`00_Architect-Study-Template.md`]({{< relref "../00_Architect-Study-Template.md" >}}) for:
 
 - `EC2`
 - `Lambda`
@@ -85,3 +107,12 @@ Use [`00_Architect-Study-Template.md`]({{< relref "./00_Architect-Study-Template
 - `Fargate`
 - `App Runner`
 - `Batch`
+
+## Flagship Service Plan
+
+| Service | Why It Belongs | Link | Status |
+|---|---|---|---|
+| `Lambda` | Best starting point for event-driven, serverless, and elasticity-first compute decisions | [`lambda.md`]({{< relref "./lambda.md" >}}) | done |
+| `ECS` | Best default for modern AWS-native container platforms without Kubernetes overhead | [`ecs.md`]({{< relref "./ecs.md" >}}) | done |
+| `EC2` | Still necessary for host-level control, legacy workloads, and understanding the lowest managed compute layer | [`ec2.md`]({{< relref "./ec2.md" >}}) | done |
+| `EKS` | Include only when Kubernetes becomes a real operating model requirement rather than optional complexity | conditional | conditional |

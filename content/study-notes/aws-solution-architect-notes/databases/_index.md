@@ -1,14 +1,14 @@
 ---
 title: "Databases Family"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-15T09:00:00+08:00
+lastmod: 2026-07-27T09:46:25+08:00
 draft: true
 
 description: "Database services persist and query application data. The main architect question is which data model, access pattern, and operational model best fit the workload."
 summary: "Database services persist and query application data. The main architect question is which data model, access pattern, and operational model best fit the workload."
 
 categories:
-  - "AI Study"
+  - "Study Notes"
 tags:
   - "AWS"
   - "Solution Architecture"
@@ -77,9 +77,31 @@ Database services persist and query application data. The main architect questio
 - indexing and partition strategy
 - cost sensitivity to traffic shape and data volume
 
+## When Not To Start Here
+
+- Do not start with `DynamoDB` when access patterns are still vague and ad hoc relational querying is likely to dominate.
+- Do not start with `Aurora` or `RDS` when the workload is primarily cache-style or key-value access at extreme scale.
+- Do not treat `ElastiCache` as the durable system of record for core business data.
+- Do not choose specialized engines such as `Neptune`, `Timestream`, or `Keyspaces` unless the data model really drives the decision.
+
+## Practical Architect Checks
+
+- Write down the top read and write access patterns before selecting the engine.
+- Validate failover behavior, recovery time, and backup restore steps with realistic data volumes.
+- Check partitioning or connection bottlenecks early, not after load begins.
+- Tie security decisions to secret rotation, network boundaries, and encryption ownership.
+- Model cost by traffic pattern, storage growth, replicas, cache layers, and backup retention.
+
+## Expert-Level Coverage Additions
+
+- Document the migration path from simple relational defaults to scale-driven redesigns.
+- Compare single-region HA, cross-region recovery, and active-active limits honestly.
+- Include operational failure patterns such as hot partitions, connection exhaustion, failover surprises, and replica lag.
+- Make data consistency expectations explicit because many expert mistakes start there.
+
 ## Per-Service Drill-Down
 
-Use [`00_Architect-Study-Template.md`]({{< relref "./00_Architect-Study-Template.md" >}}) for:
+Use [`00_Architect-Study-Template.md`]({{< relref "../00_Architect-Study-Template.md" >}}) for:
 
 - `RDS`
 - `Aurora`
@@ -89,3 +111,12 @@ Use [`00_Architect-Study-Template.md`]({{< relref "./00_Architect-Study-Template
 - `DocumentDB`
 - `Neptune`
 - `Timestream`
+
+## Flagship Service Plan
+
+| Service | Why It Belongs | Link | Status |
+|---|---|---|---|
+| `Aurora` | Strategic AWS-native relational platform for high-value OLTP systems | [`aurora.md`]({{< relref "./aurora.md" >}}) | done |
+| `DynamoDB` | Main NoSQL and access-pattern-driven database model in AWS | [`dynamodb.md`]({{< relref "./dynamodb.md" >}}) | done |
+| `RDS` | Practical managed-relational default when familiarity and migration ease matter | [`rds.md`]({{< relref "./rds.md" >}}) | done |
+| `Redshift` | Add when analytical warehouse patterns become important enough to deserve a dedicated data-serving flagship | - | conditional |

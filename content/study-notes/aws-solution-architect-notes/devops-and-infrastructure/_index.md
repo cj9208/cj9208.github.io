@@ -1,14 +1,14 @@
 ---
 title: "DevOps And Infrastructure Family"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-15T09:00:00+08:00
+lastmod: 2026-07-27T09:46:25+08:00
 draft: true
 
 description: "DevOps and infrastructure services define environments, package artifacts, and deliver changes safely and repeatedly."
 summary: "DevOps and infrastructure services define environments, package artifacts, and deliver changes safely and repeatedly."
 
 categories:
-  - "AI Study"
+  - "Study Notes"
 tags:
   - "AWS"
   - "Solution Architecture"
@@ -67,9 +67,31 @@ DevOps and infrastructure services define environments, package artifacts, and d
 - approval and governance controls
 - integration with external CI/CD tools when needed
 
+## When Not To Start Here
+
+- Do not start with `Service Catalog` unless platform governance and self-service standardization are real goals.
+- Do not force `CodePipeline` if the team already depends on a broader non-AWS delivery ecosystem that fits better.
+- Do not adopt `CDK` abstractions without understanding the `CloudFormation` behaviors underneath them.
+- Do not treat a container registry such as `ECR` as the whole software supply-chain story.
+
+## Practical Architect Checks
+
+- Decide which repository is the source of truth for infrastructure and environment promotion.
+- Check drift detection, rollback workflow, and failure visibility before rollout.
+- Keep artifacts immutable and traceable from source commit to deployment target.
+- Review secret handling inside builds and pipelines, not just inside runtime workloads.
+- Match approval steps to risk level so safety does not collapse into manual bottlenecks.
+
+## Expert-Level Coverage Additions
+
+- Include multi-account delivery boundaries, promotion models, and change-approval ownership.
+- Record how platform standards are enforced without blocking delivery speed unnecessarily.
+- Document supply-chain security posture, not just build success paths.
+- Compare the operating model for small teams, platform teams, and regulated enterprises separately.
+
 ## Per-Service Drill-Down
 
-Use [`00_Architect-Study-Template.md`]({{< relref "./00_Architect-Study-Template.md" >}}) for:
+Use [`00_Architect-Study-Template.md`]({{< relref "../00_Architect-Study-Template.md" >}}) for:
 
 - `CloudFormation`
 - `CDK`
@@ -78,3 +100,12 @@ Use [`00_Architect-Study-Template.md`]({{< relref "./00_Architect-Study-Template
 - `CodeDeploy`
 - `ECR`
 - `Service Catalog`
+
+## Flagship Service Plan
+
+| Service | Why It Belongs | Link | Status |
+|---|---|---|---|
+| `CloudFormation` | AWS-native IaC foundation and drift-control baseline | [`cloudformation.md`]({{< relref "./cloudformation.md" >}}) | done |
+| `CDK` | Main higher-level code abstraction for AWS-native IaC | [`cdk.md`]({{< relref "./cdk.md" >}}) | done |
+| `ECR` | Main artifact-registry and container supply-chain baseline for AWS workloads | [`ecr.md`]({{< relref "./ecr.md" >}}) | done |
+| `CodePipeline` | Add when delivery-pipeline design becomes important enough to deserve its own flagship note | - | conditional |

@@ -1,14 +1,14 @@
 ---
 title: "Migration Backup And DR Family"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-15T09:00:00+08:00
+lastmod: 2026-07-27T09:46:25+08:00
 draft: true
 
 description: "Migration, backup, and disaster recovery services move workloads into AWS and help protect and restore them."
 summary: "Migration, backup, and disaster recovery services move workloads into AWS and help protect and restore them."
 
 categories:
-  - "AI Study"
+  - "Study Notes"
 tags:
   - "AWS"
   - "Solution Architecture"
@@ -67,12 +67,43 @@ Migration, backup, and disaster recovery services move workloads into AWS and he
 - backup coverage gaps and exclusions
 - testing frequency and runbook maturity
 
+## When Not To Start Here
+
+- Do not treat `AWS Backup` as the full disaster-recovery strategy for complex applications.
+- Do not start with `DMS` if the migration challenge is application redesign rather than data movement.
+- Do not use `Elastic Disaster Recovery` as a blanket answer for cloud-native services that already need service-native recovery patterns.
+- Do not use the `Snow Family` unless data volume or connectivity constraints truly justify the logistics.
+
+## Practical Architect Checks
+
+- Define target RPO and RTO per workload, not as one generic program number.
+- Test restore and cutover procedures regularly with realistic dependencies.
+- Review cross-region and cross-account protection requirements early.
+- Identify what is not covered by centralized backups, including external dependencies and manual steps.
+- Assign runbook ownership so recovery does not depend on tribal knowledge.
+
+## Expert-Level Coverage Additions
+
+- Distinguish clearly between backup, restore, failover, and full business recovery.
+- Record migration sequencing and rollback strategy, not just tooling choice.
+- Include dependency mapping so DR posture covers DNS, identity, secrets, and network paths too.
+- Add cost and testing tradeoffs across backup-only, pilot-light, warm-standby, and stronger DR patterns.
+
 ## Per-Service Drill-Down
 
-Use [`00_Architect-Study-Template.md`]({{< relref "./00_Architect-Study-Template.md" >}}) for:
+Use [`00_Architect-Study-Template.md`]({{< relref "../00_Architect-Study-Template.md" >}}) for:
 
 - `AWS Backup`
 - `DMS`
 - `Application Migration Service`
 - `Elastic Disaster Recovery`
 - `Snow Family`
+
+## Flagship Service Plan
+
+| Service | Why It Belongs | Link | Status |
+|---|---|---|---|
+| `AWS Backup` | Central backup-governance baseline across AWS workloads | [`aws-backup.md`]({{< relref "./aws-backup.md" >}}) | done |
+| `Elastic Disaster Recovery` | Main server-style disaster-recovery pattern when app-native DR is not yet the answer | [`elastic-disaster-recovery.md`]({{< relref "./elastic-disaster-recovery.md" >}}) | done |
+| `DMS` | Add when database migration and replication become a stronger practical concern | - | conditional |
+| `Application Migration Service` | Add when rehosting and migration sequencing become central enough to deserve a dedicated flagship note | - | conditional |

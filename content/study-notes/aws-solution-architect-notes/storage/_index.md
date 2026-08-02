@@ -1,14 +1,14 @@
 ---
 title: "Storage Family"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-15T09:00:00+08:00
+lastmod: 2026-07-27T09:46:25+08:00
 draft: true
 
 description: "Storage services persist data outside compute. The main architect question is what storage model matches the workload: object, block, file, or archive."
 summary: "Storage services persist data outside compute. The main architect question is what storage model matches the workload: object, block, file, or archive."
 
 categories:
-  - "AI Study"
+  - "Study Notes"
 tags:
   - "AWS"
   - "Solution Architecture"
@@ -74,12 +74,43 @@ Storage services persist data outside compute. The main architect question is wh
 - replication, backup, and restore patterns
 - pricing model under real access patterns
 
+## When Not To Start Here
+
+- Do not start with `S3` when the workload requires block storage semantics or a shared POSIX file system.
+- Do not start with `EBS` when multiple compute nodes need concurrent shared file access.
+- Do not start with `EFS` when the real requirement is cheap object retention rather than shared file semantics.
+- Do not start with high-end `FSx` variants unless the workload truly needs their protocol or performance characteristics.
+
+## Practical Architect Checks
+
+- Confirm whether the storage scope is zonal, regional, or global enough for the workload.
+- Validate backup and restore expectations, including restore time, not just backup existence.
+- Review lifecycle, replication, and archive transitions against actual access patterns.
+- Check throughput, IOPS, request-rate, and retrieval behavior under the expected traffic shape.
+- Tie encryption ownership, key policy, and cross-account access into the design early.
+
+## Expert-Level Coverage Additions
+
+- Describe storage cost shape at scale, including request costs, replication, retrieval, and version growth.
+- Distinguish backup posture from true recovery posture for each storage model.
+- Include cross-account and cross-region data-boundary decisions explicitly.
+- Document when data-lake, archive, and application-storage requirements should split into separate patterns.
+
 ## Per-Service Drill-Down
 
-Use [`00_Architect-Study-Template.md`]({{< relref "./00_Architect-Study-Template.md" >}}) for:
+Use [`00_Architect-Study-Template.md`]({{< relref "../00_Architect-Study-Template.md" >}}) for:
 
 - `S3`
 - `EBS`
 - `EFS`
 - `FSx`
 - `Storage Gateway`
+
+## Flagship Service Plan
+
+| Service | Why It Belongs | Link | Status |
+|---|---|---|---|
+| `S3` | Foundational object-storage service and the most important storage baseline in AWS | [`s3.md`]({{< relref "./s3.md" >}}) | done |
+| `EBS` | Essential for understanding block storage and EC2-attached stateful design | [`ebs.md`]({{< relref "./ebs.md" >}}) | done |
+| `EFS` | Key representative of shared POSIX-style file storage in AWS | [`efs.md`]({{< relref "./efs.md" >}}) | done |
+| `FSx` variant | Add only when a workload truly depends on that file model, because the rest of the family is otherwise specialized | conditional | conditional |
