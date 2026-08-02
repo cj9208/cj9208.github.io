@@ -41,10 +41,3 @@ weight = 1
 name = "Blog"
 url = "/blog/"
 weight = 2
-
-
-
-[[menu.main]]
-name = "Study Notes"
-url = "/study-notes/"
-weight = 3

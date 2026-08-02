@@ -15,6 +15,8 @@ tags:
 slug: "about"
 ---
 
+<div style="height: 6rem;"></div>
+
 # CHEN Jie (PhD)
 
 **GenAI Specialist**, *Fast Learner and Willing to Take Challenges*
