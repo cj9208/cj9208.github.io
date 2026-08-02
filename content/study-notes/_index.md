@@ -2,7 +2,7 @@
 title: "Study Notes"
 date: 2026-07-27T16:20:00+08:00
 lastmod: 2026-07-27T16:20:00+08:00
-draft: true
+draft: false
 
 description: "Structured study-note collections and learning materials that support deeper technical understanding."
 summary: "Structured study-note collections and learning materials that support deeper technical understanding."
@@ -19,4 +19,4 @@ This section collects structured study materials, reference notes, and learning-
 
 ## Collections
 
-* [AWS Solution Architect Notes]({{< relref "./aws-solution-architect-notes/_index.md" >}})
+* AWS Solution Architect Notes
