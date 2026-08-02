@@ -1,7 +1,7 @@
 ---
 title: "文艺复兴：从 Linux 老派教条看 AI 时代的函数开发"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-15T09:00:00+08:00
+lastmod: 2026-08-02T17:33:26+08:00
 draft: false
 
 description: "在[《AI Coding 的防御性进化：平台化、业务解耦与结构的自然生长》]({{< relref \"./AI-Coding的防御性进化-平台化-业务解耦与结构的自然生长.md\" >}})中，我们讨论了 AI 时代 repository（代码仓库）的设计和管理。本文将进一步讨论在 AI 时代，具体函数的编写方法。读者可以参考以下背景资料："
@@ -12,7 +12,7 @@ categories:
 tags:
   - "AI Study"
 
-slug: "文艺复兴-从Linux老派教条看AI时代的函数开发"
+slug: "linux-revival-ai-functions"
 ---
 在[《AI Coding 的防御性进化：平台化、业务解耦与结构的自然生长》]({{< relref "./AI-Coding的防御性进化-平台化-业务解耦与结构的自然生长.md" >}})中，我们讨论了 AI 时代 repository（代码仓库）的设计和管理。本文将进一步讨论在 AI 时代，具体函数的编写方法。读者可以参考以下背景资料：
 

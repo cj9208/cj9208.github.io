@@ -1,7 +1,7 @@
 ---
 title: "AI Coding 的防御性进化：平台化、业务解耦与结构的自然生长"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-15T09:00:00+08:00
+lastmod: 2026-08-02T17:33:26+08:00
 draft: false
 
 description: "随着 Cursor、Claude Code 等新一代 AI 编程工具全面进入 Agent（智能体）时代，软件工程的生产力迎来了一次陡峭的跃升。开发者们开始习惯于\"指点江山\"：丢下一个复杂的工单（Ticket），让 Agent 在后台翻阅源码、修改逻辑、自动运行测试，直到红灯变绿。"
@@ -12,7 +12,7 @@ categories:
 tags:
   - "AI Study"
 
-slug: "AI-Coding的防御性进化-平台化-业务解耦与结构的自然生长"
+slug: "ai-coding-evolution"
 ---
 随着 Cursor、Claude Code 等新一代 AI 编程工具全面进入 Agent（智能体）时代，软件工程的生产力迎来了一次陡峭的跃升。开发者们开始习惯于“指点江山”：丢下一个复杂的工单（Ticket），让 Agent 在后台翻阅源码、修改逻辑、自动运行测试，直到红灯变绿。
 

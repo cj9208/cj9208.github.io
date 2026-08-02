@@ -1,7 +1,7 @@
 ---
 title: "职场的“分布式共生”：从博弈论的 Tit-for-Tat 到技术团队的系统架构"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-15T09:00:00+08:00
+lastmod: 2026-08-02T17:33:26+08:00
 draft: false
 
 description: "在现代组织架构的迷宫里，身处其中的个体往往容易被两种陈旧的职场叙事所吞噬："
@@ -12,7 +12,7 @@ categories:
 tags:
   - "Organizational Behavior"
 
-slug: "职场的分布式共生-从博弈论的Tit-for-Tat到技术团队的系统架构"
+slug: "distributed-symbiosis-tit-for-tat"
 ---
 在现代组织架构的迷宫里，身处其中的个体往往容易被两种陈旧的职场叙事所吞噬：
 
