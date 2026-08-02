@@ -1,7 +1,7 @@
 ---
 title: "Jack's Blog"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-08-02T18:06:00+08:00
+lastmod: 2026-08-02T18:10:00+08:00
 draft: false
 
 categories:
@@ -20,4 +20,6 @@ I write about:
 - [Communication]({{< relref "./blog/communication/_index.md" >}})
 - [Investment]({{< relref "./blog/investment/_index.md" >}})
 - [Organizational Behavior]({{< relref "./blog/organizational_behavior/_index.md" >}})
+
+<a class="btn btn-primary" href="mailto:cjdyx2012@gmail.com" role="button">Connect Me</a>
 
