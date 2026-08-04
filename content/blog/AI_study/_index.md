@@ -1,7 +1,7 @@
 ---
 title: "AI Study"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-08-04T21:16:34+08:00
+lastmod: 2026-08-05T00:04:51+08:00
 draft: false
 
 description: "Section page for AI Study."
@@ -27,7 +27,7 @@ slug: "ai-study"
 * [为什么系统最终都会走向流程化从程序正义到大模型评测的铁腕统治]({{< relref "./为什么系统最终都会走向流程化-从程序正义到大模型评测的铁腕统治.md" >}})
 * [程序员的顶级偷懒秘籍：控制论视角的四大底层逻辑与现代AI工程实践]({{< relref "./程序员的顶级偷懒秘籍-控制论视角的四大底层逻辑与现代AI工程实践.md" >}})
 * [A First-Principles Architecture for Agent Routing and Safety Harnesses]({{< relref "./A-First-Principles-Architecture-for-Agent-Routing-and-Safety-Harnesses.md" >}})
+* [Redefining the Harness: The Architectural Shift to Weight-Internalized Execution]({{< relref "./Redefining-the-Harness-The-Architectural-Shift-to-Weight-Internalized-Execution.md" >}})
 
 ## 参考资料
-* aws-solution-architect-notes
 * rag-orchestration-architecture
