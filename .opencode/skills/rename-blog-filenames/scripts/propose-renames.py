@@ -12,6 +12,10 @@ CONTENT_BLOG = os.path.abspath(
     os.path.join(os.path.dirname(__file__), "..", "..", "..", "..", "content", "blog")
 )
 
+# Directories (relative to CONTENT_BLOG) excluded from rename scanning.
+# These trees keep their own intentional filenames and must not be touched.
+EXCLUDED_DIRS = {"study-notes/aws-solution-architect-notes"}
+
 
 def get_title(filepath):
     """Extract the document title.
@@ -105,7 +109,16 @@ def normalize_title(title):
 def process():
     all_md = []
 
-    for root, _dirs, files in os.walk(CONTENT_BLOG):
+    for root, dirs, files in os.walk(CONTENT_BLOG):
+        # Prune excluded directories (and their subtrees) from the walk
+        dirs[:] = [
+            d
+            for d in dirs
+            if os.path.relpath(os.path.join(root, d), CONTENT_BLOG).replace(
+                "\\", "/"
+            )
+            not in EXCLUDED_DIRS
+        ]
         for fname in files:
             if not fname.endswith(".md") or fname == "_index.md":
                 continue

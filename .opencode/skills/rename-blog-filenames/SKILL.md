@@ -13,6 +13,7 @@ Normalize markdown filenames under `content/blog/` using the document title whil
 - Never rename `_index.md`.
 - Update markdown references under `content/` after any rename.
 - Ask the user for confirmation before applying a second-pass or convention-changing rename.
+- **Excluded directory:** `content/blog/study-notes/aws-solution-architect-notes/` keeps its own intentional filenames and is never scanned, renamed, or touched. Both scripts enforce this via `EXCLUDED_DIRS`; do not override it.
 
 ## Title Source
 

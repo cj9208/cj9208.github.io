@@ -16,6 +16,11 @@ def repo_root():
     )
 
 
+# Directories (relative to content/blog) excluded from rename execution.
+# These trees keep their own intentional filenames and must not be touched.
+EXCLUDED_DIRS = {"study-notes/aws-solution-architect-notes"}
+
+
 def normalize_title(title):
     """Convert title to a filename following the naming rules.
     Must stay identical to propose-renames.py::normalize_title."""
@@ -66,7 +71,14 @@ def main():
     content_dir = os.path.join(root, "content")
 
     renames = []
-    for dirpath, _dirs, files in os.walk(blog):
+    for dirpath, dirs, files in os.walk(blog):
+        # Prune excluded directories (and their subtrees) from the walk
+        dirs[:] = [
+            d
+            for d in dirs
+            if os.path.relpath(os.path.join(dirpath, d), blog).replace("\\", "/")
+            not in EXCLUDED_DIRS
+        ]
         for fname in files:
             if not re.match(r"^\d+\.md$", fname):
                 continue
