@@ -28,6 +28,7 @@ slug: "ai-study"
 * [为什么系统最终都会走向流程化从程序正义到大模型评测的铁腕统治]({{< relref "./为什么系统最终都会走向流程化-从程序正义到大模型评测的铁腕统治.md" >}})
 * [A First-Principles Architecture for Agent Routing and Safety Harnesses]({{< relref "./A-First-Principles-Architecture-for-Agent-Routing-and-Safety-Harnesses.md" >}})
 * [The Death of the Wrapper: How Agentic Post-Training Is Reshaping AI Architecture]({{< relref "./The-Death-of-the-Wrapper-How-Agentic-Post-Training-Is-Reshaping-AI-Architecture.md" >}})
+* [From Board Games to Reasoning Agents: The Evolution of Reinforcement Learning in Large Language Models]({{< relref "./From-Board-Games-to-Reasoning-Agents-The-Evolution-of-Reinforcement-Learning-in-Large-Language-Models.md" >}})
 
 ## 参考资料
 * rag-orchestration-architecture
