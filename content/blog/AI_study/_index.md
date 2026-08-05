@@ -1,7 +1,7 @@
 ---
 title: "AI Study"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-08-05T00:04:51+08:00
+lastmod: 2026-08-05T12:47:04+08:00
 draft: false
 
 description: "Section page for AI Study."
@@ -27,7 +27,7 @@ slug: "ai-study"
 * [破局审计师陷阱：Harness与算力通缩如何双向重构AI的商业账本]({{< relref "./破局审计师陷阱-Harness与算力通缩如何双向重构AI的商业账本.md" >}})
 * [为什么系统最终都会走向流程化从程序正义到大模型评测的铁腕统治]({{< relref "./为什么系统最终都会走向流程化-从程序正义到大模型评测的铁腕统治.md" >}})
 * [A First-Principles Architecture for Agent Routing and Safety Harnesses]({{< relref "./A-First-Principles-Architecture-for-Agent-Routing-and-Safety-Harnesses.md" >}})
-* [Redefining the Harness: The Architectural Shift to Weight-Internalized Execution]({{< relref "./Redefining-the-Harness-The-Architectural-Shift-to-Weight-Internalized-Execution.md" >}})
+* [The Death of the Wrapper: How Agentic Post-Training Is Reshaping AI Architecture]({{< relref "./The-Death-of-the-Wrapper-How-Agentic-Post-Training-Is-Reshaping-AI-Architecture.md" >}})
 
 ## 参考资料
 * rag-orchestration-architecture
