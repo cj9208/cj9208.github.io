@@ -243,3 +243,13 @@ This functional separation enables clean, high-performance hybrid architectures:
 The evolution of agent scaffolding represents a mature architectural optimization. By using competitive mathematics and programming as zero-cost RLVR sandboxes, frontier labs solve the credit assignment problem through Process Reward Models and master Test-Time Compute search. The pristine reasoning trajectories produced during this process are distilled into lightweight models, internalizing low-level execution skills directly into model parameters.
 
 The external harness remains indispensable, but its role is properly realigned: moving from an invasive, fragile driver of model execution to an enterprise-grade sandbox for autonomous policy execution. Math benchmarks are the F1 racetracks of AI research; the weight-internalized efficiency gains engineered on those tracks are what make daily production vehicles fast, affordable, and resilient.
+
+
+## Notes & Glossary
+
+* **cgroups:** Control Groups (Linux kernel feature that limits and isolates resource usage like memory and CPU for processes).
+* **MCTS:** Monte Carlo Tree Search (a heuristic search algorithm for decision processes, used during test-time compute search).
+* **PII:** Personally Identifiable Information (sensitive user data that must be redacted before logging or system processing).
+* **RBAC:** Role-Based Access Control (a security mechanism that restricts system access based on user/system roles).
+* **SOTA:** State-of-the-Art (refers to the highest performing frontier AI models).
+* **stderr:** Standard Error (the default file descriptor/stream used by programs to output error messages and stack traces).
