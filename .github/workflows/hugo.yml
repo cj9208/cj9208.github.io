@@ -49,21 +49,26 @@ jobs:
       with:
         path: ./public
 
-    - name: Cancel stale Pages deployments
+    - name: Inspect and cancel stale Pages deployments
+      continue-on-error: true
       env:
         GH_TOKEN: ${{ github.token }}
       run: |
-        ids=$(gh api "repos/${{ github.repository }}/pages/deployments" \
-          --jq '.[] | select(.status == "queued" or .status == "in_progress") | .id')
-        if [ -n "$ids" ]; then
-          echo "$ids" | while read -r id; do
-            echo "Canceling stale Pages deployment $id"
-            gh api -X POST "repos/${{ github.repository }}/pages/deployments/$id/cancel" >/dev/null \
-              || echo "cancel failed for $id"
-          done
-        else
-          echo "No stale Pages deployments to cancel"
-        fi
+        echo "== Pages deployments =="
+        curl -s -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" \
+          "https://api.github.com/repos/${{ github.repository }}/pages/deployments" \
+          | jq -r '.[] | "\(.id) \(.status) \(.updated_at)"'
+        echo "== Canceling queued/in_progress =="
+        curl -s -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" \
+          "https://api.github.com/repos/${{ github.repository }}/pages/deployments" \
+          | jq -r '.[] | select(.status == "queued" or .status == "in_progress") | .id' \
+          | while read -r id; do
+              [ -n "$id" ] || continue
+              echo "cancel $id"
+              curl -s -X POST -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" \
+                "https://api.github.com/repos/${{ github.repository }}/pages/deployments/$id/cancel"
+            done
+        exit 0
 
     - name: Deploy
       id: deployment
