@@ -1,7 +1,7 @@
 ---
 title: "Career Development"
 date: 2026-07-18T10:01:28+08:00
-lastmod: 2026-08-02T18:02:04+08:00
+lastmod: 2026-08-06T22:40:27+08:00
 draft: false
 
 categories:
@@ -22,6 +22,7 @@ slug: "career-development"
 * [重力回归：企业 ROI 约束与 AI '确定性账单'的控盘人]({{< relref "./重力回归-企业ROI约束与AI确定性账单的控盘人.md" >}})
 * [秩序之重：从系统演进看"变通"的代价]({{< relref "./秩序之重-从系统演进看-变通-的代价.md" >}})
 * [祛魅与自省：大厂技术管理退化录与防异化指南]({{< relref "./祛魅与自省-大厂技术管理退化录与防异化指南.md" >}})
+* [为什么非科技巨头的 IT 注定搞不好？]({{< relref "./为什么非科技巨头的IT注定搞不好.md" >}})
 
 ## 企业组织解构
 * [企业组织解构合集]({{< relref "./corp-dissections/_index.md" >}})
