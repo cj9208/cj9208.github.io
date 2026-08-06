@@ -49,9 +49,22 @@ jobs:
       with:
         path: ./public
 
+    - name: Cancel stale Pages deployments
+      env:
+        GH_TOKEN: ${{ github.token }}
+      run: |
+        ids=$(gh api "repos/${{ github.repository }}/pages/deployments" \
+          --jq '.[] | select(.status == "queued" or .status == "in_progress") | .id')
+        if [ -n "$ids" ]; then
+          echo "$ids" | while read -r id; do
+            echo "Canceling stale Pages deployment $id"
+            gh api -X POST "repos/${{ github.repository }}/pages/deployments/$id/cancel" >/dev/null \
+              || echo "cancel failed for $id"
+          done
+        else
+          echo "No stale Pages deployments to cancel"
+        fi
+
     - name: Deploy
       id: deployment
       uses: actions/deploy-pages@v4
-      timeout-minutes: 30
-      with:
-        timeout: 1800000
