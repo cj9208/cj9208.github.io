@@ -32,15 +32,6 @@ showLightDarkModeMenu = true
 
 unsafe = true
 
-
-[markup.goldmark.extensions.passthrough]
-
-enable = true
-
-[markup.goldmark.extensions.passthrough.delimiters]
-block = [['\[', '\]'], ['$$', '$$']]
-inline = [['\(', '\)'], ['$', '$']]
-
 [[menu.main]]
 name = "About"
 url = "/about/"
