@@ -16,10 +16,8 @@ Welcome to my personal blog.
 I write about:
 
 - [Artificial Intelligence]({{< relref "./blog/AI_study/_index.md" >}})
-- [Career Development]({{< relref "./blog/career_development/_index.md" >}})
+- [AI-Era Engineering Careers]({{< relref "./blog/ai_era_engineering_careers/_index.md" >}})
 - [Communication]({{< relref "./blog/communication/_index.md" >}})
 - [Investment]({{< relref "./blog/investment/_index.md" >}})
-- [Organizational Behavior]({{< relref "./blog/organizational_behavior/_index.md" >}})
+- [Systems, Incentives, and Governance]({{< relref "./blog/systems_and_governance/_index.md" >}})
 - [Study Notes]({{< relref "./blog/study-notes/_index.md" >}})
-
-
