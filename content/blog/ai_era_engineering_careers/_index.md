@@ -1,7 +1,7 @@
 ---
 title: "AI-Era Engineering Careers"
 date: 2026-07-18T10:01:28+08:00
-lastmod: 2026-08-08T15:04:09+08:00
+lastmod: 2026-08-08T21:35:22+08:00
 draft: false
 
 categories:
@@ -28,6 +28,8 @@ slug: "career-development"
 * [编码向左，工程向右：AI时代程序员的生存突围]({{< relref "./编码向左-工程向右-AI时代程序员的生存突围.md" >}})
 * [走出「工单驱动」的无意识退化：软件工程中的达克效应与技术破产]({{< relref "./走出工单驱动的无意识退化-软件工程中的达克效应与技术破产.md" >}})
 * [大模型 FDE 深度解析：价值方程与产业现实]({{< relref "./大模型FDE深度解析-价值方程与产业现实.md" >}})
+* [祛魅 FDE：软件工程第一性原理、演进史与商业剪刀]({{< relref "./祛魅FDE-软件工程第一性原理-演进史与商业剪刀.md" >}})
+* [FDE 商业实操：工程型咨询、期望博弈与高毛利扩张]({{< relref "./FDE商业实操-工程型咨询-期望博弈与高毛利扩张.md" >}})
 
 ## Engineering Method
 * [The State Machine of Technical Research: Balancing Exploration and Bounded Execution]({{< relref "./The-State-Machine-of-Technical-Research-Balancing-Exploration-and-Bounded-Execution.md" >}})
