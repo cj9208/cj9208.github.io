@@ -2,7 +2,7 @@
 title: "From Board Games to Reasoning Agents: The Evolution of Reinforcement Learning in Large Language Models"
 shorttitle: "From Board Games to Reasoning Agents"
 date: 2026-08-06T00:28:29+08:00
-lastmod: 2026-08-06T00:28:29+08:00
+lastmod: 2026-08-09T09:14:59+08:00
 draft: false
 
 categories:
@@ -543,6 +543,6 @@ As emphasized in recent empirical retrospectives [Bian, 2026], model scale alone
 ### References
 
 * **[XYZ AI Lab, 2026]** XYZ AI Lab. *[Bounded Exploration in AI4AI System Optimization](https://xyz-lab.ai/blogs/ai4ai-at-scale/assets/bounded-exploration-ai4ai-system-optimization.pdf)*. Technical Report, 2026.
-* **[Bian, 2026]** Bian, J. *[Entering the LLM Battlefield at Forty: Launch Notes from XYZ AI Lab (四十岁，重新进入大模型战场 — XYZ AI Lab 发布手记)](https://www.google.com/search?q=https://mp.weixin.qq.com/s/aJ76DXjjmMqJhWf0pATHJw)*. Official Blog Post, July 2026.
+* **[Bian, 2026]** Bian, J. *[Entering the LLM Battlefield at Forty: Launch Notes from XYZ AI Lab (四十岁，重新进入大模型战场 — XYZ AI Lab 发布手记)](https://mp.weixin.qq.com/s/aJ76DXjjmMqJhWf0pATHJw)*. Official Blog Post, July 2026.
 
 ---
