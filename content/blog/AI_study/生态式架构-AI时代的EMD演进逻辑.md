@@ -1,7 +1,7 @@
 ---
 title: "生态式架构：AI 时代的 EMD 演进逻辑"
 date: 2026-07-19T11:12:51+08:00
-lastmod: 2026-07-19T11:12:51+08:00
+lastmod: 2026-08-09T09:39:51+08:00
 draft: false
 
 categories:
@@ -14,7 +14,7 @@ tags:
 slug: "eco-architecture-ai-emd-evolution"
 ---
 
-在之前的两篇 《AI Coding 的防御性进化：平台化、业务解耦与结构的自然生长》和 《文艺复兴：从 Linux 老派教条看 AI 时代的函数开发》探讨中，我们分别从仓库的空间隔离与函数的刚性契约两个视角，为大模型时代的软件工程打造了一套静态的“防爆服”。通过划定物理沙盒，我们切断了大模型的爆炸半径；通过戴上强类型的“手铐”，我们锁死了单次 Tool Calling 的参数幻觉。
+在之前的两篇 《[AI Coding 的防御性进化：平台化、业务解耦与结构的自然生长](https://cj9208.github.io/blog/ai_study/ai-coding-evolution/)》和 《[文艺复兴：从 Linux 老派教条看 AI 时代的函数开发](https://cj9208.github.io/blog/ai_study/linux-revival-ai-functions/)》探讨中，我们分别从仓库的空间隔离与函数的刚性契约两个视角，为大模型时代的软件工程打造了一套静态的“防爆服”。通过划定物理沙盒，我们切断了大模型的爆炸半径；通过戴上强类型的“手铐”，我们锁死了单次 Tool Calling 的参数幻觉。
 
 然而，在实际的工业级落地中，如果系统仅仅停留在静态的防线内，很快就会引发一场新型的工程危机。
 

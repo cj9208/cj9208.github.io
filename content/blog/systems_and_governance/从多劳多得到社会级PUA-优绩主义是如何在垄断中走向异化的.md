@@ -1,7 +1,7 @@
 ﻿---
 title: '从"多劳多得"到"社会级PUA"：优绩主义是如何在垄断中走向异化的？'
 date: 2026-07-18T10:01:28+08:00
-lastmod: 2026-08-08T14:27:50+08:00
+lastmod: 2026-08-09T09:43:17+08:00
 draft: false
 
 categories:
@@ -15,8 +15,8 @@ slug: "meritocracy-to-social-pua"
 ---
 
 > **前置阅读关联：**
-> * 《回旋镖掠过头顶：我们为什么需要福利社会》
-> * 《底线重塑：为什么给底层发钱不会被通胀"吃掉"？》
+> * 《[回旋镖掠过头顶：我们为什么需要福利社会](https://cj9208.github.io/blog/systems_and_governance/why-we-need-welfare-state/)》
+> * 《[底线重塑：为什么给底层发钱不会被通胀"吃掉"？](https://cj9208.github.io/blog/systems_and_governance/why-ubi-wont-cause-inflation/)》
 >
 >
 > 在上述两篇文章，我们讲解了为什么要福利主义，和福利措施当下的一个主流看法：UBI（无条件基本收入）。这里我们在探讨福利主义和优绩主义并不冲突，反而是相得益彰。

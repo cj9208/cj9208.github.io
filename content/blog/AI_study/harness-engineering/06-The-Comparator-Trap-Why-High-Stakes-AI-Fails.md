@@ -1,7 +1,7 @@
 ---
 title: "The Comparator Trap: Why High-Stakes AI Fails"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-15T09:00:00+08:00
+lastmod: 2026-08-09T09:39:51+08:00
 draft: false
 
 description: "In the current generative AI landscape, most development teams are inadvertently stuck in an open-loop mindset. Prompt engineering and context engineering, regardless of how meticulously detailed they are, function as open-loop systems. They operate exactly like a traditional toaster: you turn a dial to three minutes, and the heating coils activate blindly. The toaster possesses no internal feedback mechanism to know if your bread is perfectly golden or actively catching fire; it simply executes its pre-set instructions without checking the actual state of the environment."
@@ -31,10 +31,10 @@ Large Language Models are, by definition, probabilistic generators subject to pr
 For detailed research on agent harnesses, refer to the following studies:
 *   *Agent Harness Engineering - A Survey*
 *   *From Prompts to Autopilot: Why "Harness Engineering" is the True Key to LLM Reliability*
-*   *The Algorithm of Compute: Why Modern Agent Harnesses Focus 80% of Their Design on Context Management*
-*   *Beyond the Echo Chamber: Engineering Resilient LLM Agent Harnesses*
-*   *The Systems Engineering of LLM Context Management*
-*   *Harness as an OS: Architectural Musings on Reasonix*
+*   *[The Algorithm of Compute: Why Modern Agent Harnesses Focus 80% of Their Design on Context Management](https://cj9208.github.io/blog/ai_study/harness-engineering/the-algorithm-of-compute-why-modern-agent-harnesses-focus-80-of-their-design-on-context-management/)*
+*   *[Beyond the Echo Chamber: Engineering Resilient LLM Agent Harnesses](https://cj9208.github.io/blog/ai_study/harness-engineering/beyond-the-echo-chamber-engineering-resilient-llm-agent-harnesses/)*
+*   *[The Systems Engineering of LLM Context Management](https://cj9208.github.io/blog/ai_study/harness-engineering/the-systems-engineering-of-llm-context-management/)*
+*   *[Harness as an OS: Architectural Musings on Reasonix](https://cj9208.github.io/blog/ai_study/harness-engineering/harness-as-os-reasonix/)*
 
 > 📂 **Attachment:** `2026-6-28-Jack-The Agent Harness Framework.pptx` *(0.18MB)*
 

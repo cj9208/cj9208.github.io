@@ -1,7 +1,7 @@
 ---
 title: "Google的重工业转型之路：AI 军备竞赛下的资本异化与帝国梦醒"
 date: 2026-07-19T00:03:35+08:00
-lastmod: 2026-08-08T15:04:09+08:00
+lastmod: 2026-08-09T09:39:51+08:00
 draft: false
 
 categories:
@@ -14,7 +14,7 @@ tags:
 slug: "google-heavy-industry-transformation"
 ---
 
-> 本篇是《神话的黄昏：谷歌“技术官僚主义”的二十年暗线》与《深度解构：谷歌 AGI 转型阵痛与帝国异化史》的后续，试图去分析，一个重工业化的 Google 的文化会变成什么样？
+> 本篇是《[神话的黄昏：谷歌“技术官僚主义”的二十年暗线](https://cj9208.github.io/blog/systems_and_governance/google-technical-bureaucracy/)》与《[深度解构：谷歌 AGI 转型阵痛与帝国异化史](https://cj9208.github.io/blog/systems_and_governance/google-agi-transformation/)》的后续，试图去分析，一个重工业化的 Google 的文化会变成什么样？
 
 ## 前言
 
@@ -136,7 +136,7 @@ slug: "google-heavy-industry-transformation"
 
 ### 一、 终极追问：如果 AI 的成本在未来暴降 100 倍？
 
-> 假设的来源：《算力经济学：从历史沙盘推演 AI 的百倍通缩终局》
+> 假设的来源：《[算力经济学：从历史沙盘推演 AI 的百倍通缩终局](https://cj9208.github.io/blog/ai_study/compute-economics-deflation/)》
 
 在推演完这一整套冰冷的重工业逻辑后，任何一个坚定的技术乐观主义者都会提出一个极其合理的反驳：
 

@@ -1,7 +1,7 @@
 ---
 title: '48小时周均工时悖论：工作时间长 $\neq$ 产出高'
 date: 2026-08-02T17:37:14+08:00
-lastmod: 2026-08-08T14:27:50+08:00
+lastmod: 2026-08-09T09:43:17+08:00
 draft: false
 
 categories:
@@ -18,10 +18,10 @@ slug: "48-hour-workweek-paradox"
 
 **以下是我之前思考的正确做法：**
 
-* **职场的“分布式共生”：** 从博弈论的 Tit-for-Tat 到技术团队的系统架构（高效的小组分工写作架构）
-* **混沌中的信任重构：** 从“拜占庭将军”到企业通信架构（如何通过技术和信任提高管理带宽）
-* **从“多劳多得”到“社会级PUA”：** 优绩主义是如何在垄断中走向异化的？（社会层面的福利保底制度，免除打工人的恐惧内卷）
-* **架构性内耗的终局：** 从大罢工深度解构三星的系统性溃疡（从利益对齐的角度解释架构不好，内耗就会加剧）
+* **[职场的“分布式共生”：从博弈论的 Tit-for-Tat 到技术团队的系统架构](https://cj9208.github.io/blog/systems_and_governance/distributed-symbiosis-tit-for-tat/)**（高效的小组分工写作架构）
+* **[混沌中的信任重构：从“拜占庭将军”到企业通信架构](https://cj9208.github.io/blog/systems_and_governance/byzantine-trust-reconstruction/)**（如何通过技术和信任提高管理带宽）
+* **[从“多劳多得”到“社会级PUA”：优绩主义是如何在垄断中走向异化的？](https://cj9208.github.io/blog/systems_and_governance/meritocracy-to-social-pua/)**（社会层面的福利保底制度，免除打工人的恐惧内卷）
+* **[架构性内耗的终局：从大罢工深度解构三星的系统性溃疡](https://cj9208.github.io/blog/systems_and_governance/samsung-systemic-ulcer/)**（从利益对齐的角度解释架构不好，内耗就会加剧）
 
 ---
 
@@ -42,11 +42,11 @@ slug: "48-hour-workweek-paradox"
 ## 一、 度量错配（Metrics Mismatch）与全社会级 Ticket-Driven 运动
 
 > **关联思考（组织管理无能，进而采取工单驱动的工作模式带来的危害）：**
-> * 走出“工单驱动”的无意识退化：软件工程中的达克效应与技术破产 
+> * [走出“工单驱动”的无意识退化：软件工程中的达克效应与技术破产](https://cj9208.github.io/blog/ai_era_engineering_careers/dunning-kruger-ticket-driven/) 
 > 
 > **及为什么这样的模式不会消失：**
-> * 终极的管理学悖论：当指标变成目标，便是灾难的开始
-> * 规则的盲区与权力的算盘：为什么“烂指标”永远在现实中借尸还魂？
+> * [终极的管理学悖论：当指标变成目标，便是灾难的开始](https://cj9208.github.io/blog/systems_and_governance/goodhart-law-management/)
+> * [规则的盲区与权力的算盘：为什么“烂指标”永远在现实中借尸还魂？](https://cj9208.github.io/blog/systems_and_governance/goodhart-law-power/)
 > 
 
 在工业时代的泰勒制（Taylorism）管理中，劳动力的产出与物理在场时间、体力投入呈高度线性相关，因此“工时”是极为精准的**投入指标（Input Metrics）**。然而，在依赖大脑前额叶进行高阶决策、架构设计、逻辑推演的现代高认知行业中，这种管理逻辑陷入了严重的度量错配。
@@ -89,7 +89,7 @@ slug: "48-hour-workweek-paradox"
 
 系统在不断生产自己的低效排泄物，并强制征用微观个体的健康资产去清理这些排泄物。这种忙碌，是组织架构走向无序熵增的典型表征。
 
-> **注：** 即使是 Google 这样注重技术的公司，“消防员”也会以某种形式存在，即组织只考核技术的高大上，而不考核维护和架构的鲁棒性。详见：[深度解构：谷歌 AGI 转型阵痛与帝国异化史]
+> **注：** 即使是 Google 这样注重技术的公司，“消防员”也会以某种形式存在，即组织只考核技术的高大上，而不考核维护和架构的鲁棒性。详见：[深度解构：谷歌 AGI 转型阵痛与帝国异化史](https://cj9208.github.io/blog/systems_and_governance/google-agi-transformation/)
 
 ---
 

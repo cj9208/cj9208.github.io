@@ -1,7 +1,7 @@
 ---
 title: "文艺复兴：从 Linux 老派教条看 AI 时代的函数开发"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-08-02T17:33:26+08:00
+lastmod: 2026-08-09T09:39:51+08:00
 draft: false
 
 description: "在[《AI Coding 的防御性进化：平台化、业务解耦与结构的自然生长》]({{< relref \"./AI-Coding的防御性进化-平台化-业务解耦与结构的自然生长.md\" >}})中，我们讨论了 AI 时代 repository（代码仓库）的设计和管理。本文将进一步讨论在 AI 时代，具体函数的编写方法。读者可以参考以下背景资料："
@@ -16,7 +16,7 @@ slug: "linux-revival-ai-functions"
 ---
 在[《AI Coding 的防御性进化：平台化、业务解耦与结构的自然生长》]({{< relref "./AI-Coding的防御性进化-平台化-业务解耦与结构的自然生长.md" >}})中，我们讨论了 AI 时代 repository（代码仓库）的设计和管理。本文将进一步讨论在 AI 时代，具体函数的编写方法。读者可以参考以下背景资料：
 
-* **The Comparator Trap: Why High-Stakes AI Fails**（关于如何用确定性工程管控大模型的学习笔记）
+* **[The Comparator Trap: Why High-Stakes AI Fails](https://cj9208.github.io/blog/ai_study/harness-engineering/the-comparator-trap-why-high-stakes-ai-fails/)**（关于如何用确定性工程管控大模型的学习笔记）
 * **Basics of the Unix Philosophy**（Linux/Unix 哲学）
 
 在 Code Agent（代码智能体）狂飙突进的今天，开发者们正沉迷于一场关于“灵活性”的军备竞赛。我们频繁地优化 Prompt，试图用自然语言去驯服大模型，赋予它在复杂业务场景中长袖善舞的能力。
