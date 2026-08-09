@@ -19,10 +19,11 @@ description: Restore references that lost their links during content migration. 
 1. **扫描失效链接**：找出所有 `google.com/search` 占位、空链接、裸 `[标题]` 无 URL 等。
 2. **构建站点**：先 `hugo --gc --minify` 生成 `public/`（标题反查依赖已构建产物）。
 3. **标题反查**：找出正文/Reference 里以纯文本出现的其他文章标题（无链接的潜在引用），输出候选报告。
-4. **人工审阅**：检查候选报告，剔除误报（泛化短语、section 标题、自身章节标题撞名），生成 `candidates.json`。
-5. **批量加链**：对审阅后的候选批量包裹链接并更新 `lastmod`。
-6. **手动兜底**：批量脚本无法处理的（bold 分拆标题、连字符标题、行号漂移）用 `edit` 工具逐个处理。
-7. **验证**：重跑扫描脚本 + `hugo` 构建，确认无残留。
+4. **缺失文章清单**：找出"被引用但站内无对应文章"的标题（漏迁移），生成 `missing-references.md` 供排查。
+5. **人工审阅**：检查候选报告，剔除误报（泛化短语、section 标题、自身章节标题撞名），生成 `candidates.json`。
+6. **批量加链**：对审阅后的候选批量包裹链接并更新 `lastmod`。
+7. **手动兜底**：批量脚本无法处理的（bold 分拆标题、连字符标题、行号漂移）用 `edit` 工具逐个处理。
+8. **验证**：重跑扫描脚本 + `hugo` 构建，确认无残留。
 
 ## 脚本
 
@@ -36,14 +37,17 @@ hugo --gc --minify
 # 3. 标题反查，输出 references_report.json / references_report.txt 到当前目录
 python .opencode\skills\restore-missing-links\scripts\find_references.py
 
-# 4. 人工审阅 references_report.txt，生成 candidates.json：
+# 4. 缺失文章清单（漏迁移排查），输出 missing-references.md 到仓库根目录
+python .opencode\skills\restore-missing-links\scripts\find_missing_references.py
+
+# 5. 人工审阅 references_report.txt，生成 candidates.json：
 #    [{"source": "content/blog/xxx.md", "line": 12, "title": "<完整标题>", "url": "https://cj9208.github.io/blog/..."}]
 #    line 为 body 相对行号（front matter 之后），仅作提示，匹配失败时脚本会全文件回退搜索
 
-# 5. 批量加链 + 更新 lastmod
+# 6. 批量加链 + 更新 lastmod
 python .opencode\skills\restore-missing-links\scripts\apply_links.py candidates.json
 
-# 6. 验证：重跑 1 和 3，确认 0 残留；再 hugo 构建确认成功
+# 7. 验证：重跑 1、3 和 4，确认 0 残留；再 hugo 构建确认成功
 ```
 
 ## 加链规则（apply_links.py）
