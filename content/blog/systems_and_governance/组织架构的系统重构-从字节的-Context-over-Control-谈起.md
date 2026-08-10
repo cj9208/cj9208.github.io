@@ -1,7 +1,7 @@
 ---
 title: '组织架构的系统重构：从字节的"Context over Control"谈起'
 date: 2026-07-19T00:03:35+08:00
-lastmod: 2026-08-09T09:39:51+08:00
+lastmod: 2026-08-10T09:41:54+08:00
 draft: false
 
 categories:
@@ -62,7 +62,7 @@ slug: "organizational-restructuring-context-over-control"
 
 当中层因为死结一而选择防御，同时又面对顶层施加的“必须深入一线”的刚性考核时，他们唯一的出路就是转嫁压力。组织物理学决定了压力会沿着阻力最小的路径流动，这股高压电流会毫无阻挡地全额灌给阻值最低的基层。结果，“深入一线”恶化为高频打卡的“表演式下沉”，中层为了刷存在感频繁强行插手细节，严重消耗了一线的执行带宽与线程上下文切换成本（Context Switch Overhead）。
 
-> **注：** 《从“违法套利”到“制度威慑”：解构劳动维权中的制度鸿沟与破局之路》一文分析了中国的劳资博弈为什么劳动者如此被动，以及有什么解决办法。
+> **注：** 《[从“违法套利”到“制度威慑”：解构劳动维权中的制度鸿沟与破局之路](https://cj9208.github.io/blog/systems_and_governance/chinese_government/labor-rights-deterrence/)》一文分析了中国的劳资博弈为什么劳动者如此被动，以及有什么解决办法。
 
 ### 死结三：“日志驱动型”形式主义与体面的谎言（符号欺骗的闭环终局）
 
@@ -76,7 +76,7 @@ slug: "organizational-restructuring-context-over-control"
 
 形式主义，从来不是因为大家变蠢了，而是大型组织在“无法建立真实信任”又“必须维持表面和平”时，系统为了不撕破脸而支付的巨额通信过载（Protocol Overhead）。
 
-> **注：** 论中国微观治理中的官僚博弈与“防御性共谋”
+> **注：** [论中国微观治理中的官僚博弈与“防御性共谋”](https://cj9208.github.io/blog/systems_and_governance/chinese_government/defensive-collusion-bureaucracy/)
 
 ---
 
