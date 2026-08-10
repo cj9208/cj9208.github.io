@@ -30,6 +30,7 @@ slug: "career-development"
 * [大模型 FDE 深度解析：价值方程与产业现实]({{< relref "./大模型FDE深度解析-价值方程与产业现实.md" >}})
 * [祛魅 FDE：软件工程第一性原理、演进史与商业剪刀]({{< relref "./祛魅FDE-软件工程第一性原理-演进史与商业剪刀.md" >}})
 * [FDE 商业实操：工程型咨询、期望博弈与高毛利扩张]({{< relref "./FDE商业实操-工程型咨询-期望博弈与高毛利扩张.md" >}})
+* [从原子的深渊到微观的围城：为什么我不建议高智商大脑重仓半导体？]({{< relref "./从原子的深渊到微观的围城-为什么我不建议高智商大脑重仓半导体.md" >}})
 
 ## Engineering Method
 * [The State Machine of Technical Research: Balancing Exploration and Bounded Execution]({{< relref "./The-State-Machine-of-Technical-Research-Balancing-Exploration-and-Bounded-Execution.md" >}})
