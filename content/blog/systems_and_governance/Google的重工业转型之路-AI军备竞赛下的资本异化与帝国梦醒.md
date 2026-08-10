@@ -1,7 +1,7 @@
 ---
 title: "Google的重工业转型之路：AI 军备竞赛下的资本异化与帝国梦醒"
 date: 2026-07-19T00:03:35+08:00
-lastmod: 2026-08-09T09:39:51+08:00
+lastmod: 2026-08-10T12:06:50+08:00
 draft: false
 
 categories:
@@ -28,7 +28,7 @@ slug: "google-heavy-industry-transformation"
 
 ## 一、 重工业的刚性切片：以三星电子为镜
 
-> 详见文章：《从原子的深渊到微观的围城：为什么我不建议高智商大脑重仓半导体？》
+> 详见文章：《[从原子的深渊到微观的围城：为什么我不建议高智商大脑重仓半导体？](https://cj9208.github.io/blog/ai_era_engineering_careers/semiconductor-career-low-dimension-trap/)》
 
 想要看清谷歌未来的轨迹，我们必须先看一眼传统半导体与硬件重工业的冷酷标本——韩国三星电子（Samsung Electronics）。作为常年处于周期风暴中心的硬件巨头，三星的底层基因和管理逻辑，正在成为谷歌高层案头唯一的教科书。
 
