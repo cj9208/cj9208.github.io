@@ -136,7 +136,24 @@ def build_plan(local_records, rows):
     return plan
 
 
-def apply_plan(plan, record_path, lines, dry_run=False):
+def update_summary(lines, migrated, unmigrated):
+    """Update the summary bullet lines at the top of the record file.
+
+    Matches lines like:
+      - 已迁移到本仓库：72 篇
+      - 未迁移（待安排，标题已加粗）：53 篇
+    """
+    for i, line in enumerate(lines):
+        m = re.match(r'^(.*已迁移到本仓库：)(\d+)(\s*篇.*)$', line)
+        if m:
+            lines[i] = '%s%d%s' % (m.group(1), migrated, m.group(3))
+            continue
+        m = re.match(r'^(.*未迁移.*：)(\d+)(\s*篇.*)$', line)
+        if m:
+            lines[i] = '%s%d%s' % (m.group(1), unmigrated, m.group(3))
+
+
+def apply_plan(plan, record_path, lines, rows, dry_run=False):
     """Update local front-matter date and record row status."""
     LASTMOD = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).strftime('%Y-%m-%dT%H:%M:%S+08:00')
     # group plan by record row line so we only touch each row once
@@ -186,6 +203,10 @@ def apply_plan(plan, record_path, lines, dry_run=False):
         out('  local %s : date -> %s (lastmod -> %s)' % (p, item['new_date'], LASTMOD))
 
     if not dry_run:
+        # recompute migrated/unmigrated counts from updated row statuses
+        migrated = sum(1 for r in rows if r['status'] == '已迁移') + len(row_updates)
+        unmigrated = len(rows) - migrated
+        update_summary(lines, migrated, unmigrated)
         write_utf8(record_path, '\n'.join(lines))
     return len(row_updates)
 
@@ -216,7 +237,7 @@ def main():
         out('No newly-migrated articles matched. Nothing to do.')
         return
     out('--- plan (dry-run) ---' if not args.apply else '--- applying ---')
-    n = apply_plan(matched_unmigrated, record_path, lines, dry_run=not args.apply)
+    n = apply_plan(matched_unmigrated, record_path, lines, rows, dry_run=not args.apply)
     out('rows to update: %d' % n)
     if not args.apply:
         out('Run with --apply to write changes.')

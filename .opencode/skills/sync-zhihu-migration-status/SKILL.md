@@ -45,6 +45,7 @@ python .opencode\skills\sync-zhihu-migration-status\scripts\sync_migration.py --
 3. **更新记录文件**：
    - 该行「迁移状态」由 `未迁移` 改为 `已迁移`
    - 去掉标题的 `**` 加粗
+   - **更新头部摘要行**：`- 已迁移到本仓库：N 篇` 与 `- 未迁移（待安排，标题已加粗）：N 篇` 同步为最新计数
 
 ### 4. 验证
 
