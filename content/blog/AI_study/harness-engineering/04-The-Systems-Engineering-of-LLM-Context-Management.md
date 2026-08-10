@@ -1,7 +1,7 @@
 ---
 title: "The Systems Engineering of LLM Context Management"
-date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-15T09:00:00+08:00
+date: 2026-06-23T22:59:40+08:00
+lastmod: 2026-08-10T14:06:48+08:00
 draft: false
 
 description: "To keep an LLM agent from drowning in its own conversation history during an autonomous development loop, a modern harness must treat the context window like a structured system memory layout."

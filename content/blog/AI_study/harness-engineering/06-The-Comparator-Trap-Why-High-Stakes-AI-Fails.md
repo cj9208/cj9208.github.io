@@ -1,7 +1,7 @@
 ---
 title: "The Comparator Trap: Why High-Stakes AI Fails"
-date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-08-09T09:39:51+08:00
+date: 2026-06-26T23:28:56+08:00
+lastmod: 2026-08-10T14:06:48+08:00
 draft: false
 
 description: "In the current generative AI landscape, most development teams are inadvertently stuck in an open-loop mindset. Prompt engineering and context engineering, regardless of how meticulously detailed they are, function as open-loop systems. They operate exactly like a traditional toaster: you turn a dial to three minutes, and the heating coils activate blindly. The toaster possesses no internal feedback mechanism to know if your bread is perfectly golden or actively catching fire; it simply executes its pre-set instructions without checking the actual state of the environment."

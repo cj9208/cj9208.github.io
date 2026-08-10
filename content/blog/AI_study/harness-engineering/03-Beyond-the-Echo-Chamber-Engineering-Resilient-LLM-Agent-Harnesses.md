@@ -1,7 +1,7 @@
 ---
 title: "Beyond the Echo Chamber: Engineering Resilient LLM Agent Harnesses"
-date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-15T09:00:00+08:00
+date: 2026-06-23T23:30:44+08:00
+lastmod: 2026-08-10T14:06:48+08:00
 draft: false
 
 description: "Moving a Large Language Model (LLM) from a conversational playground into a production-grade software system requires a fundamental paradigm shift. Naive implementations drop an LLM into an infinite loop, hand it full access to a local terminal, and expect it to self-correct when things go wrong. In production, this approach consistently collapses into confirmation bias, infinite reasoning loops, or accidental environment corruption."

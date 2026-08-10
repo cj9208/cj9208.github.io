@@ -1,7 +1,7 @@
 ---
 title: "The Algorithm of Compute: Why Modern Agent Harnesses Focus 80% of Their Design on Context Management"
-date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-15T09:00:00+08:00
+date: 2026-06-23T23:55:47+08:00
+lastmod: 2026-08-10T14:06:48+08:00
 draft: false
 
 description: "In modern AI engineering, system design has converged on a clean architectural formula:"

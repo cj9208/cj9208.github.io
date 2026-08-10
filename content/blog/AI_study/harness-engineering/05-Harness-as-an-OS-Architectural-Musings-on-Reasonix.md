@@ -1,7 +1,7 @@
 ---
 title: "Harness as an OS: Architectural Musings on Reasonix"
-date: 2026-07-15T23:51:05+08:00
-lastmod: 2026-07-15T23:51:05+08:00
+date: 2026-06-22T14:19:05+08:00
+lastmod: 2026-08-10T14:06:48+08:00
 draft: false
 
 categories:

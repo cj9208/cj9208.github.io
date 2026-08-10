@@ -1,7 +1,7 @@
 ---
 title: '组织架构的系统重构：从字节的"Context over Control"谈起'
-date: 2026-07-19T00:03:35+08:00
-lastmod: 2026-08-10T09:41:54+08:00
+date: 2026-07-03T10:43:26+08:00
+lastmod: 2026-08-10T14:06:48+08:00
 draft: false
 
 categories:

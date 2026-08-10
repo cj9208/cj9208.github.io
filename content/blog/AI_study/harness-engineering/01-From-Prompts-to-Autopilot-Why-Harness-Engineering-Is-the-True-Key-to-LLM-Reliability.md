@@ -1,7 +1,7 @@
 ---
 title: "From Prompts to Autopilot: Why \"Harness Engineering\" is the True Key to LLM Reliability"
-date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-15T09:00:00+08:00
+date: 2026-06-17T14:28:29+08:00
+lastmod: 2026-08-10T14:06:48+08:00
 draft: false
 
 description: "The AI industry is currently caught in an arms race to build the biggest, hottest engine possible. Tech giants pour billions into training next-generation large language models (LLMs), chasing the promise of raw artificial intelligence. Yet, when developers deploy these brilliant models as autonomous agents in the real world, a frustrating reality sets in: the agents confidently hallucinate, get stuck in infinite loops, or completely break down when faced with basic software errors."
