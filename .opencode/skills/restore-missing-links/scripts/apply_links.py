@@ -25,8 +25,8 @@ from datetime import datetime, timedelta, timezone
 from collections import defaultdict
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", ".."))
-QUOTE_CH = '""«»\'\u2018\u2019\u300c\u300d'
-COLON_CH = "\uff1a:—"
+QUOTE_CH = "\u201c\u201d\"\u00ab\u00bb'\u2018\u2019\u300c\u300d"
+COLON_CH = "\uff1a:\u2014"
 
 
 def pattern_for(title):

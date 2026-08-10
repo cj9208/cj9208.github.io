@@ -23,8 +23,8 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..",
 PUB = os.path.join(ROOT, "public", "blog")
 BLOG = os.path.join(ROOT, "content", "blog")
 
-QUOTE_CH = '""«»\'\u2018\u2019\u300c\u300d'
-COLON_CH = "\uff1a:—"  # ： : —
+QUOTE_CH = "\u201c\u201d\"\u00ab\u00bb'\u2018\u2019\u300c\u300d"
+COLON_CH = "\uff1a:\u2014"  # ： : —
 
 QUOTE_RE = re.compile(r'["\'\u201c\u201d\u2018\u2019\u300c\u300d\u300a\u300b《》\u3001]')
 
