@@ -1,7 +1,7 @@
 ---
 title: "Systems, Incentives, and Governance"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-08-08T15:04:09+08:00
+lastmod: 2026-08-10T09:22:42+08:00
 draft: false
 
 description: "A section on systems, incentives, trust, welfare, and governance across teams, firms, and public institutions."
@@ -59,6 +59,7 @@ slug: "organizational-behavior"
 * [张一鸣禁“蒸馏”：技术荒谬与组织必然]({{< relref "./张一鸣禁蒸馏-技术荒谬与组织必然.md" >}})
 * [破局：告别宏大对抗，用"机制设计"重塑企业治理]({{< relref "./破局-告别宏大对抗-用机制设计重塑企业治理.md" >}})
 * [论科层制体系：一套低效的分布式共识算法与组织拜占庭陷阱]({{< relref "./论科层制体系-一套低效的分布式共识算法与组织拜占庭陷阱.md" >}})
+* [从分布式系统视角，看远程办公的解构、神话与最终收敛]({{< relref "./从分布式系统视角-看远程办公的解构-神话与最终收敛.md" >}})
 
 ## Labor and Welfare
 * [48小时周均工时悖论：工作时间长 $\neq$ 产出高]({{< relref "./48小时周均工时悖论-工作时间长-neq-产出高.md" >}})
@@ -73,6 +74,7 @@ slug: "organizational-behavior"
 * [新加坡定居：是技术中产的天堂，还是极致精算的围城？]({{< relref "./新加坡定居-是技术中产的天堂还是极致精算的围城.md" >}})
 * [巨象破局：中美结构性博弈的底层逻辑与非线性出路]({{< relref "./巨象破局-中美结构性博弈的底层逻辑与非线性出路.md" >}})
 * [《"工业第一"会自动结出"科学霸权"吗？》]({{< relref "./工业第一会自动结出科学霸权吗.md" >}})
+* [建制化精英的致命回旋：为什么全球最聪明的人总在接周期的盘？]({{< relref "./建制化精英的致命回旋-为什么全球最聪明的人总在接周期的盘.md" >}})
 
 ## China Branch
 * [Chinese_government：治理、财政、医疗与国家能力]({{< relref "./Chinese_government/_index.md" >}})
