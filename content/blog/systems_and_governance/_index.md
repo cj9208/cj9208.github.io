@@ -1,7 +1,7 @@
 ---
 title: "Systems, Incentives, and Governance"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-08-10T09:22:42+08:00
+lastmod: 2026-08-10T15:11:58+08:00
 draft: false
 
 description: "A section on systems, incentives, trust, welfare, and governance across teams, firms, and public institutions."
@@ -31,6 +31,8 @@ slug: "organizational-behavior"
 - `Political Economy`：国家比较、产业政策、宏观约束、地缘与人口结构
 
 如果你是第一次进入这个目录，建议先从 `Systems and Governance` 读起，再进入 `Organizational Systems` 与 `Labor and Welfare`，最后进入 `Political Economy` 与中国治理分支。
+
+> **🚀 新读者入口：** 若想先用最短时间建立整个目录的全局框架，建议先读[《极简组织行为学与管理学概论：协议、博弈与系统的次优演化》]({{< relref "./极简组织行为学与管理学概论-协议博弈与系统的次优演化.md" >}})。这篇总纲以「增量 vs 存量」「间断平衡」为主线，把下面各条分线串成一条完整的阅读路径，读完后可按需深入任意子文章。
 
 ## Systems and Governance
 * [混沌中的信任重构：从拜占庭将军到企业通信架构]({{< relref "./混沌中的信任重构-从拜占庭将军到企业通信架构.md" >}})
