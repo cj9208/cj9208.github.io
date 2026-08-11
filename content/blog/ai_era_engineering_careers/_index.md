@@ -1,7 +1,7 @@
 ---
 title: "AI-Era Engineering Careers"
 date: 2026-07-18T10:01:28+08:00
-lastmod: 2026-08-08T21:35:22+08:00
+lastmod: 2026-08-11T18:25:43+08:00
 draft: false
 
 categories:
@@ -42,3 +42,4 @@ slug: "career-development"
 ## AI Economics
 * [重力回归：企业 ROI 约束与 AI '确定性账单'的控盘人]({{< relref "./重力回归-企业ROI约束与AI确定性账单的控盘人.md" >}})
 * [AI 时代的商业困境：从分发共赢到"答案经济"的结构性矛盾]({{< relref "./AI时代的商业困境-从分发共赢到答案经济的结构性矛盾.md" >}})
+* [钟摆的宿命：从 DeepSeek 的极限黑客流，看 AI 时代的"契约分离"]({{< relref "./钟摆的宿命-从DeepSeek的极限黑客流-看AI时代的契约分离.md" >}})
