@@ -35,6 +35,7 @@ slug: "career-development"
 ## Engineering Method
 * [The State Machine of Technical Research: Balancing Exploration and Bounded Execution]({{< relref "./The-State-Machine-of-Technical-Research-Balancing-Exploration-and-Bounded-Execution.md" >}})
 * [秩序之重：从系统演进看"变通"的代价]({{< relref "./秩序之重-从系统演进看-变通-的代价.md" >}})
+* [编程语言的终局：从"人肉码农"到"意图流片"]({{< relref "./编程语言的终局-从人肉码农到意图流片.md" >}})
 
 ## Org Context
 * [祛魅与自省：大厂技术管理退化录与防异化指南]({{< relref "./祛魅与自省-大厂技术管理退化录与防异化指南.md" >}})
