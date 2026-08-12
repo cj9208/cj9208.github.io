@@ -1,7 +1,7 @@
 ---
 title: "人治的重力场：企业同构、ACL 的破产与系统重构的死局"
 date: 2026-08-12T13:49:28+08:00
-lastmod: 2026-08-12T13:49:28+08:00
+lastmod: 2026-08-12T14:04:23+08:00
 draft: false
 
 categories:
@@ -470,7 +470,7 @@ graph TD
 
 ### 三、 预适应（Exaptation）与非对称凸性：DeepSeek 模式的终局映射
 
-引用前文《钟摆的宿命：从 DeepSeek 的极限黑客流，看 AI 时代的“契约分离”》，DeepSeek 团队在大模型推理成本上的突破，并非源于对未来的神圣预知，而是其母公司（幻方量化）在高频交易场景中打磨的**元工具**（对显存带宽、NVLink 拓扑、PTX 汇编的极致压榨），在 AI 行业转入“精打细算”的相变期时，恰好与新的物理 Spec 产生了契合。
+引用前文《[钟摆的宿命：从 DeepSeek 的极限黑客流，看 AI 时代的“契约分离”](https://cj9208.github.io/blog/ai_era_engineering_careers/pendulum-contract-separation/)》，DeepSeek 团队在大模型推理成本上的突破，并非源于对未来的神圣预知，而是其母公司（幻方量化）在高频交易场景中打磨的**元工具**（对显存带宽、NVLink 拓扑、PTX 汇编的极致压榨），在 AI 行业转入“精打细算”的相变期时，恰好与新的物理 Spec 产生了契合。
 
 这种“在旧场景积累元工具，在未知新场景被瞬间激活”的现象，即为演化生物学中的“预适应”（Exaptation）。
 

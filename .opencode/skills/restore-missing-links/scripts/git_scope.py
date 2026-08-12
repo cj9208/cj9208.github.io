@@ -5,7 +5,7 @@ Scope sources:
   - worktree : working-tree / index changes (git status --porcelain)
   - commits  : commits on the current branch not present on origin (git log origin/<branch>..HEAD)
   - stash    : stashed changes (git stash list + git stash show)
-  - auto     : union of all three above (default)
+  - auto     : union of worktree + commits only (default; stash NOT included)
 
 Returned paths are repo-relative with POSIX separators (e.g. "content/blog/xxx.md")
 so they compare cleanly with the relpath values the scanning scripts already emit.
@@ -91,7 +91,7 @@ def changed_files(root, scope="auto"):
     """Return set of repo-relative paths (POSIX) with local-only changes.
 
     scope:
-      auto      - union of worktree + unpushed commits + stash (default)
+      auto      - union of worktree + unpushed commits only (default; stash excluded)
       worktree  - uncommitted working-tree / index changes only
       commits   - committed but not pushed to origin only
       stash     - stashed changes only
@@ -105,7 +105,7 @@ def changed_files(root, scope="auto"):
         files |= _worktree_files(root)
     if scope in ("auto", "commits"):
         files |= _unpushed_files(root, _branch(root))
-    if scope in ("auto", "stash"):
+    if scope in ("stash",):
         files |= _stash_files(root)
     return files
 

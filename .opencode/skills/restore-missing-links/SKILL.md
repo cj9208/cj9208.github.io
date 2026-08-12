@@ -18,10 +18,10 @@ description: Restore references that lost their links during content migration. 
 
 所有扫描脚本（`scan_broken_links.py`、`find_references.py`、`find_missing_references.py`）都接受 `--scope` 参数：
 
-- **`--scope auto`（默认）**：只扫描"还没有 push 到 origin 的本地改动"，范围 = 三类的并集：
-  - `stash`：stash 里暂存的改动（`git stash list` + `git stash show`）。
+- **`--scope auto`（默认）**：只扫描"还没有 push 到 origin 的本地改动"，范围 = 两类的并集：
   - `commits`：已 commit 但未 push 的提交（`git log origin/<branch>..HEAD`）。
   - `worktree`：工作区/暂存区的未提交改动（`git status --porcelain`）。
+  - stash 里的改动**默认不扫**；确有必要时用 `--scope stash` 单独指定。
 - **`--scope full`（全量）**：扫描 `content/blog` 下全部文章，无视 git 状态。
 - 也可精确指定某一类来源：`--scope stash`、`--scope commits`、`--scope worktree`。
 
