@@ -14,12 +14,29 @@ description: Restore references that lost their links during content migration. 
 - section 落地页（`_index.md` 渲染页，标题短如"投资"）会污染标题搜索，必须排除。
 - 每处引用匹配的判定：文章完整标题的归一化片段（引号 `「」`/`""`/`《》`、空白差异全部归一），主标题片段作为兜底。
 
+## 扫描范围参数（scope）
+
+所有扫描脚本（`scan_broken_links.py`、`find_references.py`、`find_missing_references.py`）都接受 `--scope` 参数：
+
+- **`--scope auto`（默认）**：只扫描"还没有 push 到 origin 的本地改动"，范围 = 三类的并集：
+  - `stash`：stash 里暂存的改动（`git stash list` + `git stash show`）。
+  - `commits`：已 commit 但未 push 的提交（`git log origin/<branch>..HEAD`）。
+  - `worktree`：工作区/暂存区的未提交改动（`git status --porcelain`）。
+- **`--scope full`（全量）**：扫描 `content/blog` 下全部文章，无视 git 状态。
+- 也可精确指定某一类来源：`--scope stash`、`--scope commits`、`--scope worktree`。
+
+行为约定：
+- **除非用户明确说"全量"**（`--scope full`），一律用默认 `auto`，只处理本地未 push 的改动，避免把已上线文章的存量问题拖进本次改动。
+- 已存在文章的标题清单（标题反查的 inventory、已知标题集合）始终从全量内容构建，这样改动文件引用到任何文章（含未改动的）都能被找到。
+- 过滤依据是 `git_scope.changed_files(ROOT, scope)` 返回的仓库相对路径（POSIX `/` 分隔）。Git 输出已通过 `-c core.quotepath=false` 保留原始 UTF-8 中文路径。
+- 扫描脚本对 `content/`、`static/` 之外的文件（如 `zhihu-column-*.md`、`_index.md`、`progress.md`）自然无感。
+
 ## 工作流
 
-1. **扫描失效链接**：找出所有 `google.com/search` 占位、空链接、裸 `[标题]` 无 URL 等。
+1. **扫描失效链接**：找出所有 `google.com/search` 占位、空链接、裸 `[标题]` 无 URL 等（默认只扫本地未 push 改动）。
 2. **构建站点**：先 `hugo --gc --minify` 生成 `public/`（标题反查依赖已构建产物）。
-3. **标题反查**：找出正文/Reference 里以纯文本出现的其他文章标题（无链接的潜在引用），输出候选报告。
-4. **缺失文章清单**：找出"被引用但站内无对应文章"的标题（漏迁移），生成 `missing-references.md` 供排查。
+3. **标题反查**：找出正文/Reference 里以纯文本出现的其他文章标题（无链接的潜在引用），输出候选报告（默认只扫本地未 push 改动）。
+4. **缺失文章清单**：找出"被引用但站内无对应文章"的标题（漏迁移），生成 `missing-references.md` 供排查（默认只扫本地未 push 改动）。
 5. **人工审阅**：检查候选报告，剔除误报（泛化短语、section 标题、自身章节标题撞名），生成 `candidates.json`。
 6. **批量加链**：对审阅后的候选批量包裹链接并更新 `lastmod`。
 7. **手动兜底**：批量脚本无法处理的（bold 分拆标题、连字符标题、行号漂移）用 `edit` 工具逐个处理。
@@ -28,6 +45,9 @@ description: Restore references that lost their links during content migration. 
 ## 脚本
 
 ```bash
+# 扫描范围：默认 auto（只扫未 push 到 origin 的本地改动）；全量用 --scope full
+# 也可以精确指定来源：--scope stash / --scope commits / --scope worktree
+
 # 1. 扫描失效/占位链接
 python .opencode\skills\restore-missing-links\scripts\scan_broken_links.py
 
@@ -93,8 +113,9 @@ python .opencode\skills\restore-missing-links\scripts\apply_links.py candidates.
 
 ## 执行要求
 
-1. 先跑 `scan_broken_links.py` 和 `find_references.py` 拿到全量事实，再动手改。
-2. 候选清单必须人工/受控审阅，剔除误报后再批量应用，禁止无审阅全自动改写。
-3. 批量脚本的 FAIL 逐条处理，不要遗漏。
-4. 改完后验证：扫描 0 残留 + `hugo` 构建成功。
-5. 被引用但站内已无对应文章（迁移丢失）的标题，保留文字并询问用户是否加缺失标注，不要编造链接。
+1. **默认 scope=auto**：只扫描还没有 push 到 origin 的本地改动（stash + 未 push 提交 + 工作区改动）。除非用户明确说"全量"（`--scope full`），否则不要全量扫描。
+2. 先跑 `scan_broken_links.py` 和 `find_references.py` 拿到全量事实，再动手改。
+3. 候选清单必须人工/受控审阅，剔除误报后再批量应用，禁止无审阅全自动改写。
+4. 批量脚本的 FAIL 逐条处理，不要遗漏。
+5. 改完后验证：扫描 0 残留 + `hugo` 构建成功。
+6. 被引用但站内已无对应文章（迁移丢失）的标题，保留文字并询问用户是否加缺失标注，不要编造链接。

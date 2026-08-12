@@ -4,7 +4,10 @@
 Extracts title-like text from article bodies (《...》 segments, Reference-section
 list items), normalizes it, and keeps those that match NO existing article title.
 
-Usage: python .opencode/skills/restore-missing-links/scripts/find_missing_references.py [output.md]
+Usage: python .opencode/skills/restore-missing-links/scripts/find_missing_references.py [output.md] [--scope auto|full]
+  --scope auto (default): only scan files with local-only changes (stash /
+    unpushed commits / working tree); --scope full: scan all content.
+  The known-article-title set is always built from the full repo.
 Output: missing-references.md in the repo root (or the given path, so you never
 clobber a manually curated copy)
 """
@@ -16,6 +19,8 @@ from collections import OrderedDict
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", ".."))
 BLOG = os.path.join(ROOT, "content", "blog")
+
+from git_scope import changed_files  # noqa: E402
 
 QUOTE_RE = re.compile(r'["\'\u201c\u201d\u2018\u2019\u300c\u300d\u300a\u300b《》\u3001]')
 CJK = re.compile(r"[\u4e00-\u9fff]")
@@ -96,10 +101,29 @@ KNOWN_BOOKS = {
 
 missing = OrderedDict()  # key: norm -> {title, refs:[(source,line,ctx)]}
 
+args = sys.argv[1:]
+scope = "auto"
+out_path = None
+i = 0
+while i < len(args):
+    a = args[i]
+    if a.startswith("--scope="):
+        scope = a.split("=", 1)[1]
+    elif a in ("--scope", "-s"):
+        if i + 1 < len(args):
+            scope = args[i + 1]
+            i += 1
+    elif not a.startswith("--"):
+        out_path = a
+    i += 1
+changed = changed_files(ROOT, scope)
+
 for f in glob.glob(os.path.join(BLOG, "**", "*.md"), recursive=True):
     if os.path.basename(f) in ("_index.md", "progress.md"):
         continue
-    rel = os.path.relpath(f, ROOT)
+    rel = os.path.relpath(f, ROOT).replace("\\", "/")
+    if changed is not None and rel not in changed:
+        continue
     text = open(f, encoding="utf-8-sig").read()
     self_title = front_title(text)
     self_norm = norm(self_title)
@@ -188,6 +212,6 @@ for i, (title, cn, refs, t) in enumerate(external, 1):
     loc = "; ".join("%s (L%d)" % (os.path.relpath(s, ROOT), ln) for s, ln, _c in refs)
     lines.append("| %d | %s | %s | %s |" % (i, t, title.replace("|", "\\|"), loc.replace("|", "\\|")))
 
-out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "missing-references.md")
+out = out_path or os.path.join(ROOT, "missing-references.md")
 open(out, "w", encoding="utf-8", newline="").write("\n".join(lines) + "\n")
-print("wrote", out, "| article:", len(internal), "| uncertain:", len(uncertain), "| external:", len(external))
+print("scope:", scope, "| wrote", out, "| article:", len(internal), "| uncertain:", len(uncertain), "| external:", len(external))

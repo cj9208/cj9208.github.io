@@ -11,17 +11,23 @@ Approach (no LLM needed):
 
 Prereq: run `hugo --gc --minify` first so `public/` is up to date.
 
-Usage: python .opencode/skills/restore-missing-links/scripts/find_references.py
+Usage: python .opencode/skills/restore-missing-links/scripts/find_references.py [--scope auto|full]
+  --scope auto (default): only scan files with local-only changes (stash /
+    unpushed commits / working tree); --scope full: scan all content.
+  The article-title inventory is always built from the full site.
 Output: references_report.json / references_report.txt in the CWD
 """
 import os
 import re
 import json
+import sys
 from collections import defaultdict
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", ".."))
 PUB = os.path.join(ROOT, "public", "blog")
 BLOG = os.path.join(ROOT, "content", "blog")
+
+from git_scope import changed_files  # noqa: E402
 
 QUOTE_CH = "\u201c\u201d\"\u00ab\u00bb'\u2018\u2019\u300c\u300d"
 COLON_CH = "\uff1a:\u2014"  # ： : —
@@ -99,6 +105,14 @@ def pattern_for(title):
 
 
 def main():
+    scope = "auto"
+    args = sys.argv[1:]
+    for i, a in enumerate(args):
+        if a.startswith("--scope="):
+            scope = a.split("=", 1)[1]
+        elif a in ("--scope", "-s") and i + 1 < len(args):
+            scope = args[i + 1]
+    changed = changed_files(ROOT, scope)
     inventory = build_inventory()
     targets = [inv for inv in inventory.values() if len(inv["norm_full"]) >= 5]
     hits = []
@@ -107,7 +121,9 @@ def main():
             if not fn.endswith(".md") or fn in ("_index.md", "progress.md"):
                 continue
             full = os.path.join(dp, fn)
-            rel = os.path.relpath(full, ROOT)
+            rel = os.path.relpath(full, ROOT).replace("\\", "/")
+            if changed is not None and rel not in changed:
+                continue
             text = open(full, encoding="utf-8-sig").read()
             body = body_only(text)
             src_norm = src_title_norm(text)
@@ -149,6 +165,7 @@ def main():
         for h in real[:2]:
             out.append("    ctx : %s" % h["context"])
     open("references_report.txt", "w", encoding="utf-8").write("\n".join(out))
+    print("scope:", scope)
     print("inventory targets:", len(targets))
     print("raw hits:", len(hits))
     print("unlinked groups:", len(groups))
