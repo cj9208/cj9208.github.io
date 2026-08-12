@@ -1,7 +1,7 @@
 ---
 title: "Systems, Incentives, and Governance"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-08-10T15:11:58+08:00
+lastmod: 2026-08-12T13:49:28+08:00
 draft: false
 
 description: "A section on systems, incentives, trust, welfare, and governance across teams, firms, and public institutions."
@@ -47,6 +47,9 @@ slug: "organizational-behavior"
 * [论迹不论心：用系统级法治，拆解互联网巨头的"安全伪善"]({{< relref "./论迹不论心-用系统级法治-拆解互联网巨头的安全伪善.md" >}})
 * [赛博地主的哭穷戏法：被黑箱算法"格式化"的中国实体与消费尊严]({{< relref "./赛博地主的哭穷戏法-被黑箱算法格式化的中国实体与消费尊严.md" >}})
 * [赛博丛林的 Runtime 审计：中国商业短视内卷的底层控制流与异化标本]({{< relref "./赛博丛林的Runtime审计-中国商业短视内卷的底层控制流与异化标本.md" >}})
+* [个体风控与系统鉴权：“社交平台虚假身份欺诈”的 Post-Mortem 复盘]({{< relref "./个体风控与系统鉴权-社交平台虚假身份欺诈的Post-Mortem复盘.md" >}})
+* [声明式与过程式：系统工程视角下“人治”与“法治”的四大差异]({{< relref "./声明式与过程式-系统工程视角下人治与法治的四大差异.md" >}})
+* [人治的重力场：企业同构、ACL 的破产与系统重构的死局]({{< relref "./人治的重力场-企业同构-ACL的破产与系统重构的死局.md" >}})
 
 ## Organizational Systems
 * [职场的分布式共生：从博弈论的Tit-for-Tat到技术团队的系统架构]({{< relref "./职场的分布式共生-从博弈论的Tit-for-Tat到技术团队的系统架构.md" >}})
