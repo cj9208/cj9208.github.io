@@ -29,6 +29,7 @@ slug: "ai-study"
 * [A First-Principles Architecture for Agent Routing and Safety Harnesses]({{< relref "./A-First-Principles-Architecture-for-Agent-Routing-and-Safety-Harnesses.md" >}})
 * [The Death of the Wrapper: How Agentic Post-Training Is Reshaping AI Architecture]({{< relref "./The-Death-of-the-Wrapper-How-Agentic-Post-Training-Is-Reshaping-AI-Architecture.md" >}})
 * [From Board Games to Reasoning Agents: The Evolution of Reinforcement Learning in Large Language Models]({{< relref "./From-Board-Games-to-Reasoning-Agents-The-Evolution-of-Reinforcement-Learning-in-Large-Language-Models.md" >}})
+* [The-Search-Pathology-Why-Scaling-Test-Time-Compute-Can-Degrade-Code-Agent-Quality]({{< relref "./The-Search-Pathology-Why-Scaling-Test-Time-Compute-Can-Degrade-Code-Agent-Quality.md" >}})
 
 ## 参考资料
 * rag-orchestration-architecture
