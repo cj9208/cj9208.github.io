@@ -1,7 +1,7 @@
 ---
 title: "Progress"
 date: 2026-07-16T14:17:00+08:00
-lastmod: 2026-07-22T20:20:19+08:00
+lastmod: 2026-08-15T21:52:55+08:00
 draft: true
 
 description: "Current progress and next steps for the RAG orchestration architecture note set."
@@ -55,7 +55,7 @@ Status meanings used here:
 | Area | Status | Main gap | Next move |
 | --- | --- | --- | --- |
 | Collection structure | done | none | keep stable |
-| Intention recognition | strong | lacks a compact routing decision table | add one small decision table for proceed, clarify, stronger model, and human handoff |
+| Intention recognition | strong | routing decision table added to `CH01`; thresholds still need calibration | calibrate thresholds with labeled data |
 | Request orchestration | strong | confidence policy and validation rules still need formalization | define confidence policy and testable action rules |
 | RAG internal decomposition | strong | implementation path still broad | choose one reference stack |
 
@@ -88,12 +88,13 @@ What is solid:
 - Clarification-first routing is explained well.
 - The control boundary before retrieval is strong and practical.
 - The chapter already includes a worked ambiguous-request example.
+- The compact routing decision table and worked routing cases now live in `CH01`, so the chapter is implementation-guiding.
 
 What is missing:
-- A compact decision table that makes the routing behavior easy to implement.
+- Threshold bands still need calibration against labeled data.
 
 How to close it:
-- Add one small decision table for proceed, clarify, stronger model, and human handoff.
+- Calibrate threshold bands with labeled examples from the golden sets.
 
 Review question:
 - Is this chapter already implementation-guiding, or is it still too conceptual?
@@ -109,12 +110,11 @@ What is solid:
 - Dedicated `CH02_*` runtime notes now define objects, control loop behavior, and safety/confidence policy separately.
 
 What is missing:
-- Confidence thresholds and action rules are still not formalized.
-- Validation policy is present directionally, but not yet turned into a compact decision contract.
+- The compact confidence and validation decision tables are now split across `CH01` (routing) and `CH02_03` (execution, validation), but the first-version thresholds still need calibration against labeled data.
 
 How to close it:
-- Define the confidence policy that turns signals into route actions.
-- Add a compact validation decision view for accept, retry, clarify, and escalate.
+- Calibrate threshold bands with labeled examples.
+- Add worked decision cases and review them against the golden sets.
 
 Review question:
 - What confidence and validation rules are still needed to make the orchestration contract operational?
@@ -145,8 +145,8 @@ Review question:
 
 | Area | Status | Main gap | Next move |
 | --- | --- | --- | --- |
-| Confidence policy | strong | thresholds and calibration are still not yet tight | calibrate thresholds and add worked decision cases |
-| Testing and evaluation | missing | no concrete test matrix | add a dedicated evaluation note |
+| Confidence policy | strong | decision tables exist, but thresholds still need calibration | calibrate thresholds with labeled data and review worked cases |
+| Testing and evaluation | partial | dedicated note exists, but golden sets and thresholds are not yet populated | build the first golden sets and run the matrix |
 | Operational policy | partial | alert thresholds and trigger rules are not fixed | define monitor and intervention rules |
 
 ### Confidence Policy
@@ -156,14 +156,17 @@ Status: strong
 What is solid:
 - The notes correctly identify confidence as central to routing and fallback.
 - The runtime contract now defines signal groups, confidence states, and a first-version action decision table.
+- The compact routing decision table and worked routing cases live in `CH01`.
+- Compact execution and validation decision tables now exist in `CH02_03`.
+- A compact validation decision table for accept, retry, clarify, and escalate now exists.
+- Worked decision cases across routing, execution, and validation were added.
 
 What is missing:
 - Exact thresholds still need calibration.
-- The policy still needs worked example cases and evaluation data.
+- The policy still needs evaluation against labeled data.
 
 How to close it:
-- Add worked decision cases across routing, execution, and validation.
-- Calibrate threshold bands with labeled examples.
+- Use the golden sets from the testing note to calibrate threshold bands.
 - Add a short note on drift review.
 
 Review question:
@@ -171,20 +174,18 @@ Review question:
 
 ### Testing And Evaluation
 
-Status: missing
+Status: partial
 
 What is solid:
-- The need for testing is already recognized in the architecture notes.
+- A dedicated testing note (`CH04_Testing-and-Evaluation.md`) now defines the test matrix, golden-case structure, acceptance thresholds, and regression strategy.
 
 What is missing:
-- No concrete test matrix.
-- No golden-case categories.
-- No acceptance thresholds.
+- The golden sets themselves do not exist yet.
+- Thresholds are first-version defaults, not calibrated values.
 
 How to close it:
-- Add a dedicated testing note.
-- Split it into routing tests, clarification tests, permission tests, retrieval tests, and escalation tests.
-- Define what counts as a pass for each class of behavior.
+- Build the first routing, clarification, permission, retrieval, and escalation golden sets.
+- Run the matrix once and record baseline results.
 
 Review question:
 - What are the minimum tests required before this architecture can be treated as operationally credible?
@@ -211,9 +212,9 @@ Review question:
 
 ## Immediate Next 3
 
-- Add one compact confidence decision table.
-- Add one compact validation decision table.
-- Write one dedicated testing and evaluation note.
+- Build the first routing golden set and record a baseline precision number.
+- Build the first permission golden set with a zero-leak enforcement check.
+- Build the first clarification golden set and run it against the compact decision tables.
 
 ## Deferred Or Not Now
 
@@ -247,4 +248,7 @@ Review question:
 - The folder should optimize for architecture clarity first, publication second.
 - The next improvements should favor implementation-guiding detail, not broader abstraction.
 - The runtime contract is now split into focused `CH02_*` subchapters instead of one oversized runtime note.
+- The confidence and validation policies are now expressed as compact decision tables: routing in `CH01`, execution and validation in `CH02_03`.
+- A dedicated testing and evaluation note (`CH04_Testing-and-Evaluation.md`) now defines the minimum test matrix and acceptance thresholds.
+- The Director-Level interview files were moved out of this note set to the repo-level `notes/interview/` folder; `_index.md` no longer references them.
 - Interview-oriented material is secondary and should be improved only after a meaningful architecture upgrade.

@@ -1,7 +1,7 @@
 ---
 title: "RAG Orchestration Architecture"
 date: 2026-07-16T14:17:00+08:00
-lastmod: 2026-07-22T20:20:19+08:00
+lastmod: 2026-08-15T21:52:55+08:00
 draft: true
 
 description: "A structured note set on intention recognition, request orchestration, governed execution, and the system-design principles behind them."
@@ -30,9 +30,8 @@ messy request
 ## Recommended Reading Order
 
 1. Read the architecture notes to understand the design itself.
-2. Read the main interview guide to practice the director-level story.
-3. Use the deep dives only for follow-up depth.
-4. Read the principles and philosophy notes when you want the broader worldview behind the design.
+2. Use the deep dives only for follow-up depth.
+3. Read the principles and philosophy notes when you want the broader worldview behind the design.
 
 ## Architecture Notes
 
@@ -55,27 +54,12 @@ These break the RAG subsystem into narrower internal components.
 - [`CH03_03_Retrieval-Layer.md`]({{< relref "./CH03_03_Retrieval-Layer.md" >}})
 - [`CH03_04_Grounded-Answering-Layer.md`]({{< relref "./CH03_04_Grounded-Answering-Layer.md" >}})
 
-## Interview Set
+## Execution Readiness Notes
 
-These are the pages to use for interview prep or leadership-facing explanation.
+These notes turn the design into something reviewable and testable.
 
-1. [`Director-Level-Interview-Guide.md`]({{< relref "./Director-Level-Interview-Guide.md" >}})
-   Main interview script and primary source of truth.
-2. [`Director-Level-Interview-Cheat-Sheet.md`]({{< relref "./Director-Level-Interview-Cheat-Sheet.md" >}})
-   Short rehearsal page for fast review.
-3. [`Director-Level-Mock-Interview-QA.md`]({{< relref "./Director-Level-Mock-Interview-QA.md" >}})
-   Practice page for likely interview questions, spoken answer patterns, common faults, and recovery moves.
-4. [`Director-Level-Interview-Guide-Orchestration-Case.md`]({{< relref "./Director-Level-Interview-Guide-Orchestration-Case.md" >}})
-   Deep dive on orchestration, runtime control, governance, and domain scoping.
-5. [`Director-Level-Interview-Guide-RAG-Case.md`]({{< relref "./Director-Level-Interview-Guide-RAG-Case.md" >}})
-   Deep dive on upstream conditioning, RAG economics, answer quality, and downstream simplicity.
-
-Practical usage:
-
-- memorize the main guide
-- skim the cheat sheet before interviews
-- use the mock Q&A page to practice spoken answers, transitions, and weak framing recovery
-- use the companion pages only when follow-up questions go deeper into one thread
+- [`CH04_Testing-and-Evaluation.md`]({{< relref "./CH04_Testing-and-Evaluation.md" >}})
+  Defines the minimum test matrix, golden-case structure, and acceptance thresholds for the orchestration and RAG behavior.
 
 ## Principles And Philosophy Notes
 
@@ -97,7 +81,7 @@ These pages explain the broader engineering worldview behind the architecture.
 
 ## What This Set Does Not Yet Fully Define
 
-- formal confidence calibration rules
-- concrete confidence thresholds and calibrated action rules
-- a full testing matrix with thresholds and golden sets
-- detailed implementation choices for one production reference stack
+- calibration of the first-version confidence thresholds against labeled data
+- a reference stack chosen as the single default implementation path
+- detailed per-domain golden sets for routing, permission, and retrieval
+- full production alert thresholds for latency, failure, and escalation drift

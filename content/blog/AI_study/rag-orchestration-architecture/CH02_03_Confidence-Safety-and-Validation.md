@@ -1,7 +1,7 @@
 ---
 title: "Confidence, Safety, and Validation"
 date: 2026-07-20T09:43:56+08:00
-lastmod: 2026-07-20T09:59:39+08:00
+lastmod: 2026-08-15T21:52:55+08:00
 draft: true
 
 description: "How the orchestration runtime stays safe and decides whether to proceed, clarify, retry, reject, or escalate."
@@ -32,6 +32,8 @@ Related notes:
 - [`CH02_Request-Orchestration-Layer.md`]({{< relref "./CH02_Request-Orchestration-Layer.md" >}})
 - [`CH02_01_Runtime-Objects.md`]({{< relref "./CH02_01_Runtime-Objects.md" >}})
 - [`CH02_02_State-Machine-and-Control-Loop.md`]({{< relref "./CH02_02_State-Machine-and-Control-Loop.md" >}})
+- [`CH01_Intention-Recognition-Layer.md`]({{< relref "./CH01_Intention-Recognition-Layer.md" >}})
+- [`CH04_Testing-and-Evaluation.md`]({{< relref "./CH04_Testing-and-Evaluation.md" >}})
 
 ## Why This Design Exists
 
@@ -376,18 +378,37 @@ What it prevents:
 - clarifying when the real issue is an internal failure or policy block
 - using one flat rule for both low-risk lookups and high-risk actions
 
-### First-Version Decision Table
+### Compact Decision Tables
 
-| Situation | Typical signal pattern | Action |
+For a first implementable version, the policy is expressed as a small set of compact decision tables.
+
+The routing decision table lives in [`CH01_Intention-Recognition-Layer.md`]({{< relref "./CH01_Intention-Recognition-Layer.md" >}}), because routing is an intention-layer decision.
+
+The execution decision table below governs what happens after a capability runs.
+
+All tables are read the same way:
+
+- the first matching row wins
+- rule-driven facts can override confidence
+- action outcome may be `reject` or `handoff` even when confidence looks usable
+
+#### Execution Decision Table
+
+This table governs how routing reacts after a capability execution attempt.
+
+| # | Condition (all must hold) | Action |
 | --- | --- | --- |
-| Clear interpretation | strong deterministic match, good candidate gap, low ambiguity | `proceed` |
-| Weak but usable interpretation | acceptable confidence, low-risk read-only path, no material conflict | `proceed_conservative` |
-| User-resolvable ambiguity | multiple close candidates, missing business constraint, low policy risk | `clarify` |
-| Weak interpretation but still recoverable | low confidence, no clear user-facing clarification yet, stronger-model budget available | `stronger_model` |
-| Recoverable execution issue | timeout or transient backend issue, retry budget available | `retry` |
-| Capability path underperforming | result weak, alternate capability available | `switch_capability` |
-| Unsafe or disallowed request | permission denied, policy violation, injection pattern, off-scope request | `reject` |
-| Repeated unresolved uncertainty | clarification, reinterpretation, or retry budgets exhausted | `handoff_human` |
+| 1 | permission denied or policy violation during execution | `reject` |
+| 2 | execution retry budget exhausted and no alternate capability | `handoff_human` or `failed` |
+| 3 | transient backend or dependency failure, retry budget available | `retry` |
+| 4 | result weak and an alternate capability exists | `switch_capability` |
+| 5 | result incomplete because a user-supplied constraint is missing | `clarify` |
+| 6 | result grounded and satisfies validation rules | `proceed` to final outcome |
+| 7 | anything else not covered above | `handoff_human` |
+
+These tables are the compact form of the earlier prose policy.
+
+They exist so that the orchestration layer can be reviewed as one explicit control artifact instead of as scattered narrative rules.
 
 ### Conservative Proceed Rule
 
@@ -441,6 +462,30 @@ What it prevents:
 - shipping an uncalibrated policy that looks rigorous on paper but behaves inconsistently in practice
 - confusing policy design with real operational readiness
 
+### Worked Decision Case
+
+The routing-level worked cases now live in [`CH01_Intention-Recognition-Layer.md`]({{< relref "./CH01_Intention-Recognition-Layer.md" >}}).
+
+The case below exercises the execution decision table in this note.
+
+#### Transient Backend Failure
+
+Signals:
+
+- execution returns `dependency_timeout`
+- retry budget: 1 of 2 used
+- alternate capability: none
+
+Decision trace:
+
+- row 1: not a policy violation, skip
+- row 2: retry budget not exhausted, skip
+- row 3 matches
+
+Result: `retry`.
+
+This worked case should be turned into a reusable golden case in the testing note rather than staying only as prose.
+
 ## Minimal Validation Rules
 
 Before marking a request `completed`, the harness should verify at least:
@@ -460,3 +505,45 @@ What it prevents:
 - returning plausible but weak outputs too early
 - confusing backend success with user-facing correctness
 - ending the request before policy, grounding, or completeness have actually been checked
+
+## Compact Validation Decision Table
+
+The validation stage needs one compact decision contract so acceptance is not decided ad hoc.
+
+It is read like the confidence tables: first matching row wins, and policy checks dominate quality judgment.
+
+| # | Condition (all must hold) | Action |
+| --- | --- | --- |
+| 1 | policy compliance check fails or permission context changed during execution | `reject` |
+| 2 | retry budget exhausted and result still fails validation | `handoff_human` or `failed` |
+| 3 | grounding required but grounding coverage is below threshold | `retry` or `switch_capability` if available, else `handoff_human` |
+| 4 | result is missing required fields for the task type | `clarify` if the user can supply them, else `handoff_human` |
+| 5 | result matches the selected route, passes policy, and satisfies grounding and completeness | `accept` |
+| 6 | result is partially useful, low-risk, read-only, and the missing part is clearly labeled | `partial_answer` |
+| 7 | anything else not covered above | `handoff_human` |
+
+Validation signals that feed this table:
+
+- route match: does the outcome type match the selected route
+- policy compliance: did all required policy checks pass
+- grounding coverage: share of the answer traceable to retrieved evidence
+- completeness: are required fields present for the task type
+- budget status: how many retries and escalations remain
+
+The output of this table is one of:
+
+- `accept`
+- `partial_answer`
+- `retry`
+- `switch_capability`
+- `clarify`
+- `reject`
+- `handoff_human`
+- `failed`
+
+The `partial_answer` option exists so that low-risk read-only cases can return useful information with an explicit missing-part label instead of forcing a full handoff.
+
+Validation and confidence are separate concerns:
+
+- confidence decides which path to take next
+- validation decides whether the result already produced is good enough to return

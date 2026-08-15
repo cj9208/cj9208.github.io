@@ -1,7 +1,7 @@
 ---
 title: "Preface"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-15T09:00:00+08:00
+lastmod: 2026-08-15T21:52:55+08:00
 draft: true
 
 description: "This design started from a concrete RAG problem."
@@ -250,7 +250,7 @@ So the full architecture has two layers of flow:
 
 ## Reading Guide
 
-| If you want to understand... | Start with... |
+| if you want to understand... | Start with... |
 | --- | --- |
 | the origin of the design | `CH00_Preface.md` |
 | the intention-handling starting point | `CH01_Intention-Recognition-Layer.md` |
@@ -260,6 +260,7 @@ So the full architecture has two layers of flow:
 | enrichment, chunking, and indexing inside RAG | `CH03_02_Enrichment-Chunking-Indexing-Layer.md` |
 | retrieval inside RAG | `CH03_03_Retrieval-Layer.md` |
 | grounded answering inside RAG | `CH03_04_Grounded-Answering-Layer.md` |
+| how the whole design is tested and evaluated | `CH04_Testing-and-Evaluation.md` |
 
 ## Chapter Logic
 
@@ -272,6 +273,7 @@ So the full architecture has two layers of flow:
 | `CH03_02` | enrichment, chunking, and indexing inside RAG |
 | `CH03_03` | retrieval inside RAG |
 | `CH03_04` | grounded answering inside RAG |
+| `CH04` | testing and evaluation of the orchestration and RAG behavior |
 
 ## Final Note
 

@@ -1,7 +1,7 @@
 ---
 title: "Intention Recognition Layer"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-15T09:00:00+08:00
+lastmod: 2026-08-15T21:52:55+08:00
 draft: true
 
 description: "The intention recognition layer is the control layer that sits between raw user input and retrieval/reasoning."
@@ -316,6 +316,113 @@ Use when:
 Action:
 
 - escalate with structured context
+
+### Compact Routing Decision Table
+
+The four routes above reduce to one compact decision table for implementation.
+
+The table consumes the current signal pattern and returns one action.
+
+It should be read as:
+
+- the first matching row wins
+- rule-driven facts can override confidence
+- the outcome may be `reject` or `handoff` even when confidence looks usable
+
+| # | Condition (all must hold) | Action |
+| --- | --- | --- |
+| 1 | permission denied, policy violation, injection pattern, or off-scope request | `reject` |
+| 2 | any retry, clarification, reinterpretation, or escalation budget is exhausted | `handoff_human` |
+| 3 | missing required constraint that only the user can supply | `clarify` |
+| 4 | user-resolvable ambiguity present (multiple close candidates, low policy risk) | `clarify` |
+| 5 | high-risk or write action and confidence is not strong | `stronger_model` |
+| 6 | low confidence and a stronger-model budget is still available | `stronger_model` |
+| 7 | strong evidence, low ambiguity, acceptable confidence | `proceed` |
+| 8 | acceptable confidence but not strong, low-risk read-only path | `proceed_conservative` |
+| 9 | anything else not covered above | `handoff_human` |
+
+Row order is deliberate:
+
+- rows 1 and 2 are hard constraints that dominate every confidence judgment
+- rows 3 and 4 prefer user clarification over expensive reasoning
+- rows 5 and 6 reserve stronger models for risky or genuinely weak cases
+- rows 7 and 8 are the normal cheap-success paths
+- row 9 is the safe default that prevents silent or unhandled cases
+
+Notes:
+
+- row 1 (`reject`) is normally decided by the upstream safety gate in [`CH02_03_Confidence-Safety-and-Validation.md`]({{< relref "./CH02_03_Confidence-Safety-and-Validation.md" >}}) before interpretation; it is listed here only so the routing contract stays complete.
+- this table is the intention-layer routing contract
+- the execution-stage decision table and the validation decision table live in `CH02_03`
+
+### Worked Routing Cases
+
+The following cases show how the routing table applies in practice.
+
+#### Case 1: Ambiguous Entity, Low Risk
+
+Signals:
+
+- deterministic top match: 0.78
+- top-2 gap: 0.04
+- model confidence: 0.68
+- ambiguity flags: `multiple_candidate_entities`
+- task risk: low, action type: read-only
+
+Decision trace:
+
+- row 1: not a policy or injection violation, skip
+- row 2: budgets not exhausted, skip
+- row 3: the missing piece is which entity, and the user can supply it, so row 3 applies
+
+Result: `clarify`.
+
+#### Case 2: Off-Scope Request
+
+Signals:
+
+- safety gate returns `refuse`
+- matched signals include `unsupported_general_advice_request`
+
+Decision trace:
+
+- row 1 matches immediately
+
+Result: `reject`.
+
+#### Case 3: Clear Exact Lookup, High Confidence
+
+Signals:
+
+- deterministic exact match: 0.96
+- top-2 gap: 0.31
+- model confidence: 0.9
+- ambiguity flags: none
+- task risk: low, action type: read-only
+
+Decision trace:
+
+- rows 1 through 6 do not match
+- row 7 matches
+
+Result: `proceed`.
+
+#### Case 4: Repeated Ambiguity After Budgets
+
+Signals:
+
+- clarification turns: 2 of 2 used
+- reinterpretations: 2 of 2 used
+- user never confirmed a candidate
+
+Decision trace:
+
+- row 1: no policy violation, skip
+- row 2 matches because a budget is exhausted
+
+Result: `handoff_human`.
+
+These worked cases should be turned into reusable golden cases in the testing note rather than staying only as prose.
 
 ### Stage 6: Clarification Strategy
 
