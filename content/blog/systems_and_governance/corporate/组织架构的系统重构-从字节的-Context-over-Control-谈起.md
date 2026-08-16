@@ -1,7 +1,7 @@
 ---
 title: '组织架构的系统重构：从字节的"Context over Control"谈起'
 date: 2026-07-03T10:43:26+08:00
-lastmod: 2026-08-10T14:06:48+08:00
+lastmod: 2026-08-16T09:20:32+08:00
 draft: false
 
 categories:
@@ -35,7 +35,7 @@ slug: "organizational-restructuring-context-over-control"
 团队与团队、上下级之间不再频繁开会对齐微观的“How”，而是对齐明确的接口契约（输入、输出与量化成功指标）。只要契约未被破坏，内部实现完全由一线团队黑盒自主运行，从而将系统消耗在“通信开销”上的成本降到最低。
 
 > **详见之前的文章：**
-> * [职场的“分布式共生”：从博弈论的 Tit-for-Tat 到技术团队的系统架构](https://cj9208.github.io/blog/systems_and_governance/distributed-symbiosis-tit-for-tat/) （好的架构是什么样的）
+> * [职场的“分布式共生”：从博弈论的 Tit-for-Tat 到技术团队的系统架构](https://cj9208.github.io/blog/ai_era_engineering_careers/distributed-symbiosis-tit-for-tat/) （好的架构是什么样的）
 > * [混沌中的信任重构：从“拜占庭将军”到企业通信架构](https://cj9208.github.io/blog/systems_and_governance/byzantine-trust-reconstruction/) （好架构和坏架构的对比）
 > 
 > 

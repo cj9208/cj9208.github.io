@@ -1,7 +1,7 @@
 ---
 title: "科学家退场与工程收权：Google 路线明朗化与 AI 产业的组织解耦"
 date: 2026-08-07T13:54:30+08:00
-lastmod: 2026-08-09T09:39:51+08:00
+lastmod: 2026-08-16T09:20:32+08:00
 draft: false
 
 categories:
@@ -14,7 +14,7 @@ tags:
 slug: "google-scientist-exit-org-decoupling"
 ---
 
-> 本篇是《[神话的黄昏：谷歌“技术官僚主义”的二十年暗线](https://cj9208.github.io/blog/systems_and_governance/google-technical-bureaucracy/)》、《[深度解构：谷歌 AGI 转型阵痛与帝国异化史](https://cj9208.github.io/blog/systems_and_governance/google-agi-transformation/)》及《[Google的重工业转型之路：AI 军备竞赛下的资本异化与帝国梦醒](https://cj9208.github.io/blog/systems_and_governance/google-heavy-industry-transformation/)》的终局收官之作。前作梳理了谷歌从文化溃败、架构死锁到资本重工化的必然轨迹；本篇将聚焦于组织演进的最终形态——随着 Jeff Dean 等科学巨头的离场与研发权责的重构，谷歌如何完成了从“学术自留地”向“后训练工程工厂”的彻底解耦。
+> 本篇是《[神话的黄昏：谷歌“技术官僚主义”的二十年暗线](https://cj9208.github.io/blog/systems_and_governance/corporate/google-technical-bureaucracy/)》、《[深度解构：谷歌 AGI 转型阵痛与帝国异化史](https://cj9208.github.io/blog/systems_and_governance/corporate/google-agi-transformation/)》及《[Google的重工业转型之路：AI 军备竞赛下的资本异化与帝国梦醒](https://cj9208.github.io/blog/systems_and_governance/corporate/google-heavy-industry-transformation/)》的终局收官之作。前作梳理了谷歌从文化溃败、架构死锁到资本重工化的必然轨迹；本篇将聚焦于组织演进的最终形态——随着 Jeff Dean 等科学巨头的离场与研发权责的重构，谷歌如何完成了从“学术自留地”向“后训练工程工厂”的彻底解耦。
 
 ---
 
