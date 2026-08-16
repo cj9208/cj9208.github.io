@@ -1,14 +1,14 @@
 ---
 title: "生态式架构：AI 时代的 EMD 演进逻辑"
 date: 2026-07-19T11:12:51+08:00
-lastmod: 2026-08-09T09:39:51+08:00
+lastmod: 2026-08-16T10:10:00+08:00
 draft: false
 
 categories:
   - "AI Study"
 tags:
   - "EMD"
-  - "AI Architecture"
+  - "AI Infrastructure"
   - "Modular Design"
 
 slug: "eco-architecture-ai-emd-evolution"

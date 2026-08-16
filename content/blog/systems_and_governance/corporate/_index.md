@@ -1,14 +1,14 @@
 ---
 title: "企业组织与治理"
 date: 2026-08-16T09:20:32+08:00
-lastmod: 2026-08-16T09:46:34+08:00
+lastmod: 2026-08-16T10:05:00+08:00
 draft: false
 
 description: "从具体公司案例切入，解剖企业组织架构、治理机制与系统病理的集合。"
 summary: "Google、三星、字节、亚马逊、阿里等公司案例，以及外包、中台、人治、创新死局等大厂通病的系统分析。"
 
 categories:
-  - "Systems and Governance"
+  - "Organizational Systems"
 tags:
   - "Corporate Governance"
 

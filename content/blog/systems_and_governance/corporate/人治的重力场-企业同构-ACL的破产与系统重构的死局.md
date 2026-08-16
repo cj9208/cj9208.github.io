@@ -1,11 +1,11 @@
 ---
 title: "人治的重力场：企业同构、ACL 的破产与系统重构的死局"
 date: 2026-08-12T13:49:28+08:00
-lastmod: 2026-08-12T14:04:23+08:00
+lastmod: 2026-08-16T10:05:00+08:00
 draft: false
 
 categories:
-  - "Systems and Governance"
+  - "Organizational Systems"
 tags:
   - "Institutional Isomorphism"
   - "Anti-Corruption Layer"

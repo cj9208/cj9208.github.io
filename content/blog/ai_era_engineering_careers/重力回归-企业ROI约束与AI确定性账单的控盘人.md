@@ -1,13 +1,13 @@
 ---
 title: "重力回归：企业 ROI 约束与 AI '确定性账单'的控盘人"
 date: 2026-07-02T22:33:00+08:00
-lastmod: 2026-08-10T14:06:48+08:00
+lastmod: 2026-08-16T10:10:00+08:00
 draft: false
 
 categories:
   - "AI Economics"
 tags:
-  - "AI ROI"
+  - "ROI"
   - "Token Costs"
   - "Enterprise Adoption"
 

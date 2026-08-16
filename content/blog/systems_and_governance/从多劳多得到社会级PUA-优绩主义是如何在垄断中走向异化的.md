@@ -1,14 +1,14 @@
 ﻿---
 title: '从"多劳多得"到"社会级PUA"：优绩主义是如何在垄断中走向异化的？'
 date: 2026-07-01T08:59:40+08:00
-lastmod: 2026-08-10T14:06:48+08:00
+lastmod: 2026-08-16T10:10:00+08:00
 draft: false
 
 categories:
   - "Labor and Welfare"
 tags:
   - "Meritocracy"
-  - "Monopoly Rents"
+  - "Monopoly"
   - "Social Mobility"
 
 slug: "meritocracy-to-social-pua"

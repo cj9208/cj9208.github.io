@@ -102,7 +102,8 @@ fm = "title: '重资产租赁局：被\"经常性收入\"掩盖的庞氏折旧�
 5. `categories`
    - 使用较稳定、较宽泛的分类，如 `AI Study`、`Communication`、`Organizational Behavior`
 6. `tags`
-   - 使用更细粒度主题词，如 `RAG`、`AWS`、`Architecture`
+   - 使用更细粒度主题词，但**必须优先复用已有标签**，禁止自创近似同义词
+   - 完整的选择规则、命名规范与受控词表见下方「标签选择（受控词表，重要）」章节
 7. `slug`
    - 推荐添加，用于稳定、可控的 URL
    - **必须使用简洁英文**：小写字母、数字、连字符 `-` 分隔，禁止直接使用中文
@@ -119,6 +120,47 @@ fm = "title: '重资产租赁局：被\"经常性收入\"掩盖的庞氏折旧�
    | 使用 Docker 部署 Spring Boot 应用 | `deploy-springboot-docker` | 保留核心对象与部署方式 |
    | 2026 年机器学习学习路线图 | `ml-learning-roadmap` | 通用缩写 `ml`，保留语义 |
 
+## 标签选择（受控词表，重要）
+
+标签是这个博客的**受控词表**。历史上因为每篇文章都自由发挥，导致大量同义标签碎片化（如 `Trust Erosion` 与 `Trust Collapse`、`Org Design` 与 `Organizational Design`），分类索引几乎失效。**新增文章时，标签必须复用已有词，而不是发明新词。**
+
+### 步骤
+
+1. 从文章主题提炼 2~4 个英文关键词（如 `trust`、`governance`、`reward hacking`）。
+2. 逐个运行查询脚本，查看该主题是否已有标签：
+
+   ```bash
+   python .opencode\skills\add-hugo-front-matter\scripts\tag-suggest.py search trust
+   python .opencode\skills\add-hugo-front-matter\scripts\tag-suggest.py search reward hacking
+   ```
+
+3. **命中即复用**脚本返回的准确标签字符串（含大小写），不要改写、不要加后缀。
+   - 命中多个时，选语义最贴切的 1 个为核心标签，再配 1~2 个相关标签。
+4. 脚本无结果时，对照受控词表 `.opencode\skills\add-hugo-front-matter\tags-registry.md`（按领域分组）。仍无合适者，才允许新建标签。
+
+### 新建标签规则
+
+- **先确认不存在**：运行 `tag-suggest.py check "<候选标签>"`，确认没有语义相近的已有标签。
+- 英文、Title Case（每个词首字母大写）、单词间用空格：`Game Theory`、`Incentive Design`。
+- 1~3 个词；避免泛化词（`Analysis`、`Guide`、`Notes`、`Overview`）。
+- 不用标点、连字符、下划线；不用缩写（除非是通行缩写如 `AI`、`LLM`、`RAG`、`AWS`）。
+- **建完标签后，把新标签追加到 `tags-registry.md` 对应分组**，保持词表同步，供后续文章复用。
+
+### 粒度建议
+
+- 每篇 2~4 个 tags：1 个最核心主题 + 1~2 个所属领域 + （可选）1 个平台/机构/对象。
+- 不要堆砌；一个概念只用一个标签。
+
+### 反例（同义词碎片化）
+
+| ❌ 不要这样 | ✅ 应复用 | 说明 |
+|---|---|---|
+| `Trust Erosion` | `Trust Collapse` | 同义碎片 |
+| `Org Design` | `Organizational Design` | 缩写/变体 |
+| `System Architecture` | `Architecture` | 同义碎片 |
+| `AI ROI` | `ROI` | 合并进泛化标签 |
+| `KPI Distortion` | `Metric Distortion` | 同义碎片 |
+
 ## 内容结构规则
 
 1. 若文章已经有 front matter，则直接跳过，不做补齐、覆盖或规范化
@@ -132,8 +174,9 @@ fm = "title: '重资产租赁局：被\"经常性收入\"掩盖的庞氏折旧�
 1. 先读取目标文件，确认其当前没有 front matter
 2. 仅对缺少 front matter 的文件新增标准字段
 3. 若分类、标签或 slug 不明确，先给出建议并询问用户
-4. 生成 slug 时遵循"简洁英文"规则（见上文 `slug` 字段约定）：中文标题翻译为简短英文，保留核心关键词
-5. 修改后确保 markdown 结构仍然合法，front matter 位于文件最顶部
+4. 为文章选择 `tags` 前，**先运行 `tag-suggest.py search <关键词>` 查询已有标签**，命中即复用（见「标签选择（受控词表，重要）」章节）；确需新建时，按命名规则创建并追加到 `tags-registry.md`
+5. 生成 slug 时遵循"简洁英文"规则（见上文 `slug` 字段约定）：中文标题翻译为简短英文，保留核心关键词
+6. 修改后确保 markdown 结构仍然合法，front matter 位于文件最顶部
 
 ## 注意事项
 

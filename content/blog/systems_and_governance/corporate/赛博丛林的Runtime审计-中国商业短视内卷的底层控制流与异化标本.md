@@ -1,11 +1,11 @@
 ---
 title: "赛博丛林的 Runtime 审计：中国商业短视内卷的底层控制流与异化标本"
 date: 2026-06-05T21:18:15+08:00
-lastmod: 2026-08-11T20:44:11+08:00
+lastmod: 2026-08-16T10:05:00+08:00
 draft: false
 
 categories:
-  - "Systems and Governance"
+  - "Organizational Systems"
 tags:
   - "Game Theory"
   - "Business Environment"

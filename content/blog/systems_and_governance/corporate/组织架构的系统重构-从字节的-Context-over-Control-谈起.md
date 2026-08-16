@@ -1,13 +1,13 @@
 ---
 title: '组织架构的系统重构：从字节的"Context over Control"谈起'
 date: 2026-07-03T10:43:26+08:00
-lastmod: 2026-08-16T09:20:32+08:00
+lastmod: 2026-08-16T10:10:00+08:00
 draft: false
 
 categories:
   - "Organizational Systems"
 tags:
-  - "Org Design"
+  - "Organizational Design"
   - "Information Asymmetry"
   - "Management Layers"
 

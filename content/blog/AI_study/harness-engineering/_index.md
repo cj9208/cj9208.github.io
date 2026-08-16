@@ -1,13 +1,13 @@
 ---
 title: "Harness Engineering 合集"
 date: 2026-07-17T22:34:14+08:00
-lastmod: 2026-07-17T22:51:52+08:00
+lastmod: 2026-08-16T10:10:00+08:00
 draft: false
 
 categories:
   - "AI Study"
 tags:
-  - "AI"
+  - "AI Study"
   - "LLM"
   - "Harness"
 

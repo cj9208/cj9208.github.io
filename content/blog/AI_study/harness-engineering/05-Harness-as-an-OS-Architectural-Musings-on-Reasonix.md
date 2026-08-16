@@ -1,14 +1,14 @@
 ---
 title: "Harness as an OS: Architectural Musings on Reasonix"
 date: 2026-06-22T14:19:05+08:00
-lastmod: 2026-08-10T14:06:48+08:00
+lastmod: 2026-08-16T10:10:00+08:00
 draft: false
 
 categories:
   - "AI Study"
 tags:
   - "LLM"
-  - "System Architecture"
+  - "Architecture"
   - "DeepSeek"
 
 slug: "harness-as-os-reasonix"
