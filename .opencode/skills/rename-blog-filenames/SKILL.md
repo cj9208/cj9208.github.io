@@ -58,6 +58,14 @@ python .opencode\skills\rename-blog-filenames\scripts\propose-renames.py
 python .opencode\skills\rename-blog-filenames\scripts\execute-renames.py
 ```
 
+**由 `pipeline-blog-init` 调用时**，`propose-renames.py` 必须带 `--scope <文件>`，只分析未 push 的文件，不扫描全站：
+
+```bash
+python .opencode\skills\rename-blog-filenames\scripts\propose-renames.py --scope <scope文件>
+```
+
+`--scope` 接收一个 UTF-8 文件，每行一个仓库相对路径（由 `pipeline-blog-init/scripts/compute-scope.py` 生成）。未提供 `--scope` 时才回退为全量扫描 `content/blog/`。
+
 ## Process
 
 1. Scan `content/blog/**/*.md` excluding `_index.md` using `propose-renames.py`.

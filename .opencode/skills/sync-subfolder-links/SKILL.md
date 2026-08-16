@@ -32,6 +32,20 @@ description: Update markdown index files so they include links to markdown files
 python .opencode\skills\sync-subfolder-links\scripts\verify-links.py
 ```
 
+**由 `pipeline-blog-init` 调用时**，使用 `add-links-for-scope.py` 只处理未 push 的新文件，不重扫全站：
+
+```bash
+# 报告：哪些 scope 内文件还没被所在目录的 _index.md 链接
+python .opencode\skills\sync-subfolder-links\scripts\add-links-for-scope.py --scope <scope文件>
+
+# 确认后实际写入缺失链接
+python .opencode\skills\sync-subfolder-links\scripts\add-links-for-scope.py --scope <scope文件> --apply
+```
+
+`--scope` 接收一个 UTF-8 文件，每行一个仓库相对路径（由 `pipeline-blog-init/scripts/compute-scope.py` 生成）。该脚本对每个 scope 内的普通文章，找到同目录的 `_index.md`，若尚未包含对该文件的 relref 链接则补上（默认插到第一个 `## ` 标题前）。
+
+> **注意**：`--apply` 是机械插入，插入位置可能不理想（例如应放进特定分组）。执行后务必检查对应 `_index.md` 的分组归属，必要时用 `edit` 工具手工调整。若文章所在的目录没有 `_index.md`，该文件会被跳过并在报告中体现。
+
 ## 注意事项
 
 ### 核心原则：始终从文件系统读取文件名，切勿手动输入或字符串匹配

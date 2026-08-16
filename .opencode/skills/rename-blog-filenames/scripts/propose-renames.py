@@ -4,7 +4,12 @@
 Reads each file's H1 (or front matter title as fallback) and generates
 a new filename following the skill's naming rules. Outputs a grouped
 rename proposal.
+
+Optional --scope <file>: a UTF-8 list of repo-relative paths (one per line).
+When provided, only files inside the scope are considered; everything else
+is ignored. pipeline-blog-init passes the unpushed-work scope here.
 """
+import argparse
 import os
 import re
 
@@ -106,7 +111,7 @@ def normalize_title(title):
     return title
 
 
-def process():
+def process(scope=None):
     all_md = []
 
     for root, dirs, files in os.walk(CONTENT_BLOG):
@@ -124,6 +129,10 @@ def process():
                 continue
             fpath = os.path.join(root, fname)
             rel_dir = os.path.relpath(root, CONTENT_BLOG)
+            if scope is not None:
+                rel_path = os.path.relpath(fpath, CONTENT_BLOG).replace("\\", "/")
+                if rel_path not in scope:
+                    continue
 
             title_info = get_title(fpath)
 
@@ -220,5 +229,21 @@ def process():
     print(f"{'='*60}\n")
 
 
+def load_scope(scope_file, blog_dir):
+    """Read a UTF-8 scope file into blog-relative paths (relative to content/blog/)."""
+    scope = set()
+    with open(scope_file, "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip().replace("\\", "/")
+            if line.startswith("content/blog/"):
+                scope.add(line[len("content/blog/"):])
+    return scope
+
+
 if __name__ == "__main__":
-    process()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--scope", default=None,
+                        help="UTF-8 file listing repo-relative paths to restrict the scan to")
+    args = parser.parse_args()
+    scope = load_scope(args.scope, CONTENT_BLOG) if args.scope else None
+    process(scope=scope)

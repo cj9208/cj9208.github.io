@@ -192,6 +192,14 @@ fm = "title: '重资产租赁局：被\"经常性收入\"掩盖的庞氏折旧�
 python .opencode\skills\add-hugo-front-matter\scripts\find-no-frontmatter.py
 ```
 
+**由 `pipeline-blog-init` 调用时**，必须带上 `--scope <文件>`，只处理未 push 的文件，不要全量扫描：
+
+```bash
+python .opencode\skills\add-hugo-front-matter\scripts\find-no-frontmatter.py --scope <scope文件>
+```
+
+`--scope` 接收一个 UTF-8 文件，每行一个仓库相对路径（由 `pipeline-blog-init/scripts/compute-scope.py` 生成）。未提供 `--scope` 时才回退为全量扫描 `content/`。
+
 该脚本会递归扫描 `content/` 下所有 `.md` 文件，检测文件开头（跳过空行后）是否以 `---` 开头（同时处理带 BOM 和不带 BOM 的情况），并输出缺少 front matter 的文件列表。
 
 ## 编码安全（重要历史教训）
