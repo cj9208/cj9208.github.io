@@ -12,7 +12,6 @@ tags:
 slug: "investment"
 ---
 
-## 投资
 
 ### 投资理念与理论框架
 
