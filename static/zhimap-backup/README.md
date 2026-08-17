@@ -9,9 +9,19 @@
 | `zhimap_export_all.user.js` | 油猴(Tampermonkey)脚本，登录网站后一键导出全部导图 |
 | `zhimap_convert.py` | 把导出的 JSON 转成 Markdown / FreeMind(.mm) / 纯文本 |
 
-每张导图会产出两种格式：
+每张导图会产出四种格式：
 - `.json`：ZhiMap 原始数据结构，最完整，可二次转换
 - `.mm`：FreeMind 通用格式，XMind / 知犀 / FreeMind 可直接打开
+- `.md`：Markdown 大纲
+- `.txt`：纯文本
+
+## 命名规则
+
+文件名 = `根节点标题__32位uuid`。
+
+- 标题取**根节点标题**（`trees[0].title`），而非 `mindMap.title`。
+  `mindMap.title` 常是默认值"中心主题"等无意义内容，而根节点标题才是真正有意义的（如"股票策略评价"、"RAG-based chatbot design"）。
+- 尾缀 `__uuid` 不可去掉：很多导图标题相同（如多张都叫"中心主题"），uuid 保证不覆盖、能区分。
 
 ## 方法一：油猴脚本导出（推荐）
 
@@ -45,6 +55,7 @@ python zhimap_convert.py convert <json所在目录> -o <输出目录>
 ```
 
 可用参数：`-f mm,md,txt` 控制输出格式（默认三种都输出）。
+输出文件名同样按 `根节点标题__uuid` 规则命名（从源文件名提取 uuid 后缀）。
 
 ## 注意
 
