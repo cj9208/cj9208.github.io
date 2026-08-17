@@ -1,0 +1,179 @@
+{
+  "code": 0,
+  "message": "Get MindMap data OK!",
+  "data": {
+    "author": {
+      "userUuid": "857a288bd33c4a8aa9f0fca7bf344142",
+      "nickname": "陈杰",
+      "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJibo26vHhy2zNAOIZWKhtkdOqibFLOiaicQ6YKocqrD8Xmc6fz35bSzZegNyuJAFAcg9qpkKVwg8kk3w/64",
+      "region": "Anhui Hefei",
+      "biography": null
+    },
+    "publicationInfo": {
+      "uuid": "86517b4f11c943ee8fb212738e9ba631",
+      "abstracts": null,
+      "recommendations": null,
+      "rating": 100,
+      "releaseType": "CONTENT",
+      "stateUpTime": 1588387527648,
+      "state": "EDITING",
+      "releaseState": "EDITING_NEW",
+      "copyable": false,
+      "private": true,
+      "collaboration": false
+    },
+    "mindMap": {
+      "uuid": "86517b4f11c943ee8fb212738e9ba631",
+      "uniCode": "EKFywBJC",
+      "ownerUsrUUID": "857a288bd33c4a8aa9f0fca7bf344142",
+      "createTime": 1588387527648,
+      "lastUpdateTime": 1588387527648,
+      "trees": [
+        {
+          "uuid": "53941ce95766400daa10aa9beade2d64",
+          "children": [
+            {
+              "uuid": "5fc8f4b5c67e420c8218d4f1bd83b4ae",
+              "side": "right",
+              "linkColor": "#3A8DDF",
+              "title": "<p>​表达问题</p>",
+              "content": "",
+              "children": null,
+              "folded": 0,
+              "link": ""
+            },
+            {
+              "uuid": "4d3432bf5ef541ddb7e11f34bf32ca08",
+              "side": "right",
+              "linkColor": "#E08370",
+              "title": "<p>​构建模型</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "f88ccac5289d4dafa0f0a0fae2bb0344",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​发现和提出问题</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "25e71502fba4409596860f7a2241ed7b",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>分析</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "6846180b406b4c658ce556cf112f7289",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​建立模型</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "54c105f27d854741854e9be0b9327078",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​确定参数</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "fc2fd946123940d2bf574c3e158a399d",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​计算求解</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "e162b4309cfb467f82ac28ff694e0fec",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​检验结果</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "9593ab809d724db18a7d276fe714ee1d",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​改进模型</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": "",
+                  "leftIcons": [
+                    {
+                      "name": "mark-star"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "07170dadf5d1484d9a3287f0cc23f965",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​解决实际问题</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            }
+          ],
+          "linkColor": "#C0C0C0",
+          "side": null,
+          "title": "<p>数学建模</p>",
+          "content": null,
+          "siblingOrder": 0,
+          "link": null,
+          "leftIcons": null,
+          "rightIcons": null,
+          "folded": false
+        }
+      ],
+      "theme": "{\"magic\":\"zmtheme:v500\",\"version\":3,\"name\":\"bg_bright_ln_color\",\"text\":\"默认多色\",\"image\":\"/images/common/theme-bg-bright-ln-color.png\",\"mapBgColor\":\"#FFFFFF\",\"mapFgColor\":\"#282828\",\"fontColor\":\"#282828\",\"rootLineColor\":\"#C0C0C0\",\"lineColors\":[\"#3A8DDF\",\"#E08370\",\"#5FBC5C\",\"#B24BC8\",\"#75CFDC\"]}",
+      "version": 1,
+      "frontendState": null,
+      "commit": 21,
+      "isDefault": false,
+      "title": "<p>中心主题</p>"
+    },
+    "zmCounter": {
+      "read": 0,
+      "voteAmount": 0,
+      "voteUp": 0,
+      "voteDown": 0,
+      "comment": 0,
+      "challenge": 0,
+      "bookmark": 0,
+      "shareAmount": 0,
+      "shareCircle": 0,
+      "shareFriends": 0,
+      "share2qq": 0,
+      "share2qzone": 0
+    }
+  },
+  "extra": null,
+  "mt": null,
+  "token": null
+}

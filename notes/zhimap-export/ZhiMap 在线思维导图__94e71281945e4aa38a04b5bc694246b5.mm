@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0.1">
+<node TEXT="ZhiMap
+在线思维导图"><node TEXT="ZhiMap是什么？" LINK="https://zhimap.com/"><node TEXT="在线思维导图工具"></node><node TEXT="知识分享社区"></node></node><node TEXT="有什么用？"><node TEXT="记读书笔记"></node><node TEXT="写提纲、列计划"></node><node TEXT="知识整理"></node></node><node TEXT="功能强大"><node TEXT="富文本编辑，
+字体与颜色任意设置"><node TEXT="插入图片"><node TEXT="gif动图也行"></node></node><node TEXT="数学公式 ∫−∞∞e−ax2dx=πa \displaystyle \int_{-\infty}^{\infty}e^{-ax^2}dx = \sqrt{ \frac{ π }{a} } ∫−∞∞e−ax2dx=aπ"></node><node TEXT="备注支持 markdown"><richcontent TYPE="NOTE"><html><body>直接输入markdown语法即可</body></html></richcontent></node></node><node TEXT="多人实时协作"><node TEXT="历史版本"><node TEXT="私密导图"></node></node></node><node TEXT="导出高清图片，方便打印"><node TEXT="还能导出word文件！"></node></node><node TEXT="手机微信、PC电脑上打开浏览器即可使用"></node></node><node TEXT="还有更多"><node TEXT="支持切换主题颜色，夜色背景也支持了！"></node><node TEXT="快捷键很丰富，手不离键盘就可以完成大部分编辑操作。"></node><node TEXT="分享到社交网络和手机微信都很方便。"></node><node TEXT="各种小图标"></node><node TEXT="强大的复制、粘贴功能"><node TEXT="多个导图之间通过ctrl＋c，ctrl＋v自由转移数据"></node><node TEXT="从其他网页通过ctrl＋c复制多行文字，
+直接ctrl＋v即可自动生成导图节点！"></node></node><node TEXT="更多使用帮助" LINK="https://zhimap.com/mmap/acc0be7b9de94a18bab0ef80cc10c33c"></node></node></node>
+</map>

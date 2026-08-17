@@ -1,0 +1,112 @@
+{
+  "code": 0,
+  "message": "Get MindMap data OK!",
+  "data": {
+    "author": {
+      "userUuid": "857a288bd33c4a8aa9f0fca7bf344142",
+      "nickname": "陈杰",
+      "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJibo26vHhy2zNAOIZWKhtkdOqibFLOiaicQ6YKocqrD8Xmc6fz35bSzZegNyuJAFAcg9qpkKVwg8kk3w/64",
+      "region": "Anhui Hefei",
+      "biography": null
+    },
+    "publicationInfo": {
+      "uuid": "4199a749160e4ea4b84c9db904589f58",
+      "abstracts": null,
+      "recommendations": null,
+      "rating": 100,
+      "releaseType": "CONTENT",
+      "stateUpTime": 1602475225151,
+      "state": "EDITING",
+      "releaseState": "EDITING_NEW",
+      "copyable": false,
+      "private": true,
+      "collaboration": false
+    },
+    "mindMap": {
+      "uuid": "4199a749160e4ea4b84c9db904589f58",
+      "uniCode": "IDGaHOdZ",
+      "ownerUsrUUID": "857a288bd33c4a8aa9f0fca7bf344142",
+      "createTime": 1602475225151,
+      "lastUpdateTime": 1602475225151,
+      "trees": [
+        {
+          "uuid": "daecdfcaefdd4b1f92fb3cd7a7cb5d29",
+          "children": [
+            {
+              "uuid": "b3d0ebff779f428cabc1dc2598c5f588",
+              "side": "right",
+              "linkColor": "#3A8DDF",
+              "title": "<p>​FundData</p>",
+              "content": "",
+              "children": null,
+              "folded": 0,
+              "link": ""
+            },
+            {
+              "uuid": "e8821c89f31c48ed8059abd1525b5a8e",
+              "side": "right",
+              "linkColor": "#E08370",
+              "title": "<p>​get_fund_data</p>",
+              "content": "",
+              "children": null,
+              "folded": 0,
+              "link": ""
+            },
+            {
+              "uuid": "b2546938114d4ccca2e77d4ab2075279",
+              "side": "right",
+              "linkColor": "#5FBC5C",
+              "title": "<p>​cal_fund_data</p>",
+              "content": "",
+              "children": null,
+              "folded": 0,
+              "link": ""
+            },
+            {
+              "uuid": "8825dd60a5ba419a988b886e67d63f4a",
+              "side": "right",
+              "linkColor": "#B24BC8",
+              "title": "<p>​cal_single_fund_data</p>",
+              "content": "",
+              "children": null,
+              "folded": 0,
+              "link": ""
+            }
+          ],
+          "linkColor": "#C0C0C0",
+          "side": null,
+          "title": "<p>基金</p>",
+          "content": null,
+          "siblingOrder": 0,
+          "link": null,
+          "leftIcons": null,
+          "rightIcons": null,
+          "folded": false
+        }
+      ],
+      "theme": "{\"magic\":\"zmtheme:v500\",\"version\":3,\"name\":\"bg_bright_ln_color\",\"text\":\"默认多色\",\"image\":\"/images/common/theme-bg-bright-ln-color.png\",\"mapBgColor\":\"#FFFFFF\",\"mapFgColor\":\"#282828\",\"fontColor\":\"#282828\",\"rootLineColor\":\"#C0C0C0\",\"lineColors\":[\"#3A8DDF\",\"#E08370\",\"#5FBC5C\",\"#B24BC8\",\"#75CFDC\"]}",
+      "version": 1,
+      "frontendState": null,
+      "commit": 6,
+      "isDefault": false,
+      "title": "<p>中心主题</p>"
+    },
+    "zmCounter": {
+      "read": 0,
+      "voteAmount": 0,
+      "voteUp": 0,
+      "voteDown": 0,
+      "comment": 0,
+      "challenge": 0,
+      "bookmark": 0,
+      "shareAmount": 0,
+      "shareCircle": 0,
+      "shareFriends": 0,
+      "share2qq": 0,
+      "share2qzone": 0
+    }
+  },
+  "extra": null,
+  "mt": null,
+  "token": null
+}

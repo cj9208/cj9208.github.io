@@ -1,0 +1,381 @@
+{
+  "code": 0,
+  "message": "Get MindMap data OK!",
+  "data": {
+    "author": {
+      "userUuid": "857a288bd33c4a8aa9f0fca7bf344142",
+      "nickname": "陈杰",
+      "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJibo26vHhy2zNAOIZWKhtkdOqibFLOiaicQ6YKocqrD8Xmc6fz35bSzZegNyuJAFAcg9qpkKVwg8kk3w/64",
+      "region": "Anhui Hefei",
+      "biography": null
+    },
+    "publicationInfo": {
+      "uuid": "faaf7ab810c64591aa29fc7f6ca7f038",
+      "abstracts": null,
+      "recommendations": null,
+      "rating": 100,
+      "releaseType": "CONTENT",
+      "stateUpTime": 1657125316690,
+      "state": "EDITING",
+      "releaseState": "EDITING_NEW",
+      "copyable": false,
+      "private": false,
+      "collaboration": true
+    },
+    "mindMap": {
+      "uuid": "faaf7ab810c64591aa29fc7f6ca7f038",
+      "uniCode": "BPXULBjU",
+      "ownerUsrUUID": "857a288bd33c4a8aa9f0fca7bf344142",
+      "createTime": 1657125316690,
+      "lastUpdateTime": 1657125316690,
+      "trees": [
+        {
+          "uuid": "1d0345d380cc4627a25c6811923c74dc",
+          "children": [
+            {
+              "uuid": "d9d78903cf0146859554fb3651ac66bd",
+              "side": "right",
+              "linkColor": "#3A8DDF",
+              "title": "<p>​考编</p>",
+              "content": "",
+              "folded": 0,
+              "link": "",
+              "children": [
+                {
+                  "uuid": "90abe68c655d405384f5a3c9c0608b73",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​现状</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "5aab1a7153c348d0950dc2a9fc2d775a",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​今年设岗因为意外失败了</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ]
+                },
+                {
+                  "uuid": "322da848a5a54b589c702fa84c38466d",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​未来</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "7e4ef52428fd483790f1cbc07dc72911",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>不确定明年还能不能设岗，甚至你这个临时岗还能不能继续干下去都是问题</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "7f7dbdcda5a84c1196d45d5927c5fa13",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​目前的合同是到明年2月份，这周五有人事会，目前这半年会不会在这个学校，看周五人事会情况</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": "",
+                          "ttW": 367
+                        }
+                      ],
+                      "folded": 0,
+                      "link": "",
+                      "ttW": 283,
+                      "leftIcons": [
+                        {
+                          "name": "number-01"
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "3710d56db04345ac81185f89d8030d68",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​即使设岗，明年考编结果也是非常不确定，社招考编竞争非常的激烈</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": "",
+                      "leftIcons": [
+                        {
+                          "name": "number-02"
+                        }
+                      ],
+                      "ttW": 258
+                    },
+                    {
+                      "uuid": "025dc8ec47ed472fa2335606a907bbf8",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​国内竞争非常激烈，即使是深圳编制老师这种公认非常好的工作，其实能过上的生活也一般</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "0d9f6e0fb6c2491ba5dab19217f41554",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​好生活​定义</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "f56b4e5fdef1442caa933b20ccebdd8b",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>工作</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "e7b5b173e2bd45e2854bc48f04b2885b",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​一天八小时，不加班</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "0ac8f0c66da34ffa9fca249e6f7c6187",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​下班之后不用 on call</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "6e152bd7ec8f41e9a9e2ada4543232c8",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​好的职业发展，有上升空间</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "3199b2af72be43d49a9cc83aa1fcce36",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​生活</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "382983f18e554f518c7c8ee2e2902768",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​正常的居住条件，而不是宿舍，隔断房</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "4412831145ad4557ba1c02e61bf01eca",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​正常的需求可以满足，比如定期去旅游，购买东西等等</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "folded": 0,
+                      "link": "",
+                      "leftIcons": [
+                        {
+                          "name": "number-03"
+                        }
+                      ],
+                      "ttW": 350
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "uuid": "ba70b9c260804d31b632e99b34222327",
+              "side": "right",
+              "linkColor": "#E08370",
+              "title": "<p>​留学</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "bb1820510ccd47daaaead4069495961d",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​目前问题</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "6dc831e2bdca43f8949ab4182ecd27f0",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​对于你来说，你已经工作好几年了，本校成绩不是很重要，你现在工作的单位能否给你推荐更重要</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": "",
+                      "ttW": 386
+                    },
+                    {
+                      "uuid": "3c7247d83d68403f82f55b836c001c0c",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>硬条件：​英语成绩</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "2447b0c194604949bd9546e2ac1955b3",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​当前你最大的问题</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": "",
+                          "leftIcons": [
+                            {
+                              "name": "mark-star"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "uuid": "a0168516f1144f17ab6f629a4e6d6c76",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​如果还想考编，拥有应届身份，考编更容易</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": "",
+                  "leftIcons": [
+                    {
+                      "name": "number-02"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "9ad6135173b34b87bd469318b3a3444d",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​多一条路</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "b86543bcbe23432c887f746cbb7a6942",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​发达国家的中产相对比较容易实现，一份普通的工作也可以实现比较不错的生活</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": "",
+                      "ttW": 325
+                    }
+                  ],
+                  "folded": 0,
+                  "link": "",
+                  "leftIcons": [
+                    {
+                      "name": "number-03"
+                    }
+                  ]
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            },
+            {
+              "uuid": "bbdd520afe0b41c590e610dc79b8542b",
+              "side": "right",
+              "linkColor": "#75CFDC",
+              "title": "<p>​冉的需求</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "ae87d89f0a674398ab75cadc7e5351d0",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​家人在身边</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            }
+          ],
+          "linkColor": "#C0C0C0",
+          "side": null,
+          "title": "<p>人生发展</p>",
+          "content": null,
+          "siblingOrder": 0,
+          "link": null,
+          "leftIcons": null,
+          "rightIcons": null,
+          "folded": false
+        }
+      ],
+      "theme": "{\"magic\":\"zmtheme:v500\",\"version\":3,\"name\":\"bg_bright_ln_color\",\"text\":\"默认多色\",\"image\":\"/images/common/theme-bg-bright-ln-color.png\",\"mapBgColor\":\"#FFFFFF\",\"mapFgColor\":\"#282828\",\"fontColor\":\"#282828\",\"rootLineColor\":\"#C0C0C0\",\"lineColors\":[\"#3A8DDF\",\"#E08370\",\"#5FBC5C\",\"#B24BC8\",\"#75CFDC\"]}",
+      "version": 1,
+      "frontendState": null,
+      "commit": 76,
+      "isDefault": false,
+      "title": "<p>中心主题</p>"
+    },
+    "zmCounter": {
+      "read": 0,
+      "voteAmount": 0,
+      "voteUp": 0,
+      "voteDown": 0,
+      "comment": 0,
+      "challenge": 0,
+      "bookmark": 0,
+      "shareAmount": 0,
+      "shareCircle": 0,
+      "shareFriends": 0,
+      "share2qq": 0,
+      "share2qzone": 0
+    }
+  },
+  "extra": null,
+  "mt": null,
+  "token": null
+}

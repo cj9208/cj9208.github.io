@@ -1,0 +1,73 @@
+covariance estimation
+- introduction
+  - question
+    - local stationary / dynamic
+      - high dimension, small sample
+      - generalization
+        - how to measure the goodness of factorization?
+        - how to measure the goodness of the factors?
+  - applications
+    - financial risk forecast
+    - more applications
+      - gene mapping
+      - demand forecast
+- summary of methods
+  - old methods
+    - sample covariance
+      - when the sample size is large
+        - many good properties
+      - when dimension is large, not good
+        - eigenvalues are over-dispersed
+        - lack of sparsity
+        - not invertible
+  - statistical
+    - ideas
+      - exploitting the special structure
+        - sparsity
+        - low-rank
+    - sparse
+      - thresholding estimator
+      - shrinkage estimator
+    - factor model
+      - PCA and its extension
+      - quickly react to market, but not fixed, hard to interpret
+    - robust method
+  - fundamental
+    - human-researched factors
+    - fixed, easy to interpret, may miss factors
+    - BARRA
+      - NW
+        - fix auto-correlation in data
+      - eigenfactor risk adjustment
+        - fix over-dispersed eigenvalues of SCM
+      - volatility regime adjustment
+        - fix moving market
+      - structure model
+        - fix missing data
+  - deep
+    - our proposal
+      - learn the factor-exposure directly from the data
+        - use R2 + penalty of colinearity as objective
+        - what measures the goodness of factor / covariance matrices / factor exposre?
+        - factor-exposure are not unique
+          - differ by a rotation
+      - learn the shift parameters
+        - i.e. CSV in BARRA
+        - sample size is too small, hard to learn
+      - objective
+        - better factors
+          - 现在的factor组成的空间和未来的不一样
+          - 如何让现在学出来的factor在未来也可以用
+          - factor covariance matrices
+          - 目前现象
+            - deep 学出来的因子每天都在变
+              - cannot claim generalize will
+            - 和预期/claim 不符合
+          - 目前考虑目标
+            - MF+未来R2+factor协方差的差别
+        - 有了好的因子，compare with PCA
+        - 加入fundamental 的因子，和真实比
+    - existing papers
+      - TRMF
+        - add regularization for time-dependency
+      - deepAR

@@ -1,0 +1,552 @@
+{
+  "code": 0,
+  "message": "Get MindMap data OK!",
+  "data": {
+    "author": {
+      "userUuid": "857a288bd33c4a8aa9f0fca7bf344142",
+      "nickname": "陈杰",
+      "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJibo26vHhy2zNAOIZWKhtkdOqibFLOiaicQ6YKocqrD8Xmc6fz35bSzZegNyuJAFAcg9qpkKVwg8kk3w/64",
+      "region": "Anhui Hefei",
+      "biography": null
+    },
+    "publicationInfo": {
+      "uuid": "cfbbf74e1a0a45d58b7aa8213ef4f634",
+      "abstracts": null,
+      "recommendations": null,
+      "rating": 100,
+      "releaseType": "CONTENT",
+      "stateUpTime": 1737944472890,
+      "state": "EDITING",
+      "releaseState": "EDITING_NEW",
+      "copyable": false,
+      "private": true,
+      "collaboration": false
+    },
+    "mindMap": {
+      "uuid": "cfbbf74e1a0a45d58b7aa8213ef4f634",
+      "uniCode": "DmYDXbVi",
+      "ownerUsrUUID": "857a288bd33c4a8aa9f0fca7bf344142",
+      "createTime": 1737944472890,
+      "lastUpdateTime": 1737944472890,
+      "trees": [
+        {
+          "uuid": "2ab9ffef3c9a4c919ada6f52cd1bc48a",
+          "children": [
+            {
+              "uuid": "4a33f387872943dc9e0c9542b29edcc7",
+              "side": "right",
+              "linkColor": "#E08370",
+              "title": "<p>​build on top of</p>",
+              "content": "",
+              "folded": 0,
+              "link": "",
+              "children": [
+                {
+                  "uuid": "c346c220726e410eb0e4f6ab525a23a5",
+                  "side": "",
+                  "linkColor": "",
+                  "title": "<p>​transformer</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "c3eb36b599e74824aa006f7300a1a2a3",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>​backbone</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ]
+                },
+                {
+                  "uuid": "b5b8b4b7de1343b9b8626ef94d2228ce",
+                  "side": "",
+                  "linkColor": "",
+                  "title": "<p>diffusers</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "f3824b45b1e04a8cbbdb95e7b0f14332",
+                  "side": "",
+                  "linkColor": "",
+                  "title": "<p>​peft</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "483b5ab0a7d648c0a1155ef25f4f6504",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>​for lora training</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "fd0efd720aaa4af3926ffcad38543bde",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "https://huggingface.co/docs/transformers/main/en/peft",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ]
+                },
+                {
+                  "uuid": "aab1ff82543b49b4a553d6715a6ce967",
+                  "side": "",
+                  "linkColor": "",
+                  "title": "<p>​accelerator</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "5a1a49b933024b568571457c3e632f68",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>​for parallel computing</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "5faddd8da9d642b598016ecd4a40c278",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>​DeepSpeed</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ]
+            },
+            {
+              "uuid": "45819df0b41c4676aaabbd979e0a7c9b",
+              "side": "right",
+              "linkColor": "#3A8DDF",
+              "title": "<p>Trainer</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "1ecfb6694025474eb15732af68728124",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​parameters</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "58e97b725fd84c8e963f09008627617b",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​model_config</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "100ba915b47f4a36b429d857271a9ce3",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​pipeline</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "2574c435badd46b5a1af5538d3212efd",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>condition, ​latent, diffusion</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "86bc57281f8545fda69a73024e45d042",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​tokenizer,&nbsp;​text_tokenizer</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "ce7482efefb748de84eb10e4c62de819",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>unet, ​transformer</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "81042acca4624edeb6ad8881e4e665b2",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​vae</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "2a792ee937f340bd998721d787a0db0e",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​scheduler</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "a709d2b21f2a4af797cfa9fc21d29419",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​state</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "128eb97553b64b59b61932065db34999",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>training settings</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "1460b8066b8146c1b0fd42631f0700f4",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​prepare</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "c386e7bfedf14c479b8fb185d77a8c4c",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​dataset</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "b14075490ba64a12b91c6eeaf1ee0655",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​model</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "d7ecba97f8bc4b5ca7bfde6dc99e15ef",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​based on model config, load relevant parts</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "db2daf408e1a4ed3bf38d47d15c2fb34",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​precomputation</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "9b5d60622a554b28b7d0180a07c89d4d",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>memory and speed ​optimization</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "4dd1251bc9ba4effaaefa28d007ff0f8",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​trainable_parameters</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "6642a8f66ed34a0ca14bb7d9ec30dcab",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>set require_frad_ to False for existing parameters</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "95367d40bae1407c8e87b91acefb7b81",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​define LoraConfig, and do peft training</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "2f7039bd77a245e1aefb2ad22561e793",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​optimizer</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "1333f7f2dab148b3a11558c417ae578b",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​define optimizer and scheduler</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "2df9187c70d641b3a2ced187a818179f",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​Q</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "a73a1e9fa7c9473aafa4b804debe97a5",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​deepspeed optimizer?</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "648d1619877845548b34f481ae2fee0f",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>In what case, would learning_rate be affected?</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "3b2d5cb5628a41929a6de49e098a5a62",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​eg.</p>",
+                                  "content": "",
+                                  "folded": 0,
+                                  "link": "",
+                                  "children": [
+                                    {
+                                      "uuid": "551455fcf0214cc5858dcab5061c86bd",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "gradient_accumulation_steps",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    },
+                                    {
+                                      "uuid": "22c6d51714b44e8b8b1fbff77ec48aeb",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "<p>​batch_size</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    },
+                                    {
+                                      "uuid": "c3d8961193184bda8248eb8010e7e059",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "accelerator.num_processes",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "386f94d1074e4c968e23c0ed61497ecd",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​parallel training</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "7ff1e8497e3f4830b0a81102df45b7bb",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>add accelerator support</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "60c31e50fc1e4a089e88b6ff1e34535b",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​log</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "ee6b9ee5e03e4fb3acf6ab09fb0e27c7",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​train</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "fb75bf8156984c599b8144867c7a0e30",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​Q</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "f70f5fcf8f234ddab4fcb911b5c41043",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>How ​data type affects training, eg. fp16, bf16</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "64c445a4dfea4f60ac1bebbaf010a84d",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​Understand the scheduler</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            }
+          ],
+          "linkColor": "#C0C0C0",
+          "side": null,
+          "title": "<p>LORA Trainer code structure</p>",
+          "content": null,
+          "siblingOrder": 0,
+          "link": null,
+          "leftIcons": null,
+          "rightIcons": null,
+          "folded": false
+        }
+      ],
+      "theme": "{\"magic\":\"zmtheme:v500\",\"version\":3,\"name\":\"bg_bright_ln_color\",\"text\":\"默认多色\",\"image\":\"/images/common/theme-bg-bright-ln-color.png\",\"mapBgColor\":\"#FFFFFF\",\"mapFgColor\":\"#282828\",\"fontColor\":\"#282828\",\"rootLineColor\":\"#C0C0C0\",\"lineColors\":[\"#3A8DDF\",\"#E08370\",\"#5FBC5C\",\"#B24BC8\",\"#75CFDC\"]}",
+      "version": 1,
+      "frontendState": null,
+      "commit": 94,
+      "isDefault": false,
+      "title": "<p>中心主题</p>"
+    },
+    "zmCounter": {
+      "read": 0,
+      "voteAmount": 0,
+      "voteUp": 0,
+      "voteDown": 0,
+      "comment": 0,
+      "challenge": 0,
+      "bookmark": 0,
+      "shareAmount": 0,
+      "shareCircle": 0,
+      "shareFriends": 0,
+      "share2qq": 0,
+      "share2qzone": 0
+    }
+  },
+  "extra": null,
+  "mt": null,
+  "token": null
+}

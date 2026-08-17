@@ -1,0 +1,597 @@
+{
+  "code": 0,
+  "message": "Get MindMap data OK!",
+  "data": {
+    "author": {
+      "userUuid": "857a288bd33c4a8aa9f0fca7bf344142",
+      "nickname": "陈杰",
+      "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJibo26vHhy2zNAOIZWKhtkdOqibFLOiaicQ6YKocqrD8Xmc6fz35bSzZegNyuJAFAcg9qpkKVwg8kk3w/64",
+      "region": "Anhui Hefei",
+      "biography": null
+    },
+    "publicationInfo": {
+      "uuid": "66121a8472fd4dd285da207f29166f8d",
+      "abstracts": null,
+      "recommendations": null,
+      "rating": 100,
+      "releaseType": "CONTENT",
+      "stateUpTime": 1596416489708,
+      "state": "EDITING",
+      "releaseState": "EDITING_NEW",
+      "copyable": false,
+      "private": false,
+      "collaboration": false
+    },
+    "mindMap": {
+      "uuid": "66121a8472fd4dd285da207f29166f8d",
+      "uniCode": "NmouAfbV",
+      "ownerUsrUUID": "857a288bd33c4a8aa9f0fca7bf344142",
+      "createTime": 1596416489708,
+      "lastUpdateTime": 1596416489708,
+      "trees": [
+        {
+          "uuid": "2110c09313294bbc9228df3dc37cd3d3",
+          "children": [
+            {
+              "uuid": "f2308ec80f6c4349b3c31593fd63d368",
+              "side": "right",
+              "linkColor": "#B24BC8",
+              "title": "<p>​traditional financial methods</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "fe85d9bc87a24ccd8bad25685b489b52",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​ARCH by Engle 1982</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "72b9f421cd5c4fc492da45a77d7edcb9",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​GARCH 1986</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "a7fb3d3d5e9848a6b9a11d52ac59d4f2",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​other features</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "668a84602b3c447991d40b214a6def16",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​asymmetry</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "2472db436db241c5be977a919e176a19",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​non-linearity</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "21c4fe252123495a8142dc33af3fa7ed",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>volatility^alpha, general power</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "2aa0d5fdc4384fa1a5b575a76d14705a",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​log-volatility</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "9e7c84a198084e5898be46af16b9d27a",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​external variables</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "4cb827f398ee43afb765b5bce8331f75",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​by adding past conditional covariance as a feature</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "db867ce1a85b456fb4cfe20ddaad1251",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​extension to multidimensional case</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "ee7d919dabe24008be74f445bee01033",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​Difficulties</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "e425398160914bbe8216787f1cbe40de",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​too many parameters in general, hard to accurately estimate</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "15c01c08cf714306ba7146caee9c47be",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​popular models</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "fa3eb7646b544c0e90f592f0bbb7f4c0",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​BEKK</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "0accb0bed7e245db9842106a802a1850",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​GO-GARCH 2002</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "2e418e743ad14cac83f740b9f1b49382",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><msub><mi>x</mi><mi>t</mi></msub><mo>=</mo><mi>Z</mi><msub><mi>y</mi><mi>t</mi></msub></mrow><annotation encoding=\"application/x-tex\">x_t = Z y_t</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.58056em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathit\">x</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2805559999999999em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">t</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8777699999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathit\" style=\"margin-right:0.07153em;\">Z</span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.03588em;\">y</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2805559999999999em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">t</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>&nbsp;</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "c5a2d4e7bb0b4ca9b5f2e1be5dfaa3ee",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>univariate volatility model + ​constant transformation map</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "d5f9c5500f914166985e620457f8a561",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​DCC Engle 2002</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "724f49b15ba9485e8f6e287c3e7aa102",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​univariate volatility model + GARCH-type correlation model</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ]
+                },
+                {
+                  "uuid": "d9822ddc686147138b67ec07aa63d6e0",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​stochastic volatility(SV)</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "f86e48f4681e46f4b72203b35e45e8ca",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​Difficulties</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "6b1ff87ae6114f5fb76d9ac14418bad4",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​require strong assumptions (insights)</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "cc97250fe5e0465cbcf487e2edf38855",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​hard to inference</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "a990539f31ac4561a64e7a99d05d1dac",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​requiere a lot of simulations</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "8a4f55aef8bb4af4ae10590b6404e4e6",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​some realizations</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "33e7b7edf6954fa6a622db0bfa5317a6",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​GP-Vol</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "a1ac8b2f028344c5a44fae522d60d28d",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​stochvol</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "8123210f20b947f288cd2531c07d5f0b",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​NSVM</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 1,
+              "link": ""
+            },
+            {
+              "uuid": "174ed79542b24e60a5e09c433cbd4437",
+              "side": "right",
+              "linkColor": "#E08370",
+              "title": "<p>​Deep learning based</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "682037bb42484e2285bf10ba07e916b9",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​RNN-based</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "f5e543eb98e84d9abc553fa0f7e94e3a",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​LSTM</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "2712b51f9d844f588ae516ee5d8e8558",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​GRU</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "4bfdc69597ad4082aa555d346817c67c",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​DilatedRNN</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "ea7176f92fb04956bb4e12509fe17b44",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​introducing dilation to increase reception field while not add too many parameters</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": "",
+                          "ttW": 331
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "4ad054cb475f49e08b0c853c9304fb1c",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​Conv-based</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "7e61125702bc4eba9b30697d209ad76a",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​TCN</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            },
+            {
+              "uuid": "379ff3b0bb9c467c8864a93a92a379b2",
+              "side": "right",
+              "linkColor": "#3A8DDF",
+              "title": "<p>​codes</p>",
+              "content": "",
+              "folded": 0,
+              "link": "",
+              "children": [
+                {
+                  "uuid": "4d5ad370274240219f6b1979c73e3fd2",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​NN methods</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "53707f7b92174906ae2366eed73b3d37",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​data</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "8cda7e26bf8a4b94bd9f69766647bde6",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​dataloader</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": null
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "3ac3bc9e368a44f384185f2356e192f5",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​models</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "ebb5d823de4d428eb4ad8a5d8e6d8809",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​train</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "39b26f8b85b34154ad41df0010f26d74",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​train_model</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "8a368fc9bd1a43098151f67b776c97b9",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​train_epoch</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "69c45395b46d4436bae511cba0f4160f",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​test_epoch</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "848d5e99dff346d1bece2a5e7ef23535",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​infer_model</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "724e636ac9b74d11a34bc1bc6b79176f",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​inference</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "2be51ed77e6a47bb9362ddccd179ac59",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​GARCH</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "463dd776169f47a9894f97b1509e3171",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​Rolling</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                }
+              ]
+            }
+          ],
+          "linkColor": "#C0C0C0",
+          "side": null,
+          "title": "<p>volatility forecast</p>",
+          "content": null,
+          "siblingOrder": 0,
+          "link": null,
+          "leftIcons": null,
+          "rightIcons": null,
+          "folded": false
+        }
+      ],
+      "theme": "{\"magic\":\"zmtheme:v500\",\"version\":3,\"name\":\"bg_bright_ln_color\",\"text\":\"默认多色\",\"image\":\"/images/common/theme-bg-bright-ln-color.png\",\"mapBgColor\":\"#FFFFFF\",\"mapFgColor\":\"#282828\",\"fontColor\":\"#282828\",\"rootLineColor\":\"#C0C0C0\",\"lineColors\":[\"#3A8DDF\",\"#E08370\",\"#5FBC5C\",\"#B24BC8\",\"#75CFDC\"]}",
+      "version": 1,
+      "frontendState": null,
+      "commit": 84,
+      "isDefault": false,
+      "title": "<p>中心主题</p>"
+    },
+    "zmCounter": {
+      "read": 0,
+      "voteAmount": 0,
+      "voteUp": 0,
+      "voteDown": 0,
+      "comment": 0,
+      "challenge": 0,
+      "bookmark": 0,
+      "shareAmount": 0,
+      "shareCircle": 0,
+      "shareFriends": 0,
+      "share2qq": 0,
+      "share2qzone": 0
+    }
+  },
+  "extra": null,
+  "mt": null,
+  "token": null
+}

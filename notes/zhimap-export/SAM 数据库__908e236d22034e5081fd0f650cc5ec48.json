@@ -1,0 +1,1580 @@
+{
+  "code": 0,
+  "message": "Get MindMap data OK!",
+  "data": {
+    "author": {
+      "userUuid": "857a288bd33c4a8aa9f0fca7bf344142",
+      "nickname": "陈杰",
+      "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJibo26vHhy2zNAOIZWKhtkdOqibFLOiaicQ6YKocqrD8Xmc6fz35bSzZegNyuJAFAcg9qpkKVwg8kk3w/64",
+      "region": "Anhui Hefei",
+      "biography": null
+    },
+    "publicationInfo": {
+      "uuid": "908e236d22034e5081fd0f650cc5ec48",
+      "abstracts": null,
+      "recommendations": null,
+      "rating": 100,
+      "releaseType": "CONTENT",
+      "stateUpTime": 1719975507751,
+      "state": "EDITING",
+      "releaseState": "EDITING_NEW",
+      "copyable": false,
+      "private": true,
+      "collaboration": false
+    },
+    "mindMap": {
+      "uuid": "908e236d22034e5081fd0f650cc5ec48",
+      "uniCode": "DqWkDdYu",
+      "ownerUsrUUID": "857a288bd33c4a8aa9f0fca7bf344142",
+      "createTime": 1719975507751,
+      "lastUpdateTime": 1719975507751,
+      "trees": [
+        {
+          "uuid": "9c55aba922f4425e98ab37a47abe9b00",
+          "children": [
+            {
+              "uuid": "52434a785ed041179547ab897fbf10fa",
+              "side": "right",
+              "linkColor": "#5FBC5C",
+              "title": "<p>​数据库介绍</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "d4519b0fd6464293895db62e24f2f7d0",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​产品和行业信息</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "28e85b371c1949ebad5d64feb20c4f06",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​dict_product_rs</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "87859afea0014c28afac293fcc0cbbc8",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>记录产品树从根节点到本节点的路径</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": null
+                        },
+                        {
+                          "uuid": "aa6badc16e7c433b880451ecf50d6a6a",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>特别字段：所属行业</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "77f2de9fc8274a16a589a9d842a2578b",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​dict_industry</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "b1b74edd682541d3a6308d16b0959c14",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​行业上下游</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "d7a498b3871247d59bbc378527e8e597",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​这两个表，其实就是数库拓展的GICS四层行业分类表</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 1,
+                  "link": ""
+                },
+                {
+                  "uuid": "b234860ccac845f5a799a25555c7ea5b",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>企业和证券信息</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "a7a0e79410b3493094772ae45b08f831",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​证券基础信息表</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "56a38a0f9f05497b882249ad740a6d47",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>包含更多证券上市信息</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "f43d72b52cfd470b8dced15ab9f10de4",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​base_stock</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "660738b56bcc4c2f9871b15710c4fd95",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​企业信息表</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "38604b6e530e402087208c5971dece39",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​更全，包含非上市公司</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "084af3ce4e3142899cb4a8c5f725ea56",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​base_company</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 1,
+                  "link": ""
+                },
+                {
+                  "uuid": "5ebaae21c7e14c24ac01d535beab80b7",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>产业链关系表</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "10d2d218429846fe9844f1ae73a76f10",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>supply_chain_relation</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "4ea25295064e4f11a2e1b404e1146dce",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​上下游的产品及其类型</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "f71af573c39d4550984d54b7f7ee1c9b",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​keys</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "be4df2286fc5451f84fd7bb9ba05b087",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​primary_type, related_type 关系类型</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "ab001141464743009dfb1b24d14c8c23",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<img src=\"/res/b/8/1720422327890137817.png\" style=\"width: 258px; height: 159px; max-width: 100%; max-height: 100%;\">",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": "",
+                                  "ttW": 259
+                                }
+                              ],
+                              "folded": 0,
+                              "link": "",
+                              "leftIcons": [
+                                {
+                                  "name": "mark-flag"
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "354f97aee3ec497590937cc7db955b99",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​relationship（关联产品是主产品的）： 1 for 下游， -1 for 上游</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "d6f9b96e469145dcbde7ff3b705781aa",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​importance</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "93f81281d1c5413b898910e2a97d6e2a",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>产业链拓展</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "2791c7bd055045d7b6d28ecc7924ce23",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​如果一个公司同时生产两种产品，则可以增加一条联系</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "c0c079231cb747b9b2978e3258259fab",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​拓展产业树倒产业链，可以迁移供应链的逻辑和研究方法</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "0b791712f6ee49dea7686af783a91432",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​产品分项表</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "8cb2ad8cdf76495489930b303acdc18e",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​公司报告期表</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "32b393c6cba94a4a8e68b103b85a36b2",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>fin_secu_sam_period_pit</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "9a29444374fe4c0a96c38b7366c1b30f",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>公告日期，报告日期，报告期间</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "065dd0da961c40279a5d227adaad56b7",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​公司原始产品分项表</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "eee37b40da5d45c683ddf55b70111a8d",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​fin_secu_sam_product_pit</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "b0cf2b66209e472fac6742ff21828043",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "主营产品的收入、利润及成本",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "0f0283cc7a954c449b0f91c1351b1ab8",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "主营产品计算表",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "0d8de9107f29491294f3bf1f293f0c3f",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​在原始分项表进行计算得来的</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "60b9a5938bca483ea130077027a444aa",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​fin_secu_sam_product_calc_pit</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "d2c9ee24774e4e4caab123f09458f159",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>product_income(_ratio)</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "596b6e5d8c0a445e8933cd98a1b7c52a",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​主营产品层级累计收入（占比）</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "5af6d121d534425cb1de1640692a9c7f",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​想要看原始产品，那么层级越大越好；如果只精细到GICS行业分类，那么层级越小越好</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": "",
+                                  "ttW": 362
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "bb0f1471c0fb4081b21232abde878bc7",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​product_profit(_ratio)</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "b68a8665964f4fa7ab09dbf729eddc07",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​主营产品层级累计毛利（占比）</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "1bfaef8d57a14876a2433024ce7d5edc",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>add ​_b</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "c0d32684428e426a817164543a6903d3",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​报告披露的原始数据</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "bb1359054a534b83a14532d88ce6e890",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>(product_)partial_calc</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "3d34df6c0e03445eb80d757408a781d9",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>是否​仅部分成本计算， 0 for 否， 1 for 是</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "ac37686ba5534052be1f87d43a286928",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>暂不清楚如何计算？</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "d608aa62ab8b41cab022c800c2689148",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​树版本间变化的内容详情情况</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "264661d911fb488b94682a49749e36c7",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​sam_release_notes_tree</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            },
+            {
+              "uuid": "22e2e389cf5f4ccbabd484cf1b75de19",
+              "side": "right",
+              "linkColor": "#3A8DDF",
+              "title": "<p>研究思路</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "dba57a31538a42939f92e270fb4bbeb7",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​Reference</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "41add87fd18c495990cdaf3221ec951d",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "Investing in industries with shortages",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "a2700e298b614f029c85eda67f51dc1a",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "https://www.raseedinvest.com/learn/how-do-supply-chain-shortages-impact-stocks",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": null
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "ffcf8685b43b4f60bf4780dd5e60eaa8",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>​value chain</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "436ea060b95c4ead80bafa43d0fc646b",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "https://www.investopedia.com/articles/investing/111014/basics-value-chain-analysis.asp",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "uuid": "7129e4b4edee4f1b9a39c0da5d3f9516",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​基本面的研究方法</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "3be42d9120894c378949386b7bd2bac6",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​即分产品的收入和利润等，不同层级的产品的相互关系，可以挖掘出对公司后续发展更精细的描述</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "def0f64f1308450580b0cdb32fcd2180",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>中金​基本面因子</p>",
+                      "content": "",
+                      "folded": 1,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "accddf78fd104a13bde76d22e5edcc48",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​盈利能力</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": null
+                        },
+                        {
+                          "uuid": "f171191855f945d0adaa49caae056758",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​成长能力</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": null
+                        },
+                        {
+                          "uuid": "a97783024c90403ebdde7e394ba7338a",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​营运效率</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": null
+                        },
+                        {
+                          "uuid": "68aee551f50f492b8311ba2714c536d1",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​盈余质量</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": null
+                        },
+                        {
+                          "uuid": "1b3d76c7687b45fbb6ebba0fc9ac2c76",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​安全性因子</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "da14aac99a9f4871bfa41d8881ae916d",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​公司治理</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "c5fb5eb4b03e4869993e85c235f03e47",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​估值因子</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "e8c825015f9848f39b8fee293168a434",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>分析师因子</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "7ab360c92ea44e08af306bfbdfd2bcd3",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​股东</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "6ea2e3646fdd442097352f5cfc9d83cd",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​规模</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "57df5ec7cf5f4109a743ee2f91b1b54c",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​上下游的销量会相互影响</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "51cc7dc3f50b496698991205c4a5befb",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>eg: ​if companies like Intel and NVIDIA announce slow sales, hardware companies like Dell, Apple, and HP will be expected to go down.</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "3fa4429087a94a488fb1cf8b104d9765",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​eg2:&nbsp;Apple shares tend to react to the performance of some of its key suppliers like Corning, Samsung, Hon Hai Precision, and Broadcom, among others.</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "6f8ea17d297a4cf6aff3ea1361fa8e0e",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​什么时候共振（eg. 供应链企业业绩好，说明苹果销量好）， 什么时候是反指（eg. 大客户集中，压价）</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "a7c8daf7fc4c45a9b204a9eb4bdba747",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>从 ​value chain 的角度来思考</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        }
+                      ],
+                      "folded": 0,
+                      "link": "",
+                      "leftIcons": [
+                        {
+                          "name": "mark-flag"
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "de15f73bc1ec486fb40a7dc1df0fb686",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​raw materials and currencies</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "3c9402150c2d4cb484c13683468cc120",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>eg: ​when the price of crude oil jumps, chances are that the stocks of oil exploring companies like ExxonMobil and Chevron will rise as well.</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "2add0a504213400eaa9c6b631a398a98",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​比如中海油的股价就和油价相关系数非常高，​但是中石油中石化就相关性很低。原因是，一个是采油，一个是转售</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "48871e367ac7451a93d95f971cc5bf34",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​eg2:&nbsp;when the price of gold rises, that of gold mining companies will rise too</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": "",
+                          "ttMaxW": 555,
+                          "ttW": 555
+                        },
+                        {
+                          "uuid": "a2b47bda1b5943809e83bcb204c1ac57",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​eg3:&nbsp; if the price of cotton rises, it will squeeze the margins of companies like Adidas leading to their stock price to decline</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "4281d3acfd7242c390c350bf9bde6334",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​考虑： 谁是重要指标？</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "26634c8fd48844548b5e78b28ccd50fc",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​占比类</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "71c33923fb4a4d31a0b0e4895838c3a7",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​上下游的产值占比？</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "81b57cdd4d3c4c1db10277a770b16252",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​同层的产值占比？</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "7de5f975d4154a20b936328a144224f5",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​大客户，大供应商？</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "7cbd30f951864a2f8c782347da39c161",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​主营产品占公司营收的比例</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "639ce7042ef44fef84f0a915cafb6f0a",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​收益</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "2bab6a2d623144c58969a1ef6a33e3f9",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​产品的利润率？</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "78807667ff884889ad714da61a82986b",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​产品的预计营收，使用供应链推算出来的 和 一致预期比较？</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "253e7d4c17844ccd8785d5c41995c8f8",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​产能扩张，利润率下降可能是一个信号，市场开始饱和了，会经历很长常见的残酷淘汰</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": "",
+                              "ttW": 363
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "45302d89ab3c41b7913de5da6f3a6179",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​数据异常</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "85c23a7791c341ee9857f180df53422e",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>相关数据增长来源于其他因子，eg. 收购，开拓其他业务等等</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "b8971abf7f0f4c3c96eda44ee60612b1",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​其他</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "5c733971064648d58f4c2ebe852345cf",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>数据不披露，披露滞后？</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "990655f40b904b3daf3cd9544d89e156",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​地理位置</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "886502fa9d424e5db93a0c2e2281ae33",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "可能结合天气，重大事件来判断是否收到影响",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "3334fe887a614eefa67d408ec8c051a9",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>区域，产业布局在同一个区域，效率更高</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "dae27b8eb67c42b2901347980041233f",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​网络的角度考虑</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "16e1937f603e4dcca7c8061f816fdbe2",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​供应链逻辑上是一个网，可能更好</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "b999f47c30a64978a07b49a71e2eb13d",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​产业链逻辑上是一个树</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "f039f70b085d44858392916ff6a3e000",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​结合其余数据</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "71e33ba14733401dae27f890acc282db",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​思路1：使用供应链网络作为一个引子，串联起其余的量价因子</p>",
+                      "content": "",
+                      "folded": 1,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "151fe86fde6b455baad5edf8961dc69d",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​first order effect</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "2a59f6e5322e47bf8e8d7f326ecd9b1f",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​eg</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "ded824aa864f48d38d4a304b5c81f7de",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "中金研报：供应链如何实现动量传导",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "502009bd162949cfabc12dc147634c08",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​Deutsche bank markets research by Wu Jing and his latter papers</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "1400ff6979fa4d5e8d1f2babb3786c6c",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​supply chain and correlation</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "8964dc98f40245e5b7e8b0b6be9175df",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>​基于A股供应链网络的股票收益分析</p>",
+                                  "content": "",
+                                  "children": [
+                                    {
+                                      "uuid": "9e181c35e9f84d0fb23e7ba1970769d5",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "<p>https://cloud.tencent.com/developer/article/2204639</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    },
+                                    {
+                                      "uuid": "324579bc89f443f09236db2d2e58cf36",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "<p>使用的就是数库的供应链数据</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ],
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "c0625c6ce2004cbda96016f60bde8d42",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>​基于供应链网络的股票收益分析</p>",
+                                  "content": "",
+                                  "folded": 0,
+                                  "link": "",
+                                  "children": [
+                                    {
+                                      "uuid": "a6f6fe15023a45d495c3518d6cb0515b",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "<p>​https://mp.weixin.qq.com/s?__biz=MzAxNTc0Mjg0Mg==&amp;mid=2653335545&amp;idx=1&amp;sn=5fabc2e871941010c14b81934e5fa23b&amp;chksm=802d6decb75ae4fabb683d91b1bc77724cb8320125c23e151cf2ffb4131cfc61e5a50dce789d&amp;scene=21#wechat_redirect</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ]
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "5f17442ba8c7463eb2cb905820d6e342",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​思路2：发掘网络特性，以此来预测价格涨跌</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "a6c8e7457a08484cb786ee95d0bfd368",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​second order effect</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "e810df94f4754a66983e8d574e3e5e35",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​eg</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "fcdb42a2aa834fcfb9cd52f38353e18f",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "centrality",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "6ba54b2414db4bdfa7d00709dc59a1a2",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "visibility, resilience",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "be2bd940822e429b85c2dde2bb54355e",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>​TMB: top minus bottom</p>",
+                                  "content": "",
+                                  "folded": 0,
+                                  "link": "",
+                                  "children": [
+                                    {
+                                      "uuid": "ba2757f01f3843e0baf7adea7ed4152e",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "<p>​distance to customers</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "0a5176efe9d34043b657bf339776607b",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​更多介绍请参考Wu Jing 的最近论文 Credit Rating Prediction Through Supply Chains: A Machine Learning Approach</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": null
+                            },
+                            {
+                              "uuid": "89061cf1cee04da48dd1acb925bb6b2d",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​graph neural network</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "9a5d8523b2904b388ab06a78eff857eb",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "https://distill.pub/2021/gnn-intro/",
+                                  "content": "",
+                                  "folded": 0,
+                                  "link": "",
+                                  "children": [
+                                    {
+                                      "uuid": "9f9ff1d6d0a64522ac9ac0440a68c8cf",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "<p>​图介绍</p>",
+                                      "content": "",
+                                      "folded": 0,
+                                      "link": "",
+                                      "children": null
+                                    }
+                                  ]
+                                },
+                                {
+                                  "uuid": "27fca76221074d6baef722ed78d33d26",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "https://www.youtube.com/watch?v=GXhBEj1ZtE8&t=628s",
+                                  "content": "",
+                                  "children": [
+                                    {
+                                      "uuid": "b57f945c9725470089b3608cb392601e",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "<p>​图神经网络介绍</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ],
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "608c3255334d45f48d5b0894e30398a3",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>供应链网络数据</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "ec4fe63de5ab4627945d11088ed0d6e9",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​特征</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "8d5d6afaacc94bcc9ce5b4dc83b0c673",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​缺失非常严重</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "5ba05e373faa4eef983566af7f371cb5",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>在美国，超过10%的销售额才会被强制报告</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "a3cd650af9f949589d183543fbaeb0a9",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​小公司一般不披露，也没有太多分析师研究</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "f4bdddfde639406ab15e2c49894ef48a",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​大公司很少有符合必须披露的公司，但有分析师覆盖+研究众多，所以比较详细 （biased to large companies）</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "daad35ac4bfd4e2fb1c44b4db00eb077",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​biased</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "755edde526c84e08aa44dd53506d7b7f",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​一般只披露对自己有利的供应商或顾客</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "7711f1381e2d42dfb37939830750eed5",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "数据频率非常的低，是从半年报，年报里清洗出来的",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "1ef7f2ad2a914c5ba14071b0a0429660",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​解决方案</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "a0708251fa3e4885b4ad621a14b7ea17",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>拓展关系类型</p>",
+                                  "content": "",
+                                  "children": [
+                                    {
+                                      "uuid": "bd9d6ae424224c39b6f718bea7edebaa",
+                                      "side": "right",
+                                      "linkColor": "",
+                                      "title": "<p>来自论文 supply chain and correlation</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    },
+                                    {
+                                      "uuid": "a68b8656b4474e1586cfc4b1c10095ab",
+                                      "side": "right",
+                                      "linkColor": "",
+                                      "title": "<p>​eg1. 同一个供应商，同一个客户，一个的客户是另外的一个供应商</p>",
+                                      "content": "",
+                                      "children": [
+                                        {
+                                          "uuid": "73e46adc19c449f0b3448cc2eeb7cd62",
+                                          "side": "right",
+                                          "linkColor": "",
+                                          "title": "<p>​好处：通过第三方，引入了非上市公司；也丰富了网络</p>",
+                                          "content": "",
+                                          "folded": 0,
+                                          "link": "",
+                                          "children": null
+                                        }
+                                      ],
+                                      "folded": 0,
+                                      "link": ""
+                                    },
+                                    {
+                                      "uuid": "56c2e8f5bc044df992e3fef8a4d57594",
+                                      "side": "right",
+                                      "linkColor": "",
+                                      "title": "<p>eg2: 社区检测算法</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    },
+                                    {
+                                      "uuid": "4afbf345f3424a97a08e65490c584a8c",
+                                      "side": "right",
+                                      "linkColor": "",
+                                      "title": "<p>​eg3. 二阶关系</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ],
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ]
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "1f70968dbe44447cbbd937a398841e86",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​分类</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "6731d254fef449d6aabc071d71fcb2bf",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​quantified</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "ba72fba2299a4ff8a48fd4c7a4508a35",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>the actual sale is disclosed</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "6f70bf88678a41dcbb7a1904ee6dce2f",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​unquantified</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "7efa6f72019046d9a2c157a683007063",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​大部分的供应商消费者是从网站等渠道获取，没有明确的销售额</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "folded": 1,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            }
+          ],
+          "linkColor": "#C0C0C0",
+          "side": null,
+          "title": "<p>SAM 数据库</p>",
+          "content": null,
+          "siblingOrder": 0,
+          "link": null,
+          "leftIcons": null,
+          "rightIcons": null,
+          "folded": false
+        }
+      ],
+      "theme": "{\"magic\":\"zmtheme:v500\",\"version\":3,\"name\":\"bg_bright_ln_color\",\"text\":\"默认多色\",\"image\":\"/images/common/theme-bg-bright-ln-color.png\",\"mapBgColor\":\"#FFFFFF\",\"mapFgColor\":\"#282828\",\"fontColor\":\"#282828\",\"rootLineColor\":\"#C0C0C0\",\"lineColors\":[\"#3A8DDF\",\"#E08370\",\"#5FBC5C\",\"#B24BC8\",\"#75CFDC\"]}",
+      "version": 1,
+      "frontendState": null,
+      "commit": 315,
+      "isDefault": false,
+      "title": "<p>中心主题</p>"
+    },
+    "zmCounter": {
+      "read": 0,
+      "voteAmount": 0,
+      "voteUp": 0,
+      "voteDown": 0,
+      "comment": 0,
+      "challenge": 0,
+      "bookmark": 0,
+      "shareAmount": 0,
+      "shareCircle": 0,
+      "shareFriends": 0,
+      "share2qq": 0,
+      "share2qzone": 0
+    }
+  },
+  "extra": null,
+  "mt": null,
+  "token": null
+}

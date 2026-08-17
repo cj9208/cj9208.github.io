@@ -1,0 +1,51 @@
+volatility forecast
+- traditional financial methods
+  - ARCH by Engle 1982
+    - GARCH 1986
+      - other features
+        - asymmetry
+        - non-linearity
+          - volatility^alpha, general power
+          - log-volatility
+        - external variables
+      - by adding past conditional covariance as a feature
+    - extension to multidimensional case
+      - Difficulties
+        - too many parameters in general, hard to accurately estimate
+      - popular models
+        - BEKK
+        - GO-GARCH 2002
+          - xt=Zytx_t = Z y_txt=Zyt
+          - univariate volatility model + constant transformation map
+        - DCC Engle 2002
+          - univariate volatility model + GARCH-type correlation model
+  - stochastic volatility(SV)
+    - Difficulties
+      - require strong assumptions (insights)
+      - hard to inference
+        - requiere a lot of simulations
+    - some realizations
+      - GP-Vol
+      - stochvol
+      - NSVM
+- Deep learning based
+  - RNN-based
+    - LSTM
+    - GRU
+    - DilatedRNN
+      - introducing dilation to increase reception field while not add too many parameters
+  - Conv-based
+    - TCN
+- codes
+  - NN methods
+    - data
+      - dataloader
+    - models
+    - train
+      - train_model
+        - train_epoch
+        - test_epoch
+      - infer_model
+        - inference
+  - GARCH
+  - Rolling

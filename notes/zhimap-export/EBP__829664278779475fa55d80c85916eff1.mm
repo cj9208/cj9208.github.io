@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0.1">
+<node TEXT="EBP"><node TEXT="compute the posterior distribution"><node TEXT=""></node><node TEXT="hard to compute"></node></node><node TEXT="Approximation 1"><node TEXT="mean-field"><node TEXT="Wij,lW_{ij,l}Wij,l are independent"></node><node TEXT=""></node></node><node TEXT=""></node></node><node TEXT="Simplify marginal distribution"><node TEXT=""></node><node TEXT="perform the summation layer by layer"><node TEXT=""></node></node></node><node TEXT="Approximation 2"><node TEXT="CLT"><node TEXT=""></node></node></node><node TEXT="Approximation 3"><node TEXT=""></node><node TEXT="use Taylor series w.r.t. mean of Wij,lW_{ij,l}Wij,l to first order"></node><node TEXT="first derivative"><node TEXT=""></node><node TEXT="compute using BP"></node></node></node></node>
+</map>

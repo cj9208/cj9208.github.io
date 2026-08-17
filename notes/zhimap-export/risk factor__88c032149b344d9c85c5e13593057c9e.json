@@ -1,0 +1,333 @@
+{
+  "code": 0,
+  "message": "Get MindMap data OK!",
+  "data": {
+    "author": {
+      "userUuid": "857a288bd33c4a8aa9f0fca7bf344142",
+      "nickname": "陈杰",
+      "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJibo26vHhy2zNAOIZWKhtkdOqibFLOiaicQ6YKocqrD8Xmc6fz35bSzZegNyuJAFAcg9qpkKVwg8kk3w/64",
+      "region": "Anhui Hefei",
+      "biography": null
+    },
+    "publicationInfo": {
+      "uuid": "88c032149b344d9c85c5e13593057c9e",
+      "abstracts": null,
+      "recommendations": null,
+      "rating": 100,
+      "releaseType": "CONTENT",
+      "stateUpTime": 1591750493076,
+      "state": "EDITING",
+      "releaseState": "EDITING_NEW",
+      "copyable": false,
+      "private": true,
+      "collaboration": false
+    },
+    "mindMap": {
+      "uuid": "88c032149b344d9c85c5e13593057c9e",
+      "uniCode": "NSqyyukK",
+      "ownerUsrUUID": "857a288bd33c4a8aa9f0fca7bf344142",
+      "createTime": 1591750493076,
+      "lastUpdateTime": 1591750493076,
+      "trees": [
+        {
+          "uuid": "6003ae2f845c455fb0a9ae962f3b6ad7",
+          "children": [
+            {
+              "uuid": "899f18a03b7845509366248904a8f231",
+              "side": "right",
+              "linkColor": "#3A8DDF",
+              "title": "<p>​main</p>",
+              "content": "",
+              "folded": 0,
+              "link": "",
+              "children": [
+                {
+                  "uuid": "1c6289893df14bbe98c4862aafd40215",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​get_model</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "941e00e1f7e64be8ad34dd99f4045c39",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>create_loaders</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "cdb5c44e48eb4cff9a9044cc714dce9a",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​train_epoch(epoch, model, optimizer, train_loader, writer, args)</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "45dcffa44e974d8e9cf9f44bf83594f8",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​train_loader</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "1fd6fabd7f8c4c5e8992fb4c35fb982a",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​iter_batch</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "b8f61091a0014c519280da6c0c6566ff",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​model</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "be46fda7026b4534878ca8ea3cb2b4e3",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​model.train()</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "9406b0d176d2429d95f15dbe0ebf10fe",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>loss_fn(pred, label, cap, cnts, index, args, details=False)</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "88eaddfc1fcb4a92addf9e76e6f5e243",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​regression</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "1463333eab514fb7b8d5cd6401b80c74",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>distance(pred, cnts, index)</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "974ba177c07e48639c5c4a16b21241fb",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​zscore</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "3811b00fcdc348ea81be6bf10308cea5",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​optimizer</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "6dd732385a6d4b71b0990f15ba8ac915",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​writer</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ]
+                },
+                {
+                  "uuid": "5ac518553d22455aa78a7202ecef00cb",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​test_epoch(epoch, model, test_loader, writer, args, prefix='Test')</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "9f98bd2eef754bafa013236c784d8331",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​test_loader</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "76b94428b65e4a4b9063964e51323c4d",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​iter_daily</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "03c392350f9247809cccf253b329109a",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​model</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "c8afe41e2da8410685a2577fba68386c",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​model.eval()</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "uuid": "afaf7724a463483fbfd2e9403ac8052b",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​inference</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "edc83dfab45b4f089eee952f688469ca",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>logic</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "b9caa8e48fc3467abf5fd6366812436c",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​train one epoch, eval one epoch, save the best parameters</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "d21cef051b0045bdbb7a4c81a0700dd3",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​average_params(params_list)</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "16c110cf47794dd286e9cfea26bc5742",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​to be figured out</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "635cfe861c4e44dc8d3eb4f132d5606a",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​index</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ]
+            }
+          ],
+          "linkColor": "#C0C0C0",
+          "side": null,
+          "title": "<p>risk factor</p>",
+          "content": null,
+          "siblingOrder": 0,
+          "link": null,
+          "leftIcons": null,
+          "rightIcons": null,
+          "folded": false
+        }
+      ],
+      "theme": "{\"magic\":\"zmtheme:v500\",\"version\":3,\"name\":\"bg_bright_ln_color\",\"text\":\"默认多色\",\"image\":\"/images/common/theme-bg-bright-ln-color.png\",\"mapBgColor\":\"#FFFFFF\",\"mapFgColor\":\"#282828\",\"fontColor\":\"#282828\",\"rootLineColor\":\"#C0C0C0\",\"lineColors\":[\"#3A8DDF\",\"#E08370\",\"#5FBC5C\",\"#B24BC8\",\"#75CFDC\"]}",
+      "version": 1,
+      "frontendState": null,
+      "commit": 53,
+      "isDefault": false,
+      "title": "<p>中心主题</p>"
+    },
+    "zmCounter": {
+      "read": 0,
+      "voteAmount": 0,
+      "voteUp": 0,
+      "voteDown": 0,
+      "comment": 0,
+      "challenge": 0,
+      "bookmark": 0,
+      "shareAmount": 0,
+      "shareCircle": 0,
+      "shareFriends": 0,
+      "share2qq": 0,
+      "share2qzone": 0
+    }
+  },
+  "extra": null,
+  "mt": null,
+  "token": null
+}

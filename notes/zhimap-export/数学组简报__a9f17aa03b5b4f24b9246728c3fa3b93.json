@@ -1,0 +1,1247 @@
+{
+  "code": 0,
+  "message": "Get MindMap data OK!",
+  "data": {
+    "author": {
+      "userUuid": "857a288bd33c4a8aa9f0fca7bf344142",
+      "nickname": "陈杰",
+      "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJibo26vHhy2zNAOIZWKhtkdOqibFLOiaicQ6YKocqrD8Xmc6fz35bSzZegNyuJAFAcg9qpkKVwg8kk3w/64",
+      "region": "Anhui Hefei",
+      "biography": null
+    },
+    "publicationInfo": {
+      "uuid": "a9f17aa03b5b4f24b9246728c3fa3b93",
+      "abstracts": null,
+      "recommendations": null,
+      "rating": 100,
+      "releaseType": "CONTENT",
+      "stateUpTime": 1582211865810,
+      "state": "EDITING",
+      "releaseState": "EDITING_NEW",
+      "copyable": false,
+      "private": false,
+      "collaboration": true
+    },
+    "mindMap": {
+      "uuid": "a9f17aa03b5b4f24b9246728c3fa3b93",
+      "uniCode": "aISFaILq",
+      "ownerUsrUUID": "857a288bd33c4a8aa9f0fca7bf344142",
+      "createTime": 1582211865810,
+      "lastUpdateTime": 1582211865810,
+      "trees": [
+        {
+          "uuid": "a04993d43cb44fb0b09bd1a04594e0d3",
+          "children": [
+            {
+              "uuid": "7ffa6805a62049a8b940320fa477da8f",
+              "side": "right",
+              "linkColor": "#3A8DDF",
+              "title": "<p>​目标</p>",
+              "content": "",
+              "folded": 0,
+              "link": "",
+              "children": [
+                {
+                  "uuid": "18f0153b6c38499ba91dafc8110ea67a",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​主题</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "a160e9c87bfa4feb9cce89099f770bec",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​网上教学</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "a9d9f4ea636046d0b53aa902f0a140cc",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​内容</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "5f9cbb2eabb043ae8ee181b54ac2256c",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​统筹安排</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "17b52b5bcf8049e9bd29c8c47c7530a0",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​前期调研，动员</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "735adfd358d24831a486e65f1ec3fc93",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​如何组织教学</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "323cbab5120944a5b12084a2583c15f2",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​课前</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "6358b0e9f36f42d481a3d4ea0053d256",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​如何调动学生</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "2345c727475f42ae802994f43e0f6d99",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​上课准备</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "0363882b41e244c29c57b062286eff3e",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​精彩瞬间</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "165dcf3f2b0d4a379a989dfd2b42cec7",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​师生感言</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "a4d2fd0fee6a43e3b0cc8ef18030f1b2",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​好的做法</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "beb857511320486eb1e2956de22e3f62",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​心得体会</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "uuid": "2950558e2cf94039b0cf2544add6d91e",
+              "side": "right",
+              "linkColor": "#E08370",
+              "title": "<p>初步方向</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "c642a0856f5648dab4b402229dfa5a09",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​教师端</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "44a7850f4fdf45c5a8438baa20f89851",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​困难与挑战</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "d4921e66f6544f0aad9fe0b6e396dda4",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​1. 动员和分工</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "b3c51271695a4e3d8f15cd67feb5f057",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​部分年龄大的老师如何克服困难，进行直播教学</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "c76f08efbd044b3281957c5aa25d3663",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​2. 集体备课</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "69dc215c953b4d498294d0f491942b60",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​资料</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "ba04eb2538fb4f6fba8f5ab32bc4fd04",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​沟通</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "ec3edc8cdd804278b87b80c740161345",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​技术上</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "bca8cac281d14661b921b627764dc651",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​使用新平台</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "a4132b7ff7af41b985d85ee25de7bcc3",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​3. 心理上</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "a5e592a70cd143cbb13b4dec81804af6",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​学生端</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "df1d7b44e6294714939f7824774b428e",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​感想和收获</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "e4aa554ae049415d875e47249e7b00b1",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​师生互动</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "80dca14878fd4ab49fcf6c0f0cb26471",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>学生留言</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "de7a32878baf46368e69c4bba23d2c60",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​课程展示</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "1a1cd346332944b8b09eb154a63ce659",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​上课的老师的宣传海报</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "2939c94ffbd9492ab833cf5e3379687e",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​附带课程链接</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            },
+            {
+              "uuid": "d9030a25d7b54b43a23b30170bde4108",
+              "side": "right",
+              "linkColor": "#5FBC5C",
+              "title": "<p>​方案</p>",
+              "content": "",
+              "folded": 0,
+              "link": "",
+              "children": [
+                {
+                  "uuid": "263c88dd3aa34d28b4dafe80c27fe87a",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​正统</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "fff3efa384e849d785557a2f7712b5b7",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​按顺序介绍课前课中课后</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "43392456fab742debab33efbea73c9a5",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​活泼</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "2f31e52e13d14dedb4016b7df734d61e",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​对困难的立场</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "f12c5270436f438e8d56e39aa2ba1a90",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​各种付出在外人看来是正当的</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "0899b239928f4d12bbe371b1595e9ef5",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>新的展现方式</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "a1130465996c4a65a9310edf02427a17",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​参考假如西游记里的人物有朋友圈</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "9989a5cd35c24771b7231721a8d11a50",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​以话题来带动</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "140ab4a3c078413784c124cb2d5714b8",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​以新闻微博的视角</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "8d587f190e3b4b83b5d4cdd3f9dabb08",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​老教师的参与</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "0f267c16d82d4557b2b32b20b745ead4",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​线上教学应该以年轻人为主，突出老年教师的参与</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "12589eeeb33b4f2cbb918fc66e71448c",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​话题</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "5812ba9a95414363898a0c5cbd985533",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>#​60后老教师转型做网师#</p>",
+                                  "content": "",
+                                  "folded": 0,
+                                  "link": "",
+                                  "children": null
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "0ee1bc3da9f9426481edd891015f2560",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​热评</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "d57f0b90d55c457eb21109b49b8b93c1",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​同课组老师的评论</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "ab0427910b8642eeab732dc1dce8a0ea",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​学生的看法，揉进了学生的感想</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ]
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "1c150a81a11e4bdf84e0ce9ec156485f",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​备课篇</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "a44751e5b90b488ca157b6b5370dd7d4",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​话题</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "9ebfaec7d6dc4c60a81b4929b82c3ea3",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​资料共享</p>",
+                                  "content": "",
+                                  "children": [
+                                    {
+                                      "uuid": "28b6235d9a044332ab464b33cbd9380d",
+                                      "side": "right",
+                                      "linkColor": "",
+                                      "title": "<p>​临时拼凑出的资料库</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ],
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "f797c5ab18834afcb90615df827a0665",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​消灭灵魂画手</p>",
+                                  "content": "",
+                                  "children": [
+                                    {
+                                      "uuid": "e26f85d429a04c278f34b1f67beb4446",
+                                      "side": "right",
+                                      "linkColor": "",
+                                      "title": "<p>​鼠标画图</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    },
+                                    {
+                                      "uuid": "07d874b7c80843758a70cf544aca59b4",
+                                      "side": "right",
+                                      "linkColor": "",
+                                      "title": "<p>​更换手写板</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    },
+                                    {
+                                      "uuid": "23c954f3de1c43cd8ffedc37f9cd4055",
+                                      "side": "right",
+                                      "linkColor": "",
+                                      "title": "<p>命名：​千里奔袭的手写板</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ],
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "baaa066b74a54e91881a7666788301e7",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​组内互相帮助</p>",
+                                  "content": "",
+                                  "children": [
+                                    {
+                                      "uuid": "dd16e0d9cb724e5f94784f2a291765a6",
+                                      "side": "right",
+                                      "linkColor": "",
+                                      "title": "<p>前期​平台技术操作讨论和学习</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    },
+                                    {
+                                      "uuid": "2d13cfd89cb149ba85c40a9023326b11",
+                                      "side": "right",
+                                      "linkColor": "",
+                                      "title": "<p>​课堂上老师互相听，并互相帮助和指出问题</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ],
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "7e73562a2e4f43c19210908c7e1130a9",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​心理上的准备</p>",
+                                  "content": "",
+                                  "folded": 0,
+                                  "link": "",
+                                  "children": [
+                                    {
+                                      "uuid": "e1dcc6e4da334aae97cbce3559689b22",
+                                      "side": "right",
+                                      "linkColor": "",
+                                      "title": "<p>​各种预案</p>",
+                                      "content": "",
+                                      "children": [
+                                        {
+                                          "uuid": "07a084ce0f4544aabfa64dfb560912a9",
+                                          "side": "right",
+                                          "linkColor": "",
+                                          "title": "<p>​平台的可靠性</p>",
+                                          "content": "",
+                                          "folded": 0,
+                                          "link": "",
+                                          "children": [
+                                            {
+                                              "uuid": "3d3ac6c3200443de93df38640130a918",
+                                              "side": "right",
+                                              "linkColor": "",
+                                              "title": "<p>​多个平台备份</p>",
+                                              "content": "",
+                                              "children": null,
+                                              "folded": 0,
+                                              "link": ""
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "uuid": "07856999b6204bf4854c0868781834ec",
+                                          "side": "right",
+                                          "linkColor": "",
+                                          "title": "<p>​网络的问题</p>",
+                                          "content": "",
+                                          "folded": 0,
+                                          "link": "",
+                                          "children": [
+                                            {
+                                              "uuid": "3d6521ae707b4853a7dc641b34352f5a",
+                                              "side": "right",
+                                              "linkColor": "",
+                                              "title": "<p>​提前录微课</p>",
+                                              "content": "",
+                                              "children": null,
+                                              "folded": 0,
+                                              "link": ""
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "uuid": "095a6152ab9942bba3d3329cd2a778fb",
+                                          "side": "right",
+                                          "linkColor": "",
+                                          "title": "<p>​如何监督学生</p>",
+                                          "content": "",
+                                          "folded": 0,
+                                          "link": "",
+                                          "children": [
+                                            {
+                                              "uuid": "d4cc1f6f6b7a40d284224a097e320cdc",
+                                              "side": "right",
+                                              "linkColor": "",
+                                              "title": "<p>​随堂练习和课后作业的设置</p>",
+                                              "content": "",
+                                              "children": null,
+                                              "folded": 0,
+                                              "link": ""
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ]
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "fe5aa044a79e4a8d907fece4fd931fcc",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​上课篇</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "29699cb6c52f4eec9a68a108f150c067",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​话题</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "0f1bfcc1718249f2aa5c12681e2a19b9",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​学生给老师送花花，点赞</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "11be94a838c149d68c4b1e2fec2dc684",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​数据的分析</p>",
+                                  "content": "",
+                                  "children": [
+                                    {
+                                      "uuid": "c16d9429ae8a49d8a9adda247ab72cb4",
+                                      "side": "right",
+                                      "linkColor": "",
+                                      "title": "<p>​听课率</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    },
+                                    {
+                                      "uuid": "0770049597e04c5eb78f8b9478a86557",
+                                      "side": "right",
+                                      "linkColor": "",
+                                      "title": "<p>​视频回放</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ],
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "34c3b53a80e14a5bae38f3fc4cd40ec2",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​课后篇</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "e6dc9c0aed964b4cbbab5edea651b22d",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​话题</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "7edee4e2176147dcbd723ce6a10f8f97",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​改作业</p>",
+                                  "content": "",
+                                  "children": [
+                                    {
+                                      "uuid": "fbc528814eb448e189e4e9b74059c46b",
+                                      "side": "right",
+                                      "linkColor": "",
+                                      "title": "<p>​对着电脑改作业改到头昏眼花</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ],
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "ba282443c9a64b98b43c317ddce5281b",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​和学生的互动</p>",
+                                  "content": "",
+                                  "children": [
+                                    {
+                                      "uuid": "a95fda13c4bf4b60acc7a7a2ba75784b",
+                                      "side": "right",
+                                      "linkColor": "",
+                                      "title": "<p>​更及时的反馈</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ],
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ]
+            },
+            {
+              "uuid": "79a6366b8c1140eeb83bdf0e5dbf6da2",
+              "side": "right",
+              "linkColor": "#B24BC8",
+              "title": "<p>​网课 vs 课堂</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "579e790095954052bf6b51f8e189fb4a",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​问题</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "426cb22d55c04f768b157185973fda43",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​线上课堂问题在哪里，有无改进？</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "38100e4bf8bd4de49aa34ff27535a4bd",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​线下课堂怎么借鉴优势</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "150c93bba3f048369a7615affe8b07a2",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​优点</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "87887717f2044818b63943dc15c3f7b9",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​大课，老师效能高</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "9cb53661d00f4dc9b28c6af9bb6b89fb",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​回看</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "06fa7ff74f2243a1b0d789c75c366c07",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​作业</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "c150dde3ade84246b92a668c7363602b",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​作业提交的安排</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "0d446d68dcd8490d9fbc36781b40685c",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​可以设定截止时间</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "254c0d0eae754e8ca17f4c58e45628dd",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​更好地作业互动</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "58f1685cbc8141f7a660adbb5b37ceb2",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​缺点</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "9f01fd40777e4c07b802729d6da90602",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​设备的要求比较高</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "d4bf32a7f2734c259c7c8d8f62d074bd",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​网络卡顿</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "4f2692326bc74757ba7234fc2aaaa8be",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​网络延迟</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "93ad9d052426445ba432a7f3356fceee",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​课上提问</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "7ad34f0387304c2c9c72806410b48489",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​老师提问</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "2517deb0a2a84050a62d26780d8a5ffa",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​学生延迟几秒收到，回复</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "80b6803b795f42ecbc92ab3b9aa59c21",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​老师几秒后收到，回复</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "30f2940fa9ae46d8a21f65277486e1f5",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​其余学生在延迟的过程中跟不上</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "6acfff5d4aec4aa0b0fccec06d6fed8c",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​课堂监管力度不够</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "b50ee60f6dd1443a829c74e0355a4c2f",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​考勤难</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "51e4ab08ed20416390fc5b9f4ea13eb7",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​需要积极的课代表，统计和反馈</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "9f2c92c8d23d4c589cf3ed7696bec0ec",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​非常依赖于学生的主动性</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "4e5f8d74a53e425e95b30290dddb0b37",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​给学困生极大的机会去逃避，​他们的信息得不到关注</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "8de639f9dac9483ebb87dc3676abc889",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>考勤率，复看率都在下降</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "7d1b8ea9550a442d870cce3c6a109492",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​沟通成本</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "195a9010529b47789fbfb2290eac3626",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​发现学生问题</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "8c1e5868d0304758a086f0a3506243aa",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​转给班主任， 由他来，比较无效率</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "3a99f51cb5754dd4b74a850aeadb014e",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​只适合纯教授型的课堂</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "ad27d459b8f24062bea95901a37b485b",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​很难互动</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "c6ab2ddb709c44ce95d0ab89810bccc3",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​很难做测试</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            }
+          ],
+          "linkColor": "#C0C0C0",
+          "side": null,
+          "title": "<p>数学组简报</p>",
+          "content": null,
+          "siblingOrder": 0,
+          "link": null,
+          "leftIcons": null,
+          "rightIcons": null,
+          "folded": false
+        }
+      ],
+      "theme": "{\"magic\":\"zmtheme:v500\",\"version\":3,\"name\":\"bg_bright_ln_color\",\"text\":\"默认多色\",\"image\":\"/images/common/theme-bg-bright-ln-color.png\",\"mapBgColor\":\"#FFFFFF\",\"mapFgColor\":\"#282828\",\"fontColor\":\"#282828\",\"rootLineColor\":\"#C0C0C0\",\"lineColors\":[\"#3A8DDF\",\"#E08370\",\"#5FBC5C\",\"#B24BC8\",\"#75CFDC\"]}",
+      "version": 1,
+      "frontendState": null,
+      "commit": 203,
+      "isDefault": false,
+      "title": "<p>中心主题</p>"
+    },
+    "zmCounter": {
+      "read": 0,
+      "voteAmount": 0,
+      "voteUp": 0,
+      "voteDown": 0,
+      "comment": 0,
+      "challenge": 0,
+      "bookmark": 0,
+      "shareAmount": 0,
+      "shareCircle": 0,
+      "shareFriends": 0,
+      "share2qq": 0,
+      "share2qzone": 0
+    }
+  },
+  "extra": null,
+  "mt": null,
+  "token": null
+}

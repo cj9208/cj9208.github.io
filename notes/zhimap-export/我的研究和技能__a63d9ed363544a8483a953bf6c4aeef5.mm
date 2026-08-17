@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0.1">
+<node TEXT="我的研究和技能"><node TEXT="courses"><node TEXT="models"><node TEXT="stochastic calculus"></node><node TEXT="financial modelling"></node></node><node TEXT="numerical methods"><node TEXT="Monte Carlo simulation"></node><node TEXT="finite difference"></node><node TEXT="finite element"></node><node TEXT="transformation-based methods"></node></node><node TEXT="machine learning and deep learning"><node TEXT="know the theory"></node><node TEXT="little actual coding experiences"><node TEXT="LeetCode"></node><node TEXT="Kaggle competition"></node></node></node></node><node TEXT="research"><node TEXT="barrier option pricing using Hilbert transform"></node><node TEXT="option pricing with news sentiment and text analysis"></node></node></node>
+</map>

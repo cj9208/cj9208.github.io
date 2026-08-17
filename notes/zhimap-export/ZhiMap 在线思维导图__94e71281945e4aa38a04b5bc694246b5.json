@@ -1,0 +1,482 @@
+{
+  "code": 0,
+  "message": "Get MindMap data OK!",
+  "data": {
+    "author": {
+      "userUuid": "857a288bd33c4a8aa9f0fca7bf344142",
+      "nickname": "陈杰",
+      "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJibo26vHhy2zNAOIZWKhtkdOqibFLOiaicQ6YKocqrD8Xmc6fz35bSzZegNyuJAFAcg9qpkKVwg8kk3w/64",
+      "region": "Anhui Hefei",
+      "biography": null
+    },
+    "publicationInfo": {
+      "uuid": "94e71281945e4aa38a04b5bc694246b5",
+      "abstracts": null,
+      "recommendations": null,
+      "rating": 100,
+      "releaseType": "CONTENT",
+      "stateUpTime": 1559310918588,
+      "state": "EDITING",
+      "releaseState": "EDITING_NEW",
+      "copyable": false,
+      "private": false,
+      "collaboration": false
+    },
+    "mindMap": {
+      "uuid": "94e71281945e4aa38a04b5bc694246b5",
+      "uniCode": "dfBDledi",
+      "ownerUsrUUID": "bb5f46d6c8b34a219387cc2a994b0c58",
+      "createTime": 1505290805370,
+      "lastUpdateTime": 1505290863230,
+      "trees": [
+        {
+          "uuid": "096ecb8aed5a49769459aad656df54c6",
+          "children": [
+            {
+              "uuid": "f722634761654f02be05ba58b9599a5f",
+              "children": [
+                {
+                  "uuid": "a541b72797304bd7b63ab0e6f5d5d629",
+                  "children": null,
+                  "linkColor": "",
+                  "side": "",
+                  "title": "<p>在线<b>思维导图</b>工具</p>",
+                  "content": "",
+                  "siblingOrder": 0,
+                  "link": "",
+                  "leftIcons": null,
+                  "rightIcons": null,
+                  "folded": false
+                },
+                {
+                  "uuid": "04a1c3e2532c4ae2a6b112610e4a26fe",
+                  "children": null,
+                  "linkColor": "",
+                  "side": "",
+                  "title": "知识分享社区",
+                  "content": "",
+                  "siblingOrder": 0,
+                  "link": "",
+                  "leftIcons": null,
+                  "rightIcons": null,
+                  "folded": false
+                }
+              ],
+              "linkColor": "#0DA7D3",
+              "side": "right",
+              "title": "<p>ZhiMap是什么？</p>",
+              "content": "",
+              "siblingOrder": 0,
+              "link": "https://zhimap.com/",
+              "leftIcons": [
+                {
+                  "name": "signal-question"
+                }
+              ],
+              "rightIcons": null,
+              "folded": false
+            },
+            {
+              "uuid": "a80a16fd080b43e28709fc4bf1ab13e1",
+              "children": [
+                {
+                  "uuid": "87cb9991faf44011b3b062daee28d7c4",
+                  "children": null,
+                  "linkColor": "",
+                  "side": "",
+                  "title": "<p>记读书笔记</p>",
+                  "content": "",
+                  "siblingOrder": 0,
+                  "link": "",
+                  "leftIcons": [
+                    {
+                      "name": "number-01"
+                    }
+                  ],
+                  "rightIcons": null,
+                  "folded": false
+                },
+                {
+                  "uuid": "29e40257f0b94588a0e5e3b4f69e0d89",
+                  "children": null,
+                  "linkColor": "",
+                  "side": "",
+                  "title": "<p>写提纲、列计划</p>",
+                  "content": "",
+                  "siblingOrder": 1,
+                  "link": "",
+                  "leftIcons": [
+                    {
+                      "name": "number-02"
+                    }
+                  ],
+                  "rightIcons": null,
+                  "folded": false
+                },
+                {
+                  "uuid": "9677d87958674987833e92ee2ea385cb",
+                  "children": null,
+                  "linkColor": "",
+                  "side": "",
+                  "title": "<p>知识整理</p>",
+                  "content": "",
+                  "siblingOrder": 2,
+                  "link": "",
+                  "leftIcons": [
+                    {
+                      "name": "number-03"
+                    }
+                  ],
+                  "rightIcons": null,
+                  "folded": false
+                }
+              ],
+              "linkColor": "#988EE3",
+              "side": "right",
+              "title": "<p><b><span style=\"color:#b45f06;\">有什么用？</span></b></p>",
+              "content": "",
+              "siblingOrder": 1,
+              "link": "",
+              "leftIcons": null,
+              "rightIcons": null,
+              "folded": false
+            },
+            {
+              "uuid": "70d6a21b95234f1d947a108b758ed1aa",
+              "children": [
+                {
+                  "uuid": "d062766acdeb4bb9b25cbfcc5d4ed813",
+                  "children": [
+                    {
+                      "uuid": "154c2067ff014d7091a1fa4e71a3aec2",
+                      "children": [
+                        {
+                          "uuid": "c1c0591469834ff1b3b15191946934de",
+                          "children": null,
+                          "linkColor": "",
+                          "side": "right",
+                          "title": "<p>​gif动图也行</p>",
+                          "content": "",
+                          "siblingOrder": 0,
+                          "link": "",
+                          "leftIcons": null,
+                          "rightIcons": null,
+                          "folded": false
+                        }
+                      ],
+                      "linkColor": "",
+                      "side": "right",
+                      "title": "<p>​插入图片</p>",
+                      "content": "",
+                      "siblingOrder": 0,
+                      "link": "",
+                      "leftIcons": null,
+                      "rightIcons": null,
+                      "folded": false
+                    },
+                    {
+                      "uuid": "c4e34a93f31a43d28e8480f1aec53b72",
+                      "children": null,
+                      "linkColor": "",
+                      "side": "right",
+                      "title": "<p>​数学公式&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><mstyle scriptlevel=\"0\" displaystyle=\"true\"><msubsup><mo>∫</mo><mrow><mo>−</mo><mi mathvariant=\"normal\">∞</mi></mrow><mi mathvariant=\"normal\">∞</mi></msubsup><msup><mi>e</mi><mrow><mo>−</mo><mi>a</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></msup><mi>d</mi><mi>x</mi><mo>=</mo><msqrt><mfrac><mi>π</mi><mi>a</mi></mfrac></msqrt></mstyle></mrow><annotation encoding=\"application/x-tex\"> \\displaystyle \\int_{-\\infty}^{\\infty}e^{-ax^2}dx =  \\sqrt{  \\frac{ π }{a}  } </annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:2.384573em;vertical-align:-0.970281em;\"></span><span class=\"mop\"><span class=\"mop op-symbol large-op\" style=\"margin-right:0.44445em;position:relative;top:-0.0011249999999999316em;\">∫</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.414292em;\"><span style=\"top:-1.7880500000000001em;margin-left:-0.44445em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">−</span><span class=\"mord mtight\">∞</span></span></span></span><span style=\"top:-3.8129000000000004em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">∞</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.970281em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathit\">e</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.0369199999999998em;\"><span style=\"top:-3.113em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">−</span><span class=\"mord mathit mtight\">a</span><span class=\"mord mtight\"><span class=\"mord mathit mtight\">x</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8913142857142857em;\"><span style=\"top:-2.931em;margin-right:0.07142857142857144em;\"><span class=\"pstrut\" style=\"height:2.5em;\"></span><span class=\"sizing reset-size3 size1 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class=\"mord mathit\">d</span><span class=\"mord mathit\">x</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:2.44em;vertical-align:-0.8953449999999998em;\"></span><span class=\"mord sqrt\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.5446550000000001em;\"><span class=\"svg-align\" style=\"top:-4.4em;\"><span class=\"pstrut\" style=\"height:4.4em;\"></span><span class=\"mord\" style=\"padding-left:1em;\"><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.10756em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathit\">a</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.03588em;\">π</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.686em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span></span></span><span style=\"top:-3.5046550000000005em;\"><span class=\"pstrut\" style=\"height:4.4em;\"></span><span class=\"hide-tail\" style=\"min-width:1.02em;height:2.48em;\"><svg width=\"400em\" height=\"2.48em\" viewBox=\"0 0 400000 2592\" preserveAspectRatio=\"xMinYMin slice\"><path d=\"M424,2478c-1.3,-0.7,-38.5,-172,-111.5,-514c-73,\n-342,-109.8,-513.3,-110.5,-514c0,-2,-10.7,14.3,-32,49c-4.7,7.3,-9.8,15.7,-15.5,\n25c-5.7,9.3,-9.8,16,-12.5,20s-5,7,-5,7c-4,-3.3,-8.3,-7.7,-13,-13s-13,-13,-13,\n-13s76,-122,76,-122s77,-121,77,-121s209,968,209,968c0,-2,84.7,-361.7,254,-1079\nc169.3,-717.3,254.7,-1077.7,256,-1081c4,-6.7,10,-10,18,-10H400000v40H1014.6\ns-87.3,378.7,-272.6,1166c-185.3,787.3,-279.3,1182.3,-282,1185c-2,6,-10,9,-24,9\nc-8,0,-12,-0.7,-12,-2z M1001 80H400000v40H1014z\"></path></svg></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8953449999999998em;\"><span></span></span></span></span></span></span></span></span>&nbsp;&nbsp;</p>",
+                      "content": "",
+                      "siblingOrder": 0,
+                      "link": "",
+                      "leftIcons": [
+                        {
+                          "name": "hand-good"
+                        }
+                      ],
+                      "rightIcons": null,
+                      "folded": false
+                    },
+                    {
+                      "uuid": "9217d9074a8f42e78be1acb452a32af1",
+                      "children": null,
+                      "linkColor": "",
+                      "side": "right",
+                      "title": "<p>​备注支持&nbsp;<span style=\"font-weight: bold; font-style: italic;\">markdown</span></p>",
+                      "content": "<p>直接输入markdown语法即可</p>",
+                      "siblingOrder": 0,
+                      "link": "",
+                      "leftIcons": null,
+                      "rightIcons": null,
+                      "folded": false
+                    }
+                  ],
+                  "linkColor": "",
+                  "side": "right",
+                  "title": "<p>​<span style=\"color: rgb(224, 150, 233); font-weight: bold; font-size: x-large;\">富文本</span>编辑，<br>字体与<span style=\"font-weight: bold; color: rgb(226, 62, 43);\">颜色</span>任意设置</p>",
+                  "content": "",
+                  "siblingOrder": 0,
+                  "link": "",
+                  "leftIcons": null,
+                  "rightIcons": null,
+                  "folded": false
+                },
+                {
+                  "uuid": "5257deedd420438fa860b546458e828e",
+                  "children": [
+                    {
+                      "uuid": "df0ee53d60584834b25b5a5a3994d88c",
+                      "children": [
+                        {
+                          "uuid": "981142196ac3464c87d4da082cfb048a",
+                          "children": null,
+                          "linkColor": "",
+                          "side": "right",
+                          "title": "<p>​私密导图</p>",
+                          "content": "",
+                          "siblingOrder": 0,
+                          "link": "",
+                          "leftIcons": [
+                            {
+                              "name": "lockon_default"
+                            }
+                          ],
+                          "rightIcons": null,
+                          "folded": false
+                        }
+                      ],
+                      "linkColor": "",
+                      "side": "right",
+                      "title": "<p>​历史版本</p>",
+                      "content": "",
+                      "siblingOrder": 0,
+                      "link": "",
+                      "leftIcons": null,
+                      "rightIcons": null,
+                      "folded": false
+                    }
+                  ],
+                  "linkColor": "",
+                  "side": "right",
+                  "title": "<p>​多人实时协作</p>",
+                  "content": "",
+                  "siblingOrder": 0,
+                  "link": "",
+                  "leftIcons": [
+                    {
+                      "name": "people_default"
+                    }
+                  ],
+                  "rightIcons": null,
+                  "folded": false
+                },
+                {
+                  "uuid": "8ffa7429d6044e7fb641cd1c0ca2ec5b",
+                  "children": [
+                    {
+                      "uuid": "607535e272f6457ca421d9c509262c94",
+                      "children": null,
+                      "linkColor": "",
+                      "side": "right",
+                      "title": "<p>​还能导出<b style=\"color: rgb(39, 39, 39);\">word</b>文件！</p>",
+                      "content": "",
+                      "siblingOrder": 0,
+                      "link": "",
+                      "leftIcons": null,
+                      "rightIcons": null,
+                      "folded": false
+                    }
+                  ],
+                  "linkColor": "",
+                  "side": "right",
+                  "title": "<p>​<span style=\"font-weight: bold;\">导出</span>高清图片，方便<span style=\"font-weight: bold;\">打印</span></p>",
+                  "content": "",
+                  "siblingOrder": 0,
+                  "link": "",
+                  "leftIcons": [
+                    {
+                      "name": "hand-victory"
+                    }
+                  ],
+                  "rightIcons": null,
+                  "folded": false
+                },
+                {
+                  "uuid": "72ae14add30b4f9e9db16ebc15c9887e",
+                  "children": null,
+                  "linkColor": "",
+                  "side": "right",
+                  "title": "<p>​手机微信、PC电脑上打开浏览器即可使用</p>",
+                  "content": "",
+                  "siblingOrder": 0,
+                  "link": "",
+                  "leftIcons": null,
+                  "rightIcons": null,
+                  "folded": false
+                }
+              ],
+              "linkColor": "#69B500",
+              "side": "right",
+              "title": "<p><b><font size=\"5\">​功能强大</font></b></p>",
+              "content": "",
+              "siblingOrder": 0,
+              "link": "",
+              "leftIcons": [
+                {
+                  "name": "face-02happy"
+                }
+              ],
+              "rightIcons": null,
+              "folded": false
+            },
+            {
+              "uuid": "33efbc0212f34637b3f6e67c08a49b3d",
+              "children": [
+                {
+                  "uuid": "096b681b7b7146aaa3ae3caa345ce4c2",
+                  "children": null,
+                  "linkColor": "",
+                  "side": "right",
+                  "title": "<p>​支持切换主题颜色，夜色背景也支持了！</p>",
+                  "content": "",
+                  "siblingOrder": 0,
+                  "link": "",
+                  "leftIcons": null,
+                  "rightIcons": null,
+                  "folded": false
+                },
+                {
+                  "uuid": "97d2bf608ce34726907617790914a134",
+                  "children": null,
+                  "linkColor": "",
+                  "side": "right",
+                  "title": "<p>​快捷键很丰富，手不离键盘就可以完成大部分编辑操作。</p>",
+                  "content": "",
+                  "siblingOrder": 0,
+                  "link": "",
+                  "leftIcons": null,
+                  "rightIcons": null,
+                  "folded": false
+                },
+                {
+                  "uuid": "1eff15b1e95a4f8cbdd329aa781ad71a",
+                  "children": null,
+                  "linkColor": "",
+                  "side": "right",
+                  "title": "<p>​分享到社交网络和手机微信都很方便。</p>",
+                  "content": "",
+                  "siblingOrder": 0,
+                  "link": "",
+                  "leftIcons": null,
+                  "rightIcons": null,
+                  "folded": false
+                },
+                {
+                  "uuid": "558f8a832b89408a8a6ab9c5658608c5",
+                  "children": null,
+                  "linkColor": "",
+                  "side": "right",
+                  "title": "<p>​各种小图标</p>",
+                  "content": "",
+                  "siblingOrder": 0,
+                  "link": "",
+                  "leftIcons": null,
+                  "rightIcons": null,
+                  "folded": false
+                },
+                {
+                  "uuid": "5f2a069f8fa3441f986f9b29b88a6f5d",
+                  "children": [
+                    {
+                      "uuid": "b912b6b4a0ff4194b885cc2dd291bc51",
+                      "children": null,
+                      "linkColor": "",
+                      "side": "right",
+                      "title": "<p>​多个导图之间通过ctrl＋c，ctrl＋v自由转移数据</p>",
+                      "content": "",
+                      "siblingOrder": 0,
+                      "link": "",
+                      "leftIcons": null,
+                      "rightIcons": null,
+                      "folded": false
+                    },
+                    {
+                      "uuid": "c5f7c001a6ff4412b5ce2853b4030553",
+                      "children": null,
+                      "linkColor": "",
+                      "side": "right",
+                      "title": "<p>​从其他网页通过ctrl＋c复制多行文字，<br>直接ctrl＋v即可自动生成导图节点！</p>",
+                      "content": "",
+                      "siblingOrder": 0,
+                      "link": "",
+                      "leftIcons": null,
+                      "rightIcons": null,
+                      "folded": false
+                    }
+                  ],
+                  "linkColor": "",
+                  "side": "right",
+                  "title": "<p>强大的复制、粘贴功能</p>",
+                  "content": "",
+                  "siblingOrder": 0,
+                  "link": "",
+                  "leftIcons": null,
+                  "rightIcons": null,
+                  "folded": false
+                },
+                {
+                  "uuid": "25bef1daae6f4f5abb017de7995b94fa",
+                  "children": null,
+                  "linkColor": "",
+                  "side": "right",
+                  "title": "<p>更多使用帮助</p>",
+                  "content": null,
+                  "siblingOrder": 5,
+                  "link": "https://zhimap.com/mmap/acc0be7b9de94a18bab0ef80cc10c33c",
+                  "leftIcons": null,
+                  "rightIcons": null,
+                  "folded": false
+                }
+              ],
+              "linkColor": "#E096E9",
+              "side": "right",
+              "title": "<p><b>​还有更多</b></p>",
+              "content": "",
+              "siblingOrder": 0,
+              "link": "",
+              "leftIcons": null,
+              "rightIcons": null,
+              "folded": 0
+            }
+          ],
+          "linkColor": "#C0C0C0",
+          "side": null,
+          "title": "<p><b><font size=\"5\">ZhiMap<br>在线思维导图</font></b></p>",
+          "content": null,
+          "siblingOrder": 0,
+          "link": null,
+          "leftIcons": null,
+          "rightIcons": null,
+          "folded": false
+        }
+      ],
+      "theme": "{\"magic\":\"zmtheme:v500\",\"version\":3,\"name\":\"bg_bright_ln_color\",\"text\":\"默认多色\",\"image\":\"/images/common/theme-bg-bright-ln-color.png\",\"mapBgColor\":\"#FFFFFF\",\"mapFgColor\":\"#282828\",\"fontColor\":\"#282828\",\"rootLineColor\":\"#C0C0C0\",\"lineColors\":[\"#3A8DDF\",\"#E08370\",\"#5FBC5C\",\"#B24BC8\",\"#75CFDC\"]}",
+      "version": 1,
+      "frontendState": "{\"version\":1,\"mmapScale\":1.6,\"focusedNodeUuid\":\"f184e9616da9459488d22179ac5f1fd2\"}",
+      "commit": 84,
+      "isDefault": true,
+      "title": "<p><b><font size=\"5\">ZhiMap<br>在线思维导图</font></b></p>"
+    },
+    "zmCounter": {
+      "read": 0,
+      "voteAmount": 0,
+      "voteUp": 0,
+      "voteDown": 0,
+      "comment": 0,
+      "challenge": 0,
+      "bookmark": 0,
+      "shareAmount": 0,
+      "shareCircle": 0,
+      "shareFriends": 0,
+      "share2qq": 0,
+      "share2qzone": 0
+    }
+  },
+  "extra": null,
+  "mt": null,
+  "token": null
+}

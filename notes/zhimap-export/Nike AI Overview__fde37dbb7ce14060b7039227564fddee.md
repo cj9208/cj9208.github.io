@@ -1,0 +1,144 @@
+# Nike AI Overview
+- adminstration
+  - legal
+    - Product Copy Gen AI
+      - Improve product copywriting efficiency by reducing repetitive manual tasks and speed up writing with GenAI
+    - Intake & Contract Creation
+      - Streamline and automate the intake of contract requests and automatically generate the first drafts of contracts upon receipt of requests.
+    - Post signature Contract Management
+      - Store Nike’s thousands of contracts in an organized repository and automate the analysis of contracts across the repository to extract data quickly and accurately.
+  - HR
+    - workday AI
+      - Benefit to Nike Inc:
+        - Workday AI enables Nike to automate the creation of first drafts of job descriptions, better match employees to potential roles within the enterprise, and provide a conversational interface for employee self-service. This enhances the overall employee experience and engagement.
+      - Expected Value Delivered:
+        - Enhanced Employee Experience: Employees can find new opportunities within Nike more quickly and easily.
+        - Reduced Time to Hire: Streamlining the hiring process leads to faster recruitment cycles.
+        - Overall Efficiency: A more user-friendly HR system improves operational efficiency across human resources functions.
+      - Key Workstreams:
+        - Machine Learning Recommendation for Change Jobs Description: Utilizes machine learning to suggest changes in job descriptions based on data-driven insights.
+        - Job Description Generation on Job Requisitions Description: Automates the generation of job descriptions for requisitions, improving consistency and reducing manual effort.
+        - Workday Assistant: Provides a conversational interface that assists employees with various HR-related inquiries and tasks.
+        - Payroll Insights: Offers analytical insights into payroll processes, enhancing decision-making and operational efficiency.
+  - supply-chain
+    - Aily labs
+      - AI-driven intelligence platform that uses real-time data to enhance decision-making (down to the SKU level) across finance, sales, supply chain operations in a user-friendly mobile interface.
+      - This initial evaluation is a 3-month with our finance team that will simulate various forecasting scenarios, model different budget allocation scenarios, What-If scenarios with various sales, investment decisions, and fluctuating marketing conditions as well as predictive analytics of decision-making.
+- athlete
+  - AI assistant
+- coach
+  - digital coach
+    - shopping assistant
+    - Use Case - A conversational journey to assist athletes*/consumers discover the best products for their unique needs and goals, leading to increased purchase confidence and therefore CVR. Making athlete* dreams real.
+- customer
+  - order2cash
+    - A Gen AI driven solution for automating wholesale customer engagement and enables retrieval of collection
+    - Benefit to Nike Inc
+      - By implementing a Gen AI solution for automating wholesale customer engagement and streamlining collections process. Nike will realize operational efficiency gains and cost reductions within the Order to Cash process. This solution will drive improved customer satisfaction by enabling personalized and timely responses, while also accelerating cash flow by optimizing the collections process. Ultimately, the business will benefit from reduced manual effort for agents, improved responsiveness to partner inquiries, and a more efficient management of the collections process.
+    - Expected Value Delivered
+      - Alignment with Nike Corporate Strategy goal of scaling Wholesale Partnership relationships while minimizing HC additions
+      - Enhanced wholesale partner engagement - timely and expeditious responses to Wholesale partner queries, consistent communications and improved insights
+      - Improved collections communication - ~ 60 - 65%
+      - Productivity savings and efficiency gains
+      - Improved cash flow with potential to reduce Nike Capital costs
+    - Use cases
+      - Use Case 1: Automate Wholesale Customer Engagement utilizing generative AI models for email classification, data integration and email generation.
+      - Use case 2: Enable automated retrieval of collection insights data and auto creation of customer correspondence to support Collections process.
+  - GenAI Powered Agent
+    - Benefit to Nike Inc
+      - Our goal is to create a flexible self-service agent that can be used across various departments such as Customer Service and Finance Operations. By utilizing generative AI, this self-serviced agent will help reduce the need for costly manual interventions, thereby improving the consumer experience and ensuring high levels of satisfaction for customers, partners, and consumers.
+    - Expected Value Delivered
+      - CS GenAI: Improved customer service containment (5% to 15%) w/ self service is associated with $5.2-10.6m annualized savings for FY25.
+      - Finance Operations Agent: Improved service containment for P2P Helpdesk and other financial operations requests is associated with $1.3m annualized savings for FY25
+      - Nike.net Agent: Value statement TBD; Dropped products recommendations full value realization is $40-80m.
+  - product metadata generation
+    - Problem statement
+      - Consumers struggle to find our products online due to a gap between product descriptions and their search terms. Disparate product data systems, manual tagging, and lack of consumer insights feedback loop make product data not fully enriched, leading to wasted resources and a fragmented consumer experience.
+    - Vision
+      - AI-enabled product metadata generation and unified product taxonomy model from creation to commercialization across all Nike channels will improve the quality and richness of Nike’s product data end-to-end, while enabling a premium and distinctive consumer experience.
+    - Benefits to Nike Inc
+      - Improved search, product discovery and relevance across digital channels
+      - Improved consumer satisfaction and shopping experience, increasing engagement and conversion as consumers feel understood and catered to
+      - Increased willingness to pay (based on internal Nike research) if describing products in consumer-centric language
+      - Increased click-through rates by showcasing highly relevant products
+      - Decreased support contacts and improved efficiency for Partners Account Executives and support desk for streamlined partner decision-making process
+      - Improved demand predictions by linking granular product attributes to regional trends and purchase patterns
+      - Enhanced product development with timely insights on trending attributes and consumer preferences
+      - Increased operational efficiency and automated attribute tagging to reduce manual effort across domains but keeping manual verification for output accuracy control
+      - Improved feedback loop from search traffic, consumer reviews, and transactions back to Product Creation, Demant forecasting, Line planning, Merchandising and Marketing teams .
+    - Expected Value Delivered
+      - Revenue Generation, $: Improved conversion rates and revenue per user through enhanced product discoverability.
+      - Productivity Gains, %: Significant time savings by automating the tagging of products and managing missing third-party product attributes.
+      - Enhanced Customer Experience: A more intuitive shopping experience for consumers, leading to increased engagement and sales.
+    - Key Use cases
+      - Automating Tagging & Missing 3rd Party Product Attributes Pilot/Scale: Streamlines the process of tagging products and filling in missing attributes to improve searchability.
+      - Product Discoverability/Search POC Expansion: Expands proof of concept efforts to enhance how products are discovered on platforms like Nike.com.
+        - semantic search
+          - part of product metadata generation
+          - make customers easier to
+            - understand the products
+            - find the right product
+      - Framework Enterprise Alignment: Aligns enterprise taxonomy with consumer signals and market trends to ensure consistency across all product listings.
+      - Testing with Product Copywriting: Integrates metadata generation with product copywriting processes to ensure cohesive messaging and branding.
+- developer
+  - swooshchat
+  - github copilot
+  - databricks
+  - neural core
+    - GSL
+  - box AI
+  - slack AI
+    - Benefit to Nike Inc:
+      - Slack AI enhances productivity and efficiency by automating routine tasks, providing personalized assistance, and analyzing large volumes of text to extract insights and recommendations. This leads to streamlined workflows, quicker information retrieval, and improved collaboration across teams.
+    - Expected Value Delivered:
+      - Real-Time Conversation Summarization: Automatically summarize lengthy Slack conversations, enabling employees to quickly catch up on important discussions.
+      - Enhanced Search: Use AI-powered search to find content in Slack quickly and effectively.
+      - Incident Management Automation: Streamline incident management processes with AI, reducing downtime and improving response times during critical incidents.
+      - Enhanced Project Management: Utilize AI-powered project management through Slack Lists to improve task tracking and project visibility.
+- marketing
+  - SEO content creation
+    - Content Tagging
+      - or product metadata generation
+  - text2video
+  - airmagination
+    - text2image
+  - use case
+    - Image Resizing
+      - resizing
+        - High-level overview
+          - Uses AI to automatically resize images to fit different aspect ratios while preserving image intent to improve efficiency of marketers.
+        - Benifits
+          - Reduction in costs associated with manually resizing images for various marketing channels
+          - Estimated cost savings of $7-$8 million annually
+      - background removal
+        - High-level overview
+          - Uses AI to automatically produce generative fill for a resized image while preserving image intent to improve efficiency of marketers. Uses AI to automatically remove the background of an image while preserving image intent to improve efficiency of marketers.
+        - Benifits
+          - Increased ease at which an image can be used by marketing partners (Geo and otherwise) through the use of image background removal
+          - Increase marketing asset utility which can lead to more efficient use of marketing process time
+          - Further brand awareness through the use of assets in additional marketing channels
+      - generative fill
+        - High-level overview
+        - Benifits
+          - Increase the use of marketing images by allowing them to receive a background fill that makes it so it can be used in more channels (more aspect ratios/sizes) than it otherwise would be able to
+          - Increase marketing asset utility which can lead to more efficient use of marketing process time
+          - Further brand awareness through the use of assets in additional marketing channels
+- Summary
+  - Digital Coach
+    - Agent
+      - self-sevice
+      - use Gen AI to provide timely and consistent response
+      - reduce the need for costly manual interventions
+  - Content Tagging, product metadata generation
+    - customers can be easier to find the satisfied products
+    - marketing
+  - Developer tools
+    - swooshchat
+    - github copilot
+    - GSL
+      - unified internal Gen AI framework
+    - databricks
+  - text2image/video
+    - air-magination
+    - image resizing / background removal / generative fill
+      - marketing

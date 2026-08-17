@@ -1,0 +1,1031 @@
+{
+  "code": 0,
+  "message": "Get MindMap data OK!",
+  "data": {
+    "author": {
+      "userUuid": "857a288bd33c4a8aa9f0fca7bf344142",
+      "nickname": "陈杰",
+      "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJibo26vHhy2zNAOIZWKhtkdOqibFLOiaicQ6YKocqrD8Xmc6fz35bSzZegNyuJAFAcg9qpkKVwg8kk3w/64",
+      "region": "Anhui Hefei",
+      "biography": null
+    },
+    "publicationInfo": {
+      "uuid": "410c3d1058f941a9a17332c0a2a5da08",
+      "abstracts": "code structure of control net ",
+      "recommendations": null,
+      "rating": 100,
+      "releaseType": "CONTENT",
+      "stateUpTime": 1732073691585,
+      "state": "EDITING",
+      "releaseState": "APPLYING",
+      "copyable": false,
+      "private": false,
+      "collaboration": false
+    },
+    "mindMap": {
+      "uuid": "410c3d1058f941a9a17332c0a2a5da08",
+      "uniCode": "JECqOXND",
+      "ownerUsrUUID": "857a288bd33c4a8aa9f0fca7bf344142",
+      "createTime": 1732073691585,
+      "lastUpdateTime": 1732073691585,
+      "trees": [
+        {
+          "uuid": "a5715231e749493d955581810e8e3b8a",
+          "children": [
+            {
+              "uuid": "03bf60539a054e0291219a00fe2cd5ce",
+              "side": "right",
+              "linkColor": "#B24BC8",
+              "title": "<p>ControlLDM</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "f8fe123e0a6444dfb2e0709c793a5f72",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​LatentDiffusion</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "04a0d061ef4041b78c0cf78acf8dadc7",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​DDPM</p>",
+                      "content": "",
+                      "folded": 1,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "719faecf89684bad9100297fd76ea42c",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "pl.LightningModule)",
+                          "content": "",
+                          "folded": 1,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "029e755ca7194d6ca9d63c4bf488bc02",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>organize PyTorch code to remove boilerplate and unlock scalability</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "53bd3dcb6ddb409095ba5f9491c94093",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>functions to be defined</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "561b3fab41ec42748dc79cda0bf2ecb7",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>​​def training_step(self, batch, batch_idx)</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "13cbeb731c2e45e180a043df31660b0b",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>def configure_optimizers(self)</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "e0a2d1c56ccf446b915272cd83880a7b",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​optimize training code</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "0edd72ed82044e17864528418eb15c87",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<img src=\"/res/e/9/1732083709978654822.png\" style=\"width: 555px; height: 50px; max-width: 100%; max-height: 100%;\">",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": "",
+                                  "ttW": 555,
+                                  "ttMaxW": 555
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "924b89363a68482f98e329a648df1bd0",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​full name:&nbsp;Denoising Diffusion Probabilistic Models</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "268ec55f60c04e2c91a6adb7f8b4e5ec",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​in-depth guide</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "d88740d5e26e4d6696acc53704c5ca46",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>https://learnopencv.com/denoising-diffusion-probabilistic-models/#Generating-images-using-DDPMs</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "9db73977372a4fde8bcae20008996dcc",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​idea</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "30117068723b44749894628be39f85dd",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​difficulty</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "9be0da33ddb74abc8f8df77018c2bd6c",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>the distribution of images/videos is known but hard to compute</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "2ec160c67b0d4f4fa761213cb0e5dee8",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​method</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "e21627e805c64a398597fc347c1be9be",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>​by decomposing the distribution into product of gaussian distribution</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "e9612703e4764b72b143be781a016cd7",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>​diffusion</p>",
+                                  "content": "",
+                                  "folded": 0,
+                                  "link": "",
+                                  "children": [
+                                    {
+                                      "uuid": "5d06a75015ef40bfa4f6d987151e3855",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "<p>​sample a point from a gaussian distribution and add it to original point</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ]
+                                },
+                                {
+                                  "uuid": "dbdeab3b4fef4da6a4e23d1a9d209ce3",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>​revers diffusion</p>",
+                                  "content": "",
+                                  "folded": 0,
+                                  "link": "",
+                                  "children": [
+                                    {
+                                      "uuid": "d37b741422074b2f8970b945eeed7a32",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "<p>​denoising</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "0562b60838324e059cfc0b90969a27c3",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​highlight</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "a9c393e1a38841248874e19ce5959570",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>​the loss can be transformed to the MSE loss of forward pass and reverse pass (otherwise the computation would be intractable)</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": "",
+                                  "ttW": 469
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "2007bbf63eaf421f89d75e80bc0d9fdd",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​algorithms</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "10c6dca194f04231933eecd557a12c9f",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​<img src=\"/res/e/4/1732082219751838398.png\" style=\"width: 585px; height: 180px; max-width: 100%; max-height: 100%;\"></p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": "",
+                              "ttW": 585,
+                              "ttMaxW": 585
+                            },
+                            {
+                              "uuid": "2857c59900664a29aae4efbf2bcbb97b",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​parameters</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "9884842fd849478a86f42ffd98217321",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "beta",
+                                  "content": "",
+                                  "folded": 0,
+                                  "link": "",
+                                  "children": [
+                                    {
+                                      "uuid": "7f4451b77a3b4d4ea000b97bbfb10b94",
+                                      "side": "right",
+                                      "linkColor": "",
+                                      "title": "<p>​forward pass</p>",
+                                      "content": "",
+                                      "folded": 0,
+                                      "link": "",
+                                      "children": [
+                                        {
+                                          "uuid": "f130ba35d83a4570a9fe80cd891a0b5c",
+                                          "side": "right",
+                                          "linkColor": "",
+                                          "title": "<img src=\"/res/9/d/1732083893107828220.png\" style=\"width: 258px; height: 54px; max-width: 100%; max-height: 100%;\">",
+                                          "content": "",
+                                          "folded": 0,
+                                          "link": "",
+                                          "ttW": 259,
+                                          "children": [
+                                            {
+                                              "uuid": "fdf791e30582480b895ba58b5ee2a08f",
+                                              "side": "right",
+                                              "linkColor": "",
+                                              "title": "<img src=\"/res/f/c/1732083965375703021.png\" style=\"width: 120px; height: 97px; max-width: 100%; max-height: 100%;\">",
+                                              "content": "",
+                                              "children": null,
+                                              "folded": 0,
+                                              "link": "",
+                                              "ttW": 129
+                                            },
+                                            {
+                                              "uuid": "910a235cb8e34807bd560bbd4c21b9ab",
+                                              "side": "right",
+                                              "linkColor": "",
+                                              "title": "<p>​<img src=\"/res/b/d/1732084627390673947.png\" style=\"width: 258px; height: 61px; max-width: 100%; max-height: 100%;\"></p>",
+                                              "content": "",
+                                              "children": null,
+                                              "folded": 0,
+                                              "link": ""
+                                            }
+                                          ],
+                                          "ttMaxW": 532
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "uuid": "d0d7cb242d7f499fad225ca5d10782bb",
+                                      "side": "right",
+                                      "linkColor": "",
+                                      "title": "<p>​reverse pass</p>",
+                                      "content": "",
+                                      "folded": 0,
+                                      "link": "",
+                                      "children": [
+                                        {
+                                          "uuid": "995856ce1ce441bfa0bd02157edfd182",
+                                          "side": "right",
+                                          "linkColor": "",
+                                          "title": "<p><img src=\"/res/b/2/1732084514825830506.png\" style=\"width: 512px; height: 79px; max-width: 100%; max-height: 100%;\">​</p>",
+                                          "content": "",
+                                          "children": null,
+                                          "folded": 0,
+                                          "link": "",
+                                          "ttW": 512
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "uuid": "5172dc5703e8460d9cb94df212bfe88b",
+                                      "side": "right",
+                                      "linkColor": "",
+                                      "title": "<p>​initially set linearly</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ]
+                                },
+                                {
+                                  "uuid": "457bd0d7fb4548488144c38d0f07d573",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>​timesteps</p>",
+                                  "content": "",
+                                  "folded": 0,
+                                  "link": "",
+                                  "children": [
+                                    {
+                                      "uuid": "c0ef57eb18d544c3aec7f0b1bdc0908f",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "<p>​T</p>",
+                                      "content": "",
+                                      "folded": 0,
+                                      "link": "",
+                                      "children": null
+                                    }
+                                  ]
+                                },
+                                {
+                                  "uuid": "69d3d3f7332b4043b605c145f064ff19",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>​UNet config</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "add8e5d05ee34e668c0ea90fa15944fb",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​implementation</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "3c4df2a9dd57468da2b347d7cc2710ca",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>build upon pytorch lightning package</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "319ba15497554404b0575c4b22739776",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​key</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "34b019be8b774226a79a1c0054cc3d8e",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>diffusion and reverse4 diffusion pass</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "c82b1246aa1848e88fc3f29dcab98ebf",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>stable diffusion model is based on this</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "fdd86ef3eb6e4d759d827e6da051d998",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​introduction</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "6e0fc09b6d3c4bf992bb8be1d8d1ebf7",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "https://medium.com/@onkarmishra/stable-diffusion-explained-1f101284484d",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "00de0fa2c67c404680aee60463449195",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​Coding Stable Diffusion from scratch in PyTorch https://www.youtube.com/watch?v=ZBKpAp_6TGI&nbsp;</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "bc88e2f7bc8647d7890f36559949ab72",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​very good if you want to understand how the large number of codes build up</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": "",
+                              "ttW": 313
+                            }
+                          ],
+                          "folded": 0,
+                          "link": "",
+                          "ttW": 380
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "237aada010d44c73bf239440823c404b",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​idea</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "43b3bf0bbce14af284d71e6b69d35eaa",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>do the diffusion and reverse diffusion in the latent space, whose dimension is much smaller to original image for acceleration</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": "",
+                          "ttW": 474
+                        },
+                        {
+                          "uuid": "fe6a9592a487400a9861b34123d7ed50",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​to do so, it needs to add encoder at the begin and decoder at the end</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "9f9652444fcd4f37b33a6c03af978ae6",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​add a text encoder to process user prompt</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "176f755bc1e04c87bb5200bb179abec2",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​in stable diffusion, the authors use CLIP and freeze it</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "0ea8a99afe6847149c424250cc433d07",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​implementation</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "c33d2d586af74ae69cc01e4e235032e4",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​Similar to DDPM</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "de3768c4d4c54caaa9662cf257cce50a",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>except</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "ed460c73851c46fca26c136c09435947",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​the target is image processed by VAE encoder</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "94449cf15da14c20ba20e0ee9c35b13b",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​the input is the noise + text vector (apply CLIP to text prompts)</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": "",
+                              "ttW": 467
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "fa34328b5f1b4a85b4b391b5369fc087",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​introduction</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "9a755e0bab4648088523aa7275d0af5d",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "https://stable-diffusion-art.com/controlnet/",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "194e4c4e37b9489d92fdabd939519593",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "https://learnopencv.com/controlnet/#What-is-ControlNet?",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "c8976eed741d4b74ba7b208b3c3d78ac",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​idea</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "8dca63a36d804868a7cf9f1ee31c3e19",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​known</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "760fc3b554f745929339a4095a310b5d",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​exiting&nbsp;models are power</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "3ad02566cd454aafbef7c7b387d60892",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>want</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "bca9d3475dda4f07adf1b616ab69cfbb",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​add extra information</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "6b3980f549e4472d912f233b16041bb2",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​method</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "5fc7207b90a0486f87b8f78acc4bad3d",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​keep the original model fixed</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "805159e8eee64aa69400f4db36773ab6",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​make a copy and use it to process additional information</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "67d61c23866647f6bd604b5cb9c042a6",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​use zero convolution to combine them</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "7957349670de4a2a8c92089f4fe1e917",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​<img src=\"/res/b/7/1732095337045773970.png\" style=\"width: 409px; height: 249px; max-width: 100%; max-height: 100%;\"></p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": "",
+                      "ttW": 409
+                    }
+                  ]
+                },
+                {
+                  "uuid": "68134aa24e5e4a568bb1fe803755186d",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​TO DO</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "4de4e588f0c548b3a90a41297ea3891b",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "need to figure out the details",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "710f774607974ba08dbff8d1d3553250",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​as the abstract goes deeper, get more confused</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "20e96f876cf6438c8b2a2f38aac2742c",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​how data are flow in different functions?</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "dc0a47244d4f486fb9c13462d916a7af",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​how the model are built?</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            },
+            {
+              "uuid": "dc00d6a22ce74f319d4d14fa5d0ac7b1",
+              "side": "right",
+              "linkColor": "#3A8DDF",
+              "title": "<p>​ControlVLDM</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "d92bc51fba8f49239bd90e421685d72c",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​VideoLatentDiffusion</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "de9f61de443946888afa58d3e6cb0206",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​stable video diffusion</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "aadfbc5a441545fd99e4228fe9e8eaf3",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​introduction</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "17a316556b6f45c68da1003e676495bc",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "https://medium.com/@AIBites/stable-video-diffusion-convert-text-and-images-to-videos-e0f41b7f6986",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "4bef54f2af6a4b0fb4bf2c212ee5f6c6",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​idea</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "453d9464ba2b423487e89d88e852363b",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​compared to images, videos have another dimension which is time, so a nature idea would be to add spatial layers+temporal attention layers in UNet</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": "",
+                              "ttW": 569,
+                              "ttMaxW": 569
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "a11e6ad9d40444c3a9f48d9aaca196bd",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​implementation</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": null
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "87690402869243a5aaf112d1b419cd40",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​open sora</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "9d6f18276d894a8ab055f612eb6db837",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​introduction</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "c1bd14ab8f9145e292c5702cd00b9dd3",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "https://github.com/hpcaitech/Open-Sora/blob/main/docs/report_03.md",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            },
+            {
+              "uuid": "15e5d1f2ca194ea59da038ec9dc91abb",
+              "side": "right",
+              "linkColor": "#5FBC5C",
+              "title": "<p>​TO DO</p>",
+              "content": "",
+              "folded": 0,
+              "link": "",
+              "children": [
+                {
+                  "uuid": "92d38822bd984fffb1c3a4c1553c5961",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​understand ControlLDM vs LatentDiffusion</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "8074d2ecdbcd4bc0ad46dd8f11f6ffb0",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​understand VideoLatentDiffusion vs LatentDiffusion</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "f856346025044e2295eec947c5a26c4b",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​think how to extend to ControlVLDM</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                }
+              ]
+            }
+          ],
+          "linkColor": "#C0C0C0",
+          "side": null,
+          "title": "<p>ControlNet Code structure</p>",
+          "content": null,
+          "siblingOrder": 0,
+          "link": null,
+          "leftIcons": null,
+          "rightIcons": null,
+          "folded": false
+        }
+      ],
+      "theme": "{\"magic\":\"zmtheme:v500\",\"version\":3,\"name\":\"bg_bright_ln_color\",\"text\":\"默认多色\",\"image\":\"/images/common/theme-bg-bright-ln-color.png\",\"mapBgColor\":\"#FFFFFF\",\"mapFgColor\":\"#282828\",\"fontColor\":\"#282828\",\"rootLineColor\":\"#C0C0C0\",\"lineColors\":[\"#3A8DDF\",\"#E08370\",\"#5FBC5C\",\"#B24BC8\",\"#75CFDC\"]}",
+      "version": 1,
+      "frontendState": null,
+      "commit": 202,
+      "isDefault": false,
+      "title": "<p>中心主题</p>"
+    },
+    "zmCounter": {
+      "read": 0,
+      "voteAmount": 0,
+      "voteUp": 0,
+      "voteDown": 0,
+      "comment": 0,
+      "challenge": 0,
+      "bookmark": 0,
+      "shareAmount": 0,
+      "shareCircle": 0,
+      "shareFriends": 0,
+      "share2qq": 0,
+      "share2qzone": 0
+    }
+  },
+  "extra": null,
+  "mt": null,
+  "token": null
+}

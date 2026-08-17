@@ -1,0 +1,667 @@
+{
+  "code": 0,
+  "message": "Get MindMap data OK!",
+  "data": {
+    "author": {
+      "userUuid": "857a288bd33c4a8aa9f0fca7bf344142",
+      "nickname": "陈杰",
+      "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJibo26vHhy2zNAOIZWKhtkdOqibFLOiaicQ6YKocqrD8Xmc6fz35bSzZegNyuJAFAcg9qpkKVwg8kk3w/64",
+      "region": "Anhui Hefei",
+      "biography": null
+    },
+    "publicationInfo": {
+      "uuid": "e84d2481856945f68dbb6fb3ccd6a3a1",
+      "abstracts": null,
+      "recommendations": null,
+      "rating": 100,
+      "releaseType": "CONTENT",
+      "stateUpTime": 1698160555983,
+      "state": "EDITING",
+      "releaseState": "EDITING_NEW",
+      "copyable": false,
+      "private": true,
+      "collaboration": false
+    },
+    "mindMap": {
+      "uuid": "e84d2481856945f68dbb6fb3ccd6a3a1",
+      "uniCode": "luYuzQJY",
+      "ownerUsrUUID": "857a288bd33c4a8aa9f0fca7bf344142",
+      "createTime": 1698160555983,
+      "lastUpdateTime": 1698160555983,
+      "trees": [
+        {
+          "uuid": "963bf1273ff8463e8ebc9335d7a2d52d",
+          "children": [
+            {
+              "uuid": "938c1790920547329da88f1bee044c47",
+              "side": "right",
+              "linkColor": "#3A8DDF",
+              "title": "<p>​CTA</p>",
+              "content": "",
+              "children": null,
+              "folded": 0,
+              "link": ""
+            },
+            {
+              "uuid": "9bbdf5da9ac24e8581c152fff86412b6",
+              "side": "right",
+              "linkColor": "#E08370",
+              "title": "<p>​股票</p>",
+              "content": "",
+              "folded": 0,
+              "link": "",
+              "children": [
+                {
+                  "uuid": "69ac6f4322cd4da1b7fdb6785873bcf5",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​因子</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "ac4da82df3ef46a38eea5e6266c997b7",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​factor zoo</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "5cbc549d37ec4b1e9813e43eb55af243",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​动量，换手率，收益率分布（波动，skew，kurt）</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "2eb1b4bc2d734538bf8f7a4441074da7",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​流动性</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "0cd90297d3d542b1bf6b4c4f801a48a9",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​持仓结构</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "1f7446515093411aa5c477790e6feffb",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​筹码</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "f3a8c57bef984a6fa5875b5be25acaa7",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​交易员逻辑</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "ce7f11c9cd3641768c47e620ba4bb4b7",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​相似股票</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "d60d04af9ae54bef890c390c58369794",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​lead-lag</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "e62ab2d57701481eb0f3e9254287682f",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​分析师</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "c34e6c32ab7c4f80932703a1570d4032",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​一致预期</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "c39329a2f9d54136931793975f0cdf61",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​可以认为财报的改进版本（市场交易预期）</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "4ad14a0772c34efa867596280e1e0410",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​覆盖，共同覆盖</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "318165e53b3249ff97f0f6526196246d",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​兴业高频系列</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "7f6398f6475a462d8e00e470b2aca238",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​分钟频数据</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "22d9e72c904c4ec4a0cc087061fb1a4a",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>收益率分布</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "6723f8d3a49b41069ad855d5ccee7128",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​极值, mean, std, skew, kurt, std_up, std_down, std_up_minus_down</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "bf8271ace4f6448897e45e3dec310bda",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​使用 高斯分布 拟合收益率</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "ee492eefca7f479a9ca8c86c76503704",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​条件分布</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "586f9110dcc049a3bba2f31286ce7497",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​eg. 高波：取出 rv 80%分位数以上的节点</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "d8e58031b8354cd1b2df1e9b24b20706",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​成交量</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "7ef1a0b4ba334fa199d60aa82f0ead97",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​log(vol), skew, 90tail(90%分位数以上占比), 10tail</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "348081e1487f45f7ae2bd25a5af7bbeb",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​变化率</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "1288c73484e54b789b75982d81b632a5",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​skew, kurt</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "e03eb3f4b35f4308873b6bfa2873ec21",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​累计成交量</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "5651095a8e4e4917b82318102752a662",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​分布的熵</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "7e2b78771b424de6b5cc02763f304669",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​极大值</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "48d3c594cd914ace903224a6a3bc88f2",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​自相关系数</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "d7a8d5ac39e84c40aaef1f544913a778",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​分钟收益率，分钟成交量， 残差</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "95544d191a30414893fc3e2862203558",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​开源系列</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "f59e1f6d89224fcab9e687233abfbe55",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​基于 transaction 的 资金流因子</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "44e80c1c278e4c56acc9353facb74724",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​资金流各种补充</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "b7d6d59a2dcd4d908399efa0dd8bcdd2",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​基于日频信息切分的常用因子改进</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "763090aeb75c42d3971f144a4d391f5a",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​各类量价因子</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "7c03ba37370749879f4d82a8731ac5c3",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​各种价格</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "881f540a22f74c60b16454a7f03f4e19",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "vwap, twap, percentile * 全天，开盘，收盘",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "1ac7bc455b474ce090ef7160bdd8f869",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​交易量</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "a6b6c15e46464c71be7fc202c511e3c8",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​占比 * 不同时间段</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "b286d6cd6cc640b3bb12e68bfc9891a6",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​价量相关性</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "1729d1c88c86463480649fbfd4975a58",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​通常会转化成比率, eg. 换手率，收益率，方便计算各种分布指标</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "19e140fc6a37479a9a2c117908689e5f",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​情绪因子</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "74492e7e4cd044d798c4408a1322fa07",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​研报情感</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "747a0b2f6e4f46a78ebb74e62ab0556f",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​朝阳永续数据</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "0ff49462b1bc462a9088cd0922534093",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​新闻情感</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "1a25ad0196bd4402b6fec4806de634b2",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​常用做法</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "74746d3393c04f678e7f820f8b67e501",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​基于处理好的新闻分类结果来构造因子</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "330b8fea23ef4a328dc90127b4f59027",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​常用数据</p>",
+                                  "content": "",
+                                  "children": [
+                                    {
+                                      "uuid": "e0327b9756b34cc289644be3950fd4bd",
+                                      "side": "right",
+                                      "linkColor": "",
+                                      "title": "<p>​通联，ChinaScope</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ],
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "c868cddcee8a46c799b57576032ff8b1",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​根据相关系数，分类概率筛选后进行加权平均</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "023c052f9f5c403b8fb2f3c39d90089f",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​直接从文本出发</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "4b8256449d824444b4da2c132a71d926",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>NLP技术，eg. 华泰的新闻情感研报</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "e17b7b0ff4fc474db2545b11498b659d",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>word vector+语料库，​BERT，attention mechanism</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "28450dea27e947d8913eb508cf8afe04",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​遗传算法挖因子</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "7bba53041f3844aa9ac3af49536b691e",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​合成</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "655e36dc533648149f8738ed14152e9f",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​树模型</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ]
+            }
+          ],
+          "linkColor": "#C0C0C0",
+          "side": null,
+          "title": "<p>投资研究</p>",
+          "content": null,
+          "siblingOrder": 0,
+          "link": null,
+          "leftIcons": null,
+          "rightIcons": null,
+          "folded": false
+        }
+      ],
+      "theme": "{\"magic\":\"zmtheme:v500\",\"version\":3,\"name\":\"bg_bright_ln_color\",\"text\":\"默认多色\",\"image\":\"/images/common/theme-bg-bright-ln-color.png\",\"mapBgColor\":\"#FFFFFF\",\"mapFgColor\":\"#282828\",\"fontColor\":\"#282828\",\"rootLineColor\":\"#C0C0C0\",\"lineColors\":[\"#3A8DDF\",\"#E08370\",\"#5FBC5C\",\"#B24BC8\",\"#75CFDC\"]}",
+      "version": 1,
+      "frontendState": null,
+      "commit": 95,
+      "isDefault": false,
+      "title": "<p>中心主题</p>"
+    },
+    "zmCounter": {
+      "read": 0,
+      "voteAmount": 0,
+      "voteUp": 0,
+      "voteDown": 0,
+      "comment": 0,
+      "challenge": 0,
+      "bookmark": 0,
+      "shareAmount": 0,
+      "shareCircle": 0,
+      "shareFriends": 0,
+      "share2qq": 0,
+      "share2qzone": 0
+    }
+  },
+  "extra": null,
+  "mt": null,
+  "token": null
+}

@@ -1,0 +1,294 @@
+{
+  "code": 0,
+  "message": "Get MindMap data OK!",
+  "data": {
+    "author": {
+      "userUuid": "857a288bd33c4a8aa9f0fca7bf344142",
+      "nickname": "陈杰",
+      "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJibo26vHhy2zNAOIZWKhtkdOqibFLOiaicQ6YKocqrD8Xmc6fz35bSzZegNyuJAFAcg9qpkKVwg8kk3w/64",
+      "region": "Anhui Hefei",
+      "biography": null
+    },
+    "publicationInfo": {
+      "uuid": "829664278779475fa55d80c85916eff1",
+      "abstracts": null,
+      "recommendations": null,
+      "rating": 100,
+      "releaseType": "CONTENT",
+      "stateUpTime": 1585841717942,
+      "state": "EDITING",
+      "releaseState": "EDITING_NEW",
+      "copyable": false,
+      "private": true,
+      "collaboration": false
+    },
+    "mindMap": {
+      "uuid": "829664278779475fa55d80c85916eff1",
+      "uniCode": "XQkHCkPQ",
+      "ownerUsrUUID": "857a288bd33c4a8aa9f0fca7bf344142",
+      "createTime": 1585841717942,
+      "lastUpdateTime": 1585841717942,
+      "trees": [
+        {
+          "uuid": "1335f82003f54075b954656c7fea0aaf",
+          "children": [
+            {
+              "uuid": "c47ca7f05a4c422aa4ee8c681c86f221",
+              "side": "right",
+              "linkColor": "#3A8DDF",
+              "title": "<p>​compute the posterior distribution</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "7da8c27bf8e441d49ed05fb27514911a",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​<img src=\"/res/8/f/1585841792699116812.png\" style=\"width: 258px; height: 47px; max-width: 100%; max-height: 100%;\"></p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "92fed0e24480407bbbd073bcc003bf4e",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​hard to compute</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            },
+            {
+              "uuid": "8fb9bbf75c224dd588a54f989d4c1a80",
+              "side": "right",
+              "linkColor": "#E08370",
+              "title": "<p>​Approximation 1</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "9923f6e58bc940e893cae8384e86e5d5",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​mean-field</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "d3a8c23aa45d4116aa8fa95e263f8e29",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><msub><mi>W</mi><mrow><mi>i</mi><mi>j</mi><mo separator=\"true\">,</mo><mi>l</mi></mrow></msub></mrow><annotation encoding=\"application/x-tex\">W_{ij,l}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.969438em;vertical-align:-0.286108em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.13889em;\">W</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3361079999999999em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\">i</span><span class=\"mord mathit mtight\" style=\"margin-right:0.05724em;\">j</span><span class=\"mpunct mtight\">,</span><span class=\"mord mathit mtight\" style=\"margin-right:0.01968em;\">l</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.286108em;\"><span></span></span></span></span></span></span></span></span></span>&nbsp; are independent</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "269f287dbcde4648a3f9b8a1c16d4802",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<img src=\"/res/c/b/1585841880550394627.png\" style=\"width: 258px; height: 65px; max-width: 100%; max-height: 100%;\">",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "ee8fb5933db34092968c40ba02b83734",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​<img src=\"/res/9/c/1585841923685824737.png\" style=\"width: 379px; height: 55px; max-width: 100%; max-height: 100%;\"></p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": "",
+                  "ttW": 379
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            },
+            {
+              "uuid": "0da5001e0bfa49afa33c2645bc8a539a",
+              "side": "right",
+              "linkColor": "#B24BC8",
+              "title": "<p>​Simplify marginal distribution</p>",
+              "content": "",
+              "folded": 0,
+              "link": "",
+              "children": [
+                {
+                  "uuid": "d03ce1012b50433c9c8b10c699916407",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​<img src=\"/res/4/a/1585841975478817203.png\" style=\"width: 378px; height: 70px; max-width: 100%; max-height: 100%;\"></p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": "",
+                  "ttW": 381
+                },
+                {
+                  "uuid": "6a3a5153d28c4ab0b374c9a1852cffeb",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​perform the summation layer by layer</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "133d9e62c9214b6980d4687282fb6bac",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​<img src=\"/res/e/9/1585842072500358329.png\" style=\"width: 430px; height: 156px; max-width: 100%; max-height: 100%;\"></p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": "",
+                      "ttW": 430
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ]
+            },
+            {
+              "uuid": "737cd91e8f4f4e7c8879589e34d1f0f6",
+              "side": "right",
+              "linkColor": "#75CFDC",
+              "title": "<p>​Approximation 2</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "3ba6c90082e44d3e84345de21c8efa7d",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​CLT</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "62e2c594db1c416898011904ac6b7165",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​<img src=\"/res/c/e/1585842143683802962.png\" style=\"width: 258px; height: 66px; max-width: 100%; max-height: 100%;\"></p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            },
+            {
+              "uuid": "2c9f61fc5e644d6fb5cae7977aeff48e",
+              "side": "right",
+              "linkColor": "#3A8DDF",
+              "title": "<p>​Approximation 3</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "c127d2659edf44e3896b5b36779712a1",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​<img src=\"/res/4/4/1585842201946430937.png\" style=\"width: 143px; height: 40px; max-width: 100%; max-height: 100%;\"></p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "e01463dfd2984a7b834e41c17794830a",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​use Taylor series w.r.t. mean of&nbsp;&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><msub><mi>W</mi><mrow><mi>i</mi><mi>j</mi><mo separator=\"true\">,</mo><mi>l</mi></mrow></msub></mrow><annotation encoding=\"application/x-tex\">W_{ij,l}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.969438em;vertical-align:-0.286108em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.13889em;\">W</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3361079999999999em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\">i</span><span class=\"mord mathit mtight\" style=\"margin-right:0.05724em;\">j</span><span class=\"mpunct mtight\">,</span><span class=\"mord mathit mtight\" style=\"margin-right:0.01968em;\">l</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.286108em;\"><span></span></span></span></span></span></span></span></span></span>&nbsp; to first order</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "e98c3b32d80f446397ac061bcc8355a3",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​first derivative</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "5b76b253274b4a61a81fd204a10d99d8",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​<img src=\"/res/c/8/1585842264561118400.png\" style=\"width: 220px; height: 63px; max-width: 100%; max-height: 100%;\"></p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "6fcfd307f6ae4e3e83abeddcb8b94283",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​compute using BP</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            }
+          ],
+          "linkColor": "#C0C0C0",
+          "side": null,
+          "title": "<p>EBP</p>",
+          "content": null,
+          "siblingOrder": 0,
+          "link": null,
+          "leftIcons": null,
+          "rightIcons": null,
+          "folded": false
+        }
+      ],
+      "theme": "{\"magic\":\"zmtheme:v500\",\"version\":3,\"name\":\"bg_bright_ln_color\",\"text\":\"默认多色\",\"image\":\"/images/common/theme-bg-bright-ln-color.png\",\"mapBgColor\":\"#FFFFFF\",\"mapFgColor\":\"#282828\",\"fontColor\":\"#282828\",\"rootLineColor\":\"#C0C0C0\",\"lineColors\":[\"#3A8DDF\",\"#E08370\",\"#5FBC5C\",\"#B24BC8\",\"#75CFDC\"]}",
+      "version": 1,
+      "frontendState": null,
+      "commit": 45,
+      "isDefault": false,
+      "title": "<p>中心主题</p>"
+    },
+    "zmCounter": {
+      "read": 0,
+      "voteAmount": 0,
+      "voteUp": 0,
+      "voteDown": 0,
+      "comment": 0,
+      "challenge": 0,
+      "bookmark": 0,
+      "shareAmount": 0,
+      "shareCircle": 0,
+      "shareFriends": 0,
+      "share2qq": 0,
+      "share2qzone": 0
+    }
+  },
+  "extra": null,
+  "mt": null,
+  "token": null
+}

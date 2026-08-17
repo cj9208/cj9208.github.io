@@ -1,0 +1,1645 @@
+{
+  "code": 0,
+  "message": "Get MindMap data OK!",
+  "data": {
+    "author": {
+      "userUuid": "857a288bd33c4a8aa9f0fca7bf344142",
+      "nickname": "陈杰",
+      "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJibo26vHhy2zNAOIZWKhtkdOqibFLOiaicQ6YKocqrD8Xmc6fz35bSzZegNyuJAFAcg9qpkKVwg8kk3w/64",
+      "region": "Anhui Hefei",
+      "biography": null
+    },
+    "publicationInfo": {
+      "uuid": "b466aa9afe9843ac99a52be7b0f43726",
+      "abstracts": null,
+      "recommendations": null,
+      "rating": 100,
+      "releaseType": "CONTENT",
+      "stateUpTime": 1580638922863,
+      "state": "EDITING",
+      "releaseState": "EDITING_NEW",
+      "copyable": false,
+      "private": true,
+      "collaboration": false
+    },
+    "mindMap": {
+      "uuid": "b466aa9afe9843ac99a52be7b0f43726",
+      "uniCode": "UAcPIJQp",
+      "ownerUsrUUID": "857a288bd33c4a8aa9f0fca7bf344142",
+      "createTime": 1580638922863,
+      "lastUpdateTime": 1580638922863,
+      "trees": [
+        {
+          "uuid": "74cf105138584134a8d14257811af59e",
+          "children": [
+            {
+              "uuid": "f9f5d7d9d9754506a159f0c6a0e061d7",
+              "side": "right",
+              "linkColor": "#3A8DDF",
+              "title": "<p>​assignment 1</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "6688b4e9e08848f9b719d65c41eb57f0",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>def evaluate(policy, num_episodes, seed=0, env_name='FrozenLake8x8-v0', render=False)<br></p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": null,
+                  "ttMaxW": 659,
+                  "ttW": 659
+                },
+                {
+                  "uuid": "e5861e7b6f7b433295d2927aae9c6017",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​class TabularRLTrainerAbstract</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "9710545366054ad8a297c70e9975ec07",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>env_name, env, obs_space, actio_space</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "bd2b159627c441359c312b60ebd0fd52",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​_get_transitions</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "be8b7c9621854a86b7aa58faec2ed6c6",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​evaluate, render, print_table<br></p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "0bb1ab5a321f498e99d30b464a91efd7",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​train</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "882e0de7020c483982eaa10c9f494c98",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​need to be implemented</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "ca1505daf11342e19fd83e55ba627130",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​policy iteration</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "cebcc21a81484e54a2035a91d01a12a9",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​class PolicyItertaionTrainer(TabularRLTrainerAbstract):</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "251236a1f8f645d0828cfe101f110197",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​gamma, eps</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "dc044e8e465f43d68b782c19b365e38b",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​train</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "b2887a7572654725b908e17a271ea580",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​update value function</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "9ca5cfd3e7aa4a8b8edff5feb6c546a7",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​update policy function</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "4a22a715f2324acb827f962ebd1e9d8c",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​def policy_iteration(train_config=None)</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "c6e1d5dff1d74046a63bb58f77721b5c",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>do policy iteration training given config</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "b3e17e595b14442c8c2c3635af1da342",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​return well-trained agent</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "fc1794890fa9465091e336bab3e8c47d",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​value iteration</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "cf397469b0f64667b56a4927001ae533",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​class ValueIterationTrainer(PolicyItertaionTrainer)</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "1b4927da12c6471aab45cdab4684e274",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​def value_iteration(train_config=None)</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ]
+                },
+                {
+                  "uuid": "e3f7ccedce6e4ed1b3c58d4199fea94c",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​TD control</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "acd160be286f4eb7bca37a2b0db6db4b",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​class SARSATrainer(TabularRLTrainerAbstract)</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "0a99c17f2bb34274b71946baf8b1f1f6",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​on-policy&nbsp;</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "6e33438a2bd24e719109c7c8bd52b1da",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​gamma, eps, learning_rate</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "f901d09c4070456b9c499bdfa42b8a04",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​eps-greedy policy</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "45a298810c554852b25829b6f322537a",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​def sarsa(train_config=None)</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "96ffcd0c5ad54e6c85f48939e28694e2",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​class QLearningTrainer(TabularRLTrainerAbstract)</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "9a5ddc6c6ec847808c8bafa554bd79bc",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​off-policy</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "7565aadf48d94218b4457687e1d15d87",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​def q_learning(train_config=None)</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ]
+                },
+                {
+                  "uuid": "b7be2b1030444fb5ab84ee8007998fc8",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​Monte Carlo Control</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "d1f785719d2e4c3db8a3f41add2e8371",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​class MCControlTrainer(TabularRLTrainerAbstract)</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "e595dd57976d4457bfa64a847c93a476",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​gamma, eps,&nbsp;max_episode_length</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "f54af4ef737a40bc954f14bfeb59210a",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​returns, q-table</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "3785dce6b3044eb19a6f35da42acd6fe",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​def mc_control(train_config=None)</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 1,
+              "link": ""
+            },
+            {
+              "uuid": "1105fb2327eb4c2fb590017270907b0b",
+              "side": "right",
+              "linkColor": "#E08370",
+              "title": "<p>​assignment 2</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "dc1a80fab80747789523265b9798ba70",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​functions</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "609951fe6b1e4f56b6559239f109800c",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​evaluate</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "15853acc5b184295a9f1f993cd2b0e43",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​evaluate the given policy and return the mean episode reward</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": "",
+                          "ttW": 453
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "020cbbf01a6a4f3e8048261884637c48",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​run</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "8379cfc452574b27b17311110ccaec6e",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​run the trainer and report progress</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "b3a960db506b4cc2b79f87c6c078c6a5",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​AbstractTrainer</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "badcaf29d2224f508b8105c92cb2e00a",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​preprocess</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "296b2be63c964efe8d2e0e42476ae681",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​initialize_parameters</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "a3d21160032046439b1b3a60f1bb4b23",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​process_state</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "c6d4879eeb4240d1ac8e258d08f140b1",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​approximation</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "e12196bc70a942be9f04651aaf088966",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​compute_values</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "2bfa4e9d1a7840ada92a205b84537eb2",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​compute the value of given state for all potential action</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "f45047c17adb48df8120e09cd9b95119",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​compute_action</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "f79a24ffbfbc410d8de73ff03fde5495",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​eps-greedy exploration</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "7be9eec7c35b45288d5054d0386317d4",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​gradient decendent</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "1ccb2406286c46aead85672d05cda347",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​compute_gradient</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "9b7ead9ed219485ca222665bc5d20307",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​apply_gradient</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "7101149e8bf14ee788decedef8912525",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​train</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "cf5e1ad5f12d49c0a553197a9c6eaa90",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​play the game once</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "7121830175f343b8bfb648d784685a10",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​record states, actions, rewards</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "12659103aac043acb0db671567fb3dae",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​do one gradient decendent</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "06b92fb166c9461c9f27c6b10ab122dc",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​n-TD compute</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "4c7746c38f2a422da66f098c265ca6ab",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​derivative calculation</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "9c5a0b0f830347d88809c7a2b963b527",
+                  "side": "",
+                  "linkColor": "",
+                  "title": "LinearTrainer",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "aff363e755e446419cc6318885776feb",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>​parameters</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "e2cea397037e4e16afd3dc7c19ae39b4",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><mi>W</mi><mo>∈</mo><msup><mi mathvariant=\"double-struck\">R</mi><mrow><mo>(</mo><mi>O</mi><mo separator=\"true\">,</mo><mi>A</mi><mo>)</mo></mrow></msup></mrow><annotation encoding=\"application/x-tex\">W \\in \\mathbb{R}^{(O,A)}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.72243em;vertical-align:-0.0391em;\"></span><span class=\"mord mathit\" style=\"margin-right:0.13889em;\">W</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8879999999999999em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathbb\">R</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8879999999999999em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mopen mtight\">(</span><span class=\"mord mathit mtight\" style=\"margin-right:0.02778em;\">O</span><span class=\"mpunct mtight\">,</span><span class=\"mord mathit mtight\">A</span><span class=\"mclose mtight\">)</span></span></span></span></span></span></span></span></span></span></span></span>&nbsp;</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "6c7cc081d28e496e852d808942e08664",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>​approximation</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "f70281b0f492443a8683d5fe1d982b0d",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><mi>v</mi><mo>(</mo><mi>s</mi><mo separator=\"true\">,</mo><mi>W</mi><mo>)</mo><mo>=</mo><msup><mi>W</mi><mi>T</mi></msup><mi>s</mi></mrow><annotation encoding=\"application/x-tex\">v(s,W) = W^Ts</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathit\" style=\"margin-right:0.03588em;\">v</span><span class=\"mopen\">(</span><span class=\"mord mathit\">s</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathit\" style=\"margin-right:0.13889em;\">W</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8413309999999999em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.13889em;\">W</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8413309999999999em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.13889em;\">T</span></span></span></span></span></span></span></span><span class=\"mord mathit\">s</span></span></span></span>&nbsp;​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><mi>a</mi><mi>W</mi><mo>∈</mo><msup><mi mathvariant=\"double-struck\">R</mi><mrow><mo>(</mo><mi>O</mi><mo separator=\"true\">,</mo><mi>A</mi><mo>)</mo></mrow></msup></mrow><annotation encoding=\"application/x-tex\">a W \\in \\mathbb{R}^{(O,A)}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"mord\"><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8879999999999999em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><br></span></span></span></span></span></span></span></span></span></p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "45ee770885514e9f8fb13dbd23ed0116",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​output</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "f313340f266d4ac382378cfe8ef8e046",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "a vector of A = len(action_space)",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "a012ec9bc13845d59acbfdb9b29a4867",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>​LinearTrainerWithFeatureConstruction</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "5c7a98c2427e41b880af53c235d74048",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​process_state</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "c03445108f544155978b69094dd6dc48",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​polynomial_feature</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "5d26a2b43aa84a4094ad1b762746a431",
+                  "side": "",
+                  "linkColor": "",
+                  "title": "<p>MLPTrainer</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "e7c1f6ef778a4bec864872655c11db19",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>​parameters</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "80e428ae8a4144d6bcd7988c574b7bf3",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><msup><mi>W</mi><mn>1</mn></msup><mo>∈</mo><msup><mi mathvariant=\"double-struck\">R</mi><mrow><mo>(</mo><mi>O</mi><mo separator=\"true\">,</mo><mi>H</mi><mo>)</mo></mrow></msup><mo separator=\"true\">,</mo><msup><mi>W</mi><mn>2</mn></msup><mo>∈</mo><msup><mi mathvariant=\"double-struck\">R</mi><mrow><mo>(</mo><mi>H</mi><mo separator=\"true\">,</mo><mi>A</mi><mo>)</mo></mrow></msup><mo separator=\"true\">,</mo></mrow><annotation encoding=\"application/x-tex\">W^1 \\in \\mathbb{R}^{(O,H)}, W^2 \\in \\mathbb{R}^{(H,A)}, </annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.853208em;vertical-align:-0.0391em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.13889em;\">W</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141079999999999em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0824399999999998em;vertical-align:-0.19444em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathbb\">R</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8879999999999999em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mopen mtight\">(</span><span class=\"mord mathit mtight\" style=\"margin-right:0.02778em;\">O</span><span class=\"mpunct mtight\">,</span><span class=\"mord mathit mtight\" style=\"margin-right:0.08125em;\">H</span><span class=\"mclose mtight\">)</span></span></span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.13889em;\">W</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141079999999999em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0824399999999998em;vertical-align:-0.19444em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathbb\">R</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8879999999999999em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mopen mtight\">(</span><span class=\"mord mathit mtight\" style=\"margin-right:0.08125em;\">H</span><span class=\"mpunct mtight\">,</span><span class=\"mord mathit mtight\">A</span><span class=\"mclose mtight\">)</span></span></span></span></span></span></span></span></span><span class=\"mpunct\">,</span></span></span></span>&nbsp;",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "1866f7a1401f4a94a8d1f2c15059e165",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>​approximation</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "323a5942aa1340d8ac11eb5c0c019f2f",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><mi>v</mi><mo>(</mo><mi>s</mi><mo separator=\"true\">,</mo><msub><mi>W</mi><mn>1</mn></msub><mo separator=\"true\">,</mo><msub><mi>W</mi><mn>2</mn></msub><mo>)</mo><mo>=</mo><msubsup><mi>W</mi><mn>2</mn><mi>T</mi></msubsup><msubsup><mi>W</mi><mn>1</mn><mi>T</mi></msubsup><mi>s</mi></mrow><annotation encoding=\"application/x-tex\">v(s,W_1,W_2) = W_2^TW_1^Ts</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathit\" style=\"margin-right:0.03588em;\">v</span><span class=\"mopen\">(</span><span class=\"mord mathit\">s</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.13889em;\">W</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.13889em;\">W</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0894389999999998em;vertical-align:-0.24810799999999997em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.13889em;\">W</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8413309999999999em;\"><span style=\"top:-2.4518920000000004em;margin-left:-0.13889em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.13889em;\">T</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.24810799999999997em;\"><span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.13889em;\">W</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8413309999999999em;\"><span style=\"top:-2.4518920000000004em;margin-left:-0.13889em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.13889em;\">T</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.24810799999999997em;\"><span></span></span></span></span></span></span><span class=\"mord mathit\">s</span></span></span></span>&nbsp;</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "2d076a358dd94ec7accbb94dfcca6c50",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>​Gradient clipping</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "97f88b175eee4b32a4cef58a9ae3b9a0",
+                  "side": "",
+                  "linkColor": "",
+                  "title": "<p>​DQNTrainer</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "c9e99d522a9c415dba5c358919589621",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>​ExperienceReplayMemory</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "51fecfc3570c48109c8867af3c40ff06",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>​PytorchModel</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 1,
+              "link": ""
+            },
+            {
+              "uuid": "cc5c84393cae42e7ac43297196e8524c",
+              "side": "right",
+              "linkColor": "#3A8DDF",
+              "title": "<p>​assignment 3</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "8a5e7dfaffd245158fc06669d88511bd",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>AbstractTrainer</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "39fe29a8dcba441d85a17d4e9efcc814",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​to_tensor</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "0c53893d06d1424e89dc7263c4c3445d",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>for pytorch</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "cc867593f9e741c2b489500612d0cf59",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​build_model</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "a348d5560ae44433836acf628da25e85",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​evaluate</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "02fdbeda894048fd89254c2a8bd4c2be",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​compute_action</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "7eb4d3d2e33e4572a931726df1f18f1d",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​compute_values</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "86af798d57e94177ab4e73127196b129",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​compute_log_probs</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "d2b5ff7e62a9478b9db1daef20f8de4c",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>​train</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "b92092389b174a45bf33c2fbc20dd8eb",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​collect and preprocess samples</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "cfac05a2f27346719e042c2153916991",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​collect_samples</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "a052837a1eed4abb89ea8076e110c0e4",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​samples</p>",
+                                  "content": "",
+                                  "folded": 0,
+                                  "link": "",
+                                  "children": [
+                                    {
+                                      "uuid": "ee041dceb5fc4a4f84647d148eb5219b",
+                                      "side": "right",
+                                      "linkColor": "",
+                                      "title": "<p>​obs</p>",
+                                      "content": "",
+                                      "children": [
+                                        {
+                                          "uuid": "1f7db4860ec34ba59c01edb7f1a6eef8",
+                                          "side": "",
+                                          "linkColor": "",
+                                          "title": "episode_obs_list",
+                                          "content": "",
+                                          "children": null,
+                                          "folded": 0,
+                                          "link": ""
+                                        }
+                                      ],
+                                      "folded": 0,
+                                      "link": ""
+                                    },
+                                    {
+                                      "uuid": "ddd88b3c4fad459ea95b64d7ddd0d372",
+                                      "side": "right",
+                                      "linkColor": "",
+                                      "title": "<p>​act</p>",
+                                      "content": "",
+                                      "children": [
+                                        {
+                                          "uuid": "623bfcd69f4242d284e82e5db5c33687",
+                                          "side": "",
+                                          "linkColor": "",
+                                          "title": "episode_act_list",
+                                          "content": "",
+                                          "children": null,
+                                          "folded": 0,
+                                          "link": ""
+                                        }
+                                      ],
+                                      "folded": 0,
+                                      "link": ""
+                                    },
+                                    {
+                                      "uuid": "36215bdf375d4ad0b978122b6dd80c0d",
+                                      "side": "right",
+                                      "linkColor": "",
+                                      "title": "<p>​reward</p>",
+                                      "content": "",
+                                      "children": [
+                                        {
+                                          "uuid": "22a8ac4911444679842623785b734f2b",
+                                          "side": "",
+                                          "linkColor": "",
+                                          "title": "episode_reward_list",
+                                          "content": "",
+                                          "children": null,
+                                          "folded": 0,
+                                          "link": ""
+                                        }
+                                      ],
+                                      "folded": 0,
+                                      "link": ""
+                                    },
+                                    {
+                                      "uuid": "0c92f246fdf8455b81db9736f0f30b6f",
+                                      "side": "right",
+                                      "linkColor": "",
+                                      "title": "<p>​advantage</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ]
+                                },
+                                {
+                                  "uuid": "e39eace96a1042febe2d9bc9dfd297e4",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "sample_info",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "d8fd29b352cb4f779684c9e7c7a878a4",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "process_samples",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "f0245d12635f40ce8ab278ca3e840dd0",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​update model</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "801316310b734e939d32fdc8f7df3df5",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​record train info</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "c0c02c0938d74d5e93967f66a78af341",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​PGTrainer(AbstractTrainer)</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "26db69f16fdb41639eab52c74d912059",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​CategoricalPolicy</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "095542c8fdd7456bbff1ea1b8a341fdf",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​Net</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ]
+                },
+                {
+                  "uuid": "46b7879cb33e4fee9f92ad33484a48df",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​PolicyGradientWithBaselineTrainer(PGTrainer)</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "47dfa0cfe4374c24a13df77ae06d7d55",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>baseline</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "b8ca1ad0d8ea4fb4b038a4680b94013d",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​ActorCriticTrainer(PolicyGradientWithBaselineTrainer)</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "a261fa97959b4e87bef69491be989d7a",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​config</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "b0bde1e34f0e4f62bc99bf4837cc41e3",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>default_config</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "b9d7270a6a0c4a77b7be52f03d2ce0e0",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "env_name=\"CartPole-v0\",",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "1bdc94ea3a364698a46e54435fc49bc0",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "max_iteration=1000,",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "17945f4ef79b4f929220fbfcc133453f",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "max_episode_length=1000,",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "0a6c724d6bbd4d3e8e50035ddaf9bef6",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "train_batch_size=1000,",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "d466ed191b724702ac5d995315a73f42",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "gamma=0.99,",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "16b8268f644d47e0aab11a4bd283edc8",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "learning_rate=0.01,",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "ec986bf99f804125b18b6e12f5b70d7f",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "seed=0,",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "455fe394b0324587af98a2f01bf9b756",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "evaluate_interval=10,",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "eee728f53e3d437a97d74be5516c1b07",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "evaluate_num_episodes=50",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "7b4956ac201a43a5a3332974109de55f",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>​pg_default_config</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "1af3d4c281954b9c850c8c807b76a9aa",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>normalize_advantage=True</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "c16b616c54f946f3b4278c0332678e68",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>clip_gradient=10.0</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "8c07995cfd684d23ae6fc6bcb0ed3e8f",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "hidden_units=64",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "7da8e6b76c9947058fac6f033fb92b18",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>​pg_with_baseline_default_config</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "15bf446014bf47868af33ec7b1b8cf39",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>​ac_default_config</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "95cf681f464a4ea8b0a5994fce20016b",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>num_critic_updates=10</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "8c033d66d8dd4c41bb37bf174e8fd3fd",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "num_critic_update_steps=10",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ]
+                }
+              ],
+              "folded": 1,
+              "link": ""
+            },
+            {
+              "uuid": "1514abd261f8412681f9677d301b634a",
+              "side": "right",
+              "linkColor": "#E08370",
+              "title": "<p>​assignment 4</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "2a95ff0eeaea4bd1a3aa4e9c92369caa",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​base_trainer</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "f085196a84314e419093727946cc2fb8",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​setup_optimizer</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "9b0df4f5cda647f5ae200d189d4e9fc4",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​setup_rollouts</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "9fde7b9db52c4291876b61c47ee311e6",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​compute_loss</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "657c6c03081f4b87be827f877bca82f0",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​update</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "47ee436d06f64e38b6514b6192d68434",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​compute_action</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "c31d4b6164c94afc8afee12a3d732db8",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​evaluate_actions</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "f29f29a4685f46f28cf8158a69ce723e",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​compute_values</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "808ac480ee224220b93568bdf2327a8f",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​save_w</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "bffb697b8f314863b67661d78c9fa49d",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​load_w</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 1,
+                  "link": ""
+                },
+                {
+                  "uuid": "c54fc7d5b5054de4867f625dfb3cdeda",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​a2c_trainer</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "97c66f4b0ece4194bf8b6109e26a2c06",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​ppo_trainer</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 1,
+              "link": ""
+            },
+            {
+              "uuid": "09fed4b9b62a470aa6093abf83276321",
+              "side": "right",
+              "linkColor": "#3A8DDF",
+              "title": "<p>​project-pair trading</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "884b3c6ae62d4789bfc4b193ab686a2d",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​pair trading.ipynb</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "d43494a2530747adb12a0a9d5558e317",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​EV_Pairtrading_env2.py</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "90b5dbc22d68495698d21e4ddbb85686",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​定义了env 的相关情况</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "263f20bdafc3476994893d088e6aa7a9",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​根据act执行相应的交易</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "f51d41dccc7043808fc1e7b810a80160",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​portfolio.py</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "95efbc135d5742fc853aa736e05ad7ec",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​持仓详情</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "cf02d8ba9f844a03af670094d862da5b",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​根据指令更改持仓</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "a6b111d774c44986aeea2c5c704e6e52",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​baseline.py</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "f5bdb24a520a4ba98bfd1114233405d9",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​定义了baseline方法的相关参数</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "f274aa4c839d4537a0e7a10280122ebe",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>计算act函数</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "40a847614b184cd48ada6396a73569d0",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​find the relation between the price changes between two stocks</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            }
+          ],
+          "linkColor": "#C0C0C0",
+          "side": null,
+          "title": "<p>RL</p>",
+          "content": null,
+          "siblingOrder": 0,
+          "link": null,
+          "leftIcons": null,
+          "rightIcons": null,
+          "folded": false
+        }
+      ],
+      "theme": "{\"magic\":\"zmtheme:v500\",\"version\":3,\"name\":\"bg_bright_ln_color\",\"text\":\"默认多色\",\"image\":\"/images/common/theme-bg-bright-ln-color.png\",\"mapBgColor\":\"#FFFFFF\",\"mapFgColor\":\"#282828\",\"fontColor\":\"#282828\",\"rootLineColor\":\"#C0C0C0\",\"lineColors\":[\"#3A8DDF\",\"#E08370\",\"#5FBC5C\",\"#B24BC8\",\"#75CFDC\"]}",
+      "version": 1,
+      "frontendState": null,
+      "commit": 253,
+      "isDefault": false,
+      "title": "<p>中心主题</p>"
+    },
+    "zmCounter": {
+      "read": 0,
+      "voteAmount": 0,
+      "voteUp": 0,
+      "voteDown": 0,
+      "comment": 0,
+      "challenge": 0,
+      "bookmark": 0,
+      "shareAmount": 0,
+      "shareCircle": 0,
+      "shareFriends": 0,
+      "share2qq": 0,
+      "share2qzone": 0
+    }
+  },
+  "extra": null,
+  "mt": null,
+  "token": null
+}

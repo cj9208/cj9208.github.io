@@ -1,0 +1,924 @@
+{
+  "code": 0,
+  "message": "Get MindMap data OK!",
+  "data": {
+    "author": {
+      "userUuid": "857a288bd33c4a8aa9f0fca7bf344142",
+      "nickname": "陈杰",
+      "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJibo26vHhy2zNAOIZWKhtkdOqibFLOiaicQ6YKocqrD8Xmc6fz35bSzZegNyuJAFAcg9qpkKVwg8kk3w/64",
+      "region": "Anhui Hefei",
+      "biography": null
+    },
+    "publicationInfo": {
+      "uuid": "9682ca40100249e09b06a207c1b227d6",
+      "abstracts": null,
+      "recommendations": null,
+      "rating": 100,
+      "releaseType": "CONTENT",
+      "stateUpTime": 1704022260920,
+      "state": "EDITING",
+      "releaseState": "EDITING_NEW",
+      "copyable": false,
+      "private": true,
+      "collaboration": false
+    },
+    "mindMap": {
+      "uuid": "9682ca40100249e09b06a207c1b227d6",
+      "uniCode": "hJsYFSeZ",
+      "ownerUsrUUID": "857a288bd33c4a8aa9f0fca7bf344142",
+      "createTime": 1704022260920,
+      "lastUpdateTime": 1704022260920,
+      "trees": [
+        {
+          "uuid": "52f23ce627ca4d199642f76add54ceb6",
+          "children": [
+            {
+              "uuid": "1a76ea32a5fd43699d77c9ed15263d55",
+              "side": "right",
+              "linkColor": "#5FBC5C",
+              "title": "<p>option hedging</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "71b0b67ea6dd4e5d881a65490214ba94",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​traditional approaches</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "4001948708984d5db8dbddac219221e8",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>models</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "86a5a82cd0514531bcf4571c15a7aba3",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​stochastic volatility models</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "3d0d8ff34e7440738e73a938989f5aa8",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​jump-diffusion, pure jump processes</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "db10468d12a841ddb88abda67e8f1b32",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​methods of solving</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "4cce3af93b164e08b0b14e9095e56a70",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​finte-difference&nbsp;</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "b87df4047d1c43e497272ac9c7c3ad11",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​transfromationn-based, eg. Fourier, HIlbert</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "67dfa643375c40af95a2abc7b23e87d4",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​Monte-Carlo simulation</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "95bdc2a51a9743698a63aed55d299f36",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​modification</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "dde03c218fed49e9970927246440a302",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​change models</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "8925f08f50c34d46a9b2f4159253c7aa",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>add relationship between variables</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "fad4d42dff5341e78d3d74d8383be7aa",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​theoretical</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "e97e5399ba44491a99586c740d58362e",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​data-driven</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            },
+            {
+              "uuid": "81b1a2683a934d4f862073c548488185",
+              "side": "right",
+              "linkColor": "#E08370",
+              "title": "<p>​whole picture</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "cd91caf934974c60a6f9e3ac64e23dc7",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​what</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "d3ed75e9fd3e45fbb1864e0de7a8113f",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​why</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "a10c345473874d338dd0e5dd21de5391",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​steps in research</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "db671eec851f4fb0a6dc32bb767a9fa6",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​read papers</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "cabc53ddf0f74843a7fe2eb020b86e21",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​find valuable questions for research</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "0bf7d2d1754d48a1b4fd2bdeaabd5af9",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>solve the problems</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "98560e3d8de8493a8e0b48476c7d91ba",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​how&nbsp;</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "046fc09846734d4ca6734867da856fc1",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>eg. ​read papers</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            },
+            {
+              "uuid": "dd550fab7fef46f098fa8002e12a6b43",
+              "side": "right",
+              "linkColor": "#B24BC8",
+              "title": "<p>two steps to ​read a paper</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "f45d1e8609d64e8b89982e8a9507c0d3",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​cursory reading</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "5fc430bf421d41558dfba5d82746896a",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​title</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "f3649f8faf754706ac28a6b89d89e630",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​abstract</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "90d70622668946ad83fa65af248ad1d5",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​introducation</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "3c3d6829dc7c4f20afb6c6d91d2c5a31",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​tables and figures</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "77e4b6f1b5324d609cf5cfedb50b338f",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​conclusion</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "ba318ea60c9f4be3bf2c1b4d522110cb",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​comprehensive reading</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "c28cd9c7f329477f96689ac820b82182",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​already get a general idea of the paper</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "008c2e44208c42c9bf679013f4afa913",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​list questions and find answers</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "bd3c2ae0777a4c16bf9dc699b1236b8d",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​multiple times</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "407212f49ebb40a68d8384fb98818bfa",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​re-search</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            },
+            {
+              "uuid": "9bb68ffc89e749de994a6afedd6921cc",
+              "side": "right",
+              "linkColor": "#3A8DDF",
+              "title": "<p>​example</p>",
+              "content": "",
+              "folded": 0,
+              "link": "",
+              "children": [
+                {
+                  "uuid": "92653993f3a24fd9a9b2836d96a9a55e",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>Data-driven Hedging of Stock Index Options via Deep Learning</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "a29a7e87d7c446ce82b4dc9c75d33966",
+                  "side": "",
+                  "linkColor": "",
+                  "title": "<p>​cursory reading</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "b9a5e57420924cf894d00d64b21cbc9b",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​title</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "9426a005ec2d45fca5f53e3eb3bec2c2",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​topic: option hedging</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "ef327925078d4e30ae73c0e21cc3419d",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​object: stock index option</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "c197854f57ac401e85ed98ea99409a7c",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​methof: data-driven</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "729d397930074386b8318c57bbf3c9d8",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​tools: deep learning</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "acce0802dfe64b959fdab916ad6fdee0",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​abstract</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "66fa73759e514865a3d28bdfb2ea896b",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>features</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "48c9ffce35df4bb38633c5e0f7965be0",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "time to maturity, the Black-Scholes delta and market sentiment",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "30372a7a746e4c5896680243dbb71928",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​different combinations</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "dae591377f894c33aec3aad4a5d4b270",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​daily hedging</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "aa5277660d0c42818df3be46a796cf3a",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​results</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "6ec27ddcecc3405980ddc840d495edf8",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​signiﬁcantly outperforms delta hedging and a data-driven hedging model</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "1d85fd9615e6438b97655f0e36452b07",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​demonstrate the importance of market sentiment for hedging</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "7301f43a4cab4cd38d3a053dd17dc29c",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​introducation</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "ef3fb82da470445d90f18fc44da94165",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​details of two previous methods</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "c31201455094428198023cc617d50c47",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>development and achievement of deep learnning</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "892c22a841c947e6abd041ed67b65f65",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​tables and figures</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "c28493a39bba47bab6626187133d0846",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>details of feature combinations</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "b977b4db79064417b81615a22e76cc42",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​results of different models</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "e337c169dcf94058bd47c50f0d04579f",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​conclusion</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "46c5f6fbca8944d88c0fd4baa0b380f1",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​as in abstracts</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "uuid": "8013c98abec54ab8bf2b9b02dcf29dab",
+                  "side": "",
+                  "linkColor": "",
+                  "title": "<p>comprehensive reading</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "2ce546b2ffee49e98e3a5114a83043bd",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>​questions</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "65c5e1c63860492dbf95321f45124518",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>what about individual options?&nbsp;</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "8e2ee6cc21984216998559ecac67983f",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​why daily hedging?</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "7e77937081bd4b58b859670e7358c368",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​deep learning</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "e60666b71ca1442cb35b75847ed5d8e7",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​what&nbsp; is the structure?</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "d482d21ddfbe48c8bef4a0068ca61cd4",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​features</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "f1a57e7fe3c44790adcf39f125f8f1e4",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>why thest? any other?</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "7396f2fca27d4be681c0b0f57ef91851",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>​option characteristics + market sentiment</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "39c84518613c4765a707657df016b562",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​what is sentiment factors?&nbsp;</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "b4bbb4e480c2479b8f37e94c655c27aa",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>​VIX for call, return for puts</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "4b69442118ea45a1ae6a5081d30aba97",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>majority of calls and puts being traded are near the money or out of money (see Table 1). Changes in the daily prices of these calls are very sensitive to the volatility level, while changes in the daily prices of these puts are very sensitive to the index return.</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "ee50c3bc3b4341e9bba363530ea0749e",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​second round</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "a71a8bf262cc46a98e8c0e39e912687a",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>VIX represents market volatility, what about implied volatility?</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "4ad10dbd5b3c43f69cbed5c55dfc0bf5",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>​is the authors' explanation for choice of sentiment factors plausive? in general, what do investors use options for?</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "124e8ea464c941ab9a1f978978195ca6",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​experiment</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "ebf2d2ad9ea946338c3534abdc4ca00a",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​settings</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "6f7163368ee94f4a9229254402b36a5e",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>​data source</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "d1b9263ab08e4d948b910bf298d0327c",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>​details of model training</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "c4188cc22d7b4b6bb5de81994cfa4695",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​what measures did the author use for hedge performance</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "8ed2b73442604093b0f5f482dbf16f18",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​can the experiments support the results</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "75059575e08d49e38f9fa9dd6dfa3059",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​the results align with previous papers?</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "680aafa1af794d7ab60d3207943b6bd4",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​limitations</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ]
+            }
+          ],
+          "linkColor": "#C0C0C0",
+          "side": null,
+          "title": "<p>systematic thinking</p>",
+          "content": null,
+          "siblingOrder": 0,
+          "link": null,
+          "leftIcons": null,
+          "rightIcons": null,
+          "folded": false
+        }
+      ],
+      "theme": "{\"magic\":\"zmtheme:v500\",\"version\":3,\"name\":\"bg_bright_ln_color\",\"text\":\"默认多色\",\"image\":\"/images/common/theme-bg-bright-ln-color.png\",\"mapBgColor\":\"#FFFFFF\",\"mapFgColor\":\"#282828\",\"fontColor\":\"#282828\",\"rootLineColor\":\"#C0C0C0\",\"lineColors\":[\"#3A8DDF\",\"#E08370\",\"#5FBC5C\",\"#B24BC8\",\"#75CFDC\"]}",
+      "version": 1,
+      "frontendState": null,
+      "commit": 166,
+      "isDefault": false,
+      "title": "<p>中心主题</p>"
+    },
+    "zmCounter": {
+      "read": 0,
+      "voteAmount": 0,
+      "voteUp": 0,
+      "voteDown": 0,
+      "comment": 0,
+      "challenge": 0,
+      "bookmark": 0,
+      "shareAmount": 0,
+      "shareCircle": 0,
+      "shareFriends": 0,
+      "share2qq": 0,
+      "share2qzone": 0
+    }
+  },
+  "extra": null,
+  "mt": null,
+  "token": null
+}

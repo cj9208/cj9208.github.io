@@ -1,0 +1,447 @@
+{
+  "code": 0,
+  "message": "Get MindMap data OK!",
+  "data": {
+    "author": {
+      "userUuid": "857a288bd33c4a8aa9f0fca7bf344142",
+      "nickname": "陈杰",
+      "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJibo26vHhy2zNAOIZWKhtkdOqibFLOiaicQ6YKocqrD8Xmc6fz35bSzZegNyuJAFAcg9qpkKVwg8kk3w/64",
+      "region": "Anhui Hefei",
+      "biography": null
+    },
+    "publicationInfo": {
+      "uuid": "dd23aa6a32a84c9abf245254128131e5",
+      "abstracts": null,
+      "recommendations": null,
+      "rating": 100,
+      "releaseType": "CONTENT",
+      "stateUpTime": 1559310932526,
+      "state": "EDITING",
+      "releaseState": "EDITING_NEW",
+      "copyable": false,
+      "private": true,
+      "collaboration": true
+    },
+    "mindMap": {
+      "uuid": "dd23aa6a32a84c9abf245254128131e5",
+      "uniCode": "lEytsheJ",
+      "ownerUsrUUID": "857a288bd33c4a8aa9f0fca7bf344142",
+      "createTime": 1559310932526,
+      "lastUpdateTime": 1559310932526,
+      "trees": [
+        {
+          "uuid": "7d2fbd44c03a40e89453988d7dbb1996",
+          "children": [
+            {
+              "uuid": "40b2165fd09b44e8be977e90014bd2fd",
+              "side": "left",
+              "linkColor": "#5FBC5C",
+              "title": "<p>​学而思</p>",
+              "content": "",
+              "folded": 0,
+              "link": "",
+              "children": [
+                {
+                  "uuid": "fcd05ae713014f8690fa05f4f3bc2b92",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​上个月11929，88小时，课时费9900左右</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "99adad8d93754a20be54db8c148de258",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​六月份没课，工资低</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "652adc3dbe2249399caa2fb095751c9e",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​八人班讲义不够好，项目不成熟</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "96285f1e227d40dc962b123cb867ce27",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​机会</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "680d02f92bac41dda9ad108b80ff7e22",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​但要无偿付出很多还不一定有回报</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "f2e72b3f2c144c0ba9d8111235680c8f",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​不用重新找房子</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                }
+              ]
+            },
+            {
+              "uuid": "1677fbf3838c4347badea1866554758e",
+              "side": "right",
+              "linkColor": "#3A8DDF",
+              "title": "<p>​平湖外国语学校高中数学老师</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "083fec6210f2463ba2026dba2ab80c7e",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​描述</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "ef7f5a6d3438467194c6d9c93bf1d7f2",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​公立学校</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": "",
+                      "ttW": 66
+                    },
+                    {
+                      "uuid": "8e6c9047189940928d78fcfcf1a01554",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​高一二个班，每周十二次课</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "d0edf15dde3c432a8f6fbfa6cc1c3f2c",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​顶岗2+4</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "71f534a7d972452581c73b473bc89408",
+                          "side": "right",
+                          "linkColor": "#E23E2B",
+                          "title": "<p>​问题：社保中断？</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": "",
+                          "leftIcons": [
+                            {
+                              "name": "mark-star"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "891022a00c4b48dcaedf7a5187c9c306",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​每周三学校集体教研</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": "",
+                      "ttW": 159
+                    }
+                  ]
+                },
+                {
+                  "uuid": "2f75d4338d4d4a39b4ff9cc945b063f8",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​优点</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "20f371c44d424c488554d0e76fa2676f",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​周末同一时间</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "3762958d3e404e37b319e5cf5c3b5ccd",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​工资</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "3fc527a0bc7542dea0c1351dd6e5e0b2",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​税前11420+社保+公积金+晚修</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "a018360e0bf34a8c8558b1e9bfa416e1",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​考虑公积金，实际工资比学而思高，且工作强度低</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "d71a286e9b024e84aada8cbaf68c51d3",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>前两个月​实际只工作一个月</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "9d95f9bfa59b4177acdd72034fe6d2d0",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​包伙食</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "f146a299b10a45718e8a18cf9031279b",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​早餐免费，午餐晚餐4</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "1dc647c39c5a43c296e9c37ccaeabeba",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​相当于增加工资500</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "ffa70aeec0f04062a70f24535c3b648b",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​有午休</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "d7517c2e5c09448082fc11dd3473af31",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​后续找工作</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "b8e97d274582463295372d297a640274",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​七八月位置高峰期</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "47d775eddef64a279159580f7103adb5",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​八人班7.14-八月底一直上课，没时间</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "d9c8bb24611d4008846a078d7b38f5da",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​6.10上到七月初，然后放假，有足够时间找工作</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "d4f7f026985e41a2854927c569619ac0",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​公立学校经验加成</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "798996fcedcc49c6a1a3051fcfbeab87",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​找学校初中，之前简历关难过</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "1bb8f5f8e4014aa0ac95b9c3619bd97e",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​缺点</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "e73652edcaff44589dc82858432770a2",
+                      "side": "right",
+                      "linkColor": "#E23E2B",
+                      "title": "<p>​位置偏远，需重新找房子，和平时分开</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": "",
+                      "leftIcons": [
+                        {
+                          "name": "mark-star"
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "957ee96d81284fac92a3143889180a93",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​教高中</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "2d843a492f4c4c3ab43c2bf641f16a7f",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​不是初中，后续考编不累计工龄</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "7dc9d3fb63f149d6a0b75faf3aaea40f",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​高中五年，初中两年才能考编，且高中位置少</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ]
+                }
+              ],
+              "folded": 0,
+              "link": "",
+              "ttW": 114
+            }
+          ],
+          "linkColor": "#C0C0C0",
+          "side": null,
+          "title": "<p>宝宝工作优劣</p>",
+          "content": null,
+          "siblingOrder": 0,
+          "link": null,
+          "leftIcons": null,
+          "rightIcons": null,
+          "folded": false
+        }
+      ],
+      "theme": "{\"magic\":\"zmtheme:v500\",\"version\":3,\"name\":\"bg_bright_ln_color\",\"text\":\"默认多色\",\"image\":\"/images/common/theme-bg-bright-ln-color.png\",\"mapBgColor\":\"#FFFFFF\",\"mapFgColor\":\"#282828\",\"fontColor\":\"#282828\",\"rootLineColor\":\"#C0C0C0\",\"lineColors\":[\"#3A8DDF\",\"#E08370\",\"#5FBC5C\",\"#B24BC8\",\"#75CFDC\"]}",
+      "version": 1,
+      "frontendState": null,
+      "commit": 82,
+      "isDefault": false,
+      "title": "<p>中心主题</p>"
+    },
+    "zmCounter": {
+      "read": 0,
+      "voteAmount": 0,
+      "voteUp": 0,
+      "voteDown": 0,
+      "comment": 0,
+      "challenge": 0,
+      "bookmark": 0,
+      "shareAmount": 0,
+      "shareCircle": 0,
+      "shareFriends": 0,
+      "share2qq": 0,
+      "share2qzone": 0
+    }
+  },
+  "extra": null,
+  "mt": null,
+  "token": null
+}

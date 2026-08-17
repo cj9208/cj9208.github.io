@@ -1,0 +1,1540 @@
+{
+  "code": 0,
+  "message": "Get MindMap data OK!",
+  "data": {
+    "author": {
+      "userUuid": "857a288bd33c4a8aa9f0fca7bf344142",
+      "nickname": "陈杰",
+      "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJibo26vHhy2zNAOIZWKhtkdOqibFLOiaicQ6YKocqrD8Xmc6fz35bSzZegNyuJAFAcg9qpkKVwg8kk3w/64",
+      "region": "Anhui Hefei",
+      "biography": null
+    },
+    "publicationInfo": {
+      "uuid": "e174855494d7486e8a2691c11f6ba47b",
+      "abstracts": null,
+      "recommendations": null,
+      "rating": 100,
+      "releaseType": "CONTENT",
+      "stateUpTime": 1777519284916,
+      "state": "EDITING",
+      "releaseState": "EDITING_NEW",
+      "copyable": false,
+      "private": true,
+      "collaboration": false
+    },
+    "mindMap": {
+      "uuid": "e174855494d7486e8a2691c11f6ba47b",
+      "uniCode": "qWdJHhAL",
+      "ownerUsrUUID": "857a288bd33c4a8aa9f0fca7bf344142",
+      "createTime": 1777519284916,
+      "lastUpdateTime": 1777519284916,
+      "trees": [
+        {
+          "uuid": "46fc212c79f74c22bd447b2cadba1021",
+          "children": [
+            {
+              "uuid": "e4fe201980724b8fa0634ee438425203",
+              "side": "right",
+              "linkColor": "#3A8DDF",
+              "title": "<p>​first step</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "1bd7f4fca9774629bb8b9d7e5fde8619",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​features</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "e63e59517b2e4162b2b655b28407780f",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​~ 20 subtasks</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "61fea0fcca3e4ca19fd6bad4215d9083",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​deal with fuzzy match, typo correction, etc</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ]
+                },
+                {
+                  "uuid": "f281e3e6f1da4869b54c3962fd911bfd",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​how to do</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "e2c6b31e9c7e45b197fb8484b82d0157",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​helper tasks</p>",
+                      "content": "",
+                      "folded": 1,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "6b62647d93244d2db603000e69513e05",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​normalization and clean</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "b4b4b1c07cf2437aaeb561518c1d2d95",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p><img src=\"/res/d/e/1777534662699824767.png\" style=\"width: 600px; height: 351px; max-width: 100%; max-height: 100%;\">​</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": null,
+                              "ttMaxW": 600,
+                              "ttW": 600
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "104441ba07fd410f9089d8a2051f4ac4",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "\"Autocorrect\" (Fuzzy & Typo Matching)",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "b4eb33527df44f30b437d127dc9c3049",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​<img src=\"/res/3/c/1777534776384736229.png\" style=\"width: 659px; height: 382px; max-width: 100%; max-height: 100%;\"></p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": "",
+                              "ttW": 659,
+                              "ttMaxW": 659
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "865dc6a61dec463c9d404513e7066329",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "The \"Linguist\" (Semantic & Domain Prep)",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "33f756f6845e4bf88608d81bacbdc6d2",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​<img src=\"/res/7/7/1777534864391677261.png\" style=\"width: 664px; height: 384px; max-width: 100%; max-height: 100%;\"></p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": "",
+                              "ttW": 664,
+                              "ttMaxW": 664
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "d34e063501b946eb8dda4ba35ecc021c",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​why use simple helper tasks</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "c4a835edcb3b4bd385ad964bb8721bae",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "1. Does it beat LLM in Accuracy?",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "be8ad9e3c5b84a7a93cf6683fee985e2",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "Yes, for specific routing.",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "e7d682675bb34ac8a7d8ed73549c53cf",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "LLMs are probabilistic. If you ask an LLM to \"Pick one of these 100 tasks,\" it might pick Task #12 today and Task #13 tomorrow for the exact same input because of \"temperature\" or slight prompt variations.",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "45adfa1f3b3942299ca5947637268588",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "Simple Algorithms (Regex/Fuzzy): Are Deterministic. If it matches, it matches 100% of the time. There is no \"hallucination\" in a lookup table.",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "2b5ef01be52f4360a23b1b13b01a95dd",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "LLM: Even GPT-4o has a 2-5% error rate on complex routing with many options. At 1,000,000 queries, that’s 50,000 broken experiences.",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "710adb5bd51a45c4992db7e619ea24bb",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "2. Does it beat LLM in Performance?",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "0a16728b665c48b29f89f8aff55e739c",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "Yes, by orders of magnitude.",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "d52e01f82f3043c29412d7fbf647af4f",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "LLM Route: Requires sending tokens over the internet, waiting for the model to \"think\" (inference), and streaming the result back.",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "cca96a24101b4c438f53507205244622",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "Latency: 500ms – 2s",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "e77be86217d94d6a9d8efbfd3c6dfefb",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "Cost: $0.01 - $0.05 per call.",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "86a650e940cb46d0bcbb288fc82aa4e2",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "Simple Algorithm Route: Happens locally on your CPU in memory.",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "5313d046e456423ab16c712024eec94d",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "Latency: <1ms – 10ms",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "15e4990e62804403992828fe742e1a3e",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "Cost: $0.000001 (basically free).",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ]
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "f9cafe85fe124597a860e37b727defdc",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>Where the Complexity pays for itself</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "1118446f2958425db7c2ab084af765d2",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>A. The \"Cold Start\" Problem</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "3a097862dacf4dbcb62d3c5cd8a995a0",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "If you have 100 tasks, an LLM prompt containing all 100 descriptions will be massive (10k+ tokens). This makes every single \"Hello\" from a user expensive. A modular intention layer only \"wakes up\" the specific task logic needed, keeping the main loop lean.",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "37cd11b8aa5d4194af6515969d47dd30",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>B. Debugging (The \"Black Box\" vs. \"Glass Box\")</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "cdbbe207846840ac99e5ad069cdbe873",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>Pure LLM: If it routes a refund request to a sales agent, you have to \"vibe-check\" the prompt and hope it doesn't break something else.</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "0d6b1fe522a74fc6933f5f374ba9c734",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "Modular System: You can see exactly where it failed. \"The Fuzzy Matcher failed to catch the typo, and the Semantic Router gave it a 0.5 score.\" You can fix that specific logic gate without touching the rest of the system.",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "d35e3c5db52848eab700de4480d7c191",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>C. Scaling to 100+ Tasks</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "2c495166fb3c4b11b21fca4c2b18dc3b",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "An LLM's performance degrades as you add more choices (the \"Lost in the Middle\" effect). A hierarchical system (Domain $\\rightarrow$ Sub-domain $\\rightarrow$ Task) maintains the same accuracy whether you have 10 tasks or 1,000.",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 1,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "43efc845b62d4253b4cf8c552dcb454e",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​efficiency: avoid llm for al</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "1faacae51df24539a4af5578ad67ee86",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Build a Domain Dictionary. It is a simple CSV/JSON file:",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "4e544401093448bb9ea4f4cfc63770d5",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "{\"Task_ID\": \"PROMO_CHECK\", \"Keywords\": [\"coupon\", \"discount\", \"voucher\", \"code\"], \"Regex\": \"PROMO_\\\\d+\"}",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "cdcba2eaf709481e81fd4b185bb388af",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "By running the user query through this dictionary using Fuzzy Match first, you will resolve 70% of intents in under 10ms without ever waking up an LLM.",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "5d76b97d63ed457faf4f33da59eb5222",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​The Hierarchical Architecture</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "63eeb11625a34c4a81dbdfebce8f46fc",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "Think of this as a \"Waterfall\" design. Every query falls through these stages, stopping as soon as it finds a match.",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "50e065cb2e49420d84f1e8b11f747c4f",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "Level 1: The Fast-Track (Code-Based)",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "181322ea8c1843e4bb45ba921f149ac2",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "Purpose: Instant resolution of common patterns.",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "1def491567be43429fa73f197071dabb",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "Logic: A collection of Regex and Lookup Tables.",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "0a660c4634e0433d82f7fe0c01e2d492",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "Example: If input contains REQ-[0-9]+, it is immediately routed to the \"Order Status\" task.",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "681cf7a5dd6f40d39045a4a3daafec59",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "LLM involvement: Zero.",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "bf653d6a45cc40dca87a676562ee02ed",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "Level 2: The Semantic Router (Embedding-Based)",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "09b0f93b5b9c4a2a8967b0a5a554d1d3",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "Purpose: Categorize the \"vibe\" of the query.",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "e97840f92eae47258924021319ad7f2a",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "Logic: Map the query to a \"Domain\" (e.g., HR_Policy, Product_Specs, Account_Actions).",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "9685a420d7aa431ab4e1896bf2713c0b",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "Tool: Use a local vector store (FAISS) with a tiny embedding model.",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "ca2c65f3768b43fe87abe8b232057ee2",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "LLM involvement: Zero (uses embeddings only).",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "468fff36bc6f4a2984fce985f273d264",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "Level 3: The \"Specialist\" Agent (Task-Specific LLM)",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "cd5ff9fb269b40f09b6d364b5b1244e9",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "Purpose: Deep reasoning for a single domain.",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "bc3b5de4b3bd406abd007bcce005222d",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "Logic: Once Level 2 picks HR_Policy, you invoke a \"Mini-LLM\" (like GPT-4o-mini or a fine-tuned SLM) with a prompt specific only to HR.",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "417790b2d1cc495fb55f6707affcd994",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "LLM involvement: High (but narrow context).",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "b69630c7e2bd4130ba5fed1786572bdd",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​Managing 100 Tasks: The \"Manifest\" Design</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "6674e90afac3415bad6a9b8abaf47339",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​Task Registry</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "c2ae4a5e76bd4609b564d6baefb6e6f9",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<img src=\"/res/b/8/1777535533393302925.png\" style=\"width: 593px; height: 156px; max-width: 100%; max-height: 100%;\">",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": "",
+                                  "ttMaxW": 593,
+                                  "ttW": 593
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "3751a1cf35c34bd9973d98afd673df32",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "How to manage it with an LLM:",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "ae9a265e858f415fbf94a7dbb77936fc",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "Selection: The LLM is shown only the descriptions of the top 5 candidates identified by the Semantic Router.",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "a7b2a807192240579ffcb47ef3f0322e",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "Mapping: The LLM picks the id and extracts the parameters.",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "0251f5bdf1254ab48bb6aef3b566ed35",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "Hydration: Your system pulls the full manifest for that id from your database to execute the RAG or API call.",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "6b4f69379f4a4b27807565a07555f2a2",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "Why this Design Wins",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "dcf4b71b65724587ae7a0c72a0ce076d",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "Control over \"Context Contamination\"",
+                                  "content": "",
+                                  "folded": 1,
+                                  "link": "",
+                                  "children": [
+                                    {
+                                      "uuid": "08393fef25994548bb3b65f3a2739a9f",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "By isolating tasks, Task A’s documents never \"bleed\" into Task B’s answer. If a user asks about \"Refunds,\" the system physically cannot see \"Investment Strategy\" documents because the Intention Layer locked the Metadata Filter to doc_type: refund.",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    },
+                                    {
+                                      "uuid": "3444c17294f843248a8c97981fa6d995",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "<p>​The \"Information Bottleneck\" (Input Control)</p>",
+                                      "content": "",
+                                      "children": [
+                                        {
+                                          "uuid": "ec5e5a7696564e028b18c241747ee6c3",
+                                          "side": "",
+                                          "linkColor": "",
+                                          "title": "<p>Instead of letting the user's raw, messy text hit the LLM, you use your help tasks to squeeze the query into a Canonical Form.</p>",
+                                          "content": "",
+                                          "children": null,
+                                          "folded": 0,
+                                          "link": ""
+                                        },
+                                        {
+                                          "uuid": "8485b8d2192044c18becfb716a6f90d2",
+                                          "side": "",
+                                          "linkColor": "",
+                                          "title": "<p>​The Problem</p>",
+                                          "content": "",
+                                          "children": [
+                                            {
+                                              "uuid": "eb7374de2e4f41f8916328a4054a5e6e",
+                                              "side": "",
+                                              "linkColor": "",
+                                              "title": "<p>User says: \"Hey, can you like, check if the 10% Summmer thingy is still active for my cart #8821? Thx.\"</p>",
+                                              "content": "",
+                                              "children": null,
+                                              "folded": 0,
+                                              "link": ""
+                                            },
+                                            {
+                                              "uuid": "3c2ae5a32fba4fafa6e69b309d4bbb72",
+                                              "side": "",
+                                              "linkColor": "",
+                                              "title": "<p>The Precision Fix</p>",
+                                              "content": "",
+                                              "children": [
+                                                {
+                                                  "uuid": "708404140d5d4e0cb9cd2bb1059de23d",
+                                                  "side": "",
+                                                  "linkColor": "",
+                                                  "title": "<p>Fuzzy/Typo: Summmer $\\rightarrow$ SUMMER_10</p>",
+                                                  "content": "",
+                                                  "children": null,
+                                                  "folded": 0,
+                                                  "link": ""
+                                                },
+                                                {
+                                                  "uuid": "9b49c6cc7007468ab7041673250970a0",
+                                                  "side": "",
+                                                  "linkColor": "",
+                                                  "title": "<p>Regex: #8821 $\\rightarrow$ order_id: 8821</p>",
+                                                  "content": "",
+                                                  "children": null,
+                                                  "folded": 0,
+                                                  "link": ""
+                                                },
+                                                {
+                                                  "uuid": "4f3aee130e884dabb3e812c2be7ae877",
+                                                  "side": "",
+                                                  "linkColor": "",
+                                                  "title": "Normalization: Strips \"Hey,\" \"like,\" \"Thx.\"",
+                                                  "content": "",
+                                                  "children": null,
+                                                  "folded": 0,
+                                                  "link": ""
+                                                }
+                                              ],
+                                              "folded": 0,
+                                              "link": ""
+                                            }
+                                          ],
+                                          "folded": 0,
+                                          "link": ""
+                                        },
+                                        {
+                                          "uuid": "eb9c3bf8bbf54db8b9fe6c0f2aef7115",
+                                          "side": "",
+                                          "linkColor": "",
+                                          "title": "<p>Resulting Prompt for LLM: Check validity of SUMMER_10 for order 8821.</p>",
+                                          "content": "",
+                                          "children": null,
+                                          "folded": 0,
+                                          "link": "",
+                                          "ttMaxW": 525,
+                                          "ttW": 525
+                                        },
+                                        {
+                                          "uuid": "083cd2fb82cb4583a3a3e915b0ed40a1",
+                                          "side": "",
+                                          "linkColor": "",
+                                          "title": "Goodput Gain: The LLM doesn't have to waste \"attention tokens\" parsing slang or typos. It focuses 100% on the logic.",
+                                          "content": "",
+                                          "children": null,
+                                          "folded": 0,
+                                          "link": ""
+                                        }
+                                      ],
+                                      "folded": 0,
+                                      "link": ""
+                                    },
+                                    {
+                                      "uuid": "f447e33874644aa5b2032be97b0d588e",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "Task Injection (Dynamic Context)",
+                                      "content": "",
+                                      "folded": 0,
+                                      "link": "",
+                                      "children": [
+                                        {
+                                          "uuid": "b865d491c9f4462c9130abaef6a9a98c",
+                                          "side": "",
+                                          "linkColor": "",
+                                          "title": "With 100 tasks, a \"Badput\" outcome is often caused by the LLM getting confused between Task 12 and Task 84.",
+                                          "content": "",
+                                          "children": null,
+                                          "folded": 0,
+                                          "link": ""
+                                        },
+                                        {
+                                          "uuid": "60dabf1a3f56408a80d56109a018824c",
+                                          "side": "",
+                                          "linkColor": "",
+                                          "title": "The Precision Fix: Only inject the specific Task Manifest after your Semantic Router has narrowed the field.",
+                                          "content": "",
+                                          "children": null,
+                                          "folded": 0,
+                                          "link": ""
+                                        },
+                                        {
+                                          "uuid": "e7050141869d4b60b18a540d72ffe9a1",
+                                          "side": "",
+                                          "linkColor": "",
+                                          "title": "Example: If the Semantic Router is 90% sure it’s a \"Policy RAG\" task, the prompt sent to the LLM only contains the instructions for Policy RAG.",
+                                          "content": "",
+                                          "children": null,
+                                          "folded": 0,
+                                          "link": ""
+                                        },
+                                        {
+                                          "uuid": "0dd76fda7b084bcca8a1b92bfa0938f5",
+                                          "side": "",
+                                          "linkColor": "",
+                                          "title": "Goodput Gain: By reducing the \"Reasoning Search Space,\" you virtually eliminate the chance of the LLM picking the wrong task.",
+                                          "content": "",
+                                          "children": null,
+                                          "folded": 0,
+                                          "link": ""
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "uuid": "6295decfef894032a6a92fef992bf289",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "Continuous Improvement (The \"Feedback Loop\")",
+                                  "content": "",
+                                  "folded": 0,
+                                  "link": "",
+                                  "children": [
+                                    {
+                                      "uuid": "91a1b6e602e8444284b9bd8ccd2dabe5",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "Because the system is modular, you can log every time Level 3 (the LLM) had to correct Level 2 (the Router).",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    },
+                                    {
+                                      "uuid": "8c96ec776ba44808ae7b1296da09ff03",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "If the Router frequently misses \"Promo\" questions, you don't rewrite the LLM prompt.",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    },
+                                    {
+                                      "uuid": "447d268f25d44f4dab054a580843a553",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "You simply add those missed questions as new \"Example Vectors\" in your Semantic Router.",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ]
+                                },
+                                {
+                                  "uuid": "5ef102d10c0a40dba7466d385dd34085",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "\"Fail-Safe\" for 100+ Tasks",
+                                  "content": "",
+                                  "folded": 0,
+                                  "link": "",
+                                  "children": [
+                                    {
+                                      "uuid": "6f65175a53e548a0880395422a524147",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "When you reach 100 tasks, the biggest risk is the \"I don't know\" query. A modular system allows you to define a \"Fallback Task\" that triggers a general-purpose LLM agent to ask clarifying questions: \"I see you're asking about promotions, but are you trying to apply a code or check an expiration date?\"",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 1,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "835e714657284c2990960b9a19cddc7d",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​further improvement</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "d026e09c8ec44f87a59901cd9263570a",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "A. The \"Negative Centroid\" Strategy",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "3daaaec4ef544a5ca07d93709fe1a036",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "With 100 tasks, semantic \"collisions\" are your biggest enemy.",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "ceb0f29e784448008457094a0b3d6cee",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "Improvement: For every task, define \"What I am NOT.\"",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "18585fa1adab46b28b3cf62ba863f150",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "Implementation: If a query is semantically close to both \"Refund\" and \"Status,\" the router checks a \"Negative Cluster.\" If the query matches the \"Negative Cluster\" of Task A (e.g., \"user is asking about money, not time\"), it forces the route to Task B.",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "f152e01cad49495aac9b9c2d8e3bdc22",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>How to build it (The \"Maker\" Way)</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "ffb21344ceed4cbf912361b738766d0b",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>Identify \"Conflict Pairs\": Use a similarity matrix to see which of your 100 tasks have overlapping embeddings.</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "a2514989efaa4640bcd83cfafd2b9ac0",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>​Collect \"Near-Misses\": Look at your logs for queries that triggered Task A but were corrected to Task B.</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "280501901a5b4787bbc9ff604c18d8d1",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>Anchor the Error: Average those \"Near-Miss\" embeddings to create the $k^-$ for Task A.</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "a259ac43363845e99d1a588788ee6c7f",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>​Deploy as a Gate: Add this logic only to the \"High-Risk\" tasks.</p>",
+                                  "content": "",
+                                  "folded": 0,
+                                  "link": "",
+                                  "children": null
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "e32655eb031542bcb27afef0233b4ff8",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>Steering Formula:</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "65ddd0e3145e456cb8ac7f191a51c7dc",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>​<img src=\"/res/1/6/1777538214183476493.png\" style=\"width: 559px; height: 196px; max-width: 100%; max-height: 100%;\"></p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": "",
+                                  "ttW": 559,
+                                  "ttMaxW": 559
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "ce9fc25e15294ceda540d3dceacbea2d",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "B. \"Just-in-Time\" Parameter Validation",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "878f39af16ea4833a64d53c8f14fb41b",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "Improvement: Move validation inside the IRL, before the RAG/API call.",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "76062dfd676e44dba737bea61f10a9f4",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "Implementation: If the IRL identifies the PROMO_CHECK task and extracts SUMMER_10, it should immediately ping a Bloom Filter or a local cache of valid codes.",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "6d263d2328774a68a35db342b6294643",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "Benefit: If the code is invalid, you return a \"Ghost Error\" (\"I see you're asking about SUMMER_10, but that code doesn't exist\") without ever running the RAG or LLM.",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "f72293c546bf45beb606c0c05d2c9549",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "C. Semantic Routing with \"Shadow\" Testing",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "bd4f4a11e1be48a8b22867b5b2c3949e",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "Improvement: Run a \"Champion-Challenger\" model for your router.",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "f7df0a49578d4888bb302d4a0d80314d",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "Implementation: While your Regex/Fuzzy logic (the Champion) handles the user, run a small SLM (the Challenger) in the background.",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "7ec011f31d8d4b24af2984f0c7620113",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "Benefit: Log whenever they disagree. This \"Disagreement Log\" becomes your primary dataset for fine-tuning the IRL.",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "9ec128fa9ed74748aa7e0775ccb30da8",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​Regex \"Greedy\" Problem</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "7538de30cce941f8b27993ec2cd2225c",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​explanation</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "5c221092377643a19a0b62accacfd4cd",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>With 100+ tasks, Regex becomes a \"Double-Edged Sword.\" The biggest mistake is using Regex as a Hard Gate (If Match $\\rightarrow$ Route). In a high-precision system, Regex should be a Featurizer, not a Router.</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "58ebb9beee7f45e4845afe7413382828",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>The Problem: Semantic Collisions</p>",
+                                  "content": "",
+                                  "children": [
+                                    {
+                                      "uuid": "da734bebf48648ec88b7f95886d3e798",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "If Task A is \"Check Balance\" and Task B is \"Check Promotion,\" and your Regex looks for check.*, you have a collision. If you add more specific rules, you end up with \"Regex Sprawl\"—a maintenance nightmare.",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ],
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "7c1545dac7bd43ad979cd00741343df5",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "The Fix: Priority Tiers & Functional Signals",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "4cfb156ded21437fa9e077c0f71daa64",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "Functional vs. Domain Regex:",
+                                  "content": "",
+                                  "children": [
+                                    {
+                                      "uuid": "5f4032f867284fa9950c56774f359890",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "Functional Regex: Detects actions (e.g., (show|get|list|check)).",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    },
+                                    {
+                                      "uuid": "a18de71b8c51465196ab0f8aef0e5482",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "Domain Regex: Detects entities (e.g., (balance|promo|transfer)).",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    },
+                                    {
+                                      "uuid": "6d20f1f7d3f14fcd849ef1958721719e",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "The Logic: A match only counts if you have a [Function] + [Domain] pair. This reduces false positives by ~80%.",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ],
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "c3c65b168d1746148026ee9be1123f89",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "The \"Veto\" Regex (Negative Signal):",
+                                  "content": "",
+                                  "folded": 0,
+                                  "link": "",
+                                  "children": [
+                                    {
+                                      "uuid": "2d91164e1a224e8c83ab8e894d4dc741",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "Instead of matching what an intent is, use Regex to match what it cannot be.",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    },
+                                    {
+                                      "uuid": "29a2ff1c8b9c486e8d6de528ef6ebaa5",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "Example: If the query contains \"apply for,\" it cannot be the \"Check Balance\" task, even if the word \"balance\" is present.",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ]
+                                },
+                                {
+                                  "uuid": "d3bd4b1cd0c344cbaf2228ed365bd692",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "Regex as a \"Boost\" for Vector Search:",
+                                  "content": "",
+                                  "folded": 0,
+                                  "link": "",
+                                  "children": [
+                                    {
+                                      "uuid": "1413b7db3beb4687b36f9d706b4ece7b",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "Instead of routing via Regex, pass the Regex Match as a Metadata Flag to your Vector Search.",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    },
+                                    {
+                                      "uuid": "2f3786837b7649dfb5972877ebf3345e",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "Logic: Score = CosineSim(query, task) + 0.2 * RegexMatch. This allows the \"Precision\" of Regex to assist the \"Fluidity\" of Semantic search without being brittle.",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "fea943fe5b2d4a07a08e082a17d1c958",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>Multi-turn IRL</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "fdf6edde8bb644d68e68546c438ae9ec",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "The \"ReflectionGate\" Strategy (2026 Design Pattern)",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "7a0ea773835d4abe993a59ccb8e8d5ac",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "Instead of a raw list, use an Entropy-Filtered Episodic Memory.",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "e530f9ce419b49bcae7906b3a2f9df6a",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "Information Density Filtering:",
+                                  "content": "",
+                                  "folded": 0,
+                                  "link": "",
+                                  "children": [
+                                    {
+                                      "uuid": "e6edaf55822a4c3c80f03df2a9970a30",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "Don't store every turn. Only store turns that contain High Entropy (new entities or changed verbs).",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    },
+                                    {
+                                      "uuid": "f051a8c9373a441fb3495f12bada03a8",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "KISS Implementation: If a turn has no extracted entities and low semantic variance from the last turn, discard it from the \"Intention Context.\"",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ]
+                                },
+                                {
+                                  "uuid": "18bad597587649db909749bf0214367b",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "The \"Slot Carryover\" Model:",
+                                  "content": "",
+                                  "folded": 0,
+                                  "link": "",
+                                  "children": [
+                                    {
+                                      "uuid": "ae713f9cc6c8453e8609646f0f9ed7cb",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "Instead of re-running intent for the whole history, carry over the Slot State.",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    },
+                                    {
+                                      "uuid": "97f9279d4b75454b89547d5cfcb8d6f2",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "<p>Example</p>",
+                                      "content": "",
+                                      "folded": 0,
+                                      "link": "",
+                                      "children": [
+                                        {
+                                          "uuid": "376f2c9561a4492e82d7ceaf9bd07c30",
+                                          "side": "",
+                                          "linkColor": "",
+                                          "title": "<p>Turn 1: \"Check balance for Account A.\" $\\rightarrow$ (Intent: BAL, Slot: acc_id=A)</p>",
+                                          "content": "",
+                                          "children": null,
+                                          "folded": 0,
+                                          "link": ""
+                                        },
+                                        {
+                                          "uuid": "663a256e844d49da935c15b9aff7ecfd",
+                                          "side": "",
+                                          "linkColor": "",
+                                          "title": "Turn 2: \"What about Account B?\"",
+                                          "content": "",
+                                          "children": null,
+                                          "folded": 0,
+                                          "link": ""
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "uuid": "6c38e946fc3c4565b03551d9a9c83334",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "The IRL sees the new query, notices the verb is missing (\"What about...\"), and \"Hydrates\" the query using the previous intent: \"Check balance for Account B.\"",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ]
+                                },
+                                {
+                                  "uuid": "1e5017ba6ccd4858884c6546ebaea088",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "Implicit vs. Explicit State:",
+                                  "content": "",
+                                  "folded": 0,
+                                  "link": "",
+                                  "children": [
+                                    {
+                                      "uuid": "89a74f9b372044148f865afc9eb78f8d",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "Implicit: Use the last 3 embeddings (averaged or weighted).",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    },
+                                    {
+                                      "uuid": "804df476d97a4d86932e8de536765a92",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "Explicit: Use a \"State Machine\" where certain intents lock the context. (e.g., If the user is in the \"Transfer Funds\" flow, the IRL assumes any 3-word query is related to that flow until a \"Clear Context\" signal is detected).",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "d0e137a3029944cd81802fe80205a24f",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": "",
+                              "ttW": 612,
+                              "ttMaxW": 612
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            },
+            {
+              "uuid": "7320e766e5ec48548ce1a9fc217c0869",
+              "side": "right",
+              "linkColor": "#E08370",
+              "title": "<p>​second step</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "146baaa9b73e4a609007223cc2024c82",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​features</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "91c17e67ec584b99942ce1a2225ac11c",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​100+ subtasks</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ]
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            }
+          ],
+          "linkColor": "#C0C0C0",
+          "side": null,
+          "title": "<p>Design of Intention Recognition Layer</p>",
+          "content": null,
+          "siblingOrder": 0,
+          "link": null,
+          "leftIcons": null,
+          "rightIcons": null,
+          "folded": false
+        }
+      ],
+      "theme": "{\"magic\":\"zmtheme:v500\",\"version\":3,\"name\":\"bg_bright_ln_color\",\"text\":\"默认多色\",\"image\":\"/images/common/theme-bg-bright-ln-color.png\",\"mapBgColor\":\"#FFFFFF\",\"mapFgColor\":\"#282828\",\"fontColor\":\"#282828\",\"rootLineColor\":\"#C0C0C0\",\"lineColors\":[\"#3A8DDF\",\"#E08370\",\"#5FBC5C\",\"#B24BC8\",\"#75CFDC\"]}",
+      "version": 1,
+      "frontendState": null,
+      "commit": 124,
+      "isDefault": false,
+      "title": "<p>中心主题</p>"
+    },
+    "zmCounter": {
+      "read": 0,
+      "voteAmount": 0,
+      "voteUp": 0,
+      "voteDown": 0,
+      "comment": 0,
+      "challenge": 0,
+      "bookmark": 0,
+      "shareAmount": 0,
+      "shareCircle": 0,
+      "shareFriends": 0,
+      "share2qq": 0,
+      "share2qzone": 0
+    }
+  },
+  "extra": null,
+  "mt": null,
+  "token": null
+}

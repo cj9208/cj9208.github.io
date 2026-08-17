@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0.1">
+<node TEXT="编程"><node TEXT="语言"><node TEXT="Python"><node TEXT="list"></node><node TEXT="tuple"></node><node TEXT="set"></node><node TEXT="dict"></node><node TEXT="collections"><node TEXT="alternatives to Python’s general purpose built-in containers"></node><node TEXT="deque"></node></node></node></node><node TEXT="算法"><node TEXT="搜索"><node TEXT="DFS"></node><node TEXT="BFS"></node></node><node TEXT="动态规划"></node><node TEXT="贪心"></node></node><node TEXT="数据结构"><node TEXT="二叉树"></node></node><node TEXT="优化"><node TEXT="剪枝"></node><node TEXT="位运算"></node></node></node>
+</map>

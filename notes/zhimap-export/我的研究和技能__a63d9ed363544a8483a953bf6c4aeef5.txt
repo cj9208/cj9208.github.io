@@ -1,0 +1,18 @@
+我的研究和技能
+- courses
+  - models
+    - stochastic calculus
+    - financial modelling
+  - numerical methods
+    - Monte Carlo simulation
+    - finite difference
+    - finite element
+    - transformation-based methods
+  - machine learning and deep learning
+    - know the theory
+    - little actual coding experiences
+      - LeetCode
+      - Kaggle competition
+- research
+  - barrier option pricing using Hilbert transform
+  - option pricing with news sentiment and text analysis

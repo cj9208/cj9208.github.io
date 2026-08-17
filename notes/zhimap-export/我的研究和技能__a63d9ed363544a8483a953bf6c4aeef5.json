@@ -1,0 +1,248 @@
+{
+  "code": 0,
+  "message": "Get MindMap data OK!",
+  "data": {
+    "author": {
+      "userUuid": "857a288bd33c4a8aa9f0fca7bf344142",
+      "nickname": "陈杰",
+      "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJibo26vHhy2zNAOIZWKhtkdOqibFLOiaicQ6YKocqrD8Xmc6fz35bSzZegNyuJAFAcg9qpkKVwg8kk3w/64",
+      "region": "Anhui Hefei",
+      "biography": null
+    },
+    "publicationInfo": {
+      "uuid": "a63d9ed363544a8483a953bf6c4aeef5",
+      "abstracts": null,
+      "recommendations": null,
+      "rating": 100,
+      "releaseType": "CONTENT",
+      "stateUpTime": 1578018138768,
+      "state": "EDITING",
+      "releaseState": "EDITING_NEW",
+      "copyable": false,
+      "private": true,
+      "collaboration": false
+    },
+    "mindMap": {
+      "uuid": "a63d9ed363544a8483a953bf6c4aeef5",
+      "uniCode": "kkkyRRik",
+      "ownerUsrUUID": "857a288bd33c4a8aa9f0fca7bf344142",
+      "createTime": 1578018138768,
+      "lastUpdateTime": 1578018138768,
+      "trees": [
+        {
+          "uuid": "0b09d5cec05c44a08038c55b8da777ac",
+          "children": [
+            {
+              "uuid": "9b692cde4e2e497596a2251aa2892351",
+              "side": "right",
+              "linkColor": "#5FBC5C",
+              "title": "<p>​courses</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "9891c75246a142b7a0884d521725c6db",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​models</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "ffd637db4dc14a7388a87680a380c1b0",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>stochastic calculus</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "aa578c9529274f84a5c58a50474d91b5",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>financial modelling</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "624aa397682b445aab8ffdb07dd8eb75",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>numerical methods</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "046ed6c4955b43aab9cf75b397c062b5",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​Monte Carlo simulation</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "8b8ce075dc614339b5a03eb32d20cae7",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​finite difference</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "276f0436d5814062b2b68ccbe3437ce6",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​finite element</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "5c3fc90ec1a14f66ac29072060c74713",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​transformation-based methods</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "ec6132ddb7ae4023b4976d6c18a5a102",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​machine learning and deep learning</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "c1b2d70c367145588e3b97f31a007a58",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>know the theory</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "a1f769e3e4f0455a893593609049bdcb",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>little actual coding experiences</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "bf25b6fbfdeb4ebdb19f7d715a2fb8d5",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​LeetCode</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "f8bc761b3cec4dd8a8824358aa313ddd",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​Kaggle competition</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            },
+            {
+              "uuid": "72b74cfb6bb1416ab85242d1c86bec30",
+              "side": "right",
+              "linkColor": "#B24BC8",
+              "title": "<p>​research</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "e859fdbef21c4efe849404a29415e27e",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​barrier option pricing using Hilbert transform</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "56f2d9385bcd4f74b252d7b72e0c1a93",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>option pricing with ​news sentiment and text analysis&nbsp;</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            }
+          ],
+          "linkColor": "#C0C0C0",
+          "side": null,
+          "title": "<p>我的研究和技能</p>",
+          "content": null,
+          "siblingOrder": 0,
+          "link": null,
+          "leftIcons": null,
+          "rightIcons": null,
+          "folded": false
+        }
+      ],
+      "theme": "{\"magic\":\"zmtheme:v500\",\"version\":3,\"name\":\"bg_bright_ln_color\",\"text\":\"默认多色\",\"image\":\"/images/common/theme-bg-bright-ln-color.png\",\"mapBgColor\":\"#FFFFFF\",\"mapFgColor\":\"#282828\",\"fontColor\":\"#282828\",\"rootLineColor\":\"#C0C0C0\",\"lineColors\":[\"#3A8DDF\",\"#E08370\",\"#5FBC5C\",\"#B24BC8\",\"#75CFDC\"]}",
+      "version": 1,
+      "frontendState": null,
+      "commit": 42,
+      "isDefault": false,
+      "title": "<p>中心主题</p>"
+    },
+    "zmCounter": {
+      "read": 0,
+      "voteAmount": 0,
+      "voteUp": 0,
+      "voteDown": 0,
+      "comment": 0,
+      "challenge": 0,
+      "bookmark": 0,
+      "shareAmount": 0,
+      "shareCircle": 0,
+      "shareFriends": 0,
+      "share2qq": 0,
+      "share2qzone": 0
+    }
+  },
+  "extra": null,
+  "mt": null,
+  "token": null
+}

@@ -1,0 +1,471 @@
+{
+  "code": 0,
+  "message": "Get MindMap data OK!",
+  "data": {
+    "author": {
+      "userUuid": "857a288bd33c4a8aa9f0fca7bf344142",
+      "nickname": "陈杰",
+      "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJibo26vHhy2zNAOIZWKhtkdOqibFLOiaicQ6YKocqrD8Xmc6fz35bSzZegNyuJAFAcg9qpkKVwg8kk3w/64",
+      "region": "Anhui Hefei",
+      "biography": null
+    },
+    "publicationInfo": {
+      "uuid": "12a65706fff147a19879f21c0e4b4b2b",
+      "abstracts": null,
+      "recommendations": null,
+      "rating": 100,
+      "releaseType": "CONTENT",
+      "stateUpTime": 1600051632301,
+      "state": "EDITING",
+      "releaseState": "EDITING_NEW",
+      "copyable": false,
+      "private": true,
+      "collaboration": false
+    },
+    "mindMap": {
+      "uuid": "12a65706fff147a19879f21c0e4b4b2b",
+      "uniCode": "CoEDYnFF",
+      "ownerUsrUUID": "857a288bd33c4a8aa9f0fca7bf344142",
+      "createTime": 1600051632301,
+      "lastUpdateTime": 1600051632301,
+      "trees": [
+        {
+          "uuid": "2ba8fd1cc3624db381bf2453b9dd2869",
+          "children": [
+            {
+              "uuid": "ea789c0796da406ab51de09386f89002",
+              "side": "right",
+              "linkColor": "#3A8DDF",
+              "title": "<p>​宏观风险因子</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "438f32a9a3294e4992c9b61f06275657",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​经济增长风险，利率风险，通胀风险，汇率 风险和信用风险</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "7f5c7064b65342828f12c2051d527a8b",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​两种构建思路</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "bf0484a67cce47cd956dc895882fd319",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​经济学意义上的指标</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "f7fee0784ee54ad3821d2717c575d200",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​低频，滞后性</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "6fc36ad772d349568e506f046184bff2",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​不可直接投资</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "552bd1595e0a46388c437484e7fddded",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​隐含因子</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "6612c8340d444f6189e7c69f6def998e",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​PCA，从数据上进行构建</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "d339f3d0678248a0849f3860cadddee8",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​稳定性，可解释性</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "ff59b68888254821aa312a15a107965f",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​不能是数据挖掘偏见</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "44d412d17106496c9c0debf79feabe6e",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​资产的线性组合，可直接投资</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "f7e30013b57940e9b8a393bab6e7a4e4",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​构建方法</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "6f9e0110809949b1b9c71b1cf682d468",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>Factor Mimicking 方法</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "daf6255a6b5042d99bfc0ecae6312a20",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​寻找与宏观因子相关的备选资产</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "14f4eff6d160463fb8a8da7de691e759",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​宏观因子和资产的HP滤波处理</p>",
+                                  "content": "",
+                                  "children": [
+                                    {
+                                      "uuid": "1ce66a3aacd544cca775d2a4df1faf0e",
+                                      "side": "right",
+                                      "linkColor": "",
+                                      "title": "<p>​去掉信号噪声</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ],
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "00acc216f94e478f9fc4cb9386f5ba8f",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​单资产和宏观因子的相关性检验</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "b26aaaaefed94698bf1afc0494d9dcf3",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​多资产回归，寻找最优参数</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "14e9f7ca7dd24126a212eb361bcc2019",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​参数稳定性检验</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "054b2b6a15234e1ebbe3dc283aece4fc",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​配置风险而不是配置资产</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "b7ebb81a1fb04f4ba848278593e92f53",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "宏观 风险 相关性远低于资产相关性",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            },
+            {
+              "uuid": "7c953ad1f4d84a598b515cd3fb8b4cde",
+              "side": "right",
+              "linkColor": "#3A8DDF",
+              "title": "<p>​宏观风险评价策略</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "a19d38e1e69a4a8daa917fbb3e561128",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​初试</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "cd16efa4baa849a793215d64ef1c7d55",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​三大标定资产</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "4517aedcefdb4fa2a688526900e4bd0d",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​股，债，商品</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "0c8941d98a8048048da62f7eb5969f38",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>问题和改进</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "3e839970199a471daa408ebf9a8fc264",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​利率因子风险暴露无法控制，易受高利率影响</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "2f4500724a504de7b982987779fa7247",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​引入现金资产，平衡高利率情形下的股债商品的不利影响</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "63f392e8264f439c8ec76b5f66bb8517",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​四种思路</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "563905bc5dc34ae99a0b0c42a874c428",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>宏观风险纯因子化</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "9c3b25d43e9249cf8907247e153af0a9",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "基于 Factor Mimicking 方法 构造的隐含因子",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "530e3a330b554c4c90a45830678635e6",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>​最小宏观风险暴露</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "9931ffcaf7cf48228983111d34d080ce",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>​宏观风险平价</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "0678db6cc8af4097b33c7e303a315f88",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>​宏观战术配置</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "4c5f714ee06d430eaf2d924916c5ac86",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>基于对宏观风险的深入研究，通过动态调整组合的宏观风险头寸，从而实现超额收益</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": "",
+                          "ttW": 326
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "eed47eda06b7484db58c9bef22971f85",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​为什么表现更好</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "269e5288a3c84b7fa6264e748cd47301",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​宏观风险因子之间的相关系数更低</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "29a99ff916de4a1498165d6b4679a685",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​宏观风险因子的夏普比例更好，且更稳定</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            }
+          ],
+          "linkColor": "#C0C0C0",
+          "side": null,
+          "title": "<p>宏观大类资产配置</p>",
+          "content": null,
+          "siblingOrder": 0,
+          "link": null,
+          "leftIcons": null,
+          "rightIcons": null,
+          "folded": false
+        }
+      ],
+      "theme": "{\"magic\":\"zmtheme:v500\",\"version\":3,\"name\":\"bg_bright_ln_color\",\"text\":\"默认多色\",\"image\":\"/images/common/theme-bg-bright-ln-color.png\",\"mapBgColor\":\"#FFFFFF\",\"mapFgColor\":\"#282828\",\"fontColor\":\"#282828\",\"rootLineColor\":\"#C0C0C0\",\"lineColors\":[\"#3A8DDF\",\"#E08370\",\"#5FBC5C\",\"#B24BC8\",\"#75CFDC\"]}",
+      "version": 1,
+      "frontendState": null,
+      "commit": 60,
+      "isDefault": false,
+      "title": "<p>中心主题</p>"
+    },
+    "zmCounter": {
+      "read": 0,
+      "voteAmount": 0,
+      "voteUp": 0,
+      "voteDown": 0,
+      "comment": 0,
+      "challenge": 0,
+      "bookmark": 0,
+      "shareAmount": 0,
+      "shareCircle": 0,
+      "shareFriends": 0,
+      "share2qq": 0,
+      "share2qzone": 0
+    }
+  },
+  "extra": null,
+  "mt": null,
+  "token": null
+}

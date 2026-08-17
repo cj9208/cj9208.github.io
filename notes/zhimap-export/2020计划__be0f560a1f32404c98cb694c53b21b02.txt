@@ -1,0 +1,17 @@
+2020计划
+- research
+  - finish HT paper
+  - start text analysis project
+- work-related
+  - understand the industry
+  - statistical arbitrage
+  - how to apply machine learning
+- coding
+  - LeetCode
+    - get familar with python and common algorithms
+  - Kaggle competition
+    - get familar with data analysis, machine learning related knowledge and coding
+- exam
+  - candidacy oral defense
+  - CFA level2
+    - June

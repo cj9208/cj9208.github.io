@@ -1,0 +1,781 @@
+{
+  "code": 0,
+  "message": "Get MindMap data OK!",
+  "data": {
+    "author": {
+      "userUuid": "857a288bd33c4a8aa9f0fca7bf344142",
+      "nickname": "陈杰",
+      "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJibo26vHhy2zNAOIZWKhtkdOqibFLOiaicQ6YKocqrD8Xmc6fz35bSzZegNyuJAFAcg9qpkKVwg8kk3w/64",
+      "region": "Anhui Hefei",
+      "biography": null
+    },
+    "publicationInfo": {
+      "uuid": "76bb7c7364f44c11a43701c0ef8dd651",
+      "abstracts": null,
+      "recommendations": null,
+      "rating": 100,
+      "releaseType": "CONTENT",
+      "stateUpTime": 1724676694408,
+      "state": "EDITING",
+      "releaseState": "EDITING_NEW",
+      "copyable": false,
+      "private": true,
+      "collaboration": false
+    },
+    "mindMap": {
+      "uuid": "76bb7c7364f44c11a43701c0ef8dd651",
+      "uniCode": "cPhjtHeE",
+      "ownerUsrUUID": "857a288bd33c4a8aa9f0fca7bf344142",
+      "createTime": 1724676694408,
+      "lastUpdateTime": 1724676694408,
+      "trees": [
+        {
+          "uuid": "f5103e50e971471cbf280bc64bb02a21",
+          "children": [
+            {
+              "uuid": "d40ff28faf304d919a9723003f8a6a2f",
+              "side": "right",
+              "linkColor": "#3A8DDF",
+              "title": "<p>​GDP = 消费 + 投资 + 净出口（可以理解为投资的一种）</p>",
+              "content": "",
+              "children": null,
+              "folded": 0,
+              "link": ""
+            },
+            {
+              "uuid": "76fcf7cfa0ca4a8cb4ad58d00cb2d6a7",
+              "side": "right",
+              "linkColor": "#E08370",
+              "title": "<p>​极端高的储蓄率</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "9b80c906a0a447b49f2bdc17aeb1b012",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​也就是消费极低，要么放弃gdp目标，大家一起躺平呗，不发展了</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "db394761465d40168a1ffd1b1438f3f9",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​要经济增长，只能发力投资</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "7dba13abb799487c97b7c6b364f4c226",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​过去十几年天量的基础建设投资</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "148c824e05a04f9c81577136edc5a5c1",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​问题</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "cfedab48750f4a6594fbaab06633ceb8",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​基础建设成本非常的高，中国的基础建设标准已经媲美甚至超越发达国家</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "c84b935c81fe4f298cbedfaeb0c956b2",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>所以投资收益很低，甚至对于绝大多数的基础建设投资就是负资产，不仅不会产生收益，还需要消耗大量的资金去维护</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "6f095900d36c4d9c91380ae84cad86d2",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​结果就是 一留下了巨额的基础建设债务，和大量荒废的基建</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "1395027f28004dda97e5fc85916b41ae",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​其实即使是投资到长三角珠三角，收益会好很多，但是也不行，容纳不了这么大的投资，一个简单的估算，广东每年转移支付七千亿，算留下一半，三千亿，十年就是三万亿，地铁一公里十亿，可以三千公里，是广深目前的加起来的两倍多。高铁一公里两亿。所以这些钱足够把珠三角修到地铁全覆盖都够了</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "abf0b908ab5243af8ea9ed433562e453",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​各地政府竞相上制造业产能</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "a2ec46f8a4384d44a81d4ff1a3b13b1f",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​离谱的产能过剩</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "1c8eff301a6a437e8d451d73b5095d51",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>高盛的报告，中国的光伏等产业就算供给全世界都是几倍的过剩</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "ed747de50984426398183bf7058f634d",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​一些数据</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "ff254a66056a4fa58b7416185177957b",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​中国钢铁产能是全世界的一半</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "ec19d9db3808478084912dd8a301620d",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​光伏板卖到欧洲比栅栏都便宜</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "cd15baf0f08a4809a774157ff89dfd8d",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​今年亏损企业占比30%+</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "6ba9f002bfd74d1888a95bdbbed259a3",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​总结</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "7dc494b3c4bc473e8b06ee128e3bd6f7",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​投基础建设，没回报</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "c49255f1d51c4449b8e81903b9ead011",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​投工业产能，过剩，也没回报</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "d1d441da0d064319b660f95ec68881ae",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​目前政府的方案</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "32f9a363fc3849818a305d710bf5b033",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​既然债务很大，那么就还债呗</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "59ecf3dd84e04730ac4643a310b391b7",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>问题是政府大力投资的工业都不赚钱啊，只能靠政府给的廉价资金续命</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "d745d325e18748e092d344396516cab3",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​投资新的生产力</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "c43a5219e144438ab457087637f88289",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​目前还没过剩，还有利润，可以缓口气</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "521c4aa444e6453eb8f7cedcf0f3f846",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​问题1</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "8cc3adc2e5454d5f9bf9e2587859123f",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>中国的储蓄太多了，只要突破就立马是产能过剩</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "319a0880d57b4abf98f4bb62d0ff81ad",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​比如前几年的新能源电池，新能源车，这才三四年就开始打价格战了，进入过剩阶段了</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "13d58f78bfa84d469c562a63ea73033e",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​问题2</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "65f53dc31fd547c497faf8eb5eb492ec",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>还能有利润，是因为其他国家生产的不多，还能赚钱，还能消费的起</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "0cd5dc296cbb4e9e9736b0ef8cd71566",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​你卷起来了，大家都不赚钱，甚至本国的就业都被你抢了</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "30da789c746d405894a23bc993763e3a",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​那就是贸易战呗</p>",
+                                  "content": "",
+                                  "children": [
+                                    {
+                                      "uuid": "afefa2c5aff445efba558fa238c03b93",
+                                      "side": "right",
+                                      "linkColor": "",
+                                      "title": "<p>​欧洲给中国电动车加关税</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    },
+                                    {
+                                      "uuid": "e66c16886e5741a6abe94f97ebc369f4",
+                                      "side": "right",
+                                      "linkColor": "",
+                                      "title": "<p>​甚至连菲律宾都要给中国纺织产品加关税</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ],
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "6e7e0057e2dd4552aea9ad5e8759ef5d",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​到这里，应该明白，还是得提高本国消费力，降低生产力，达到一种平衡</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "3c367e576cb74071a8451d93958175e2",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>但是由于各位的选择是</p>",
+                                  "content": "",
+                                  "children": [
+                                    {
+                                      "uuid": "0e65aeafa7a440509ecea3f61359fca1",
+                                      "side": "right",
+                                      "linkColor": "",
+                                      "title": "<p>​继续缩减消费</p>",
+                                      "content": "",
+                                      "children": [
+                                        {
+                                          "uuid": "ca55df6bb572424fa36822bce5cc4085",
+                                          "side": "right",
+                                          "linkColor": "",
+                                          "title": "<p>​企业进一步赚不到钱</p>",
+                                          "content": "",
+                                          "children": null,
+                                          "folded": 0,
+                                          "link": ""
+                                        }
+                                      ],
+                                      "folded": 0,
+                                      "link": ""
+                                    },
+                                    {
+                                      "uuid": "1c8bcec5560448c3adda728f142d00a4",
+                                      "side": "right",
+                                      "linkColor": "",
+                                      "title": "<p>​继续选择加班生产</p>",
+                                      "content": "",
+                                      "children": [
+                                        {
+                                          "uuid": "112e5cca359747bb86381f6aad0e4279",
+                                          "side": "right",
+                                          "linkColor": "",
+                                          "title": "<p>​叠加生产力提高，单个人生产的更多</p>",
+                                          "content": "",
+                                          "children": null,
+                                          "folded": 0,
+                                          "link": ""
+                                        }
+                                      ],
+                                      "folded": 0,
+                                      "link": ""
+                                    },
+                                    {
+                                      "uuid": "4637a716c1fe4477afcc24e59ded9d6b",
+                                      "side": "right",
+                                      "linkColor": "",
+                                      "title": "<p>​那么只能裁员了，不需要这么多人</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    },
+                                    {
+                                      "uuid": "fe56395593b948b4bf78b78767a907f7",
+                                      "side": "right",
+                                      "linkColor": "",
+                                      "title": "<p>​上述循环加剧，企业进一步不赚钱，进一步裁员，打工人进一步缩减开支，进入大萧条</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ],
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ]
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            },
+            {
+              "uuid": "eb28d7fabe0c464086ade662e6d71f28",
+              "side": "right",
+              "linkColor": "#B24BC8",
+              "title": "<p>​上面总结</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "3b816f73674f4ce6b210799f0bee2751",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​由于打工人和政府的选择，只讲生产，不讲消费，所有的做法都是生产端，最后只能生产消费越来越失衡，所有人走向一条无间地狱</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            },
+            {
+              "uuid": "ea87688e520a433489ff2418fe153253",
+              "side": "right",
+              "linkColor": "#5FBC5C",
+              "title": "<p>​正确的方案</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "6960d21310044c309ea79904f3c42125",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​罗斯福方案</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "61d580defecd447690b36b7dded06021",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​罗斯福当选时并未有一套特别的计划来处理大萧条，所以他如同国会般听取各种意见。在罗斯福的顾问中，最有名的是“国策智库（Brain Trust），这群人倾向于正面看待政府对经济务实性的干预。他所选用的劳工部长弗朗西丝·珀金斯大幅度地影响了他的想法，她对工作的各种应具备性质的名单如：“一周工时40小时、最低工资、工人的补偿、失业补偿、禁止童工的联邦法律、直接来自于联邦的失业救济、社会安全法案、再兴劳工委员会与健康保险”。</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "fa3667f9459b47a7b280a30581b78456",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​逻辑推理一下中国应该的措施</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "4e72b419a5b148d6b471cbfddbd14110",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​平衡生产和消费</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "45ee0489ab874f778e71b51718b1f1e7",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​打击内卷了，严格执行劳动法，保护劳工</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "8491dd88df4d45a1a47c3bcf0517987c",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​从国内的现状，对于主动卷的打工人也要打击</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "f81da2b3d645450da4b61697b320de2c",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​福利保障</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "3e635795e8e743e7b1cc862a8a7d92f3",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​主要是住房保障，很多人呼吁的政府下场，大肆收购房子，用作廉租房</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "2b7b23114ee442f0832a93658c0c0b50",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​政府融资成本极低，目前三十年国债都才2%的收益</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "21894d4ee73047168b327560b52588a2",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​结合低价收购+贴息，政府可以轻松完成这个任务，甚至可以赚钱</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "1c85d509843541789e2a0b3a8d3cfff7",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>生育补贴</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "1bf6426ee6094d8a89018952f7c4fcca",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​生育都跌倒这尿性了（全球主要国家除了韩国意外最低），等着亡国灭种么</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "9f6a12ecf2c848deb5bd3a2846b1fcf2",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​按照一个月一千，补贴三年，一年一千万小孩，对应到财政也就三千亿</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "643eb8895fd54bfb8717a90cbd535eeb",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​农村老人补贴</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "429a99e2ab654b0a8c84b1c5a0b1ecd9",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​新农合一个月一百多块</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "85fec875e44445b1bb9b41cb268966f5",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​按照一亿老人，给他们翻倍，一年增加一千多亿的支出，比基建便宜多了</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "5ad245df464540fc8e1a6b5100abe742",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​放开落户</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "aef57ef1552d4a4ba5c765319693f80b",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​这个重庆市长说的</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "11347015c4524efd860820ce9b753f39",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​农民工由于职业生命周期很短，大概就二十年，创造的价值远小于落户的市民</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "3fd0b8fe87c94d7dad96a7b33912e9dc",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​其实上面很好理解，落户后</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "0e30ba5631f94ffab92097e9f759b65d",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>政府可以投资教育住房医疗等等， 投资增加了</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "6661b49c2e954e4f92dba76cd02fd2fd",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>​农民工本身的消费增加了，而不是回到老家建设了一堆没人住的房子， 消费增加了</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "b24dfc7515f04fb18c8e23a731677037",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>​农民工老了，四五十岁一般就会返乡不出来了，但是一般的打工人是五六十岁的，职业寿命增加了</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            }
+          ],
+          "linkColor": "#C0C0C0",
+          "side": null,
+          "title": "<p>大的逻辑</p>",
+          "content": null,
+          "siblingOrder": 0,
+          "link": null,
+          "leftIcons": null,
+          "rightIcons": null,
+          "folded": false
+        }
+      ],
+      "theme": "{\"magic\":\"zmtheme:v500\",\"version\":3,\"name\":\"bg_bright_ln_color\",\"text\":\"默认多色\",\"image\":\"/images/common/theme-bg-bright-ln-color.png\",\"mapBgColor\":\"#FFFFFF\",\"mapFgColor\":\"#282828\",\"fontColor\":\"#282828\",\"rootLineColor\":\"#C0C0C0\",\"lineColors\":[\"#3A8DDF\",\"#E08370\",\"#5FBC5C\",\"#B24BC8\",\"#75CFDC\"]}",
+      "version": 1,
+      "frontendState": null,
+      "commit": 114,
+      "isDefault": false,
+      "title": "<p>中心主题</p>"
+    },
+    "zmCounter": {
+      "read": 0,
+      "voteAmount": 0,
+      "voteUp": 0,
+      "voteDown": 0,
+      "comment": 0,
+      "challenge": 0,
+      "bookmark": 0,
+      "shareAmount": 0,
+      "shareCircle": 0,
+      "shareFriends": 0,
+      "share2qq": 0,
+      "share2qzone": 0
+    }
+  },
+  "extra": null,
+  "mt": null,
+  "token": null
+}

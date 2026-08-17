@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0.1">
+<node TEXT="2020计划"><node TEXT="research"><node TEXT="finish HT paper"></node><node TEXT="start text analysis project"></node></node><node TEXT="work-related"><node TEXT="understand the industry"></node><node TEXT="statistical arbitrage"></node><node TEXT="how to apply machine learning"></node></node><node TEXT="coding"><node TEXT="LeetCode"><node TEXT="get familar with python and common algorithms"></node></node><node TEXT="Kaggle competition"><node TEXT="get familar with data analysis, machine learning related knowledge and coding"></node></node></node><node TEXT="exam"><node TEXT="candidacy oral defense"></node><node TEXT="CFA level2"><node TEXT="June"></node></node></node></node>
+</map>

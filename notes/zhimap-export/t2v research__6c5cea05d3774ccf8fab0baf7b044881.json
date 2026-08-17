@@ -1,0 +1,1533 @@
+{
+  "code": 0,
+  "message": "Get MindMap data OK!",
+  "data": {
+    "author": {
+      "userUuid": "857a288bd33c4a8aa9f0fca7bf344142",
+      "nickname": "陈杰",
+      "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJibo26vHhy2zNAOIZWKhtkdOqibFLOiaicQ6YKocqrD8Xmc6fz35bSzZegNyuJAFAcg9qpkKVwg8kk3w/64",
+      "region": "Anhui Hefei",
+      "biography": null
+    },
+    "publicationInfo": {
+      "uuid": "6c5cea05d3774ccf8fab0baf7b044881",
+      "abstracts": null,
+      "recommendations": null,
+      "rating": 100,
+      "releaseType": "CONTENT",
+      "stateUpTime": 1732698695468,
+      "state": "EDITING",
+      "releaseState": "EDITING_NEW",
+      "copyable": false,
+      "private": true,
+      "collaboration": false
+    },
+    "mindMap": {
+      "uuid": "6c5cea05d3774ccf8fab0baf7b044881",
+      "uniCode": "CYwhkiIW",
+      "ownerUsrUUID": "857a288bd33c4a8aa9f0fca7bf344142",
+      "createTime": 1732698695468,
+      "lastUpdateTime": 1732698695468,
+      "trees": [
+        {
+          "uuid": "5a6f4e6bd6984a9ca0f1c59fe5fdd2de",
+          "children": [
+            {
+              "uuid": "02a57f54f5e541fbb1f9336fabd54b09",
+              "side": "right",
+              "linkColor": "#3A8DDF",
+              "title": "<p>​方法</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "3dc53daf8d494a4889a1b02660e5e9c8",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​位置思维</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "242b9875a1e44615a8395957b7426f9a",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​定义</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "bf32911907ad4403b40320b95d062c78",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​一种对领域现状，趋势和关键问题的预估和判断</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "efb4436a423e4759a83c5277d0341172",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​常见表现</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "bfbf95dd60c04c408083941a8fa6f063",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​地铁图</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": null
+                        },
+                        {
+                          "uuid": "d7d9f9de62154f2bb76892aaa487bb39",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<img src=\"/res/c/5/1732699240522170663.png\" style=\"width: 665px; height: 354px; max-width: 100%; max-height: 100%;\">",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": "",
+                          "ttW": 665,
+                          "ttMaxW": 665
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "cc69e9339e6f495aad044d52db4e9e0d",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​有什么用（从研究的角度）</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "fa8e6ea853c440f984a90da0a59c6850",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​寻找关键论文</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "e0137d76bce74f5e93519080651f033c",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​阅读</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "55dc69f92f174c22846a1fc4563d9bb0",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​寻找研究领域和问题</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "56334f204aac47fe8bcd8334780da405",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​做研究</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "c3ad04e87e6d40f9a8e79026e48ec27f",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​将更好的故事</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "7f1159f9b87942458f9497f8973a6dba",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​写作</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "uuid": "f311c9d55790412f96f3f1dae3609c1d",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​具体做法</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "7b3af4f76cd44c89858441e532525bf4",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​step 1</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "9cbd7f0373c94b45a25b5fed39e571e5",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​对于准备研究的领域，搜索一下 相关的 survey，阅读，并获得大致的发展</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": "",
+                          "ttMaxW": 531,
+                          "ttW": 531
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "fc4d21e79748488b839618284d0ae10e",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​step 2</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "85c0902e0d234780bb944ff37768c7f3",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​阅读 survey 里提到的</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "c937ba166adf44d4bf59de914ccdc5cb",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "关键论文，理解研究领域里目前的核心方法和解决方法",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "a29cd36d280a4a5cbe16be4a861ec309",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​最新论文，构建一个引用链</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": "",
+                          "ttMaxW": 548,
+                          "ttW": 159
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "83b601da0f7c45a7ac095686152b631d",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​step 3</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "c6dad3db62184a7e90c2f1441db9fa61",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​日常关注常见的论文渠道，比如 arxiv，各种 top conference， 关键是掩饰，关键论文的作者</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": "",
+                          "ttW": 569,
+                          "ttMaxW": 569
+                        },
+                        {
+                          "uuid": "0f606ca780624dcf940ac36d7c2af0b6",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​搜索</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "121233621adc4cc7b1373709f647f91c",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​花式搜索，换关键词搜索</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "folded": 1,
+              "link": ""
+            },
+            {
+              "uuid": "0499941d5a9d45d9b7a58fa56703fb21",
+              "side": "right",
+              "linkColor": "#5FBC5C",
+              "title": "<p>​图片生成</p>",
+              "content": "",
+              "folded": 1,
+              "link": "",
+              "children": [
+                {
+                  "uuid": "31a6f7e2ba6642d0bb7f923ec18643b1",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​General model</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "2c8e571386b445b496e5b07054b5bcd0",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​GAN</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "7318589c2f7d4d42b1908bcd9f333f70",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​idea</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "0cd25a1f27b1453dab8c5d89e3ab4e9a",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>一步生成图片，使用对抗网络去做分辨，改进生成效果</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "27980efc33fa4e03b80f6c755ee722cc",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​问题</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "c7df8a83dc31467ea5a7acaa390b8340",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​图片的分布非常复杂，很难去建模，训练很困难</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "8e561ca65d18482fb52202de2e67bed7",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​很难加入额外信息</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "c7b8af05fca64d7ab7d13f41099314ce",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>Diffusion model&nbsp;</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "cdeff2e9af1f452eadfe6a5682d3f471",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​2006-DDPM (Denoising Diffusion Probabilistic Models)</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "7ed9ae9ab3684de1a5fe80950ba6cac0",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​idea</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "6bb337c3583145bc9b6cd535ca6e9d8e",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​将一个复杂的分布近似为很多个正态分布的乘积</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "4a8f154b94104e8d86ed39d8397b6ded",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​这样就将一个复杂的问题转化为拟合正态分布了</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "1bdaec0f2eef430895fa888c84fd41e5",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​不需要太复杂的模型 + 每一步都很容易可以加入额外信息</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "c8f545930b11419283040c20e781d32a",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​核心问题</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "c80df90c92684fa3811e3ee72137e149",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​图片空间太大，对于一个高清图，1024*1024， 一百万个点，inference steps = 50， 也就是生成一个图片需要五千万次forward pass，计算量非常的大</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "7174e3b1a50240388d4454e03fc3bbe4",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​2112-Stable Diffusion</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "77b0d7b980964995bb84db1f2f7313ed",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​idea</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "b2e7673902a54389b345793ce8be8f70",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​压缩图片，在一个维数更小的空间做 forward pass，最后再转回到原空间</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "291f71f515cd4d25937568fb605b99f9",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​Latent Diffusion Model</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "a19b633b22af46ab8c7cd7466de6a940",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​2310-Latent Consistency Model</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "1f798325751144258ae600f915551dc1",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>进一步压缩 inference 用到的step， 从 50-&gt;4，从而实现极致加速</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "32b5a77f3b4e4deaa3fc5b83d8b3f8a5",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​更细致的改进</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "3bb296f5aefc4bdf9facf7f37e8492ed",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​架构</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "ecf463cdd4874e5ba5edef399cc64cc5",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​eg. ViT</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "602ef4776ea449b3b6f647bd94383f81",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​数据集</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "108f140f93f44ba4ab8db72b8ec7735f",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​人脸，动画，高清等等</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "uuid": "267a0869ba404400b13929e19c6f9a24",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>进一步控制模型</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "5b3f134922d1477186927a2d9167f58d",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​finetune</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "f30fa5c1e0e34a14a56a4d28df473a3b",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​overfitting, forgetting</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "eabbacc21b184631824e2e044490a59e",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​2110-LORA</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "accec6ff45a9417b85a47aba145533cc",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​idea</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "fb0bac7a5f3f479abdc79e532a080af7",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​WX -&gt; ABX, A, B low rank</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "7b5a955fca624929857ab5dec8a64a84",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​目前用的很多，几十张图片就可以训练一个自己独特的模型</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "9b62b574257e412494a14020875c3eea",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​2302-ControlNet</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "4f67115da7e845da93ecad719e72ef21",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​idea</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "d6f9a8787592467f946941ded3b240f3",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​保持原本的模型不变，创建一个副本用于处理增加的信息</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "ea234cc54429415caff52a4a0bdf741d",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​比 LORA 更一般，框架可以很轻松的容纳各种额外信息</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "436f405e732e499cb36348c64a2eb0b7",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​目前用的也很多，各类 prior info 都被引进来并训练好了拓展模型</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "9781a43977d74428941c94ee46b055c6",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​Depth</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "cff9e8734e1f4f5f9e00a63b3f38d3ef",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​Canny</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "9c97ede4d90b432c99bf1dbc517bcbcf",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​Pose</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "19d1a3dc0dd54bb59fd819a9962cf14e",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​在演化的过程中还有很多专用的模型</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "08f9397fa505418f8fe3c54d1b07d0c3",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>比如专门做 style transfer，物体替换等等</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "baae4598ad4c4efa8c122261674a0db7",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​2306-MagicBrush</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "11a233e077c948fab2775cb03c91028d",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>text-guided image edit</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "bf8c6cc73fd84efe84059b2c0c0bed5a",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​专用模型</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "0dcb08bbe9c44325850a12bd933e1b39",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​比如人脸，动作</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "48a5b95dbec940ce84f9fad1bcc0498a",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​比较复杂，需要专门的建模</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ]
+            },
+            {
+              "uuid": "9ca61a5091a24df8b6d2c632e8007b2a",
+              "side": "right",
+              "linkColor": "#B24BC8",
+              "title": "<p>​视频生成</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "06a91fbcb61f447db2410771148af060",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​根据初始信息</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "345ad98ee42b412ebb1aeecc69e5c896",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>text2video</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "ffa6bd1fbe1b49488d585222453bc88a",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​从模型角度来看中，image 和 text 其实差别不大，都是加一个编码头，如果是text，就是CLIP；如果是图片，就是 convolution</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "ae740366b86b47b2b59cda333c129d1e",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>image2video</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "bcc9acea36294da1ab7d3183c18b85fe",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​video2video</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "86209abad1674f36b7719204f9cbe34d",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​各种text-based修改模型</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "837c1536dabc476a8b72db8fc24aba41",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​2306-ControlVideo</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "00617a99c5d04aea988e79a9e029ce4d",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​2312-MagicStick</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "8bd345c69eea44c6b35bea54dba18644",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​2312-DragVideo</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "84225a1511454f97867948ce7abb34c5",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​根据方法</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "a12b9a8a9d884e5e869f35e36e249957",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​拼接图片</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "b65a26b92388498fb441ba56bb72ea90",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​2307-AnimateDiff</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "789543a7ced34dee8247109c9d92ce50",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​add motion dynamics to existing high-quality personalized T2Is and enabling them to generate animations</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "623939d58fe5404c90ee572b6c57a484",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​核心问题</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "266beabbcaeb45a0bd03e366a75851ee",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​图片之间的不连贯性</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "22c13baeeae841e1b5382e80fa607589",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​解决方案</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "8870047b40754910b8d4edef2560d69e",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​2402-ConsistI2V</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "fb988a54d03346e18e4435c8be5f3262",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​spatio-temperal attention</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "e78d19fc8c3a49a799433e23a4dca3d7",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​specialized noise initialization</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "7e4510c7cc71450a838a47f12550c53b",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​2406-Animate Anyone</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "585007f0e1734177bf6313b3bd32ea5f",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​设计了 ReferenceNet + spatial attention 来保持 consistency</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "a83b6191651d4370b975ef44b97142cb",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​聚焦在人的生成上</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "193b58d60cb547c79fcb30872efc6de3",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>工程角度</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "007ff6a4a1bc4c18a6453a206ef2579f",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​t2i 生成已经非常成熟了，拥有大量的基础模型和各种社区构造的工具和工作流</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": "",
+                              "ttW": 320
+                            },
+                            {
+                              "uuid": "f40a814e860441eea58273b1a3265937",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>短期内是一个很好的解决方案</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "7b41982204274b7482196dc2b848c8c3",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​general model</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "aa65f46f534e4ee982849c373f3539b9",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​拓展图片生成的 Diffusion model，&nbsp;增加 spatial convolution</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "95bfc2a8f7a84d32a7a2342645c46a2d",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​解决拼接图片带来的不连贯性</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "6e9e5869f0144b6cb9c3fe56eb0d5643",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​核心问题</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "1e70d6b08ef84d9c85041ad587ea80de",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​数据</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "fa40d70e62294a7da14de9e111d3b64b",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​图片从最开始的 imagenet（千万级），到各家内部的大规模图片集（比如谷歌，亿级别），数据很丰富</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "91445371e39e4960a39109badfc7d396",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​计算量非常巨大</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "84ddd4c29ada46e59e709c9a34919d9d",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​2311-Stable Video Diffusion</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "0bec5da7854741a498b5a2de19d1f23c",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​结合各类工具，自动化构造了一个庞大的数据，并训练了一个通用模型</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "fcf5590ae5cc48bd9f5bc65a7ee6752d",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​接下来一大堆通用模型</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "6db50fa8b2f7452884210ff8a25a9d45",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​商业版</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "9e3bc47dede6498ba9e7db8cbe01f8c5",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>sora，runway, meta movie gen，可灵，即梦等</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "8d2752377fc14b27bbb717ac4fe427e5",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​开源</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "b8c81c86ebe741d9975757d9420bb43a",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​open sora, vidu, Vchitect, cogVideoX 等</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "83fd3992696e4d96a10750a5e2685927",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​专用的</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "98fdc94eef744da283bde8ef78637837",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​动作</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "da8db41aa3c642fdbc195dbaf359248f",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​2405-MotionFollower</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "52b9cf5dd7e448dfb6f136c9ed1dffc3",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​2405-MagicPose</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "e3a4ae9cc7d040cbab567b718377ea33",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>2406-​mimicMotion</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "759d2545968b4c2fbbcc67a2c92c9cd8",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​人脸</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "15087a9a6ae141be96e5814ba01c8487",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​2403-Real3D-Portrait</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "f76c3643512841fd968dca68b9960b3d",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>2407-​LivePortrait</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "120124e9279d4b27af5ab5d7aca601f3",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​2408-EMO</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "36fbc5dd5dda4b79ba03406974dffabe",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>更复杂的架构+​使用高清图片训练，加强效果</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "1bd98451f4b64fb79aa424d4e5a537e5",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​专用的方向</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "70bdec5a758a4d0b8206c19ee1af5f0a",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​一般如果方向很重要，会独立出来，形成一整套自己的方法</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "a5a0099b12664541a62736b7dcb95be6",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​常见发展路径是，一开始一般的问题比较难，所以大家在重要的子问题上研究，获得突破，然后尝试推广到一般情况</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 1,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "c9f9fd4cdc524f4f8a2b1f111599a792",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​当前工作重点</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "05a145680fa34a8c8d49e4746e15a782",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​重走图片生成的逻辑</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "fa9c4cc4772b4e37b5cc8461ab6efbad",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>构建更强力的通用模型</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "d7679ea702234b08bc5d17ec31012c26",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​更大的模型，更多的数据</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "e8d21f8328124106a3404603b62a42c5",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​迁移已有图片生成的研究</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "bfaa8e4b25ff4172bac656fa7c3fa0d5",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​人脸，动作，修改</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ]
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "f246f5dffe2b4b4cb471172bd28bfca5",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​一个特别的角度</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "d1a01a440f7b46b5a866cf6580590881",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​如何把 图片生成的东西直接拿过来用在视频生成上</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "72b93d4455ec41cdbb5e16b171760ac2",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​2404-Ctrl-Adapter</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "1cf9c98b1b6b43cea1a00f0a086b9c93",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​训练一个Adapter 来连接 视频生成的大模型 + 图片生成的控制网络</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "f4313dd64e744996a073061d113e9813",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​类似的想法已经被用于拓展SD 上的 controlnet 到 SDXL</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            }
+          ],
+          "linkColor": "#C0C0C0",
+          "side": null,
+          "title": "<p>t2v research</p>",
+          "content": null,
+          "siblingOrder": 0,
+          "link": null,
+          "leftIcons": null,
+          "rightIcons": null,
+          "folded": false
+        }
+      ],
+      "theme": "{\"magic\":\"zmtheme:v500\",\"version\":3,\"name\":\"bg_bright_ln_color\",\"text\":\"默认多色\",\"image\":\"/images/common/theme-bg-bright-ln-color.png\",\"mapBgColor\":\"#FFFFFF\",\"mapFgColor\":\"#282828\",\"fontColor\":\"#282828\",\"rootLineColor\":\"#C0C0C0\",\"lineColors\":[\"#3A8DDF\",\"#E08370\",\"#5FBC5C\",\"#B24BC8\",\"#75CFDC\"]}",
+      "version": 1,
+      "frontendState": null,
+      "commit": 274,
+      "isDefault": false,
+      "title": "<p>中心主题</p>"
+    },
+    "zmCounter": {
+      "read": 0,
+      "voteAmount": 0,
+      "voteUp": 0,
+      "voteDown": 0,
+      "comment": 0,
+      "challenge": 0,
+      "bookmark": 0,
+      "shareAmount": 0,
+      "shareCircle": 0,
+      "shareFriends": 0,
+      "share2qq": 0,
+      "share2qzone": 0
+    }
+  },
+  "extra": null,
+  "mt": null,
+  "token": null
+}

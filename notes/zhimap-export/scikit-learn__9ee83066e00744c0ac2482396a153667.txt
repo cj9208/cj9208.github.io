@@ -1,0 +1,130 @@
+scikit-learn
+- whole pictures
+  - 
+  - 
+- computing with scikit-learn
+  - stategies to scale computationally
+  - computational performance
+  - parallelism, resource management and configuration
+- supervised learning
+  - classification
+    - supervised learning
+    - SVM
+      - min⁡12∥w∥2 subject to yi(wix+b)≥1\min \frac{1}{2}\|w\|^2 \text{ subject to } y_i(w_ix+b)\geq 1min21∥w∥2 subject to yi(wix+b)≥1
+      - Lagrangian duality, KKT condition
+        - max⁡W(a)=max⁡(∑iai+∑i,jaiajxiTxj)\max W(a) = \max \left( \sum_{i} a_i + \sum_{i,j}a_ia_jx_i^Tx_j \right)maxW(a)=max(∑iai+∑i,jaiajxiTxj)
+      - kernel
+        - replace xi with Φ(xi)\text{replace } x_i \text{ with } \Phi(x_i)replace xi with Φ(xi)
+          - Gaussian kernel
+            - k(x,y)=e−∥x−y∥2/2σ2k(x,y) = e^{-\|x-y\|^2/2\sigma^2}k(x,y)=e−∥x−y∥2/2σ2
+          - radial basis functions
+            - ϕj(x)=h(∥x−μj∥)\phi_j(x) = h(\|x-\mu_j\|)ϕj(x)=h(∥x−μj∥)
+      - soft margin
+        - non-seperable data
+        - min⁡12∥w∥2+C∑iξi subject to yi(wix+b)≥1−ξi,ξi≥0\min \frac{1}{2}\|w\|^2 + C \sum_i \xi_i \text{ subject to } y_i(w_ix+b) \geq 1 - \xi_i, \xi_i\geq 0min21∥w∥2+C∑iξi subject to yi(wix+b)≥1−ξi,ξi≥0
+    - naive bayes
+      - P(Y∣X)=P(X∣Y)P(Y)P(X)P(Y|X) = \frac{P(X|Y)P(Y)}{P(X)}P(Y∣X)=P(X)P(X∣Y)P(Y)
+      - features are independent
+        - P(X∣Y)=∏iP(xi∣Y)P(X|Y) = \prod_i P(x_i|Y)P(X∣Y)=∏iP(xi∣Y)
+    - decision tree
+      - non-parametric
+      - Purity Measures
+        - entropy
+        - variance measure
+          - for a two class problem
+        - Gini measure
+        - misclassification measure
+      - RandomForest
+      - GBDT
+        - 梯度下降树
+        - XGBoosting
+          - 基本思想
+            - 贪心法，逐棵树进行学习，每棵树拟合之前模型的偏差
+    - Logistic regression
+      - cost function
+        - yilog⁡y^i+(1−yi)log⁡(1−y^i)y_i\log\hat{y}_i + (1-y_i)\log (1-\hat{y}_i) −[-[−[ yilogy^i+(1−yi)log(1−y^i) ]]] ]] ]]]
+      - cross entropy 交叉熵
+        - H(p,q)=−∑xp(x)log⁡q(x)H(p,q) = -\sum_{x} p(x)\log q(x)H(p,q)=−∑xp(x)logq(x)
+      - likelihood
+        - L(θ∣x)=P(X=x∣θ)L(\theta|x) = P(X=x|\theta)L(θ∣x)=P(X=x∣θ)
+      - generalization to multi-class
+        - softmax
+  - regression
+    - from sklearn import linear_model
+    - Ordinary Least Squares(OLS)
+      - linear_model.LinearRegression()
+      - 理论部分
+        - 假设
+          - 自变量和因变量线性性
+            - 不能很好描述非线性关系，会有很大的泛化误差
+          - 自变量相互独立
+            - 当多重共线性性出现的时候，变量之间的联动关系会导致我们测得的标准差偏大，置信区间变宽
+          - 误差独立同分布（高斯分布）
+            - 自相关性经常发生于时间序列数据集上，后项会受到前项的影响。当自相关性发生的时候，我们测得的标准差往往会偏小，进而会导致置信区间变窄
+        - 假设检验
+          - RSS=∑kek2RSS = \sum_k e_k^2RSS=∑kek2
+          - RSE=RSSn−2RSE = \sqrt{\frac{RSS}{n-2}}RSE=n−2RSS
+          - 系数检验
+            - 置信区间
+          - 模型准确度
+            - RSE, R2,FR^2, FR2,F
+      - min∥Xw−y∥22min \|Xw-y \|_2^2min∥Xw−y∥22
+      - The coefficient estimates for OLS rely on the independence of the features
+      - the least-squares estimate becomes highly sensitive to random errors in the observed target, producing a large variance
+    - L2L^2L2 regularization-Ridge Regression
+      - linear_model.Ridge(alpha=.5)
+      - min∥Xw−y∥22+α∥w∥22min \|Xw-y \|_2^2 + \alpha \|w \|_2^2min∥Xw−y∥22+α∥w∥22
+      - impose a penalty on the size of the coefficients
+    - L1L^1L1 regularization
+      - the coefficients will be sparse
+        - near zero, the gradient is not zero
+    - Bayesian regression
+      - p(y∣X,w,α)=N(y∣Xw,α)p(y|X,w,\alpha) = \mathcal{N}(y|Xw,\alpha)p(y∣X,w,α)=N(y∣Xw,α)
+    - polynomial regression
+- unsupervised learning
+  - clustering
+    - k-means
+      - instance learning
+      - J=∑n∑krnk∥xn−μk∥2J = \sum_n\sum_k r_{nk} \|x_n-\mu_k\|^2J=∑n∑krnk∥xn−μk∥2
+    - Gaussian mixture
+      - p(x)=∑kπkN(x∣μk,Σk),∑kπk=1p(x) = \sum_k \pi_k \mathcal{N}(x|\mu_k,\Sigma_k), \sum_k\pi_k = 1p(x)=∑kπkN(x∣μk,Σk),∑kπk=1
+      - general form
+        - p(x)=∑kp(x∣zk)p(zk)p(x) = \sum_k p(x|z_k)p(z_k)p(x)=∑kp(x∣zk)p(zk)
+      - maximzie likelihood
+        - log⁡p(X∣π,μ,Σ)=∑klog⁡p(xk∣π,μ,Σ)\log p(X|\pi, \mu, \Sigma) = \sum_k \log p(x_k|\pi, \mu, \Sigma)logp(X∣π,μ,Σ)=∑klogp(xk∣π,μ,Σ)
+      - EM algorithm
+        - p(X∣θ)=∑Zp(X,Z∣θ)=∑Zp(Z∣X,θ)p(X∣θ)p(X|\theta) = \sum_{Z} p(X,Z|\theta) = \sum_{Z}p(Z|X,\theta)p(X|\theta)p(X∣θ)=∑Zp(X,Z∣θ)=∑Zp(Z∣X,θ)p(X∣θ)
+    - feature agglomeration
+      - merge similar features together
+    - hierarchical clustering
+      - MSRA use it determine the change sequence of RNA
+  - dimension reduction
+    - PCA
+    - ICA
+- preprocess
+  - transformations
+    - Standardization
+      - mean removal and variance scaling
+    - quantile transforms and power transforms
+      - mapping to a uniform/Gaussian distribution
+    - Encoding categorical features
+    - Imputation of missing values
+  - loading utilities
+- model selection and evaluation
+  - Cross-validation
+  - Grid-search
+  - plotting scores to evaluate models
+    - validation curve
+    - learning curve
+- ensemble methods
+  - Bagging
+    - bootstrap sample
+    - eg.
+      - RandomForest
+  - boosting
+    - fit a sequence of weak learners on repeatedly modified versions of the data
+    - eg.
+      - AdaBoost
+  - stacking
+- text data
+  - bag of words

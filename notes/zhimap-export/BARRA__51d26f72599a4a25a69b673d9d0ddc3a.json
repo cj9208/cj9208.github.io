@@ -1,0 +1,1351 @@
+{
+  "code": 0,
+  "message": "Get MindMap data OK!",
+  "data": {
+    "author": {
+      "userUuid": "857a288bd33c4a8aa9f0fca7bf344142",
+      "nickname": "陈杰",
+      "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJibo26vHhy2zNAOIZWKhtkdOqibFLOiaicQ6YKocqrD8Xmc6fz35bSzZegNyuJAFAcg9qpkKVwg8kk3w/64",
+      "region": "Anhui Hefei",
+      "biography": null
+    },
+    "publicationInfo": {
+      "uuid": "51d26f72599a4a25a69b673d9d0ddc3a",
+      "abstracts": null,
+      "recommendations": null,
+      "rating": 100,
+      "releaseType": "CONTENT",
+      "stateUpTime": 1586409278441,
+      "state": "EDITING",
+      "releaseState": "EDITING_NEW",
+      "copyable": false,
+      "private": false,
+      "collaboration": false
+    },
+    "mindMap": {
+      "uuid": "51d26f72599a4a25a69b673d9d0ddc3a",
+      "uniCode": "SxGhbAhb",
+      "ownerUsrUUID": "857a288bd33c4a8aa9f0fca7bf344142",
+      "createTime": 1586409278441,
+      "lastUpdateTime": 1586409278441,
+      "trees": [
+        {
+          "uuid": "5a5734f30cfc46838283f67ec3b54443",
+          "children": [
+            {
+              "uuid": "dd4ee63a109940be9ad437a4fa28d54a",
+              "side": "right",
+              "linkColor": "#3A8DDF",
+              "title": "<p>​factor model</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "22a4f14584414a28b673c5e9b86523e4",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><msub><mi>r</mi><mi>n</mi></msub><mo>=</mo><msub><mo>∑</mo><mi>k</mi></msub><msub><mi>X</mi><mrow><mi>n</mi><mi>k</mi></mrow></msub><msub><mi>f</mi><mi>k</mi></msub><mo>+</mo><msub><mi>u</mi><mi>n</mi></msub></mrow><annotation encoding=\"application/x-tex\">r_n = \\sum_{k} X_{nk}f_k +u_n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.58056em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.02778em;\">r</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.02778em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0497100000000001em;vertical-align:-0.29971000000000003em;\"></span><span class=\"mop\"><span class=\"mop op-symbol small-op\" style=\"position:relative;top:-0.0000050000000000050004em;\">∑</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1863979999999999em;\"><span style=\"top:-2.40029em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.03148em;\">k</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.29971000000000003em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.07847em;\">X</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.33610799999999996em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.07847em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\">n</span><span class=\"mord mathit mtight\" style=\"margin-right:0.03148em;\">k</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.10764em;\">f</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.33610799999999996em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.10764em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.03148em;\">k</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.58056em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathit\">u</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>&nbsp;</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "95e5f4244c0942948687e7fd6e8f12f3",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​the factors capture all systematic drivers of asset returns</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "b6a4af5bb0084c4fa316c4ce7c97578c",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "specific returns are mutually uncorrelated",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "6265da41f55d438e8fdb3e0c3fe5579c",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​problems of modelling</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "0f25794d335641e6bbc44ca8131bf4e0",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​omit important factors</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "8a950a2e903b41a5a47885002cba437c",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​indiscriminately add weak or spurious factors</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "81fd01b8310640d1955cdd175425b625",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>make the model more susceptible to noise</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "8f71e94929be47cbab08a61faad42cf7",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "statistical significance of the factor returns",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "50dbb77c60be484ca5965901ca6fe705",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​Stability</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "cb8008cdd0d14fc39bb76528b76a5aa7",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>factor stability coefficient</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "254a54e4499943219e4ed4cd6cbe59d7",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "cross-sectional correlation of factor exposures from one month to the next",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": "",
+                              "ttMaxW": 533,
+                              "ttW": 533
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "1d11f41bc1a542db9a73d838c09e896c",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "Collinearity",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "e2d10c60a8a64adf8b4354026e145438",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Variance Inflation Factor (VIF)",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "4e9b9bde3e344ea1b6e177ec6828ffa5",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>regress a single factor against the other factors in the model:</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "cea5060db79e4b30ad1af459a0a860e3",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "VIF is defined through the explanatory power of the regression, as measured by R-squared",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "3b86b77d0af54b12969c28d44608532e",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​solution</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "5e032575713444a78fcd5463a1003cec",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>orthogonalization</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "d2c09a66cb784e93a1d224e6f7b2b8e5",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​data quality</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "1b7073b475a54ddb9c58cff868f71a12",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​style exposure</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "e9e1937797814f88a0ee7678bc7846e0",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​descriptor</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "3a85946e6edc49ca9aece43fc7232937",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "descriptors within a particular style factor are meant to capture the same underlying driver of returns, these descriptors tend to be significantly collinear",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": "",
+                          "ttMaxW": 557,
+                          "ttW": 557
+                        },
+                        {
+                          "uuid": "a0c31ffba6d548fb93b72c1c175c9474",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​standaradization</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "924da10ac20a4f9f817e8282094e502c",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "standardized to have a mean of 0 and a standard deviation of 1",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "54ff1c6b7aae4d36801ec7474705d093",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><msubsup><mi>d</mi><mrow><mi>n</mi><mi>l</mi></mrow><mrow><mi>R</mi><mi>a</mi><mi>w</mi></mrow></msubsup></mrow><annotation encoding=\"application/x-tex\">d_{nl}^{Raw}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.1244389999999997em;vertical-align:-0.2831079999999999em;\"></span><span class=\"mord\"><span class=\"mord mathit\">d</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8413309999999999em;\"><span style=\"top:-2.4168920000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\">n</span><span class=\"mord mathit mtight\" style=\"margin-right:0.01968em;\">l</span></span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.00773em;\">R</span><span class=\"mord mathit mtight\">a</span><span class=\"mord mathit mtight\" style=\"margin-right:0.02691em;\">w</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2831079999999999em;\"><span></span></span></span></span></span></span></span></span></span>&nbsp;: raw value of stock n for descriptor l</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "683e74671278436b9c76f51257cd9ee8",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​the standardized descriptor value</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "182e14022354409ab294017d5e28d19e",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><msub><mi>d</mi><mrow><mi>n</mi><mi>l</mi></mrow></msub><mo>=</mo><mfrac><mrow><msubsup><mi>d</mi><mrow><mi>n</mi><mi>l</mi></mrow><mrow><mi>R</mi><mi>a</mi><mi>w</mi></mrow></msubsup><mo>−</mo><msub><mi>μ</mi><mi>l</mi></msub></mrow><msub><mi>σ</mi><mi>l</mi></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">d_{nl} = \\frac{d_{nl}^{Raw}  - \\mu_l}{\\sigma_l}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.84444em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathit\">d</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.33610799999999996em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\">n</span><span class=\"mord mathit mtight\" style=\"margin-right:0.01968em;\">l</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.604425em;vertical-align:-0.4508599999999999em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.153565em;\"><span style=\"top:-2.655em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.03588em;\">σ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3448em;\"><span style=\"top:-2.3487714285714287em;margin-left:-0.03588em;margin-right:0.07142857142857144em;\"><span class=\"pstrut\" style=\"height:2.5em;\"></span><span class=\"sizing reset-size3 size1 mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.01968em;\">l</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15122857142857138em;\"><span></span></span></span></span></span></span></span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.5102em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\">d</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.9190928571428572em;\"><span style=\"top:-2.214em;margin-left:0em;margin-right:0.07142857142857144em;\"><span class=\"pstrut\" style=\"height:2.5em;\"></span><span class=\"sizing reset-size3 size1 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\">n</span><span class=\"mord mathit mtight\" style=\"margin-right:0.01968em;\">l</span></span></span></span><span style=\"top:-2.931em;margin-right:0.07142857142857144em;\"><span class=\"pstrut\" style=\"height:2.5em;\"></span><span class=\"sizing reset-size3 size1 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.00773em;\">R</span><span class=\"mord mathit mtight\">a</span><span class=\"mord mathit mtight\" style=\"margin-right:0.02691em;\">w</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.286em;\"><span></span></span></span></span></span></span><span class=\"mbin mtight\">−</span><span class=\"mord mtight\"><span class=\"mord mathit mtight\">μ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3448em;\"><span style=\"top:-2.3487714285714287em;margin-left:0em;margin-right:0.07142857142857144em;\"><span class=\"pstrut\" style=\"height:2.5em;\"></span><span class=\"sizing reset-size3 size1 mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.01968em;\">l</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15122857142857138em;\"><span></span></span></span></span></span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.4508599999999999em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span></span></span></span>&nbsp;</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "e91491e42700463baf549922c8e298b2",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><msub><mi>μ</mi><mi>l</mi></msub></mrow><annotation encoding=\"application/x-tex\">\\mu_l\n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.19444em;\"></span><span class=\"mord\"><span class=\"mord mathit\">μ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.33610799999999996em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.01968em;\">l</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>&nbsp; :&nbsp;cap-weighted mean</p>",
+                                  "content": "",
+                                  "children": [
+                                    {
+                                      "uuid": "012ef6f925ab496ea8f8c40fe42a8473",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "市值加权平均",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    },
+                                    {
+                                      "uuid": "2d25d3d1836b4f32ae65589a6f5e919f",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "<p>​a well-diversified cap-weighted portfolio has approximately zero exposure to all style factors</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": "",
+                                      "ttW": 342
+                                    }
+                                  ],
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "c89cd2d928754e4da8f1d824b06eb424",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><msub><mi>σ</mi><mi>l</mi></msub></mrow><annotation encoding=\"application/x-tex\">\\sigma_l\n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.58056em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.03588em;\">σ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.33610799999999996em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.01968em;\">l</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>&nbsp;:&nbsp;equal-weighted standard deviation</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ]
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "535187dd46884b419f982e00ce6e6076",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>​combined into style factor</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "65349ec6fe2547da80db810e03c144d1",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><msub><mi>X</mi><mrow><mi>n</mi><mi>k</mi></mrow></msub><mo>=</mo><msub><mo>∑</mo><mrow><mi>l</mi><mo>∈</mo><mi>k</mi></mrow></msub><msub><mi>w</mi><mi>l</mi></msub><msub><mi>d</mi><mrow><mi>n</mi><mi>l</mi></mrow></msub></mrow><annotation encoding=\"application/x-tex\">X_{nk} = \\sum_{l\\in k}w_ld_{nl}\n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.83333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.07847em;\">X</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.33610799999999996em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.07847em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\">n</span><span class=\"mord mathit mtight\" style=\"margin-right:0.03148em;\">k</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.07708em;vertical-align:-0.32708000000000004em;\"></span><span class=\"mop\"><span class=\"mop op-symbol small-op\" style=\"position:relative;top:-0.0000050000000000050004em;\">∑</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.18639799999999984em;\"><span style=\"top:-2.40029em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.01968em;\">l</span><span class=\"mrel mtight\">∈</span><span class=\"mord mathit mtight\" style=\"margin-right:0.03148em;\">k</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.32708000000000004em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.02691em;\">w</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.33610799999999996em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.02691em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.01968em;\">l</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord mathit\">d</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.33610799999999996em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\">n</span><span class=\"mord mathit mtight\" style=\"margin-right:0.01968em;\">l</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>&nbsp;</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "f3faddc6f40042bf80ac428ff80ef760",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​industry factor</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "98f81e9cf17540ea9c923d87980cdfb4",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​basic criteria of industry factor selection</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "456c8b20c6cf46cdb42a214556291fed",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "groupings of industries into factors must be economically intuitive",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "8e136cbcde094305a0be213e780cb616",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "industry factors should have a strong degree of statistical significance",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "eb000dca6e9b4168a894dcf89d5b98ea",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "incorporating an additional industry factor should significantly increase the explanatory power of the model",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "5de180b5326a400b90d31947a8af38a2",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "thin industries (those with few assets) should be avoided",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "8b98090d482f4e7283ca8eceec7b9b0b",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​multiple-Industry Exposures</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "d05ac4c6b6c94178aedea529e1d2ee57",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​use Assets/Sales as the explanatory variable</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "37e24ecf9007465ea8e1bdb65eddde80",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​factor return</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "ea94b4e2f7b74c43a7b9ab691196ce41",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​country factor</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "1f4e08ad0eaf4e44bcf993db0fe2881d",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><msub><mi>r</mi><mi>n</mi></msub><mo>=</mo><msub><mi>f</mi><mi>c</mi></msub><mo>+</mo><msub><mo>∑</mo><mi>i</mi></msub><msub><mi>X</mi><mrow><mi>n</mi><mi>i</mi></mrow></msub><msub><mi>f</mi><mi>i</mi></msub><mo>+</mo><msub><mo>∑</mo><mi>s</mi></msub><msub><mi>X</mi><mrow><mi>n</mi><mi>s</mi></mrow></msub><msub><mi>f</mi><mi>s</mi></msub><mo>+</mo><msub><mi>u</mi><mi>n</mi></msub></mrow><annotation encoding=\"application/x-tex\">\nr_n = f_c + \\sum_{i} X_{ni}f_i + \\sum_{s} X_{ns}f_s +u_n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.58056em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.02778em;\">r</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.02778em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.10764em;\">f</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.10764em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">c</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0497100000000001em;vertical-align:-0.29971000000000003em;\"></span><span class=\"mop\"><span class=\"mop op-symbol small-op\" style=\"position:relative;top:-0.0000050000000000050004em;\">∑</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.16195399999999993em;\"><span style=\"top:-2.40029em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\">i</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.29971000000000003em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.07847em;\">X</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.07847em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\">n</span><span class=\"mord mathit mtight\">i</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.10764em;\">f</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.10764em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0497100000000001em;vertical-align:-0.29971000000000003em;\"></span><span class=\"mop\"><span class=\"mop op-symbol small-op\" style=\"position:relative;top:-0.0000050000000000050004em;\">∑</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.0016819999999999613em;\"><span style=\"top:-2.40029em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\">s</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.29971000000000003em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.07847em;\">X</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.07847em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\">n</span><span class=\"mord mathit mtight\">s</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.10764em;\">f</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.10764em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">s</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.58056em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathit\">u</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>&nbsp;</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "aae2ea9e850c4e1db0853a1b9e656f85",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​market exposure</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "307259b1d7f447968dc2064652864c3d",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​captured through beta factor</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "cb6f3da51d1b40509738e847810f7afb",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>Beta factor is highly correlated with the Country factor</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": "",
+                              "ttW": 390
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "4bf56062110244e2bedbfbaa6efb6890",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​collinearity</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "3d771bf4c4094c12a7d6d926a4869597",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "adding the Country factor introduces an exact collinearity into the model",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "7d12ccac57204ef08b8ad832f3d24dfe",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "adopt the constraint that the cap-weighted industry factor returns sum to zero",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "295c6fd70a9247c1bf3dcbf53d2c55f7",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><msub><mo>∑</mo><mi>i</mi></msub><msub><mi>w</mi><mi>i</mi></msub><msub><mi>f</mi><mi>i</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">\\sum_{i} w_if_i=0 </annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0497100000000001em;vertical-align:-0.29971000000000003em;\"></span><span class=\"mop\"><span class=\"mop op-symbol small-op\" style=\"position:relative;top:-0.0000050000000000050004em;\">∑</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.16195399999999993em;\"><span style=\"top:-2.40029em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\">i</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.29971000000000003em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.02691em;\">w</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.02691em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.10764em;\">f</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.10764em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">0</span></span></span></span>&nbsp;</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "d4e84e66dd984221aa30152b82d2602d",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><msub><mi>w</mi><mi>i</mi></msub></mrow><annotation encoding=\"application/x-tex\">w_i </annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.58056em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.02691em;\">w</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.02691em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>&nbsp;: capitalization weight of the estimation universe in industry i</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": "",
+                              "ttW": 315
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "85e057b10b2a4d2b9d7985f749d2eb09",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Country factor essentially represents the cap-weighted estimation universe",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": "",
+                          "ttMaxW": 553,
+                          "ttW": 553
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "ca8e3e5e4f994c11b12227b227ef1ed0",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​factor covariance matrix</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "6a453a76f4dd40fba3a3c6b7f7c6d386",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​estimation</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "3318c8c61f9841108bbbb73e3af22178",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​step 1</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "cff07fa5b3ee43ff8ffc3284bc461818",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "compute the factor correlation matrix from the set of daily factor returns",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "d7a0cdcdf6724bb2b8117c02b4502f96",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​exponentially weighted averages</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "113441453afa4cb2a64f3aceba35cc7b",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "correlation half-life parameter",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "b01f259a1ab24924ae0344bec8849d27",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​selecting the correlation half-life</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "ca18fd3153c74535a5045a1c716702c4",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>sufficiently long</p>",
+                                  "content": "",
+                                  "children": [
+                                    {
+                                      "uuid": "798ea2a9a0e44be6965ffd16130e6662",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "he effective number of observations T is significantly greater than the number of factors K",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": "",
+                                      "ttW": 375
+                                    }
+                                  ],
+                                  "folded": 0,
+                                  "link": "",
+                                  "ttW": 119
+                                },
+                                {
+                                  "uuid": "f4708c6ee3c14afeb0bb48f074df5dd2",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>not too long</p>",
+                                  "content": "",
+                                  "children": [
+                                    {
+                                      "uuid": "8e02184a8e8449ed92baa63b02aabea4",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "undue weight is placed on distant observations that have little relation to current market conditions",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": "",
+                                      "ttW": 381
+                                    }
+                                  ],
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "671dff3a94bf460a8e84998d7f9d9a05",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​serial correlation</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "61565e19243e45efba5e4075507fdff7",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "Newey-West methodology",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "a18798795c5246c79c41461829da236d",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​case of missing factor returns</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "7f1e94c691934a2f8595e38df8ee1d22",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "EM algorithm",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "2ee2abca201941d29f025143ae4b929f",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​step 2</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "ab37dc88f9e148a7975e065154224868",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>compute factor volatilities</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "8758e27132c54192801cf562d6d060d6",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "exponentially weighted averages, with half-life parameter",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "82ba75f8b220404d90c19cec0c9682f9",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "Eigenfactor Risk Adjustment",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "163f136f670544b4b4c1d5321e0bab61",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>systematic tendency to underpredict the risk</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "75e5f0f52b964b77a389ec9f61c49c2e",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>cause of the bias</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "b06457d2a1d84f8d9f2f030f0f295eb8",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "estimation error",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "288b236a75d34b73a9b61b17f1ecdb99",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><msub><mi>σ</mi><mrow><mi>t</mi><mi>r</mi><mi>u</mi><mi>e</mi></mrow></msub><mo>=</mo><mfrac><msub><mi>σ</mi><mrow><mi>p</mi><mi>r</mi><mi>e</mi><mi>d</mi></mrow></msub><mrow><mn>1</mn><mo>−</mo><mi>K</mi><mi mathvariant=\"normal\">/</mi><mi>T</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\"> \\sigma_{true} = \\frac{\\sigma_{pred}}{1-K/T} </annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.58056em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.03588em;\">σ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2805559999999999em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\">t</span><span class=\"mord mathit mtight\" style=\"margin-right:0.02778em;\">r</span><span class=\"mord mathit mtight\">u</span><span class=\"mord mathit mtight\">e</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.3344719999999999em;vertical-align:-0.52em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8144719999999999em;\"><span style=\"top:-2.655em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">1</span><span class=\"mbin mtight\">−</span><span class=\"mord mathit mtight\" style=\"margin-right:0.07153em;\">K</span><span class=\"mord mtight\">/</span><span class=\"mord mathit mtight\" style=\"margin-right:0.13889em;\">T</span></span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.51308em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.03588em;\">σ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3448em;\"><span style=\"top:-2.3487714285714287em;margin-left:-0.03588em;margin-right:0.07142857142857144em;\"><span class=\"pstrut\" style=\"height:2.5em;\"></span><span class=\"sizing reset-size3 size1 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\">p</span><span class=\"mord mathit mtight\" style=\"margin-right:0.02778em;\">r</span><span class=\"mord mathit mtight\">e</span><span class=\"mord mathit mtight\">d</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.29011428571428566em;\"><span></span></span></span></span></span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.52em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span></span></span></span>&nbsp;</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "c0467517945647a49f1ad2977b5b261c",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>​Volatility Regime Adjustment</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "a65998cf984947f8a788dec32569c284",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>use cross-sectional observations to produce timelier and more accurate forecasts of factor volatility</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "e40cb5ab440e432f981a416d36e126b9",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​basic intuition</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "0575282e514b401f8f69bdbaebf3ba4c",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "the returns and risk forecasts of the other factors provide additional information for refining the volatility estimates.",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": "",
+                                  "ttW": 413
+                                }
+                              ]
+                            }
+                          ],
+                          "folded": 0,
+                          "link": "",
+                          "ttW": 378
+                        },
+                        {
+                          "uuid": "bed74fedaf9540ecb7d8c30a151acda5",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​standardized return :&nbsp;&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><msub><mi>f</mi><mrow><mi>k</mi><mi>t</mi></mrow></msub><mi mathvariant=\"normal\">/</mi><msub><mi>σ</mi><mrow><mi>k</mi><mi>t</mi></mrow></msub></mrow><annotation encoding=\"application/x-tex\">f_{kt} /\\sigma_{kt}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.10764em;\">f</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.33610799999999996em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.10764em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.03148em;\">k</span><span class=\"mord mathit mtight\">t</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mord\">/</span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.03588em;\">σ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.33610799999999996em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.03148em;\">k</span><span class=\"mord mathit mtight\">t</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>&nbsp;</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "3c50b9ffcba64c7f99f58551e41c8b80",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​should have standard deviation close to 1 if&nbsp;the risk forecasts are accurate</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": "",
+                              "ttMaxW": 537,
+                              "ttW": 537
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "b5bd80cb9ab0488bb3f0445badd5c52d",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​cross-sectional standard deviation</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "774a001c89d044068fd94d786a4cc718",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "factor cross-sectional bias statistic",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "af29987fb5cc468b92ef33b800eb4bba",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><msubsup><mi>B</mi><mi>t</mi><mi>F</mi></msubsup><mo>=</mo><msqrt><mrow><mfrac><mn>1</mn><mi>K</mi></mfrac><msub><mo>∑</mo><mi>k</mi></msub><msup><mrow><mo fence=\"true\">(</mo><mfrac><msub><mi>f</mi><mrow><mi>k</mi><mi>t</mi></mrow></msub><msub><mi>σ</mi><mrow><mi>k</mi><mi>t</mi></mrow></msub></mfrac><mo fence=\"true\">)</mo></mrow><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding=\"application/x-tex\">B_t^F = \\sqrt{   \\frac{1}{K}     \\sum_{k}  \\left(\\frac{f_{kt}}{\\sigma_{kt}}  \\right)^2   }</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.088331em;vertical-align:-0.247em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.05017em;\">B</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8413309999999999em;\"><span style=\"top:-2.4530000000000003em;margin-left:-0.05017em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">t</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.13889em;\">F</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.247em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:2.44em;vertical-align:-0.8030060000000003em;\"></span><span class=\"mord sqrt\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.6369939999999996em;\"><span class=\"svg-align\" style=\"top:-4.4em;\"><span class=\"pstrut\" style=\"height:4.4em;\"></span><span class=\"mord\" style=\"padding-left:1em;\"><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.845108em;\"><span style=\"top:-2.6550000000000002em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.07153em;\">K</span></span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.394em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">1</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.345em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mop\"><span class=\"mop op-symbol small-op\" style=\"position:relative;top:-0.0000050000000000050004em;\">∑</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1863979999999999em;\"><span style=\"top:-2.40029em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.03148em;\">k</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.29971000000000003em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"minner\"><span class=\"minner\"><span class=\"mopen delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size2\">(</span></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.9322159999999999em;\"><span style=\"top:-2.655em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.03588em;\">σ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3448em;\"><span style=\"top:-2.3487714285714287em;margin-left:-0.03588em;margin-right:0.07142857142857144em;\"><span class=\"pstrut\" style=\"height:2.5em;\"></span><span class=\"sizing reset-size3 size1 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.03148em;\">k</span><span class=\"mord mathit mtight\">t</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15122857142857138em;\"><span></span></span></span></span></span></span></span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.446108em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.10764em;\">f</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3448em;\"><span style=\"top:-2.3487714285714287em;margin-left:-0.10764em;margin-right:0.07142857142857144em;\"><span class=\"pstrut\" style=\"height:2.5em;\"></span><span class=\"sizing reset-size3 size1 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.03148em;\">k</span><span class=\"mord mathit mtight\">t</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15122857142857138em;\"><span></span></span></span></span></span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.4508599999999999em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mclose delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size2\">)</span></span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.3540079999999999em;\"><span style=\"top:-3.6029em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span></span></span><span style=\"top:-3.596994em;\"><span class=\"pstrut\" style=\"height:4.4em;\"></span><span class=\"hide-tail\" style=\"min-width:1.02em;height:2.48em;\"><svg width=\"400em\" height=\"2.48em\" viewBox=\"0 0 400000 2592\" preserveAspectRatio=\"xMinYMin slice\"><path d=\"M424,2478c-1.3,-0.7,-38.5,-172,-111.5,-514c-73,\n-342,-109.8,-513.3,-110.5,-514c0,-2,-10.7,14.3,-32,49c-4.7,7.3,-9.8,15.7,-15.5,\n25c-5.7,9.3,-9.8,16,-12.5,20s-5,7,-5,7c-4,-3.3,-8.3,-7.7,-13,-13s-13,-13,-13,\n-13s76,-122,76,-122s77,-121,77,-121s209,968,209,968c0,-2,84.7,-361.7,254,-1079\nc169.3,-717.3,254.7,-1077.7,256,-1081c4,-6.7,10,-10,18,-10H400000v40H1014.6\ns-87.3,378.7,-272.6,1166c-185.3,787.3,-279.3,1182.3,-282,1185c-2,6,-10,9,-24,9\nc-8,0,-12,-0.7,-12,-2z M1001 80H400000v40H1014z\"></path></svg></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8030060000000003em;\"><span></span></span></span></span></span></span></span></span>&nbsp;</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "3638d6f20c8642be8bba80dc68dc4389",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>​K is the total number of factors</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "bd8ce959db1d475da13a6ae6cddd20e5",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​factor volatility multiplier</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "fbdef03513474e14a4dd036b6cef8a0d",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><msub><mi>λ</mi><mi>F</mi></msub><mo>=</mo><msqrt><mrow><msub><mo>∑</mo><mi>t</mi></msub><mo>(</mo><msubsup><mi>B</mi><mi>t</mi><mi>F</mi></msubsup><msup><mo>)</mo><mn>2</mn></msup><msub><mi>w</mi><mi>i</mi></msub></mrow></msqrt></mrow><annotation encoding=\"application/x-tex\">\\lambda_F = \\sqrt{ \\sum_{t} (B_t^F)^2w_i  }  </annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.84444em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathit\">λ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.32833099999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.13889em;\">F</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.8399999999999999em;vertical-align:-0.5932895000000001em;\"></span><span class=\"mord sqrt\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.2467104999999998em;\"><span class=\"svg-align\" style=\"top:-3.8em;\"><span class=\"pstrut\" style=\"height:3.8em;\"></span><span class=\"mord\" style=\"padding-left:1em;\"><span class=\"mop\"><span class=\"mop op-symbol small-op\" style=\"position:relative;top:-0.0000050000000000050004em;\">∑</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1308459999999999em;\"><span style=\"top:-2.40029em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\">t</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.29971000000000003em;\"><span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.05017em;\">B</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8231309999999998em;\"><span style=\"top:-2.454244em;margin-left:-0.05017em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">t</span></span></span><span style=\"top:-3.0448em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.13889em;\">F</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.24575599999999992em;\"><span></span></span></span></span></span></span><span class=\"mclose\"><span class=\"mclose\">)</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.740108em;\"><span style=\"top:-2.9890000000000003em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.02691em;\">w</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.02691em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span><span style=\"top:-3.2067105em;\"><span class=\"pstrut\" style=\"height:3.8em;\"></span><span class=\"hide-tail\" style=\"min-width:1.02em;height:1.8800000000000001em;\"><svg width=\"400em\" height=\"1.8800000000000001em\" viewBox=\"0 0 400000 1944\" preserveAspectRatio=\"xMinYMin slice\"><path d=\"M1001,80H400000v40H1013.1s-83.4,268,-264.1,840c-180.7,\n572,-277,876.3,-289,913c-4.7,4.7,-12.7,7,-24,7s-12,0,-12,0c-1.3,-3.3,-3.7,-11.7,\n-7,-25c-35.3,-125.3,-106.7,-373.3,-214,-744c-10,12,-21,25,-33,39s-32,39,-32,39\nc-6,-5.3,-15,-14,-27,-26s25,-30,25,-30c26.7,-32.7,52,-63,76,-91s52,-60,52,-60\ns208,722,208,722c56,-175.3,126.3,-397.3,211,-666c84.7,-268.7,153.8,-488.2,207.5,\n-658.5c53.7,-170.3,84.5,-266.8,92.5,-289.5c4,-6.7,10,-10,18,-10z\nM1001 80H400000v40H1013z\"></path></svg></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.5932895000000001em;\"><span></span></span></span></span></span></span></span></span>&nbsp;</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "56c07153700444cfb3614c8a841891e2",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><msub><mi>w</mi><mi>i</mi></msub></mrow><annotation encoding=\"application/x-tex\">w_i</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.58056em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.02691em;\">w</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.02691em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>&nbsp;</p>",
+                                  "content": "",
+                                  "children": [
+                                    {
+                                      "uuid": "ebfe7e48cfb147168b11e102480aa4ec",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "<p>an exponential weight with VRA half-life</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    },
+                                    {
+                                      "uuid": "d7392ffe580c416bb756ad9087b5229b",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "<p>​primary determinant of model responsiveness for factor risk</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ],
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "de2748d5282d403c9a5ee6855bb84fbc",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​VRA forecasts</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "a5d806cc22ba4e6ea707fa44ceafb490",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><msub><mover accent=\"true\"><mi>σ</mi><mo>~</mo></mover><mi>k</mi></msub><mo>=</mo><msub><mi>λ</mi><mi>F</mi></msub><msub><mi>σ</mi><mi>k</mi></msub></mrow><annotation encoding=\"application/x-tex\">\\tilde{\\sigma}_k = \\lambda_F \\sigma_k </annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8178599999999999em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord accent\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6678599999999999em;\"><span style=\"top:-3em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.03588em;\">σ</span></span></span><span style=\"top:-3.35em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"accent-body\" style=\"left:-0.25em;\">~</span></span></span></span></span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.33610799999999996em;\"><span style=\"top:-2.5500000000000003em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.03148em;\">k</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.84444em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathit\">λ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.32833099999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.13889em;\">F</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.03588em;\">σ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.33610799999999996em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.03148em;\">k</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>&nbsp;</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "55de9cd9e7f94d7fa5dd1dbbdf649dc1",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​factor cross-sectional volatility (CSV) on day t</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "147d1a5dc479491c8ae6568072b816e3",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><mi>C</mi><mi>S</mi><msubsup><mi>V</mi><mi>t</mi><mi>F</mi></msubsup><mo>=</mo><msqrt><mrow><mfrac><mn>1</mn><mi>K</mi></mfrac><msub><mo>∑</mo><mi>k</mi></msub><msubsup><mi>f</mi><mrow><mi>k</mi><mi>t</mi></mrow><mn>2</mn></msubsup></mrow></msqrt></mrow><annotation encoding=\"application/x-tex\">CSV_{t}^F = \\sqrt{\\frac{1}{K}   \\sum_{k} f_{kt }^2 }</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.088331em;vertical-align:-0.247em;\"></span><span class=\"mord mathit\" style=\"margin-right:0.07153em;\">C</span><span class=\"mord mathit\" style=\"margin-right:0.05764em;\">S</span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.22222em;\">V</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8413309999999999em;\"><span style=\"top:-2.4530000000000003em;margin-left:-0.22222em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\">t</span></span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.13889em;\">F</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.247em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.84em;vertical-align:-0.604946em;\"></span><span class=\"mord sqrt\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.235054em;\"><span class=\"svg-align\" style=\"top:-3.8em;\"><span class=\"pstrut\" style=\"height:3.8em;\"></span><span class=\"mord\" style=\"padding-left:1em;\"><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.845108em;\"><span style=\"top:-2.6550000000000002em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.07153em;\">K</span></span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.394em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">1</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.345em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mop\"><span class=\"mop op-symbol small-op\" style=\"position:relative;top:-0.0000050000000000050004em;\">∑</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1863979999999999em;\"><span style=\"top:-2.40029em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.03148em;\">k</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.29971000000000003em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.10764em;\">f</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7959079999999998em;\"><span style=\"top:-2.398692em;margin-left:-0.10764em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.03148em;\">k</span><span class=\"mord mathit mtight\">t</span></span></span></span><span style=\"top:-3.0448em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30130799999999996em;\"><span></span></span></span></span></span></span></span></span><span style=\"top:-3.195054em;\"><span class=\"pstrut\" style=\"height:3.8em;\"></span><span class=\"hide-tail\" style=\"min-width:1.02em;height:1.8800000000000001em;\"><svg width=\"400em\" height=\"1.8800000000000001em\" viewBox=\"0 0 400000 1944\" preserveAspectRatio=\"xMinYMin slice\"><path d=\"M1001,80H400000v40H1013.1s-83.4,268,-264.1,840c-180.7,\n572,-277,876.3,-289,913c-4.7,4.7,-12.7,7,-24,7s-12,0,-12,0c-1.3,-3.3,-3.7,-11.7,\n-7,-25c-35.3,-125.3,-106.7,-373.3,-214,-744c-10,12,-21,25,-33,39s-32,39,-32,39\nc-6,-5.3,-15,-14,-27,-26s25,-30,25,-30c26.7,-32.7,52,-63,76,-91s52,-60,52,-60\ns208,722,208,722c56,-175.3,126.3,-397.3,211,-666c84.7,-268.7,153.8,-488.2,207.5,\n-658.5c53.7,-170.3,84.5,-266.8,92.5,-289.5c4,-6.7,10,-10,18,-10z\nM1001 80H400000v40H1013z\"></path></svg></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.604946em;\"><span></span></span></span></span></span></span></span></span>&nbsp;</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "5adff542c73a49b1a0f3831a4681a060",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​specific risk</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "d501f99ff0c4478993ff188935f42d5c",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "time-series approach",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "8ab0b4ac56c9400d94436ca0e827c623",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><msubsup><mi>σ</mi><mi>n</mi><mrow><mi>T</mi><mi>S</mi></mrow></msubsup><mo>=</mo><msubsup><mi>C</mi><mi>n</mi><mrow><mi>N</mi><mi>W</mi></mrow></msubsup><mrow><mo fence=\"true\">[</mo><msub><mo>∑</mo><mi>t</mi></msub><msub><mi>w</mi><mi>t</mi></msub><mo>(</mo><msub><mi>u</mi><mrow><mi>n</mi><mi>t</mi></mrow></msub><mo>−</mo><msub><mover accent=\"true\"><mi>u</mi><mo stretchy=\"true\">‾</mo></mover><mi>n</mi></msub><msup><mo>)</mo><mn>2</mn></msup><mo fence=\"true\">]</mo></mrow></mrow><annotation encoding=\"application/x-tex\">\\sigma^{TS}_n = C_n^{NW} \\left[ \\sum_{t} w_t (u_{nt} -\\overline{u}_n )^2   \\right] </annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.088331em;vertical-align:-0.247em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.03588em;\">σ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8413309999999999em;\"><span style=\"top:-2.4530000000000003em;margin-left:-0.03588em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">n</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.13889em;\">T</span><span class=\"mord mathit mtight\" style=\"margin-right:0.05764em;\">S</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.247em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.20001em;vertical-align:-0.35001em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.07153em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8413309999999999em;\"><span style=\"top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">n</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.10903em;\">N</span><span class=\"mord mathit mtight\" style=\"margin-right:0.13889em;\">W</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.247em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"minner\"><span class=\"mopen delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size1\">[</span></span><span class=\"mop\"><span class=\"mop op-symbol small-op\" style=\"position:relative;top:-0.0000050000000000050004em;\">∑</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1308459999999999em;\"><span style=\"top:-2.40029em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\">t</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.29971000000000003em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.02691em;\">w</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2805559999999999em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.02691em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">t</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathit\">u</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2805559999999999em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\">n</span><span class=\"mord mathit mtight\">t</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mord\"><span class=\"mord overline\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.63056em;\"><span style=\"top:-3em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathit\">u</span></span></span><span style=\"top:-3.55056em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"overline-line\" style=\"border-bottom-width:0.04em;\"></span></span></span></span></span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\"><span class=\"mclose\">)</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141079999999999em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mclose delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size1\">]</span></span></span></span></span></span>&nbsp;</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "35eb6473eb2c4fdf8e6fd7352327474b",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><msubsup><mi>C</mi><mi>n</mi><mrow><mi>N</mi><mi>W</mi></mrow></msubsup></mrow><annotation encoding=\"application/x-tex\">C_n^{NW} </annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.088331em;vertical-align:-0.247em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.07153em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8413309999999999em;\"><span style=\"top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">n</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.10903em;\">N</span><span class=\"mord mathit mtight\" style=\"margin-right:0.13889em;\">W</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.247em;\"><span></span></span></span></span></span></span></span></span></span>&nbsp;</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "76469f4d11be4e259a90ee2fac5fb0f2",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "Newey-West serial correlation adjustment",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "72477e9044bf4faca24fe33fb11b9f44",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><msub><mi>w</mi><mi>t</mi></msub></mrow><annotation encoding=\"application/x-tex\">w_t</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.58056em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.02691em;\">w</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2805559999999999em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.02691em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">t</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>&nbsp;</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "b535a0044a7a412aafbe7a5d2ea383be",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "exponential weight characterized by the specific volatility half-life parameter",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": "",
+                              "ttW": 554,
+                              "ttMaxW": 554
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "041f3512a04842e4ab4ee2ab532029ba",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​not all stocks are weill-suited</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "42df11401fc44fa1be742b9f76939d9d",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "recently issued IPOs lack sufficient history",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "fa8e24f40cb642f2bfec2bbe9cb47637",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "thinly traded stocks often exhibit poor return characteristics",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "28c4adc194204dad9e772d4d1afdff6f",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "Earnings announcements can also lead to extreme jumps in specific returns",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": "",
+                              "ttMaxW": 549,
+                              "ttW": 549
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "9de0594db24f4832beccf4f4cafbf05d",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>​structure model</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "decde446b4a741e2ad58b3004cf0fea2",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><mi>ln</mi><mo>⁡</mo><mo>(</mo><msubsup><mi>σ</mi><mi>n</mi><mrow><mi>T</mi><mi>S</mi></mrow></msubsup><mo>)</mo><mo>=</mo><msub><mo>∑</mo><mi>k</mi></msub><msub><mi>X</mi><mrow><mi>n</mi><mi>k</mi></mrow></msub><msub><mi>b</mi><mi>k</mi></msub><mo>+</mo><msub><mi>ϵ</mi><mi>n</mi></msub></mrow><annotation encoding=\"application/x-tex\">\\ln(\\sigma^{TS}_n ) = \\sum_{k}X_{nk}b_k + \\epsilon_n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0913309999999998em;vertical-align:-0.25em;\"></span><span class=\"mop\">ln</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.03588em;\">σ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8413309999999999em;\"><span style=\"top:-2.4530000000000003em;margin-left:-0.03588em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">n</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.13889em;\">T</span><span class=\"mord mathit mtight\" style=\"margin-right:0.05764em;\">S</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.247em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0497100000000001em;vertical-align:-0.29971000000000003em;\"></span><span class=\"mop\"><span class=\"mop op-symbol small-op\" style=\"position:relative;top:-0.0000050000000000050004em;\">∑</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1863979999999999em;\"><span style=\"top:-2.40029em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.03148em;\">k</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.29971000000000003em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.07847em;\">X</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.33610799999999996em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.07847em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\">n</span><span class=\"mord mathit mtight\" style=\"margin-right:0.03148em;\">k</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord mathit\">b</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.33610799999999996em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.03148em;\">k</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.58056em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathit\">ϵ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>&nbsp;</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "974b1324dbd342ddbaf663f974d7622a",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "structural specific risk forecasts",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "19c5bb22da8a4cc19c3cd743f297b0e0",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><msubsup><mi>σ</mi><mi>n</mi><mrow><mi>S</mi><mi>T</mi><mi>R</mi></mrow></msubsup><mo>=</mo><msub><mi>E</mi><mn>0</mn></msub><mo>⋅</mo><mi>exp</mi><mo>⁡</mo><mrow><mo fence=\"true\">(</mo><msub><mo>∑</mo><mi>k</mi></msub><msub><mi>X</mi><mrow><mi>n</mi><mi>k</mi></mrow></msub><msub><mi>b</mi><mi>k</mi></msub><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">\\sigma_n^{STR} = E_0 \\cdot \\exp\\left( \\sum_{k} X_{nk}b_k \\right)\t</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.088331em;vertical-align:-0.247em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.03588em;\">σ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8413309999999999em;\"><span style=\"top:-2.4530000000000003em;margin-left:-0.03588em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">n</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.05764em;\">S</span><span class=\"mord mathit mtight\" style=\"margin-right:0.13889em;\">T</span><span class=\"mord mathit mtight\" style=\"margin-right:0.00773em;\">R</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.247em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.83333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.05764em;\">E</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">⋅</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0497100000000001em;vertical-align:-0.29971000000000003em;\"></span><span class=\"mop\">exp</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"minner\"><span class=\"mopen delimcenter\" style=\"top:0em;\">(</span><span class=\"mop\"><span class=\"mop op-symbol small-op\" style=\"position:relative;top:-0.0000050000000000050004em;\">∑</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1863979999999999em;\"><span style=\"top:-2.40029em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.03148em;\">k</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.29971000000000003em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.07847em;\">X</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.33610799999999996em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.07847em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\">n</span><span class=\"mord mathit mtight\" style=\"margin-right:0.03148em;\">k</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord mathit\">b</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.33610799999999996em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.03148em;\">k</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose delimcenter\" style=\"top:0em;\">)</span></span></span></span></span>&nbsp;</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "76df2d9742964dd39ef1ae89de6c3d33",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><msub><mi>E</mi><mn>0</mn></msub></mrow><annotation encoding=\"application/x-tex\">E_0</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.83333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.05764em;\">E</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>&nbsp;</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "af59aeea10af472fa5286da8b2172c23",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "a number slightly greater than 1 that is required to remove the small bias arising from exponentiation of the residuals",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": "",
+                                  "ttW": 426
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "dad9f2ac773d4edb90476b78a13cd9f4",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​blended specific risk forecast</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "5407b115e59e4e3f9b1d44d3c2a77cba",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><msub><mover accent=\"true\"><mi>σ</mi><mo>^</mo></mover><mi>n</mi></msub><mo>=</mo><msub><mi>γ</mi><mi>n</mi></msub><msubsup><mi>σ</mi><mi>n</mi><mrow><mi>T</mi><mi>S</mi></mrow></msubsup><mo>+</mo><mo>(</mo><mn>1</mn><mo>−</mo><msub><mi>γ</mi><mi>n</mi></msub><mo>)</mo><msubsup><mi>σ</mi><mi>n</mi><mrow><mi>S</mi><mi>T</mi><mi>R</mi></mrow></msubsup></mrow><annotation encoding=\"application/x-tex\">\\hat{\\sigma}_n = \\gamma_n \\sigma_n^{TS} + (1-\\gamma_n) \\sigma_n^{STR} </annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.84444em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord accent\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.69444em;\"><span style=\"top:-3em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.03588em;\">σ</span></span></span><span style=\"top:-3em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"accent-body\" style=\"left:-0.25em;\">^</span></span></span></span></span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.088331em;vertical-align:-0.247em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.05556em;\">γ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.05556em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.03588em;\">σ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8413309999999999em;\"><span style=\"top:-2.4530000000000003em;margin-left:-0.03588em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">n</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.13889em;\">T</span><span class=\"mord mathit mtight\" style=\"margin-right:0.05764em;\">S</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.247em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0913309999999998em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.05556em;\">γ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.05556em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.03588em;\">σ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8413309999999999em;\"><span style=\"top:-2.4530000000000003em;margin-left:-0.03588em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">n</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.05764em;\">S</span><span class=\"mord mathit mtight\" style=\"margin-right:0.13889em;\">T</span><span class=\"mord mathit mtight\" style=\"margin-right:0.00773em;\">R</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.247em;\"><span></span></span></span></span></span></span></span></span></span>&nbsp;</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "e8912cf7add34b8395e463a5d2aa6bb8",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><msub><mi>γ</mi><mi>n</mi></msub></mrow><annotation encoding=\"application/x-tex\">\\gamma_n </annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.19444em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.05556em;\">γ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.05556em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>&nbsp;</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "74ac9c058a2c4e40a95955c9d3a87527",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>equals 1 if the stock has sufficiently few missing returns and the specific returns are not excessively fat tailed</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": "",
+                                  "ttW": 424
+                                },
+                                {
+                                  "uuid": "af79486f1ee24245a26f43687fb0e19e",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>0 for stocks that strongly violate either of these conditions</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "9491e96b7902412c97ce34188227bb68",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>​Bayesian Shrinkage</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "f42a644262494448bac8fee386a74506",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​specific volatilities may not fully persist out-of-sample</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "034fcf7a47e54bd29f456123f0b5af72",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​mean-reverting</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            }
+          ],
+          "linkColor": "#C0C0C0",
+          "side": null,
+          "title": "<p>BARRA</p>",
+          "content": null,
+          "siblingOrder": 0,
+          "link": null,
+          "leftIcons": null,
+          "rightIcons": null,
+          "folded": false
+        }
+      ],
+      "theme": "{\"magic\":\"zmtheme:v500\",\"version\":3,\"name\":\"bg_bright_ln_color\",\"text\":\"默认多色\",\"image\":\"/images/common/theme-bg-bright-ln-color.png\",\"mapBgColor\":\"#FFFFFF\",\"mapFgColor\":\"#282828\",\"fontColor\":\"#282828\",\"rootLineColor\":\"#C0C0C0\",\"lineColors\":[\"#3A8DDF\",\"#E08370\",\"#5FBC5C\",\"#B24BC8\",\"#75CFDC\"]}",
+      "version": 1,
+      "frontendState": null,
+      "commit": 201,
+      "isDefault": false,
+      "title": "<p>中心主题</p>"
+    },
+    "zmCounter": {
+      "read": 0,
+      "voteAmount": 0,
+      "voteUp": 0,
+      "voteDown": 0,
+      "comment": 0,
+      "challenge": 0,
+      "bookmark": 0,
+      "shareAmount": 0,
+      "shareCircle": 0,
+      "shareFriends": 0,
+      "share2qq": 0,
+      "share2qzone": 0
+    }
+  },
+  "extra": null,
+  "mt": null,
+  "token": null
+}

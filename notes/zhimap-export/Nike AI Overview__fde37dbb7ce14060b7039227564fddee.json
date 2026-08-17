@@ -1,0 +1,1564 @@
+{
+  "code": 0,
+  "message": "Get MindMap data OK!",
+  "data": {
+    "author": {
+      "userUuid": "857a288bd33c4a8aa9f0fca7bf344142",
+      "nickname": "陈杰",
+      "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJibo26vHhy2zNAOIZWKhtkdOqibFLOiaicQ6YKocqrD8Xmc6fz35bSzZegNyuJAFAcg9qpkKVwg8kk3w/64",
+      "region": "Anhui Hefei",
+      "biography": null
+    },
+    "publicationInfo": {
+      "uuid": "fde37dbb7ce14060b7039227564fddee",
+      "abstracts": null,
+      "recommendations": null,
+      "rating": 100,
+      "releaseType": "CONTENT",
+      "stateUpTime": 1737867080588,
+      "state": "EDITING",
+      "releaseState": "EDITING_NEW",
+      "copyable": false,
+      "private": true,
+      "collaboration": false
+    },
+    "mindMap": {
+      "uuid": "fde37dbb7ce14060b7039227564fddee",
+      "uniCode": "XBioTzqc",
+      "ownerUsrUUID": "857a288bd33c4a8aa9f0fca7bf344142",
+      "createTime": 1737867080588,
+      "lastUpdateTime": 1737867080588,
+      "trees": [
+        {
+          "uuid": "5ab3eb7905a441f2a2b3a303e25cbec1",
+          "children": [
+            {
+              "uuid": "8287f57a96344f399904d0296ac9c56e",
+              "side": "right",
+              "linkColor": "#E08370",
+              "title": "<p>adminstration</p>",
+              "content": "",
+              "folded": 1,
+              "link": "",
+              "children": [
+                {
+                  "uuid": "51db0ab7c6094869bc6e8eda8b42ddc1",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​legal</p>",
+                  "content": "",
+                  "folded": 1,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "c2cb1e718c324294ba1b5bc23ec5e453",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​Product Copy Gen AI</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "0e3bd0d459874286b9c6e3b55f743714",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>Improve product copywriting efficiency by reducing repetitive manual tasks and speed up writing with GenAI</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "b1f18d4e96114da680e8e81281b0b5dc",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "Intake & Contract Creation",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "9ffe7eac4d8a4a5490e53b27074f744c",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Streamline and automate the intake of contract requests and automatically generate the first drafts of contracts upon receipt of requests.",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "1a8328f1a6c14dc78c035f037282799a",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "Post signature Contract Management",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "72b85a15fe62426ba1911c906b5eab3c",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Store Nike’s thousands of contracts in an organized repository and automate the analysis of contracts across the repository to extract data quickly and accurately.",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "uuid": "a261e39d1f0f4c5da49699817569bf37",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​HR</p>",
+                  "content": "",
+                  "folded": 1,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "98facb8961c040e1b298b76aad5ab230",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​workday AI</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "69c2ced5e71d4558ae3e4913ff3bee91",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Benefit to Nike Inc:",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "28fb0664f58940c0828f7c3fe51ab395",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "Workday AI enables Nike to automate the creation of first drafts of job descriptions, better match employees to potential roles within the enterprise, and provide a conversational interface for employee self-service. This enhances the overall employee experience and engagement.",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "124f8038cf7446d8b327f25928250467",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Expected Value Delivered:",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "bb6007a4808c405593a17ca5b4c74b0e",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "Enhanced Employee Experience: Employees can find new opportunities within Nike more quickly and easily.",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "ac9d88dd42374e0eb2646cfbbd70db18",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "Reduced Time to Hire: Streamlining the hiring process leads to faster recruitment cycles.",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "f9903a81e0a84130908ced08ce67728c",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "Overall Efficiency: A more user-friendly HR system improves operational efficiency across human resources functions.",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "4a47cce143154e1cb8f776d9f1a153ed",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Key Workstreams:",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "3417fe0e786247a4a48732ae750a1774",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "Machine Learning Recommendation for Change Jobs Description: Utilizes machine learning to suggest changes in job descriptions based on data-driven insights.",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "c54fdbb9bb004281a20edbfced724f36",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "Job Description Generation on Job Requisitions Description: Automates the generation of job descriptions for requisitions, improving consistency and reducing manual effort.",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "ac81b901dc4647e6ab286a40f3f22364",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "Workday Assistant: Provides a conversational interface that assists employees with various HR-related inquiries and tasks.",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "13deff1d6be94426b76fd287476b0575",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "Payroll Insights: Offers analytical insights into payroll processes, enhancing decision-making and operational efficiency.",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "uuid": "e0d9288927dc4794862c3812a130c389",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>supply-chain</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "edf6ad83a18a46679b7c39aa7168e501",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>Aily labs</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "eb6eaf9b5f38466b93b57a770b612a7e",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>AI-driven intelligence platform that uses real-time data to enhance decision-making (down to the SKU level) across finance, sales, supply chain operations in a user-friendly mobile interface.&nbsp;</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "6ae3645b5ed2434da92af4987b79c6cc",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​This initial evaluation is a 3-month with our finance team that will simulate various forecasting scenarios, model different budget allocation scenarios, What-If scenarios with various sales, investment decisions, and fluctuating marketing conditions as well as predictive analytics of decision-making.</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "uuid": "cf81ac04763a494a8dc722b62a4ec751",
+              "side": "right",
+              "linkColor": "#75CFDC",
+              "title": "<p>​athlete</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "2fd626a3987d43369049d89ddf587fa5",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​AI assistant</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            },
+            {
+              "uuid": "bd834ed4d2d64c71adb4b0fc8e295668",
+              "side": "right",
+              "linkColor": "#3A8DDF",
+              "title": "<p>​coach</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "b7ef7eb336c64c0b99e32cb1609a8c8f",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​digital coach</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "74baee36b8d24a29b56bb620cbe01bc0",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​shopping assistant</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "30a67be0913745e486ea6c3b836d92d6",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>Use Case - A conversational journey to assist athletes*/consumers discover the best products for their unique needs and goals, leading to increased purchase confidence and therefore CVR. Making athlete* dreams real.</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": "",
+                      "ttMaxW": 544,
+                      "ttW": 544
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            },
+            {
+              "uuid": "14e0b47f7e7a4fd0a635d38307433678",
+              "side": "right",
+              "linkColor": "#B24BC8",
+              "title": "<p>​customer</p>",
+              "content": "",
+              "folded": 0,
+              "link": "",
+              "children": [
+                {
+                  "uuid": "ba0254befccd419090f74f44aef1d045",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​order2cash</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "94aff5d53a554138b125922dacce7930",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "A Gen AI driven solution for automating wholesale customer engagement and enables retrieval of collection",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": "",
+                      "ttW": 408
+                    },
+                    {
+                      "uuid": "d20ba2ca5bfd45479381f7280a80960d",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>Benefit to Nike Inc</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "25af266a7e104600950b4a6ae8f9bef1",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "By implementing a Gen AI solution for automating wholesale customer engagement and streamlining collections process. Nike will realize operational efficiency gains and cost reductions within the Order to Cash process. This solution will drive improved customer satisfaction by enabling personalized and timely responses, while also accelerating cash flow by optimizing the collections process. Ultimately, the business will benefit from reduced manual effort for agents, improved responsiveness to partner inquiries, and a more efficient management of the collections process.",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "ba6123e99b2341e0844affad20fc2ba9",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>Expected Value Delivered</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "5e8c30ddf7d24ad19558ea76ff254420",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Alignment with Nike Corporate Strategy goal of scaling Wholesale Partnership relationships while minimizing HC additions",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "dde78687308d4d4cbeebc2c4b64e87e8",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Enhanced wholesale partner engagement - timely and expeditious responses to Wholesale partner queries, consistent communications and improved insights",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "30cfacd1b8684c50bf9c1d2995b00d11",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Improved collections communication - ~ 60 - 65%",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "7e5190cfaa3040499fd65fd11cd9b0c6",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Productivity savings and efficiency gains",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "cbb06f6c364a49e393de96f4a6d10d7c",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Improved cash flow with potential to reduce Nike Capital costs",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "c21df49ca1e74725a11ed79eb14db7a3",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>Use cases</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "b7ca5c2ac9dd4e4e8c5987343bb74b95",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Use Case 1: Automate Wholesale Customer Engagement utilizing generative AI models for email classification, data integration and email generation.",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "e424d9eada9343a68c01920f1c423208",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Use case 2: Enable automated retrieval of collection insights data and auto creation of customer correspondence to support Collections process.",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "uuid": "376e0e1a74c244769b501ae188a9626f",
+                  "side": "",
+                  "linkColor": "",
+                  "title": "GenAI Powered Agent",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "04e057880c024c609f5d3d9c5a7dc298",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>Benefit to Nike Inc</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "63f916fdfdf64c058693769963688161",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Our goal is to create a flexible self-service agent that can be used across various departments such as Customer Service and Finance Operations. By utilizing generative AI, this self-serviced agent will help reduce the need for costly manual interventions, thereby improving the consumer experience and ensuring high levels of satisfaction for customers, partners, and consumers.",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "6a21d757a6f44b4897fa3871f1a68a5e",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>Expected Value Delivered</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "462b1b28ed164eb0acb77554069f4a18",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "CS GenAI: Improved customer service containment (5% to 15%) w/ self service is associated with $5.2-10.6m annualized savings for FY25.",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "5d450cf40e7f40a78e128487fadadeef",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Finance Operations Agent: Improved service containment for P2P Helpdesk and other financial operations requests is associated with $1.3m annualized savings for FY25",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "15121c723afd4ba48e2cb631400f67ea",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Nike.net Agent: Value statement TBD; Dropped products recommendations full value realization is $40-80m.",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "uuid": "ff7abd611aad4519b842f7d6709a1ccd",
+                  "side": "",
+                  "linkColor": "",
+                  "title": "<p>​product metadata generation</p>",
+                  "content": "",
+                  "folded": 1,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "2282466cdd8f47f29824598a3d509d1b",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>Problem statement</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "3b2d29e3c6d54ac791df3441c8ba2978",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Consumers struggle to find our products online due to a gap between product descriptions and their search terms. Disparate product data systems, manual tagging, and lack of consumer insights feedback loop make product data not fully enriched, leading to wasted resources and a fragmented consumer experience.",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "ee0bd602a7c14ba1980e2abbff2c8063",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>Vision</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "8e71224b4114417f9dd2812584d18537",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "AI-enabled product metadata generation and unified product taxonomy model from creation to commercialization across all Nike channels will improve the quality and richness of Nike’s product data end-to-end, while enabling a premium and distinctive consumer experience.",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "8a91d001c8614b4baf7f721984b9ad56",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>Benefits to Nike Inc</p>",
+                      "content": "",
+                      "folded": 1,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "e62da8c06e8d43648fd4e454025e4d88",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Improved search, product discovery and relevance across digital channels",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "ece5131934764633b18d363f7e8649fd",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Improved consumer satisfaction and shopping experience, increasing engagement and conversion as consumers feel understood and catered to",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "fbe6d92156c04fbca176e1314cff5157",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Increased willingness to pay (based on internal Nike research) if describing products in consumer-centric language",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "4b7901e45fac47369bf2c368fad90d24",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Increased click-through rates by showcasing highly relevant products",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "a13531bcd3594c8281a83d33ada6233f",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Decreased support contacts and improved efficiency for Partners Account Executives and support desk for streamlined partner decision-making process",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "aa975a9313e64a689ea691b836a3f039",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Improved demand predictions by linking granular product attributes to regional trends and purchase patterns",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "b8beb9dba7664fc59c86cff2666bbd59",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Enhanced product development with timely insights on trending attributes and consumer preferences",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "5ba7ee61a01540a5803cb7e84f18e49b",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Increased operational efficiency and automated attribute tagging to reduce manual effort across domains but keeping manual verification for output accuracy control",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "8ba8bce2d498479c862a26c6f5bf28a9",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Improved feedback loop from search traffic, consumer reviews, and transactions back to Product Creation, Demant forecasting, Line planning, Merchandising and Marketing teams .",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "3e36faaf37a8465e9f0beffe306360d0",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>Expected Value Delivered</p>",
+                      "content": "",
+                      "folded": 1,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "adad50eb2736457996faf90dc9156bdf",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Revenue Generation, $: Improved conversion rates and revenue per user through enhanced product discoverability.",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "55ae575ebabd4d9ca79156f0e9b8c010",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Productivity Gains, %: Significant time savings by automating the tagging of products and managing missing third-party product attributes.",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "dfbf7bd0a6854648a4978ce1c22f95af",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Enhanced Customer Experience: A more intuitive shopping experience for consumers, leading to increased engagement and sales.",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "550074775e4d4c78b9af5a0934a3b891",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>Key Use cases</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "8944c452763140d09c093761f9dece4e",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Automating Tagging & Missing 3rd Party Product Attributes Pilot/Scale: Streamlines the process of tagging products and filling in missing attributes to improve searchability.",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "4f5d3833ea3e4c2b9fbaaab3d2c153be",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Product Discoverability/Search POC Expansion: Expands proof of concept efforts to enhance how products are discovered on platforms like Nike.com.",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "7c889e3c0bd2452c8fc0bdd678612593",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​semantic search</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "a5ce43a892044a258cecb5dd1532241c",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>part of product metadata generation</p>",
+                                  "content": "",
+                                  "folded": 0,
+                                  "link": "",
+                                  "children": null
+                                },
+                                {
+                                  "uuid": "31ad59190565474babe525788c90f97f",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>make customers easier to</p>",
+                                  "content": "",
+                                  "folded": 0,
+                                  "link": "",
+                                  "children": [
+                                    {
+                                      "uuid": "b17e20a256b945aebd53893b2327eeb8",
+                                      "side": "right",
+                                      "linkColor": "",
+                                      "title": "<p>​understand the products</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    },
+                                    {
+                                      "uuid": "5364a1b2eb1044b3b9465fda6f5ead0b",
+                                      "side": "right",
+                                      "linkColor": "",
+                                      "title": "<p>​find the right product</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "65b17a49565e498486e1b3a242af5b06",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Framework Enterprise Alignment: Aligns enterprise taxonomy with consumer signals and market trends to ensure consistency across all product listings.",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "0adf11d06c6d4c2db99d4e635e30c0b0",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Testing with Product Copywriting: Integrates metadata generation with product copywriting processes to ensure cohesive messaging and branding.",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "uuid": "2c4551eaccc94d7583660a4117d80c4e",
+              "side": "right",
+              "linkColor": "#E08370",
+              "title": "<p>developer</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "a436a4cfc6724fd4b58639cae45e9740",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​swooshchat</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "a5a7efb530d54a009f9aec288b3a76a3",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​github copilot</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "b4d4e9bc922b461bb0076b54eaa735fd",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​databricks</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "96245c2f7fef4816a9ba5d61ac615bc2",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​neural core</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "9e4ab60dcc5b4b1c8702d3da8b1cb8a8",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​GSL</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "f815ea3b0c2448e893874ae4a071fb1d",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​box AI</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "8f7b0598106244909ce603c975e9e325",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​slack AI</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "edc4c4a7265d4b75b0f3d7f84ce28083",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "Benefit to Nike Inc:",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "a204253803374dad8ed03857aa9844e3",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Slack AI enhances productivity and efficiency by automating routine tasks, providing personalized assistance, and analyzing large volumes of text to extract insights and recommendations. This leads to streamlined workflows, quicker information retrieval, and improved collaboration across teams.",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "d818705d55ed439a84c1b95e8cd19bd5",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "Expected Value Delivered:",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "e25998a7e09d408aa7d64e1d1b931b6c",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Real-Time Conversation Summarization: Automatically summarize lengthy Slack conversations, enabling employees to quickly catch up on important discussions.",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "a9217757bb3b4e2995e11d793de9cbc3",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Enhanced Search: Use AI-powered search to find content in Slack quickly and effectively.",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "081e21995ecd4b08aef042a8c3dc775a",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Incident Management Automation: Streamline incident management processes with AI, reducing downtime and improving response times during critical incidents.",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "ca9b085f4e944f38beb5611ab306bc96",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Enhanced Project Management: Utilize AI-powered project management through Slack Lists to improve task tracking and project visibility.",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            },
+            {
+              "uuid": "e1b0706e86b54ba48eeecc8cb8a1bdef",
+              "side": "right",
+              "linkColor": "#5FBC5C",
+              "title": "<p>​marketing</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "8bcaeeeb23ac45a5896a21750f4146ae",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​​SEO content creation</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "7776c9056181403080abe72dc21b0fe5",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>Content ​Tagging</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "a093802677a84207a15c160cd050b2c7",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>or ​product metadata generation</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "uuid": "b95e7febc2c64fefb3457482a8a974a6",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​text2video</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "d5ba3b2927e2451db564b35378460cc3",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​airmagination</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "09a3e1f932564a7cafb1ba362bfab4d0",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​text2image</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "3e1c46750f3b4917be2b8340f4f067a5",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​use case</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "e772aac3b5444d80b21294b1c44a3cac",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>Image Resizing</p>",
+                      "content": "",
+                      "folded": 1,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "1abcd0a4101d463099a624101ef8d6a0",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​resizing</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "440b7672dae248038245adb0c3d2aa2f",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "High-level overview",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "3ba5843d66bd4091b2ab7fdb9da7f16e",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "Uses AI to automatically resize images to fit different aspect ratios while preserving image intent to improve efficiency of marketers.",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "001154dcdb254220a1d0d0aadb038690",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​Benifits</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "820f393803694e43af91f99715439e0b",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "Reduction in costs associated with manually resizing images for various marketing channels",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "2886f2d44260404e926f03933e381427",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "Estimated cost savings of $7-$8 million annually",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "9caf83090a264619809b42be27d539a3",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​background removal</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "41a3e4a869b34e2d80e45c959c787368",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "High-level overview",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "7d06f57af5be4762abd06a55e6a2f833",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "Uses AI to automatically produce generative fill for a resized image while preserving image intent to improve efficiency of marketers. \tUses AI to automatically remove the background of an image while preserving image intent to improve efficiency of marketers.",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "d03cf29c16e14d2bb0c443eac8a95170",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​Benifits</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "3d5a2db96e1540eeaa39e47d2c60dfa1",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "Increased ease at which an image can be used by marketing partners (Geo and otherwise) through the use of image background removal",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "50c671706e47461e83786254b7e94dd6",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "Increase marketing asset utility which can lead to more efficient use of marketing process time",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "977c6b94b0524be0a0bae7d91b481f34",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "Further brand awareness through the use of assets in additional marketing channels",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "7368b3eea86e48deb90ddcbc4f108a45",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​generative fill</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "b31cd7a67c2043b09b6726e248c98e5b",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "High-level overview",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": null
+                            },
+                            {
+                              "uuid": "8392834813ea4ea8b0541863b8790640",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​Benifits</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "b193cb3464b94cb5917664403d012c7f",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "Increase the use of marketing images by allowing them to receive a background fill that makes it so it can be used in more channels (more aspect ratios/sizes) than it otherwise would be able to",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "39880118039d4bb8bb8a662bb2602d74",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "Increase marketing asset utility which can lead to more efficient use of marketing process time",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "c46ffe055b69429cab97eb05129c9c71",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "Further brand awareness through the use of assets in additional marketing channels",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            },
+            {
+              "uuid": "443092c8a4e141baa8d9767ba9d2a652",
+              "side": "right",
+              "linkColor": "#75CFDC",
+              "title": "<p>​Summary</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "a5bdbb7cd9fb434b98e0fc156fbaf791",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​Digital Coach</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "7ca1229fce9049daaaea9070c4824b44",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​Agent</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "62dfb7f00b89497cb6143a303825309f",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​self-sevice</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": null
+                        },
+                        {
+                          "uuid": "b860cb2474c049b0844174df6cace939",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>use Gen AI to provide timely and consistent response</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "81fb949985914b30b96397112b9078d3",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​reduce the need for costly manual interventions</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "uuid": "5e3574659fe5491fbd261bcf6783a57b",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>Content Tagging, ​product metadata generation</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "9a9ee72aeaeb40ceb9f1ff00ddef2402",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​customers can be easier to find the satisfied products</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "7919111d06124875942d4193c65f1366",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>marketing</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ]
+                },
+                {
+                  "uuid": "56e953511edb4eac9a8a598e889e7186",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​Developer tools</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "7a30b38ff98543c38869d6096da1a5f1",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​swooshchat</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "cd0f4f9b00114fe0997cc0e605c0f16a",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​github copilot</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "ae4361c514594c8eacdb98c601e52832",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​GSL</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "ae495760bad4413ca4d44efa84e61bda",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​unified internal Gen AI framework&nbsp;</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "175c48c6907c4ce58337344c40d1ed2f",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​databricks</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ]
+                },
+                {
+                  "uuid": "59a23e0d9b634a40992ca88aa1769bcf",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​text2image/video</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "25ae438ed8dd47f89390c288901e1d6a",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​air-magination</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "394ab96bbfe24df69ef1146870d93a03",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​image resizing / background removal / generative fill</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "adecb7972d2e42ddbed10f3dca3beb64",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​marketing</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            }
+          ],
+          "linkColor": "#C0C0C0",
+          "side": null,
+          "title": "<p>Nike AI Overview</p>",
+          "content": null,
+          "siblingOrder": 0,
+          "link": null,
+          "leftIcons": null,
+          "rightIcons": null,
+          "folded": false
+        }
+      ],
+      "theme": "{\"magic\":\"zmtheme:v500\",\"version\":3,\"name\":\"bg_bright_ln_color\",\"text\":\"默认多色\",\"image\":\"/images/common/theme-bg-bright-ln-color.png\",\"mapBgColor\":\"#FFFFFF\",\"mapFgColor\":\"#282828\",\"fontColor\":\"#282828\",\"rootLineColor\":\"#C0C0C0\",\"lineColors\":[\"#3A8DDF\",\"#E08370\",\"#5FBC5C\",\"#B24BC8\",\"#75CFDC\"]}",
+      "version": 1,
+      "frontendState": null,
+      "commit": 214,
+      "isDefault": false,
+      "title": "<p>中心主题</p>"
+    },
+    "zmCounter": {
+      "read": 0,
+      "voteAmount": 0,
+      "voteUp": 0,
+      "voteDown": 0,
+      "comment": 0,
+      "challenge": 0,
+      "bookmark": 0,
+      "shareAmount": 0,
+      "shareCircle": 0,
+      "shareFriends": 0,
+      "share2qq": 0,
+      "share2qzone": 0
+    }
+  },
+  "extra": null,
+  "mt": null,
+  "token": null
+}

@@ -1,0 +1,833 @@
+{
+  "code": 0,
+  "message": "Get MindMap data OK!",
+  "data": {
+    "author": {
+      "userUuid": "857a288bd33c4a8aa9f0fca7bf344142",
+      "nickname": "陈杰",
+      "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJibo26vHhy2zNAOIZWKhtkdOqibFLOiaicQ6YKocqrD8Xmc6fz35bSzZegNyuJAFAcg9qpkKVwg8kk3w/64",
+      "region": "Anhui Hefei",
+      "biography": null
+    },
+    "publicationInfo": {
+      "uuid": "35e7ec970d9148e1b6296a7bdd761255",
+      "abstracts": null,
+      "recommendations": null,
+      "rating": 100,
+      "releaseType": "CONTENT",
+      "stateUpTime": 1590652791005,
+      "state": "EDITING",
+      "releaseState": "EDITING_NEW",
+      "copyable": false,
+      "private": false,
+      "collaboration": false
+    },
+    "mindMap": {
+      "uuid": "35e7ec970d9148e1b6296a7bdd761255",
+      "uniCode": "hpPRAWPv",
+      "ownerUsrUUID": "857a288bd33c4a8aa9f0fca7bf344142",
+      "createTime": 1590652791005,
+      "lastUpdateTime": 1590652791005,
+      "trees": [
+        {
+          "uuid": "1c91ca41a7e741d6bbf90ae3f6f8e55d",
+          "children": [
+            {
+              "uuid": "637c2c5de15b4de5bd7459ad62a6ff26",
+              "side": "right",
+              "linkColor": "#3A8DDF",
+              "title": "<p>​introduction</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "c65aa3cf23454279839b256fbde1b668",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​question</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "313db355d3134b1098edbcb894ec661d",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​local stationary / dynamic</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "c3d8322cd079419b80d587bd5abaa731",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​high dimension, small sample</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "f55ebbb725b745098ce7aaf189cac860",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>generalization</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "ae701d89641e4f38a00023931e4ab963",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​how to measure the goodness of factorization?</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "1a6fc2dd4f1b415faa66993ec4c4c310",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​how to measure the goodness of the factors?</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "uuid": "6bb1f1ec9ed9469b94c8f169dda7c715",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>applications</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "acf192bbf0c34ff58257b7854d599d8b",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​financial risk forecast</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "c19e6be9ff9742968b627841f2e36437",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>more applications</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "8ba2c2dca0184ff1936131eb1f0f4696",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​gene mapping</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "7540b4345c864e2892d048f57c3ce56f",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​demand forecast</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": "",
+                          "leftIcons": [
+                            {
+                              "name": "check-cross"
+                            }
+                          ]
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            },
+            {
+              "uuid": "3b1a1ae6dde840f6aa453f544f440342",
+              "side": "right",
+              "linkColor": "#E08370",
+              "title": "<p>​summary of methods</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "d2c0297cab0e4d24ad6377b3759b570f",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​old methods</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "de62a9a2a4c24fd9bd3c85b5f88e8afd",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​sample covariance</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "bc981424bab94d368f8e4bc2cd1122cd",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>when the sample size is large</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "a81dcf1c424445b096c5d79ea8294f6b",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​many good properties</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "a82913e76cde4f53a6f055b5e5dbab5c",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​when dimension is large, not good</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "3c78122c330540639e36d0eb02af988e",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​eigenvalues are over-dispersed</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "af88f678c1e74c1f8287888aec1e9325",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​lack of sparsity</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "09ec53f264be49d9ad03df70fcf0fd4b",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​not invertible</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "1cc321af72e3463c9a17e92824971f70",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​statistical</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "a9de3ef32b25418d846405f22f398dc0",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​ideas</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "08681a7d3bfe437a90b9902c8007d30c",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​exploitting the special structure</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "6c19c15a942b417d8d04f41bf86b70fc",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​sparsity</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "c3873039e90144a281aa984353952836",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​low-rank</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "4b334d9e2ff14682bf920eef739dcb48",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​sparse</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "237ffa26d9a94c30a3ecf7f4c0895ae0",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​thresholding estimator</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "92fe2131694d485baf0652070e93a1c7",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​shrinkage estimator</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "414ce891e129441aa86533a60f621366",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​factor model</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "489e4eff4de24d68867e0f94c1e62561",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​PCA and its extension</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "1004a2b611ea40b9afb6568c5552fdf3",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​quickly react to market, but not fixed, hard to interpret</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "6776d65a973e4c70a21b805d06ff471e",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​robust method</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "459a67c3bd43407781c86bfb759d2518",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>fundamental</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "24fa4aa395724dcfbc26eedd7829c3fa",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​human-researched factors</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "6ce5b66080394bdc92bd34f5bd89aecb",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​fixed, easy to interpret, may miss factors</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "ef6bbdd824ff44afa82be6494867fab3",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​BARRA</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "fa7577cf92244d3aa1543e4f1cd8949b",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​NW</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "7fad7d3d3e4e414994218446c086ede3",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​fix auto-correlation in data</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "618ced6079cf4c129f8dd069276c9de0",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​eigenfactor risk adjustment</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "d5044f60df7c401492d7a65621e45bfa",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​fix over-dispersed eigenvalues of SCM</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "78679bee97124f4291101014221ea7f4",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​volatility regime adjustment</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "d78786d13e8a472ba8d5ac9b97624bcb",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​fix moving market</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "09a94bcfbba5485aa22bbf3d47811669",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​structure model</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "8c461f34c7f747b5b9866bdee4797c74",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​fix missing data</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "4342b3da16444549a6dce933e0937e6b",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​deep</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "4580298e85754a1eb1c99b7d22a07b5c",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​our proposal</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "9b7794a9d7d24b3db80d45319fcdff0a",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​learn the factor-exposure directly from the data</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "236b9781f8034543bfd4d0620393bde6",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​use R2 + penalty of colinearity as objective</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": null
+                            },
+                            {
+                              "uuid": "e803d903fcd2496c9f5e4f62a6d85d1a",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​what measures the goodness of factor / covariance matrices / factor exposre?&nbsp;</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": "",
+                              "ttW": 289
+                            },
+                            {
+                              "uuid": "0f4f3848a76f4b859da17f0ee7cf5139",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​factor-exposure are not unique</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "e088a3d3c6f74507ac72629ce527e74d",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​differ by a rotation</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "176f3da50d944853b8b0e688bb87f454",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​learn the shift parameters</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "38ba0df6d8da44f7b897c89f6cc7db3d",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​i.e. CSV in BARRA</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "2a29c44612d947d2b259f2ff3cfd7649",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​sample size is too small, hard to learn</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "5645433d897040d98db4cc5f0065a6c0",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​objective</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "2e6ed43a841949e7a25b306a1428f4c7",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​better factors</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "620a8d07a3964fccb5afcd88ae733f97",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​现在的factor组成的空间和未来的不一样</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "d18a819a0dd64cd1a5d5749d8fd4b7b6",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​如何让现在学出来的factor在未来也可以用</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "216e5ed40b2c4feaa9946825b4ac1782",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​factor covariance matrices</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "f3b96f29780c4ba58f4277ab503b8100",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​目前现象</p>",
+                                  "content": "",
+                                  "folded": 0,
+                                  "link": "",
+                                  "children": [
+                                    {
+                                      "uuid": "fa508747a63c4cb99a129e7fa9deb031",
+                                      "side": "right",
+                                      "linkColor": "",
+                                      "title": "<p>​deep 学出来的因子每天都在变</p>",
+                                      "content": "",
+                                      "children": [
+                                        {
+                                          "uuid": "cb8f0b00f41949938143e0df8dbd4bed",
+                                          "side": "right",
+                                          "linkColor": "",
+                                          "title": "<p>​cannot claim generalize will</p>",
+                                          "content": "",
+                                          "children": null,
+                                          "folded": 0,
+                                          "link": ""
+                                        }
+                                      ],
+                                      "folded": 0,
+                                      "link": ""
+                                    },
+                                    {
+                                      "uuid": "3c7768df35e94bec9bb2399082780d18",
+                                      "side": "right",
+                                      "linkColor": "",
+                                      "title": "<p>​和预期/claim 不符合</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ]
+                                },
+                                {
+                                  "uuid": "85c399f2bc1146a99dae604250f262dc",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​目前考虑目标</p>",
+                                  "content": "",
+                                  "folded": 0,
+                                  "link": "",
+                                  "children": [
+                                    {
+                                      "uuid": "c65cd7d618c1415ea671a6fbdd45fe62",
+                                      "side": "right",
+                                      "linkColor": "",
+                                      "title": "<p>​MF+未来R2+factor协方差的差别</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "2a49ca3eb47c4912890b3a87c81e838e",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​有了好的因子，compare with PCA</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "824ed37eab9c4f60ab9a0a95c1330aaa",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​加入fundamental 的因子，和真实比</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "7516d9d3fdf54fc08e460f5b7d9727d4",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​existing papers</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "e1741c5b382c4b8c96aa7d690af74ac5",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​TRMF</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "b890f1effb3e48eaa3560a5ca70316a2",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​add regularization for time-dependency</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": "",
+                              "ttW": 290
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "62cce10e5fed49fca4c2d47c1a90109c",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​deepAR</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ]
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            }
+          ],
+          "linkColor": "#C0C0C0",
+          "side": null,
+          "title": "<p>covariance&nbsp; estimation</p>",
+          "content": null,
+          "siblingOrder": 0,
+          "link": null,
+          "leftIcons": null,
+          "rightIcons": null,
+          "folded": false
+        }
+      ],
+      "theme": "{\"magic\":\"zmtheme:v500\",\"version\":3,\"name\":\"bg_bright_ln_color\",\"text\":\"默认多色\",\"image\":\"/images/common/theme-bg-bright-ln-color.png\",\"mapBgColor\":\"#FFFFFF\",\"mapFgColor\":\"#282828\",\"fontColor\":\"#282828\",\"rootLineColor\":\"#C0C0C0\",\"lineColors\":[\"#3A8DDF\",\"#E08370\",\"#5FBC5C\",\"#B24BC8\",\"#75CFDC\"]}",
+      "version": 1,
+      "frontendState": null,
+      "commit": 160,
+      "isDefault": false,
+      "title": "<p>中心主题</p>"
+    },
+    "zmCounter": {
+      "read": 0,
+      "voteAmount": 0,
+      "voteUp": 0,
+      "voteDown": 0,
+      "comment": 0,
+      "challenge": 0,
+      "bookmark": 0,
+      "shareAmount": 0,
+      "shareCircle": 0,
+      "shareFriends": 0,
+      "share2qq": 0,
+      "share2qzone": 0
+    }
+  },
+  "extra": null,
+  "mt": null,
+  "token": null
+}

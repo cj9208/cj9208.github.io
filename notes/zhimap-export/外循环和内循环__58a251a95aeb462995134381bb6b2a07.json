@@ -1,0 +1,659 @@
+{
+  "code": 0,
+  "message": "Get MindMap data OK!",
+  "data": {
+    "author": {
+      "userUuid": "857a288bd33c4a8aa9f0fca7bf344142",
+      "nickname": "陈杰",
+      "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJibo26vHhy2zNAOIZWKhtkdOqibFLOiaicQ6YKocqrD8Xmc6fz35bSzZegNyuJAFAcg9qpkKVwg8kk3w/64",
+      "region": "Anhui Hefei",
+      "biography": null
+    },
+    "publicationInfo": {
+      "uuid": "58a251a95aeb462995134381bb6b2a07",
+      "abstracts": null,
+      "recommendations": null,
+      "rating": 100,
+      "releaseType": "CONTENT",
+      "stateUpTime": 1703647253785,
+      "state": "EDITING",
+      "releaseState": "EDITING_NEW",
+      "copyable": false,
+      "private": true,
+      "collaboration": false
+    },
+    "mindMap": {
+      "uuid": "58a251a95aeb462995134381bb6b2a07",
+      "uniCode": "uBRjBuqw",
+      "ownerUsrUUID": "857a288bd33c4a8aa9f0fca7bf344142",
+      "createTime": 1703647253785,
+      "lastUpdateTime": 1703647253785,
+      "trees": [
+        {
+          "uuid": "b0681c9078e34f319d730ad0d5f9c4b2",
+          "children": [
+            {
+              "uuid": "dfb013307ce84219bad2be4c54e2bb00",
+              "side": "right",
+              "linkColor": "#3A8DDF",
+              "title": "<p>​出口</p>",
+              "content": "",
+              "folded": 0,
+              "link": "",
+              "children": [
+                {
+                  "uuid": "937d9bcbb78645acb21cc2b587a8e937",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​消费力在国外</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "96ff55ef16b64a10bc8c9072af2e7411",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "只需要保持产品竞争力就好",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "01f0f1d2e710426d985fe075ac98c577",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>​不需要考虑工人的购买力</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "aaff36c1f0e6409b9a8a013ca22901eb",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>​压榨本国工人，提供性价比极高的产品抢占市场</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "b52908e91fd846edb3b9b3a32a0091f4",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>老板的状态</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "00d89e4f13f749cfa4add402cafbad63",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​赚大了，贫富差距扩大</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "1cc07892e97e423d85f191d3182fcae9",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​市场上的奢侈品都是国外的，所以消费不会留给国内</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "6f1a351f00344caa880a3ee38590488f",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​财富保值，投资需求，所以疯狂转移资产，移民国外</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "af7382862496430ea4035c5ef1056c7c",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>工人的状态</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "c8777eec8b4547768f62d98d37994c44",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​没钱，仅够生存，毕竟也没考虑让你去购买产品嘛</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "b0539ee4259b4545bd3061552cb10607",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​循环</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "689146fef9b84f62baec172145b07098",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​国内购买力越发差，所以越发依赖国外，越发的拼命压榨国内工人</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ]
+            },
+            {
+              "uuid": "7a4d8d4d1e584ababc7181154a679e91",
+              "side": "right",
+              "linkColor": "#E08370",
+              "title": "<p>​内循环</p>",
+              "content": "",
+              "folded": 0,
+              "link": "",
+              "children": [
+                {
+                  "uuid": "8631cf25a6e441928fba2dd05a8e134f",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​消费力在国内</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "e0d687e22cea4f14b8ee338a6f11c17b",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​需要考虑工人的购买力，不然生产出来卖给谁</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "3f333af3ebec4610839f27d9fa188dfa",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​分配问题必须要拿出来考虑了</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "3e2a6e2041be46eab1921006cb33ea6f",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​比如996</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "177570eab93048db8a5706f4dea3f77d",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "让人有时间去消费",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "740ec22a0e684bc0b04412f316d1e7f4",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​最低工资</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "b609f845f4804ad09eae96cfe53ff9ea",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​让人有钱去消费</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "e3dcb4fbe0004c06a5e879c9abe56fa4",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​福利政策也比较关键</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "7d6352f067354715a45b6d6bdf03f7fa",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​不然谁加杠杆啊，出了问题没人兜底，参考当前的烂尾房</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ]
+            },
+            {
+              "uuid": "0e56893263c74d1ea6e6e80a46520a2b",
+              "side": "right",
+              "linkColor": "#3A8DDF",
+              "title": "<p>驳积累论</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "1ba0e8983efa4f178aedf6a60e9e1bb0",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​已知</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "a453f8b656b343519761a798c3ca1b5a",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​中国工业产值 差不多等于 美国+欧洲+日本</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "93ea7b95dfe04b48b8b49cb97d51f76e",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​中国的基建水平已经是全球领先了</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "8554fc9c4d0f461a97711616dcd6373b",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>高铁，一二线的地铁</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "7926e196e697450a9af5b52e5dea0e78",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​高速公路，大桥</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "12d4f78a22724e6bbaebc6af9f5f836c",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​推导</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "b6e61abde7f84388b36b8c819429fd08",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​如果保持当前的二产比例不变，中国吃下全部工业</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "d20fa69469084c8888fddae06448d2a5",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "最多能gdp 翻倍，也就是两万五左右",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "662e2af1015f4896a06ee44e8c706c4e",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​实际上，在继续吃的情况下，国外消费也会下跌，所以这个上限是永远到达不了</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": "",
+                          "ttW": 306
+                        },
+                        {
+                          "uuid": "7e4ba6caddab488697377950c3cfe3e6",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​上面的现象已经在发达国家发生了，这也是为啥这几年针对中国的贸易限制政策这么多</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": "",
+                          "ttW": 345
+                        }
+                      ],
+                      "folded": 0,
+                      "link": "",
+                      "ttW": 186
+                    }
+                  ]
+                },
+                {
+                  "uuid": "6f62f9c2bb134da896480f2aa885e201",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​发展的目标</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "8db3c76a9263417b9820a75d28b48df5",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​发展是为了更好的满足人民的需求</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ]
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            },
+            {
+              "uuid": "056a5a51b79f4f5caa1c694d3544f414",
+              "side": "right",
+              "linkColor": "#E08370",
+              "title": "<p>​驳房贷无限责任</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "f481dd79799f415ea3f55c200b8609a9",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​已知</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "9db812560f114325b241a014fd9384d6",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​银行赚的是息差，唯一的风险就是违约</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "c5bc2e36caeb42589e5472ef709c4904",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​中国的银行市值已经赶超国际银行（比如摩根大通，美国银行等）</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "e01508ff86a54d4384c060c6762974aa",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​中国银行的利润占据 a股上市公司的一半左右，也就是其余所有公司的利润加起来也就银行这么多</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "6fc3b7a6724b44b39340c02f4b2e0270",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​企业都是有限责任制，仅限于出资</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "bf26a3a9fa394efeb3b375acc59da716",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​全世界的抵押贷款都是仅限于抵押品的价值</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "291a645cebda4b53aaa013f6464b7fc3",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​此外中国房贷在进行降息操作的时候很困难，比如本次降息，就很离谱，国家牵头才推动的，即使如此，也不能降到当前利率</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "160e81baa387462a8824833dd3a6b03b",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​推导</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "9b51c95c7f664b0a8feeafd1cf19f333",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​中国房贷的无限责任制是不合理的，给个人施加了过大的责任（不知道各位领导如何看待企业有限责任制？？？）</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "fe845420035546be81631e1d1ec764d3",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​中国银行过于垄断，在利率等方面非常不合理</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "da6263c0f9c64f3d9b413e73d4e316fe",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​中国银行管理风险能力基本为零，只会通过无限责任制通过转嫁给个人</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "f852410d879e47459e39c4932d2886fa",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​个人对策</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "e564d71225e2495f9e323cc19683b964",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​既然国家银行都只会转嫁责任，那么就不买房呗</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            },
+            {
+              "uuid": "04599417bc66432a9456194433fedd2b",
+              "side": "right",
+              "linkColor": "#5FBC5C",
+              "title": "<p>个人选择</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "e7f25a252b994f1d98ee85f8e0d348ff",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>1. ​理应选择合适的市场，而不是停留在屎坑市场</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "183d189c23144d31843955292e653d18",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​比如不投资中国a股，中国房市</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "f73b8354019040308a483a14c3b3bea3",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​好的市场比如纳斯达克</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "d5ce2b6ed32c441385b471591961f11a",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>2. 拿个国外身份</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "4c51e57efe6543319767171ebaad7a88",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​套利，既然优待国外人，那么为啥不利用针对国外的好政策</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            }
+          ],
+          "linkColor": "#C0C0C0",
+          "side": null,
+          "title": "<p>外循环和内循环</p>",
+          "content": null,
+          "siblingOrder": 0,
+          "link": null,
+          "leftIcons": null,
+          "rightIcons": null,
+          "folded": false
+        }
+      ],
+      "theme": "{\"magic\":\"zmtheme:v500\",\"version\":3,\"name\":\"bg_bright_ln_color\",\"text\":\"默认多色\",\"image\":\"/images/common/theme-bg-bright-ln-color.png\",\"mapBgColor\":\"#FFFFFF\",\"mapFgColor\":\"#282828\",\"fontColor\":\"#282828\",\"rootLineColor\":\"#C0C0C0\",\"lineColors\":[\"#3A8DDF\",\"#E08370\",\"#5FBC5C\",\"#B24BC8\",\"#75CFDC\"]}",
+      "version": 1,
+      "frontendState": null,
+      "commit": 91,
+      "isDefault": false,
+      "title": "<p>中心主题</p>"
+    },
+    "zmCounter": {
+      "read": 0,
+      "voteAmount": 0,
+      "voteUp": 0,
+      "voteDown": 0,
+      "comment": 0,
+      "challenge": 0,
+      "bookmark": 0,
+      "shareAmount": 0,
+      "shareCircle": 0,
+      "shareFriends": 0,
+      "share2qq": 0,
+      "share2qzone": 0
+    }
+  },
+  "extra": null,
+  "mt": null,
+  "token": null
+}

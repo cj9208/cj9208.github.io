@@ -1,0 +1,255 @@
+{
+  "code": 0,
+  "message": "Get MindMap data OK!",
+  "data": {
+    "author": {
+      "userUuid": "857a288bd33c4a8aa9f0fca7bf344142",
+      "nickname": "陈杰",
+      "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJibo26vHhy2zNAOIZWKhtkdOqibFLOiaicQ6YKocqrD8Xmc6fz35bSzZegNyuJAFAcg9qpkKVwg8kk3w/64",
+      "region": "Anhui Hefei",
+      "biography": null
+    },
+    "publicationInfo": {
+      "uuid": "be0f560a1f32404c98cb694c53b21b02",
+      "abstracts": null,
+      "recommendations": null,
+      "rating": 100,
+      "releaseType": "CONTENT",
+      "stateUpTime": 1578013535706,
+      "state": "EDITING",
+      "releaseState": "EDITING_NEW",
+      "copyable": false,
+      "private": true,
+      "collaboration": false
+    },
+    "mindMap": {
+      "uuid": "be0f560a1f32404c98cb694c53b21b02",
+      "uniCode": "WwWTHZqx",
+      "ownerUsrUUID": "857a288bd33c4a8aa9f0fca7bf344142",
+      "createTime": 1578013535706,
+      "lastUpdateTime": 1578013535706,
+      "trees": [
+        {
+          "uuid": "d8e17ad1390a48699f5934411395d8ef",
+          "children": [
+            {
+              "uuid": "42263baaba1f4a1880037306c8b2c416",
+              "side": "right",
+              "linkColor": "#3A8DDF",
+              "title": "<p>​research</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "22bc39e23dde45aab7a4ea28e0747009",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​finish HT paper</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "341851bdab8f4796bb90cc0471c2d245",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​start text analysis project</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            },
+            {
+              "uuid": "006bd075087944f3a92fe03d955723dc",
+              "side": "right",
+              "linkColor": "#B24BC8",
+              "title": "<p>​work-related</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "814ed4e1d3ee48d0b621bfca6483ff2a",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​understand the industry</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": "",
+                  "leftIcons": [
+                    {
+                      "name": "mark-star"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "315087e41da54ad8905d7132329c56cf",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​statistical arbitrage</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "f52aa6e02e384682b47af06c5ae264ee",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>how to apply ​machine learning</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            },
+            {
+              "uuid": "c6d8af2ecdff400aaaecb66ea9cbf89f",
+              "side": "right",
+              "linkColor": "#E08370",
+              "title": "<p>​coding</p>",
+              "content": "",
+              "folded": 0,
+              "link": "",
+              "children": [
+                {
+                  "uuid": "69babedd66e548ddb8db8a77af2957fb",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​LeetCode</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "079a463beaad42549b1e1791dfe6fcf2",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​get familar with python and common algorithms</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "660c3ba42557428db94c27b4b6e33cb5",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​Kaggle competition&nbsp;</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "6cc78e7fadd14350b19c9037be3b263c",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​get familar with data analysis, machine learning related knowledge and coding</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": "",
+                      "ttW": 300
+                    }
+                  ],
+                  "folded": 0,
+                  "link": "",
+                  "leftIcons": [
+                    {
+                      "name": "mark-star"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "uuid": "ad4666e880744478a39a43db69a2ccbd",
+              "side": "right",
+              "linkColor": "#5FBC5C",
+              "title": "<p>​exam</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "7cf634dcc59040d1b5fd8179985fe0f6",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​candidacy oral defense</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": "",
+                  "leftIcons": [
+                    {
+                      "name": "mark-star"
+                    }
+                  ]
+                },
+                {
+                  "uuid": "7a583f4ceea64c0cbbf06e9eff230729",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​CFA&nbsp; level2</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "01bd2ab387264c12a9399169f2861b4c",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​June</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            }
+          ],
+          "linkColor": "#C0C0C0",
+          "side": null,
+          "title": "<p>2020计划</p>",
+          "content": null,
+          "siblingOrder": 0,
+          "link": null,
+          "leftIcons": null,
+          "rightIcons": null,
+          "folded": false
+        }
+      ],
+      "theme": "{\"magic\":\"zmtheme:v500\",\"version\":3,\"name\":\"bg_bright_ln_color\",\"text\":\"默认多色\",\"image\":\"/images/common/theme-bg-bright-ln-color.png\",\"mapBgColor\":\"#FFFFFF\",\"mapFgColor\":\"#282828\",\"fontColor\":\"#282828\",\"rootLineColor\":\"#C0C0C0\",\"lineColors\":[\"#3A8DDF\",\"#E08370\",\"#5FBC5C\",\"#B24BC8\",\"#75CFDC\"]}",
+      "version": 1,
+      "frontendState": null,
+      "commit": 35,
+      "isDefault": false,
+      "title": "<p>中心主题</p>"
+    },
+    "zmCounter": {
+      "read": 0,
+      "voteAmount": 0,
+      "voteUp": 0,
+      "voteDown": 0,
+      "comment": 0,
+      "challenge": 0,
+      "bookmark": 0,
+      "shareAmount": 0,
+      "shareCircle": 0,
+      "shareFriends": 0,
+      "share2qq": 0,
+      "share2qzone": 0
+    }
+  },
+  "extra": null,
+  "mt": null,
+  "token": null
+}

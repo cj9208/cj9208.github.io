@@ -1,0 +1,722 @@
+{
+  "code": 0,
+  "message": "Get MindMap data OK!",
+  "data": {
+    "author": {
+      "userUuid": "857a288bd33c4a8aa9f0fca7bf344142",
+      "nickname": "陈杰",
+      "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJibo26vHhy2zNAOIZWKhtkdOqibFLOiaicQ6YKocqrD8Xmc6fz35bSzZegNyuJAFAcg9qpkKVwg8kk3w/64",
+      "region": "Anhui Hefei",
+      "biography": null
+    },
+    "publicationInfo": {
+      "uuid": "59fec407daa641c99c08c5bad43f25f6",
+      "abstracts": null,
+      "recommendations": null,
+      "rating": 100,
+      "releaseType": "CONTENT",
+      "stateUpTime": 1728390670078,
+      "state": "EDITING",
+      "releaseState": "EDITING_NEW",
+      "copyable": false,
+      "private": true,
+      "collaboration": false
+    },
+    "mindMap": {
+      "uuid": "59fec407daa641c99c08c5bad43f25f6",
+      "uniCode": "sFcrEtCA",
+      "ownerUsrUUID": "857a288bd33c4a8aa9f0fca7bf344142",
+      "createTime": 1728390670078,
+      "lastUpdateTime": 1728390670078,
+      "trees": [
+        {
+          "uuid": "e27bcfb27dd54a7da2eaf7134793b8e2",
+          "children": [
+            {
+              "uuid": "83d9a874e6884689afe07dececca1c0a",
+              "side": "right",
+              "linkColor": "#5FBC5C",
+              "title": "<p>​目标</p>",
+              "content": "",
+              "folded": 0,
+              "link": "",
+              "children": [
+                {
+                  "uuid": "d56076e2bc2c47038b6d1eed76ed2aa2",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​介绍 spark 框架，以及常用实现（包括 aws, databricks）</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                }
+              ]
+            },
+            {
+              "uuid": "9b5cd4a220b64245b73260302b5a2fe4",
+              "side": "right",
+              "linkColor": "#B24BC8",
+              "title": "<p>​数据的存储</p>",
+              "content": "",
+              "folded": 0,
+              "link": "",
+              "children": [
+                {
+                  "uuid": "047e56d2d2fd4e6bbb3e974a3013cb37",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​文件系统</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "b6d9afeca188483199b6c29c47875d5e",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​HDFS</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "ae00f65ecd0b4368bf6ecc599b2b070d",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​分布式</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "7f1d0930263c4596827551255b7940fb",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​Amazon S3</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "04aec1ca9a4349169551c6336c569a7e",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​云存储</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "uuid": "e5ae12885ba34d6280d6766518e875db",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​数据库</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "30b8f7bac215415c87e82c4c902c96c8",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​Amazon rds</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "30fb9d3c14244fbe9e37bd6ed57636c3",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​关系数据库</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "e7a7c88f6466497aa041221416be869b",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​Amazon DynamoDB</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "1495da2678f7410a87af21d935097791",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​NoSQL 数据库， 提供实时查询</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "e0e8df0bab174a959e361ce812892972",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​数据仓库</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "938e0c4a36284da7b53e79e3c2e5dbf1",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​Data Lake</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "1eaa36c0743d4035862b8c62b0dc24a4",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​由 Databricks 公司开发的付费软件</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": null
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "73962baf354a4b86887aa8e5f43200b2",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​Hive</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "aed71ae6b9464600a1c9764bb3a99a0b",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​基于 Hadoop&nbsp;</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "3aa00c4cfd1f4355a3f85e5644f5d8d4",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​Amazon Redshift</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "f8c57d89e2d1424b868f5c17a6a0a7e1",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​除了数据存储，还提供了高效的</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "dd04ee53e51c4d75a78783e6e226650b",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​数据查询</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "df456ca5cdb541faafcb9854eea437c6",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>纯查询框架 Presto</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "e9a60b0fa36049f7a710d3c1a200c86b",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​数据可视化</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "uuid": "14a28fc33b3b4944bacdaf51fd8e6dd2",
+              "side": "right",
+              "linkColor": "#E08370",
+              "title": "<p>​数据的运算-spark</p>",
+              "content": "",
+              "folded": 0,
+              "link": "",
+              "children": [
+                {
+                  "uuid": "af9efff5bbb349d18248eb3afe6a2d18",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>Amazon EMR (Elastic MapReduce)</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "6c1c67cdd6d54a58a28567801a60e156",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​数据抽象格式</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "ee0b8f1df5674732bf9fc0d4de9f4d5d",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​RDD</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "3e9edc8496d94191afccb900e4fc8121",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​更底层的操作</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "9647d725931544da9ff816f6390a89cb",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​map, filter, flatMap, groupByKey, reduceByKey, join(union, intersection, substract), sortBy, distinct, cartesian</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "4c0fa47b3f924ef4beff33417651a16b",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​DataFrame + Dataset</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "26c567d40dc841259542bca7d834adcf",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​提供了类似 pandas DataFrame 的高级操作</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "c9765ebfb05249198f068b9b9e6fbf14",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​Machine Learning</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "f3507af269c04e48b7bab9e196daaa64",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​类似 scikit-learn, 适配于分布式数据处理的常用机器学习方法的实现</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "c635a8c6e01d4bb1b36926b3364c23c1",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​Deep Learning</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "b550e391203846c0a75ce897fbdd6f62",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​暂无针对开发的框架</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "ebf817498643490aae6c3983a06ca882",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​使用方法</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "c3245d1f7f1642bdba48fe9c834ce2c2",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​在 spark 里面完成基础的计算后</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "c866213c15f140fe93d0baf4834dfc87",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>将处理好的数据导出转化为 pandas 的 df 格式</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "6bbe186ddacb498a8fd4107dd755b061",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>供 pytorch 等框架使用</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "e3f4c0528d6a4315b76e6aae1da841a1",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​Amazon Bedrock</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "494398a37e7b40e3a04ba13bad9e118b",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "用于构建和部署生成式 AI 应用程序。它提供了一系列预训练的基础模型（Foundation Models），用户可以使用这些模型快速开发和部署 AI 应用程序。",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": "",
+                          "ttW": 396
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "ba74de30c5194af28a765f44f56791e8",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​Amazon SageMaker</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "89bbcd1f1bc34ea8a58bc50bea90dd39",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>旨在帮助开发者和数据科学家快速构建、训练和部署机器学习（ML）模型。SageMaker 提供了从数据准备到模型部署的完整工作流程，简化了机器学习的复杂性，使得企业和个人能够更容易地利用机器学习技术。</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "0d976b84046747edada4f69397494a62",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​其余 AWS 产品</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "243b41e649d44227bc35a17a6fe7d33c",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>Amazon Comprehend</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "5b126b8832ab4954bc1d8009833a303b",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "描述：自然语言处理（NLP）服务，提供文本分析功能。",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "3b2ca94cadb74fd3aeedf3b0e416f83a",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "应用场景：情感分析、实体识别、主题检测。",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "5dc43f102f984987a37f3a7d4325eb04",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>Amazon Rekognition</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "72d3ba9e17234518831f6f8e635c67ac",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "描述：图像和视频分析服务，提供图像识别和内容分析功能。",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "a41fa0de6d3843efbf876bb12b2c6a35",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "应用场景：图像分类、对象检测、人脸识别。",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "e2a5e7b4e1534636b5e59fd27b56ebda",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>Amazon Transcribe</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "672e5d6af3d048cdb6bf9f530c2f20e4",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "描述：自动语音识别（ASR）服务，提供音频转文本功能。",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "cfa6662daed24a6caceebd2bd0a5176f",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "应用场景：语音转文字、会议记录。",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "d9f9c08ba2504d2c978f4fd89e13fa0c",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>Amazon Translate</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "debf01aeb2524304b5b837c7b1f685db",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "描述：神经机器翻译服务，提供高质量的文本翻译功能。",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "f748f9124d534ab89ff804ea4557227d",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "应用场景：多语言内容翻译、国际化应用。",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "07d6d4b24a8a436b8498cb5bdd6a6aa5",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>Amazon Personalize</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "c9b928ddb5ef4f888cdadb6caa8569d9",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "描述：完全托管的个性化推荐服务，提供推荐系统构建功能。",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "4d1f1c0f42df4872b5d6d06736d50a21",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "应用场景：产品推荐、内容推荐。",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "0ce2f63325a14763b6ae610b80f693d2",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>Amazon Textract</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "57fe64df2e6a46e680ad17d12b747205",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "描述：文档分析服务，从扫描文档中提取文本和数据。",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "037c894561974c2c95e81391cfb9c59e",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "应用场景：文档处理、表单识别。",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 1,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ]
+            }
+          ],
+          "linkColor": "#C0C0C0",
+          "side": null,
+          "title": "<p>Data Science</p>",
+          "content": null,
+          "siblingOrder": 0,
+          "link": null,
+          "leftIcons": null,
+          "rightIcons": null,
+          "folded": false
+        }
+      ],
+      "theme": "{\"magic\":\"zmtheme:v500\",\"version\":3,\"name\":\"bg_bright_ln_color\",\"text\":\"默认多色\",\"image\":\"/images/common/theme-bg-bright-ln-color.png\",\"mapBgColor\":\"#FFFFFF\",\"mapFgColor\":\"#282828\",\"fontColor\":\"#282828\",\"rootLineColor\":\"#C0C0C0\",\"lineColors\":[\"#3A8DDF\",\"#E08370\",\"#5FBC5C\",\"#B24BC8\",\"#75CFDC\"]}",
+      "version": 1,
+      "frontendState": null,
+      "commit": 101,
+      "isDefault": false,
+      "title": "<p>中心主题</p>"
+    },
+    "zmCounter": {
+      "read": 0,
+      "voteAmount": 0,
+      "voteUp": 0,
+      "voteDown": 0,
+      "comment": 0,
+      "challenge": 0,
+      "bookmark": 0,
+      "shareAmount": 0,
+      "shareCircle": 0,
+      "shareFriends": 0,
+      "share2qq": 0,
+      "share2qzone": 0
+    }
+  },
+  "extra": null,
+  "mt": null,
+  "token": null
+}

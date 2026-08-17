@@ -1,0 +1,1432 @@
+{
+  "code": 0,
+  "message": "Get MindMap data OK!",
+  "data": {
+    "author": {
+      "userUuid": "857a288bd33c4a8aa9f0fca7bf344142",
+      "nickname": "陈杰",
+      "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJibo26vHhy2zNAOIZWKhtkdOqibFLOiaicQ6YKocqrD8Xmc6fz35bSzZegNyuJAFAcg9qpkKVwg8kk3w/64",
+      "region": "Anhui Hefei",
+      "biography": null
+    },
+    "publicationInfo": {
+      "uuid": "9ee83066e00744c0ac2482396a153667",
+      "abstracts": null,
+      "recommendations": null,
+      "rating": 100,
+      "releaseType": "CONTENT",
+      "stateUpTime": 1571017448523,
+      "state": "EDITING",
+      "releaseState": "EDITING_NEW",
+      "copyable": false,
+      "private": false,
+      "collaboration": false
+    },
+    "mindMap": {
+      "uuid": "9ee83066e00744c0ac2482396a153667",
+      "uniCode": "WUoREkEz",
+      "ownerUsrUUID": "857a288bd33c4a8aa9f0fca7bf344142",
+      "createTime": 1571017448523,
+      "lastUpdateTime": 1571017448523,
+      "trees": [
+        {
+          "uuid": "65f29e3b2b204f72b7547cef6b75cb21",
+          "children": [
+            {
+              "uuid": "3e0b88d1b14a4ede9dcf50d9c07a4ada",
+              "side": "right",
+              "linkColor": "#5FBC5C",
+              "title": "<p>​whole pictures</p>",
+              "content": "",
+              "folded": 0,
+              "link": "",
+              "children": [
+                {
+                  "uuid": "49415aa23bbd4fceb6e1d362fac5af2c",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​<img src=\"/res/7/e/1581905055411163258.png\" style=\"width: 1810px; height: 1126px; max-width: 100%; max-height: 100%;\"></p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": "",
+                  "ttW": 1810,
+                  "ttMaxW": 1810
+                },
+                {
+                  "uuid": "091dce3b4f14415d82f4ac7a8d8b3520",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​<img src=\"/res/e/8/1543563515190656051.png\" style=\"width: 850px; height: 530px; max-width: 100%; max-height: 100%;\"></p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": "",
+                  "ttMaxW": 850,
+                  "ttW": 850
+                }
+              ]
+            },
+            {
+              "uuid": "4cb1d1a7cf3247f1afd91b6179f9d267",
+              "side": "right",
+              "linkColor": "#B24BC8",
+              "title": "<p>​computing with scikit-learn</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "021dfa92cd2a431bbfc8d4304a9b572e",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​stategies to scale computationally</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "113165973ecb41d7809db590aa4a9efa",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​computational performance</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "3ba6a6271f184d129321e9841d5f5e43",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​parallelism, resource management and configuration</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            },
+            {
+              "uuid": "4a7e6b52687644fbb4a3e730c37b7963",
+              "side": "right",
+              "linkColor": "#E08370",
+              "title": "<p>​supervised learning</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "d55fb26f66fd4bf7b5d87d46e1a82760",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​classification</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "be002c7f4efb4ed5a96c8abd5d9b3a75",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​supervised learning</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "b760a197425d4ab9a343142c2d218447",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​SVM</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "558f4b0a4f554a41b25dfcd025a3b915",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><mi>min</mi><mo>⁡</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi mathvariant=\"normal\">∥</mi><mi>w</mi><msup><mi mathvariant=\"normal\">∥</mi><mn>2</mn></msup><mtext>&nbsp;subject&nbsp;to&nbsp;</mtext><msub><mi>y</mi><mi>i</mi></msub><mo>(</mo><msub><mi>w</mi><mi>i</mi></msub><mi>x</mi><mo>+</mo><mi>b</mi><mo>)</mo><mo>≥</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">\\min \\frac{1}{2}\\|w\\|^2 \\text{ subject to } y_i(w_ix+b)\\geq 1</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.190108em;vertical-align:-0.345em;\"></span><span class=\"mop\">min</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.845108em;\"><span style=\"top:-2.6550000000000002em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">2</span></span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.394em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">1</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.345em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mord\">∥</span><span class=\"mord mathit\" style=\"margin-right:0.02691em;\">w</span><span class=\"mord\"><span class=\"mord\">∥</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141079999999999em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mord text\"><span class=\"mord\">&nbsp;subject&nbsp;to&nbsp;</span></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.03588em;\">y</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.02691em;\">w</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.02691em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mord mathit\">x</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathit\">b</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">≥</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">1</span></span></span></span>&nbsp;</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "63d62bdf9daa4ee0b48dec6dd9a2f101",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​Lagrangian duality, KKT condition</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "eb0440363e19424fa6f3fc690b610815",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><mi>max</mi><mo>⁡</mo><mi>W</mi><mo>(</mo><mi>a</mi><mo>)</mo><mo>=</mo><mi>max</mi><mo>⁡</mo><mrow><mo fence=\"true\">(</mo><msub><mo>∑</mo><mi>i</mi></msub><msub><mi>a</mi><mi>i</mi></msub><mo>+</mo><msub><mo>∑</mo><mrow><mi>i</mi><mo separator=\"true\">,</mo><mi>j</mi></mrow></msub><msub><mi>a</mi><mi>i</mi></msub><msub><mi>a</mi><mi>j</mi></msub><msubsup><mi>x</mi><mi>i</mi><mi>T</mi></msubsup><msub><mi>x</mi><mi>j</mi></msub><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">\\max W(a) = \\max \\left( \\sum_{i} a_i + \\sum_{i,j}a_ia_jx_i^Tx_j \\right)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mop\">max</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathit\" style=\"margin-right:0.13889em;\">W</span><span class=\"mopen\">(</span><span class=\"mord mathit\">a</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.80002em;vertical-align:-0.65002em;\"></span><span class=\"mop\">max</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"minner\"><span class=\"mopen delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size2\">(</span></span><span class=\"mop\"><span class=\"mop op-symbol small-op\" style=\"position:relative;top:-0.0000050000000000050004em;\">∑</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.16195399999999993em;\"><span style=\"top:-2.40029em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\">i</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.29971000000000003em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathit\">a</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mop\"><span class=\"mop op-symbol small-op\" style=\"position:relative;top:-0.0000050000000000050004em;\">∑</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.16195399999999993em;\"><span style=\"top:-2.40029em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\">i</span><span class=\"mpunct mtight\">,</span><span class=\"mord mathit mtight\" style=\"margin-right:0.05724em;\">j</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.43581800000000004em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathit\">a</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord mathit\">a</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.311664em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.05724em;\">j</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.286108em;\"><span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord mathit\">x</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8413309999999999em;\"><span style=\"top:-2.441336em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">i</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.13889em;\">T</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.258664em;\"><span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord mathit\">x</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.311664em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.05724em;\">j</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.286108em;\"><span></span></span></span></span></span></span><span class=\"mclose delimcenter\" style=\"top:0em;\"><span class=\"delimsizing size2\">)</span></span></span></span></span></span>&nbsp;</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "710e6fc0d6334d25833ec614de95a9ea",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​kernel</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "ff8e7a79393046279f4d13af16591599",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><mtext>replace </mtext><msub><mi>x</mi><mi>i</mi></msub><mtext> with </mtext><mi mathvariant=\"normal\">Φ</mi><mo>(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>)</mo></mrow><annotation encoding=\"application/x-tex\">\\text{replace } x_i \\text{ with } \\Phi(x_i)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord text\"><span class=\"mord\">replace </span></span><span class=\"mord\"><span class=\"mord mathit\">x</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mord text\"><span class=\"mord\"> with </span></span><span class=\"mord\">Φ</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathit\">x</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>&nbsp;",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "3e781a5d334e4f70a20a4dded8f5a3ad",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​Gaussian kernel</p>",
+                                  "content": "",
+                                  "children": [
+                                    {
+                                      "uuid": "1ce0089a85254c8a86abcd7183a81661",
+                                      "side": "right",
+                                      "linkColor": "",
+                                      "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><mi>k</mi><mo>(</mo><mi>x</mi><mo separator=\"true\">,</mo><mi>y</mi><mo>)</mo><mo>=</mo><msup><mi>e</mi><mrow><mo>−</mo><mi mathvariant=\"normal\">∥</mi><mi>x</mi><mo>−</mo><mi>y</mi><msup><mi mathvariant=\"normal\">∥</mi><mn>2</mn></msup><mi mathvariant=\"normal\">/</mi><mn>2</mn><msup><mi>σ</mi><mn>2</mn></msup></mrow></msup></mrow><annotation encoding=\"application/x-tex\">k(x,y) = e^{-\\|x-y\\|^2/2\\sigma^2}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathit\" style=\"margin-right:0.03148em;\">k</span><span class=\"mopen\">(</span><span class=\"mord mathit\">x</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathit\" style=\"margin-right:0.03588em;\">y</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.9869199999999998em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathit\">e</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.9869199999999998em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">−</span><span class=\"mord mtight\">∥</span><span class=\"mord mathit mtight\">x</span><span class=\"mbin mtight\">−</span><span class=\"mord mathit mtight\" style=\"margin-right:0.03588em;\">y</span><span class=\"mord mtight\"><span class=\"mord mtight\">∥</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8913142857142857em;\"><span style=\"top:-2.931em;margin-right:0.07142857142857144em;\"><span class=\"pstrut\" style=\"height:2.5em;\"></span><span class=\"sizing reset-size3 size1 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mord mtight\">/</span><span class=\"mord mtight\">2</span><span class=\"mord mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.03588em;\">σ</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8913142857142857em;\"><span style=\"top:-2.931em;margin-right:0.07142857142857144em;\"><span class=\"pstrut\" style=\"height:2.5em;\"></span><span class=\"sizing reset-size3 size1 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>&nbsp;</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ],
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "1d9fade1d5934b16b7575f8fb8220d75",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "radial basis functions",
+                                  "content": "",
+                                  "children": [
+                                    {
+                                      "uuid": "5cf2bd4f7b974670a9688df14cd7b895",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><msub><mi>ϕ</mi><mi>j</mi></msub><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mi>h</mi><mo>(</mo><mi mathvariant=\"normal\">∥</mi><mi>x</mi><mo>−</mo><msub><mi>μ</mi><mi>j</mi></msub><mi mathvariant=\"normal\">∥</mi><mo>)</mo></mrow><annotation encoding=\"application/x-tex\">\\phi_j(x) = h(\\|x-\\mu_j\\|)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.036108em;vertical-align:-0.286108em;\"></span><span class=\"mord\"><span class=\"mord mathit\">ϕ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.311664em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.05724em;\">j</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.286108em;\"><span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathit\">x</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathit\">h</span><span class=\"mopen\">(</span><span class=\"mord\">∥</span><span class=\"mord mathit\">x</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.036108em;vertical-align:-0.286108em;\"></span><span class=\"mord\"><span class=\"mord mathit\">μ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.311664em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.05724em;\">j</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.286108em;\"><span></span></span></span></span></span></span><span class=\"mord\">∥</span><span class=\"mclose\">)</span></span></span></span>&nbsp;</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ],
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "53cfaf2cb08c4439b43e1f6966c1c526",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​soft margin</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "0c8027b65778433b8cd1d1dc9482260f",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​non-seperable data</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "588b26693d6541108c2346fd63318594",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><mi>min</mi><mo>⁡</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi mathvariant=\"normal\">∥</mi><mi>w</mi><msup><mi mathvariant=\"normal\">∥</mi><mn>2</mn></msup><mo>+</mo><mi>C</mi><msub><mo>∑</mo><mi>i</mi></msub><msub><mi>ξ</mi><mi>i</mi></msub><mtext>&nbsp;subject&nbsp;to&nbsp;</mtext><msub><mi>y</mi><mi>i</mi></msub><mo>(</mo><msub><mi>w</mi><mi>i</mi></msub><mi>x</mi><mo>+</mo><mi>b</mi><mo>)</mo><mo>≥</mo><mn>1</mn><mo>−</mo><msub><mi>ξ</mi><mi>i</mi></msub><mo separator=\"true\">,</mo><msub><mi>ξ</mi><mi>i</mi></msub><mo>≥</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">\\min \\frac{1}{2}\\|w\\|^2 + C \\sum_i \\xi_i \\text{ subject to } y_i(w_ix+b) \\geq 1 - \\xi_i, \\xi_i\\geq 0</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.190108em;vertical-align:-0.345em;\"></span><span class=\"mop\">min</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.845108em;\"><span style=\"top:-2.6550000000000002em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">2</span></span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.394em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">1</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.345em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mord\">∥</span><span class=\"mord mathit\" style=\"margin-right:0.02691em;\">w</span><span class=\"mord\"><span class=\"mord\">∥</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141079999999999em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0497100000000001em;vertical-align:-0.29971000000000003em;\"></span><span class=\"mord mathit\" style=\"margin-right:0.07153em;\">C</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mop\"><span class=\"mop op-symbol small-op\" style=\"position:relative;top:-0.0000050000000000050004em;\">∑</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.16195399999999993em;\"><span style=\"top:-2.40029em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.29971000000000003em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.04601em;\">ξ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.04601em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mord text\"><span class=\"mord\">&nbsp;subject&nbsp;to&nbsp;</span></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.03588em;\">y</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.02691em;\">w</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.02691em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mord mathit\">x</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathit\">b</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">≥</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.72777em;vertical-align:-0.08333em;\"></span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.04601em;\">ξ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.04601em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.04601em;\">ξ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.04601em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">≥</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">0</span></span></span></span>&nbsp;</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "afa55486014442ddb9074cbeb7cc394f",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​naive bayes</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "15352cfe403b41bd8c312884b674c5f7",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><mi>P</mi><mo>(</mo><mi>Y</mi><mi mathvariant=\"normal\">∣</mi><mi>X</mi><mo>)</mo><mo>=</mo><mfrac><mrow><mi>P</mi><mo>(</mo><mi>X</mi><mi mathvariant=\"normal\">∣</mi><mi>Y</mi><mo>)</mo><mi>P</mi><mo>(</mo><mi>Y</mi><mo>)</mo></mrow><mrow><mi>P</mi><mo>(</mo><mi>X</mi><mo>)</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">P(Y|X) = \\frac{P(X|Y)P(Y)}{P(X)}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathit\" style=\"margin-right:0.13889em;\">P</span><span class=\"mopen\">(</span><span class=\"mord mathit\" style=\"margin-right:0.22222em;\">Y</span><span class=\"mord\">∣</span><span class=\"mord mathit\" style=\"margin-right:0.07847em;\">X</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.53em;vertical-align:-0.52em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.01em;\"><span style=\"top:-2.655em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.13889em;\">P</span><span class=\"mopen mtight\">(</span><span class=\"mord mathit mtight\" style=\"margin-right:0.07847em;\">X</span><span class=\"mclose mtight\">)</span></span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.485em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.13889em;\">P</span><span class=\"mopen mtight\">(</span><span class=\"mord mathit mtight\" style=\"margin-right:0.07847em;\">X</span><span class=\"mord mtight\">∣</span><span class=\"mord mathit mtight\" style=\"margin-right:0.22222em;\">Y</span><span class=\"mclose mtight\">)</span><span class=\"mord mathit mtight\" style=\"margin-right:0.13889em;\">P</span><span class=\"mopen mtight\">(</span><span class=\"mord mathit mtight\" style=\"margin-right:0.22222em;\">Y</span><span class=\"mclose mtight\">)</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.52em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span></span></span></span>&nbsp;</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "1675196971534d68922bca2be792902b",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​features are independent</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "4341313263ae452facc6d9abc44a0018",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><mi>P</mi><mo>(</mo><mi>X</mi><mi mathvariant=\"normal\">∣</mi><mi>Y</mi><mo>)</mo><mo>=</mo><msub><mo>∏</mo><mi>i</mi></msub><mi>P</mi><mo>(</mo><msub><mi>x</mi><mi>i</mi></msub><mi mathvariant=\"normal\">∣</mi><mi>Y</mi><mo>)</mo></mrow><annotation encoding=\"application/x-tex\">P(X|Y) = \\prod_i P(x_i|Y)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathit\" style=\"margin-right:0.13889em;\">P</span><span class=\"mopen\">(</span><span class=\"mord mathit\" style=\"margin-right:0.07847em;\">X</span><span class=\"mord\">∣</span><span class=\"mord mathit\" style=\"margin-right:0.22222em;\">Y</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0497100000000001em;vertical-align:-0.29971000000000003em;\"></span><span class=\"mop\"><span class=\"mop op-symbol small-op\" style=\"position:relative;top:-0.0000050000000000050004em;\">∏</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.16195399999999993em;\"><span style=\"top:-2.40029em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.29971000000000003em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathit\" style=\"margin-right:0.13889em;\">P</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathit\">x</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mord\">∣</span><span class=\"mord mathit\" style=\"margin-right:0.22222em;\">Y</span><span class=\"mclose\">)</span></span></span></span>&nbsp;</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "17384d49c1b44231a3a5c8b9ba8ba081",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​decision tree</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "b8106d1436f04210902a6f0434ad2e3a",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "non-parametric",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "60e36dd2f467400a8954846b48d06466",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "Purity Measures",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "dffdb863fa5045ffadc15b150eb09e95",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​entropy</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "29170ff3143b430b9af7e011e3a6fe7f",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​variance measure</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "baa33e9f3abe4614a6fccac099e70f92",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>​for a two class problem</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "d624d6c1b6ed4c45bc7c6fd761b8c294",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​Gini measure</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "b9c99dc41fa74d89adf61ba46deb7659",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​misclassification measure</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "37789b00c24342dc9cf07abfbf659b9e",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​RandomForest</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "9c97e36b3d884b769bdef7c5c0740014",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​GBDT</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "f027776879b749d58993621c9f6793e6",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "梯度下降树",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "5c5716a6a2394f918e49eda83b6a0017",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>​XGBoosting</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "325c4363409b4c748065562874fce6d5",
+                                  "side": "",
+                                  "linkColor": "",
+                                  "title": "<p>基本思想</p>",
+                                  "content": "",
+                                  "folded": 0,
+                                  "link": "",
+                                  "children": [
+                                    {
+                                      "uuid": "37a300fe29e740569ef567373959bfa8",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "贪心法，逐棵树进行学习，每棵树拟合之前模型的偏差",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "76942cc3a6bd4f1ca8ce442563c0ce32",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​Logistic regression</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "9aa251d86337454685a332045f0e7c07",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​cost function</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "e1cda6b516f947d4a700b61d7a909710",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><msub><mi>y</mi><mi>i</mi></msub><mi>log</mi><mo>⁡</mo><msub><mover accent=\"true\"><mi>y</mi><mo>^</mo></mover><mi>i</mi></msub><mo>+</mo><mo>(</mo><mn>1</mn><mo>−</mo><msub><mi>y</mi><mi>i</mi></msub><mo>)</mo><mi>log</mi><mo>⁡</mo><mo>(</mo><mn>1</mn><mo>−</mo><msub><mover accent=\"true\"><mi>y</mi><mo>^</mo></mover><mi>i</mi></msub><mo>)</mo></mrow><annotation encoding=\"application/x-tex\">y_i\\log\\hat{y}_i + (1-y_i)\\log (1-\\hat{y}_i)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.03588em;\">&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><mo>−</mo><mo>[</mo></mrow><annotation encoding=\"application/x-tex\">-[</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">−</span><span class=\"mopen\">[</span></span></span></span>&nbsp;y</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mop\">lo<span style=\"margin-right:0.01389em;\">g</span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord accent\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.69444em;\"><span style=\"top:-3em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.03588em;\">y</span></span></span><span style=\"top:-3em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"accent-body\" style=\"left:-0.19444em;\">^</span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.19444em;\"><span></span></span></span></span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.03588em;\">y</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mop\">lo<span style=\"margin-right:0.01389em;\">g</span></span><span class=\"mopen\">(</span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord accent\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.69444em;\"><span style=\"top:-3em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.03588em;\">y</span></span></span><span style=\"top:-3em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"accent-body\" style=\"left:-0.19444em;\">^</span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.19444em;\"><span></span></span></span></span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><mo>]</mo></mrow><annotation encoding=\"application/x-tex\">]</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mclose\">]</span></span></span></span>&nbsp;&nbsp;&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><mo>]</mo></mrow><annotation encoding=\"application/x-tex\">]&nbsp;</annotation></semantics></math><span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><mo>]</mo></mrow><annotation encoding=\"application/x-tex\">]</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mclose\">]</span></span></span></span>&nbsp;</span><br></span></p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "e99b5948b6c144078b544700069bfcf5",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​cross entropy 交叉熵</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "d1eb88c6d3c741a9842075dcce1de150",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><mi>H</mi><mo>(</mo><mi>p</mi><mo separator=\"true\">,</mo><mi>q</mi><mo>)</mo><mo>=</mo><mo>−</mo><msub><mo>∑</mo><mi>x</mi></msub><mi>p</mi><mo>(</mo><mi>x</mi><mo>)</mo><mi>log</mi><mo>⁡</mo><mi>q</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow><annotation encoding=\"application/x-tex\">H(p,q) = -\\sum_{x} p(x)\\log q(x)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathit\" style=\"margin-right:0.08125em;\">H</span><span class=\"mopen\">(</span><span class=\"mord mathit\">p</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathit\" style=\"margin-right:0.03588em;\">q</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0497100000000001em;vertical-align:-0.29971000000000003em;\"></span><span class=\"mord\">−</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mop\"><span class=\"mop op-symbol small-op\" style=\"position:relative;top:-0.0000050000000000050004em;\">∑</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.0016819999999999613em;\"><span style=\"top:-2.40029em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\">x</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.29971000000000003em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathit\">p</span><span class=\"mopen\">(</span><span class=\"mord mathit\">x</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mop\">lo<span style=\"margin-right:0.01389em;\">g</span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathit\" style=\"margin-right:0.03588em;\">q</span><span class=\"mopen\">(</span><span class=\"mord mathit\">x</span><span class=\"mclose\">)</span></span></span></span>&nbsp;</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "8d95974e2437477c813dd8d830dedbfe",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​likelihood</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "cd56df98a736435cae866aa5ace694e9",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><mi>L</mi><mo>(</mo><mi>θ</mi><mi mathvariant=\"normal\">∣</mi><mi>x</mi><mo>)</mo><mo>=</mo><mi>P</mi><mo>(</mo><mi>X</mi><mo>=</mo><mi>x</mi><mi mathvariant=\"normal\">∣</mi><mi>θ</mi><mo>)</mo></mrow><annotation encoding=\"application/x-tex\">L(\\theta|x) = P(X=x|\\theta)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathit\">L</span><span class=\"mopen\">(</span><span class=\"mord mathit\" style=\"margin-right:0.02778em;\">θ</span><span class=\"mord\">∣</span><span class=\"mord mathit\">x</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathit\" style=\"margin-right:0.13889em;\">P</span><span class=\"mopen\">(</span><span class=\"mord mathit\" style=\"margin-right:0.07847em;\">X</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathit\">x</span><span class=\"mord\">∣</span><span class=\"mord mathit\" style=\"margin-right:0.02778em;\">θ</span><span class=\"mclose\">)</span></span></span></span>&nbsp;</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "d52cb1eb852544f29cde759f91aa4983",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​generalization to multi-class</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "1fa913ac168a43d3bca8e9ff7053be6b",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​softmax</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "2c52f8aed8f7432781d589b119ae4841",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​regression</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "d53981c880624b5d9fbf4d6b28f62ee9",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​from sklearn import linear_model</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "54d2170e92474477912a77c8b65c40c4",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​Ordinary Least Squares(OLS)</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "418c33e5624b4a0dae5d9af1308404fd",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​linear_model.LinearRegression()</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "ec119a91d18448ae93523683be11e741",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​理论部分</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "8a91eeac06324641922df5e751c82f66",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>假设</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "a1e4a4ca0bf24a8387bdfbce49a4f330",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>自变量和因变量​线性性</p>",
+                                  "content": "",
+                                  "children": [
+                                    {
+                                      "uuid": "48bd5ac2bf6247ee9be4a79de601035f",
+                                      "side": "right",
+                                      "linkColor": "",
+                                      "title": "<p>​不能很好描述非线性关系，会有很大的泛化误差</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ],
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "8e711e7b1c594cf5ba1b2208284c5b41",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​自变量相互独立</p>",
+                                  "content": "",
+                                  "children": [
+                                    {
+                                      "uuid": "725594813df94c0998e7f6aedac82d8f",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "当多重共线性性出现的时候，变量之间的联动关系会导致我们测得的标准差偏大，置信区间变宽",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ],
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "e7774e7491fa42ecb00baa60106eeed3",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​误差独立同分布（高斯分布）</p>",
+                                  "content": "",
+                                  "children": [
+                                    {
+                                      "uuid": "6a33a0de19834269b41eb3be39d82895",
+                                      "side": "",
+                                      "linkColor": "",
+                                      "title": "<p>自相关性经常发生于时间序列数据集上，后项会受到前项的影响。当自相关性发生的时候，我们测得的标准差往往会偏小，进而会导致置信区间变窄</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": "",
+                                      "ttMaxW": 532,
+                                      "ttW": 532
+                                    }
+                                  ],
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "5c4ed894ed7c41f99321493b49be4c1f",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​假设检验</p>",
+                              "content": "",
+                              "children": [
+                                {
+                                  "uuid": "8830a3ae5a7444dc844e94240b89e4b1",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><mi>R</mi><mi>S</mi><mi>S</mi><mo>=</mo><msub><mo>∑</mo><mi>k</mi></msub><msubsup><mi>e</mi><mi>k</mi><mn>2</mn></msubsup></mrow><annotation encoding=\"application/x-tex\">RSS = \\sum_k e_k^2</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathit\" style=\"margin-right:0.00773em;\">R</span><span class=\"mord mathit\" style=\"margin-right:0.05764em;\">S</span><span class=\"mord mathit\" style=\"margin-right:0.05764em;\">S</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.113818em;vertical-align:-0.29971000000000003em;\"></span><span class=\"mop\"><span class=\"mop op-symbol small-op\" style=\"position:relative;top:-0.0000050000000000050004em;\">∑</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1863979999999999em;\"><span style=\"top:-2.40029em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.03148em;\">k</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.29971000000000003em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathit\">e</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141079999999999em;\"><span style=\"top:-2.4168920000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.03148em;\">k</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2831079999999999em;\"><span></span></span></span></span></span></span></span></span></span>&nbsp;</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "9b4a8d9a40744640bad46b583864b285",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><mi>R</mi><mi>S</mi><mi>E</mi><mo>=</mo><msqrt><mfrac><mrow><mi>R</mi><mi>S</mi><mi>S</mi></mrow><mrow><mi>n</mi><mo>−</mo><mn>2</mn></mrow></mfrac></msqrt></mrow><annotation encoding=\"application/x-tex\">RSE = \\sqrt{\\frac{RSS}{n-2}}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathit\" style=\"margin-right:0.00773em;\">R</span><span class=\"mord mathit\" style=\"margin-right:0.05764em;\">S</span><span class=\"mord mathit\" style=\"margin-right:0.05764em;\">E</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.8399999999999999em;vertical-align:-0.6204999999999999em;\"></span><span class=\"mord sqrt\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.2195em;\"><span class=\"svg-align\" style=\"top:-3.8em;\"><span class=\"pstrut\" style=\"height:3.8em;\"></span><span class=\"mord\" style=\"padding-left:1em;\"><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.872331em;\"><span style=\"top:-2.655em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\">n</span><span class=\"mbin mtight\">−</span><span class=\"mord mtight\">2</span></span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.394em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.00773em;\">R</span><span class=\"mord mathit mtight\" style=\"margin-right:0.05764em;\">S</span><span class=\"mord mathit mtight\" style=\"margin-right:0.05764em;\">S</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.403331em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span></span></span><span style=\"top:-3.1795em;\"><span class=\"pstrut\" style=\"height:3.8em;\"></span><span class=\"hide-tail\" style=\"min-width:1.02em;height:1.8800000000000001em;\"><svg width=\"400em\" height=\"1.8800000000000001em\" viewBox=\"0 0 400000 1944\" preserveAspectRatio=\"xMinYMin slice\"><path d=\"M1001,80H400000v40H1013.1s-83.4,268,-264.1,840c-180.7,\n572,-277,876.3,-289,913c-4.7,4.7,-12.7,7,-24,7s-12,0,-12,0c-1.3,-3.3,-3.7,-11.7,\n-7,-25c-35.3,-125.3,-106.7,-373.3,-214,-744c-10,12,-21,25,-33,39s-32,39,-32,39\nc-6,-5.3,-15,-14,-27,-26s25,-30,25,-30c26.7,-32.7,52,-63,76,-91s52,-60,52,-60\ns208,722,208,722c56,-175.3,126.3,-397.3,211,-666c84.7,-268.7,153.8,-488.2,207.5,\n-658.5c53.7,-170.3,84.5,-266.8,92.5,-289.5c4,-6.7,10,-10,18,-10z\nM1001 80H400000v40H1013z\"></path></svg></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6204999999999999em;\"><span></span></span></span></span></span></span></span></span>&nbsp;</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "7eaf1ec81d824a72b137895cf6958039",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​系数检验</p>",
+                                  "content": "",
+                                  "children": [
+                                    {
+                                      "uuid": "c2e92f68ce744b429495dad96b2d1587",
+                                      "side": "right",
+                                      "linkColor": "",
+                                      "title": "<p>​置信区间</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ],
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "1e98490c506049a394e2458edeeec3f5",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​模型准确度</p>",
+                                  "content": "",
+                                  "children": [
+                                    {
+                                      "uuid": "9fb10f0988724204a1ada829284d2731",
+                                      "side": "right",
+                                      "linkColor": "",
+                                      "title": "<p>​RSE,&nbsp;&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><msup><mi>R</mi><mn>2</mn></msup><mo separator=\"true\">,</mo><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">R^2, F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.008548em;vertical-align:-0.19444em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.00773em;\">R</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141079999999999em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathit\" style=\"margin-right:0.13889em;\">F</span></span></span></span>&nbsp;</p>",
+                                      "content": "",
+                                      "children": null,
+                                      "folded": 0,
+                                      "link": ""
+                                    }
+                                  ],
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ],
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "c56b311bacc64dc18430e2935d27823f",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><mi>m</mi><mi>i</mi><mi>n</mi><mi mathvariant=\"normal\">∥</mi><mi>X</mi><mi>w</mi><mo>−</mo><mi>y</mi><msubsup><mi mathvariant=\"normal\">∥</mi><mn>2</mn><mn>2</mn></msubsup></mrow><annotation encoding=\"application/x-tex\">min \\|Xw-y  \\|_2^2</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathit\">m</span><span class=\"mord mathit\">i</span><span class=\"mord mathit\">n</span><span class=\"mord\">∥</span><span class=\"mord mathit\" style=\"margin-right:0.07847em;\">X</span><span class=\"mord mathit\" style=\"margin-right:0.02691em;\">w</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.064108em;vertical-align:-0.25em;\"></span><span class=\"mord mathit\" style=\"margin-right:0.03588em;\">y</span><span class=\"mord\"><span class=\"mord\">∥</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141079999999999em;\"><span style=\"top:-2.4518920000000004em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.24810799999999997em;\"><span></span></span></span></span></span></span></span></span></span>&nbsp;</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "bfb3638b053f4953be14d251245e5141",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​The coefficient estimates for OLS rely on the independence of the features</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": "",
+                          "ttW": 532,
+                          "ttMaxW": 532
+                        },
+                        {
+                          "uuid": "7d83951e7b2d4343b0b473aef79debff",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>the least-squares estimate becomes highly sensitive to random errors in the observed target, producing a large variance</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "d9ec6ba87c944ddf9aa5b4df06fc52dc",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><msup><mi>L</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">L^2</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8141079999999999em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathit\">L</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141079999999999em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span></span></span></span>&nbsp;regularization​-Ridge Regression</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "3c9934fb3f0f48989ca198f27b647e6d",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​linear_model.Ridge(alpha=.5)</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "42f83c3acce645e79b09b69aefd1b5c6",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><mi>m</mi><mi>i</mi><mi>n</mi><mi mathvariant=\"normal\">∥</mi><mi>X</mi><mi>w</mi><mo>−</mo><mi>y</mi><msubsup><mi mathvariant=\"normal\">∥</mi><mn>2</mn><mn>2</mn></msubsup><mo>+</mo><mi>α</mi><mi mathvariant=\"normal\">∥</mi><mi>w</mi><msubsup><mi mathvariant=\"normal\">∥</mi><mn>2</mn><mn>2</mn></msubsup></mrow><annotation encoding=\"application/x-tex\">min \\|Xw-y  \\|_2^2 + \\alpha \\|w \\|_2^2</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathit\">m</span><span class=\"mord mathit\">i</span><span class=\"mord mathit\">n</span><span class=\"mord\">∥</span><span class=\"mord mathit\" style=\"margin-right:0.07847em;\">X</span><span class=\"mord mathit\" style=\"margin-right:0.02691em;\">w</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.064108em;vertical-align:-0.25em;\"></span><span class=\"mord mathit\" style=\"margin-right:0.03588em;\">y</span><span class=\"mord\"><span class=\"mord\">∥</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141079999999999em;\"><span style=\"top:-2.4518920000000004em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.24810799999999997em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.064108em;vertical-align:-0.25em;\"></span><span class=\"mord mathit\" style=\"margin-right:0.0037em;\">α</span><span class=\"mord\">∥</span><span class=\"mord mathit\" style=\"margin-right:0.02691em;\">w</span><span class=\"mord\"><span class=\"mord\">∥</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141079999999999em;\"><span style=\"top:-2.4518920000000004em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.24810799999999997em;\"><span></span></span></span></span></span></span></span></span></span>&nbsp;</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "43f6e74279a9435f99a84433926895a7",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​ impose a penalty on the size of the coefficients</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "666b268728fb42beb2c9581960809c99",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><msup><mi>L</mi><mn>1</mn></msup></mrow><annotation encoding=\"application/x-tex\">L^1</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8141079999999999em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathit\">L</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141079999999999em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span></span></span></span></span></span></span></span>&nbsp;regularization</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "90f90dde0c094878b84765da90d4f5b0",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​the coefficients will be sparse</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "023a63fc03ed4e3d86c1a14501f5a9cc",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​near zero, the gradient is not zero</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "5336d6d3034c466e9e3e411e05983fa5",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​Bayesian regression</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "dcd3ba97a40b43a7a1218eec7e47d7ff",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><mi>p</mi><mo>(</mo><mi>y</mi><mi mathvariant=\"normal\">∣</mi><mi>X</mi><mo separator=\"true\">,</mo><mi>w</mi><mo separator=\"true\">,</mo><mi>α</mi><mo>)</mo><mo>=</mo><mi mathvariant=\"script\">N</mi><mo>(</mo><mi>y</mi><mi mathvariant=\"normal\">∣</mi><mi>X</mi><mi>w</mi><mo separator=\"true\">,</mo><mi>α</mi><mo>)</mo></mrow><annotation encoding=\"application/x-tex\">p(y|X,w,\\alpha) = \\mathcal{N}(y|Xw,\\alpha)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathit\">p</span><span class=\"mopen\">(</span><span class=\"mord mathit\" style=\"margin-right:0.03588em;\">y</span><span class=\"mord\">∣</span><span class=\"mord mathit\" style=\"margin-right:0.07847em;\">X</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathit\" style=\"margin-right:0.02691em;\">w</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathit\" style=\"margin-right:0.0037em;\">α</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathcal\" style=\"margin-right:0.14736em;\">N</span></span><span class=\"mopen\">(</span><span class=\"mord mathit\" style=\"margin-right:0.03588em;\">y</span><span class=\"mord\">∣</span><span class=\"mord mathit\" style=\"margin-right:0.07847em;\">X</span><span class=\"mord mathit\" style=\"margin-right:0.02691em;\">w</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathit\" style=\"margin-right:0.0037em;\">α</span><span class=\"mclose\">)</span></span></span></span>&nbsp;</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "eeb5a41cd2ad4bf7a9d4c5df1b0e6893",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​polynomial regression</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            },
+            {
+              "uuid": "b61be402de4e4a52b52892fde3b79d87",
+              "side": "right",
+              "linkColor": "#B24BC8",
+              "title": "<p>​unsupervised learning</p>",
+              "content": "",
+              "folded": 0,
+              "link": "",
+              "children": [
+                {
+                  "uuid": "b97a843bd6914b3c9d77729f69283b47",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​clustering</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "172855f3bceb4beeafbf0ab6f085486a",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​k-means</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "2d78fdf1043a4925bd57497daad8660e",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​instance learning</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "da035f6783164b22b400628b6134c27d",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><mi>J</mi><mo>=</mo><msub><mo>∑</mo><mi>n</mi></msub><msub><mo>∑</mo><mi>k</mi></msub><msub><mi>r</mi><mrow><mi>n</mi><mi>k</mi></mrow></msub><mi mathvariant=\"normal\">∥</mi><msub><mi>x</mi><mi>n</mi></msub><mo>−</mo><msub><mi>μ</mi><mi>k</mi></msub><msup><mi mathvariant=\"normal\">∥</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">J = \\sum_n\\sum_k r_{nk} \\|x_n-\\mu_k\\|^2</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathit\" style=\"margin-right:0.09618em;\">J</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0497100000000001em;vertical-align:-0.29971000000000003em;\"></span><span class=\"mop\"><span class=\"mop op-symbol small-op\" style=\"position:relative;top:-0.0000050000000000050004em;\">∑</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.0016819999999999613em;\"><span style=\"top:-2.40029em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.29971000000000003em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mop\"><span class=\"mop op-symbol small-op\" style=\"position:relative;top:-0.0000050000000000050004em;\">∑</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1863979999999999em;\"><span style=\"top:-2.40029em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.03148em;\">k</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.29971000000000003em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.02778em;\">r</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.33610799999999996em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.02778em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\">n</span><span class=\"mord mathit mtight\" style=\"margin-right:0.03148em;\">k</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mord\">∥</span><span class=\"mord\"><span class=\"mord mathit\">x</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.064108em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathit\">μ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.33610799999999996em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.03148em;\">k</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord\">∥</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141079999999999em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span></span></span></span>&nbsp;</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "50815c95edf64e0eaf43f5741d0e0640",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​Gaussian mixture</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "f43111e0b95d4651a57b379469de2b30",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><mi>p</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><msub><mo>∑</mo><mi>k</mi></msub><msub><mi>π</mi><mi>k</mi></msub><mi mathvariant=\"script\">N</mi><mo>(</mo><mi>x</mi><mi mathvariant=\"normal\">∣</mi><msub><mi>μ</mi><mi>k</mi></msub><mo separator=\"true\">,</mo><msub><mi mathvariant=\"normal\">Σ</mi><mi>k</mi></msub><mo>)</mo><mo separator=\"true\">,</mo><msub><mo>∑</mo><mi>k</mi></msub><msub><mi>π</mi><mi>k</mi></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">p(x) = \\sum_k \\pi_k \\mathcal{N}(x|\\mu_k,\\Sigma_k), \\sum_k\\pi_k = 1</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathit\">p</span><span class=\"mopen\">(</span><span class=\"mord mathit\">x</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0497100000000001em;vertical-align:-0.29971000000000003em;\"></span><span class=\"mop\"><span class=\"mop op-symbol small-op\" style=\"position:relative;top:-0.0000050000000000050004em;\">∑</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1863979999999999em;\"><span style=\"top:-2.40029em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.03148em;\">k</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.29971000000000003em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.03588em;\">π</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.33610799999999996em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.03148em;\">k</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord mathcal\" style=\"margin-right:0.14736em;\">N</span></span><span class=\"mopen\">(</span><span class=\"mord mathit\">x</span><span class=\"mord\">∣</span><span class=\"mord\"><span class=\"mord mathit\">μ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.33610799999999996em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.03148em;\">k</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord\">Σ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.33610799999999996em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.03148em;\">k</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mop\"><span class=\"mop op-symbol small-op\" style=\"position:relative;top:-0.0000050000000000050004em;\">∑</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1863979999999999em;\"><span style=\"top:-2.40029em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.03148em;\">k</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.29971000000000003em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.03588em;\">π</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.33610799999999996em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.03148em;\">k</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">1</span></span></span></span>&nbsp;</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "cccf9d773c694191bdd43387dcc9052a",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>general form</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "f3d83c49dddd45898be624f9676f0b52",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><mi>p</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><msub><mo>∑</mo><mi>k</mi></msub><mi>p</mi><mo>(</mo><mi>x</mi><mi mathvariant=\"normal\">∣</mi><msub><mi>z</mi><mi>k</mi></msub><mo>)</mo><mi>p</mi><mo>(</mo><msub><mi>z</mi><mi>k</mi></msub><mo>)</mo></mrow><annotation encoding=\"application/x-tex\">p(x) = \\sum_k p(x|z_k)p(z_k)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathit\">p</span><span class=\"mopen\">(</span><span class=\"mord mathit\">x</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0497100000000001em;vertical-align:-0.29971000000000003em;\"></span><span class=\"mop\"><span class=\"mop op-symbol small-op\" style=\"position:relative;top:-0.0000050000000000050004em;\">∑</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1863979999999999em;\"><span style=\"top:-2.40029em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.03148em;\">k</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.29971000000000003em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathit\">p</span><span class=\"mopen\">(</span><span class=\"mord mathit\">x</span><span class=\"mord\">∣</span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.04398em;\">z</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.33610799999999996em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.04398em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.03148em;\">k</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mord mathit\">p</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathit\" style=\"margin-right:0.04398em;\">z</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.33610799999999996em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.04398em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.03148em;\">k</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>&nbsp;</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "2e93a9becea740adb068bc92fe6e6fda",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​maximzie likelihood</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "5d58c4a34ae24e14b7f48bc3defcec3c",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><mi>log</mi><mo>⁡</mo><mi>p</mi><mo>(</mo><mi>X</mi><mi mathvariant=\"normal\">∣</mi><mi>π</mi><mo separator=\"true\">,</mo><mi>μ</mi><mo separator=\"true\">,</mo><mi mathvariant=\"normal\">Σ</mi><mo>)</mo><mo>=</mo><msub><mo>∑</mo><mi>k</mi></msub><mi>log</mi><mo>⁡</mo><mi>p</mi><mo>(</mo><msub><mi>x</mi><mi>k</mi></msub><mi mathvariant=\"normal\">∣</mi><mi>π</mi><mo separator=\"true\">,</mo><mi>μ</mi><mo separator=\"true\">,</mo><mi mathvariant=\"normal\">Σ</mi><mo>)</mo></mrow><annotation encoding=\"application/x-tex\">\\log p(X|\\pi, \\mu, \\Sigma) = \\sum_k \\log p(x_k|\\pi, \\mu, \\Sigma)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mop\">lo<span style=\"margin-right:0.01389em;\">g</span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathit\">p</span><span class=\"mopen\">(</span><span class=\"mord mathit\" style=\"margin-right:0.07847em;\">X</span><span class=\"mord\">∣</span><span class=\"mord mathit\" style=\"margin-right:0.03588em;\">π</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathit\">μ</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">Σ</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0497100000000001em;vertical-align:-0.29971000000000003em;\"></span><span class=\"mop\"><span class=\"mop op-symbol small-op\" style=\"position:relative;top:-0.0000050000000000050004em;\">∑</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1863979999999999em;\"><span style=\"top:-2.40029em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.03148em;\">k</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.29971000000000003em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mop\">lo<span style=\"margin-right:0.01389em;\">g</span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathit\">p</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathit\">x</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.33610799999999996em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.03148em;\">k</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mord\">∣</span><span class=\"mord mathit\" style=\"margin-right:0.03588em;\">π</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathit\">μ</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\">Σ</span><span class=\"mclose\">)</span></span></span></span>&nbsp;</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "98a9f0f38f524f8d96de42f3c04adc82",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​EM algorithm</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "dd2fe2e2aeaf4a4fbce7d07e3893761f",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​&nbsp;<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><mi>p</mi><mo>(</mo><mi>X</mi><mi mathvariant=\"normal\">∣</mi><mi>θ</mi><mo>)</mo><mo>=</mo><msub><mo>∑</mo><mi>Z</mi></msub><mi>p</mi><mo>(</mo><mi>X</mi><mo separator=\"true\">,</mo><mi>Z</mi><mi mathvariant=\"normal\">∣</mi><mi>θ</mi><mo>)</mo><mo>=</mo><msub><mo>∑</mo><mi>Z</mi></msub><mi>p</mi><mo>(</mo><mi>Z</mi><mi mathvariant=\"normal\">∣</mi><mi>X</mi><mo separator=\"true\">,</mo><mi>θ</mi><mo>)</mo><mi>p</mi><mo>(</mo><mi>X</mi><mi mathvariant=\"normal\">∣</mi><mi>θ</mi><mo>)</mo></mrow><annotation encoding=\"application/x-tex\">p(X|\\theta) = \\sum_{Z} p(X,Z|\\theta) = \\sum_{Z}p(Z|X,\\theta)p(X|\\theta)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathit\">p</span><span class=\"mopen\">(</span><span class=\"mord mathit\" style=\"margin-right:0.07847em;\">X</span><span class=\"mord\">∣</span><span class=\"mord mathit\" style=\"margin-right:0.02778em;\">θ</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0497100000000001em;vertical-align:-0.29971000000000003em;\"></span><span class=\"mop\"><span class=\"mop op-symbol small-op\" style=\"position:relative;top:-0.0000050000000000050004em;\">∑</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.17862099999999992em;\"><span style=\"top:-2.40029em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.07153em;\">Z</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.29971000000000003em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathit\">p</span><span class=\"mopen\">(</span><span class=\"mord mathit\" style=\"margin-right:0.07847em;\">X</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathit\" style=\"margin-right:0.07153em;\">Z</span><span class=\"mord\">∣</span><span class=\"mord mathit\" style=\"margin-right:0.02778em;\">θ</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0497100000000001em;vertical-align:-0.29971000000000003em;\"></span><span class=\"mop\"><span class=\"mop op-symbol small-op\" style=\"position:relative;top:-0.0000050000000000050004em;\">∑</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.17862099999999992em;\"><span style=\"top:-2.40029em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathit mtight\" style=\"margin-right:0.07153em;\">Z</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.29971000000000003em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathit\">p</span><span class=\"mopen\">(</span><span class=\"mord mathit\" style=\"margin-right:0.07153em;\">Z</span><span class=\"mord\">∣</span><span class=\"mord mathit\" style=\"margin-right:0.07847em;\">X</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathit\" style=\"margin-right:0.02778em;\">θ</span><span class=\"mclose\">)</span><span class=\"mord mathit\">p</span><span class=\"mopen\">(</span><span class=\"mord mathit\" style=\"margin-right:0.07847em;\">X</span><span class=\"mord\">∣</span><span class=\"mord mathit\" style=\"margin-right:0.02778em;\">θ</span><span class=\"mclose\">)</span></span></span></span>&nbsp;</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "95d9244477984218bc77b46782515b76",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>feature agglomeration</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "4605c738220f4e2e8b66239619b2b23f",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>merge similar features together</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "c089d280c59043f6b222a7e00d2d68f3",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>​hierarchical clustering</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "f135d1c5018f4e4e89699c7dd8e0dd05",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "MSRA use it determine the change sequence of RNA",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ]
+                },
+                {
+                  "uuid": "177730bdad7741068eeae580d8976709",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​dimension reduction</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "c991434bdda74e64adb44cd93ffde5fd",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​PCA</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "a00c800ca58b4fd287da78d6118fb1c2",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​ICA</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "uuid": "fac08bb5ce1241fe83ae1e6c47e26803",
+              "side": "right",
+              "linkColor": "#5FBC5C",
+              "title": "<p>​preprocess</p>",
+              "content": "",
+              "folded": 0,
+              "link": "",
+              "children": [
+                {
+                  "uuid": "499b0498b3dd44d98c7fcdc24330cd77",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>transformations</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "488035569e0341b9b5b77dabd7f5163b",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>Standardization</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "fd10457721fe4527afb5c20c0f948c9e",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>mean removal and variance scaling</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "3104bfe3268141f199759b1e0fedb31d",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "quantile transforms and power transforms",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "f3d0860626c642a98f146d2ca1c94c40",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​mapping to a uniform/Gaussian distribution</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": null
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "a82a886365014f54847b36c66c27e540",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "Encoding categorical features",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "053a053a1fa44a0db2f5936ec06610e0",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "Imputation of missing values",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "1c39b7b6cb3041ab900f66d85ce12856",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>loading utilities</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                }
+              ]
+            },
+            {
+              "uuid": "2487b0a7699549a7b1056b9705c9f45a",
+              "side": "right",
+              "linkColor": "#75CFDC",
+              "title": "<p>​ model selection and evaluation</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "646c24f0878e48a0a60e5e26b7448686",
+                  "side": "",
+                  "linkColor": "",
+                  "title": "Cross-validation",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "12c23214998649af87b5ad04e6c076cd",
+                  "side": "",
+                  "linkColor": "",
+                  "title": "Grid-search",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "c481d307e15f4d67bb690a7bd03e0c95",
+                  "side": "",
+                  "linkColor": "",
+                  "title": "<p>​plotting scores to evaluate models</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "f50720d8bf6840db8f7e073632c1f303",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​validation curve</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": null
+                    },
+                    {
+                      "uuid": "395132ecb7414708bd9a790e66ba5153",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​learning curve</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            },
+            {
+              "uuid": "d360587c5d2840a1bebe4cd562083f51",
+              "side": "right",
+              "linkColor": "#E08370",
+              "title": "<p>​ensemble methods</p>",
+              "content": "",
+              "folded": 0,
+              "link": "",
+              "children": [
+                {
+                  "uuid": "16baf3f2dcc2402a939561a880db0b29",
+                  "side": "",
+                  "linkColor": "",
+                  "title": "Bagging",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "cbe1d7d9a1d144e89c43c0e81821a25d",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>​bootstrap sample</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "443bd43cb5ef44aa800e5d400d1399fc",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>​eg.</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "9d20269824c447e4841f3a4769abbc1e",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "RandomForest",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "uuid": "f0843b2a8ac444d3af0a4e30eaa6ed6d",
+                  "side": "",
+                  "linkColor": "",
+                  "title": "<p>boosting</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "09c41db3eae74eac8deadc1739f4f7fa",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>fit a sequence of weak learners on repeatedly modified versions of the data</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": "",
+                      "ttW": 546,
+                      "ttMaxW": 546
+                    },
+                    {
+                      "uuid": "d2ac5eba7d03495681e74793faa06c5a",
+                      "side": "",
+                      "linkColor": "",
+                      "title": "<p>​eg.</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "a14fb691735c4561baea00096a173c10",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "AdaBoost",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "uuid": "4f612e180a834fd1903e6a268f3c425b",
+                  "side": "",
+                  "linkColor": "",
+                  "title": "<p>​stacking</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                }
+              ]
+            },
+            {
+              "uuid": "0739cd257b4d4d65acaffeb112265cc1",
+              "side": "right",
+              "linkColor": "#B24BC8",
+              "title": "<p>​text data</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "8569370211584b799ad447a98ac766da",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​bag of words</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            }
+          ],
+          "linkColor": "#C0C0C0",
+          "side": null,
+          "title": "<p>scikit-learn</p>",
+          "content": null,
+          "siblingOrder": 0,
+          "link": null,
+          "leftIcons": null,
+          "rightIcons": null,
+          "folded": false
+        }
+      ],
+      "theme": "{\"magic\":\"zmtheme:v500\",\"version\":3,\"name\":\"bg_bright_ln_color\",\"text\":\"默认多色\",\"image\":\"/images/common/theme-bg-bright-ln-color.png\",\"mapBgColor\":\"#FFFFFF\",\"mapFgColor\":\"#282828\",\"fontColor\":\"#282828\",\"rootLineColor\":\"#C0C0C0\",\"lineColors\":[\"#3A8DDF\",\"#E08370\",\"#5FBC5C\",\"#B24BC8\",\"#75CFDC\"]}",
+      "version": 1,
+      "frontendState": null,
+      "commit": 320,
+      "isDefault": false,
+      "title": "<p>中心主题</p>"
+    },
+    "zmCounter": {
+      "read": 0,
+      "voteAmount": 0,
+      "voteUp": 0,
+      "voteDown": 0,
+      "comment": 0,
+      "challenge": 0,
+      "bookmark": 0,
+      "shareAmount": 0,
+      "shareCircle": 0,
+      "shareFriends": 0,
+      "share2qq": 0,
+      "share2qzone": 0
+    }
+  },
+  "extra": null,
+  "mt": null,
+  "token": null
+}

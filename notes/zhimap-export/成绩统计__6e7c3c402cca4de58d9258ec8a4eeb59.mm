@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0.1">
+<node TEXT="成绩统计"><node TEXT="全级"><node TEXT="语文"><node TEXT="班序"></node><node TEXT="级序"></node><node TEXT="上次级序"></node><node TEXT="进退"></node></node><node TEXT="数学"></node><node TEXT="英语"></node><node TEXT="总分"></node></node><node TEXT="各班"><node TEXT="全级表各班部分"></node><node TEXT="平均分，上次，进退，最高分，最低分，级序，上次，进退"></node><node TEXT="各分数段人数"><node TEXT="语文，数学，英语"></node><node TEXT="总分"></node></node><node TEXT="各名次段人数"></node></node><node TEXT="总表"><node TEXT="总体"><node TEXT="平均分 ，最高分，最低分，标准差"></node></node><node TEXT="各班"><node TEXT="平均分，上次，进退，最高分，最低分，级序，上次，进退"></node><node TEXT="分数段"><node TEXT="总分"></node><node TEXT="语数英"></node></node><node TEXT="排名"></node></node></node></node>
+</map>

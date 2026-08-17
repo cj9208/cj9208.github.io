@@ -1,0 +1,666 @@
+RAG-based chatbot design
+- modularized design of RAG
+  - Data ingestion
+    - Example of Conflict
+      - problem
+        - Due to bank constraint, the team is not allowed to use advanced VLM, OCR-based methods, and the extraction from pdfs is not satisfying
+        - DS team
+          - Agent's performance cannot be improved due to bad extraction.
+        - DE team
+          - They have tried their best to improve performance of extraction.
+          - They cannot use advaned methods
+          - They don't have enough human resource to annotate data to train the model
+      - previous solutions
+        - 1. Wait for model team to onboard VLM model inside the bank.
+          - violate the time schedule of our product
+        - 2. Build close cooperation between DE and DS so that whenever a user detects an error, they quickly investigate and fix the errors
+          - no gurantee on quality of product
+          - waste a lot of human resource on bug fix
+          - hard to do in production since every update needs to go through a long verification process
+      - my solution
+        - design a bi-language validation
+          - intuition
+            - all pdfs are written in English and Chinese
+            - the length and order of English and Chinese characters are not the same, so errors cased by format can be eleminated
+          - how to do
+            - the DE team keeps on improving their extraction method until the results of English and Chinese parts match 95% percent of contetn
+            - the DS team will accept the extraction if DE team provides the statistics and wouldn't blame DE team any more
+    - The "Contextual Enrichment" Strategy
+      - Contextual Chunking (Anthropic Style)
+        - Before embedding a chunk, use a Flash model to prepend a 1-2 sentence "global context" to it.
+        - Original Chunk: "The limit is $5,000 per day."
+        - Enriched Chunk: "Regarding the Platinum Credit Card ATM withdrawal policy: The limit is $5,000 per day."
+        - Result: The vector for the enriched chunk is much more distinct and "findable" than the original snippet.
+      - Synthetic Question Generation (Self-Querying)
+        - For every chunk, have an LLM generate 3-5 hypothetical questions that this chunk answers.
+        - Mechanism: Embed these synthetic questions and map them to the same chunk ID.
+        - Benefit: When a user asks a question, it will have a much higher cosine similarity to another question than to a raw piece of documentation.
+    - Metadata Drift
+      - The Problem: A user asks about "Staff Discounts." Your Router sees "Discount" and goes to the Promotions database. But "Staff Discount" is actually an HR policy. Because of the hard decoupling, the Promotions DB returns "No results," and the system fails.
+      - The Solution (The "Master Index"):
+        - Instead of the Router just "guessing" based on the query, you create a tiny, ultra-lean Global Semantic Map during your nightly batch.
+        - The Map: A list of every Document Title and its core "Entity" (e.g., "Staff Benefits," "Platinum Card Features") across all functional databases.
+        - The Logic:
+          - Step 1: The Flash LLM looks at the query and the Global Map.
+          - Step 2: It realizes "Staff" + "Discount" maps to HR_Policy_04.
+          - Step 3: It explicitly tells the RAG: "Query the HR Shard, even though the user said 'Discount'."
+        - KISS Benefit: You don't need a massive central database. The "Map" is just a text file or a 100-row table that fits in the LLM's prompt context.
+    - The "Negative Constraint" Index
+      - Semantic Collapse
+        - Standard RAG (Vector Search) is mathematically biased toward Presence, not Absence.
+      - The Example:
+        - Doc 1: "To qualify, you must have a savings account."
+        - Doc 2: "This promo is not available for corporate clients."
+        - Query: "I am a corporate client, can I apply?"
+        - RAG Failure: The vector search finds "apply" and "corporate client" in Doc 2. The LLM sees the text but might focus on the "apply" logic elsewhere and miss the "NOT."
+      - The Solution: The Constraint Shard
+        - The Shard: During nightly ingestion, you use a Flash LLM to extract only the "Hard No's" (exclusions, eligibility blocks, expiry dates) into a specific metadata field or a tiny "Constraint" vector shard.
+        - The Retrieval: Every time you query a functional DB, you always pull the Top 2 constraints for that category.
+        - The Prompt: You explicitly tell the LLM: "First, check the CONSTRAINTS. If any apply, the answer is NO, regardless of what the general policy says."
+      - Lexical (The "Keyword" Guard)
+        - What it is: Traditional BM25 or TF-IDF (ElasticSearch style).
+        - Why it's back: Vectors are great at meaning, but terrible at exact strings.
+        - The 2026 Use Case: If a user types a specific product code like CC-990-AX, a vector search might return CC-991-AX because they are "semantically similar." Lexical search ensures you get the exact match. It is the "Anchor" for your RAG.
+      - Symbolic (The "Logic" Guard)
+        - What it is: Representing knowledge as a set of Rules or a Knowledge Graph (e.g., "IF customer_age < 21 THEN ineligible").
+        - Why it matters: This is deterministic. There is zero "hallucination" in a symbolic check.
+        - The 2026 Use Case: In your Agentic Architecture, before the LLM even answers, a "Symbolic Checker" (a small Python script or Logic Engine) looks at the user’s metadata (from their profile) and compares it against the target_entity tags in your Constraint Shard.
+        - Efficiency: It can auto-reject a query in <5ms without ever calling an expensive LLM.
+    - How to handle the "Up Index"
+      - Coordinate Mapping: The parser identifies a superscript $^1$ not just as a character, but as a "Citation Anchor" at coordinates $(x, y)$.
+      - Footnote Detection: It scans the bottom of the page (or the end of the document) for a matching index "1."
+      - The "Inject & Wrap" Technique: Instead of leaving the footnote at the bottom, your script injects the footnote text directly into the metadata of the chunk containing the index.
+      - Example
+        - The Problem: The main text says "Interest rate is 5% $^1$." The footnote $^1$ says "Only for balances over $1M."
+        - The Ingestion Fix: You create a Merged Proposition.
+          - Raw Chunk: "Interest rate is 5%."
+          - Constraint Metadata: {"footnote_1": "Only for balances over $1M"}
+          - Enriched Proposition: "Interest rate is 5% (Note: Only for balances over $1M)."
+    - The "Ghost Table" Hallucination
+      - The Error: Tables are often flattened into a single string of text, losing the relationship between the Header and the Cell. This leads to the LLM misreading which number belongs to which category.
+      - Review:
+        - Markdown Conversion: Never store tables as raw text. Convert them to Markdown or HTML. Markdown is the "gold standard" because LLMs are trained heavily on it and understand the column/row structure.
+        - Cell-Level Metadata: For 1000x efficiency, if a table is very large, don't chunk it. Instead, use a Flash LLM to generate a Natural Language Summary of the table (e.g., "This table shows the 2026 interest rates for three card types...") and store that summary alongside the Markdown table.
+        - Assumption Check: Do not assume the LLM can "reason" across a split table. If a table spans two pages, your ingestion must merge them before chunking.
+    - The "Contextual Chunk" Blindness
+      - The Error: A small 200-token chunk about "Minimum Balance" might lose the fact that it belongs to the "Gold Account" specifically, because the "Gold Account" header was 2,000 tokens away.
+      - Review:
+        - Breadcrumb Prepending: Every chunk should be "decorated" during ingestion.
+        - Bad Chunk: "The minimum balance is $5,000."
+        - Good Chunk: "[Document: Wealth Management] > [Section: Gold Account] > The minimum balance is $5,000."
+      - KISS Implementation: During your nightly batch, keep track of the "Heading Path" as you iterate through the PDF and prepend it to every child chunk. This makes the "Small" chunk globally unique and easier for the vector search to find.
+    - version
+      - for documents, e.g. promotion that has clear end date, it is easy
+      - for HR policy, no clear end date, hard
+        - The "Superseded-By" Logic (Ingestion)
+          - When you ingest a new HR document, you shouldn't just add it. You need a Collision Detection step in your nightly batch.
+          - The Problem: You have Work_From_Home_2024.pdf and you just uploaded Work_From_Home_2026_Revised.pdf.
+          - The Fix: Every document must have a document_family_id (e.g., WFH_POLICY).
+          - The Action
+            - 1. The script detects a new upload for WFH_POLICY.
+            - 2. It finds all existing chunks in the vector DB with document_family_id == WFH_POLICY.
+            - 3. It updates their metadata: is_active: False and superseded_by: "DOC_ID_2026".
+            - 4. It marks the new chunks as is_active: True.
+        - The "Temporal Hierarchy" Shard
+          - Sometimes, policies aren't fully replaced; they are Amended. (e.g., "The 2024 policy stands, but Section 3 is updated as of today.")
+          - To handle this without a human, use a Version-Aware Graph or a Hierarchical Metadata structure:
+            - Metadata Field: effective_date: 2026-03-31
+            - Metadata Field: version_score: 2.0 (higher is newer).
+          - how to generate version score
+            - The most robust way to create a version score from a date is to convert the date into a Numeric Unix Timestamp (the number of seconds since January 1, 1970).
+            - Using the Score in Your "Symbolic" Retrieval
+              - Once you have this score stored in your database row, your retrieval logic becomes a simple Logical Filter.
+              - 1. Group retrieved chunks by their "document_family_id" (e.g., 'WFH_Policy')
+              - 2. Within each group, find the maximum version_score
+              - 3. Discard any chunk where version_score < max_score
+            - Advanced: The "Semantic VersionRAG" (2026 State-of-the-Art)
+              - If your HR policies are Amended (not fully replaced), you can use a more advanced "Composite Score." Recent research (like VersionRAG, Oct 2025) suggests using a combination of Date and Change Significance.
+              - If your nightly batch detects a change, have your Flash LLM categorize it:
+Patch (0.1): Typo fixes.
+Minor (1.0): Small rule changes (e.g., "WFH from 2 days to 3 days").
+Major (5.0): Full policy overhaul.
+              - The Composite Score Formula:
+VersionScore = (Timestamp \times 1.0) + (ChangeMagnitude \times 10^5)
+This ensures that even if two docs are close in date, the "Major" update is always prioritized.
+          - The Retrieval Strategy:
+            - When the retriever pulls 10 chunks, your "Symbolic Gatekeeper" (the Python script) runs a Strict Recency Filter:
+            - If two chunks have the same document_family_id but different version_score, discard the lower score immediately before the LLM even sees it.
+          - Handling "Implicit" Conflicts (The VersionRAG Approach)
+            - If the document names don't match (e.g., Staff_Handbook.pdf vs Remote_Work_Guidelines.pdf), but they cover the same topic, this is an Implicit Conflict.
+            - 
+          - The "Symbolic" Solution for HR
+            - Since you are a GenAI Specialist at a bank, Compliance is your biggest stakeholder. Use Hard Version Gates:
+            - Unique Topic IDs: Assign every HR rule a unique ID (e.g., HR-BEN-001).
+            - The "Active" Filter: Always append {"is_active": true} to every vector query.
+            - Conflict Resolver: If the LLM detects two conflicting rules in the context, it must be programmed to STOP and output: "Conflict detected between Doc A and Doc B. Please contact HR for the authoritative version." (This is better for 1000x efficiency than a "best guess" hallucination).
+        - A. The "Partial Update" Error
+          - The Risk: A 2026 document updates only the WFH days, but the 2024 document contains the "Request Process." If you purge the 2024 doc because the 2026 doc is "newer," the LLM won't know how to request WFH.
+          - The Fix: During ingestion, use a Flash LLM to tag chunks as REPLACEMENT or ADDENDUM.
+          - If REPLACEMENT: Purge the old version.
+          - If ADDENDUM: Keep the old version but prioritize the new one for the specific clause.
+          - solution
+            - The Metadata Strategy: "The Multi-Level Key"
+              - To solve this without manual human intervention, you must move from a simple is_active flag to a Composite Versioning Key.
+              - The Schema for Partial Updates:
+                - Each chunk in your database needs these four specific metadata fields:
+                - 
+            - Maintenance: The "Upsert-by-Section" Logic
+              - During your nightly ingestion, you don't just "Add" the new PDF. You use a Flash LLM as a Structural Parser to perform a "Logical Merge."
+              - The Ingestion Workflow:
+                - Parse: The LLM identifies that the new document is an update for HR_BENEFITS.
+                - Segment: The LLM breaks the new document into sections (e.g., SEC_MATERNITY, SEC_ANNUAL_LEAVE).
+                - Conflict Check (The "Symbolic" Step):
+                  - The script searches the database for any existing chunks where doc_family_id == HR_BENEFITS AND section_id == SEC_MATERNITY.
+                  - The Logic: If it finds a match with a lower version_score, it marks the old chunk as is_active: False.
+                - Preserve: Sections that were not mentioned in the 2026 update (e.g., SEC_SICK_LEAVE) remain is_active: True with their original 2024 version_score.
+              - Retrieval: The "Latest-of-Each" Filter
+                - Because you have maintained the section_id, your retrieval logic now ensures a "Seamless Truth."
+                - When a user asks about "Maternity Leave," your retriever pulls chunks from both the 2024 and 2026 documents. Your Python De-conflictor script then does this:
+                  - Group by section_id.
+                  - Sort each group by version_score (Descending).
+                  - Take the Top 1 for each section_id.
+                - Result: The LLM receives the "Base Policy" for the parts that haven't changed, but the "New Policy" for the specific clause that was updated. This is 1000x efficiency because the LLM doesn't have to "reason" about which date is newer—it only ever sees the "Winner" for each section.
+            - Risks & "Missing" Aspects Review
+              - A. The "Linkage" Error
+                - The Risk: If the 2026 update for Maternity Leave refers to a table in the 2024 "General Benefits" section, and you've partitioned them too strictly, the LLM might lose the link.
+                - The Fix: Use Cross-Sectional Metadata. If a partial update is an ADDENDUM, the ingestion script should add a related_sections tag to the metadata, forcing the retriever to pull the "Parent" context even if the similarity score is lower.
+              - B. The "Implicit Section" Problem
+                - The Risk: If your 2024 PDF doesn't have clear section headings, the LLM might assign different section_ids (e.g., Maternity vs. Parental_Leave).
+                - The Fix: During nightly ingestion, provide the LLM with a Master Taxonomy (a simple list of valid section_ids for that doc_family_id). This forces the LLM to map the text to existing categories rather than inventing new ones.
+        - B. The "Cross-Document Conflict"
+          - The Risk: The "Travel Policy" says "Fly Economy," but the "Executive Perks" doc says "Fly Business." They have different doc_family_ids, so the Recency Filter won't catch it.
+          - The Fix: This is where Step-Back Prompting is vital. You must retrieve the "Global Hierarchy" (e.g., "Which policy takes precedence: Travel or Perks?") and pass that priority to the LLM.
+            - Example
+              - When a query arrives, you don't just search for the specific "action." You search for the Hierarchy of Authority.
+              - If a user asks about "Business Class flights," the Flash-tier router generates a Step-Back Query:
+                - "What is the precedence of policies for employee travel and executive perks?"
+              - The Retrieval Logic:
+                - The system retrieves three things:
+                - The Specific Rule (A): Travel Policy (Economy).
+                - The Specific Rule (B): Executive Perks (Business).
+                - The "Tie-Breaker" (The Step-Back): A "General Governance" chunk that says: "In cases of conflict, the Executive Handbook overrides departmental policies."
+              - The KISS Solution: "Precedence Tags"
+                - During your nightly ingestion, assign each document a Priority Score (1-10).
+                - General Employee Handbook: Priority 1
+                - Departmental Policy: Priority 3
+                - Executive/Special Policy: Priority 8
+              - The Logic: If the retriever pulls two conflicting chunks with different doc_family_ids, the Python script automatically suppresses the chunk with the lower Priority Score. The LLM only sees the "Winning" policy.
+            - Reassurance Layer
+              - The "Transparent Winner" UI
+                - Instead of silently hiding the losing policy, the LLM should be instructed to acknowledge the hierarchy. This builds trust and prevents the user from feeling like the AI is "guessing."
+                - The Prompt Instruction:
+                  - "If you find information in a higher-priority document (e.g., Executive Handbook) that contradicts a lower-priority document (e.g., General Travel Policy), explicitly state: 'According to the [High Priority Doc], which takes precedence over [Low Priority Doc], the rule is [X].'"
+                - Why this helps:
+                  - Traceability: The user knows why the AI chose that answer.
+                  - Auditability: If the "Priority Score" was set incorrectly during ingestion, a human user can see the error and report it.
+          - Deterministic Fallback: The Conflict Trigger
+            - If the Priority Scores are equal (e.g., two different Departmental Policies contradict each other) and the Step-Back query doesn't find a tie-breaker, the system must immediately stop.
+            - The "Safe Exit" Protocol:
+              - Instead of letting the LLM "hallucinate" a middle ground, you use a Conflict Detector LLM (your Flash-tier model) to compare the retrieved chunks.
+            - The Prompt for the Detector:
+              - "Compare these two chunks. Do they provide conflicting instructions for the same user attribute? If YES, output CONFLICT_DETECTED. Do not attempt to resolve."
+    - Assumptions & Risks
+      - 🛑 The "Constraint Coverage" Gap
+        - Assumption: You assume the Flash model can find every "NOT" in a policy.
+        - The Reality: Negative logic is often buried in footnotes or "Table B" on page 50.
+        - The Fix: Your Parent-Child mapping must include tables. If a sentence in a chunk references "See Appendix A," your ingestion script must follow that link and "attach" Appendix A to the chunk.
+      - 🛑 The "User Data Freshness" Risk
+        - Assumption: The user's intent is based on their profile data.
+        - The Reality: A user might be asking for a friend or their child.
+        - The Fix: In your Intent Recognition layer, check if the user is asking about "self" or a "third party." If it's a third party, your Symbolic Gatekeeper must be ignored, and the system must provide general information instead of a personalized "No."
+      - 🛑 The "Nightly Batch" Bottleneck
+        - Assumption: A nightly update is enough.
+        - The Reality: In banking, a promo can be "Paused" instantly due to a technical error.
+        - The Fix: Implement a "Kill Switch" Metadata Tag. Even if you don't update the whole DB, you can update a tiny "Status Table" that the system checks in Phase 3 (Symbolic Check).
+  - Data retrieve
+    - assumption
+      - self sufficient questions are answered
+    - trick
+      - one files in one vector database
+        - use metadata (end_date) for search
+      - metadata filter
+        - extract promotion names, valid dates
+      - semantic search
+        - after metadata filter, normally we only have less than 100 chunks, a simple similarity search will give the results
+        - normally we even don't need technique of rerank to further select the chunks
+      - The "Missing Data" Hallucination
+        - The Assumption: If the RAG retrieves $<10$ chunks, the LLM will answer correctly.
+        - The Reality: If the actual answer is not in those 10 chunks, the LLM might still try to "help" by hallucinating.
+        - The Fix: Add a Strict Null-Response Trigger. If the combined similarity score of the top 3 chunks is below a "Grounding Threshold," the system must output: "The specific details for [Intent] are not in the current documentation."
+    - extension
+      - Small-to-Big Retrieval (Parent-Child Indexing)
+        - Instead of indexing the full text of a policy, index small "sentences" or "propositions" (the Child), but when a match is found, return the larger "paragraph" (the Parent) to the LLM.
+        - Why? Small chunks are easier for vectors to find accurately.
+        - The Result: You get the precision of a 50-token search with the context of a 500-token answer.
+        - implementation
+          - Sentence-Window Retrieval
+            - The "Small": A single sentence. This provides very "sharp" vector embeddings because the semantic focus is narrow.
+            - The "Big": When a sentence is retrieved, the system fetches the $N$ sentences before and after it (the "window") to send to the LLM.
+            - Why it works: It solves the "lost in the middle" problem. The vector search finds the exact detail (the sentence), and the LLM gets the necessary surrounding context to understand it.
+          - Recursive/Parent-Child Chunking
+            - This technique creates a physical hierarchy in your database.
+            - The "Small" (Children): You split a document into small 100-200 token chunks.
+            - The "Big" (Parent): Each child chunk contains a reference (an ID) to a much larger 1000-token parent chunk or even the entire document section.
+            - The Logic: You search the small chunks for high semantic overlap. Once the top $k$ children are found, you swap them out for their parent chunks before passing them to the LLM. This ensures the LLM has a complete view of the logic, not just a snippet.
+            - Extension
+              - The Assumption: You assume the "Parent" chunk always contains the answer.
+              - The Reality: If a sentence in the "Small" chunk refers to a table or image 3 pages away, the "Parent" chunk (usually just the surrounding paragraph) will miss it.
+              - The Fix: During ingestion, use Multimodal Parsing (like LayoutLM or specialized PDF parsers) to extract tables into Markdown/JSON and "attach" them to all related text chunks.
+          - Atomic Propositions (Decontextualization)
+            - Since you are already using a Flash model for intent recognition, you can use it here as well during the ingestion phase.
+            - The Technique: You pass a paragraph to the LLM and ask it to break it down into "Atomic Propositions"—standalone sentences that don't use pronouns (e.g., instead of "It offers 5%," the proposition is "The Platinum Card offers 5% cashback").
+            - The "Small": These decontextualized propositions are embedded.
+            - The "Big": The original paragraph.
+            - Benefit: This dramatically improves retrieval for specific details because it removes the ambiguity of "it," "this," or "they."
+      - Query Transformation
+        - If the user’s query is messy, even the best vector DB will struggle. Since you already have an "Intent Recognition" layer, you can expand it into a Query Reformulator.
+        - HyDE (Hypothetical Document Embeddings)
+          - 1. The user asks: "How do I get a higher limit?"
+          - 2. Your Flash model generates a "fake" ideal answer: "To increase your credit card limit, you must provide 3 months of salary slips..."
+          - 3. You use the fake answer to search the vector database.
+          - 4. Why? Vectors of "answers" are closer to other "answers" than "questions" are to "answers."
+        - Step-Back Prompting
+          - If a user asks a specific question about a promotion, have the model generate a "step-back" query to retrieve the broader policy first. This ensures the LLM understands the "rules of the game" before looking at the specific promo.
+          - Example:A complex Credit Card Promotion
+            - User Query: "Can I get the $200 cashback if I spent $5,000 on my new card yesterday, but I already have a savings account with you?"
+            - Without Step-Back (Direct RAG)
+              - Search: The system searches for "$200 cashback," "$5,000 spend," and "savings account."
+              - Retrieval: It finds a chunk about the specific promo.
+              - Risk: It might miss the Global Terms & Conditions stating that "New-to-Bank" customers only qualify—and a savings account makes you an "Existing Customer."
+            - With Step-Back Prompting (The "1000x" Way)
+              - Step 1: Query Transformation
+                - The system takes the user query and generates a "Step-Back" version:
+                - Step-Back: "What are the eligibility definitions for 'New-to-Bank' vs 'Existing' customers for credit card promotions?"
+              - Step 2: Dual Retrieval
+                - The RAG pipeline now performs two searches:
+                  - Narrow Search: Specific details of the $200 cashback promo.
+                  - Broad Search (Step-Back): General eligibility and "New-to-Bank" definitions.
+              - Step 3: Context Assembly
+                - The LLM receives both sets of information:
+                - Context A (Step-Back): "A customer is considered 'Existing' if they hold any active deposit, loan, or investment account."
+                - Context B (Narrow): "Promotion X gives $200 to New-to-Bank customers who spend $5,000 in the first 30 days."
+              - Step 4: Final Answer
+                - LLM: "No, you do not qualify. While you met the $5,000 spend requirement, our general policy defines anyone with a savings account as an 'Existing Customer,' whereas this specific promotion is reserved for 'New-to-Bank' individuals."
+          - The "Step-Back" Template
+            - "You are an AI specialized in [Domain, e.g., Banking Policy]. Given the user's specific question: '[User Query]', what is the broader underlying principle or policy category I should retrieve to ensure a correct answer?"
+      - A. The "Blind Router" Assumption
+        - The Assumption: You assume the Router can see every conflict.
+        - The Reality: If the Router only searches the Travel shard, it will never find the conflicting rule in the Executive Perks shard.
+        - The Fix: Implement a Cross-Shard Trigger. If a query contains high-value keywords (e.g., "Executive," "Director," "Exception"), the Router must perform a broadcast search across both the specific shard and the "Global Governance" shard.
+      - The "Summarization Loss" in 10 Rounds
+        - The Assumption: 10 rounds of history fit in the prompt for intent recognition.
+        - The Reality: In a complex HR or Finance discussion, 10 rounds can be messy and full of "corrections."
+        - The Fix: Instead of passing raw text, pass a State Object.
+          - Example: {"current_topic": "Travel", "user_status": "Band 2", "confirmed_destination": "Singapore"}.
+          - This keeps the "Intent Recognition" lean and 1000x more efficient.
+      - Missing: The "Negative Reassurance" (The "NO" Answer)
+        - The Reality: The most dangerous RAG failure is turning a "No" into a "Maybe."
+        - The Fix: If the Constraint Shard returns a hard exclusion (e.g., is_eligible: False), the Retrieval layer must short-circuit. Do not let the LLM summarize the "Benefits" text; force it to lead with the "Ineligibility" reason and the associated authority_source.
+  - Answer generation
+    - use a prompt template and fill in user query and retrieved chunks
+    - Output the answer together with sentences in the chunks that answer the user query
+- architect improvement
+  - Evaluation or Debug
+    - modularized desgn makes it easy to locate errors
+    - e.g.
+      - if the retrieved chunks don't contain the info in the answer, it is LLM hallucination
+      - if info related to user query is in the vector database, but not retrieved chunks, it is retrieve error.
+  - Intention Recognition Layer
+    - Motivation
+      - During UAT, users report non-satisfying performance
+      - I arranged a meeting with business partners, and look at how they use the system.
+        - just key words, short name, typos, splitted sentence in consecutive inputs
+        - these are noisy inputs
+    - Battle on methods
+      - Previous solution
+        - just search the vector database on user query, and then answer based on user query and retrieved contents
+          - safety first
+          - "search engine" mental model
+          - Avoiding the "Talkative" Agent
+      - my claim
+        - a right answer in several rounds is better than a wrong answer at once
+        - long time to answer
+          - retrieve is time consuming
+      - what intention layer do
+        - fuzzy match
+          - extract name of promotion from user query and metadata of vector database
+        - ask for clarification
+          - if user query is not clear, ask for details
+            - e.g. are you asking for <hot queries related to the promotion>
+        - summarize chat with user to generate self sufficient questions for rag
+        - Security Silhouette" (The Missing Piece)
+          - Since this is for a high-trust environment (Banking), there is one detail leaders often miss: PII Stripping in the Intention Layer.
+          - The Optimization: The Intention Guard should act as a Redaction Proxy.
+          - The Flow: If a user types "My balance on account 12345," the Intention Layer replaces it with [ACCOUNT_ID] before passing it to the Vector DB or the LLM.
+          - Why: This ensures that your "Knowledge Base" and "LLM Logs" never contain sensitive PII, simplifying your Compliance and Audit overhead (KISS).
+        - i.e. normalize high entropy inputs
+          - prevent "garbage in garbage out"
+      - results
+        - Business Partners' Trust
+          - without any modification to rag part, we improve the accuracy of user query to lab level and regain business partners' trust in two weeks
+        - The "Signal-to-Noise" Breakthrough
+          - The Metric: "By implementing the Intention Guard, we reduced Noisy Retrievals by >50%."
+          - The Why: Most RAG failures happen because the vector search is "distracted" by typos or irrelevant keywords. By sanitizing the query first, the Vector DB only sees the "Clean Signal."
+          - The "Google" Value: This shows you understand Resource Efficiency. You aren't wasting tokens or compute on "guessing."
+        - The "Perfect Assumption" Principle
+          - This is your strongest architectural point.
+          - The Logic: "Because the Intention Layer guarantees a clean, categorized query, the downstream RAG can operate under a 'Perfect Assumption'."
+          - The Benefit: The RAG prompt doesn't need to be 2,000 tokens long with 50 "if-then" cases for typos. It can be a Simple, High-Precision Prompt focused purely on the verified intent.
+          - The Result: Higher accuracy, lower latency, and a much easier system to debug (KISS).
+        - Modular Maintenance (The "Anti-Entropy" Rule)
+          - The Action: "We decoupled the business logic into specialized shards (Promos, Policies, APIs)."
+          - The Result: "When the Bank launched a new credit card activity, we didn't have to 'retrain' or 're-index' the entire system. We just added a new shard and one routing rule."
+    - further optimizations
+      - use small models
+        - as the user query is normally short, we don't need use advanced models to capture details in a long prompt
+        - analysis of costs
+          - The "Token Tax": Understanding the bill
+            - The "Big RAG" Cost (Expensive)
+              - To make a single-stage RAG "smart" enough to handle typos and fuzzy intent, you have to give it a huge prompt (e.g., 2,000 tokens of "If the user says X, do Y").Every query costs you 2,000+ tokens, even if the user just says "Hi.
+            - "Intention Layer" Cost (Efficient)
+              - You use a Small Model (like Gemini Flash or a fine-tuned 7B model) for the Intention Layer.
+              - Small Prompt: Only 200 tokens to identify intent.
+              - The Routing Payoff: If the intent is "Check Balance," you stop there and call an API ($0 tokens). You only trigger the "Big" RAG prompt for complex queries.
+              - Calculation: 60% of queries stay "Light" (200 tokens). 40% go "Deep" (2,000 tokens). Total cost is reduced by ~50%.
+            - Comparison on price
+              - Gemini 1.5 Pro: ~$1.25 per 1 million input tokens.
+              - Gemini 1.5 Flash: ~$0.075 per 1 million input tokens
+              - roughly 16X
+            - Computation
+              - assumption
+                - Big RAG
+                  - 3000 tokens per request, suppose 1 llm call for each user query
+                - intention layer
+                  - 100 tokens per request, 5 llm call for each user query
+              - roughly 100X (16 * (3000/100/5)
+          - Latency vs. Throughput (The "Time is Money" Cost)
+            - Big RAG: Processing a 2,000-token prompt takes time (Latency). If the system is busy, users wait.
+            - Your Layer: The Intention Layer is nearly instant because the prompt is tiny. By "cleaning" the query first, the subsequent RAG search is faster because it’s looking at a shorter, filtered context.
+            - 100ms of 'Thinking' is better than 5 seconds of 'Guessing.' By sanitizing the query, we actually save time on the downstream RAG because the prompt is smaller and the search is filtered. It’s a net-zero latency trade-off for a 20% accuracy gain."
+          - The "Human-in-the-loop" Cost
+            - This is the hidden cost leaders forget.
+            - Wrong Answer Cost: If a "Big RAG" guesses wrong and a user calls the bank's human support line, that 10-minute phone call costs the bank $10–$20.
+            - Graceful Failure Cost: If your Agent realizes it's confused and hands over a clean chat history to a human, the call takes 2 minutes instead of 10. You just saved the bank 80% of the support labor cost.
+      - count and cache user queries
+        - how to do
+          - maintain a list of hot queries
+          - no need to generate again, just reply user with previous generation
+        - Precision Multiplier
+          - Accuracy vs. Entropy
+            - The Logic: Simplicity is the ultimate Sophistication.
+            - Brute Force (70%)
+              - A "Flat RAG" is fighting Semantic Entropy. It’s trying to find a needle (the answer) in a haystack of noisy user input and 20 years of legacy documents. The 30% failure rate isn't just a "bad answer"; it's a Loss of Trust that costs the bank millions in brand reputation and support labor.
+              - The "Frustration Loop": If an AI gives a wrong or vague answer 30% of the time, the user has to call the human agent anyway. Now the bank is paying for the LLM tokens AND the Human Agent's time.
+              - Needs a team of 10 "Prompt Engineers" and "Data Scientists" constantly tweaking a 5,000-token prompt to handle every new edge case.
+            - Your Federated Logic (90%+)
+              - By using the Intention Guard, you "clean the needle" before looking for the haystack. By enforcing the "Perfect Assumption," the downstream RAG doesn't have to be a genius; it just has to be a clerk.
+              - The "Utility Threshold": At 90% accuracy, the AI becomes self-service. You aren't just saving pennies on tokens; you are saving dollars on labor.
+              - A single Senior Architect can build the Intention Guard and the Routing Logic. Since each module (Shard/API) is isolated and operates on a "Perfect Assumption," the "fine-tuning" is minimal.
+              - High normalization = High cache hits. Since the "Perfect Assumption" forces queries into standard "Canonical Forms," you can serve 30%–50% of common banking questions directly from a KV Cache or a Semantic Cache (like Redis or Vertex AI's internal caching).
+          - The "Graceful Failure" (The 10% Safety Net)
+            - Since no system is 100%, how do you handle the remaining 10%?
+            - The "Confidence Score" Trigger: If the Intention Layer sees two intents with similar scores (e.g., 45% "Credit Card" vs. 45% "Loan"), it doesn't guess.
+            - The Elegant Clarification: Instead of a robot saying "Error," it says: "I see you're asking about your accounts. Are you looking for Credit Card Rewards or Loan Status? I want to make sure I give you the most accurate info."
+            - The Handoff: If the user is still frustrated, the Intention Layer triggers a human handover with the "Context Payload" (the intent, the live API data, and the history).
+          - Analysis on costs
+            - 2-3X on precision (labor reduction)
+            - 3-5X on cache
+            - all combined, achieve approximately 1000X
+        - Canonical Key Mapping (Cache Optimization)
+          - The Optimization: Instead of caching the raw user string, cache the Intent + Entity pair.
+          - Example
+            - User A: "What's my visa deal?" $\rightarrow$ Intent: Promo_Check, Entity: Visa_Infinite
+            - User B: "Any credit card promos?" $\rightarrow$ Intent: Promo_Check, Entity: Visa_Infinite
+          - Why: Both map to the same Canonical Key. If the "Visa_Infinite" promo hasn't changed in 24 hours, you serve the exact same cached response to both users without hitting the LLM for synthesis at all.
+          - Impact: Increases your Cache Hit Rate exponentially, moving you closer to that 1,000x cost reduction.
+      - The "Active Learning" Feedback Loop
+        - The Optimization: When a "Graceful Failure" occurs and the user is handed to a human, the Human's Resolution should be logged back as a "Gold Standard" label for that intent.
+        - Why: This allows you to "Fine-tune" your Intention Layer (the small model) every month using real-world failures. The system actually gets smarter the more it fails.
+        - Impact: Converts OpEx (Human labor) into IP (Better Models).
+      - some details
+        - "If you have 50 specialized shards, how does the Intention Layer know which one to pick without checking all of them?"
+          - Reflex: "We use a Hierarchical Taxonomy. The Intention Layer classifies the 'Domain' first (e.g., Retail vs. Corporate). Only the relevant shards are 'woken up.' This follows the KISS principle of 'minimum necessary context'."
+        - We have a limited budget. Should we spend it on better Embeddings or a better Intention Layer?"
+          - Reflex: "The Intention Layer. Better embeddings can't fix a 'Dirty Signal.' If we clean the intent first, even 'average' embeddings perform like 'elite' ones because they are operating in a Low-Noise Environment."
+        - "How do you make this even better?"
+          - "We move from Linear Logic to Parallel Orchestration. We use the Intention Layer to trigger the 'Source of Truth' (API) and the 'Knowledge Base' (Vector Shards) simultaneously, then use Metadata Pre-filtering to ensure the LLM only sees the 'Canonical Truth.' This maximizes speed, minimizes tokens, and creates a self-improving feedback loop from our human escalations."
+        - How do you handle the trade-off between speed and accuracy?
+          - "I don't trade them; I decouple them. I use Parallel Execution to win on speed and Metadata Hard-Filtering to win on accuracy. By the time the LLM even sees the prompt, the 'Noise' has already been filtered out by the Intention Guard and the Database Metadata. This allows us to maintain a KISS-compliant system that is fast enough for retail but accurate enough for banking."
+    - Semantic Load Balancer
+      - more functionalities
+        - add other services
+          - HR policy
+        - interact with other system
+          - e.g. user profile to provide accurate suggestion
+        - combine several functions
+          - e.g. recommendation based on user profile
+            - How do you ensure the API data and the Vector DB data stay in sync if a user's status changes mid-session?"
+              - Just-in-Time (JIT) Context Fetching
+                - The Logic: We don't store the user's "Status" in the Agent's memory for the whole session.
+                - The Action: For every High-Stakes Intent (like "What rewards do I have?"), the Intention Layer triggers a Fresh API Call.
+                - The Whiteboard Moment: You draw a loop from the Intention Layer back to the Core API for every turn. This ensures that if the user just upgraded their card 5 minutes ago in a different tab, the Agent sees it now.
+              - The "Semantic Validation" Step (The Double-Check)
+                - The Logic: Even if the Vector DB (the Promotions) is a bit "stale" (e.g., it hasn't been re-indexed since the user's status changed), the Intention Layer acts as the final judge.
+                - The Action: The LLM is instructed: "Only present the promotion if the Required_Status from the Vector DB matches the Current_Status from the Live API."
+                - The Result: You've built a Fail-Safe. Even if the search returns a "Platinum" deal, the Agent will catch the mismatch in the final reasoning step and "Self-Correct" the output.
+              - Handling "Transient States" (The "Pending" Problem)
+                - The Problem: What if the status is "In Progress" (e.g., a pending credit limit increase)?
+                - The Action: The Intention Layer recognizes the "Pending" flag from the API and routes the user to a Status-Check Agent instead of a Recommendation Agent.
+                - KISS Principle: Don't try to "guess" the future state. Report the current "Ground Truth" and offer a "Check Back Later" path.
+            - "Statelessness is the cure for synchronization headaches."
+          - 'Cold Start' problem if a user has no profile data yet?"
+            - Your Answer: "The Intention Layer recognizes the 'Empty Profile' state and routes the user to a General Discovery mode, or asks clarifying questions to build a temporary context—maintaining the KISS principle of always having a fallback path."
+        - add complex reason abilities
+      - divide and conquer
+      - advantages
+        - low coupling
+        - low latency
+          - use deterministic fuzzy match algorithms to solve typos, short names
+          - route simple query to API
+          - use small models
+        - micro-service architecture
+    - The "Metadata Drift" Assumption
+      - The Assumption: You assume metadata (tags like hr_policy) is always accurate and sufficient to filter.
+      - The Reality: If a policy document mentions a "Promotion for Employees," does it go in the HR shard or the Promotion shard?
+      - The Fix: Implement Overlapping Shards or a Global "Master" Index (very low dimension) that only stores document titles to help the Router decide which functional shard to open.
+  - global architect
+    - Constraint
+      - due to government policy, the data should be strictly saved inside the local servers
+    - solution
+      - federated agent architecture
+        - Hub-and-Spoke Model
+          - Local Leaf Agents: These are the "Janitors." They live next to the local "S**t-Hills" (Legacy DBs). Their only job is to map messy, local schemas into a Unified Semantic Protocol. They handle the "dialect" of the local data.
+          - Global Orchestrator Agent: This is the "CEO." It doesn't care about the underlying SQL or the local mess. It communicates only in High-Level Intent.
+          - The Result: You achieve global consistency without moving a single byte of restricted data. You’ve built a virtual "Single Source of Truth" without the $100M migration cost.
+        - Zero-PII Semantic Retrieval
+          - Instead of the Global Agent asking for a "Customer Profile," which might trigger a privacy violation, it sends a High-Level Analytical Query to the Local Leaf.
+          - The Process: The Local Leaf Agent performs the vector search and retrieval within the local boundary (e.g., a VPC in Germany for GDPR or Singapore for PDPA).
+          - The Transformation: Before sending anything back, the Local Leaf abstracts or anonymizes the findings. It might say: "The customer is a High-Net-Worth individual with a preference for ESG funds," instead of sending the raw transaction log or the customer’s name.
+        - Semantic Alignment
+          - To ensure the Global Orchestrator understands the local results, you use a Unified Embedding Space (like Google's Multilingual Universal Sentence Encoder). The math stays the same globally, even if the data stays local.
+  - handle legacy data and code
+    - Runtime Logic Healing
+      - We don't fix the legacy code; we use the Agent's reasoning to "patch" the output based on business rules.
+  - graceful failure
+    - fail to recognize the intention in several rounds
+      - The "Graceful Failure": You trigger an automated handover to a Human Agent.
+      - The "Context Payload": You don't just dump the user; you send the Chat History + the Agent's "Confidence Score" + the identified Intent to the human.
+      - The Result: The human doesn't have to ask "How can I help you?" They say, "I see you're looking for a specific Visa promotion from 2023, let me help you with that."
+- feature store at google scale
+  - data storage
+    - Immutability & Temporal Joins
+      - You're spot on. By adding a timestamp, you turn data into an immutable log.
+      - The "Senior" Signal: Because the data is immutable, you eliminate "Cache Invalidation" bugs. You don't "update" a feature; you append a new version.
+      - The "Why": This allows for Reproducible Training. If a model failed three weeks ago, you can reconstruct the exact state of the world at that moment because the old timestamps were never overwritten.
+    - Unified Logic (The "DSL" Approach)
+      - The "KISS" Solution: Use a Domain Specific Language (DSL)—usually a YAML or SQL-based spec.
+      - The Execution: You define the logic (e.g., sum(purchases) over 7d) in a central registry. The Feature Store "compiler" then generates:
+        - A Spark/Beam job for the Offline (Batch) path.
+        - A Flink/Dataflow job for the Online (Streaming) path.
+      - The Result: You align the platforms, not the codebases. The library differences disappear because the underlying engine (like Apache Beam) is the same for both.
+    - non-consistence between batch and stream
+      - using on unified framework, the difference is that data of different time is saved in different place
+    - Tiered Storage (The "Kappa" Architecture)
+      - You’ve hit the nail on the head regarding the "Hot/Warm/Cold" strategy.
+      - Hot (Redis/Memorystore): Sub-millisecond latency. Only stores the latest feature vector for active users.
+      - Warm (Bigtable/DynamoDB): 10ms latency. Stores recent history or less-frequently accessed features.
+      - The Transition Mechanism (The "How")
+        - In a Google-scale design, you don't move this data manually. You use Lifecycle Policies:
+        - Write-Through: When an event happens, write to the Stream (Kafka).
+        - Streaming Worker: Updates the Redis snapshot immediately.
+        - Batch Sink: Every hour, a process takes the Kafka data and writes it to a Parquet file in the Cold Layer.
+        - TTL Policy: The Cloud Provider (GCS/S3) automatically moves files from "Standard" to "Archive" after 365 days based on the file metadata.
+    - Feature Schema.
+      - In a massive system, you can't just change a feature from an int to a float without breaking 50 downstream models. You need a Schema Registry (using Protobuf) that enforces versioning.
+      - If a Data Scientist wants to change a feature, they create v2.
+      - v1 remains active until all models have migrated.
+    - Reconciliation logic
+      - The Conflict: "Fast Guess" vs. "Gold Standard"
+        - Imagine a feature: user_click_count_24h.
+        - The Stream (Online): Processes events as they arrive. It might count a duplicate click because of a network retry, or it might miss an event due to a temporary partition. It says the count is 10.
+        - The Batch (Offline): Runs at midnight. It has the luxury of deduplicating every log and verifying every session. It calculates the actual count was 9.
+        - If you just keep both rows based on timestamps, the model gets confused. Which one should it use for the "Current" value?
+      - The "Compaction & Overwrite"
+        - To solve this, we use a Lambda or Kappa architecture approach where the Batch job eventually "corrects" the Online store.
+        - 1. The Watermark System
+          - The system tracks a Watermark—a timestamp that says: "Everything before 12:00 PM has been fully processed and cleaned by the Batch job."
+          - Any query for data before the watermark goes to the Batch-calculated values.
+          - Any query for data after the watermark adds the Stream-calculated increments on top of the last Batch state.
+        - 2. The Atomic Swap (The Transition)
+          - Once the Batch job finishes (the "Gold Standard" is ready):
+          - It writes the new, clean values into the Online Store (Redis/Bigtable).
+          - It updates the Watermark.
+          - The Stream processor then "trims" its local state or resets its counters because the "base" has been updated.
+      - Why this matters for your AI Interview
+        - If you explain this, you’re signaling that you understand Data Integrity at scale. Google interviewers will look for these three terms:
+        - Idempotency: Ensuring that if the Batch job runs twice, it doesn't double-count.
+        - Exactly-once Semantics: The goal of the reconciliation (even if it's "effectively once" via deduplication).
+        - Late-Arriving Data: How do you handle an event that happened at 11:55 PM but didn't reach the server until 12:05 AM (after the batch job started)?
+          - Senior Answer: You keep a "Look-back" window where the batch job re-processes the last hour of the previous window to catch those stragglers.
+      - "Isn't this too complex?"
+        - You can suggest a Pure Streaming (Kappa) approach:
+        - "To keep it simple, we can treat the entire history as a stream. We use one single engine (like Apache Beam/Dataflow) to process both historical and real-time data. This way, there is only one codebase, and the 'transition' is just the engine moving from reading files to reading a message queue."
+  - production
+    - Feature Monitoring & "Drift" Detection
+      - In a traditional system, you monitor if the database is "up." In AI, the database can be "up" but sending "garbage" data.
+      - The Problem (Data Drift): If your model was trained on "Average Transaction Amount" in USD, but a bug starts sending values in Cents, your model’s accuracy will plummet, but your system won't "crash."
+      - The Google Solution: An Observability Layer that calculates the statistical distribution (Mean, Median, StdDev) of features in real-time. If the distribution in production deviates significantly from the training distribution, it triggers an alert.
+    - The "Discovery" Layer (The Feature Catalog)
+      - At a company with thousands of engineers, the biggest waste of money is redundancy.
+      - The Problem: Ten different teams might all write their own "User_Tenure_Days" feature, each using slightly different logic (e.g., one counts from "Account Created," another from "First Purchase"). This wastes storage and compute.
+      - The Google Solution: A Searchable Metadata UI. Before a Data Scientist writes a line of code, they search the Feature Store for existing features. This requires a robust tagging system and "lineage" (showing exactly which model uses which feature).
+    - Multi-Region Replication & Availability
+      - Google doesn't live in one data center. If a user is in Singapore, you can't fetch their features from a server in Virginia.
+      - The Problem: How do you keep features "consistent" globally? If a user changes their "Preferences" in London, that feature needs to be updated in the Singapore cache instantly.
+      - The Google Solution: Global Consistency via Spanner or Global Bigtable. You use a database that supports synchronous or near-synchronous replication.
+      - Trade-off: You must decide between Eventual Consistency (Fast, but risk of old data) and Strong Consistency (Slower, but always accurate). For fraud detection, you choose Strong. For recommendations, Eventual is fine.
+    - Privacy & "The Right to be Forgotten" (GDPR)
+      - This is the hardest part of the "Immutability" we discussed.
+      - The Problem: GDPR requires that if a user asks to be deleted, you must remove their data. But if your Offline Store is a massive, immutable Parquet log from the last five years, you can't easily "delete" one row without rewriting the whole file (which costs thousands of dollars in compute).
+      - The Google Solution: Tombstoning & Compaction.
+        - 1. Mark the user's ID in a "Deletion Map" (Tombstone).
+        - 2. The Feature Store API filters out any IDs in the map during retrieval.
+        - 3. During the next scheduled "Batch Compaction" (e.g., once a month), the system physically removes the data and rewrites the files.
+    - On-Demand (On-the-Fly) Features
+      - Not everything should be pre-computed and stored.
+      - The Problem: "Distance to the nearest store" cannot be pre-computed because it depends on the user's current GPS coordinates, which change every second.
+      - The Google Solution: On-Demand Transformations. The Feature Store provides a runtime environment (like a Lambda function or a C++ snippet) that takes "Online Features" (Store Location) and "Request Context" (User GPS) and calculates the result at the moment of the request.
+- system design template
+  - steps and phases
+    - Phase 1: Clarification & Scoping (5–7 Minutes)
+      - Goal: Define the "Spec" before writing code. Don't let the interviewer stay vague.
+      - Functional Requirements: What are the 2 or 3 core user actions? (e.g., "User can request a short URL," "System redirects user").
+      - Non-Functional Requirements (The "Senior" Part)
+        - Scale: How many DAU (Daily Active Users)? (e.g., $100\text{M}$?)
+        - Consistency vs. Availability: Does it have to be 100% accurate every microsecond, or is "Eventual Consistency" okay for the sake of speed?
+        - Latency: What is the P99 target? ($< 10\text{ms}$ vs. $< 200\text{ms}$).
+        - Durability: Can we afford to lose a single data point if a server crashes?
+    - Phase 2: Back-of-the-Envelope Estimation (3–5 Minutes)
+      - Goal: Justify your hardware choices.
+      - QPS (Queries Per Second) (Multiply by 2-5 for Peak QPS).
+        - 
+      - Storage: $\text{Average Object Size} \times \text{Requests/Day} \times \text{Retention Period}$ (e.g., 5 years).
+      - Bandwidth: How many Gigabits per second are hitting the network card?
+    - Phase 3: The "KISS" High-Level Design (5–8 Minutes)
+      - Goal: Draw the "Happy Path" without getting bogged down in edge cases.
+      - Contract Definition: Verbally or quickly sketch the API (e.g., POST /v1/resource { "data": "..." }).
+      - Boxes & Arrows: * Load Balancer $\rightarrow$ API Gateway $\rightarrow$ Application Servers.
+        - Storage Choice: Explain why you chose NoSQL (Scaling) vs. SQL (ACID).
+        - Cache Layer: Where does Redis sit?
+    - Phase 4: The Deep Dive (15–20 Minutes)
+      - Goal: Show your expertise. Pick 1 or 2 components to "stress test."
+      - Sharding Strategy: How do we split the database? (Hash-based? Range-based?).
+      - Distributed ID Generation: How do we generate unique IDs without a central bottleneck?
+      - Failure Modes: What happens when a Data Center goes offline?
+      - Data Integrity: How do we handle the "Lambda" transition or Reconciliation logic we discussed?
+    - Phase 5: Bottlenecks & Scaling (5 Minutes)
+      - Goal: Break your own system before the interviewer does.
+      - Hot Keys: How do you handle a "Celebrity" user hitting the same shard millions of times?
+      - Observability: How do we know the system is failing? (Metrics, Tracing, Logging).
+      - AI Context (If applicable): Mention Feature Drift monitoring or Vector Index re-sharding.
+    - Phase 6: Conclusion (2 Minutes)
+      - Goal: Summarize the trade-offs.
+      - "We prioritized Low Latency over Strong Consistency because... but we added a Reconciliation worker to ensure data eventually settles."
+  - Pro-Tips for Google Success:
+    - Lead the Interview: Don't wait for "What next?" Say: "I’ve defined the API and the high-level flow; would you like me to dive into the Database Sharding or the Kafka Partitioning logic next?"
+    - State Your Trade-offs: There is no "perfect" system. Every choice (SQL vs. NoSQL) has a cost. Say it out loud.
+    - Modular Thinking: Keep components decoupled. If you change the database, the API layer shouldn't care.
+  - "Senior" cadence
+    - Clarify -> Quantify -> Architect -> Stress-test.
+    - how those points translate into high-level "signals" the interviewers are looking for.
+      - The "Ambiguity" Phase (Clarification)
+        - Don't just ask for numbers; define the Contract.
+        - The Goal: Turn a vague prompt into a specific API specification.
+        - The Move: "Before we draw the boxes, let’s define the interface. What are the inputs and outputs of our ShortenURL and RedirectURL endpoints?"
+      - The "Scale" Phase (Estimation)
+        - This isn't about being a human calculator; it’s about Hardware Realism.
+        - The Goal: Prove that your design can physically fit on the machines.
+        - The Move: "If we have $100$ million writes per day, that's roughly $1,200$ QPS. At peak, we might hit $5,000$. A single SQL instance might struggle with that write volume, so we should consider a NoSQL store or a sharding strategy from the start."
+      - The "Blueprint" (High-Level to Detail)
+        - Use your Modular / KISS philosophy here.
+        - The Goal: Build a system that is easy to maintain and decouple.
+        - The Move: Start with a simple "Happy Path" (Load Balancer $\rightarrow$ App $\rightarrow$ DB). Once the logic is sound, then add the "Complexity" (Caches, Message Queues, Workers).
+      - The "Stress Test" (Trade-offs & Hot Keys)
+        - This is where the L5/L6 distinction happens. A Junior says "it works"; a Senior says "it breaks like this."
+        - The Hot Key Problem: If a world-famous celebrity posts a link, millions of people hit one shard at once.
+          - Solution: Mention Adaptive Caching or Secondary Indexing.
+        - The "Wait" Factor: If the database is slow, how do we prevent a "Thundering Herd" (where every client retries at once and crashes the server)?
+          - Solution: Mention Exponential Backoff and Jitter.
+      - The "Closing Statement" (Summary)
+        - Finish by circling back to your original trade-offs.
+        - The Goal: Summarize why your design is the right balance of "Simple" and "Robust."
+        - The Move: "We prioritized Availability and Low Latency for the redirect path because a slow redirect feels like a broken app. We accepted Eventual Consistency for the analytics because being off by a few clicks for a minute doesn't break the core user experience."
+    - 
+  - One Last AI Specific Tip
+    - Since you are in the AI Specialist track, always have a "Plan B" for when the AI is slow.
+    - Example: "While the RAG system retrieves context, we can show a cached 'Common Answer' or a 'Thinking' state to keep the UI responsive (P99 management)."
+  - hardware limit
+    - latency
+      - The Architect's Move:
+        - If your "Feature Store" requires 5 sequential database lookups to return a result, and each takes 10ms, your P99 is already 50ms before any processing. This tells you that you must use parallel lookups or a flat Redis cache.
+      - 
+    - Throughput & IOPS (The "Pipe" Problem)
+      - How much data can you push through the system before it chokes?
+      - Standard SSD: ~500 MB/s.
+      - NVMe SSD: ~3–7 GB/s.
+      - Network Card: 10 Gbps (Gigabit) is common ($\approx 1.25 GB/s$), but 100 Gbps exists in high-end clusters.
+      - Database Writes (Disk): A single standard disk can handle roughly 1,000–5,000 Random Writes (IOPS). If you need 50,000 writes per second, you must shard or use a memory-first architecture (LSM-trees).
+    - GPU & AI Constraints (The "VRAM" Problem)
+      - For an AI specialist, the bottleneck is rarely the CPU; it’s the GPU's memory and the "interconnect" between cards.
+      - VRAM Capacity: An H100 has 80GB of VRAM. If your model + KV Cache (for LLM context) is 90GB, it cannot run on one card.
+        - Estimation helps here: You must design for Model Sharding (Tensor Parallelism).
+      - NVLink vs. PCIe:
+        - PCIe Gen4: ~32 GB/s (The slow lane).
+        - NVLink: ~900 GB/s (The fast lane).
+      - The Architect's Move: If you are building a real-time RAG system that processes video, you can't move raw video frames over PCIe constantly; the bus will saturate. You must process as much as possible on the GPU or use heavy compression.
+    - Memory vs. Disk (The "Cost" Problem)
+      - Estimation tells you if your design is financially viable.
+        - RAM: Extremely fast, but expensive and "volatile" (data disappears on power loss).
+        - Object Storage (S3/GCS): Extremely cheap, virtually infinite, but slow ($>100ms$ latency for the first byte).
+      - estimation scenario
+        - 
+    - Why do we Estimate? (The "Senior" Signal)
+      - In an interview, when you say, "Let's estimate the storage," you are proving you won't build a "Gold-Plated" solution that is too expensive, or a "Paper-Thin" solution that crashes on day one.
+      - To Choose the Database: (If data > 10TB and write-heavy $\rightarrow$ NoSQL/Sharded).To Choose the Protocol: (If sending 10k small updates per second $\rightarrow$ gRPC/Protobuf to save bandwidth).
+      - To Define the Cache Strategy: (Calculate the "Cache Hit Ratio." If 20% of your data gets 80% of the traffic, you only need to cache that 20%).
+    - 

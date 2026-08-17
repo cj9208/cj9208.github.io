@@ -1,0 +1,47 @@
+# LORA Trainer code structure
+- build on top of
+  - transformer
+    - backbone
+  - diffusers
+  - peft
+    - for lora training
+    - https://huggingface.co/docs/transformers/main/en/peft
+  - accelerator
+    - for parallel computing
+    - DeepSpeed
+- Trainer
+  - parameters
+    - model_config
+      - pipeline
+      - condition, latent, diffusion
+        - tokenizer, text_tokenizer
+        - unet, transformer
+        - vae
+        - scheduler
+    - state
+      - training settings
+  - prepare
+    - dataset
+    - model
+      - based on model config, load relevant parts
+    - precomputation
+      - memory and speed optimization
+    - trainable_parameters
+      - set require_frad_ to False for existing parameters
+      - define LoraConfig, and do peft training
+    - optimizer
+      - define optimizer and scheduler
+      - Q
+        - deepspeed optimizer?
+        - In what case, would learning_rate be affected?
+          - eg.
+            - gradient_accumulation_steps
+            - batch_size
+            - accelerator.num_processes
+    - parallel training
+      - add accelerator support
+    - log
+  - train
+    - Q
+      - How data type affects training, eg. fp16, bf16
+      - Understand the scheduler

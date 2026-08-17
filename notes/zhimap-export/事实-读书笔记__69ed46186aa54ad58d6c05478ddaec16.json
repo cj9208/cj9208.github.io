@@ -1,0 +1,1269 @@
+{
+  "code": 0,
+  "message": "Get MindMap data OK!",
+  "data": {
+    "author": {
+      "userUuid": "857a288bd33c4a8aa9f0fca7bf344142",
+      "nickname": "陈杰",
+      "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJibo26vHhy2zNAOIZWKhtkdOqibFLOiaicQ6YKocqrD8Xmc6fz35bSzZegNyuJAFAcg9qpkKVwg8kk3w/64",
+      "region": "Anhui Hefei",
+      "biography": null
+    },
+    "publicationInfo": {
+      "uuid": "69ed46186aa54ad58d6c05478ddaec16",
+      "abstracts": null,
+      "recommendations": null,
+      "rating": 100,
+      "releaseType": "CONTENT",
+      "stateUpTime": 1581251851703,
+      "state": "EDITING",
+      "releaseState": "EDITING_NEW",
+      "copyable": false,
+      "private": false,
+      "collaboration": false
+    },
+    "mindMap": {
+      "uuid": "69ed46186aa54ad58d6c05478ddaec16",
+      "uniCode": "XLKXDpJJ",
+      "ownerUsrUUID": "857a288bd33c4a8aa9f0fca7bf344142",
+      "createTime": 1581251851703,
+      "lastUpdateTime": 1581251851703,
+      "trees": [
+        {
+          "uuid": "3abe4e7b0f294ed1a5c55c5906c2e7a8",
+          "children": [
+            {
+              "uuid": "4b642510f215479b8af35fca9c11e141",
+              "side": "right",
+              "linkColor": "#75CFDC",
+              "title": "<p>​十大情绪化本能</p>",
+              "content": "",
+              "folded": 0,
+              "link": "",
+              "children": [
+                {
+                  "uuid": "62e9ca35a5034071a7574d7bb7483168",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​一分为二</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "5c59a847a6f84c2fa12ce7fc717f3bca",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​定义：把事物分成对立的两类，如富有和贫穷，发达国家，发展中国家</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "96f645be0dd44964bcac7accd275d407",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>如何防范</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "ebd43a3607fc408dabc9534d78ed2c99",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​不只看平均数</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "5527d8084c0e4a91990b8310903c7c70",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​不只比较极端情况</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "120b04d4e1f347e482fccf08ce722d24",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​不俯视</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "b0dd31f03e264d9384f2e8f9274d3c3b",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​发展中国家一样穷</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "fcfee242ee784a2baa4a201dc3fd9485",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​其实就是统计数据分析，如何从数据中更准确的看出对象的真实情况</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ]
+                },
+                {
+                  "uuid": "1cc5907e9cdd47cea9a7a98b28618e27",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​负面思维</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "fd47937cc42f474ebbf233e8ae410e2e",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​体现</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "fd613ed8af2947819f44a6be80553435",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​对过去错误的记忆</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "c0e7619cd49f4c80ab8be9c82a6ded82",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​记忆里的事物比实际更坏</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "22c415d7b09846ce91fe06c3ecff9448",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​媒体对负面新闻的选择性报道</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "109e1333f22640bcb4efc66e4e3a734d",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​感性而非理性</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "3626d5c028d54b5698b0d91effb3c945",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​我们认为，只要坏的事情发生，就不该认为世界在变好</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "5452e3d319f641a1b088f51a5299df5a",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​如何防范</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "4b4f3fcf3a564c4e990eb0b9242022ca",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​区分状态和趋势，认识到事情可以同时是不好的，但在变好</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": null
+                        },
+                        {
+                          "uuid": "2bcde1bd9c404fc9aa2aa905af3df6ef",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​好消息不是新闻</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "c29366f42c374683a4d0ec88a2990b93",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​循序渐进不是新闻</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "1d6a4590bf72458091890886ab680bcb",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​更多的坏消息不意味着更多的坏事情</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "dce36aceba054d48a5a8d0f413a27a35",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​警惕被美化过的历史（个人和国家都会刻意美化自己的历史）</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "uuid": "00b3cd01c73f4dc2b92c75db5b375518",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​直线思维</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "a0bc26adc1264b6f817183f9c43063fa",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​简单地认为事物的发展规律会继续延续下去</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "99f1fb734db84d3499935c1a6e26e380",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​例子</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "946f415c52284150b9459ffaf2a246d4",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "人口增长，根据曲线图，人类人口还是爆发性增长，但实际是逐渐变缓，等待下一次科技革命后再大幅增长",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "dd27c282d70a433ca71d40120763a982",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "<p>​小孩的身高初始很快，后越来越慢，直到成年后不再增加</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "uuid": "38ec97438e2f4fc3a5e3d0c2ea0fff30",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​恐惧本能</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "a0590b0a256c44b5b2fccdc4a153c344",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​注意力的过滤机制</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "ca31ca5d7752458a903bc8ae65095ebf",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​信息过载</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "3304ef6b76db44629241f184af67b9c6",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​倾向于接受一些夸张的信息</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "c0554cfab06045c0889bfa16322980d5",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​恐惧的本能扭曲了我们的关注点</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "d01258c3c1724707bca2578e6ada10cf",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​比如飞机，其出事的概率小于任何其他交通工具，​但飞机出事就是大事，让我们认为飞机更加危险</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": "",
+                          "ttW": 360
+                        },
+                        {
+                          "uuid": "edc59adfac32472daa58bec60256a8a4",
+                          "side": "",
+                          "linkColor": "",
+                          "title": "实际上我们所熟知的巨大灾难的死亡人数已经是非常小了",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "8b735e47f6a24dda8475cc36dfce8fa1",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​当我们陷入恐惧的时候，就无法看到现实</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "245a79c08d5640499014527db55cbe8a",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​比如非典很大一批人是早期蜂拥去医院排队候诊被交叉传染的</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "89fe22223ad04b7c96a24eb41c72eaae",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​新冠肺炎出现的物资抢购，正常的购买食物是不会短缺的，但恐惧导致囤物资，进而物资短缺，进而逼迫所有人跟着囤物资，物资更加短缺的恶性循环</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": "",
+                          "ttW": 429
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "uuid": "7e861c4b2aa3409a9d30e2d1c2459da4",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​规模错觉</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "0ba67161d01e439ca656324ec5464d14",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​人们很容易注意局部而忽略整体</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "df34de6bf8544488a5aaefbe677d80d5",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​总是注意到一个单一的数字而误判他的重要性</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "0915a09de2d94ddc80a6fbef61d69536",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​媒体迎合这种错觉，夸大单一事件、事实或数字的重要性</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "1a859c34b6de4dbdb6e33e63a40ae26d",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​把有限的注意力和资源集中到看得见的受害者和个体上</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "fefcf3011e6b4d13a0384be4bce6b211",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>如何防范</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "2715324a2e80457c926d11299025f3fa",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​对比和比例</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "c7a8881b2f9b493387afe52aafb954ed",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​面对单一数字</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "3773de4c2f0b4f4ebdf3184894beddf7",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​和其他什么数字作比较</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "23b35cce006942b29cf3dfc4fe64cef7",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​历史数据如何</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "ff819e2df33442a4b87875aa0dd1d5f0",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​对应的比例呢</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "8b40d63a217f4090b41d5a75efa86eb9",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​二八原则</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "be3cced647d8481aba0cd2a515e55689",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​面对一系列事物，找到最大的几项并做深入分析</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "uuid": "2b8dda3e2c424ff69f45edd616224d2e",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​以偏概全</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "c0c879042b5345b6a377d9dba7f8c8b3",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​表现</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "5dbfae32818344a49847ae8fcab8bb73",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​错误的归纳</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "c2727545e0fc4c2891cdde9c1ca3f6d4",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>一分为二把世界分成我们和他们，以偏概全认为他们是一样的</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "69959125898644c8a67b4c10be50cf0f",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>误导性的以偏概全，极端典型，都是媒体善用的手段</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "11553db9b47f4f758d6212508df89ed1",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​如何防范</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "b3f79e7a83854ace9c44dc53fdcb78cb",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​质疑分类的方法</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "99ecea78c0644922bd2fc80b3433d842",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​同一类别找不同</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "5cb281f173f945af995b34a6d4364c0c",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>不同类别找相同</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "d9e598fcd0fb48219c2f3d3fbf6956cd",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​注意大多数</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "245032bc3d0441ecb46e22898cd37ada",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​51%和99%是不一样的，但都是大多数</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "9fe48e8c60e04dc78bf1053e3d2c952b",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​注意极端案例</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "214940597496471ca9048e3db4450d92",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>活灵活现的图片会留下深刻的印象，但不一定是普遍现象</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "8ac585c8c0c247b98f94f6998bad6dfa",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​不要假设别人是傻瓜</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "f0111ccbb9f54b3b866bf67ecfff0711",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​发现奇特现象，应保持谦卑和好奇，探究背后的道理</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "uuid": "b209b2e5431d408994817c3ec2af686e",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​命中注定</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "d93010b0e6ac4d868b6a6fd722fe5c03",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​认为一些事物的内在属性将决定其命运，比如国家，宗教或者文化</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "eeae6cfbfb18461c9dcd98ff810aabfd",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>但​世界是持续变化的</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "af7d069cf98e4704a8d1b8a645a46b1d",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​例子</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "4ee1616b00a847c4bdb519ec93e77097",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>生育和宗教无关，只是贫困的妇女会生更多的孩子</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "93abe7a5e62548449e9b70dc5f7431ff",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​通常认为伊斯兰教的妇女生育更多</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "edd8f08fb670434c855190fe42c909c7",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​如何防范</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "7dfd9284ffcd4f548b8a7009d4ccf13b",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​不要忽视微小的变化</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "b9d98502675843878fcb0952592dc1c2",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​每年增长1%，七十年翻一倍</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "6fe31304f4404c23a131f2c1790a7b18",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​不断更新你的知识</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "uuid": "4caa97a7a3434f64a2daa205df8d468b",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​单一视角</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "bd559868a58149edb741c6e90e271886",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​表现</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "bcaa118a0b92439aa5bac11b09d43d49",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​倾向于认为所有的问题都有单一的原因和单一的解决方案</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "6916937009414503a706f465c1449ebc",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​例子</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "3ae4c65fb2a14d0f847b3499a6b81794",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>当下媒体中认为民主是所有问题的解决方案</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "82cc0b08eaa44f3eacd02ace949e647b",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​如何防范</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "f6da4a5b63a3456ba894014ce384188e",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​有限的经验</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "5772164e09df4bf9893fa77dc7ab75eb",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​锤子和钉子</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "00a74843ced1463fa67d6d6b1d3caed3",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​夸大自己专注的问题和解决方案的重要性</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "09d4fa0d49f84d0883dc968da4a1bbe1",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​多和不同的人交流，发现不足和局限性</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "6fa46e0966234bb08dab63ff5efab3aa",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​关注数字，但不仅仅是数字</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "4254412ed30549b3b84a1544d3b2708f",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​目的是为了认识现实，数字只是媒介</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "d80d2480ee11447cb08491c6553450d7",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​交叉验证</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "1cc8f60465304d8384bc403e6ae79561",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​比如GDP的统计，可以人为夸大，但不能和其他表现验证了</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "429e50483aa74fe6bb2f080ad86642b7",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​当心简单的想法和简单的解决方案</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "ea60e0ae9c2f42bd9535f3e7bba3bfa5",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​事物是复杂的</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "c3e4c318bb5a43189d623cc372a9ebbe",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​具体事情具体分析</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "uuid": "6fc1f8b50c3c4bc8b336bb09a44b85d3",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​归咎他人</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "2682729e0b8a4277b5a0cb44a04926f7",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​表现</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "aa935789be7b40b194ceba4347675784",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​当坏事情发生后，总试图找一个清晰而简单的理由去责怪其他人</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "0800a002aa6f45a692211527198b379f",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​会夸大个人或者某个团体的重要性（责怪的对象），从而忽略了对真相的理解</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": "",
+                          "ttW": 547,
+                          "ttMaxW": 547
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "5ed0f30c8bc84c2a8c2c7e1c735ee703",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​如何防范</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "46691d5fb832453683ef59f7dfb20342",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​目标是寻找原因，而不是寻找坏人</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "25b061f6853b469397edab89e2e891ad",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​不应将坏的结果归咎于某个人，而应检查整个系统</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "uuid": "245708a7105b44088edc0498f1a2bbb8",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​情急生乱</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "6d7100b673bf4f16bb4876d767403c8f",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​表现</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "67fdff94190442b8bc9c09b01666c7e3",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​现在行动，否则你将永远失去机会</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "c5066cc06e7d44ea9a9d0dac32c56229",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​销售员的推销话术</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "813883a7aec846febd52d9e359e61d1a",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​你必须立刻做决定，立刻行动！</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": null
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "9218a2e6d87446c1989ef70144eb9005",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​如何防范</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "ed904d23f59f4c509bcb365bfad4de16",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​坚持了解基础数据</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "108fb899141549c7b9f2eb43003923d0",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​警惕相关但不准确的数据</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "e29d846bc20848e7a59891da3b1e13eb",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​只有相关且准确的数据才有用</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "6340d180e63c46bb9ffbd996bb4cfb1a",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​小心过激的行动</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "b9ff525e344d4623a3cbd656caa5ae61",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​通常循序渐进的方案，总会优于大刀阔斧的行动</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "uuid": "3826f4e2ab5145998913dc524d537c32",
+              "side": "right",
+              "linkColor": "#E08370",
+              "title": "<p>​总结</p>",
+              "content": "",
+              "folded": 0,
+              "link": "",
+              "children": [
+                {
+                  "uuid": "1b0fc9741a734ea8b70101e77462fed2",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​克服情绪化本能</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "19f44e0cacbf433f8ef47ec600431d63",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<img src=\"/res/9/7/1581259877209839719.jpeg\" style=\"width: 258px; height: 463px; max-width: 100%; max-height: 100%;\"><p>​</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ]
+                },
+                {
+                  "uuid": "a490fa6104c44c039c5fec1d66a78e27",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​实事求是</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                }
+              ]
+            }
+          ],
+          "linkColor": "#C0C0C0",
+          "side": null,
+          "title": "<p>事实-读书笔记</p>",
+          "content": null,
+          "siblingOrder": 0,
+          "link": null,
+          "leftIcons": null,
+          "rightIcons": null,
+          "folded": false
+        }
+      ],
+      "theme": "{\"magic\":\"zmtheme:v500\",\"version\":3,\"name\":\"bg_bright_ln_color\",\"text\":\"默认多色\",\"image\":\"/images/common/theme-bg-bright-ln-color.png\",\"mapBgColor\":\"#FFFFFF\",\"mapFgColor\":\"#282828\",\"fontColor\":\"#282828\",\"rootLineColor\":\"#C0C0C0\",\"lineColors\":[\"#3A8DDF\",\"#E08370\",\"#5FBC5C\",\"#B24BC8\",\"#75CFDC\"]}",
+      "version": 1,
+      "frontendState": null,
+      "commit": 268,
+      "isDefault": false,
+      "title": "<p>中心主题</p>"
+    },
+    "zmCounter": {
+      "read": 0,
+      "voteAmount": 0,
+      "voteUp": 0,
+      "voteDown": 0,
+      "comment": 0,
+      "challenge": 0,
+      "bookmark": 0,
+      "shareAmount": 1,
+      "shareCircle": 0,
+      "shareFriends": 1,
+      "share2qq": 0,
+      "share2qzone": 0
+    }
+  },
+  "extra": null,
+  "mt": null,
+  "token": null
+}

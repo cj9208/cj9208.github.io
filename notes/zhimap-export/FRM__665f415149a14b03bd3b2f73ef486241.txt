@@ -1,0 +1,1029 @@
+FRM
+- Part 1
+  - foundation of risk management
+    - overview
+      - what is risk
+        - expected loss
+        - unexpected loss
+    - risk manager's job
+      - uncover the source of risk and measure its impact: help make risk management decision
+      - balance risk and reward
+      - make risk transparent to key decision makers and stakeholders
+      - find the right relationship between business leaders and the specialist risk managment functions
+    - topology of risk
+      - market risk
+        - equity price risk
+        - interest rate risk
+          - tranding risk
+          - gap risk
+        - foreign exchange risk
+        - commodity price risk
+      - credit risk
+        - default risk
+        - bankruptcy risk
+        - downgrade risk
+        - settlement risk
+      - liquidity risk
+        - funding liquidity risk
+        - trading liquidity risk
+      - operational risk
+        - potential losses resulting from operational weaknesses including inadquate sysetms, management failure, faulty controls, fraud and human errors
+        - human factor risk
+        - technology risk
+      - legal and regulatory risk
+      - business risk
+      - strategic risk
+      - reputation risk
+      - systematic risk
+    - putting risk management into practice
+      - determining the objective
+      - mapping the risks
+      - instruments for risk management
+      - constructing and implementing a strategy
+      - performance evaluation
+    - ERM
+      - comprehensive and integrated framework for managing key risks in order to achieve business objectives, minimise unexpected earnings volatility and maximise firm value
+    - Markowitz portfolio theory
+      - effective frontier
+      - CML
+    - CAPM
+      - SML
+      - Sharpe ratio E[Rp]−Rfσ(Rp)\frac{E[R_p] - R_f}{\sigma(R_p)}σ(Rp)E[Rp]−Rf
+      - Treynor ratio E[Rp]−Rfβp\frac{E[R_p] - R_f}{\beta_p}βpE[Rp]−Rf
+      - Sortino ratio E[Rp]−MAR1N−1∑t=1N(Rpt−MAR)2\frac{E[R_p] - MAR}{\sqrt{\frac{1}{N-1}\sum_{t=1}^N \left( R_{p_t} - MAR\right)^2 } }N−11∑t=1N(Rpt−MAR)2E[Rp]−MAR
+        - MAR: minimum acceptable return
+      - Jensen's alpha
+      - information ratio E[Rp]−E[RB]σ(Rp−RB)\frac{E[R_p] - E[R_B]}{\sigma(R_p-R_B) }σ(Rp−RB)E[Rp]−E[RB]
+        - σ(Rp−RB)\sigma(R_p-R_B) σ(Rp−RB) is called tracking error
+    - APT
+      - factor model
+      - Fama-French Three-Factor model
+        - SMB: small minus big
+        - HML: high minus low
+        - market
+    - examples of financial disasters
+  - quantitative analysis
+    - probability
+    - statistics
+      - moment, central moment, expected value, variance, skewness, kurtosis, covariance, correlation
+      - sample mean, variance s2=∑i=1n(Xi−X‾)2n−1s^2 = \sum_{i=1}^n \frac{(X_i-\overline{X})^2}{n-1}s2=∑i=1nn−1(Xi−X)2
+      - best linear unbiased estimator(BLUE)
+        - linearity
+        - unbiased
+        - has minimum variance
+      - Chebyshev's inequality
+P(∣X−μ∣≤kσ)≥1−1k2P(|X-\mu|\leq k\sigma) \geq 1 - \frac{1}{k^2}
+        - P(∣X−μ∣≤kσ)≥1−1k2P(|X-\mu|\leq k\sigma) \geq 1 - \frac{1}{k^2}P(∣X−μ∣≤kσ)≥1−k21
+      - distribution
+        - binomial
+        - poisson
+        - uniform
+        - normal
+          - 1σ:68%1.65σ:90%,1.96σ:95%,2.58σ,99%1 \sigma: 68\% 1.65 \sigma: 90\%, 1.96\sigma:95\%, 2.58\sigma,99\% 1σ:68%,1.65σ:90%,1.96σ:95%,2.58σ:99%1 \sigma: 68\%, 1.65 \sigma: 90\%, 1.96\sigma:95\%, 2.58\sigma: 99\%1σ:68%,1.65σ:90%,1.96σ:95%,2.58σ:99%
+        - logmormal
+        - Chi-Square distribution
+        - t-distribution
+        - F-distribution
+      - hypothesis test
+        - sampling and estimation
+          - CLT: central limit theorem
+            - large sample n≥30n \geq 30lan≥30 , assume approximately normal
+          - standard error of mean: X‾\overline{X}
+ : SE(X)=snSE(X) = \frac{s}{\sqrt{n}}SE(X)=ns
+        - steps
+          - state null and alternative hypothesis
+          - identify the test statistic
+          - select a level of significance
+          - formulate a decision rule
+          - take a sample, arrive at decision
+          - do not reject / reject the hypothesis
+        - selecting test statistics
+          - mean
+            - normally distributed, known variance
+              - z=X~−μ0σ/n∼N(0,1)z = \frac{\tilde{X}-\mu_0}{\sigma/\sqrt{n}} \sim N(0,1)z=σ/nX~−μ0∼N(0,1)
+            - normally distributed, unknown variance
+              - t=X~−μ0s/n∼t(n−1)t = \frac{\tilde{X}-\mu_0}{s/\sqrt{n}} \sim t(n-1)t=s/nX~−μ0∼t(n−1)
+          - variance
+            - normally distributed
+              - χ2=(n−1)s2σ02∼χ2(n−1)\chi^2 = \frac{(n-1)s^2}{\sigma_0^2} \sim \chi^2(n-1)χ2=σ02(n−1)s2∼χ2(n−1)
+            - two independent normally distributed
+              - F=s12s22∼F(n1−1,n2−1)F = \frac{s_1^2}{s_2^2} \sim F(n_1-1,n_2-1)F=s22s12∼F(n1−1,n2−1)
+        - errors
+          - type 1
+            - reject the null hypothesis when it is actually true
+            - significance level
+              - the probability of making type 1 error
+              - = P(type 1 error)
+          - type 2
+            - fail to reject the null hypothesis when it is actually false
+            - power of a test
+              - the probability of correctly rejecting the null hypothesis when it is false
+              - = 1 - P(type 2 error)
+      - linear regression
+        - standard error of regression
+          - measure the fit of the regression line
+          - SER=∑(Yi−Y^i)2n−2SER = \sqrt{\frac{\sum (Y_i-\hat{Y}_i)^2}{n-2}}SER=n−2∑(Yi−Y^i)2
+        - analysis of variance(ANOVA) table
+        - R2R^2the coefficient of determination R2=ESSTSS=1−SSRTSSR^2 = \frac{ESS}{TSS} = 1 - \frac{SSR}{TSS}
+          - R2=ESSTSS=1−SSRTSSR^2 = \frac{ESS}{TSS} = 1 - \frac{SSR}{TSS}R2=TSSESS=1−TSSSSR
+          - ESS: explained sum of squares =∑(Y^i−Y‾)2= \sum (\hat{Y}_i-\overline{Y})^2=∑(Y^i−Y)2
+          - SSR: sum of square residuals =∑(Yi−Y^i)2= \sum (Y_i - \hat{Y}_i)^2=∑(Yi−Y^i)2
+          - TSS: total sum of squares
+        - confidence interval for the regression coefficient
+          - b^±(tc×sb^)\hat{b} \pm (t_c \times s_{\hat{b}})b^±(tc×sb^)
+          - sb^s_{\hat{b}}sb^ : standard error of the regression coefficient
+        - regression coefficient hypothesis testing
+          - test if the true slop is b
+          - use t-test t=b^−bsb^∼t(n−2)t = \frac{\hat{b} - b}{s_{\hat{b}}} \sim t(n-2)t=sb^b^−b∼t(n−2)
+      - multiple regression
+        - adjusted R2=1−SSR/n−k−1TSS/n−1R^2 = 1 - \frac{SSR/n-k-1}{TSS/n-1}R2
+          - =1−SSR/n−k−1TSS/n−1= 1 - \frac{SSR/n-k-1}{TSS/n-1}=1−TSS/n−1SSR/n−k−1
+          - does not increase when a new independent variable is added
+        - homoskedasticity and heteroskedasticity
+          - the standard errors are usually not reliable estimate
+        - serial correlation
+        - multicolinearity
+        - omitted variable bias
+          - bias arises when one or more regressors are correlated with an omitted variable
+      - forecasting trends
+        - measure of model fitness
+          - mean squared error(MSE)
+          - adjusted MSE
+            - S2=∑et2T−kS^2 = \frac{\sum e_t^2}{T-k}S2=T−k∑et2
+            - deduct the degree of freedom to reduce MSE bias
+          - Aksikr information criterion(AIC)
+            - deal with trade-off between the goodness of fit of the model and the complexity of the model
+            - AIC = e2kT×MSEe^{\frac{2k}{T}} \times MSEeT2k×MSE
+          - Schwarz information criterion(SIC)
+            - lower SIC implies either fewer explanatory variables, better fit, or both
+            - the only consistency criterion
+        - cycle
+          - Wold's representation
+      - estimating volatilities and correlation
+        - ARCH model
+        - EWMA model
+        - GARCH(1,1) model
+      - copula
+        - nonlinear relationship
+        - tail dependence
+      - simulation methods
+        - Monte Carlo simulation
+        - price increments are assumed to have a normal distribution
+        - select other distributions
+          - bootstrapping
+            - draw from historical scenarios
+            - ineffective situations
+              - outliers in the data
+              - non-independent data
+          - find a distribution using historical data
+        - variance reduction techniques
+          - antithetic variables
+          - control variates
+        - random number generation
+  - financial market and products
+    - Bond markets
+      - interest rate
+        - treasury rates, LIBOR, repo rates
+        - overnight indexed swap(OIS) rates, riskfree rate
+        - spot rates, forward rates
+        - simple interest, compounding interest
+        - major theories of term structure
+          - expection theory
+          - market segmentation theory
+          - liquidity preference theory
+      - bond valuation
+        - = sum of discounted cash flow
+        - risk metrics
+          - Maculay duration
+            - average period of cash flow returning weighted by discounted cash flow
+          - modified duration
+            - =−ΔPΔy×1P=DMacaulay1+y= -\frac{\Delta P}{\Delta y} \times \frac{1}{P} = \frac{D_{Macaulay}}{1+y}=−ΔyΔP×P1=1+yDMacaulay
+          - DV01
+            - = modified duration * bond value * 0.0001
+          - convexity
+            - P=P0−DP0Δy+12CP0(Δy)2P = P_0 - DP_0\Delta y + \frac{1}{2}CP_0(\Delta y)^2P=P0−DP0Δy+21CP0(Δy)2
+          - reinvestment risk
+      - treasury market
+        - treasury bills
+          - maturity of one year or less
+          - cash price = 100 (1−discount rate×n360)\left(1- \text{discount rate} \times \frac{n}{360} \right)(1−discount rate×360n)
+        - treasury notes and treasury bonds
+          - make interest payments semi-annually
+          - clean price
+            - not including any accrued interest
+          - dirty price
+            - = clean price + accrued interest
+            - day convention
+              - treasury bond: actual / actual
+              - corporate and municipal bonds: 30 / 360
+              - money market instruments: actual / 360
+      - corporate bond
+        - credit risk
+          - credit default risk
+          - credit spread risk
+            - loss resulting from changes in the level of credit spreads
+      - MBS
+    - derivatives markets
+      - forward and futures
+        - futures
+          - traded on an exchange
+          - standardized contracts
+          - settled daily
+          - high liquidity
+          - guaranteed by clearinghours
+          - margin required and adjusted
+        - pricing
+        - hedging strategies using forward
+      - swap
+        - main types
+          - interest rate swap
+          - currency swap
+      - option
+        - trading strategies involving options
+          - bull spread
+          - bear spread
+          - butterfly
+          - canlendar
+          - straddle
+          - strangle
+          - strip
+          - strap
+        - call option
+          - without dividend, European = American
+          - D>K(1−e−r(T−t))D > K(1-e^{-r(T-t)})D>K(1−e−r(T−t)) shuld exercise at time when dividend is paid
+          - greeks
+    - MBS(mortgage-backed securities)
+      - prepayment of mortgage loans
+        - SMM(single monthly mortality rate)
+        - CPR(conditional prepayment rate)
+        - CPRn=1−(1−SMMn)12CPR_n = 1 - (1-SMM_n)^{12}CPRn=1−(1−SMMn)12
+    - central conterparties
+      - exchanges
+      - OTC
+        - main risk
+          - counterparty risk
+          - systemic risk
+    - investment banks
+      - IPO
+    - insurance companies
+    - mutual funds and hedge funds
+  - valuation and risk model
+    - fixed income
+      - valuation
+        - sum of discounted cash flow
+        - bond replication
+          - law of one price
+      - risk metrics
+        - key rate shifts
+    - option
+      - binomial trees
+      - Black-Scholes-Merton model
+        - Greek letters
+    - risk models
+      - market risk
+        - types of risk measures
+          - mean-variance framework
+          - value at risk(VaR)
+          - conditional VaR / expected shortfall
+          - spectral risk measures
+        - Putting VaR to work
+      - credit risk
+        - external and internal ratings
+        - capital structure in banks
+        - country risk
+          - loss distribution approach
+      - operational risk
+        - operational risk management
+          - risk control and self-assessment(RCSA)
+          - key risk indicators(KRIs)
+        - regulatory capital requirement
+          - capital requirement
+            - basic indicator approach(BIA)
+            - standardized approach(SA)
+            - advanced measurement approach(AMA)
+          - data requirement
+        - insurance in mitigating operational risk
+          - moral hazard
+          - adverse selection
+      - stress testing
+- Part 2
+  - investment management and risk management
+    - factor investing
+      - factor theory
+        - CAPM
+          - assumptions
+            - make decisions solely in terms of expected values and standard deviations
+            - plan for the same single holding period
+            - have homogeneous expectations or beliefs
+            - An individual cannot affect the asset price by buying or selling action
+            - All assets are tradable, infinitely divisible
+            - Markets are frictionless, including no transaction cost and no taxes
+            - Short sale is allowed unlimitedly
+            - Unlimited lending and borrowing at the riskless rate
+          - only market factor
+            - all risky assets have risk premiums determined only by their exposure to the market portfolio
+          - Lessons
+            - hold the factors not the assets
+            - risk is factor exposure
+        - generalization of CAPM
+          - multi-factor
+        - factors
+          - Macro factors
+            - economic growth
+            - inflation
+            - volatility
+            - productivity, demographic, political
+          - dynamic factors
+            - size
+              - The SMB factor was designed to capture the
+outperformance of small firms relative to large firms
+            - value
+              - value investing: long value stocks and short growth stocks
+              - negative feedback strategy
+            - momentum
+              - trend investing
+              - positive feedback strategy
+            - Fama-French three factor model
+              - market index, firm size, book-to-market ratio
+          - A shock to a factor matters more than the level of the factor.
+          - can use data mining to find new factors
+      - efficient market hypothesis
+        - weak
+          - market data
+        - semi-strong
+          - all publicly known and available information
+          - passive investing
+        - strong
+          - all information
+      - Alpha
+        - excess return w.r.t a benchmark
+        - tracking error
+          - standard error of excess return
+        - information ratio
+          - IR=active returntracking error=ασIR = \frac{active \ return }{tracking \ error} = \frac{\alpha}{\sigma}IR=tracking erroractive return=σα
+        - Ideal benchmark
+          - Well defined, Tradable , Replicable, Adjusted for risk
+        - Grinold fundamental law
+          - IR = IC ×BR\times \sqrt{BR}×BR
+          - IC: the correlation of the manager's forecast with the actual returnd
+          - BR(the breadth of the strategy): how many bets are taken
+          - assumption
+            - each active return is independent from the other active forecasts for that period and independent from the forecast for the security in subsequent periods
+      - low-risk anomaly
+        - stocks with low betas and low volatility have high returns
+        - explanation
+          - data mining
+          - leverage constraints
+          - agency problems
+            - eg. long only
+          - preference
+      - illiquid assets
+        - characteristics
+          - infrequent trading, small amounts being traded, low turnover
+        - source of illiquidity
+          - due to market imperfections
+          - participation costs
+          - transaction costs
+          - search frictions
+          - asymmetric information
+          - price impact
+            - large trade will move markets
+          - funding constraints
+        - biases on reported returns
+          - survivorship bias
+          - infrequent sampling
+            - smoothed price curve, underestimated volatility
+          - selection bias
+        - illiquidity risk premiums
+          - allocation across asset classes
+            - illiquidity premiums may not be true
+              - illiquidity biases
+                - reported data cannot be trusted
+              - ignored risk
+              - no market index for inliquid assets
+                - no comparison
+              - factor risk cannot be separated from manager skill
+                - investing in illiquid markets is always a bet on management talent
+          - choose securities within an asset class that are more illiquid
+            - assets from different classes are rarely treated consistently as a whole
+            - eg: treasuries on the run / off the run
+          - act as market maker at the individual security level
+            - supply liquidity by acting as an intermediary
+          - rebalancing
+            - force asset owners to buy at low prices when others want to sell
+            - counter-cyclical
+    - portfolio risk management
+      - inputs for construction
+        - Tasks
+          - assess the impact of practical issues in portfolio construction, such as determination of risk aversion, incorporation of specific risk aversion, proper alpha coverage
+          - describe portfolio revisions and reblancing, evaluate the tradeoff between alpha, risk, transaction costs and time horizon
+          - determine the optimal no-trade region for rebalancing with transaction costs
+        - alphas
+          - refining alphas
+            - motivation
+              - most active managers construct portfolio subject to certain constraints
+              - eg. no short, cash limit, liquidity
+            - scales the alphas
+              - α=volatility∗IC∗Score\alpha = volatility * IC * Scoreα=volatility∗IC∗Score
+              - score has mean 0 and standrad deviation 1
+              - volatility = residual risk
+              - std(α)=volatility∗ICstd(\alpha) = volatility * ICstd(α)=volatility∗IC
+            - trim alpha outliers
+              - very large positive or negative alphas can have undue influence
+              - closely examine all stocks with alphas greater in magnitude than three times the scale of the alphas
+            - neutralization
+              - remove alpha of benchmark
+        - active risk aversion
+          - general risk aversion
+            - =IR2σα= \frac{IR}{2\sigma_{\alpha}}=2σαIR
+            - utility function
+              - =αp−λAσα2= \alpha_p - \lambda_A \sigma_{\alpha}^2=αp−λAσα2
+            - αp=IR∗σα\alpha_p = IR * \sigma_{\alpha}αp=IR∗σα
+          - specific factor risk
+        - transaction costs
+          - marginal contribution to value added(MCVA)
+      - construction techniques
+        - objective
+          - maximize active returns minus an active risk penalty
+        - screen
+          - steps
+            - rank the assets by alpha
+            - choose the top performing assets
+            - equal-weight or capitalization-weight
+          - advantage
+            - simple, easy to understand
+            - robust
+            - enhance alphas by concentrating the portfolio in the high-alpha stocks
+          - risk control
+            - include a sufficient number of stocks to avoid concentation in any single stock
+            - transaction costs are limited by controlling turnover
+          - disadvantage
+            - ignore all informations in the alphas except for the rankings
+            - exclude assets with lower alpha
+        - straification
+          - steps
+            - split the list of assets into mutually exclusive categories
+            - screen
+        - linear programming
+          - advantage
+            - take all information into consideration
+          - disadvantage
+            - hard to produce portfolios with a prescribed number of stocks
+        - quadratic programming
+      - VaR measures
+        - assumptions
+          - Delta-normal model
+            - all individual security returns are assumed normally distributed
+          - traditional portfolio analysis
+            - based on variances and covariances
+        - individual VaR
+          - =z×σ×V= z \times \sigma \times V=z×σ×V
+          - z : z-score associated with the level of confidence
+          - σ \sigma σ : the standard deviation of stock returns
+          - V : the market value of the stock
+        - VaR for several stocks
+          - correlation matters in large portfolio
+        - marginal VaR
+          - =zcov(Ri,Rp)σp=z×βi×σp=z×ρip×σi = z \frac{cov(R_i,R_p)}{\sigma_p} = z \times \beta_i \times \sigma_p = z \times \rho_{ip} \times \sigma_i=zσpcov(Ri,Rp)=z×βi×σp=z×ρip×σi
+        - incremental VaR
+          - the change of VaR owing to a new position
+          - =VaRp+a−VaRp= VaR_{p+a} -VaR_{p}=VaRp+a−VaRp
+          - or ≈MVaRi×amount\approx MVaR_i \times amount≈MVaRi×amount
+        - component VaR
+          - indicate how much the portfolio VaR would change approximately if the given component is deleted
+          - = MVaR * component value
+      - portfolio risk
+        - analytic methods
+          - only consider risk
+            - when the portfolio risk has reached a global minimum, all MVaRs or all betas must be equal
+          - consider risk and return
+            - maximize the Shape ratio with VaR
+              - Rp−FfVaRp\frac{R_p-F_f}{VaR_p}VaRpRp−Ff
+            - all ratios of excess return to marginal VaR(beta) Ri−FfMVaRi\frac{R_i-F_f}{MVaR_i}MVaRiRi−Ff must be equal
+      - VaR and risk budgeting
+        - DB vs DC
+          - surplus at risk(SaR)
+      - risk monitering
+        - liquidity duration
+      - protfolio performance measurement
+        - risk-adjusted performance measures
+          - Sharpe ratio
+            - =Rp−Rfσp= \frac{R_p-R_f}{\sigma_p}=σpRp−Rf
+          - Treynor ratio
+            - =Rp−Rfβp= \frac{R_p-R_f}{\beta_p}=βpRp−Rf
+          - for well diversified portfolio, Shaper ratio and Treynor ratio give the same ranking
+          - Jensen's alpha
+          - information ratio
+          - statistical significance of alpha
+          - Modiglinai-square measure
+            - M2=σmσp(Rp−Rf)−(Rm−Rf)M^2 = \frac{\sigma_m}{\sigma_p}(R_p-R_f) - (R_m-R_f)M2=σpσm(Rp−Rf)−(Rm−Rf)
+        - market timing
+          - include high(low) beta stocks if expect an up(down) market
+        - style analysis
+          - Regress fund returns on indexes reprensenting a range of asset classes. The regression coefficient on each index measures the fund's implicit allocation to that 'style'
+        - performance attribution
+          - asset allocation
+            - equity / bond
+          - selection
+            - sector selection
+            - security selection
+    - hedge fund
+      - strategies
+      - agency problem
+      - due diligence
+  - market risk management and measurement
+    - VaR and other risk measures
+      - methods of VaR estimation
+        - parametric approach
+          - requires to explicitly specify the statistical distribution from which our data observations are drawn
+          - normal VaR
+            - VaRα=−(μ−zα×σ)VaR_{\alpha} = - (\mu - z_{\alpha}\times \sigma)VaRα=−(μ−zα×σ)
+          - lognormal VaR
+            - VaRα=(1−eμ−zα×σ)×PVaR_{\alpha} = (1-e^{\mu - z_{\alpha}\times \sigma}) \times PVaRα=(1−eμ−zα×σ)×P
+        - nonparametric approach
+          - see coherent risk measures
+        - standard errors of quantile estimators
+          - SE(q)=[p(1−p)nf(q)2]1/2SE(q) = \left[ \frac{p(1-p)}{nf(q)^2} \right]^{1/2}SE(q)=[nf(q)2p(1−p)]1/2
+          - p: the proportion for the quantile
+          - f(q): the corresponding probability density function
+      - coherent risk measures
+        - Def
+          - weighted average of the quantiles of the loss distribution, where the weighting function is specified by the user
+        - expected shortfall(ES)
+          - probability-weighted average of tail losses
+        - Quantile-Quantile(QQ) plot
+          - a plot of the quantiles of the empirical distribution against those of some specified distribution and can be used to identify the distribution of our data by its shape
+        - non-parametric historical simulation
+          - basic historical simulation
+          - bootstrap historical simulation
+            - steps
+              - create a large number of new samples at random from our original sample with replacement
+              - each new 'resampled' sample gives a new VaR or ES estimate
+              - take the best estimate to be mean of these resample-based estimates
+          - non-parametric density estimation
+            - use histograms to simulate the probability density function
+        - weighted historical simulation
+          - semi-prametric
+          - age-weighted historical simulation(BRW)
+            - discount the older observations in favor of newer ones
+            - wi=λi−1(1−λ)1−λnw_i = \frac{\lambda^{i-1}(1-\lambda)}{1-\lambda^n}wi=1−λnλi−1(1−λ)
+          - volatility-weighted historical simulation(HW)
+          - correlation-weighted historical simulation
+          - filtered historical simulation
+      - backtesting VaR
+        - difficulties
+          - the trading portfolio evolves dynamically in practice
+        - testing framework
+          - test statistic
+            - z=x−pTp(1−p)Tz = \frac{x-pT}{\sqrt{p(1-p)T}}z=p(1−p)Tx−pT
+            - x: number of exceptions
+            - the exceptions are assumed to be independent
+        - model verification
+          - unconditional coverage model
+            - ignore time variation in the data, so the exceptions should be evenly spread over time
+            - reject if LRuc>3.84LR_{uc} > 3.84 
+LRuc>3.84 (95% confidence level)
+          - conditional coverage model
+            - LRcc=LRuc+LRindLR_{cc}=LR_{uc} + LR_{ind}LRcc=LRuc+LRind
+            - reject if LRcc>5.991LR_{cc} > 5.991LRcc>5.991
+          - type 1 and type 2 errors
+        - Basel rules
+          - daily exceptions of 99% VaR over the last year
+          - Basel penalty zones
+            - number of exceptions
+              - multiplicative factor k
+                - penalty
+          - green
+            - <= 4
+              - 3
+                - no
+          - yellow
+            - 5
+              - 3.4
+                - model integrity or accuracy: should apply
+            - 6
+              - 3.5
+                - intraday trading: should be considered
+            - 7
+              - 3.65
+                - bad luck: no guidance
+            - 8
+              - 3.75
+            - 9
+              - 3.85
+          - red
+            - >=10
+              - 4
+                - automatic penalty
+      - VaR mapping
+        - similar to PCA
+          - choice of the set of general risk factors should reflect the tradeoff between better quality of the approximation and faster processing
+        - mapping process
+          - making all positions to market in current dollars
+          - the market value for each instrument is then allocated to the risk factors
+          - positions are summed for each risk factor
+        - applications
+          - mapping fixed-income portfolio
+    - modelling dependence: correlation and copulas
+      - financial correlation risk
+        - the risk of financial loss due to adverse movements in correlation between two or more variables
+        - eg
+          - during 2008 financial crisis, the correlation between default of bonds increases substantially, thus decrease the value of senior tranche
+      - statistical correlation models
+        - Pearson correlation
+          - ρXY=cov(X,Y)σXσY\rho_{XY} = \frac{cov(X,Y)}{\sigma_X\sigma_Y}ρXY=σXσYcov(X,Y)
+          - limitations
+            - financial relationship are typically nonlinear
+            - zero correlation does not imply independence
+            - not invariant to tranformations
+        - Spearman rank correlation
+          - ρS=1−6∑di2n(n2−1)\rho_{S} = 1 - \frac{6\sum d_i^2}{n(n^2-1)}ρS=1−n(n2−1)6∑di2
+          - n: number of observations
+          - did_idi :the difference between the ranking for period i
+        - Kendall’s τ\tauτ
+          - τ=nc−ndn(n−1)/2\tau = \frac{n_c-n_d}{n(n-1)/2}τ=n(n−1)/2nc−nd
+          - ncn_cnc: number of concordant pairs
+            - concordanct pairs: sgn(Xi−Xj)=sgn(Yi−Yj),i̸=jsgn(X_i-X_j) = sgn(Y_i-Y_j), i\neq jsgn(Xi−Xj)=sgn(Yi−Yj),i̸=j
+          - ndn_dnd : number of discordant pairs
+            - discondant pairs: sgn(Xi−Xj)=−sgn(Yi−Yj),i̸=jsgn(X_i-X_j) = -sgn(Y_i-Y_j), i\neq jsgn(Xi−Xj)=−sgn(Yi−Yj),i̸=j
+          - Xi=Xj or Yi=YjX_i=X_j \text{ or } Y_i=Y_jXi=Xj or Yi=Yj : neither concordant nor discordant
+        - limitation of ordinal risk measures
+          - less sensitive to outliers
+      - financial correlation modeling
+        - Def
+          - create a joint probability distribution between two or more variables while maintaining their individual marginal distributions
+        - Gaussian copula
+    - term structure models of interest rate
+      - binomial interest rate tree model
+        - backward induction valuation
+          - steps
+            - find the risk-neutral probabilities that equate the price of the underlying securities with their expected discounted values
+            - price the contingent claim by expected discounted
+value under these risk-neutral probabilities
+        - issues
+          - recombining vs non-recombining
+          - option-adjusted spread(OAS)
+          - size of time steps
+      - models
+        - drift
+          - no drift
+          - constant drift
+          - Ho-Lee model: time-dependent drift
+            - dr=λtdt+σdWdr =\lambda_tdt + \sigma dWdr=λtdt+σdW
+          - Vasicek model: mean-reverting drift
+            - dr=κ(θ−r)dt+σdWdr =\kappa(\theta - r)dt + \sigma dWdr=κ(θ−r)dt+σdW
+        - volatility
+          - CIR model
+            - dr=κ(θ−αr)dt+σrdWdr = \kappa(\theta - \alpha r)dt + \sigma \sqrt{r} dWdr=κ(θ−αr)dt+σrdW
+          - Courtadon model
+            - dr=κ(θ−αr)dt+σrdWdr = \kappa(\theta - \alpha r)dt + \sigma r dWdr=κ(θ−αr)dt+σrdW
+    - other related topics
+      - empirical approaches to risk metrics and hedges
+        - DV01
+          - drawback
+            - the changes in yields on hedged portfolio and
+hedging instrument may not be one-for-one
+            - partial solution
+              - regression analysis based on historical data
+      - volatility smiles
+  - credit risk management and measurement
+    - identification of credit risk
+      - tasks
+        - define and explain credit risk
+        - explain the components of credit risk evaluation
+        - describe, compare and contrast various credit risk mitigants and their role in credit risk
+      - four componets of credit risk
+        - obligor's capacity and willingness to repay
+        - external conditions
+        - attributes of bligation from which credit risk arises
+        - credit risk mitigants
+          - collateral
+          - guarantees promised by a third party to accept liability
+      - quantitative measures of credit risk
+        - probability of default (PD)
+        - loss given default (LGD)
+        - exposure at default (EAD)
+        - expected loss(EL)
+          - = EAD * PD * LGD
+          - use cash to cover
+        - unexpected losses(UL)
+          - = credit VaR
+          - use capital to cover
+        - concentration risk
+          - sum of individual risks does not equal the portfolio risk
+          - measurement
+            - marginal contribution to portfolio UL
+      - classifications of credit risk
+        - default-mode(loss-based) valuation
+          - default risk
+          - recovery risk
+          - exposure risk
+        - value-based valuation
+          - migration risk
+          - spread risk
+          - liquidity risk
+    - measurement of credit risk
+      - estimate probability of default (PD)
+        - experts-based approach
+          - agencies' rating
+            - migration matrix
+            - change on PD
+              - investment-grade credits, increase more than proportional with the horizion
+              - speculative-grade credits, increase less than proportional with the horizion
+          - internal credit rating
+        - infer from corporate bond prices
+          - risk-neutral measure
+            - P=1001+YTM=(1−PD)1001+Rf+PD100(1−LGD)1+RfP= \frac{100}{1+YTM} = (1-PD)\frac{100}{1+R_f} + PD\frac{100(1-LGD)}{1+R_f}P=1+YTM100=(1−PD)1+Rf100+PD1+Rf100(1−LGD)
+            - credit spread: YTM−Rf≈PD×LGDYTM-R_f \approx PD\times LGDYTM−Rf≈PD×LGD
+          - real world
+            - YTM−Rf−risk premium≈PD×LGDYTM-R_f - \text{risk premium} \approx PD\times LGDYTM−Rf−risk premium≈PD×LGD
+          - different kinds of credit spread
+            - nominal spread
+              - YTMrisky bond−YTMbenckmark government bondYTM_{\text{risky bond}}-YTM_{\text{benckmark government bond}}YTMrisky bond−YTMbenckmark government bond
+            - i-spread (interpolated)
+              - linearly interpolated YTM on benchmark government bond or swap rate
+            - Z-spread (Zero volatility spread)
+            - Option adjusted spread (OAS)
+              - Z-spread adjusted for optionality of embedded options
+              - Z-spread = OAS if no option
+            - spread01(DVCS)
+              - Increase and decrease the z-spread by 0.5 basis points, reprice the bond for each of these shocks, and compute the difference
+        - infer from equity prices
+          - credit risk as option
+            - Equity: Long call option on firm value V, strike price= F
+          - Merton model
+            - St=VtN(d1)−Fe−r(T−t)N(d2)S_t = V_tN(d_1) -Fe^{-r(T-t)}N(d_2)St=VtN(d1)−Fe−r(T−t)N(d2)
+            - d1=ln⁡(V/Fe−r(T−t))σT−t+σT−t2,d2=d1−σT−td_1 = \frac{\ln(V/Fe^{-r(T-t)})}{\sigma\sqrt{T-t}}+\frac{\sigma\sqrt{T-t}}{2}, d_2 = d_1-\sigma\sqrt{T-t}d1=σT−tln(V/Fe−r(T−t))+2σT−t,d2=d1−σT−t
+            - N(d2)N(d_2)N(d2)
+              - probability of exercising the call option = 1-PD = 1−N(−d2)1- N(-d_2)1−N(−d2)
+            - credit spread
+              - =−1T−tln⁡(DF)−rf= -\frac{1}{T-t} \ln\left(\frac{D}{F}\right) -r_f=−T−t1ln(FD)−rf
+            - distance to default (DtD)
+              - =−ln⁡(V/F)+(μ−0.5σ2)(T−t)− other payoutsσT−t= -\frac{\ln(V/F)+(\mu-0.5\sigma^2)(T-t)-\text{ other payouts} } {\sigma\sqrt{T-t}} =−σT−tln(V/F)+(μ−0.5σ2)(T−t)− other payouts
+            - limitations
+              - applicable only to liquid, publicly traded names
+            - subordinated debt
+              - firm value low
+                - like equity
+                - long call
+              - firm value high
+                - like senior debt
+                - short call
+          - KMV model
+            - overcome two shortcoming of Merton model
+              - all the debt matures at the same time
+              - the value of the firm follows a lognormal diffusion process
+        - default intensity models
+          - distributions
+            - Poisson distribution
+            - exponential distribution
+              - Hazard rate (or default intensity)
+              - survival probability
+                - P(t∗>t)=1−F(t)=e−λtP(t^*>t) = 1-F(t) = e^{-\lambda t}P(t∗>t)=1−F(t)=e−λt
+            - memoryless
+          - recovery rate (RR)
+          - λ≈z1−RR\lambda \approx \frac{z}{1-RR}λ≈1−RRz
+            - the spread is approximately equal to the default probability times the LGD
+        - credit scoring model
+          - retail credit risk
+          - three types
+            - credit bureau scores
+            - pooled models
+            - custom model
+            - cost: credit bureau scores < pooled Models < custom models
+        - other methods
+          - structural Approaches
+          - reduced Form Approaches
+            - statistical-based models
+              - supervised model
+                - LDA
+                - logistic regression
+              - unsupervised model
+                - clustering
+                - PCA
+            - heuristic approaches
+              - mimic human decision
+            - numerical approaches
+              - neural network
+      - estimate LGD and EAD
+        - LGD
+          - the seniority of the OTC derivative claim
+          - timing of recovery
+        - credit exposure
+          - metrics
+            - Expected MtM
+              - the expected value of a transaction at a given point in the future
+            - Expected exposure (EE)
+              - the amount that is expected to be lost (positive MtM only) if the counterparty defaults
+              - Expected exposure is larger than expected MtM.
+            - Potential future exposure (PFE)
+              - the worst exposure that could occur at a given time in the future at a given confidence level
+            - Maximum PFE
+              - highest PFE value over a given time interval
+            - Expected positive exposure (EPE)
+              - the average exposure across all time horizons——the weighted average of the EE across time
+            - Negative Exposure
+              - represented by negative future values, from a counterparty’s point of view
+            - effective EE (EEE)
+              - a non-decreasing version of the EE profile
+            - Effective Expected Positive Exposure (EEPE)
+              - introduced for regulatory capital. It is the average of the effective EE (EEE)
+              - deal with two problems
+                - EPE neglect very large exposures
+                - EPE may underestimate exposure for short-dated transactions and not properly capture “rollover risk”
+          - factors
+            - future uncertainty
+            - bond and loan
+            - interest rate swap
+            - optionality
+            - credit derivative
+          - risk migrants
+            - netting
+              - netting benefit improves for a large number of exposures and low correlation
+              - netting factor
+                - =n+n(n−1)ρn= \frac{\sqrt{n+n(n-1)\rho}}{n}=nn+n(n−1)ρ
+            - collateral
+      - counterparty risk
+        - migrants
+          - netting
+            - create legal risk in cases where a netting agreement cannot be legally enforced
+            - expose other creditors to more significant losses
+          - collateral
+          - hedging
+          - central counterparties
+            - potentially create operational and liquidity risks, and also systemic risk
+        - credit limits and CVA
+          - credit limits
+            - counterparty risk can be diversified by limiting exposure to any given counterparty.
+          - credit value adjustment (CVA)
+            - price counterparty risk
+              - assume no wrong-way risk
+              - sum of discounted expected exposure
+            - as a spread
+              - = EPE * spread
+        - wrong-way risk and right-way risk
+        - stress test
+      - portfolio credit risk
+        - default correlation
+        - single-factor model
+          - unconditional default distribution
+          - conditional default distribution
+        - credit risk portfolio models
+          - CreditRisk+(credit suisse)
+          - CreditRiskTM (JPMorgan)
+          - KMV model (Moody)
+          - Credit Portfolio View (McKinsey)
+    - management of credit risk
+      - credit derivative swap
+        - First-to-Default CDS
+        - Total Return Swap (TRS)
+        - Asset-Backed Credit-Linked Notes
+        - Vulnerable Option
+        - Swap with Credit Risk
+        - Collateralized Debt Obligations (CDOs)
+      - structured products
+        - PD and correlation effect
+        - convexity effect
+      - securitization
+        - seven frictions
+  - operation risk management and measurement
+    - OpRisk management framework
+      - def
+        - risk of loss resulting from inadequate or failed internal processes, people and systems or from eternal events
+        - include legal risk, but exclude strategic and reputational risk
+      - three common lines of defense
+        - business line management
+        - independent corporate operational risk management function
+        - independent review
+      - principles for sound management of operational risk
+        - summary
+          - 人和流程
+        - general principle
+          - 1. The board of directors should take the lead in establishing a strong risk management culture
+          - 2. Banks should develop, implement and maintain a Framework that is fully integrated into the bank’s overall risk management processes
+        - governance
+          - board of directors
+            - 3. The board of directors should establish, approve and periodically review the Framework
+            - 4. The board of directors should approve and review a risk appetite and tolerance statement for operational risk that articulates the nature, types, and levels of operational risk that the bank is willing to assume
+          - senior management
+            - 5. Senior management should develop for approval by the board of directors a clear, effective and robust governance structure with well defined, transparent and consistent lines of responsibility
+        - risk management enviroment
+          - indentification and assessment
+            - 6. Senior management should ensure the identification and assessment of the operational risk inherent in all material products, activities, processes and systems to make sure the inherent risks and incentives are well understood
+              - tools for assessing operating risks
+                - audit findings
+                  - focus on control weaknesses and vulnerabilities
+                - internal loss data collection and analysis
+                  - provide meaningful information for assessing exposure to operational risk and effectiveness of internal controls
+                - external data collection and analysis
+                - risk self assessment(RSA)
+                  - assess the processes underlying its operations against potential threats, vulnerabilities, and consider their potential impact
+                - risk control self assessment(RCSA)
+                  - evaluate inherent risk before controls are considered
+                - business process mapping
+                - risk and performance indicators
+                  - key risk indicators(KRIs)
+                  - key performance indicators(KPIs)
+                - scenario analysis
+                - measurement
+                  - use the output of the risk assessment tools as inputs into a model that estimates operational risk exposure
+                - comparative analysis
+            - 7. Senior management should ensure that there is an approval process for all new products, activities, processes and systems that fully assesses operational risk
+          - monitoring and reporting
+            - 8. Senior management should ensure that there is an approval process for all new products, activities, processes and systems that fully assesses operational risk
+          - control and mitigation
+            - 9. Banks should have a strong control environment that utilizes policies, processes and systems; appropriate internal controls; and appropriate risk mitigation and transfer strategies
+              - five components of strong control enviroment
+                - control enviroment
+                - risk assessment
+                - control activities
+                - information and communication
+                - monitoring activities
+          - business resiliency and continuity
+            - 10. Banks should have business resiliency and continuity plans in place to ensure an ability to operate on an ongoing basis and limit losses in the event of severe business disruption
+        - role of disclosure
+          - 11. A bank’s public disclosures should allow stakeholders to assess its approach to operational risk management
+      - enterprise risk management
+        - def
+          - all risks viewed together within a coordinated and strategic framework
+          - macro level
+            - more strategic risks and opportunities should be put into core business
+          - micro level
+            - focus on decentralizing the risk-return trade-off in a company
+        - four-step conceptual framework
+          - management begins by determining the firm's appetite
+          - given the firm's target rating, management estimates the amount of capital it requires to support the risk of its operations
+          - management determines the optimal combination of capital and risk that is expected to yield its target rating
+          - top management decentralizes the risk-capital trade-off and makes investment and operating decisions optimize their trade-off
+        - technology risk
+        - risk appetite framework
+          - help strategic decisions and risk management
+          - articulate a clearly defined risk appetite for the firm: not only about risk management but also about their firms’ forward-looking business strategies
+          - The board of directors sets overarching expectations for the risk profile, while CEO, CRO, and CFO translate those expectations into incentives and constraints for business lines
+        - data aggregation
+          - data quality
+            - accuracy, completeness, consistency, reasonableness, currency, uniqueness
+    - OpRisk data
+      - scenario analysis
+        - common biases
+          - prentation bias
+          - context bias
+          - anchoring bias
+          - hundle bias or anxiety bias
+          - gaming
+            - 参与者利益与整体利益有冲突，不肯暴露真实意图，却努力影响结果
+          - availablity bias
+          - over / under confidence bias
+          - inexpert opinion
+    - modelling approaches
+      - data features
+        - low frequency
+        - discrete
+      - development
+        - people are not reliable
+        - little research of operational risk
+        - Basel 3
+          - return to basic approach
+      - basic approach
+      - standardized approach
+      - advanced measurement approach
+      - extreme value
+        - generalized extreme-value theory (GEV)
+        - peaks-over-threshold approach (POT)
+      - model risk
+        - sources
+          - distribution of the underlying asset is stationary
+          - rates of return are normally distributed
+          - oversimplify a model
+          - assume perfect capital market exists
+          - liquidity is assumed to be ample
+          - misapplied to a given situation
+    - risk capital attribution and risk-adjusted performance
+    - capital planning and framework
+      - effective capital adequacy process
+        - 框架，方法论，流程，人
+        - sound foundational risk management
+        - effective loss-estimation methodologies
+        - solid source-estimation methodologies
+        - sufficient capital adequacy impact assessment
+        - comprehensive capital policy and capital planning
+        - robust internal controls
+        - effective governance
+    - financing: liquidity and leverage
+      - Repo rate
+        - GC rate
+        - special rate
+      - liquidity risk
+        - constant spread approach
+        - exogenous spread approach
+        - endogenous price approach
+        - liquidity discount approach
+        - liquidity-at-risk (LaR) or cash-flow-at-risk (CFaR)
+          - 5 factors affecting cash flow and LaR
+      - source of liquidity risk
+        - transaction liquidity risk
+        - balance sheet risk
+        - systemic risk
+    - banks failure
+    - Basel Accords
+  - current issues

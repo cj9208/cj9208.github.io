@@ -1,0 +1,368 @@
+{
+  "code": 0,
+  "message": "Get MindMap data OK!",
+  "data": {
+    "author": {
+      "userUuid": "857a288bd33c4a8aa9f0fca7bf344142",
+      "nickname": "陈杰",
+      "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJibo26vHhy2zNAOIZWKhtkdOqibFLOiaicQ6YKocqrD8Xmc6fz35bSzZegNyuJAFAcg9qpkKVwg8kk3w/64",
+      "region": "Anhui Hefei",
+      "biography": null
+    },
+    "publicationInfo": {
+      "uuid": "562fd2b469694b29912146750b309db9",
+      "abstracts": null,
+      "recommendations": null,
+      "rating": 100,
+      "releaseType": "CONTENT",
+      "stateUpTime": 1641521584485,
+      "state": "EDITING",
+      "releaseState": "EDITING_NEW",
+      "copyable": false,
+      "private": true,
+      "collaboration": false
+    },
+    "mindMap": {
+      "uuid": "562fd2b469694b29912146750b309db9",
+      "uniCode": "LPCvFOdj",
+      "ownerUsrUUID": "857a288bd33c4a8aa9f0fca7bf344142",
+      "createTime": 1641521584485,
+      "lastUpdateTime": 1641521584485,
+      "trees": [
+        {
+          "uuid": "c8cd5efa5d7843eb8568de8d32e76ac3",
+          "children": [
+            {
+              "uuid": "d7ecd8989ee44beaa3b8460d3209e60c",
+              "side": "right",
+              "linkColor": "#75CFDC",
+              "title": "<p>​torchcde</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "708cfbea8c1549d1bbe68dace7e65a99",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​solver</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "0ff22283b48c4cfbbe3d678d0c272600",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>use torchsde backend</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "3ab90b8c8fde4152be98e6a7164b3f36",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​ignore the Brownian part</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "c2d1fdb95797425583eaf878b0f805d9",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>Control</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "ba6b295e24ab4e389506dca8c5d8e104",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>class ​VectorField</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "a1fae856c74e43edb577a899b6de72c8",
+                              "side": "",
+                              "linkColor": "",
+                              "title": "<p>a `derivative` method.</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "22f3bd9c1ed542258d3fb15c7c2304b8",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​Interpolation</p>",
+                          "content": "",
+                          "children": [
+                            {
+                              "uuid": "5fa303359d1b4901a3f2b1c1c49024e6",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​TO DO</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ],
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            },
+            {
+              "uuid": "afc456d1c8c941458898992ff16343c6",
+              "side": "right",
+              "linkColor": "#B24BC8",
+              "title": "<p>​torchsde</p>",
+              "content": "",
+              "folded": 0,
+              "link": "",
+              "children": [
+                {
+                  "uuid": "410e3c7c61f64fc5a6a379d87ac2a14c",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​solver</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "0f208c563454472fa470bfd44d32205c",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​base_sde</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "f88c502fe4a54f01ad417d3f8c84b53c",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​define drift and diffusion</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "3bf73e8e915d44e389677a4ea09d05e5",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​base_solver</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "d08a7178ca6e48c0a5cbb31a276a98fb",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​variables</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "60e86014b2e94cb5b606dd7d374c9ab8",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​step</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "a6b9022006b948d99c97ba2e265b6292",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​abstractmethod</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "f722db8d93744e69ae56bab100a64d11",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​integrate</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "cf268ee7f0ba4735a8d035be10987fe1",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​methods</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "8a5ffb21c96f419895da5504abb98a66",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​implement the step function</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "uuid": "fc6337856efd4031be4203f67bb1c605",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​sdeint</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "788020873a2645b3b9e311d12e2906ae",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​handle options, input, output and etc</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ]
+                },
+                {
+                  "uuid": "a8f9ef613f474dd596015cd6bf39e360",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​sdeint_adjoint</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "9a58ef9cc7bb4dd2ae0e3f93d3ae9dbf",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>class ​AdjointSDE</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "6ab4db934789456786c8b8c90ec16d97",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​need more variables</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ]
+            },
+            {
+              "uuid": "89b5b4dcfdfd4411b83bd3557917682b",
+              "side": "right",
+              "linkColor": "#5FBC5C",
+              "title": "<p>Training SDEs as GANs</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "c8b1343242e7402c9943392bb028861d",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>define generator and discriminator</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "9cd6d6afdeb149c7a127aa671600c123",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​train with real samples</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            }
+          ],
+          "linkColor": "#C0C0C0",
+          "side": null,
+          "title": "<p>Neural SDE code structure</p>",
+          "content": null,
+          "siblingOrder": 0,
+          "link": null,
+          "leftIcons": null,
+          "rightIcons": null,
+          "folded": false
+        }
+      ],
+      "theme": "{\"magic\":\"zmtheme:v500\",\"version\":3,\"name\":\"bg_bright_ln_color\",\"text\":\"默认多色\",\"image\":\"/images/common/theme-bg-bright-ln-color.png\",\"mapBgColor\":\"#FFFFFF\",\"mapFgColor\":\"#282828\",\"fontColor\":\"#282828\",\"rootLineColor\":\"#C0C0C0\",\"lineColors\":[\"#3A8DDF\",\"#E08370\",\"#5FBC5C\",\"#B24BC8\",\"#75CFDC\"]}",
+      "version": 1,
+      "frontendState": null,
+      "commit": 66,
+      "isDefault": false,
+      "title": "<p>中心主题</p>"
+    },
+    "zmCounter": {
+      "read": 0,
+      "voteAmount": 0,
+      "voteUp": 0,
+      "voteDown": 0,
+      "comment": 0,
+      "challenge": 0,
+      "bookmark": 0,
+      "shareAmount": 0,
+      "shareCircle": 0,
+      "shareFriends": 0,
+      "share2qq": 0,
+      "share2qzone": 0
+    }
+  },
+  "extra": null,
+  "mt": null,
+  "token": null
+}

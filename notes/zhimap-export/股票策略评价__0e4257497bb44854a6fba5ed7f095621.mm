@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0.1">
+<node TEXT="股票策略评价"><node TEXT="收益归因"><node TEXT=""></node></node><node TEXT="横向对比" FOLDED="true"><node TEXT="总收益"></node><node TEXT="持仓部分收益"></node><node TEXT="换仓部分"><node TEXT="收益"></node><node TEXT=""></node></node><node TEXT="T0部分"><node TEXT="收益"></node><node TEXT=""></node></node></node><node TEXT="预测能力"><node TEXT="根据交易明细，计算出每笔交易的换仓期，进而可以判断在不同换仓期的策略表现情况"></node></node><node TEXT="交易拆单"><node TEXT="假设"><node TEXT="交易时间比较接近的单子认为是拆单而来的"></node></node></node><node TEXT="其余评价"><node TEXT="选股能力"><node TEXT="模型选出的股票收益和选股池里的股票收益做对比"></node></node><node TEXT="换仓期评价"><node TEXT="看换仓股票第二天的收益情况，判断是时机是否恰当"></node></node><node TEXT="风格"><node TEXT="看产品的风格因子暴露"></node></node></node></node>
+</map>

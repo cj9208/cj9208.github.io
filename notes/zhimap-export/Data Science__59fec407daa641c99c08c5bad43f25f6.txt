@@ -1,0 +1,63 @@
+Data Science
+- 目标
+  - 介绍 spark 框架，以及常用实现（包括 aws, databricks）
+- 数据的存储
+  - 文件系统
+    - HDFS
+      - 分布式
+    - Amazon S3
+      - 云存储
+  - 数据库
+    - Amazon rds
+      - 关系数据库
+    - Amazon DynamoDB
+      - NoSQL 数据库， 提供实时查询
+  - 数据仓库
+    - Data Lake
+      - 由 Databricks 公司开发的付费软件
+    - Hive
+      - 基于 Hadoop
+    - Amazon Redshift
+    - 除了数据存储，还提供了高效的
+      - 数据查询
+        - 纯查询框架 Presto
+      - 数据可视化
+- 数据的运算-spark
+  - Amazon EMR (Elastic MapReduce)
+  - 数据抽象格式
+    - RDD
+      - 更底层的操作
+      - map, filter, flatMap, groupByKey, reduceByKey, join(union, intersection, substract), sortBy, distinct, cartesian
+    - DataFrame + Dataset
+      - 提供了类似 pandas DataFrame 的高级操作
+  - Machine Learning
+    - 类似 scikit-learn, 适配于分布式数据处理的常用机器学习方法的实现
+  - Deep Learning
+    - 暂无针对开发的框架
+    - 使用方法
+      - 在 spark 里面完成基础的计算后
+      - 将处理好的数据导出转化为 pandas 的 df 格式
+      - 供 pytorch 等框架使用
+    - Amazon Bedrock
+      - 用于构建和部署生成式 AI 应用程序。它提供了一系列预训练的基础模型（Foundation Models），用户可以使用这些模型快速开发和部署 AI 应用程序。
+    - Amazon SageMaker
+      - 旨在帮助开发者和数据科学家快速构建、训练和部署机器学习（ML）模型。SageMaker 提供了从数据准备到模型部署的完整工作流程，简化了机器学习的复杂性，使得企业和个人能够更容易地利用机器学习技术。
+    - 其余 AWS 产品
+      - Amazon Comprehend
+        - 描述：自然语言处理（NLP）服务，提供文本分析功能。
+        - 应用场景：情感分析、实体识别、主题检测。
+      - Amazon Rekognition
+        - 描述：图像和视频分析服务，提供图像识别和内容分析功能。
+        - 应用场景：图像分类、对象检测、人脸识别。
+      - Amazon Transcribe
+        - 描述：自动语音识别（ASR）服务，提供音频转文本功能。
+        - 应用场景：语音转文字、会议记录。
+      - Amazon Translate
+        - 描述：神经机器翻译服务，提供高质量的文本翻译功能。
+        - 应用场景：多语言内容翻译、国际化应用。
+      - Amazon Personalize
+        - 描述：完全托管的个性化推荐服务，提供推荐系统构建功能。
+        - 应用场景：产品推荐、内容推荐。
+      - Amazon Textract
+        - 描述：文档分析服务，从扫描文档中提取文本和数据。
+        - 应用场景：文档处理、表单识别。

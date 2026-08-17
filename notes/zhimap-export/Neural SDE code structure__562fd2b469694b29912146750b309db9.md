@@ -1,0 +1,29 @@
+# Neural SDE code structure
+- torchcde
+  - solver
+    - use torchsde backend
+      - ignore the Brownian part
+    - Control
+      - class VectorField
+        - a `derivative` method.
+      - Interpolation
+        - TO DO
+- torchsde
+  - solver
+    - base_sde
+      - define drift and diffusion
+    - base_solver
+      - variables
+      - step
+        - abstractmethod
+      - integrate
+    - methods
+      - implement the step function
+  - sdeint
+    - handle options, input, output and etc
+  - sdeint_adjoint
+    - class AdjointSDE
+      - need more variables
+- Training SDEs as GANs
+  - define generator and discriminator
+  - train with real samples

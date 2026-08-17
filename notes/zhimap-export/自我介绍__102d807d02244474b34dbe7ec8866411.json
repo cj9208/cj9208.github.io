@@ -1,0 +1,690 @@
+{
+  "code": 0,
+  "message": "Get MindMap data OK!",
+  "data": {
+    "author": {
+      "userUuid": "857a288bd33c4a8aa9f0fca7bf344142",
+      "nickname": "陈杰",
+      "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJibo26vHhy2zNAOIZWKhtkdOqibFLOiaicQ6YKocqrD8Xmc6fz35bSzZegNyuJAFAcg9qpkKVwg8kk3w/64",
+      "region": "Anhui Hefei",
+      "biography": null
+    },
+    "publicationInfo": {
+      "uuid": "102d807d02244474b34dbe7ec8866411",
+      "abstracts": null,
+      "recommendations": null,
+      "rating": 100,
+      "releaseType": "CONTENT",
+      "stateUpTime": 1704038398570,
+      "state": "EDITING",
+      "releaseState": "EDITING_NEW",
+      "copyable": false,
+      "private": true,
+      "collaboration": false
+    },
+    "mindMap": {
+      "uuid": "102d807d02244474b34dbe7ec8866411",
+      "uniCode": "OTxMlyGy",
+      "ownerUsrUUID": "857a288bd33c4a8aa9f0fca7bf344142",
+      "createTime": 1704038398570,
+      "lastUpdateTime": 1704038398570,
+      "trees": [
+        {
+          "uuid": "9694d253505f4f798b740dff7e247995",
+          "children": [
+            {
+              "uuid": "6f0fc280047840deafc04c8d102d5842",
+              "side": "right",
+              "linkColor": "#3A8DDF",
+              "title": "<p>​关注点</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "09b540893c5e41a19d93f0eb1f0f5c35",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​学习，教课，研究，项目管理</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            },
+            {
+              "uuid": "54e77cf6c0d444898d3273bb0a991b04",
+              "side": "right",
+              "linkColor": "#5FBC5C",
+              "title": "<p>​项目分类</p>",
+              "content": "",
+              "folded": 0,
+              "link": "",
+              "children": [
+                {
+                  "uuid": "f4a32411c1dd46578c87f0bc5cbf7393",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​教学</p>",
+                  "content": "",
+                  "children": null,
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "3a8788c410134460b2c829e2537c20aa",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​学习</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": null
+                },
+                {
+                  "uuid": "70974d9365174fcc89ea4fe0d2fbc9d2",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​研究</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "2b7c8b2fef614f6d92aaf4889c88fdf4",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​博士两篇文章</p>",
+                      "content": "",
+                      "children": null,
+                      "folded": 0,
+                      "link": ""
+                    },
+                    {
+                      "uuid": "767da923e54b4b248d8b8c7c160a7ec2",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​工作后的策略研究</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "2061c47a8f8c4b5cbde54aa9551e7734",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​CTA</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "6d3dbcf6f28c4559b5c8bf0227fface6",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​指增</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                },
+                {
+                  "uuid": "a37f564dd69d4c6aa861d045a1bff348",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​项目管理</p>",
+                  "content": "",
+                  "children": [
+                    {
+                      "uuid": "f39f15bf4c07493aab3a0eb5e446678c",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​户外领带</p>",
+                      "content": "",
+                      "children": [
+                        {
+                          "uuid": "8f5b82fc03d841288e62b83e3b019718",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​多次带领团队深入大山进行野外生存和考察训练</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "2f86a0b4a48141609f701ce17d1e9af1",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​考取了深圳户外登山协会的领队证书</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ],
+                      "folded": 0,
+                      "link": ""
+                    }
+                  ],
+                  "folded": 0,
+                  "link": ""
+                }
+              ]
+            },
+            {
+              "uuid": "0b083646b15b41d09e51a8b1c0856a82",
+              "side": "right",
+              "linkColor": "#75CFDC",
+              "title": "<p>​优势</p>",
+              "content": "",
+              "children": null,
+              "folded": 0,
+              "link": ""
+            },
+            {
+              "uuid": "f6feabeeab754d0d9931e8d39e82006b",
+              "side": "right",
+              "linkColor": "#E08370",
+              "title": "<p>​时间顺序</p>",
+              "content": "",
+              "children": [
+                {
+                  "uuid": "b94c3075353b4955898cf584bbedfb39",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​uSTC</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "5de4d3e2a3c641a7bdb69b6abd548c45",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​数学系</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "6589376b6d2248079a4f904da14c37ae",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​热爱学习，挑战自己</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "e38cf0ef7a3345deb56dfaf1545ff228",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​荣誉课程</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "997c42f1edfa446fad391c2d6e12855c",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​30+人，about 10留下</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "3130ed4a764a4d1282de742de80f9bac",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​计算机课程</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "aac905fddd6e4323985488f8e01fc5b4",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>接触到了计算知识+相关人，得以保持关注行业发展</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "3c104405a2b244e381d910c56c52e72a",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​科考协会</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "3e161ab575a14ee58ab43246246b26cf",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​领队，带队野外活动多次</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "387c1565bb5a4ecc925a8fcaae3e2d3a",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​档案部部长</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "d1be7cfbbe2c4ebb9b457e5fdcc67eed",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​之前完全废弃，所有资料都无人管理或丢失</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "64e63bac35014986865e720835097155",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​整理清楚协会的人员资料或活动资料</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "uuid": "c39efe6e7527476eafefc968cb4e2d33",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​新东方</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "854e262b303a4eb0b31fc0d753c68683",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​教学</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "c91a8dc86f2a4a61a5ddc6b0520a0a2f",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​系统化上课培训，从讲义准备，上课流程，课后跟进</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "uuid": "d4afe3badacb4b749009ddf9a2dd846c",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​CUHK</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "de62504009ea4d1d8c03e9354ddbfaa7",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​研究</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "f28e5aecb9194a26ac5d3382155aca09",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​multi Hilbert</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "23382b0b7bb34017b8f90d384e1b8a9e",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​扎实的数学基本功，本科的积累+博士第一年的学习</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "0e3fc211914040c4bfc21c059897414f",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​option hedging</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "0588bd7b046b427e8da4f841ccca4563",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​MSRA intern</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "1f187029d6e44f4fb57caad90a1ca13e",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​机器学习，深度学习的技能</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "3720176c8aac46efbc6cdaf466a0fd82",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>如何找到这个问题，如何去一步步改进</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "c3e79ec93a7248d3aefadcc8741d6b57",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​教学</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "9ce2872eba904d2bb6a0717aec480c38",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​博士期间，foundation of financial engineering</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "ff468f4338a84162be2c3c3df4701757",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​project learning</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "3a70c3ec11dc48128aa1303c010685c7",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​平时作业+大实验+考试</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "fd9fb74ec7534c51815ca005fed108ec",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​大实验</p>",
+                              "content": "",
+                              "folded": 0,
+                              "link": "",
+                              "children": [
+                                {
+                                  "uuid": "2ee07209159c4ffb816dead1e3704a0d",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​分析一个股票</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "acde2df357fe481f9f24b4f81d08df5d",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​设立几个小问题，每个对应一到两章内容</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                },
+                                {
+                                  "uuid": "8461e80559ec4136af1a1a21a0215446",
+                                  "side": "right",
+                                  "linkColor": "",
+                                  "title": "<p>​回答的问题中，完成对股票的分析，以及后续投资的建议</p>",
+                                  "content": "",
+                                  "children": null,
+                                  "folded": 0,
+                                  "link": ""
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "uuid": "8dac254a7e69425c9fa1b9e07ffc2f11",
+                  "side": "right",
+                  "linkColor": "",
+                  "title": "<p>​AQUMON</p>",
+                  "content": "",
+                  "folded": 0,
+                  "link": "",
+                  "children": [
+                    {
+                      "uuid": "f2c5f3b51e954d7ba362a068a2546481",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>研究和项目管理</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "564e2b18499a4a57b7bdac986aa7231b",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​企业界，多人合作进行一个大规模的项目实现</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "17eae9aac0aa4cf39f6e043c696c98de",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​项目管理工具的使用和规范，比如常用的git</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "9d6b92ca754f4148b8e53f3918e20acd",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​文档的记录和整理</p>",
+                          "content": "",
+                          "children": null,
+                          "folded": 0,
+                          "link": ""
+                        },
+                        {
+                          "uuid": "25e3c027e7824b2d924d4b3c40ea764e",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>+​博士期间练习的研究技能</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "c5de03173b8f4486b08b30c71c55be66",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​不断地提出新的项目</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "a56673f8ff5c465b852abc1ef0e93df4",
+                      "side": "right",
+                      "linkColor": "",
+                      "title": "<p>​教学</p>",
+                      "content": "",
+                      "folded": 0,
+                      "link": "",
+                      "children": [
+                        {
+                          "uuid": "09c2b769f61b467793ad37e3dc9864c8",
+                          "side": "right",
+                          "linkColor": "",
+                          "title": "<p>​带实习生</p>",
+                          "content": "",
+                          "folded": 0,
+                          "link": "",
+                          "children": [
+                            {
+                              "uuid": "dbf2e5703fc045c4859e60aab553f7e1",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​提前准备任务+分段的目标+最终目标</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "597058e9ac094e0bbbb02025f589d9ef",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​定期跟进和反馈</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            },
+                            {
+                              "uuid": "1af37d6acf2f4182a7350fd1cf5db535",
+                              "side": "right",
+                              "linkColor": "",
+                              "title": "<p>​规范文档记录</p>",
+                              "content": "",
+                              "children": null,
+                              "folded": 0,
+                              "link": ""
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "folded": 0,
+              "link": ""
+            }
+          ],
+          "linkColor": "#C0C0C0",
+          "side": null,
+          "title": "<p>自我介绍</p>",
+          "content": null,
+          "siblingOrder": 0,
+          "link": null,
+          "leftIcons": null,
+          "rightIcons": null,
+          "folded": false
+        }
+      ],
+      "theme": "{\"magic\":\"zmtheme:v500\",\"version\":3,\"name\":\"bg_bright_ln_color\",\"text\":\"默认多色\",\"image\":\"/images/common/theme-bg-bright-ln-color.png\",\"mapBgColor\":\"#FFFFFF\",\"mapFgColor\":\"#282828\",\"fontColor\":\"#282828\",\"rootLineColor\":\"#C0C0C0\",\"lineColors\":[\"#3A8DDF\",\"#E08370\",\"#5FBC5C\",\"#B24BC8\",\"#75CFDC\"]}",
+      "version": 1,
+      "frontendState": null,
+      "commit": 99,
+      "isDefault": false,
+      "title": "<p>中心主题</p>"
+    },
+    "zmCounter": {
+      "read": 0,
+      "voteAmount": 0,
+      "voteUp": 0,
+      "voteDown": 0,
+      "comment": 0,
+      "challenge": 0,
+      "bookmark": 0,
+      "shareAmount": 0,
+      "shareCircle": 0,
+      "shareFriends": 0,
+      "share2qq": 0,
+      "share2qzone": 0
+    }
+  },
+  "extra": null,
+  "mt": null,
+  "token": null
+}

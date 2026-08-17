@@ -1,0 +1,141 @@
+Design of Intention Recognition Layer
+- first step
+  - features
+    - ~ 20 subtasks
+    - deal with fuzzy match, typo correction, etc
+  - how to do
+    - helper tasks
+      - normalization and clean
+        - 
+      - "Autocorrect" (Fuzzy & Typo Matching)
+        - 
+      - The "Linguist" (Semantic & Domain Prep)
+        - 
+    - why use simple helper tasks
+      - 1. Does it beat LLM in Accuracy?
+        - Yes, for specific routing.
+        - LLMs are probabilistic. If you ask an LLM to "Pick one of these 100 tasks," it might pick Task #12 today and Task #13 tomorrow for the exact same input because of "temperature" or slight prompt variations.
+        - Simple Algorithms (Regex/Fuzzy): Are Deterministic. If it matches, it matches 100% of the time. There is no "hallucination" in a lookup table.
+        - LLM: Even GPT-4o has a 2-5% error rate on complex routing with many options. At 1,000,000 queries, that’s 50,000 broken experiences.
+      - 2. Does it beat LLM in Performance?
+        - Yes, by orders of magnitude.
+        - LLM Route: Requires sending tokens over the internet, waiting for the model to "think" (inference), and streaming the result back.
+          - Latency: 500ms – 2s
+          - Cost: $0.01 - $0.05 per call.
+        - Simple Algorithm Route: Happens locally on your CPU in memory.
+          - Latency: <1ms – 10ms
+          - Cost: $0.000001 (basically free).
+      - Where the Complexity pays for itself
+        - A. The "Cold Start" Problem
+          - If you have 100 tasks, an LLM prompt containing all 100 descriptions will be massive (10k+ tokens). This makes every single "Hello" from a user expensive. A modular intention layer only "wakes up" the specific task logic needed, keeping the main loop lean.
+        - B. Debugging (The "Black Box" vs. "Glass Box")
+          - Pure LLM: If it routes a refund request to a sales agent, you have to "vibe-check" the prompt and hope it doesn't break something else.
+          - Modular System: You can see exactly where it failed. "The Fuzzy Matcher failed to catch the typo, and the Semantic Router gave it a 0.5 score." You can fix that specific logic gate without touching the rest of the system.
+        - C. Scaling to 100+ Tasks
+          - An LLM's performance degrades as you add more choices (the "Lost in the Middle" effect). A hierarchical system (Domain $\rightarrow$ Sub-domain $\rightarrow$ Task) maintains the same accuracy whether you have 10 tasks or 1,000.
+    - efficiency: avoid llm for al
+      - Build a Domain Dictionary. It is a simple CSV/JSON file:
+        - {"Task_ID": "PROMO_CHECK", "Keywords": ["coupon", "discount", "voucher", "code"], "Regex": "PROMO_\\d+"}
+      - By running the user query through this dictionary using Fuzzy Match first, you will resolve 70% of intents in under 10ms without ever waking up an LLM.
+      - The Hierarchical Architecture
+        - Think of this as a "Waterfall" design. Every query falls through these stages, stopping as soon as it finds a match.
+        - Level 1: The Fast-Track (Code-Based)
+          - Purpose: Instant resolution of common patterns.
+          - Logic: A collection of Regex and Lookup Tables.
+          - Example: If input contains REQ-[0-9]+, it is immediately routed to the "Order Status" task.
+          - LLM involvement: Zero.
+        - Level 2: The Semantic Router (Embedding-Based)
+          - Purpose: Categorize the "vibe" of the query.
+          - Logic: Map the query to a "Domain" (e.g., HR_Policy, Product_Specs, Account_Actions).
+          - Tool: Use a local vector store (FAISS) with a tiny embedding model.
+          - LLM involvement: Zero (uses embeddings only).
+        - Level 3: The "Specialist" Agent (Task-Specific LLM)
+          - Purpose: Deep reasoning for a single domain.
+          - Logic: Once Level 2 picks HR_Policy, you invoke a "Mini-LLM" (like GPT-4o-mini or a fine-tuned SLM) with a prompt specific only to HR.
+          - LLM involvement: High (but narrow context).
+      - Managing 100 Tasks: The "Manifest" Design
+        - Task Registry
+          - 
+        - How to manage it with an LLM:
+          - Selection: The LLM is shown only the descriptions of the top 5 candidates identified by the Semantic Router.
+          - Mapping: The LLM picks the id and extracts the parameters.
+          - Hydration: Your system pulls the full manifest for that id from your database to execute the RAG or API call.
+        - Why this Design Wins
+          - Control over "Context Contamination"
+            - By isolating tasks, Task A’s documents never "bleed" into Task B’s answer. If a user asks about "Refunds," the system physically cannot see "Investment Strategy" documents because the Intention Layer locked the Metadata Filter to doc_type: refund.
+            - The "Information Bottleneck" (Input Control)
+              - Instead of letting the user's raw, messy text hit the LLM, you use your help tasks to squeeze the query into a Canonical Form.
+              - The Problem
+                - User says: "Hey, can you like, check if the 10% Summmer thingy is still active for my cart #8821? Thx."
+                - The Precision Fix
+                  - Fuzzy/Typo: Summmer $\rightarrow$ SUMMER_10
+                  - Regex: #8821 $\rightarrow$ order_id: 8821
+                  - Normalization: Strips "Hey," "like," "Thx."
+              - Resulting Prompt for LLM: Check validity of SUMMER_10 for order 8821.
+              - Goodput Gain: The LLM doesn't have to waste "attention tokens" parsing slang or typos. It focuses 100% on the logic.
+            - Task Injection (Dynamic Context)
+              - With 100 tasks, a "Badput" outcome is often caused by the LLM getting confused between Task 12 and Task 84.
+              - The Precision Fix: Only inject the specific Task Manifest after your Semantic Router has narrowed the field.
+              - Example: If the Semantic Router is 90% sure it’s a "Policy RAG" task, the prompt sent to the LLM only contains the instructions for Policy RAG.
+              - Goodput Gain: By reducing the "Reasoning Search Space," you virtually eliminate the chance of the LLM picking the wrong task.
+          - Continuous Improvement (The "Feedback Loop")
+            - Because the system is modular, you can log every time Level 3 (the LLM) had to correct Level 2 (the Router).
+            - If the Router frequently misses "Promo" questions, you don't rewrite the LLM prompt.
+            - You simply add those missed questions as new "Example Vectors" in your Semantic Router.
+          - "Fail-Safe" for 100+ Tasks
+            - When you reach 100 tasks, the biggest risk is the "I don't know" query. A modular system allows you to define a "Fallback Task" that triggers a general-purpose LLM agent to ask clarifying questions: "I see you're asking about promotions, but are you trying to apply a code or check an expiration date?"
+    - further improvement
+      - A. The "Negative Centroid" Strategy
+        - With 100 tasks, semantic "collisions" are your biggest enemy.
+        - Improvement: For every task, define "What I am NOT."
+        - Implementation: If a query is semantically close to both "Refund" and "Status," the router checks a "Negative Cluster." If the query matches the "Negative Cluster" of Task A (e.g., "user is asking about money, not time"), it forces the route to Task B.
+        - How to build it (The "Maker" Way)
+          - Identify "Conflict Pairs": Use a similarity matrix to see which of your 100 tasks have overlapping embeddings.
+          - Collect "Near-Misses": Look at your logs for queries that triggered Task A but were corrected to Task B.
+          - Anchor the Error: Average those "Near-Miss" embeddings to create the $k^-$ for Task A.
+          - Deploy as a Gate: Add this logic only to the "High-Risk" tasks.
+        - Steering Formula:
+          - 
+      - B. "Just-in-Time" Parameter Validation
+        - Improvement: Move validation inside the IRL, before the RAG/API call.
+        - Implementation: If the IRL identifies the PROMO_CHECK task and extracts SUMMER_10, it should immediately ping a Bloom Filter or a local cache of valid codes.
+        - Benefit: If the code is invalid, you return a "Ghost Error" ("I see you're asking about SUMMER_10, but that code doesn't exist") without ever running the RAG or LLM.
+      - C. Semantic Routing with "Shadow" Testing
+        - Improvement: Run a "Champion-Challenger" model for your router.
+        - Implementation: While your Regex/Fuzzy logic (the Champion) handles the user, run a small SLM (the Challenger) in the background.
+        - Benefit: Log whenever they disagree. This "Disagreement Log" becomes your primary dataset for fine-tuning the IRL.
+      - Regex "Greedy" Problem
+        - explanation
+          - With 100+ tasks, Regex becomes a "Double-Edged Sword." The biggest mistake is using Regex as a Hard Gate (If Match $\rightarrow$ Route). In a high-precision system, Regex should be a Featurizer, not a Router.
+          - The Problem: Semantic Collisions
+            - If Task A is "Check Balance" and Task B is "Check Promotion," and your Regex looks for check.*, you have a collision. If you add more specific rules, you end up with "Regex Sprawl"—a maintenance nightmare.
+        - The Fix: Priority Tiers & Functional Signals
+          - Functional vs. Domain Regex:
+            - Functional Regex: Detects actions (e.g., (show|get|list|check)).
+            - Domain Regex: Detects entities (e.g., (balance|promo|transfer)).
+            - The Logic: A match only counts if you have a [Function] + [Domain] pair. This reduces false positives by ~80%.
+          - The "Veto" Regex (Negative Signal):
+            - Instead of matching what an intent is, use Regex to match what it cannot be.
+            - Example: If the query contains "apply for," it cannot be the "Check Balance" task, even if the word "balance" is present.
+          - Regex as a "Boost" for Vector Search:
+            - Instead of routing via Regex, pass the Regex Match as a Metadata Flag to your Vector Search.
+            - Logic: Score = CosineSim(query, task) + 0.2 * RegexMatch. This allows the "Precision" of Regex to assist the "Fluidity" of Semantic search without being brittle.
+      - Multi-turn IRL
+        - The "ReflectionGate" Strategy (2026 Design Pattern)
+          - Instead of a raw list, use an Entropy-Filtered Episodic Memory.
+          - Information Density Filtering:
+            - Don't store every turn. Only store turns that contain High Entropy (new entities or changed verbs).
+            - KISS Implementation: If a turn has no extracted entities and low semantic variance from the last turn, discard it from the "Intention Context."
+          - The "Slot Carryover" Model:
+            - Instead of re-running intent for the whole history, carry over the Slot State.
+            - Example
+              - Turn 1: "Check balance for Account A." $\rightarrow$ (Intent: BAL, Slot: acc_id=A)
+              - Turn 2: "What about Account B?"
+            - The IRL sees the new query, notices the verb is missing ("What about..."), and "Hydrates" the query using the previous intent: "Check balance for Account B."
+          - Implicit vs. Explicit State:
+            - Implicit: Use the last 3 embeddings (averaged or weighted).
+            - Explicit: Use a "State Machine" where certain intents lock the context. (e.g., If the user is in the "Transfer Funds" flow, the IRL assumes any 3-word query is related to that flow until a "Clear Context" signal is detected).
+        - 
+- second step
+  - features
+    - 100+ subtasks

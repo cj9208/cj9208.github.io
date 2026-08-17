@@ -1,0 +1,91 @@
+# ControlNet Code structure
+- ControlLDM
+  - LatentDiffusion
+    - DDPM
+      - pl.LightningModule)
+        - organize PyTorch code to remove boilerplate and unlock scalability
+        - functions to be defined
+          - def training_step(self, batch, batch_idx)
+          - def configure_optimizers(self)
+        - optimize training code
+          - 
+      - full name: Denoising Diffusion Probabilistic Models
+      - in-depth guide
+        - https://learnopencv.com/denoising-diffusion-probabilistic-models/#Generating-images-using-DDPMs
+      - idea
+        - difficulty
+          - the distribution of images/videos is known but hard to compute
+        - method
+          - by decomposing the distribution into product of gaussian distribution
+          - diffusion
+            - sample a point from a gaussian distribution and add it to original point
+          - revers diffusion
+            - denoising
+        - highlight
+          - the loss can be transformed to the MSE loss of forward pass and reverse pass (otherwise the computation would be intractable)
+      - algorithms
+        - 
+        - parameters
+          - beta
+            - forward pass
+              - 
+                - 
+                - 
+            - reverse pass
+              - 
+            - initially set linearly
+          - timesteps
+            - T
+          - UNet config
+      - implementation
+        - build upon pytorch lightning package
+        - key
+          - diffusion and reverse4 diffusion pass
+    - stable diffusion model is based on this
+    - introduction
+      - https://medium.com/@onkarmishra/stable-diffusion-explained-1f101284484d
+      - Coding Stable Diffusion from scratch in PyTorch https://www.youtube.com/watch?v=ZBKpAp_6TGI
+        - very good if you want to understand how the large number of codes build up
+    - idea
+      - do the diffusion and reverse diffusion in the latent space, whose dimension is much smaller to original image for acceleration
+      - to do so, it needs to add encoder at the begin and decoder at the end
+      - add a text encoder to process user prompt
+        - in stable diffusion, the authors use CLIP and freeze it
+    - implementation
+      - Similar to DDPM
+      - except
+        - the target is image processed by VAE encoder
+        - the input is the noise + text vector (apply CLIP to text prompts)
+  - introduction
+    - https://stable-diffusion-art.com/controlnet/
+    - https://learnopencv.com/controlnet/#What-is-ControlNet?
+  - idea
+    - known
+      - exiting models are power
+    - want
+      - add extra information
+    - method
+      - keep the original model fixed
+      - make a copy and use it to process additional information
+      - use zero convolution to combine them
+    - 
+  - TO DO
+    - need to figure out the details
+      - as the abstract goes deeper, get more confused
+    - how data are flow in different functions?
+    - how the model are built?
+- ControlVLDM
+  - VideoLatentDiffusion
+    - stable video diffusion
+      - introduction
+        - https://medium.com/@AIBites/stable-video-diffusion-convert-text-and-images-to-videos-e0f41b7f6986
+      - idea
+        - compared to images, videos have another dimension which is time, so a nature idea would be to add spatial layers+temporal attention layers in UNet
+      - implementation
+    - open sora
+      - introduction
+        - https://github.com/hpcaitech/Open-Sora/blob/main/docs/report_03.md
+- TO DO
+  - understand ControlLDM vs LatentDiffusion
+  - understand VideoLatentDiffusion vs LatentDiffusion
+  - think how to extend to ControlVLDM
