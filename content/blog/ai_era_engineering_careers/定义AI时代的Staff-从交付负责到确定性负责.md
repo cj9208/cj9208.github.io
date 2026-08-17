@@ -1,7 +1,7 @@
 ---
 title: "定义 AI 时代的 Staff：从交付负责到确定性负责"
 date: 2026-08-16T20:56:28+08:00
-lastmod: 2026-08-16T20:56:28+08:00
+lastmod: 2026-08-17T15:56:57+08:00
 draft: false
 
 categories:

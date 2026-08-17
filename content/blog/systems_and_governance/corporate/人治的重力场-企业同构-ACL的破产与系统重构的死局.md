@@ -1,7 +1,7 @@
 ---
 title: "人治的重力场：企业同构、ACL 的破产与系统重构的死局"
 date: 2026-08-12T13:49:28+08:00
-lastmod: 2026-08-17T14:41:13+08:00
+lastmod: 2026-08-17T16:04:57+08:00
 draft: false
 
 categories:
@@ -285,7 +285,7 @@ graph TD
 
 ### 一、 引言：流动性螺旋引发的全局“相位对齐”
 
-在金融微观结构与控制论中，马库斯·布伦内迈尔（Markus Brunnermeier）提出的流动性螺旋理论描述了市场流动性（Market Liquidity）**与**融资流动性（Funding Liquidity）之间的正反馈耦合：
+在金融微观结构与控制论中，马库斯·布伦内迈尔（Markus Brunnermeier）提出的流动性螺旋理论描述了市场流动性（Market Liquidity）与融资流动性（Funding Liquidity）之间的正反馈耦合：
 
 * **损失螺旋（Loss Spiral）**：资产价格下跌 $\rightarrow$ 机构净值缩水 $\rightarrow$ 杠杆率被迫飙升 $\rightarrow$ 被迫平仓抛售 $\rightarrow$ 价格进一步暴跌；
 * **折算率螺旋（Margin/Haircut Spiral）**：价格波动率放大 $\rightarrow$ 资方与交易所提高保证金比例（Haircut 飙升） $\rightarrow$ 融资可用额度萎缩 $\rightarrow$ 变现更多资产 $\rightarrow$ 波动率二次放大。
