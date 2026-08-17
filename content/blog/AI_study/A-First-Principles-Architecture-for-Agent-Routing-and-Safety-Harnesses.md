@@ -1,7 +1,7 @@
 ---
 title: "A First-Principles Architecture for Agent Routing and Safety Harnesses"
 date: 2026-08-04T23:31:21+08:00
-lastmod: 2026-08-04T23:31:21+08:00
+lastmod: 2026-08-17T14:41:13+08:00
 draft: false
 
 categories:
@@ -40,9 +40,9 @@ To establish an airtight safety architecture, system requirements must not be in
 
 | 1. Enterprise Problem | 2. Intrinsic Math / Domain Fact | 3. System Constraint & Requirement | 4. Design Mechanism *(Sec. 2 Solution)* |
 | --- | --- | --- | --- |
-| **Unbounded Execution Liability**Hallucinated payloads execute unauthorized state changes. | **Probabilistic Sampler**: Outputs are sampled from $P(w_t \mid w_{<t})$; factual correctness is non-guaranteed. | **Zero Execution Authority:** Probabilistic model outputs must strictly be treated as unprivileged proposals. | **Proposal vs. Execution Decoupling:** LLM generates JSON payload; hardcoded runtime sandbox validates and executes. |
+| **Unbounded Execution Liability**: Hallucinated payloads execute unauthorized state changes. | **Probabilistic Sampler**: Outputs are sampled from $P(w_t \mid w_{<t})$; factual correctness is non-guaranteed. | **Zero Execution Authority:** Probabilistic model outputs must strictly be treated as unprivileged proposals. | **Proposal vs. Execution Decoupling:** LLM generates JSON payload; hardcoded runtime sandbox validates and executes. |
 | **Correlated Error & SPOF**: Model self-checking passes rationalize their own initial hallucinations. | **Shared Parameter Weights ($W$)**: Inference and self-reflection share identical parameter weights and context bias. | **Orthogonal Verification:** Validation must possess zero error correlation with the proposal generation path. | **Heterogeneous Redundancy:** Independent context validator agent paired with non-neural symbolic rule parsers. |
-| **Compliance & Audit Deficit**: Black-box decisions cannot be unit-tested, audited, or reproduced. | **Black-Box Latent State**: Neural inference paths are high-dimensional, latent, and non-deterministic. | **White-Box Auditability:**: Domain capability boundaries and routing must be 100% deterministic and inspectable. | **Microsecond Pre-Router:**: Algorithmic edit distance (Levenshtein/Jaro-Winkler) and Trie-matching before LLM invocation. |
+| **Compliance & Audit Deficit**: Black-box decisions cannot be unit-tested, audited, or reproduced. | **Black-Box Latent State**: Neural inference paths are high-dimensional, latent, and non-deterministic. | **White-Box Auditability**: Domain capability boundaries and routing must be 100% deterministic and inspectable. | **Microsecond Pre-Router**: Algorithmic edit distance (Levenshtein/Jaro-Winkler) and Trie-matching before LLM invocation. |
 | **Symmetric Loss Exposure**: Identical treatment of read and write actions leads to catastrophic financial loss. | **Asymmetric Risk Topology**: Loss severity is asymmetric across state space: $C_{FP}(\text{Write}) \gg C_{FP}(\text{Read})$. | **Risk-Proportional Authorization:** Execution authorization rigor must scale non-linearly with state-change liability. | **Calibrated Risk Gates & Dynamic HCI:** Asymmetric probability thresholds ($P_{\text{intent}}$) with interactive option chips for ambiguity. |
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: "文艺复兴：从 Linux 老派教条看 AI 时代的函数开发"
 date: 2026-07-03T05:52:14+08:00
-lastmod: 2026-08-10T14:06:48+08:00
+lastmod: 2026-08-17T14:41:13+08:00
 draft: false
 
 description: "在[《AI Coding 的防御性进化：平台化、业务解耦与结构的自然生长》]({{< relref \"./AI-Coding的防御性进化-平台化-业务解耦与结构的自然生长.md\" >}})中，我们讨论了 AI 时代 repository（代码仓库）的设计和管理。本文将进一步讨论在 AI 时代，具体函数的编写方法。读者可以参考以下背景资料："
@@ -125,7 +125,7 @@ def export_report(report_name, *args, **kwargs):
 
 在传统业务开发中，程序员为了防止线上白屏，经常习惯写一些“温柔的防御性代码”：如果找不到数据或执行失败，就悄悄返回一个空字符串 `""` 或者 `None`，假装相安无事。
 
-这种看似兜底的做法，对 Agent 来说是致命的毒药。Agent 拿到一个莫名其妙的 `None`，根本无法分辨是“系统没数据”还是“代码执行崩了”。它会基于这个错误的状态继续盲目推理，引发灾难性的连连环幻觉。
+这种看似兜底的做法，对 Agent 来说是致命的毒药。Agent 拿到一个莫名其妙的 `None`，根本无法分辨是“系统没数据”还是“代码执行崩了”。它会基于这个错误的状态继续盲目推理，引发灾难性的连环幻觉。
 
 正确的做法是贯彻 Linux 的 Fail Fast 原则：一旦出错，立刻硬熔断。但是，平台的外壳要将这个“硬熔断”捕获，扭转为结构化的“失败回执”发还给大模型。错误信息不要隐瞒，要足够精准。这份结构化的回执会被当作新的上下文喂回给大模型，直接激活 AI 的自我修正（Self-Correction）机制，让它能够看懂错误原因并原地自主修正参数。
 
@@ -204,7 +204,7 @@ def export_corporate_revenue_report(params: RevenueReportParam) -> str:
 
 * **0 幻觉路由：** 详尽的 Docstring 变成了清晰的 `man` 说明书，Agent 在做 Task Planning 时可以精准识别并调用它。
 * **0 传参错误：** `RevenueReportParam` 导出的标准 JSON Schema 变成了一条不可逾越的物理边界。大模型在序列化 Token 时，被严格的 `Literal` 和 `List[int]` 死死框住，参数生成的正确率直逼 100%。
-* **完美自我修正（Fail Fast 闭环）：** 即使底层网络偶发抖动引发超时错误，`@platform_control_flow_guard` 会立刻熔断，并将异常格式化为：`{"success": false, "error": "oss_upload_timeout", "suggest": "OSS 存储响应超时，请原样参数重新发起重试"}`。大模型拿到回执，一眼看懂问题所在，直接触发 Self-Correction 自动重试，完美闭环。
+* **完美自我修正（Fail Fast 闭环）：** 即使底层网络偶发抖动引发超时错误，`@platform_control_flow_guard` 会立刻熔断，并将异常格式化为：`{"success": false, "error": "oss_upload_timeout", "suggest": "OSS 存储响应超时，请原样传入参数后重新发起重试"}`。大模型拿到回执，一眼看懂问题所在，直接触发 Self-Correction 自动重试，完美闭环。
 
 ---
 
