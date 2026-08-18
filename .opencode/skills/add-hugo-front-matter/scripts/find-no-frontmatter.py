@@ -7,6 +7,9 @@ is exactly '---'.
 Optional --scope <file>: a UTF-8 list of repo-relative paths (one per line).
 When provided, only those files are checked; files outside the scope are
 ignored. pipeline-blog-init passes the unpushed-work scope here.
+
+Optional --file <path>: a single repo-relative path to check only that file
+(e.g. `--file content/blog/.../x.md`).
 """
 
 import argparse
@@ -68,6 +71,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--scope', default=None,
                         help='UTF-8 file listing repo-relative paths to restrict the scan to')
+    parser.add_argument('--file', default=None,
+                        help='single repo-relative path to restrict the scan to only that file')
     args = parser.parse_args()
 
     repo_root = os.path.abspath(
@@ -78,7 +83,11 @@ def main():
         print(f"Error: content directory not found at {content_dir}", file=sys.stderr)
         sys.exit(1)
 
-    scope = load_scope(args.scope) if args.scope else None
+    scope = None
+    if args.file:
+        scope = {args.file.strip().replace('\\', '/')}
+    elif args.scope:
+        scope = load_scope(args.scope)
     missing = find_missing_front_matter(content_dir, scope=scope)
     if missing:
         print(f"Found {len(missing)} file(s) without front matter:\n")

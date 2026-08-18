@@ -244,6 +244,15 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--scope", default=None,
                         help="UTF-8 file listing repo-relative paths to restrict the scan to")
+    parser.add_argument("--file", default=None,
+                        help="single repo-relative path to propose a rename for only that file")
     args = parser.parse_args()
-    scope = load_scope(args.scope, CONTENT_BLOG) if args.scope else None
+    scope = None
+    if args.file:
+        rel = args.file.strip().replace("\\", "/")
+        if rel.startswith("content/blog/"):
+            rel = rel[len("content/blog/"):]
+        scope = {rel}
+    elif args.scope:
+        scope = load_scope(args.scope, CONTENT_BLOG)
     process(scope=scope)

@@ -7,6 +7,7 @@ their section index WITHOUT re-scanning / touching already-published files.
 Usage:
   python .opencode\\skills\\sync-subfolder-links\\scripts\\add-links-for-scope.py --scope <file>
   python .opencode\\skills\\sync-subfolder-links\\scripts\\add-links-for-scope.py --scope <file> --apply
+  python .opencode\\skills\\sync-subfolder-links\\scripts\\add-links-for-scope.py --file content/blog/.../x.md [--apply]
 
 Default: report-only (prints the link lines that are missing).
 With --apply: insert the missing link into the section _index.md.
@@ -47,11 +48,20 @@ def link_line(filename):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--scope", required=True, help="UTF-8 scope file (repo-relative paths)")
+    parser.add_argument("--scope", default=None, help="UTF-8 scope file (repo-relative paths)")
+    parser.add_argument("--file", default=None,
+                        help="single repo-relative path to add index links for only that file")
     parser.add_argument("--apply", action="store_true", help="insert missing links (default: report only)")
     args = parser.parse_args()
 
-    scope = load_scope(args.scope)
+    scope = None
+    if args.file:
+        scope = {args.file.strip().replace("\\", "/")}
+    elif args.scope:
+        scope = load_scope(args.scope)
+    else:
+        print("Error: provide either --scope <file> or --file <path>", file=sys.stderr)
+        sys.exit(1)
     by_index = {}
 
     for rel in sorted(scope):

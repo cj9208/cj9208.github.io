@@ -200,6 +200,14 @@ python .opencode\skills\add-hugo-front-matter\scripts\find-no-frontmatter.py --s
 
 `--scope` 接收一个 UTF-8 文件，每行一个仓库相对路径（由 `pipeline-blog-init/scripts/compute-scope.py` 生成）。未提供 `--scope` 时才回退为全量扫描 `content/`。
 
+**单文件模式**：逐个审阅文章时，用 `--file` 只检查指定文件：
+
+```bash
+python .opencode\skills\add-hugo-front-matter\scripts\find-no-frontmatter.py --file content/blog/<目录>/<文件名>.md
+```
+
+`--file` 接收一个仓库相对路径（如 `content/blog/systems_and_governance/chinese_government/文章.md`）。
+
 该脚本会递归扫描 `content/` 下所有 `.md` 文件，检测文件开头（跳过空行后）是否以 `---` 开头（同时处理带 BOM 和不带 BOM 的情况），并输出缺少 front matter 的文件列表。
 
 ## 编码安全（重要历史教训）

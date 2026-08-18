@@ -44,6 +44,18 @@ python .opencode\skills\sync-subfolder-links\scripts\add-links-for-scope.py --sc
 
 `--scope` 接收一个 UTF-8 文件，每行一个仓库相对路径（由 `pipeline-blog-init/scripts/compute-scope.py` 生成）。该脚本对每个 scope 内的普通文章，找到同目录的 `_index.md`，若尚未包含对该文件的 relref 链接则补上（默认插到第一个 `## ` 标题前）。
 
+**单文件模式**：逐个审阅文章时，用 `--file` 只为指定文章补链：
+
+```bash
+# 报告：该文章是否已被所在目录 _index.md 链接
+python .opencode\skills\sync-subfolder-links\scripts\add-links-for-scope.py --file content/blog/<目录>/<文件名>.md
+
+# 确认后实际写入缺失链接
+python .opencode\skills\sync-subfolder-links\scripts\add-links-for-scope.py --file content/blog/<目录>/<文件名>.md --apply
+```
+
+`--file` 接收一个仓库相对路径，内部等价于单元素 scope。
+
 > **注意**：`--apply` 是机械插入，插入位置可能不理想（例如应放进特定分组）。执行后务必检查对应 `_index.md` 的分组归属，必要时用 `edit` 工具手工调整。若文章所在的目录没有 `_index.md`，该文件会被跳过并在报告中体现。
 
 ## 注意事项

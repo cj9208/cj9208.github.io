@@ -66,6 +66,14 @@ python .opencode\skills\rename-blog-filenames\scripts\propose-renames.py --scope
 
 `--scope` 接收一个 UTF-8 文件，每行一个仓库相对路径（由 `pipeline-blog-init/scripts/compute-scope.py` 生成）。未提供 `--scope` 时才回退为全量扫描 `content/blog/`。
 
+**单文件模式**：逐个审阅文章时，用 `--file` 只为指定文件生成建议名：
+
+```bash
+python .opencode\skills\rename-blog-filenames\scripts\propose-renames.py --file content/blog/<目录>/<文件名>.md
+```
+
+`--file` 接收一个仓库相对路径。用户确认建议名后，通过文件系统重命名该文件（用 `Get-ChildItem` / `os.listdir` 定位，不要手动输入含特殊 Unicode 的路径），并同步更新 `content/` 下的引用。
+
 ## Process
 
 1. Scan `content/blog/**/*.md` excluding `_index.md` using `propose-renames.py`.
