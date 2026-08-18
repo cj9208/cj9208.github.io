@@ -1,7 +1,7 @@
 ---
 title: "Systems, Incentives, and Governance"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-08-16T09:20:32+08:00
+lastmod: 2026-08-18T13:58:04+08:00
 draft: false
 
 description: "A section on systems, incentives, trust, welfare, and governance across teams, firms, and public institutions."
@@ -55,6 +55,7 @@ slug: "organizational-behavior"
 * [论科层制体系：一套低效的分布式共识算法与组织拜占庭陷阱]({{< relref "./论科层制体系-一套低效的分布式共识算法与组织拜占庭陷阱.md" >}})
 * [从分布式系统视角，看远程办公的解构、神话与最终收敛]({{< relref "./从分布式系统视角-看远程办公的解构-神话与最终收敛.md" >}})
 * [拒绝充当系统的缓冲垫：从"有意识伪盲"到"恶意合规"的组织博弈]({{< relref "./拒绝充当系统的缓冲垫-从有意识伪盲到恶意合规的组织博弈.md" >}})
+* [组织如何筛选"高解题、零阻力"的人：招聘端与应试教育的共构]({{< relref "./组织如何筛选高解题零阻力的人-招聘端与应试教育的共构.md" >}})
 
 ## Corporate / 企业组织与治理
 * [企业组织与治理：公司案例与组织病理分析]({{< relref "./corporate/_index.md" >}})

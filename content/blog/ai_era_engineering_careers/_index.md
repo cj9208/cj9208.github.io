@@ -1,7 +1,7 @@
 ---
 title: "AI-Era Engineering Careers"
 date: 2026-07-18T10:01:28+08:00
-lastmod: 2026-08-16T21:04:30+08:00
+lastmod: 2026-08-18T14:19:58+08:00
 draft: false
 
 categories:
@@ -42,6 +42,7 @@ slug: "career-development"
 * [The State Machine of Technical Research: Balancing Exploration and Bounded Execution]({{< relref "./The-State-Machine-of-Technical-Research-Balancing-Exploration-and-Bounded-Execution.md" >}})
 * [秩序之重：从系统演进看"变通"的代价]({{< relref "./秩序之重-从系统演进看-变通-的代价.md" >}})
 * [编程语言的终局：从"人肉码农"到"意图流片"]({{< relref "./编程语言的终局-从人肉码农到意图流片.md" >}})
+* [破除"单测无用论"：代码不可测，是架构烂，不是单测错]({{< relref "./破除单测无用论-代码不可测是架构烂不是单测错.md" >}})
 
 ## Communication / 沟通与协作
 * [职场的解耦与紧耦合：从"印度人晋升快"看中外大厂的利益对齐账本]({{< relref "./职场的解耦与紧耦合-从印度人晋升快看中外大厂的利益对齐账本.md" >}})

@@ -22,6 +22,12 @@ Personal blog site rendered with Hugo and deployed to GitHub Pages.
 - When moving or adding non-rendered support files, place them under `static/` unless there is a Hugo-specific reason to put them elsewhere.
 - When editing `_index.md`, preserve any introductory or structural content; do not assume it should be reduced to a pure link list.
 
+## 链接规则（文章正文用公开链接）
+- 文章正文（非 `_index.md` 栏目页）内引用本站文章时，**必须使用公开链接**（`https://cj9208.github.io/blog/<目录>/<slug>/`），不要使用 `{{< relref >}}` 相对路径。
+- 公开链接的 `<slug>` 取自目标文章 front matter 的 `slug` 字段；目录层级与 `content/` 下的文件夹一致（如 `systems_and_governance`、`systems_and_governance/chinese_government`、`ai_era_engineering_careers`）。
+- 例外：仅 `_index.md` 等栏目页内部继续使用 `{{< relref >}}` 相对链接。
+- 修改了文章内容后，同步检查文中引用链接是否与目标 slug 保持一致。
+
 ## lastmod 维护规则
 每次修改 `content/` 下的文章内容时（包括正文、front matter、标签、分类等实质性变更），**必须同步更新 front matter 中的 `lastmod` 字段**到当前实际时间（精确到分钟/秒），例如 `2026-07-15T14:30:00+08:00`。不要沿用旧的 `09:00:00` 占位时间。
 
