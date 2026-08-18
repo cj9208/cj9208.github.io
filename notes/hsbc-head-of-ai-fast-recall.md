@@ -1,4 +1,4 @@
-# HSBC Head of AI — 面试前 20 分钟快速回忆
+# AI 架构 Director（Solution Lead / Architect）— 面试前 20 分钟快速回忆
 
 > 来源：`hsbc-head-of-ai-interview-prep.md`、`hsbc-head-of-ai-ultra-short-cheat-sheet.md`、`notes/interview/` 目录。此文件是压缩版，细节回源文件。
 
@@ -8,8 +8,19 @@
 
 面试要证明四件事：独立观点 / 把问题框对 / 约束下有明确立场 / 把 AI 架构接回银行现实（合规、审计、成本、运营）。
 
+## 1.5 岗位画像（先锁定自己在面什么）
+
+- **目标岗位 = Solution Lead / Architect**（银行 Director，Band 5 / GCB4 档）。
+- 这类岗位 = **横切面技术影响力**（跨团队技术方向、架构决策）+ **小团队/技术领导** + **hands-on**。
+- 这是技术过配的理想落点：三桶框架（架构判断/可落地/带小团队）正好就是这类岗位的考察点。
+- 面试时开口就清楚自己在面什么，所有话术都往"横切面影响力 + 落地"收。
+
 ## 2. 开场
 
+> 通用版（面 Solution Lead / Architect 岗）：
+> I imagine the hard part of deploying LLM systems in an enterprise is not model capability itself, but satisfying governance, control, and audit expectations while keeping the operating cost predictable. I am curious which part has actually been the biggest bottleneck in practice.
+
+> 银行版（面 HSBC/渣打等）：
 > Given HSBC's environment, I imagine the hard part of LLM deployment is not model capability itself, but satisfying HKMA expectations and internal control requirements. I am curious which part has actually been the biggest bottleneck in practice.
 
 从对方运营现实出发 + 抛一个假设 + 请对方讲真正的瓶颈。
@@ -50,6 +61,16 @@
 
 这部分来自你的真实思考，只能覆盖「沟通 + 带队」，不装更复杂的组织经验。
 
+### 职级语境（先记住自己的形状）
+
+- Google 体系里自我定位 = **Staff（L6）**：技术影响力的巅峰，不要求带团队。
+- Google 的 Director（Staff+）≈ **要带大组/更大组织**，那层对应银行 MD（GCB3）级别——不是目标。
+- 银行 Director（渣打 Band 5 / HSBC GCB4）= **领域技术负责人 + 小团队管理**的混合体。
+- 映射钉死：**Google Staff（L6）= 银行 Director**，目标岗位就是自己这档。
+- 关键认知：**你的能力形状恰好是银行 Director 的形状**——技术判断力够，团队刚好是"小团队互信、≤10 人"，既不缺技术也不缺带小组的能力，只是没到大规模组织/预算那层。
+- **技术富余定位（结构性优势）**：个人技术判断已达 Google Director 水平。在银行 Director 岗位上，这份技术富余正好用来**把组织逻辑融入技术**——有余力处理人/流程/干系人维度，而不是被技术难题和复杂政治（强预算、投靠山）消耗。这就是你在同档候选人里的结构性优势。
+- **话术反转（防止被读成逃避管理）**：不说"我不做管理"，说"我理解 Director 的管理责任边界，且我有一个清晰的团队运行模型（网关 + 主备 + 规格驱动）"。把组织层从"短板"重新框成"有边界感的团队运行模型"。
+
 ### 核心视角：把组织看成分布式系统
 
 - 管人和管系统，底层协议逻辑是通的。沟通 = 状态机复制，目标是让节点达成共识、防止脑裂（split-brain）。
@@ -76,13 +97,36 @@
 
 > On the economics side, I have the analytical framework — where the cost leaks are, why the savings compound across layers. What I do not have is a fully deployed system with measured numbers: the architecture did not get the organizational runway to roll out broadly, which is part of why I am looking to move. So I would present the framework and the mechanism, and fill in the actual numbers against a real deployment.
 
-## 6. 五步回答结构（技术题通用骨架）
+## 6. 通用答题骨架 + 五步结构
+
+### 通用答题骨架（任何问题都能用）
+
+1. direct answer（先给结论）
+2. reframe one level deeper（把问题框深一层）
+3. your position（My bias is...）
+4. practical implication（落到银行现实）
+
+> My short answer is... The deeper issue is... My bias is... The implication is...
+
+### 五步回答结构（技术题专用骨架）
 
 1. 先用最小改动解决眼前的实际问题
 2. 分层 = fail-fast 边界 + 评估点 + 归属
 3. harness 是治理边界（权限/策略/风险/执行在模型外）
 4. 自然演化成 request orchestration（可复用控制面）
 5. 指标拆分，归属明确
+
+### 分阶段落地计划（小团队怎么 rollout——必问 follow-up）
+
+> I would phase it in. First harden intention recognition and the clarification policy. Then add domain routing and a capability registry. Then introduce governed tool execution behind the harness. Finally add stronger observability, review loops, and operational thresholds. That gives near-term value while building toward the platform.
+
+记忆链：意图识别加固 → 域路由/注册表 → 有治理的工具执行 → 观测/复盘/阈值。
+
+### 数字话术（80x 之类被追问时）
+
+> I would not treat those numbers as a forecast. The point is that the savings are multiplicative because they happen at different layers of the pipeline. The exact number needs measurement against a real deployment.
+
+要点：方向性论证不是承诺；数字待真实部署测量；别让倍数转移掉架构重点。
 
 ## 7. 真实案例速记（30–60 秒/个，把原则变具体）
 
@@ -123,7 +167,17 @@
 | 你的经验跨度？ | 我从单个 AI 工具做起，到多工具编排，再到治理/架构/审计，是一条聚焦的递进线 |
 | 带过团队吗/怎么带？ | 把团队当分布式系统：统一网关+主备隔离，给核心人员研发沙盒；用规格驱动交付；沟通结果在前 |
 
-## 10. 被 push back 时的保命句
+## 10. 判断力短语库
+
+- My short answer is...
+- The real issue underneath that is...
+- I would separate this into three cases...
+- My bias is that...
+- I think the common mistake is...
+- This is really a governance problem disguised as a model problem.
+- In a bank, I would optimize for control before capability.
+
+## 11. 被 push back 时的保命句
 
 - That is fair. My view would change if...
 - I agree there is a tradeoff there.
@@ -131,11 +185,11 @@
 - Better models help, but they do not remove the accountability mismatch.
 - In a bank, over-trust is usually more expensive than under-automation.
 
-## 11. 强收尾观点
+## 12. 强收尾观点
 
 > Bank AI deployment is not primarily a model problem. It is a control-plane, workflow, and ROI problem. The architectures that win will not be the ones with the most autonomy, but the ones that place probabilistic intelligence inside deterministic institutional boundaries.
 
-## 12. 最后 3 个提醒
+## 13. 最后 3 个提醒
 
 - 准备并练熟 3 个核心观点：控制面先于能力 / 可预测账单 / 边界设定比编码更值钱。
 - 避免：长独白、上来堆术语、泛泛 hype、答非所问、试图显得聪明；组织层与经济层的缺口都要诚实限界，被追问就直说（组织≤10 人互信、经济只有框架没落地数字）。

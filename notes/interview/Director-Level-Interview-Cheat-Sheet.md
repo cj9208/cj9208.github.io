@@ -1,7 +1,7 @@
 ---
 title: "Director-Level Interview Cheat Sheet"
 date: 2026-07-17T08:17:50+08:00
-lastmod: 2026-07-17T14:52:00+08:00
+lastmod: 2026-08-18T00:00:00+08:00
 draft: true
 
 description: "Fast rehearsal page for the director-level RAG and orchestration story."
@@ -18,7 +18,21 @@ slug: "Director-Level-Interview-Cheat-Sheet"
 ---
 ## Core Story In One Line
 
-Move from prompt-heavy retrieval to governed request execution.
+Move from prompt-heavy retrieval to governed request execution, with the harness as the authority boundary.
+
+## Focused Arc: Three Layers Of Progression
+
+The story is a focused arc, not a single anecdote:
+
+1. Individual tool — build one AI capability well.
+2. Multi-tool / orchestration — go from one tool to a tool set: registry, routing, capability orchestration.
+3. Governance / architecture / audit — permissions, policy, risk, audit, ownership, operating model.
+
+The RAG-to-orchestration story is the concrete spine running through all three layers.
+
+## Position Profile
+
+Target role = Solution Lead / Architect (bank Director, Band 5 / GCB4). Cross-cutting technical influence + small-team leadership + hands-on. Frame every answer toward "cross-cutting influence + landing".
 
 ## 5-Point Answer Structure
 
@@ -44,6 +58,7 @@ Move from prompt-heavy retrieval to governed request execution.
 - domain-scoped ownership
 - reduced duplicated platform work across teams
 - honesty about current maturity versus future direction
+- org dimension: team as a distributed system (gateway + active/standby + spec-driven), small high-trust teams
 
 ## Risks To State Honestly
 
@@ -51,6 +66,8 @@ Move from prompt-heavy retrieval to governed request execution.
 - testing depth still needs hardening
 - alert thresholds and runtime triage need refinement
 - current implementation is strongest in the intention layer
+- org layer is small-team only (≤10 people, trust-based)
+- economics: framework exists, deployed numbers do not (org did not give rollout runway)
 
 ## Closing Line
 

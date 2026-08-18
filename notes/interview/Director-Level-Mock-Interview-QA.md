@@ -1,7 +1,7 @@
 ---
 title: "Director-Level Mock Interview Q&A"
 date: 2026-07-17T15:05:00+08:00
-lastmod: 2026-07-17T15:42:00+08:00
+lastmod: 2026-08-18T00:00:00+08:00
 draft: true
 
 description: "Mock interview questions and spoken answer patterns for the director-level RAG and orchestration story."
@@ -23,6 +23,14 @@ This page is a practice tool for turning the main story into spoken interview an
 Use `Director-Level-Interview-Guide.md` as the source of truth.
 
 Use this page to rehearse likely questions, transitions, follow-up depth, and common mistakes to avoid.
+
+## New Positioning Note
+
+The full narrative is a focused arc across three layers: individual tool, multi-tool/orchestration, and governance/architecture/audit. The RAG-to-orchestration story below is the concrete spine running through all three — rehearse it as the spine, but be ready to point to which layer each answer belongs to.
+
+Position profile: Solution Lead / Architect (bank Director, Band 5 / GCB4). Cross-cutting technical influence + small-team leadership + hands-on.
+
+Org dimension (optional depth): team as a distributed system — gateway + active/standby + spec-driven delivery, small high-trust teams (≤10). Honest limits: no large org / budget / cross-department politics experience; economics framework only, deployed numbers pending.
 
 ## How To Use This Page
 
