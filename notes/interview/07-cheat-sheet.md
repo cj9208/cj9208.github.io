@@ -91,3 +91,4 @@ Solution Lead / Architect（银行 Director，Band 5 / GCB4）= **Google Staff L
 - 案例口语版 → `04`
 - 12 强答案 + 短语库 → `05`
 - Mock 演练 + 红标记 → `06`
+- 自我介绍口语版 → `08`

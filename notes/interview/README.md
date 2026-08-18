@@ -14,6 +14,7 @@
 | `05-scripts-and-qa.md` | 开场 / 高频题速答 / 12 个强答案 / 判断力短语 / 保命句 / 收尾观点 | 面试当天现场检索 |
 | `06-mock-rehearsal.md` | Mock 面试 QA + 红标记 + 演练清单 | 面试前 1 天朗读演练 |
 | `07-cheat-sheet.md` | 面试前 20 分钟：最薄、最密、指针式 | 面试前 20 分钟 |
+| `08-self-introduction.md` | 自我介绍（Tell me about yourself）：90–120 秒口语版 + 45 秒压缩版 | 面试第一问，与 `01`/`03` 一起练 |
 
 ## 快速路径
 
