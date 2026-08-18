@@ -35,6 +35,15 @@
 
 ## 案例 1：Fail-fast 设计 + 人工回退（桶 ①）
 
+**骨架（30 秒扫读）**
+
+- 问题：客户向/高责任工作流里，低置信请求持续消耗成本并产生不确定性
+- 风险：快速错答通常比慢速升级更糟
+- 设计选择：置信度低于运营阈值即 fail fast，优先快速转人工，不放任低置信 retry
+- 门/阈值：运营置信阈值
+- 回退路径：一次性升级到人工（或一轮结构化确认后）
+- 为什么重要：成本可控、审计清晰、客户沮丧更低；有界失败 > 最大化自动化
+
 > My design bias is to fail fast when confidence drops below the operational threshold, especially in customer-facing or high-liability workflows. In one trial, I prioritized fast fallback to human agents instead of allowing repeated low-confidence retries. The reason was that in banking-style workflows, a slow wrong answer is often worse than a fast escalation. The tradeoff is slightly more human involvement, but you gain tighter cost control, better auditability, and lower customer frustration.
 
 意图层版本的打磨版：
@@ -45,11 +54,29 @@
 
 ## 案例 2：文档解析严格评估 + 回退（桶 ① / ③）
 
+**骨架（30 秒扫读）**
+
+- 问题：输出好看不等于生产可信任；运行时往往没有 ground truth 可直接验收
+- 风险：弱解析强行进入下游，污染审计与下游可靠性
+- 设计选择：离线加严格输出评估 + 双语言一致性检查作为代理质量门
+- 门/阈值：预定义 benchmark 达标才视为生产可用
+- 回退路径：运行期输出低于验收信号 → 自动回退，不让弱解析继续往下走
+- 为什么重要：保护可靠性与可审计性，而非单纯推高自动化率
+
 > In a document parsing trial, I did not want to treat a good-looking output as production-ready by default. In offline preparation, I used strict output evaluation and a double-language consistency check as a proxy quality gate where ground truth was incomplete. The model had to clear a predefined benchmark before I would trust it for production. Then at runtime, if the output fell below the acceptance signal, the system would fall back instead of forcing a weak parse through downstream steps. The point was to protect reliability and auditability, not just push automation rate higher.
 
 措辞注意：避免把 "cross-validation" 说成正确性证明，要说成代理质量门/一致性检查（ground truth 不完整时）。
 
 ## 案例 3：非对称置信阈值（桶 ①，最强例之一）
+
+**骨架（30 秒扫读）**
+
+- 问题：认出意图本身不够，置信门槛必须随动作风险等级变化
+- 风险：高危动作（写/动钱）的假阳性命中成本不对称
+- 设计选择：阈值随 risk class 变化——读操作低阈值，写/动钱接近 99%
+- 门/阈值：高危动作置信 ≈99%
+- 回退路径：不过线 → 结构化确认（≤3 选项）→ 仍模糊 → 人工
+- 为什么重要：平衡 UX 与可审计性；门放在意图层还阻止下游 token 浪费
 
 > In intent recognition, one thing we found was that recognizing the likely intent was not enough. The confidence threshold had to depend on the risk class. For low-risk read actions, a lower threshold was acceptable. But for high-risk write actions, especially anything close to money movement, the bar had to be much higher. If confidence did not clear that bar, we moved into structured user confirmation, and if ambiguity remained, we escalated to a human agent. That design was really about balancing customer experience, auditability, and the asymmetric cost of being wrong.
 
@@ -61,17 +88,53 @@
 
 ## 案例 4：证据优先辅助人工（桶 ① / ③）
 
+**骨架（30 秒扫读）**
+
+- 问题：难案例里 AI 直接决策风险高；人从头调研又慢
+- 风险：人类决策被认知负荷拖慢，客户被迫重复叙述
+- 设计选择：AI 做分析层——摘要 + 意图 + 风险点 + 引用原文，人保留决策权
+- 门/阈值：决策权始终留在人工（没有自动化授权门）
+- 回退路径：无——人始终在环
+- 为什么重要：受监管环境里提升生产力而不丢控制；这才是 AI 杠杆的真实形态
+
 > In harder cases, I do not think the best use of AI is to replace the human decision-maker. I think the better use is to reduce human cognitive load. In one workflow, the AI analyzed the case, summarized the situation, highlighted what needed attention, and quoted the relevant supporting documents. The human agent still owned the decision, but they could act much faster and the customer did not need to repeat the whole story. To me, that is a very practical form of AI leverage in regulated environments.
 
 ## 案例 5：中央工具注册表（桶 ①）
+
+**骨架（30 秒扫读）**
+
+- 问题：RAG/意图/API 等能力藏在单个不透明 agent 流里，无法治理与归属
+- 风险：审计链断裂、性能问题无处回投、团队边界模糊
+- 设计选择：全部能力注册为 tool，声明 schema + ownership 后才可被调用
+- 门/阈值：注册才可用；调用时记录意图/工具/置信/放行原因
+- 回退路径：工具性能离线 review → 问题回路由给所属团队
+- 为什么重要：可追溯可审计；运营模型清晰，各团队可独立改进自己的 tool
 
 > Another design choice I liked was putting all capabilities behind a central tool registry, including RAG, intent recognition, and API calls. Each tool had to declare its schema and ownership. That gave us much better governance because we could see which tool was selected, what confidence justified the choice, and how the component was performing over time. It also made the operating model cleaner, because each team could own its tool instead of hiding everything inside one opaque agent flow.
 
 ## 案例 6：正交置信度检查 + 结构化确认（桶 ①）
 
+**骨架（30 秒扫读）**
+
+- 问题：模型自评或二次 LLM 判断都相关且贵，不能作为可靠生产信号
+- 风险：用相关信号做生产 gating 产生假置信
+- 设计选择：概率信号 + 正交确定性检查（距离 / 纠正类信号）混合
+- 门/阈值：综合置信低于阈值即不猜
+- 回退路径：轻量结构化确认（≤3 选项），而不是继续让模型猜
+- 为什么重要：控制与用户体验的干净平衡
+
 > On confidence scoring, I do not like relying only on the model's own confidence or even a second LLM judging the output, because both can be correlated and expensive. In practice, I prefer to combine probabilistic signals with orthogonal checks, for example deterministic distance or correction-based signals. If confidence still does not clear the required threshold, I would rather use a lightweight user confirmation step, ideally with at most three explicit choices, than let the model keep guessing. That gives you a much cleaner balance between control and user experience.
 
 ## 案例 7：UAT 指标 vs 生产代理指标（桶 ③ / ①）
+
+**骨架（30 秒扫读）**
+
+- 问题：团队常混淆离线评估与生产 gating，两套评估体制需求不同
+- 风险：用需要 ground truth 的指标做在线决策 → 大量假自信
+- 设计选择：离线有 ground truth 用 recall/precision/LLM judge；生产用可实时测量的确定性代理信号
+- 门/阈值：代理指标在决策时刻必须可测量
+- 回退路径：按评估体制分轨——生产侧不引用离线指标
+- 为什么重要：分轨避免假置信，是工程纪律的一部分
 
 > One distinction I care about a lot is the difference between UAT evaluation and production gating. Offline, if I have ground truth, I can use metrics like recall and precision, and even use an LLM judge for things like faithfulness against retrieved evidence. But in production, I usually do not have ground truth at decision time, so I need proxy metrics and deterministic signals that can be measured live. I think teams often confuse those two evaluation regimes, and that creates a lot of false confidence.
 
