@@ -1,7 +1,7 @@
 ---
 title: "Director-Level Interview Guide"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-17T14:52:00+08:00
+lastmod: 2026-08-18T00:00:00+08:00
 draft: true
 
 description: "Primary interview script for explaining how a messy-input RAG problem evolves into governed request orchestration."
@@ -48,6 +48,20 @@ The cleanest story shape is:
 ## Core Story In One Line
 
 Move from prompt-heavy retrieval to governed request execution, with the harness as the authority boundary.
+
+## Focused Arc: Three Layers Of Progression
+
+The story is not a single anecdote; it is a focused arc across three layers:
+
+1. **Individual tool** — build one AI capability well (RAG, intent recognition, document parsing).
+2. **Multi-tool / orchestration** — go from one tool to a tool set: registry, routing, capability orchestration, reusable control plane.
+3. **Governance / architecture / audit** — make the whole system safe to operate: permissions, policy, risk, audit, ownership, operating model.
+
+The RAG-to-orchestration story is the concrete spine running through all three layers.
+
+Interview move: when answering any concrete question, you can point to which layer you are operating in, so the interviewer sees that you have walked the whole line, not just one story.
+
+## 60-Second Version
 
 ## 60-Second Version
 

@@ -1,5 +1,7 @@
 # HSBC Head of AI Interview Prep
 
+> Fast recall version (20 min before interview): `hsbc-head-of-ai-fast-recall.md`
+
 ## Purpose
 
 This note is not about showing off technical knowledge. It is about sounding like someone who has real judgment on bank-grade AI deployment.

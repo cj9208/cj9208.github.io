@@ -1,5 +1,7 @@
 # HSBC Head of AI Ultra-Short Cheat Sheet
 
+> Fast recall version (20 min before interview): `hsbc-head-of-ai-fast-recall.md`
+
 ## Core Goal
 
 Do not show that you know a lot.
