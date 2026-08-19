@@ -45,6 +45,23 @@
 
 > First, I would not rely on pure similarity search alone. I use hybrid search: vector similarity plus metadata filters — document type, domain, permissions, recency, source quality — so the candidate set is already constrained before scoring. Second, the retrieval step is agent-like in a narrow sense: it monitors live signals such as the similarity profile of the top results. If the scores fall meaningfully below the recent mean, it triggers a bounded fallback — the system reformulates the query or synthesizes a likely answer, and searches again within a fixed retry budget. That keeps recall high without open-ended model loops.
 
+## 细节注意点 3：doc parse 没被问——备好了 multiple representation 没用上
+
+**现象**：对方不太关心 doc parse，准备了 multiple representation 的深潜内容，全程没被追问。
+
+**复盘**：
+- 这是**备而没用上**的内容，不是回答失误。关键不是"他没问"，而是**这套方案已经想清楚，下次遇到"文档解析怎么做才可靠"时要能讲出来**。
+- 可以主动把它并入「文档解析严格验收」案例（`04` 案例 2）作为增强版——既显深度又保持诚实（代理质量门仍在）。
+
+**multiple representation 方案（备好、下次可讲）**：
+
+- 文档解析后**不只取文字**，保留多种表示（文字 + 图片 + 表格结构）。
+- **OCR 置信度不足时 fallback**：换用非 OCR 读取（如 PyMuPDF），在电子表格类文档上对齐度通常优于 OCR。
+- **图片**：用 LLM 生成一段文字描述（caption），让纯文本检索也能命中图片内容。
+- **但最终 generation 仍把原始图片一并传入**——描述只是索引层，不代替真实视觉信息，避免合成信息损失。
+
+> For document parsing, I keep multiple representations, not just extracted text. If OCR confidence is low, I fall back to non-OCR extraction such as PyMuPDF, which usually preserves table alignment better than OCR on spreadsheet-like documents. For images, I generate a caption with an LLM so text retrieval can still hit visual content. But at generation time I still pass the original images into the model — the caption is for indexing, not a substitute for the actual visual information.
+
 ## 本轮其他待办
 
 - [x] 把「rerank = 补偿性组件」一句话补进 `03` 深潜 B（RAG Case）追问速答。

@@ -67,6 +67,16 @@
 
 措辞注意：避免把 "cross-validation" 说成正确性证明，要说成代理质量门/一致性检查（ground truth 不完整时）。
 
+**增强版：multiple representation（备好，被追问解析细节时用）**
+
+- 文档解析后**不只取文字**，保留多种表示（文字 + 图片 + 表格结构）。
+- **OCR 置信度不足时 fallback**：换用非 OCR 读取（如 PyMuPDF），电子表格类文档上对齐度通常优于 OCR。
+- **图片**：LLM 生成一段 caption，让纯文本检索也能命中图片内容。
+- **但 generation 阶段仍把原始图片一并传入**——caption 是索引层，不代替真实视觉信息。
+- 口语版：
+
+> For document parsing, I keep multiple representations, not just extracted text. If OCR confidence is low, I fall back to non-OCR extraction such as PyMuPDF, which usually preserves table alignment better than OCR on spreadsheet-like documents. For images, I generate a caption with an LLM so text retrieval can still hit visual content. But at generation time I still pass the original images into the model — the caption is for indexing, not a substitute for the actual visual information.
+
 ## 案例 3：非对称置信阈值（桶 ①，最强例之一）
 
 **骨架（30 秒扫读）**
