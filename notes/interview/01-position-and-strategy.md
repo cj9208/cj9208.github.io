@@ -2,6 +2,7 @@
 
 > 回答任何问题前，先想清楚：你是谁、面什么岗位、面试官想要什么。
 > 本文件解决「怎么想」，`02`/`03` 解决「怎么答」，`05` 解决「现场说什么」。
+> 核心新增：「活体反例」定位、反对 hype 的人格证据、以及「为什么是你」的真实故事素材。
 
 ## 人设一句话
 
@@ -24,6 +25,7 @@
 - 映射钉死：**Google Staff（L6）= 银行 Director**，目标岗位就是自己这档。
 - 关键认知：**你的能力形状恰好是银行 Director 的形状**——技术判断力够，团队刚好是"小团队互信、≤10 人"，既不缺技术也不缺带小组的能力，只是没到大规模组织/预算那层。
 - **技术富余定位（结构性优势）**：个人技术判断已达 Google Director 水平。在银行 Director 岗位上，这份技术富余正好用来**把组织逻辑融入技术**——有余力处理人/流程/干系人维度，而不是被技术难题和复杂政治（强预算、投靠山）消耗。这就是你在同档候选人里的结构性优势。
+- **活体反例定位（直击面试官痛点）**：面试官亲口吐槽过"面试过很多完美简历但空洞的人"，HR 也来请教过我筛选逻辑。这正是我最大的结构性差异化——**我是"简历不完美但有想法"的活体反例**。开场可以直接点破："You mentioned you've interviewed people with perfect resumes but no ideas. I think I'm the opposite shape." 一句话建立识别度，让他从"又来了一个候选人"切换到"这个人自己就是我在找的那种人"。
 - **话术反转（防止被读成逃避管理）**：不说"我不做管理"，说"我理解 Director 的管理责任边界，且我有一个清晰的团队运行模型（网关 + 主备 + 规格驱动）"。把组织层从"短板"重新框成"有边界感的团队运行模型"。
 
 ## 面试官想要什么
@@ -45,6 +47,10 @@
 - 能不能区分 demo 和生产级银行系统？
 - 能不能把技术设计连接到合规、审计、成本、运营模型？
 - 这个人放进严肃的 leadership 讨论里有没有用？
+
+### 最稀缺的东西：反对 hype 的独立批判（人格证据，不是技巧）
+
+"反对 hype"不该只是话术立场，它是我真实的人格证据。我深恶痛绝 buzzword——不是表演，是写了三百篇文章、连很多优秀 paper 的 abstract 都批过的真实审美：**"一个概念如果只能用新词才能显得高级，那它很可能还没被想清楚；真正的本质，是可以被朴素地讲出来的。"** 这恰好是"Perfect Resume but No Idea"的对立面。当他听到我说 "I would not do that yet" / "That works for a demo but not for a bank-grade system" 时，他要听到的不是技巧，是一个长期独立思考、拒绝随大流的人。
 
 ## 核心策略
 
@@ -107,6 +113,16 @@
 示例：
 
 > So if I understand correctly, the real issue is not whether the model can perform the task, but whether the workflow is governable under HKMA and internal controls. I would probably separate that into three problems: data boundary, execution authority, and auditability. My bias is that these need different control mechanisms rather than a single general AI layer.
+
+## 为什么是你（Why You，最强的话术素材）
+
+框架再完整，也不如"你自己就活成了答案"有说服力。真实故事：**我不是靠简历来的——我是靠写了三百多篇文章，被 Head of AI 在 LinkedIn 私信找到、二十分钟对齐、fast track 到 VP 的。** 我之前投 HSBC 被 HR 秒拒/Ghost，后来 Head of AI 读了我的思考，主动发起面试。这不是炫耀，而是对"他想要什么"的现场演示：
+
+- 他要的是"有想法的人"，而我的 blog 就是几百份不可作假的判断力样本。
+- 他要的是"Perfect Resume but No Idea"的对立面，而我的简历恰好不完美、但有想法。
+- 他吐槽过"面试过很多完美简历的人但一个都不想要"——我恰好是那个"简历系统差点筛掉、但读懂我的人一眼认出"的人。
+
+被问"为什么是你"时，直接讲这个故事。它的形式本身就是答案：**一个靠深度思考、而非靠格式过关的人。**
 
 ## 强候选 vs 弱候选听起来怎样
 
