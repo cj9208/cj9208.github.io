@@ -1,7 +1,7 @@
 ---
 title: "Systems, Incentives, and Governance"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-08-18T13:58:04+08:00
+lastmod: 2026-08-23T19:56:20+08:00
 draft: false
 
 description: "A section on systems, incentives, trust, welfare, and governance across teams, firms, and public institutions."
@@ -45,6 +45,7 @@ slug: "organizational-behavior"
 * [白盒与黑箱：廉政公署与纪委的架构对比与系统反噬]({{< relref "./白盒与黑箱-廉政公署与纪委的架构对比与系统反噬.md" >}})
 * [秩序与穿透：论治理体系中“合规”与“动员”的内在张力]({{< relref "./秩序与穿透-论治理体系中合规与动员的内在张力.md" >}})
 * [社会契约的异化：过度开采与控制的路径依赖]({{< relref "./社会契约的异化-过度开采与控制的路径依赖.md" >}})
+* [契约的删除键：强监管的终极幻觉与不改革的三条死路]({{< relref "./契约的删除键-强监管的终极幻觉与不改革的三条死路.md" >}})
 * [指标的内爆与协议的重构：现代系统如何硬核对抗"古德哈特定律"？]({{< relref "./指标的内爆与协议的重构-现代系统如何硬核对抗古德哈特定律.md" >}})
 * [赛博地主的哭穷戏法：被黑箱算法"格式化"的中国实体与消费尊严]({{< relref "./赛博地主的哭穷戏法-被黑箱算法格式化的中国实体与消费尊严.md" >}})
 * [个体风控与系统鉴权：“社交平台虚假身份欺诈”的 Post-Mortem 复盘]({{< relref "./个体风控与系统鉴权-社交平台虚假身份欺诈的Post-Mortem复盘.md" >}})
