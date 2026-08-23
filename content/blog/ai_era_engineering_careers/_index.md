@@ -1,7 +1,7 @@
 ---
 title: "AI-Era Engineering Careers"
 date: 2026-07-18T10:01:28+08:00
-lastmod: 2026-08-18T14:19:58+08:00
+lastmod: 2026-08-23T09:32:14+08:00
 draft: false
 
 categories:
@@ -39,6 +39,7 @@ slug: "career-development"
 * [从原子的深渊到微观的围城：为什么我不建议高智商大脑重仓半导体？]({{< relref "./从原子的深渊到微观的围城-为什么我不建议高智商大脑重仓半导体.md" >}})
 
 ## Engineering Method
+* [龙舟破局：从"水上苦力"到"动作工程调试"]({{< relref "./龙舟破局-从水上苦力到动作工程调试.md" >}})
 * [The State Machine of Technical Research: Balancing Exploration and Bounded Execution]({{< relref "./The-State-Machine-of-Technical-Research-Balancing-Exploration-and-Bounded-Execution.md" >}})
 * [秩序之重：从系统演进看"变通"的代价]({{< relref "./秩序之重-从系统演进看-变通-的代价.md" >}})
 * [编程语言的终局：从"人肉码农"到"意图流片"]({{< relref "./编程语言的终局-从人肉码农到意图流片.md" >}})
