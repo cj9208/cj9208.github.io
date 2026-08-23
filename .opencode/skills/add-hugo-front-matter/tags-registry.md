@@ -36,5 +36,8 @@ Geopolitics, US-China, Structural Rivalry, China-Singapore, Singapore, China-Jap
 ## Healthcare / Public Policy
 Healthcare System, Healthcare Pricing, Healthcare Reform, Medical Law, Malpractice, Criminal Liability, Food Safety, Housing Policy, Urban Governance, Sports Governance, Pandemic Governance
 
+## Life / Personal
+Life, Annual Review, Work-Life Balance
+
 ## 平台 / 机构 / 人名（涉及时直接复用）
 Google, ByteDance, Samsung, DeepSeek, NVIDIA, BYD, Charlie Munger, Zhu Rongji, Federal Reserve
