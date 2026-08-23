@@ -1,7 +1,7 @@
 ---
 title: '钟摆的宿命：从 DeepSeek 的极限黑客流，看 AI 时代的“契约分离”'
 date: 2026-07-09T11:21:45+08:00
-lastmod: 2026-08-17T15:56:57+08:00
+lastmod: 2026-08-23T21:39:10+08:00
 draft: false
 
 categories:
@@ -14,6 +14,8 @@ tags:
 
 slug: "pendulum-contract-separation"
 ---
+
+> 原文首发：['钟摆的宿命：从 DeepSeek 的极限黑客流，看 AI 时代的“契约分离”'（知乎专栏：陈杰的金融笔记）](https://zhuanlan.zhihu.com/p/2058505676733915993)
 
 ## 一、 引言：AI 算力战场的“钟摆定律”
 

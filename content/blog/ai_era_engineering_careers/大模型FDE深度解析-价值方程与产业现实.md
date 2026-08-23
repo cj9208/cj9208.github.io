@@ -1,7 +1,7 @@
 ﻿---
 title: "大模型 FDE 深度解析：价值方程与产业现实"
 date: 2026-06-05T08:26:19+08:00
-lastmod: 2026-08-17T14:41:13+08:00
+lastmod: 2026-08-23T21:39:10+08:00
 draft: false
 shorttitle: "FDE 深度解析"
 
@@ -14,6 +14,8 @@ tags:
 
 slug: "fde-deep-analysis"
 ---
+
+> 原文首发：[大模型 FDE 深度解析：价值方程与产业现实（知乎专栏：陈杰的金融笔记）](https://zhuanlan.zhihu.com/p/2046136025748133146)
 
 ## 一、 引言：突击队的狂欢与单兵 Debug 的泥潭
 

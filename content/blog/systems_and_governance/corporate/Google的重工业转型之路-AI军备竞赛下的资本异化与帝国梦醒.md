@@ -1,7 +1,7 @@
 ---
 title: "Google的重工业转型之路：AI 军备竞赛下的资本异化与帝国梦醒"
 date: 2026-07-04T22:34:13+08:00
-lastmod: 2026-08-17T14:41:13+08:00
+lastmod: 2026-08-23T21:39:10+08:00
 draft: false
 
 categories:
@@ -13,6 +13,8 @@ tags:
 
 slug: "google-heavy-industry-transformation"
 ---
+
+> 原文首发：[Google的重工业转型之路：AI 军备竞赛下的资本异化与帝国梦醒（知乎专栏：陈杰的金融笔记）](https://zhuanlan.zhihu.com/p/2056849043796632887)
 
 > 本篇是《[神话的黄昏：谷歌“技术官僚主义”的二十年暗线](https://cj9208.github.io/blog/systems_and_governance/corporate/google-technical-bureaucracy/)》与《[深度解构：谷歌 AGI 转型阵痛与帝国异化史](https://cj9208.github.io/blog/systems_and_governance/corporate/google-agi-transformation/)》的后续，试图去分析，一个重工业化的 Google 的文化会变成什么样？
 

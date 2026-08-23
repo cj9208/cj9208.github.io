@@ -1,7 +1,7 @@
 ﻿---
 title: '从"多劳多得"到"社会级PUA"：优绩主义是如何在垄断中走向异化的？'
 date: 2026-07-01T08:59:40+08:00
-lastmod: 2026-08-17T14:41:13+08:00
+lastmod: 2026-08-23T21:39:10+08:00
 draft: false
 
 categories:
@@ -13,6 +13,8 @@ tags:
 
 slug: "meritocracy-to-social-pua"
 ---
+
+> 原文首发：['从"多劳多得"到"社会级PUA"：优绩主义是如何在垄断中走向异化的？'（知乎专栏：陈杰的金融笔记）](https://zhuanlan.zhihu.com/p/2055571272608789400)
 
 > **前置阅读关联：**
 > * 《[回旋镖掠过头顶：我们为什么需要福利社会](https://cj9208.github.io/blog/systems_and_governance/why-we-need-welfare-state/)》

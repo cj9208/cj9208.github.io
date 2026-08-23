@@ -1,7 +1,7 @@
 ---
 title: "重力回归：企业 ROI 约束与 AI '确定性账单'的控盘人"
 date: 2026-07-02T22:33:00+08:00
-lastmod: 2026-08-17T15:56:57+08:00
+lastmod: 2026-08-23T21:39:10+08:00
 draft: false
 
 categories:
@@ -13,6 +13,8 @@ tags:
 
 slug: "gravity-roi-ai-deterministic-billing"
 ---
+
+> 原文首发：[重力回归：企业 ROI 约束与 AI '确定性账单'的控盘人（知乎专栏：陈杰的金融笔记）](https://zhuanlan.zhihu.com/p/2056140529038005166)
 
 > *注：这篇文章是针对"Codex 48小时两次被迫重置，token额度消耗太快的真相来了"和最近各大公司突然就 AI 账单爆表从而限制额度发表的看法。类似的观点在《[编码向左，工程向右：AI时代程序员的生存突围](https://cj9208.github.io/blog/ai_era_engineering_careers/coding-left-engineering-right-ai-survival/)》中也有体现。*
 

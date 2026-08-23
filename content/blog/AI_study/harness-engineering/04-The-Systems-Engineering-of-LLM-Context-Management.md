@@ -1,7 +1,7 @@
 ---
 title: "The Systems Engineering of LLM Context Management"
 date: 2026-06-23T22:59:40+08:00
-lastmod: 2026-08-10T14:06:48+08:00
+lastmod: 2026-08-23T21:39:10+08:00
 draft: false
 
 description: "To keep an LLM agent from drowning in its own conversation history during an autonomous development loop, a modern harness must treat the context window like a structured system memory layout."
@@ -15,6 +15,9 @@ tags:
 
 slug: "The-Systems-Engineering-of-LLM-Context-Management"
 ---
+
+> 原文首发：[The Systems Engineering of LLM Context Management（知乎专栏：陈杰的金融笔记）](https://zhuanlan.zhihu.com/p/2052879237149876465)
+
 To keep an LLM agent from drowning in its own conversation history during an autonomous development loop, a modern harness must treat the context window like a structured system memory layout.
 
 The ultimate goal of the harness is to use local, deterministic engineering methods to ensure the probabilistic engine (the LLM) only ever deals with a clean, short, and highly informative context window. To achieve this, sophisticated architectures implement three distinct layers of data containment and token isolation.

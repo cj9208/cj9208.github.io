@@ -1,7 +1,7 @@
 ---
 title: "From Prompts to Autopilot: Why \"Harness Engineering\" is the True Key to LLM Reliability"
 date: 2026-06-17T14:28:29+08:00
-lastmod: 2026-08-10T14:06:48+08:00
+lastmod: 2026-08-23T21:39:10+08:00
 draft: false
 
 description: "The AI industry is currently caught in an arms race to build the biggest, hottest engine possible. Tech giants pour billions into training next-generation large language models (LLMs), chasing the promise of raw artificial intelligence. Yet, when developers deploy these brilliant models as autonomous agents in the real world, a frustrating reality sets in: the agents confidently hallucinate, get stuck in infinite loops, or completely break down when faced with basic software errors."
@@ -20,6 +20,9 @@ build:
   list: never
   publishResources: false
 ---
+
+> 原文首发：[From Prompts to Autopilot: Why "Harness Engineering" is the True Key to LLM Reliability（知乎专栏：陈杰的金融笔记）](https://zhuanlan.zhihu.com/p/2050584012654223983)
+
 The AI industry is currently caught in an arms race to build the biggest, hottest engine possible. Tech giants pour billions into training next-generation large language models (LLMs), chasing the promise of raw artificial intelligence. Yet, when developers deploy these brilliant models as autonomous agents in the real world, a frustrating reality sets in: the agents confidently hallucinate, get stuck in infinite loops, or completely break down when faced with basic software errors.
 
 The truth is, true agent reliability isn't a machine learning problem—it’s a systems engineering problem. An LLM on its own is a probabilistic next-token predictor. To make it a dependable worker, we must stop treating it like an oracle and start wrapping it in an execution harness. By treating this harness as a classic closed-loop control system, we can turn unpredictable AI thrust into hyper-precise operational flight.

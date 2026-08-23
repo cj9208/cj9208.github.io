@@ -1,7 +1,7 @@
 ---
 title: "赛博丛林的 Runtime 审计：中国商业短视内卷的底层控制流与异化标本"
 date: 2026-06-05T21:18:15+08:00
-lastmod: 2026-08-17T16:04:57+08:00
+lastmod: 2026-08-23T21:39:10+08:00
 draft: false
 
 categories:
@@ -13,6 +13,8 @@ tags:
 
 slug: "chinese-involution-runtime"
 ---
+
+> 原文首发：[赛博丛林的 Runtime 审计：中国商业短视内卷的底层控制流与异化标本（知乎专栏：陈杰的金融笔记）](https://zhuanlan.zhihu.com/p/2046337129014473200)
 
 > 在《[绝非不懂长期主义：为什么我们的生态总是在玩“梭哈”与“消耗战”？](https://cj9208.github.io/blog/systems_and_governance/chinese_government/all-in-war-of-attrition/)》一文中，我们分析了投资领域里，中国和国外的哪些差距导致投资行为的变异，这里我们基于同样的方式去分析商业行为的变异。
 

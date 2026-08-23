@@ -1,7 +1,7 @@
 ---
 title: "全球服务器列表：宏观抉择（Trade-off）与制度摩擦（Friction）的双重精算"
 date: 2026-06-15T15:31:35+08:00
-lastmod: 2026-08-17T14:41:13+08:00
+lastmod: 2026-08-23T21:39:10+08:00
 draft: false
 shorttitle: "全球服务器列表"
 
@@ -14,6 +14,8 @@ tags:
 
 slug: "global-server-list-tradeoff-friction"
 ---
+
+> 原文首发：[全球服务器列表：宏观抉择（Trade-off）与制度摩擦（Friction）的双重精算（知乎专栏：陈杰的金融笔记）](https://zhuanlan.zhihu.com/p/2049867776358195620)
 
 ## 大前提：滤镜碎裂——存量与老龄化重力下的全面考核
 

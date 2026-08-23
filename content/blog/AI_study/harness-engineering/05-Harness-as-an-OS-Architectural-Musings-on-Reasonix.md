@@ -1,7 +1,7 @@
 ---
 title: "Harness as an OS: Architectural Musings on Reasonix"
 date: 2026-06-22T14:19:05+08:00
-lastmod: 2026-08-16T10:10:00+08:00
+lastmod: 2026-08-23T21:39:10+08:00
 draft: false
 
 categories:
@@ -13,6 +13,8 @@ tags:
 
 slug: "harness-as-os-reasonix"
 ---
+
+> 原文首发：[Harness as an OS: Architectural Musings on Reasonix（知乎专栏：陈杰的金融笔记）](https://zhuanlan.zhihu.com/p/2052391922094837769)
 
 Reasonix is an advanced LLM harness engineered for non-deterministic environments, designed natively to exploit the unique context-caching and compute architectures of DeepSeek models. Moving past the era of ephemeral prompt scripts, Reasonix treats the underlying LLM not merely as an API endpoint, but as an unconventional, non-deterministic compute core.
 

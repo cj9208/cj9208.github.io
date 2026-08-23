@@ -1,7 +1,7 @@
 ---
 title: "深度解构：谷歌 AGI 转型阵痛与帝国异化史"
 date: 2026-06-22T16:20:58+08:00
-lastmod: 2026-08-10T14:06:48+08:00
+lastmod: 2026-08-23T21:39:10+08:00
 draft: false
 
 categories:
@@ -13,6 +13,8 @@ tags:
 
 slug: "google-agi-transformation"
 ---
+
+> 原文首发：[深度解构：谷歌 AGI 转型阵痛与帝国异化史（知乎专栏：陈杰的金融笔记）](https://zhuanlan.zhihu.com/p/2052416193437423267)
 
 ## 引言：当最高壁垒异化为最沉重的棺材板
 
