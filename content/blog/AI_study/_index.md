@@ -1,7 +1,7 @@
 ---
 title: "AI Study"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-08-05T12:47:04+08:00
+lastmod: 2026-08-23T09:16:26+08:00
 draft: false
 
 description: "Section page for AI Study."
@@ -30,6 +30,9 @@ slug: "ai-study"
 * [The Death of the Wrapper: How Agentic Post-Training Is Reshaping AI Architecture]({{< relref "./The-Death-of-the-Wrapper-How-Agentic-Post-Training-Is-Reshaping-AI-Architecture.md" >}})
 * [From Board Games to Reasoning Agents: The Evolution of Reinforcement Learning in Large Language Models]({{< relref "./From-Board-Games-to-Reasoning-Agents-The-Evolution-of-Reinforcement-Learning-in-Large-Language-Models.md" >}})
 * [The-Search-Pathology-Why-Scaling-Test-Time-Compute-Can-Degrade-Code-Agent-Quality]({{< relref "./The-Search-Pathology-Why-Scaling-Test-Time-Compute-Can-Degrade-Code-Agent-Quality.md" >}})
+
+## Presentations 分享记录
+* [Presentations 分享记录]({{< relref "./presentations.md" >}})
 
 ## 参考资料
 * rag-orchestration-architecture
