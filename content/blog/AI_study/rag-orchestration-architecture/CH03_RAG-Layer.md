@@ -1,7 +1,7 @@
 ---
 title: "RAG Layer"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-15T09:00:00+08:00
+lastmod: 2026-08-27T11:21:30+08:00
 draft: true
 
 description: "The RAG layer is the knowledge access and grounding layer that sits downstream of request understanding and upstream of answer generation."
@@ -246,6 +246,30 @@ For a practical default system, a strong baseline is:
 4. hybrid retrieval with bounded reranking
 5. grounded answering with citation and abstention
 6. explicit ops, freshness, and observability controls
+
+## Reference Stack
+
+The component chapters each carry their own tooling section. This page assembles them into one end-to-end default so the set has a single named implementation path.
+
+| Pipeline stage | Default choice | Secondary / fallback | Where detailed |
+| --- | --- | --- | --- |
+| document parsing and extraction | MinerU | domain-specific commercial parsers for hard formats | `CH03_01` |
+| chunking primitives | LangChain text splitters or LlamaIndex node parsers | tokenizer-aware custom splitters | `CH03_02` |
+| lexical plus metadata index | Elasticsearch | OpenSearch as drop-in alternative | `CH03_02`, `CH03_03` |
+| vector index | Qdrant | pgvector when Postgres is already core and scale is modest | `CH03_02`, `CH03_03` |
+| embeddings | language-aware or multilingual model matched to corpus language mix | swap based on measured retrieval quality, not preference | `CH03_02` |
+| reranking | BGE reranker family | Cohere Rerank as managed fallback | `CH03_03` |
+| generation | direct LLM API plus explicit application logic | Instructor and Guardrails AI for structured output and response validation | `CH03_04` |
+
+Why Elasticsearch rather than OpenSearch as the named default:
+
+- both are technically equivalent for this design; the choice between them is rarely an engineering decision
+- Elasticsearch is assumed here only to remove the either-or from the text; substituting OpenSearch changes nothing in any chapter
+
+Why one named stack at all:
+
+- readers can reproduce the notes with fewer decisions of their own
+- every component keeps its secondary option, so the stack stays swappable without rewriting the architecture
 
 ## Minimal End-to-End Flow
 

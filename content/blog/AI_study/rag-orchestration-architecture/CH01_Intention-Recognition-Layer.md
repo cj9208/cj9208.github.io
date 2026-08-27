@@ -1,7 +1,7 @@
 ---
 title: "Intention Recognition Layer"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-08-15T21:52:55+08:00
+lastmod: 2026-08-27T11:26:20+08:00
 draft: true
 
 description: "The intention recognition layer is the control layer that sits between raw user input and retrieval/reasoning."
@@ -358,6 +358,8 @@ Notes:
 ### Worked Routing Cases
 
 The following cases show how the routing table applies in practice.
+
+Signal values in these cases are illustrative examples, not calibrated production thresholds.
 
 #### Case 1: Ambiguous Entity, Low Risk
 

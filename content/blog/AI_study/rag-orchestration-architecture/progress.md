@@ -1,254 +1,93 @@
 ---
 title: "Progress"
 date: 2026-07-16T14:17:00+08:00
-lastmod: 2026-08-15T21:52:55+08:00
+lastmod: 2026-08-27T11:49:55+08:00
 draft: true
 
-description: "Current progress and next steps for the RAG orchestration architecture note set."
-summary: "Current progress and next steps for the RAG orchestration architecture note set."
+description: "Internal review note for the RAG orchestration architecture folder. Not linked from published pages."
+summary: "Internal review note for the RAG orchestration architecture folder. Not linked from published pages."
 
 categories:
   - "AI Study"
 tags:
   - "RAG"
   - "Architecture"
-  - "Progress"
 
 slug: "rag-orchestration-architecture-progress"
 ---
-## Purpose
 
-This is a temporary review note for the `rag-orchestration-architecture` folder.
+## What This File Is
+
+An internal working note, kept out of all indexes and slated for deletion once the set is published.
+This is a **note set for a blog**, not an engineering project: the bar is clarity of the design story,
+not production readiness. The earlier version of this file wrongly applied project-acceptance criteria
+(golden sets, calibrated thresholds, alert rules). Those belong to a real deployment, not to these notes.
+
+## What Already Meets The Blog Bar
+
+- The origin story (dirty input → intention layer → orchestration) is the strongest asset; CH00 carries it well.
+- Chapter structure CH00 → CH04 is complete and each chapter has a clear responsibility boundary.
+- Decision tables (routing in `CH01`, execution/validation in `CH02_03`) are transferable knowledge as they are —
+  readers need the structure and rationale, not our calibrated decimal points.
+- `_index.md` already contains an honest "What This Set Does Not Yet Fully Define" section.
+  That section is the correct place for limitations; no separate readiness tracking is needed.
+
+## Remaining Work Before Publishing (desk work only)
+
+| # | Task | Why |
+|---|---|---|
+| 1 | Rewrite `CH03_04_Grounded-Answering-Layer.md` and refresh its front matter | Structurally complete but low density: mostly tables, little of the narrative reasoning the other chapters have; its `lastmod` is still the placeholder time |
+| 2 | In `CH03`, settle Elasticsearch vs OpenSearch into one named default, add an end-to-end reference stack summary to `CH03_RAG-Layer.md`, then update the matching limitation line in `_index.md` | Per-layer tooling sections already lean toward ES/OpenSearch plus Qdrant, but the either-or remains unresolved, the parent chapter has no tooling section, and `_index.md` still lists "no single reference stack" as a limitation |
+| 3 | (Optional) Add one-line illustrative-value notes to CH01 worked cases and the CH03_02 region-confidence example | CH04 thresholds already carry a disclaimer; only these two spots show bare example decimals |
+
+## Audit Basis For The Task List
+
+The 2026-08-27 review checked each task against current file contents:
+
+- Task 1 confirmed by size/timeline: CH03_01–CH03_03 are 11–34 KB, CH03_04 is 5 KB
+  and was not touched in the August thickening pass.
+- Task 2 narrowed: CH03_02/CH03_03 already give opinionated defaults;
+  what remains is naming one index product, giving `CH03_RAG-Layer.md` a visible stack,
+  and syncing `_index.md` so its limitations stay honest.
+- Task 3 downgraded: `CH04` already states "These are first-version defaults, not universal
+  constants", and runtime examples are framed as "Example shape"; remaining bare numbers are cosmetic.
+
+## Explicitly Out Of Scope (do not do here)
+
+Building golden sets, calibrating thresholds against labeled data, defining alert/intervention rules —
+these require a live system and belong to a real deployment or a future ops-oriented follow-up post,
+not to this design-note set.
+
+## Publishing Options (pick one)
+
+1. Publish now as "architecture notes in progress": structure is complete, `_index.md` states limitations honestly.
+2. Publish after tasks 1–2 above (task 3 optional) as a finished set.
+
+Either is acceptable; the set should not stay in draft indefinitely.
+
+## Decision Log (kept short)
+
+- Interview-related files were moved to repo-level `notes/interview/`; not part of this set.
+- This file replaces the earlier engineering-style review; criteria are now blog-appropriate.
+- 2026-08-27: task list revised against actual file contents. Task 2 narrowed from
+  "pick a stack" (already mostly done per layer) to "name one index default + parent-chapter stack summary".
+  Task 3 downgraded to optional since CH04 already carries the illustrative disclaimer.
+- 2026-08-27: the two Principles notes (`System-Design-First-Principles-in-the-Era-of-AI.md`,
+  `AI-Coding-and-Harness-Engineering-Principles.md`) were deleted. They duplicated, at lower
+  density, two already-published articles: `ai-coding-evolution` (sections 1–3 one-to-one,
+  same local-growth/observe/promote sequence) and `agent-routing-safety-harness`
+  (contract-first, evaluator separation, model-proposes-harness-executes).
+  `_index.md` now links the public articles directly and keeps only the four-line
+  mapping of principles onto this set. The set is CH00–CH04 only now.
+- 2026-08-27: follow-up check confirmed even the context-as-memory line is covered.
+  Every bullet of deleted section 7 maps 1:1 into the published
+  `harness-engineering/04-The-Systems-Engineering-of-LLM-Context-Management.md`
+  (KV-stable prefixes, progress artifacts, sub-agent isolation, registry pruning),
+  at higher density. No orphaned ideas remain; nothing needs recovery from git.
+  That article is now linked from `_index.md` as well.
+- 2026-08-27: the context-management link was retargeted from the single article to the
+  `harness-engineering` series index, since that article belongs to a six-part set and
+  the index gives readers the whole logic path. Its description stays at the principle
+  level (boundary placement, context discipline, comparator design) instead of singling
+  out one article.
 
-Use it to review what is already solid, what is still weak, and what should be written next.
-
-It is a working file, not part of the long-term published note set.
-
-## How To Read This Note
-
-This review is split into two layers on purpose.
-
-- Core design asks: what is the architecture, what are its main modules, and are the boundaries coherent?
-- Execution readiness asks: if the architecture is directionally right, what is still needed to make it implementable, testable, and operable?
-
-That split matters because this folder is already fairly strong at architectural decomposition, but weaker in the rules that would make the design behave consistently in a real system.
-
-The broad logic so far is:
-
-- The architecture is already good at framing the problem and splitting responsibilities.
-- The biggest remaining gaps are not new modules, but the policies and contracts that turn the design into something reviewable and executable.
-- That is why some areas are marked `strong` even though follow-up work still exists: the main structure is good, but the implementation-guiding detail is not complete.
-- That is also why some areas are marked `missing`: they are not optional polish, but still-lacking pieces needed for serious implementation or operational credibility.
-
-Status meanings used here:
-
-- `done`: the structure is in good enough shape and has no urgent design gap.
-- `strong`: the direction and boundaries are good, but important detail is still missing.
-- `partial`: the area is valuable and present, but it still lacks one or more core pieces.
-- `missing`: the area is recognized as necessary, but is not yet defined in a practical way.
-- `later`: useful, but intentionally lower priority than the main design and readiness work.
-
-## Core Architecture
-
-### Snapshot
-
-| Area | Status | Main gap | Next move |
-| --- | --- | --- | --- |
-| Collection structure | done | none | keep stable |
-| Intention recognition | strong | routing decision table added to `CH01`; thresholds still need calibration | calibrate thresholds with labeled data |
-| Request orchestration | strong | confidence policy and validation rules still need formalization | define confidence policy and testable action rules |
-| RAG internal decomposition | strong | implementation path still broad | choose one reference stack |
-
-### Collection Structure
-
-Status: done
-
-What is solid:
-- The folder has a clear chapter structure.
-- The note set now has a landing page in [`_index.md`]({{< relref "./_index.md" >}}).
-- The reading order is understandable from preface to orchestration to internal RAG layers.
-- The runtime contract material is now split into focused `CH02_*` subchapters instead of one oversized note.
-
-What is missing:
-- Nothing structurally urgent.
-
-How to close it:
-- Keep the folder structure stable while refining the content inside the existing chapters.
-
-Review question:
-- Does the current chapter layout still match the mental model of the architecture?
-
-### Intention Recognition
-
-Status: strong
-
-What is solid:
-- The root problem is framed well: messy or ambiguous user input degrades downstream retrieval.
-- The deterministic-first approach is clear.
-- Clarification-first routing is explained well.
-- The control boundary before retrieval is strong and practical.
-- The chapter already includes a worked ambiguous-request example.
-- The compact routing decision table and worked routing cases now live in `CH01`, so the chapter is implementation-guiding.
-
-What is missing:
-- Threshold bands still need calibration against labeled data.
-
-How to close it:
-- Calibrate threshold bands with labeled examples from the golden sets.
-
-Review question:
-- Is this chapter already implementation-guiding, or is it still too conceptual?
-
-### Request Orchestration
-
-Status: strong
-
-What is solid:
-- The broader direction is clear: RAG becomes one capability inside a governed runtime.
-- Domain routing, capability gating, and harness-owned sequencing are well framed.
-- The model-versus-harness control boundary is strong.
-- Dedicated `CH02_*` runtime notes now define objects, control loop behavior, and safety/confidence policy separately.
-
-What is missing:
-- The compact confidence and validation decision tables are now split across `CH01` (routing) and `CH02_03` (execution, validation), but the first-version thresholds still need calibration against labeled data.
-
-How to close it:
-- Calibrate threshold bands with labeled examples.
-- Add worked decision cases and review them against the golden sets.
-
-Review question:
-- What confidence and validation rules are still needed to make the orchestration contract operational?
-
-### RAG Internal Decomposition
-
-Status: strong
-
-What is solid:
-- The RAG subsystem is split cleanly into ingestion, enrichment and indexing, retrieval, and grounded answering.
-- Each layer has a clear responsibility boundary.
-- Governance, trust, ACL, lineage, and publish boundaries are handled thoughtfully.
-
-What is missing:
-- The implementation path is still broad rather than opinionated.
-- There is no single reference stack chosen as the default path.
-
-How to close it:
-- Choose one concrete reference stack and explain why it is the default recommendation.
-- Keep the alternatives as secondary options, not equal-weight paths.
-
-Review question:
-- Should this note set optimize for architectural breadth or for one concrete implementation recommendation?
-
-## Execution Readiness
-
-### Snapshot
-
-| Area | Status | Main gap | Next move |
-| --- | --- | --- | --- |
-| Confidence policy | strong | decision tables exist, but thresholds still need calibration | calibrate thresholds with labeled data and review worked cases |
-| Testing and evaluation | partial | dedicated note exists, but golden sets and thresholds are not yet populated | build the first golden sets and run the matrix |
-| Operational policy | partial | alert thresholds and trigger rules are not fixed | define monitor and intervention rules |
-
-### Confidence Policy
-
-Status: strong
-
-What is solid:
-- The notes correctly identify confidence as central to routing and fallback.
-- The runtime contract now defines signal groups, confidence states, and a first-version action decision table.
-- The compact routing decision table and worked routing cases live in `CH01`.
-- Compact execution and validation decision tables now exist in `CH02_03`.
-- A compact validation decision table for accept, retry, clarify, and escalate now exists.
-- Worked decision cases across routing, execution, and validation were added.
-
-What is missing:
-- Exact thresholds still need calibration.
-- The policy still needs evaluation against labeled data.
-
-How to close it:
-- Use the golden sets from the testing note to calibrate threshold bands.
-- Add a short note on drift review.
-
-Review question:
-- Which decisions must be confidence-driven, and which can remain rule-driven?
-
-### Testing And Evaluation
-
-Status: partial
-
-What is solid:
-- A dedicated testing note (`CH04_Testing-and-Evaluation.md`) now defines the test matrix, golden-case structure, acceptance thresholds, and regression strategy.
-
-What is missing:
-- The golden sets themselves do not exist yet.
-- Thresholds are first-version defaults, not calibrated values.
-
-How to close it:
-- Build the first routing, clarification, permission, retrieval, and escalation golden sets.
-- Run the matrix once and record baseline results.
-
-Review question:
-- What are the minimum tests required before this architecture can be treated as operationally credible?
-
-### Operational Policy
-
-Status: partial
-
-What is solid:
-- The notes already discuss ownership, monitoring, nightly review, and observability.
-- The operating model is directionally strong.
-
-What is missing:
-- No concrete intervention thresholds.
-- No trigger rules for latency drift, failure spikes, or escalation spikes.
-- No compact failure review procedure.
-
-How to close it:
-- Define threshold rules for the first operational version.
-- Add a lightweight failure taxonomy and owner-routing model.
-
-Review question:
-- What is the minimum operational policy needed so this is not only architecturally sound, but reviewable in practice?
-
-## Immediate Next 3
-
-- Build the first routing golden set and record a baseline precision number.
-- Build the first permission golden set with a zero-leak enforcement check.
-- Build the first clarification golden set and run it against the compact decision tables.
-
-## Deferred Or Not Now
-
-- Long-term memory design.
-- Full multi-domain workflow details beyond the first serious implementation path.
-- Publication polish beyond what is needed for active review.
-- Interview or presentation packaging for business partners, managers, or staff-level interviews.
-
-## Interview Or Presentation Notes
-
-Status: later
-
-Purpose:
-- These notes are for personal interview preparation or for explaining the design to business partners, managers, or leadership.
-- They are not part of the core architecture review workstreams above.
-
-When to work on them:
-- Only after the architecture notes become more implementation-ready.
-- Prefer doing this after a major improvement in runtime contract, confidence policy, examples, and testing coverage.
-
-Current rule:
-- Keep these notes at the end of the review file and at lower priority than the main design work.
-- Do not let presentation polish compete with core architecture improvement.
-
-Review question:
-- Has the design become solid enough that presentation-oriented packaging is now worth the time?
-
-## Decision Log
-
-- `progress.md` is temporary and should not be linked from published notes.
-- The folder should optimize for architecture clarity first, publication second.
-- The next improvements should favor implementation-guiding detail, not broader abstraction.
-- The runtime contract is now split into focused `CH02_*` subchapters instead of one oversized runtime note.
-- The confidence and validation policies are now expressed as compact decision tables: routing in `CH01`, execution and validation in `CH02_03`.
-- A dedicated testing and evaluation note (`CH04_Testing-and-Evaluation.md`) now defines the minimum test matrix and acceptance thresholds.
-- The Director-Level interview files were moved out of this note set to the repo-level `notes/interview/` folder; `_index.md` no longer references them.
-- Interview-oriented material is secondary and should be improved only after a meaningful architecture upgrade.

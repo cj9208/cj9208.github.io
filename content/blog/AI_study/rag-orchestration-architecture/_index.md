@@ -1,7 +1,7 @@
 ---
 title: "RAG Orchestration Architecture"
 date: 2026-07-16T14:17:00+08:00
-lastmod: 2026-08-15T21:52:55+08:00
+lastmod: 2026-08-27T11:49:55+08:00
 draft: true
 
 description: "A structured note set on intention recognition, request orchestration, governed execution, and the system-design principles behind them."
@@ -63,12 +63,22 @@ These notes turn the design into something reviewable and testable.
 
 ## Principles And Philosophy Notes
 
-These pages explain the broader engineering worldview behind the architecture.
+The broader engineering worldview behind this design is not re-derived inside the set. It lives in these standalone articles:
 
-- [`System-Design-First-Principles-in-the-Era-of-AI.md`]({{< relref "./System-Design-First-Principles-in-the-Era-of-AI.md" >}})
-  Principles appendix for how system design changes when the core engine is probabilistic.
-- [`AI-Coding-and-Harness-Engineering-Principles.md`]({{< relref "./AI-Coding-and-Harness-Engineering-Principles.md" >}})
-  Broader philosophy note on AI coding, harnesses, contracts, evaluator separation, and bounded architecture.
+- [AI Coding 的防御性进化：平台化、业务解耦与结构的自然生长](https://cj9208.github.io/blog/ai_study/ai-coding-evolution/)
+  Why bounded sandboxes, rigid platform foundations, and late abstraction beat premature DRY when AI writes most of the code.
+- [A First-Principles Architecture for Agent Routing and Safety Harnesses](https://cj9208.github.io/blog/ai_study/agent-routing-safety-harness/)
+  The full derivation of model-proposes-harness-executes, orthogonal verification, and risk-proportional authorization.
+- [Harness Engineering 合集](https://cj9208.github.io/blog/ai_study/harness-engineering/)
+  The six-part series on harnesses as the deterministic runtime around a probabilistic engine — boundary placement, context discipline, comparator design, and governed execution.
+
+How those principles show up in this set:
+
+- intention recognition exists because input quality is the earliest useful control point
+- the harness owns permissions and escalation because reasoning should not imply execution authority
+- evaluator contracts sit outside generation because correctness needs an external comparator
+- context discipline exists because state is costly, degradable, and attention-limited
+- layers stay modular so failures remain local and ownership stays clear
 
 ## What This Set Covers
 
@@ -77,11 +87,11 @@ These pages explain the broader engineering worldview behind the architecture.
 - how that control pattern grows into broader request orchestration
 - why the harness is the authority boundary for execution
 - how RAG fits as one capability inside a governed system
+- a named end-to-end reference stack, assembled in `CH03_RAG-Layer.md`
 - how the same architecture connects to system-design and AI-coding principles
 
 ## What This Set Does Not Yet Fully Define
 
 - calibration of the first-version confidence thresholds against labeled data
-- a reference stack chosen as the single default implementation path
 - detailed per-domain golden sets for routing, permission, and retrieval
 - full production alert thresholds for latency, failure, and escalation drift

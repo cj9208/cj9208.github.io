@@ -1,7 +1,7 @@
 ---
 title: "Retrieval Layer"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-15T09:00:00+08:00
+lastmod: 2026-08-27T11:21:30+08:00
 draft: true
 
 description: "The retrieval layer is the online evidence-finding subsystem of RAG."
@@ -301,7 +301,7 @@ Keep this section short and practical.
 
 | Use case | Recommended option | Why |
 | --- | --- | --- |
-| best practical open-source lexical retrieval | Elasticsearch or OpenSearch | mature BM25, metadata filters, and operational stability |
+| best practical open-source lexical retrieval | Elasticsearch (default), OpenSearch as drop-in alternative | mature BM25, metadata filters, and operational stability |
 | best practical open-source vector retrieval | Qdrant | strong semantic retrieval with metadata filtering |
 | strongest open-source unified hybrid retrieval | Vespa | strong hybrid retrieval and ranking control in one system |
 | best practical open-source reranker | BGE reranker family | strong open reranking quality with wide community use |
@@ -309,9 +309,11 @@ Keep this section short and practical.
 
 Practical recommendation:
 
-- use Elasticsearch or OpenSearch plus Qdrant as the practical default open-source stack
+- use Elasticsearch plus Qdrant as the practical default open-source stack; OpenSearch is a drop-in substitute if licensing or ops constraints prefer it
 - use Vespa when you want a stronger unified retrieval platform and can accept higher complexity
 - add reranking after baseline sparse and dense retrieval are already working well
+
+The named default matches the set-wide reference stack in `CH03_RAG-Layer.md`.
 
 ## Final Note
 

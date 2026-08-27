@@ -1,7 +1,7 @@
 ---
 title: "Enrichment Chunking Indexing Layer"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-15T09:00:00+08:00
+lastmod: 2026-08-27T11:21:30+08:00
 draft: true
 
 description: "The enrichment, chunking, and indexing layer is the downstream preparation layer that turns validated canonical documents into retrievable knowledge units."
@@ -182,6 +182,8 @@ Recommended pattern:
 | inferred confidence | `inferred.region_confidence = 0.82` |
 
 This prevents enrichment from polluting source truth.
+
+The confidence value above is an illustrative example, not a calibrated production value.
 
 ### Common Enrichment Failures
 
@@ -419,15 +421,17 @@ These options apply primarily to the indexing and retrieval-storage part of the 
 | Use case | Recommended option | Why |
 | --- | --- | --- |
 | strongest open-source hybrid indexing and ranking platform | Vespa | strong lexical plus vector retrieval, ranking control, production-grade search architecture |
-| best practical open-source lexical plus metadata index | Elasticsearch or OpenSearch | mature filtering, keyword search, and operational ecosystem |
+| best practical open-source lexical plus metadata index | Elasticsearch (default), OpenSearch as drop-in alternative | mature filtering, keyword search, and operational ecosystem |
 | best practical open-source vector index | Qdrant | strong vector retrieval with metadata filtering and simpler adoption |
 | simplest early-stage option if Postgres is already core | pgvector | operationally simple, good enough for smaller or earlier-stage systems |
 
 Practical recommendation:
 
-- use Elasticsearch or OpenSearch plus Qdrant as the most practical open-source split stack
+- use Elasticsearch plus Qdrant as the most practical open-source split stack; OpenSearch is a drop-in substitute if licensing or ops constraints prefer it
 - use Vespa when you want stronger unified hybrid retrieval and ranking control
 - use pgvector only when simplicity matters more than peak retrieval capability
+
+The named default matches the set-wide reference stack in `CH03_RAG-Layer.md`.
 
 ## Final Note
 
