@@ -1,7 +1,7 @@
 ---
 title: "AI-Era Engineering Careers"
 date: 2026-07-18T10:01:28+08:00
-lastmod: 2026-08-23T09:32:14+08:00
+lastmod: 2026-08-27T10:30:37+08:00
 draft: false
 
 categories:

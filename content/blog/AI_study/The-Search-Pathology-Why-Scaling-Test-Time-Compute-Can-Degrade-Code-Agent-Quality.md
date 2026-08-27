@@ -1,7 +1,7 @@
 ---
 title: "The Search Pathology: Why Scaling Test-Time Compute Can Degrade Code Agent Quality"
 date: 2026-08-14T13:21:33+08:00
-lastmod: 2026-08-14T13:21:33+08:00
+lastmod: 2026-08-27T10:30:37+08:00
 draft: false
 
 categories:
@@ -237,6 +237,6 @@ As the industry moves deeper into the era of inference-time scaling, the competi
 
 ## References
 
-1. [*The Comparator Trap: Why High-Stakes AI Fails*](https://cj9208.github.io/blog/ai_study/harness-engineering/The-Comparator-Trap-Why-High-Stakes-AI-Fails/)
+1. [*The Comparator Trap: Why High-Stakes AI Fails*](https://cj9208.github.io/blog/ai_study/harness-engineering/the-comparator-trap-why-high-stakes-ai-fails/)
 2. [*From Board Games to Reasoning Agents: The Evolution of Reinforcement Learning in Large Language Models*](https://cj9208.github.io/blog/ai_study/rl-evolution-llm-reasoning-agents/), See Appendix B for how SWE benchmarks deal with samples
 
