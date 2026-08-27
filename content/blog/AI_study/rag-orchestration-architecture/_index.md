@@ -1,11 +1,11 @@
 ---
 title: "RAG Orchestration Architecture"
 date: 2026-07-16T14:17:00+08:00
-lastmod: 2026-08-27T11:49:55+08:00
+lastmod: 2026-08-27T12:01:00+08:00
 draft: true
 
-description: "A structured note set on intention recognition, request orchestration, governed execution, and the system-design principles behind them."
-summary: "A structured note set on intention recognition, request orchestration, governed execution, and the system-design principles behind them."
+description: "A structured note set on intention recognition, request orchestration, governed execution, and the RAG subsystem design behind them."
+summary: "A structured note set on intention recognition, request orchestration, governed execution, and the RAG subsystem design behind them."
 
 categories:
   - "AI Study"
@@ -16,7 +16,7 @@ tags:
 
 slug: "rag-orchestration-architecture"
 ---
-This folder explains how a messy-input RAG problem can evolve into a broader request orchestration architecture, and how that architecture connects to AI system design and harness engineering.
+This note set starts from a concrete failure pattern — messy user input destroying downstream RAG quality — and follows the control logic that fixes it all the way up to a general request orchestration architecture.
 
 The central idea is:
 
@@ -27,43 +27,47 @@ messy request
 -> RAG as one capability
 ```
 
-## Recommended Reading Order
+The design follows one discipline throughout: place a deterministic boundary at each point where probabilistic behavior causes damage, instead of trying to make the model smarter.
 
-1. Read the architecture notes to understand the design itself.
-2. Use the deep dives only for follow-up depth.
-3. Read the principles and philosophy notes when you want the broader worldview behind the design.
+## How To Read This Set
 
-## Architecture Notes
+1. CH00 tells the origin story; read it first to see why the architecture looks the way it does.
+2. CH01–CH02 are the control path (intention → orchestration); CH03 is the largest capability behind it.
+3. Use the internal-layer and evaluation chapters as reference depth, not front-to-back reading.
 
-These are the main design notes for the architecture itself.
+## The Control Path
 
 - [`CH00_Preface.md`]({{< relref "./CH00_Preface.md" >}})
+  The origin story: a real dirty-input RAG problem, and why the fix had to move upstream of retrieval.
 - [`CH01_Intention-Recognition-Layer.md`]({{< relref "./CH01_Intention-Recognition-Layer.md" >}})
+  The first deterministic boundary: routing contract, ambiguity handling, and worked cases showing clarify/reject/execute decisions before any expensive work runs.
 - [`CH02_Request-Orchestration-Layer.md`]({{< relref "./CH02_Request-Orchestration-Layer.md" >}})
-- [`CH02_01_Runtime-Objects.md`]({{< relref "./CH02_01_Runtime-Objects.md" >}})
-- [`CH02_02_State-Machine-and-Control-Loop.md`]({{< relref "./CH02_02_State-Machine-and-Control-Loop.md" >}})
-- [`CH02_03_Confidence-Safety-and-Validation.md`]({{< relref "./CH02_03_Confidence-Safety-and-Validation.md" >}})
+  The shared runtime for a company-wide agent system: capabilities, tools, and why only the orchestration layer may sequence tool calls.
+  - [`CH02_01_Runtime-Objects.md`]({{< relref "./CH02_01_Runtime-Objects.md" >}}) — the typed objects (interpretations, decisions, records) that make every step replayable and testable.
+  - [`CH02_02_State-Machine-and-Control-Loop.md`]({{< relref "./CH02_02_State-Machine-and-Control-Loop.md" >}}) — request states, retries, budgets, fallback, and event flow through the loop.
+  - [`CH02_03_Confidence-Safety-and-Validation.md`]({{< relref "./CH02_03_Confidence-Safety-and-Validation.md" >}}) — stage-scoped confidence assessment and the execution/validation decision tables.
+
+## The RAG Subsystem
+
 - [`CH03_RAG-Layer.md`]({{< relref "./CH03_RAG-Layer.md" >}})
-
-## RAG Internal Layers
-
-These break the RAG subsystem into narrower internal components.
-
+  Entry overview for the knowledge pipeline, plus the named end-to-end reference stack (MinerU → Elasticsearch + Qdrant → BGE reranker → direct LLM API with Instructor/Guardrails helpers).
 - [`CH03_01_Ingestion-Validation-Layer.md`]({{< relref "./CH03_01_Ingestion-Validation-Layer.md" >}})
+  Offline quality gate: parse / OCR, structure reconstruction, validation, and quarantine so bad documents never reach the index.
 - [`CH03_02_Enrichment-Chunking-Indexing-Layer.md`]({{< relref "./CH03_02_Enrichment-Chunking-Indexing-Layer.md" >}})
+  Turning validated documents into retrievable units: enrichment with authoritative/inferred separation, structure-aware chunking, lexical plus vector indexing.
 - [`CH03_03_Retrieval-Layer.md`]({{< relref "./CH03_03_Retrieval-Layer.md" >}})
+  The online evidence-finding pipeline: query shaping, permission-aware filtering, hybrid candidate retrieval, fusion and reranking, context assembly.
 - [`CH03_04_Grounded-Answering-Layer.md`]({{< relref "./CH03_04_Grounded-Answering-Layer.md" >}})
+  The final guard: thin grounded generation with citation integrity, five explicit outcomes including abstention, and known failure modes of this layer.
 
-## Execution Readiness Notes
-
-These notes turn the design into something reviewable and testable.
+## Evaluation
 
 - [`CH04_Testing-and-Evaluation.md`]({{< relref "./CH04_Testing-and-Evaluation.md" >}})
-  Defines the minimum test matrix, golden-case structure, and acceptance thresholds for the orchestration and RAG behavior.
+  What makes the design reviewable rather than aspirational: minimum test matrix, golden-case structure, first-version acceptance thresholds, and regression strategy on top of the CH02_01 runtime objects.
 
-## Principles And Philosophy Notes
+## Principles Behind The Design
 
-The broader engineering worldview behind this design is not re-derived inside the set. It lives in these standalone articles:
+The worldview is not re-derived here; it lives in standalone articles:
 
 - [AI Coding 的防御性进化：平台化、业务解耦与结构的自然生长](https://cj9208.github.io/blog/ai_study/ai-coding-evolution/)
   Why bounded sandboxes, rigid platform foundations, and late abstraction beat premature DRY when AI writes most of the code.
@@ -80,7 +84,9 @@ How those principles show up in this set:
 - context discipline exists because state is costly, degradable, and attention-limited
 - layers stay modular so failures remain local and ownership stays clear
 
-## What This Set Covers
+## What This Set Covers And What It Does Not
+
+Covered:
 
 - why bad input harms downstream RAG quality and cost
 - why intention recognition should happen before expensive retrieval
@@ -88,9 +94,8 @@ How those principles show up in this set:
 - why the harness is the authority boundary for execution
 - how RAG fits as one capability inside a governed system
 - a named end-to-end reference stack, assembled in `CH03_RAG-Layer.md`
-- how the same architecture connects to system-design and AI-coding principles
 
-## What This Set Does Not Yet Fully Define
+Not yet defined:
 
 - calibration of the first-version confidence thresholds against labeled data
 - detailed per-domain golden sets for routing, permission, and retrieval

@@ -1,7 +1,7 @@
 ---
 title: "Progress"
 date: 2026-07-16T14:17:00+08:00
-lastmod: 2026-08-27T11:49:55+08:00
+lastmod: 2026-08-27T12:01:00+08:00
 draft: true
 
 description: "Internal review note for the RAG orchestration architecture folder. Not linked from published pages."
@@ -90,4 +90,8 @@ Either is acceptable; the set should not stay in draft indefinitely.
   the index gives readers the whole logic path. Its description stays at the principle
   level (boundary placement, context discipline, comparator design) instead of singling
   out one article.
+- 2026-08-27: `_index.md` rewritten from a bare link list into an annotated reading map:
+  per-chapter one-line summaries grouped by control path / RAG subsystem / evaluation,
+  a concrete how-to-read section, and reflection of the day's changes (reference stack,
+  CH03_04 rewrite). Also updated the `harness-engineering` series index in the same style.
 
