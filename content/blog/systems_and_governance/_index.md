@@ -1,7 +1,7 @@
 ---
 title: "Systems, Incentives, and Governance"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-08-23T19:56:20+08:00
+lastmod: 2026-08-27T09:47:07+08:00
 draft: false
 
 description: "A section on systems, incentives, trust, welfare, and governance across teams, firms, and public institutions."
@@ -11,8 +11,6 @@ categories:
   - "Systems and Governance"
 tags:
   - "Section"
-
-slug: "organizational-behavior"
 ---
 
 这组文章讨论的并不只是狭义的“组织行为学”，而是更广义的系统行为：

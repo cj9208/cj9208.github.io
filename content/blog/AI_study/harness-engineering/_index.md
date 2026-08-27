@@ -1,7 +1,7 @@
 ---
 title: "Harness Engineering 合集"
 date: 2026-07-17T22:34:14+08:00
-lastmod: 2026-08-16T10:10:00+08:00
+lastmod: 2026-08-27T10:20:00+08:00
 draft: false
 
 categories:
@@ -9,11 +9,9 @@ categories:
 tags:
   - "AI Study"
   - "LLM"
-  - "Harness"
-
+  - "Harness Engineering"
 slug: "harness-engineering"
 ---
-
 ## Harness Engineering 系列文章
 
 * [From Prompts to Autopilot: Why "Harness Engineering" is the True Key to LLM Reliability]({{< relref "./01-From-Prompts-to-Autopilot-Why-Harness-Engineering-Is-the-True-Key-to-LLM-Reliability.md" >}})
