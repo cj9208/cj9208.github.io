@@ -1,7 +1,7 @@
 ---
 title: "RAG Orchestration Architecture"
 date: 2026-07-16T14:17:00+08:00
-lastmod: 2026-08-27T12:01:00+08:00
+lastmod: 2026-08-27T14:54:47+08:00
 draft: true
 
 description: "A structured note set on intention recognition, request orchestration, governed execution, and the RAG subsystem design behind them."
@@ -71,6 +71,8 @@ The worldview is not re-derived here; it lives in standalone articles:
 
 - [AI Coding 的防御性进化：平台化、业务解耦与结构的自然生长](https://cj9208.github.io/blog/ai_study/ai-coding-evolution/)
   Why bounded sandboxes, rigid platform foundations, and late abstraction beat premature DRY when AI writes most of the code.
+- [文艺复兴：从 Linux 老派教条看 AI 时代的函数开发](https://cj9208.github.io/blog/ai_study/linux-revival-ai-functions/)
+  Why small pure modules with strong contracts and explicit boundaries hold up under an AI caller.
 - [A First-Principles Architecture for Agent Routing and Safety Harnesses](https://cj9208.github.io/blog/ai_study/agent-routing-safety-harness/)
   The full derivation of model-proposes-harness-executes, orthogonal verification, and risk-proportional authorization.
 - [Harness Engineering 合集](https://cj9208.github.io/blog/ai_study/harness-engineering/)
@@ -83,6 +85,11 @@ How those principles show up in this set:
 - evaluator contracts sit outside generation because correctness needs an external comparator
 - context discipline exists because state is costly, degradable, and attention-limited
 - layers stay modular so failures remain local and ownership stays clear
+- no platform was designed first; orchestration grew out of a concrete RAG fix (the origin story is `CH00_Preface.md`)
+- RAG was split into internal layers only after each layer's responsibility stabilized
+- policy stays central in definition but local in enforcement
+
+One guardrail that follows from this style: a new layer earns its existence only by defining a real responsibility boundary, hiding unstable details, creating a stable contract, or improving reuse and ownership. A wrapper that forwards the same parameters inward without changing responsibility or ownership is ceremony, not modularity.
 
 ## What This Set Covers And What It Does Not
 

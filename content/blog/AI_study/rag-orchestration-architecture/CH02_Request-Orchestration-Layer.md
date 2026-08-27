@@ -1,7 +1,7 @@
 ---
 title: "Request Orchestration Layer"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-22T20:20:19+08:00
+lastmod: 2026-08-27T21:14:40+08:00
 draft: true
 
 description: "The request orchestration layer is the shared control layer for a company-wide agent system."
@@ -19,26 +19,39 @@ slug: "CH02_Request-Orchestration-Layer"
 
 The request orchestration layer is the shared control layer for a company-wide agent system.
 
-It extends the intention recognition layer into a broader runtime that can:
-
-1. understand user requests
-2. classify task type and domain
-3. resolve ambiguity
-4. choose the right capability
-5. adaptively load the relevant tool surface
-6. govern execution using company identity and policy systems
-7. control cost, risk, and latency
-8. escalate safely when automation is weak
+It extends the intention recognition layer (`CH01`) into a broader runtime: the front half — request conditioning, interpretation, ambiguity evaluation, clarify-or-route — is inherited unchanged; this chapter owns the back half, where requests are routed to domains, matched to capabilities, executed under governance, validated, and handed off when automation cannot converge.
 
 In this design, RAG is one capability among several, not the default execution path.
 
-This document describes the main architecture, execution model, operating model, and the remaining open questions.
+## Mental Model
 
-## Why This Layer Exists
+Three constructs explain everything in this chapter:
 
-If the company wants a system of agents rather than one isolated feature, the core problem is not only question answering.
+```text
+1. FLOW       the request lifecycle:
+              inherited CH01 front half
+              -> domain routing -> capability selection -> schema loading
+              -> governed execution -> validation -> fallback / handoff
+2. REGISTRY   capabilities as governed products with owners, contracts,
+              tool bundles, and lifecycle metadata - looked up, never hardcoded
+3. BOUNDARIES three hard controls around the flow:
+              cross-domain policy, security/governance (model proposes,
+              harness decides), and escalation budgets
+```
 
-The core problem is governed request execution.
+And when the runtime itself must be designed in detail, its three aspects map one-to-one onto the subchapters:
+
+| Aspect | Question | Subchapter |
+| --- | --- | --- |
+| State | what exists now? | `CH02_01_Runtime-Objects.md` |
+| Transition | what can happen next? | `CH02_02_State-Machine-and-Control-Loop.md` |
+| Policy | what should be allowed next? | `CH02_03_Confidence-Safety-and-Validation.md` |
+
+`State`, `Transition`, `Policy` is also the smallest split that keeps the runtime readable: merging them makes the runtime dense, splitting them further fragments the design.
+
+## Why A Shared Runtime Exists
+
+If the company wants a system of agents rather than one isolated feature, the core problem is not question answering — it is governed request execution at scale.
 
 Without a shared orchestration layer, each agent tends to implement its own:
 
@@ -51,13 +64,11 @@ Without a shared orchestration layer, each agent tends to implement its own:
 - permission checks
 - handoff format
 
-That creates duplicated logic, inconsistent behavior, and weak governance.
+That creates duplicated logic, inconsistent behavior, and weak governance. The request orchestration layer standardizes those behaviors once, across agents.
 
-The request orchestration layer standardizes those behaviors across agents.
+### From Intention Layer To Orchestration
 
-## Relationship to the Intention Recognition Layer
-
-The intention recognition layer remains valid, but it becomes the front half of a broader orchestration runtime.
+The intention recognition layer remains valid; it becomes the front half of this runtime.
 
 Previous shape:
 
@@ -71,196 +82,25 @@ Extended shape:
 
 ```text
 User request
--> Request understanding
--> Domain and task framing
--> Capability selection
--> Adaptive schema loading
--> Governed execution
--> Validation and escalation
+-> Request understanding        (front half, inherited from CH01)
+-> Domain and task framing      \
+-> Capability selection          |
+-> Adaptive schema loading       |  back half,
+-> Governed execution            |  this chapter
+-> Validation and escalation    /
 ```
 
-What stays the same:
+What stays the same from `CH01`: deterministic normalization, lightweight model interpretation, confidence-aware routing, clarification-first disambiguation, escalation budgets, graceful handoff.
 
-- deterministic normalization
-- lightweight model interpretation
-- confidence-aware routing
-- clarification-first disambiguation
-- bounded retries
-- graceful escalation
+What extends: execution routes through domain-scoped subsystems, tool schemas load adaptively by capability, and execution is governed by the harness rather than delegated to the model.
 
-What extends:
+Design principle:
 
-- execution is routed through domain-scoped subsystems
-- tool schemas are loaded adaptively by capability
-- execution is governed by the harness rather than delegated to the model
+> Centralize orchestration patterns; decentralize domain knowledge and capability bundles.
 
-## Why This Chapter Splits Into Three Subsections
+## Why Domains
 
-Up to this point, this chapter is still describing the request orchestration layer at the architecture level.
-
-That is useful for explaining the overall shape of the system, but it is not yet enough to explain how the runtime actually works during execution.
-
-The moment we move from architecture description into runtime design, the questions change.
-
-We are no longer asking only:
-
-- what modules exist
-- how responsibilities are divided
-- where RAG fits in the broader system
-
-We also have to ask:
-
-- what runtime objects must exist while a request is live
-- how the request moves from one state to the next
-- what rules decide whether the next action is allowed, safe, or good enough
-
-That is the point where one chapter becomes too dense.
-
-Those concerns are related, but they are not the same design question.
-
-This is why the detailed runtime design is split into three focused subchapters:
-
-1. [`CH02_01_Runtime-Objects.md`]({{< relref "./CH02_01_Runtime-Objects.md" >}})
-2. [`CH02_02_State-Machine-and-Control-Loop.md`]({{< relref "./CH02_02_State-Machine-and-Control-Loop.md" >}})
-3. [`CH02_03_Confidence-Safety-and-Validation.md`]({{< relref "./CH02_03_Confidence-Safety-and-Validation.md" >}})
-
-The split is intentional because the orchestration runtime has three different aspects:
-
-- what the system stores
-- how the system moves
-- how the system decides safely
-
-Another way to say this is:
-
-- `State`: what exists now?
-- `Transition`: what can happen next?
-- `Policy`: what should be allowed next?
-
-This is the natural bridge from `CH02` into the runtime notes.
-
-`CH02_Request-Orchestration-Layer.md` explains the architecture and responsibility model.
-The three subchapters explain the runtime implementation shape of that architecture.
-
-### 1. Runtime Objects: What The System Stores
-
-`CH02_01_Runtime-Objects.md` defines the durable artifacts such as request envelope, interpretation record, routing decision, execution record, final outcome, and handoff packet.
-
-This answers:
-
-- what objects exist
-- why those objects are separated
-- what each object is responsible for
-
-### 2. State Machine And Control Loop: How The System Moves
-
-`CH02_02_State-Machine-and-Control-Loop.md` defines lifecycle movement, retry boundaries, fallback control, and event emission.
-
-This answers:
-
-- what states a request can enter
-- how control returns to routing
-- how loops are bounded
-- how fallback remains harness-owned
-
-### 3. Confidence, Safety, And Validation: How The System Decides Safely
-
-`CH02_03_Confidence-Safety-and-Validation.md` defines input safety, scope control, confidence policy, and validation rules.
-
-This answers:
-
-- when the system should refuse or constrain a request
-- how evidence turns into route decisions
-- when an output is acceptable to return
-
-### Why Three Is The Right Split
-
-Three is useful here because it matches the natural architecture boundary:
-
-1. data and artifacts
-2. lifecycle and control movement
-3. decision quality and safety
-
-If these are merged into one note, the runtime becomes hard to read.
-If they are split more aggressively, the design becomes fragmented.
-
-So three subchapters is the smallest split that still keeps the runtime understandable.
-
-## Core Principles
-
-### 1. Deterministic First
-
-Use deterministic methods whenever possible for low-cost, stable, and auditable resolution.
-
-Examples:
-
-- typo repair
-- alias mapping
-- short-name recovery
-- canonical entity resolution
-- metadata lookups
-- rules and filters
-
-### 2. LLM Reasoning as a Governed Component
-
-Use model reasoning for interpretation, framing, decomposition, and soft disambiguation, but do not treat the model as the controller.
-
-The model is a component inside a harness.
-
-### 3. Clarification Before Expensive Execution
-
-If the request is materially ambiguous, resolve that ambiguity before spending significant retrieval or reasoning budget.
-
-### 4. Capability-Gated Execution
-
-Do not expose all tools to the model at once.
-
-First decide what capability family is needed, then load only the relevant tool schemas.
-
-### 5. Orchestration Owns Sequencing
-
-Tools should be simple executors.
-
-Tools do not call each other. Only the orchestration layer plans and sequences tool calls.
-
-This applies to both read and write operations.
-
-Read access is also treated as tool execution. The model never directly reads protected content or performs actions outside the harness.
-
-### 6. Bounded Autonomy
-
-The system should not loop indefinitely.
-
-Retries, clarifications, model escalations, tool calls, and retrieval breadth should all be bounded.
-
-### 7. Stage-Aware User Expectation Management
-
-Because the orchestration layer knows which execution path is being taken, it should also support path-aware user feedback.
-
-Different paths should produce different user expectations:
-
-- simple lookup paths should feel nearly immediate
-- retrieval paths may show a short wait hint
-- complex multi-step paths should show visible progress or workflow steps
-- human escalation paths should clearly communicate handoff status
-
-### 8. Graceful Human Escalation
-
-When automation cannot safely converge, hand off with structured context rather than producing a low-confidence answer.
-
-## Domain-Scoped Architecture
-
-Even if many agent entry points appear to be "just QA" at the surface, the system should still be split by business functionality or domain.
-
-Examples:
-
-- HR
-- customer support
-- sales
-- finance
-- legal
-- internal engineering
-
-This keeps each subsystem smaller, simpler, and more maintainable.
+Even if many agent entry points look like "just QA" at the surface, the system should still split by business functionality or domain — HR, customer support, sales, finance, legal, internal engineering.
 
 Benefits:
 
@@ -271,64 +111,29 @@ Benefits:
 5. easier governance and permission control
 6. safer and cheaper retrieval and execution
 
-Design principle:
+## The Flow
 
-> Centralize orchestration patterns, decentralize domain knowledge and capability bundles.
+Twelve steps describe a request end to end. Steps 1–4 (input capture, deterministic conditioning, intent framing, ambiguity evaluation) and the clarification gate are inherited from `CH01_Intention-Recognition-Layer.md` unchanged; they appear in the table below only so the sequence stays readable in one place.
 
-## Architecture
+| Step | Main purpose | Key decisions or rules | Owned by |
+| --- | --- | --- | --- |
+| 1. Input capture | preserve original wording and context | always preserve untouched user input for traceability and handoff | CH01 front half |
+| 2. Deterministic conditioning | cheap, auditable cleanup before model reasoning | transforms low-risk and traceable | CH01 front half |
+| 3. Intent and task framing | frame task type, candidate domains, target guess, requested fields | model shapes the request, never silently replaces user intent | CH01 front half |
+| 4. Ambiguity evaluation | decide whether it is safe to proceed | prefer strong deterministic signals; clarify on material conflict between rule and model outputs | CH01 front half |
+| 5. Domain routing | choose the domain-scoped subsystem | if domain confidence is low, ask a short routing clarification before loading domain tools | this chapter |
+| 6. Clarification gate | resolve material ambiguity before capability execution | short specific questions; bounded retries; clarification over confident garbage output | CH01 policy |
+| 7. Capability selection | choose the best execution family in the selected domain | candidate families: resolution, structured lookup, unstructured retrieval, reasoning, action, escalation | this chapter |
+| 8. Adaptive schema loading | expose only the relevant tool surface | smallest relevant schema surface; early reasoning stages stay schema-light | this chapter |
+| 8A. Execution graph planning | let the model propose a tool graph while the harness keeps control | model may describe the graph; harness owns scheduling, permissions, dependency enforcement, partial-result policy | this chapter |
+| 9. Governed execution | execute only after identity, permission, and policy checks | the model suggests, the harness decides, the executor acts; read tools are governed exactly like write tools | this chapter |
+| 10. Validation | verify the result satisfies user need and quality policy | relevance, completeness, grounding, consistency, confidence sufficiency, policy compliance | this chapter |
+| 11. Fallback and escalation | recover gracefully when the chosen path fails or stays weak | every recovery path spends an escalation budget: clarification retry, stronger model, alternate capability, human handoff | both halves |
+| 12. Logging and handoff | produce durable traces and escalation artifacts | logs support audit, replay, monitoring, attribution, postmortems | this chapter |
 
-### Layer Responsibilities
+The layer-level responsibility summary follows from the table: preserve and frame requests (front half), route and select capabilities, load minimal schema surfaces, enforce governed execution, validate results, and produce logs and handoffs.
 
-The request orchestration layer owns the following responsibilities:
-
-1. preserve and normalize the request
-2. infer task type and domain
-3. resolve target entities and constraints
-4. assess ambiguity and confidence
-5. choose the best capability family
-6. load the smallest relevant tool surface
-7. enforce governed execution
-8. validate execution results
-9. handle fallback, retry, and escalation
-10. produce structured logs and handoff artifacts
-
-### End-to-End Flow
-
-```text
-User request
--> Input capture
--> Deterministic conditioning
--> Intent and task framing
--> Ambiguity evaluation
--> Domain routing
--> Clarification if needed
--> Capability selection
--> Adaptive schema loading
--> Governed execution
--> Validation
--> Fallback or escalation
--> Logging and handoff
-```
-
-## Stage-by-Stage Design
-
-| Stage | Main purpose | Typical inputs | Typical outputs | Key decisions or rules |
-| --- | --- | --- | --- | --- |
-| 1. Input capture | preserve original wording and context | current user message, chat history, session metadata | original query, contextual request envelope | always preserve untouched user input for traceability and handoff |
-| 2. Deterministic conditioning | perform cheap, auditable cleanup before model reasoning | original query, metadata, aliases, lookup rules | normalized query, deterministic candidates, rule hits, score signals | keep transforms low-risk and traceable |
-| 3. Intent and task framing | frame what kind of task this is and what the user is asking for | normalized query, session context, deterministic signals | framed request object, task type, candidate domain, target guess, requested fields, confidence, ambiguity flags | model shapes the request but should not silently replace user intent |
-| 4. Ambiguity evaluation | decide whether it is safe to proceed | deterministic match strength, model confidence, score gaps, required constraints | proceed, clarify, escalate to stronger model, or human handoff | prefer deterministic signals when strong; clarify if deterministic and model outputs conflict materially |
-| 5. Domain routing | choose the domain-scoped subsystem | framed request, task type, candidate domains, scope policy | selected domain, candidate domains with scores, routing confidence | if domain confidence is low, ask a short routing clarification before loading domain tools |
-| 6. Clarification gate | resolve material ambiguity before capability execution | ambiguity flags, candidate interpretations, prior failed clarifications | clarification question or resolved request | ask short, specific questions; keep retries bounded; prefer clarification over confident garbage output |
-| 7. Capability selection | choose the best execution family in the selected domain | task type, domain, confidence, risk, latency target, cost target, permissions | selected capability, optional fallback capability, routing rationale | candidate capability families include resolution, structured lookup, unstructured retrieval, reasoning, action, and escalation |
-| 8. Adaptive schema loading | expose only the relevant tool surface | selected domain, selected capability, policy constraints | tool bundle loaded for the chosen path | load the smallest relevant schema surface; keep early reasoning stages schema-light |
-| 8A. Execution graph planning | allow the model to propose a tool graph while the harness retains control | selected tools, request plan, dependency hints | proposed tool graph, dependency plan, parallelization hints | the model may describe a tool graph; the harness owns scheduling, permission checks, dependency enforcement, and partial-result policy |
-| 9. Governed execution | execute only after identity, permission, and policy checks | tool proposal, user identity, arguments, permissions, risk policy | execution result, policy decision, risk decision | the model suggests, the harness decides, the executor acts; both read and write tools are governed |
-| 10. Validation | verify that the result satisfies user need and quality policy | execution result, request intent, confidence signals, policy checks | accept result, retry, clarify, or escalate | check relevance, completeness, grounding, consistency, confidence sufficiency, and policy compliance |
-| 11. Fallback and escalation | recover gracefully when the chosen path fails or remains weak | validation outcome, retry budget, fallback policy | clarification retry, stronger model, alternate capability, or human handoff | cap retries, model escalations, retrieval breadth, tool calls, and end-to-end latency |
-| 12. Logging and handoff | produce durable traces and escalation artifacts | full execution path, decisions, tool usage, outcomes | structured logs, replay artifacts, human handoff packet | logs should support audit, replay, monitoring, attribution, and postmortem analysis |
-
-Representative structured log fields can be grouped as follows:
+Representative structured log fields:
 
 | Category | Representative fields |
 | --- | --- |
@@ -341,49 +146,40 @@ Representative structured log fields can be grouped as follows:
 | result and fallback | `execution_result`, `fallback_reason`, `final_outcome`, `upstream_dependency_failures` |
 | timing and versioning | `timestamp_start`, `timestamp_end`, `duration_ms`, `tool_schema_version`, `capability_version`, `domain_subsystem_version`, `queue_or_scheduler_state` |
 
-## Capability Model
+These field groups are the runtime-facing preview of the durable objects defined in `CH02_01_Runtime-Objects.md`.
 
-Capabilities should be treated as governed products, not ad hoc tool collections.
+## The Capability Registry
 
-Some capabilities are global:
+Capabilities are governed products, not ad hoc tool collections.
 
-- clarification generation
-- human handoff building
-- generic reasoning utilities
+Some are global — clarification generation, human handoff building, generic reasoning utilities. Some are domain-scoped — HR policy lookup, customer case retrieval, finance workflow actions, legal document retrieval.
 
-Some capabilities are domain-scoped:
+Every capability declares nine things:
 
-- HR policy lookup
-- customer case retrieval
-- finance workflow actions
-- legal document retrieval
-
-Each capability has:
-
-1. a purpose
-2. a usage boundary
-3. an input contract
-4. a tool schema bundle
-5. an output contract
+1. purpose
+2. usage boundary (use_when / avoid_when)
+3. input contract
+4. tool schema bundle
+5. output contract
 6. confidence and validation signals
 7. fallback paths
-8. ownership
+8. owner
 9. domain scope
 
 ### Capability Families
 
 | Capability family | Purpose | Typical tools |
 | --- | --- | --- |
-| Resolution | resolve entities, aliases, shorthand, and canonical naming | alias matcher, typo recovery, canonical entity resolver |
+| Resolution | resolve entities, aliases, shorthand, canonical naming | alias matcher, typo recovery, canonical entity resolver |
 | Structured lookup | answer exact questions from structured data sources | metadata search, SQL or service query, record lookup APIs |
-| Unstructured retrieval | answer questions that require document or long-text evidence | summary retrieval, vector search, keyword retrieval, rerank, raw chunk fetch |
-| Reasoning | perform decomposition, comparison, synthesis, or higher-cost interpretation | flash model, pro model, planner or synthesizer |
+| Unstructured retrieval | answer questions requiring document evidence | summary retrieval, vector search, keyword retrieval, rerank, raw chunk fetch |
+| Reasoning | decomposition, comparison, synthesis, higher-cost interpretation | flash model, pro model, planner or synthesizer |
 | Action and workflow execution | perform external actions or guided business operations | API clients, workflow runners, ticketing or case-management actions |
-| Escalation | ask clarifying questions or hand off to a human | clarification generator, handoff packet builder, human-agent routing connector |
+| Escalation | clarifying questions or human handoff | clarification generator, handoff packet builder, human-agent routing connector |
 
 RAG belongs in the `Unstructured retrieval` family.
 
-### Capability Catalog Template
+### Catalog Template
 
 ```yaml
 name: <capability_name>
@@ -445,15 +241,31 @@ notes:
   - <implementation_note>
 ```
 
-Registry model:
+### Registry Rules
 
-- the orchestration layer looks up capability definitions from a registry
+- the orchestration layer looks up capability definitions from a registry; it never hardcodes domain tool logic
 - each domain team owns and updates its own subsystem tools and schemas
-- the orchestration layer should not own domain tool logic; it should only use the registry to request and load schemas
-- every tool and capability should have an explicit owner recorded in the registry or schema metadata
-- version and rollout metadata should also be recorded so regressions can be traced to specific changes
+- every tool and capability records an explicit owner in the registry or schema metadata
+- version and rollout metadata are recorded so regressions trace to specific changes
 
-## Cross-Domain Handling Policy
+This owner metadata is what later powers operational attribution (see Measurement And Operations).
+
+## Hard Boundaries
+
+Four boundaries apply to every path through the flow. They exist so that safety and cost do not depend on prompt compliance.
+
+### Governance Boundary
+
+Security and permission enforcement belong to the harness and company policy systems, never to prompts alone:
+
+- the model may propose a tool call
+- the harness decides whether the call is allowed
+
+Read access is governed exactly like write access: the model never directly reads protected content or acts outside the harness. This keeps permissions, risk rules, approvals, and content exposure controls in code and company systems.
+
+Tools are simple executors. Tools do not call each other; only the orchestration layer plans and sequences tool calls — including all cross-domain calls.
+
+### Cross-Domain Policy
 
 Cross-domain requests are allowed when the query genuinely requires them.
 
@@ -465,16 +277,14 @@ Default policy:
 
 Additional rules:
 
-- tools do not call each other
-- only the orchestration layer can sequence cross-domain calls
 - permission is checked by the harness for each call
 - multi-domain execution may be sequential or parallel when dependencies allow
-- if a prerequisite call fails, dependent calls should not run
+- if a prerequisite call fails, dependent calls must not run
 - if one call fails, return the successful scoped information and clearly label the missing part
 - if sources conflict, do not infer a conclusion; present the conflict and recommend human confirmation
-- if ambiguity remains material, ask for clarification rather than infer
+- if ambiguity remains material, clarify rather than infer
 
-Example response style for partial success:
+Response style for partial success:
 
 ```text
 We could retrieve the general policy information, but we could not verify your identity at this time.
@@ -483,7 +293,7 @@ General information:
 For account-specific conclusions, please try again later or contact a human agent.
 ```
 
-Example response style for conflicting sources:
+Response style for conflicting sources:
 
 ```text
 We found conflicting information:
@@ -493,120 +303,15 @@ We cannot provide a reliable conclusion from the available data.
 Please confirm with the related human agent.
 ```
 
-## Measurement and Reliability
+### Escalation Budgets
 
-The platform should be evaluated both offline and online.
+Everything that loops spends a finite budget from the same policy family introduced in `CH01`: clarification turns, reinterpretations, stronger-model retries, alternate-capability attempts, tool-call counts, retrieval breadth, and end-to-end wall-clock time.
 
-### Offline Evaluation
+Budget state is visible to routing at all times; an exhausted budget forces `handoff_human` instead of another guess. This is what makes the layered fallback path predictable instead of emergent.
 
-Use golden datasets and controlled benchmarks for:
+### Latency UX
 
-- routing quality
-- tool selection precision
-- schema generation precision
-- answer quality
-- cost reduction
-- safety and policy correctness
-
-### Online Monitoring
-
-Reliability should be monitored over time.
-
-If behavior drifts, engineers should investigate logs, failure patterns, and recent changes.
-
-This monitoring should support both scheduled review and operational intervention when important distributions drift materially.
-
-Useful online measures include:
-
-- percentage of flash-model paths
-- percentage of pro-model escalations
-- percentage of human handoffs
-- user satisfaction signals
-- repeated user retries as a negative signal
-- failure or rejection rates
-- latency and cost trends over time
-
-## Operational Ownership and Nightly Review
-
-The architecture should support clear operational ownership.
-
-Because the system is split by domain, capability, tool schema, and owner, failures and regressions can be attributed more precisely.
-
-This makes it easier to answer:
-
-- which tool is slow or failing
-- which capability is degrading
-- which domain subsystem is unstable
-- which team should investigate
-
-Design principle:
-
-> Every tool and capability should have an explicit owner so performance, failures, and regressions can be attributed and reviewed automatically.
-
-### Nightly Review Loop
-
-The platform can run a nightly summary job that analyzes orchestration and tool activity across the day.
-
-Example review dimensions:
-
-| Level | Example Metrics |
-|---|---|
-| Tool | latency distribution, failure rate, timeout rate, bad schema rate |
-| Capability | success rate, fallback rate, retry rate |
-| Domain | volume, latency, handoff rate, top failure patterns |
-| Orchestration | wrong-route signals, clarification rate, escalation rate |
-
-Useful outputs:
-
-- latency trends
-- failed cases
-- timeout clusters
-- schema mismatch patterns
-- unusual escalation spikes
-- owner-routed issue summaries
-
-Because owner information is recorded in the registry or tool schema metadata, summary results can be sent directly to the relevant team.
-
-### Failure Classification
-
-The nightly review should classify issues rather than treat all failures the same.
-
-Useful categories:
-
-- orchestration issue
-- schema issue
-- tool or backend issue
-- permission or policy issue
-- dependency outage
-- user ambiguity cluster
-
-This helps teams focus on the real source of degradation instead of routing all issues to one group.
-
-Monitoring can be both:
-
-- scheduled, such as nightly review summaries
-- operational, where engineers inspect significant drift or abnormal distributions and step in when needed
-
-## SLA and Latency UX
-
-The orchestration layer should not only control latency internally. It should also help the product expose appropriate user expectations.
-
-Because execution is modular, the system can estimate the rough shape of work before it finishes.
-
-Examples:
-
-- simple API or structured lookup -> near-immediate response
-- RAG or retrieval-heavy path -> short wait hint such as "searching documents, may take about 2 seconds"
-- complex multi-step path -> visible progress states or workflow steps
-- human escalation path -> explicit handoff message
-
-Why this matters:
-
-1. better perceived performance
-2. clearer user anticipation
-3. less confusion when work takes longer
-4. higher trust and satisfaction
-5. better alignment between system behavior and user expectation
+Because execution is modular, the layer knows which path a request is taking before it finishes — so the product can set correct expectations per class of work.
 
 Suggested latency tiers:
 
@@ -617,97 +322,77 @@ Suggested latency tiers:
 | Careful | multi-step reasoning, conflict resolution, higher-risk checks | progress steps or staged status |
 | Escalation | unresolved ambiguity or blocked execution | explicit human handoff or retry guidance |
 
-Latency policy should also be configurable by task, capability, or tool preferences.
+Latency-related preferences are configurable per task, capability, or tool:
 
-Examples:
-
-- internal tools may prefer throughput or performance over immediate latency and can be served through queue-based execution
-- customer-support flows may prefer shorter first responses, even if the answer is partial
-- retrieval-heavy capabilities may cap number of chunks or rerank depth differently depending on latency preference
-
-Examples of configurable latency-related preferences:
-
-- max retrieved chunks
-- max rerank candidates
-- max tool calls
-- max model escalations
-- queue-allowed or not
-- partial-response preferred or not
+- max retrieved chunks, max rerank candidates
+- max tool calls, max model escalations
+- queue-allowed or not, partial-response preferred or not
 - max wall-clock budget
 
-Design principle:
+For example: internal tools may accept queue-based throughput over immediacy; customer-support flows may prefer shorter first responses even when partial; retrieval-heavy capabilities may cap chunk counts differently by latency preference.
 
-> Modular orchestration makes latency visible and predictable. Because the system knows which path it is taking, it can provide appropriate progress cues and expected wait times for each class of work.
+> Modular orchestration makes latency visible and predictable: because the system knows which path it is taking, it can provide appropriate progress cues and expected wait times for each class of work.
 
-## Security and Governance Boundary
+### Human Handoff Contract
 
-Security and permission enforcement belong to the harness and company policy systems, not to prompt-only behavior.
+When escalation fires, the handoff carries the packet shape defined in `CH01` (conversation context, system summary, candidates, evidence, attempt history, suggested next step), extended with orchestration state:
 
-The same rule applies to both read access and write access:
+1. original user request and relevant history
+2. normalized query and framed interpretation
+3. attempted capabilities and outcomes
+4. current budget states
+5. recommended next action
 
-- the model may propose a tool call
-- the harness decides whether the call is allowed
+Resolved human cases are recorded and fed back: recurring corrections become alias updates, routing-rule adjustments, prompt fixes, and escalation-policy tuning.
 
-This keeps permissions, risk rules, approvals, and content exposure controls in code and company systems rather than in prompts.
+## Measurement And Operations
 
-## Deferred Memory Scope
+The platform is evaluated offline and monitored online; operations attribute failures to owners.
 
-General long-term agent memory is not part of the current design.
+### Offline Evaluation
 
-Current scope:
+Golden datasets and controlled benchmarks cover:
 
-- treat most requests as one-time interactions
-- optionally resume a previous unresolved session
-- retrieve the previous session and generate a summary for the next agent or human to continue
+- routing quality
+- tool selection precision
+- schema generation precision
+- answer quality
+- cost reduction
+- safety and policy correctness
 
-Out of scope for now:
+### Online Monitoring
 
-- broad durable conversational memory
-- automatic persistence of inferred facts across unrelated sessions
+Useful online measures:
 
-## Human Handoff Contract
+- percentage of flash-model paths versus pro-model escalations
+- percentage of human handoffs
+- user satisfaction signals; repeated user retries as a negative signal
+- failure or rejection rates
+- latency and cost trends over time
 
-When escalation is required, the handoff should include:
+Monitoring runs both scheduled and operationally: nightly summaries review aggregate drift, while engineers inspect significant anomalies and intervene as needed.
 
-1. original user request
-2. relevant conversation history
-3. normalized query and framed interpretation
-4. candidate meanings and scores
-5. attempted capabilities and outcomes
-6. ambiguity and confidence state
-7. recommended next action
+### Ownership And Nightly Review
 
-Resolved human cases should be recorded so the system can improve aliases, routing rules, prompts, and escalation policy over time.
+Because the system is split by domain, capability, tool schema, and owner, failures attribute precisely:
 
-## Remaining Open Design Questions
+- which tool is slow or failing
+- which capability is degrading
+- which domain subsystem is unstable
+- which team should investigate
 
-The overall architecture is now largely defined. The main remaining work is in operational detail rather than top-level structure.
+A nightly job summarizes the day's activity:
 
-### 1. Confidence Calibration
+| Level | Example Metrics |
+|---|---|
+| Tool | latency distribution, failure rate, timeout rate, bad schema rate |
+| Capability | success rate, fallback rate, retry rate |
+| Domain | volume, latency, handoff rate, top failure patterns |
+| Orchestration | wrong-route signals, clarification rate, escalation rate |
 
-The design relies heavily on confidence-aware routing, so confidence still needs a more formal runtime decision policy.
+Outputs go to issue queues routed by owner: latency trends, failed cases, timeout clusters, schema mismatch patterns, escalation spikes.
 
-It should likely combine:
-
-- deterministic match strength
-- model confidence
-- retrieval agreement
-- ambiguity signals
-- execution outcome signals
-
-The main open question is not whether confidence matters, but exactly how the harness should turn these signals into decisions such as:
-
-- proceed
-- clarify
-- retry
-- escalate
-- reject tool execution
-
-### 2. Failure Taxonomy
-
-The platform should classify failures more explicitly so diagnosis and ownership are cleaner.
-
-Examples:
+Failures are classified, not pooled:
 
 - orchestration issue
 - schema issue
@@ -716,46 +401,46 @@ Examples:
 - dependency outage
 - user ambiguity cluster
 
-This matters for online monitoring, nightly review, and owner-routed follow-up.
+Classification matters because it sends issues to the real source of degradation instead of to one catch-all group.
 
-### 3. Testing Strategy
+## Deferred And Out Of Scope
 
-The orchestration layer needs more than prompt or answer-quality evaluation.
+General long-term agent memory is intentionally deferred. Current scope treats most requests as one-time interactions, with optional resume of a previous unresolved session via retrieval-plus-summary for the next agent or human.
 
-It likely needs:
+Not yet decided — but will become necessary as session resume becomes common:
+
+- what session context persists
+- whether inferred facts may persist across unrelated sessions (and how user corrections override them)
+- what may be stored durably at all
+
+Without these boundaries, later orchestration behavior becomes inconsistent or unsafe, so memory stays out until the boundaries are designed.
+
+## Remaining Open Design Questions
+
+The architecture is now largely defined; remaining work is operational detail rather than top-level structure.
+
+### 1. Confidence Calibration
+
+Confidence-aware routing depends on turning signal patterns into decisions. Candidate inputs: deterministic match strength, model confidence, retrieval agreement, ambiguity signals, execution-outcome signals.
+
+The open question is the exact runtime decision policy mapping these signals to proceed, clarify, retry, escalate, or reject-tool-execution. `CH02_03_Confidence-Safety-and-Validation.md` owns the structural side; calibration against labeled data is still pending.
+
+### 2. Testing Strategy
+
+Beyond prompt or answer-quality evaluation, the orchestration layer needs:
 
 - routing test cases
 - ambiguity and clarification tests
 - policy enforcement tests
-- capability output contract tests
-- schema loading regression tests
+- capability output-contract tests
+- schema-loading regression tests
 - high-risk action confirmation tests
 - dependency-graph execution tests
 
-These tests should cover both offline validation and production regression protection.
+covering both offline validation and production regression protection. See `CH04_Testing-and-Evaluation.md`.
 
-### 4. Operational Alert Thresholds
+### 3. Operational Alert Thresholds
 
-The design now includes online monitoring and nightly review, but it still needs explicit intervention thresholds.
+Online monitoring and nightly review exist, but intervention thresholds are still unspecified: how much latency drift warrants investigation, when timeout-rate changes become urgent, when escalation spikes indicate a system issue, when schema-mismatch frequency indicates a bad rollout.
 
-Examples:
-
-- how much latency drift is acceptable before investigation
-- when timeout-rate changes become urgent
-- when escalation or rejection spikes indicate a system issue
-- when schema mismatch frequency suggests a bad rollout
-
-Without alert thresholds, monitoring exists but responses may remain inconsistent.
-
-### 5. Stateful Memory Boundaries
-
-General long-term agent memory is intentionally out of scope for now.
-
-However, once the platform resumes unresolved sessions more often, it will need explicit rules for:
-
-- what session context persists
-- what inferred facts may be reused
-- how user corrections override prior assumptions
-- what information may be stored durably
-
-Without clear memory boundaries, later orchestration behavior can become inconsistent or unsafe.
+Without thresholds, monitoring exists but responses remain inconsistent.

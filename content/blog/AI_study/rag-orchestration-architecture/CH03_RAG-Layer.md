@@ -1,7 +1,7 @@
 ---
 title: "RAG Layer"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-08-27T11:21:30+08:00
+lastmod: 2026-08-27T21:22:25+08:00
 draft: true
 
 description: "The RAG layer is the knowledge access and grounding layer that sits downstream of request understanding and upstream of answer generation."
@@ -17,56 +17,71 @@ slug: "CH03_RAG-Layer"
 ---
 ## Purpose
 
-The RAG layer is the knowledge access and grounding layer that sits downstream of request understanding and upstream of answer generation.
+The RAG layer is the knowledge access and grounding capability inside the orchestration runtime.
 
-Its job is not simply to "retrieve documents".
-
-Its real job is to:
+Its job is not simply to "retrieve documents". Its real job is to:
 
 1. transform source material into retrievable knowledge
 2. retrieve the right evidence with high recall and precision
-3. assemble grounded context for downstream reasoning or answer generation
+3. assemble grounded context and turn it into cited output
 4. enforce security, freshness, and traceability constraints
 5. make retrieval quality observable, tunable, and governable
 
-In the broader architecture, RAG is one capability family inside the orchestration runtime, not the default answer path for every request.
-
-## Whole Picture
-
-The key idea is simple:
+The key idea:
 
 > Good generation cannot compensate for bad retrieval, weak structure extraction, or missing operational controls.
 
-The compact architecture is:
+In the broader architecture, RAG is one capability family among several — not the default answer path for every request.
 
-1. knowledge preparation
-2. retrieval
-3. grounded answering
-4. cross-cutting control principles
-
-This grouping is intentional.
-
-| Component | Main job | Detailed design |
-| --- | --- | --- |
-| Knowledge preparation | build the corpus and retrieval-ready representations | `CH03_01_Ingestion-Validation-Layer.md`, `CH03_02_Enrichment-Chunking-Indexing-Layer.md` |
-| Retrieval | find, rank, and assemble evidence | `CH03_03_Retrieval-Layer.md` |
-| Grounded answering | turn evidence into cited output | `CH03_04_Grounded-Answering-Layer.md` |
-| Cross-cutting control principles | define how control is applied across modules | this document plus module-specific control sections |
-
-## Relationship to Upstream Layers
-
-The intention recognition layer and request orchestration layer should shape the request before retrieval begins.
-
-Simplified shape:
+## Mental Model
 
 ```text
-User request
--> Intention recognition
--> RAG
--> Answer
+1. KNOWLEDGE PREPARATION   an offline pipeline that turns sources
+                           into retrievable, governed knowledge
+2. ONLINE PIPELINE         a per-request evidence path: query shaping
+                           -> candidate retrieval -> fusion/reranking
+                           -> context assembly -> grounded answering
+3. CROSS-CUTTING CONTROLS  access, freshness, observability - defined
+                           centrally, enforced locally in every module
 ```
 
-More accurate shape:
+```mermaid
+flowchart LR
+    subgraph OFFLINE["Knowledge preparation (offline)"]
+        direction LR
+        S[Sources] --> AC[Acquire] --> PA[Parse / OCR] --> SR[Structure reconstruction]
+        SR --> CN[Canonicalize] --> VA[Validate] --> EN[Enrich] --> CH[Chunk] --> IX[Index] --> PU[Publish to retrieval]
+    end
+
+    subgraph ONLINE["Per-request pipeline (online)"]
+        direction LR
+        QS[Query shaping] --> CR[Candidate retrieval] --> FR[Fusion and reranking] --> CA[Context assembly] --> GA[Grounded answering] --> OUT[Cited answer]
+    end
+
+    PU -. indexes .-> CR
+    CTL[Access control + freshness + traceability] -. enforced at every module .-> OFFLINE
+    CTL -. enforced at every module .-> ONLINE
+```
+
+The two pipelines meet at the published indexes. The offline side decides what can be found; the online side decides what should be used. Neither compensates for defects in the other.
+
+### Position Relative To Upstream Layers
+
+Upstream layers (`CH01`, `CH02`) hand over:
+
+- normalized wording, clarified target entity or scope
+- task type and requested attributes
+- confidence and ambiguity signals
+- domain routing decision and permission context
+
+This layer hands back:
+
+- evidence retrieval with citation-ready context
+- source grounding
+- retrieval confidence signals
+- abstention or insufficiency signals when evidence is weak
+
+Full request context:
 
 ```text
 User request
@@ -76,92 +91,13 @@ User request
 -> Grounded generation or execution
 ```
 
-What the upstream layers should contribute:
+## Component 1: Knowledge Preparation (Offline)
 
-- normalized wording
-- clarified target entity or scope
-- task type
-- confidence and ambiguity signals
-- domain routing
-- permission context
+Prepares source material into retrievable knowledge through two independent subsystems.
 
-What the RAG layer should contribute:
-
-- evidence retrieval
-- source grounding
-- citation-ready context
-- retrieval confidence signals
-- abstention or insufficiency signals when evidence is weak
-
-## Design Goals
-
-1. maximize grounded answer quality rather than raw retrieval volume
-2. preserve document structure and business meaning during ingestion
-3. balance recall and precision through staged retrieval
-4. support exact lookup and semantic retrieval in the same system
-5. enforce access control and source traceability end to end
-6. keep retrieval behavior observable and tunable
-7. support incremental updates, versioning, and stale-data handling
-8. make generation thin whenever retrieval and context assembly are strong
-
-## Core Principles
-
-### 1. Structure Matters
-
-Documents are not flat text streams.
-
-Headings, tables, lists, forms, captions, page boundaries, and section hierarchy often carry meaning that retrieval quality depends on.
-
-### 2. Retrieval Is a Pipeline, Not a Single Search Call
-
-High-quality retrieval usually requires several stages:
-
-- query shaping
-- candidate retrieval
-- fusion
-- reranking
-- context assembly
-
-### 3. Exact Match and Semantic Match Are Complementary
-
-Sparse retrieval is good at exact names, policy ids, codes, and keyword-heavy lookup.
-
-Dense retrieval is good at paraphrase, semantic similarity, and fuzzier concept recall.
-
-### 4. Generation Should Be Grounded and Thin
-
-In many enterprise systems, the difficult part is not text generation.
-
-The difficult part is retrieving the right evidence, preserving provenance, and assembling the right context window.
-
-### 5. Operations Are Part of Correctness
-
-A RAG system is not correct if it retrieves unauthorized content, serves stale content, or cannot explain its failures.
-
-### 6. Policy Can Be Central, but Enforcement Must Be Local
-
-Some controls, especially data access control, cannot live only in one upstream layer.
-
-They must be enforced in each module that touches protected data.
-
-## Compact Architecture
-
-```text
-Knowledge Preparation
--> Retrieval
--> Grounded Answering
--> Cross-Cutting Control Principles
-```
-
-### 1. Knowledge Preparation
-
-This component prepares source material into retrievable knowledge.
-
-It is split into two independent subsystems.
-
-| Subsystem | Scope | Document |
+| Subsystem | Scope | Detailed design |
 | --- | --- | --- |
-| Ingestion and validation | acquire, parse / OCR, structure reconstruction, canonicalize / normalize, validate, publish and quarantine policy | `CH03_01_Ingestion-Validation-Layer.md` |
+| Ingestion and validation | acquire, parse / OCR, structure reconstruction, canonicalize / normalize, validate, publish-and-quarantine policy | `CH03_01_Ingestion-Validation-Layer.md` |
 | Enrichment, chunking, and indexing | enrich, chunk, index, publish to retrieval | `CH03_02_Enrichment-Chunking-Indexing-Layer.md` |
 
 Compact flow:
@@ -179,13 +115,16 @@ Source
 -> Publish to retrieval
 ```
 
-Only validated canonical documents should move into enrichment, chunking, and indexing.
+Only validated canonical documents move forward from validation into enrichment, chunking, and indexing.
 
-### 2. Retrieval
+Design rationales carried by this component (detailed in the subchapters):
 
-This component finds, ranks, and assembles evidence for the current request.
+- **structure matters**: headings, tables, lists, forms, captions, page boundaries, and section hierarchy carry meaning retrieval quality depends on — flat-text processing destroys it
+- fresh, versioned, canonical knowledge beats stale near-duplicates in the index
 
-It includes:
+## Component 2: Retrieval (Online)
+
+Finds, ranks, and assembles evidence for the current request in five stages:
 
 1. query shaping
 2. metadata and security filtering
@@ -193,50 +132,40 @@ It includes:
 4. fusion and reranking
 5. context assembly
 
-See `CH03_03_Retrieval-Layer.md`.
+Detailed design: `CH03_03_Retrieval-Layer.md`.
 
-### 3. Grounded Answering
+Design rationales carried by this component:
 
-This component turns retrieved evidence into a grounded user-facing output.
+- **retrieval is a pipeline, not a single search call** — each stage exists to correct a known failure mode
+- **exact match and semantic match are complementary**: sparse retrieval wins on names, ids, codes, and keyword-heavy lookup; dense retrieval wins on paraphrase and concept recall — hybrid beats either alone
 
-It includes:
+## Component 3: Grounded Answering
 
-1. grounded generation
-2. citation and validation
-3. abstention or escalation when evidence is weak
+Turns retrieved evidence into a cited, user-facing output with explicit outcomes when evidence is weak: grounded answer, partial answer with uncertainty, clarification, insufficient-evidence statement, or escalation.
 
-See `CH03_04_Grounded-Answering-Layer.md`.
+Detailed design: `CH03_04_Grounded-Answering-Layer.md`.
 
-### 4. Operations and Governance
+Design rationale carried by this component:
 
-This is not a standalone execution component in the same sense as the others.
+- **generation should be grounded and thin** — the hard part is retrieving the right evidence and assembling the right window, so keep answer construction disciplined rather than compensating for weak retrieval with stronger models
 
-It is a cross-cutting design concern.
+## Cross-Cutting Controls
 
-The main idea is:
+Not a fourth component — a set of constraints every module enforces locally while policy stays centrally defined. Each component chapter carries its own Control and Governance section.
 
-| Concern | Where it should be enforced |
+| Concern | Where it must be enforced |
 | --- | --- |
 | access control | captured in ingestion, propagated in chunking and indexing, enforced in retrieval, respected again in grounded answering |
-| freshness and versioning | preserved in ingestion, chunking, indexing, and publish boundaries |
+| freshness and versioning | preserved across ingestion, chunking, indexing, and publish boundaries |
 | evaluation | measured at the layer where the failure occurs |
 | observability | logged at each module boundary |
 | failure analysis | traced across layers using lineage, ids, and structured logs |
 
-This means:
+Operations are part of correctness: a RAG system that retrieves unauthorized content, serves stale content, or cannot explain its failures is not correct regardless of answer quality.
 
-- policy may be defined centrally
-- enforcement must happen locally
-- each module should carry its own control and governance section
+The detailed control behavior lives in `CH03_01`, `CH03_02`, `CH03_03`, and `CH03_04`.
 
-The detailed control behavior therefore lives in:
-
-- `CH03_01_Ingestion-Validation-Layer.md`
-- `CH03_02_Enrichment-Chunking-Indexing-Layer.md`
-- `CH03_03_Retrieval-Layer.md`
-- `CH03_04_Grounded-Answering-Layer.md`
-
-## Recommended Baseline Architecture
+## Baseline Architecture
 
 For a practical default system, a strong baseline is:
 
@@ -271,22 +200,8 @@ Why one named stack at all:
 - readers can reproduce the notes with fewer decisions of their own
 - every component keeps its secondary option, so the stack stays swappable without rewriting the architecture
 
-## Minimal End-to-End Flow
-
-```text
-User request
--> Intention recognition
--> Request orchestration
--> Retrieval
--> Grounded answering
-
-Knowledge sources
--> Knowledge preparation
--> Retrieval
-```
-
 ## Final Note
 
 This document is the entry point and overview for the RAG subsystem.
 
-The detailed design should live in the component-specific documents, while this page keeps the overall architecture and boundaries clear.
+The detailed design lives in the three component chapters; this page keeps the two-pipeline shape, the cross-cutting controls, and the reference stack visible in one place.

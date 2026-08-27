@@ -1,7 +1,7 @@
 ---
 title: "Preface"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-08-15T21:52:55+08:00
+lastmod: 2026-08-27T14:54:47+08:00
 draft: true
 
 description: "This design started from a concrete RAG problem."
@@ -109,98 +109,25 @@ This document set therefore has two major parts.
 | Evolution of orchestration | how does the system grow from intention handling for one downstream task into general tool orchestration? |
 | Design of RAG | how should the RAG tool itself be designed internally? |
 
-These two parts are related, but they are not the same problem.
+These two parts are related, but they are not the same problem. The first is about control flow and system evolution; the second is about the internal architecture of the most important downstream tool. The same evolve, modularize, and compose logic appears at both levels — across the whole system as intention handling grows into orchestration, and inside RAG as the subsystem is split into smaller reusable modules.
 
-The first part is about control flow and system evolution.
-
-The second part is about the internal architecture of the most important downstream tool.
-
-The same evolve, modularize, and compose logic appears at both levels:
-
-- across the whole system as intention handling grows into orchestration
-- inside RAG as the subsystem is split into smaller reusable modules
-
-## Why This Design Uses Evolving Modular Architecture
-
-This design follows two strong ideas:
-
-1. evolve from real problems
-2. modularize when responsibilities become stable
-
-It also follows a third idea:
-
-3. compose larger behavior from small reusable parts
-
-This is deliberate.
-
-The architecture was not designed as a full platform first.
-
-It was discovered by solving a concrete problem, identifying the reusable control pattern, and then generalizing only when that pattern proved real.
-
-This is close to Unix or Linux design logic, though not identical to it:
-
-- keep modules small
-- keep boundaries explicit
-- let larger behavior emerge through composition rather than one giant controller
-
-| Principle | Meaning |
-| --- | --- |
-| evolve from real problems | abstractions should come from concrete failure modes, not from premature platform design |
-| generalize gradually | move from one task to many only when the control pattern proves reusable |
-| modularize by stable responsibility | split modules when ownership, inputs, outputs, and failure boundaries become clear |
-| compose from small modules | prefer reusable narrow components over one large mixed controller |
-| keep control local | policy may be central, but enforcement should happen in the module that touches the data |
-| avoid over-design | clear fixed problems can often be designed directly; messy problems benefit from progressive abstraction |
-
-This design style is especially useful for general, messy, or evolving problems where the right abstraction is not obvious at the start.
-
-For tasks that are already clear, fixed, and well-specified, a more direct specification-first design is often better.
-
-## Avoiding Fake Abstraction
-
-One reason this design prefers evolution over premature generalization is to avoid fake abstraction.
-
-Fake abstraction often looks like architecture, but in practice it is only:
-
-- one more wrapper
-- one more indirection layer
-- one more function or class that forwards the same parameters without changing responsibility
-
-That is usually not meaningful modularity.
-
-A new layer should earn its existence by doing at least one of the following:
-
-- defining a real responsibility boundary
-- hiding unstable implementation details
-- creating a stable contract
-- reducing cognitive load for callers
-- improving reuse, replacement, or ownership
-
-If a layer only passes the same parameters inward without simplifying behavior or ownership, it is probably not a good abstraction.
-
-This is another reason the design grows incrementally.
-
-Evolving from real problems makes it easier to see whether an abstraction actually changes the structure of the system or merely adds ceremony.
+The design style behind this evolution is not original to this set. Which principles it draws on, and how they show up in each layer, are summarized in the Principles section of the section index.
 
 ## What Can Be Standardized Early
 
-Even when detailed tool and business contracts are still evolving, some cross-cutting structure can still be standardized early.
+Even when detailed tool and business contracts are still evolving, some cross-cutting structure benefits from early standardization, because these parts recur in almost every future project:
 
-The best candidates are the parts that are likely to remain useful across almost all future projects.
+| Area | Typical common concerns | Where it lands later |
+| --- | --- | --- |
+| trace | request lineage, session linkage, step identity | `CH02_01` runtime objects and event traces |
+| governance | permission scope, policy decision, redaction state | `CH02_03` decision tables; enforced per module |
+| audit | timestamps, module, action, outcome, reason | `CH02_01` execution records |
+| identity | user identity, actor type, tenant, domain scope | permission context carried through every layer |
+| risk | risk level, confirmation need, escalation state | `CH01` routing gates and `CH02_03` validation |
+| version | schema version, capability version, module version | publish boundaries in `CH03_01`/`CH03_02` |
+| status | state, error, fallback reason | `CH02_02` state machine fields |
 
-| Area | Typical common concerns |
-| --- | --- |
-| trace | request lineage, session linkage, step identity |
-| governance | permission scope, policy decision, redaction state |
-| audit | timestamps, module, action, outcome, reason |
-| identity | user identity, actor type, tenant, domain scope |
-| risk | risk level, confirmation need, escalation state |
-| version | schema version, capability version, module version |
-| status | state, error, fallback reason |
-
-The design therefore does not avoid all standardization.
-
-Instead, it standardizes the common control envelope earlier, while allowing business-specific and tool-specific payloads to evolve until stable repeated patterns appear.
+So the design standardizes this common control envelope early — it later materializes as the typed runtime objects in `CH02_01_Runtime-Objects.md` — while letting business-specific and tool-specific payloads evolve until stable repeated patterns appear. In other words: standardize only what has already proven universal across projects.
 
 ## Why RAG Gets a Full Chapter
 
@@ -248,32 +175,7 @@ So the full architecture has two layers of flow:
 1. orchestration across tools
 2. internal execution inside the chosen tool
 
-## Reading Guide
-
-| if you want to understand... | Start with... |
-| --- | --- |
-| the origin of the design | `CH00_Preface.md` |
-| the intention-handling starting point | `CH01_Intention-Recognition-Layer.md` |
-| the generalized orchestration logic | `CH02_Request-Orchestration-Layer.md` |
-| the overall RAG design | `CH03_RAG-Layer.md` |
-| ingestion and validation inside RAG | `CH03_01_Ingestion-Validation-Layer.md` |
-| enrichment, chunking, and indexing inside RAG | `CH03_02_Enrichment-Chunking-Indexing-Layer.md` |
-| retrieval inside RAG | `CH03_03_Retrieval-Layer.md` |
-| grounded answering inside RAG | `CH03_04_Grounded-Answering-Layer.md` |
-| how the whole design is tested and evaluated | `CH04_Testing-and-Evaluation.md` |
-
-## Chapter Logic
-
-| Chapter | Main responsibility |
-| --- | --- |
-| `CH01` | intention recognition as the starting point of orchestration |
-| `CH02` | generalized request orchestration and tool routing |
-| `CH03` | overview of RAG as the main downstream tool |
-| `CH03_01` | ingestion and validation inside RAG |
-| `CH03_02` | enrichment, chunking, and indexing inside RAG |
-| `CH03_03` | retrieval inside RAG |
-| `CH03_04` | grounded answering inside RAG |
-| `CH04` | testing and evaluation of the orchestration and RAG behavior |
+Per-chapter responsibilities and reading order live in the section index, so they are not duplicated here.
 
 ## Final Note
 

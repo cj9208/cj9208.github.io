@@ -1,7 +1,7 @@
 ---
 title: "Intention Recognition Layer"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-08-27T11:26:20+08:00
+lastmod: 2026-08-27T20:47:59+08:00
 draft: true
 
 description: "The intention recognition layer is the control layer that sits between raw user input and retrieval/reasoning."
@@ -21,148 +21,67 @@ The intention recognition layer is the control layer that sits between raw user 
 
 Its job is not only to "understand the user", but to reduce ambiguity, narrow search space, control cost, and decide when the system should proceed, clarify, escalate, or stop.
 
-This is a harnessed design rather than a single-model black box.
-
-This document describes the focused upstream component. For the broader company-wide architecture that extends this layer into capability routing, governed execution, domain-scoped subsystems, and human escalation, see `CH02_Request-Orchestration-Layer.md`.
-
-## Whole Picture
-
-The layer combines:
-
-1. deterministic normalization
-2. lightweight model-based interpretation
-3. confidence-gated routing
-4. clarification-first disambiguation
-5. bounded retries
-6. graceful fallback to stronger models or a human agent
-
 The key idea is simple:
 
 > It is better to spend one extra turn resolving ambiguity than to produce a fast but wrong answer.
+
+This is a harnessed design rather than a single-model black box: the model is one component inside a governed pipeline, and every non-model behavior — normalization, confidence evaluation, routing, escalation, handoff — is deterministic application logic.
+
+This document describes the focused upstream component. For the broader company-wide architecture that extends this layer into capability routing, governed execution, domain-scoped subsystems, and human escalation, see `CH02_Request-Orchestration-Layer.md`.
+
+## Mental Model
+
+The whole chapter reduces to three constructs:
+
+```text
+1. PIPELINE   four straight-through stages that condition the request
+2. CONTRACT   one first-match routing table with five outcomes
+3. POLICIES   two cross-cutting controls (escalation budgets, traceability)
+              that bound every loop the pipeline can enter
+```
 
 ### Whole-Picture Diagram
 
 ```mermaid
 flowchart TD
-    A[Raw user input] --> B[Input preservation]
-    B --> C[Deterministic normalization]
-    C --> D[Flash-model interpretation]
-    D --> E[Confidence and ambiguity evaluation]
+    A[Raw user input] --> B[Stage 1<br>Input preservation]
+    B --> C[Stage 2<br>Deterministic normalization]
+    C --> D[Stage 3<br>Flash-model interpretation]
+    D --> E[Stage 4<br>Confidence and ambiguity evaluation]
 
-    E -->|High confidence| F[Proceed to downstream tool]
-    E -->|Ambiguous| G[Ask clarification]
-    E -->|Hard or high-risk| H[Route to stronger model]
-    E -->|Repeated unresolved ambiguity| I[Human handoff]
+    E --> F{Routing contract<br>first match wins}
+
+    F -->|proceed / proceed_conservative| L[Retrieval or execution]
+    F -->|clarify| G[Ask clarification]
+    F -->|stronger_model| H[Stronger interpretation]
+    F -->|handoff_human| I[Structured human packet]
+    F -->|reject| R[Refuse: policy or safety]
 
     G --> J[User clarification answer]
-    J --> C
+    J --> B
+
     H --> K[Higher-confidence interpretation]
     K --> E
 
-    F --> L[Retrieval or execution]
-
-    M[Bounded retries] -. controls .-> G
-    M -. controls .-> H
-    N[Traceability and audit] -. applies to all stages .-> B
+    P[Escalation budgets] -. bound .-> G
+    P -. bound .-> H
+    T[Traceability] -. spans all stages .-> B
 ```
 
-The logic is:
+Only the vertical path from raw input down to retrieval is sequential. Everything else — clarify loops, stronger-model retries, human handoff — is an outcome of the routing contract, bounded by the cross-cutting policies. This is why there are exactly four stages and no stage called "retry".
 
-1. clean and shape the request first
-2. evaluate whether the interpretation is safe enough
-3. only then proceed, clarify, escalate, or hand off
+## The Pipeline
 
-## Design Goals
-
-1. improve precision before retrieval starts
-2. reduce retrieval and rerank cost by shrinking the search space early
-3. avoid low-confidence guesses when user intent is ambiguous
-4. use cheap methods first and reserve expensive reasoning for harder cases
-5. make failures observable, controlled, and recoverable
-6. support clean handoff to a human agent when automation does not converge
-
-## Core Principles
-
-### 1. Deterministic First
-
-Use deterministic methods whenever possible because they are cheaper, more stable, and more auditable than model-only reasoning.
-
-Examples:
-
-- typo repair
-- short-name recovery
-- alias expansion
-- canonical entity mapping
-- metadata-based lookup
-- exact or fuzzy matching
-
-### 2. Lightweight Model Use
-
-Use a flash model for low-cost interpretation tasks that benefit from language understanding but do not justify a larger model by default.
-
-Examples:
-
-- query rewrite
-- intent shaping
-- extracting likely target entities
-- identifying requested fields or attributes
-- generating structured confidence-aware interpretations
-
-### 3. Confidence-Gated Routing
-
-Model output is not trusted blindly.
-
-The system uses confidence and other signals to decide what path to take next.
-
-Typical routing outcomes:
-
-- high confidence, simple task: proceed directly
-- medium confidence: proceed conservatively or broaden retrieval
-- ambiguity detected: ask clarification question
-- hard or high-risk case: route to stronger model
-- repeated unresolved ambiguity: hand off to human agent
-
-### 4. Clarification Before Deep Retrieval
-
-If the target entity or requested detail is not clear, the system should ask a focused clarification question before spending larger retrieval or reasoning budget.
-
-This avoids strong reasoning on top of a weak interpretation.
-
-### 5. Bounded Retries
-
-The system should not loop indefinitely.
-
-After a small number of clarification or retry attempts, it should escalate gracefully.
-
-### 6. Graceful Human Fallback
-
-If the system cannot resolve ambiguity after bounded attempts, it should transfer the case to a human agent with a structured handoff packet.
-
-## High-Level Flow
-
-```text
-User query
--> Deterministic normalization
--> Flash-model interpretation
--> Confidence and ambiguity evaluation
--> Route decision
-   -> Proceed
-   -> Clarify
-   -> Stronger model
-   -> Human handoff
--> Retrieval and downstream reasoning
-```
-
-## Stage-by-Stage Design
+Four stages run in order. Each transforms the request and emits artifacts for audit and downstream use.
 
 ### Stage 1: Input Preservation
 
-Always preserve the original user message.
+Always preserve the original user message unchanged.
 
 Why:
 
 - original wording may contain subtle intent clues
-- later corrections should remain traceable
+- later corrections should remain traceable against what was actually asked
 - human handoff must include untouched user input
 
 Artifacts:
@@ -173,7 +92,7 @@ Artifacts:
 
 ### Stage 2: Deterministic Normalization
 
-This stage performs cheap and reliable cleanup before model reasoning.
+Cheap and reliable cleanup before any model reasoning. Deterministic methods come first because they are cheaper, more stable, and fully auditable — whenever they strongly resolve the intent, later stages can stay cheap.
 
 Functions:
 
@@ -191,15 +110,14 @@ Outputs:
 - deterministic match candidates
 - deterministic match scores or rule hits
 
-Notes:
+Control notes:
 
-- automatic transforms should be limited to low-risk changes
-- all applied transformations should be traceable
-- if deterministic methods strongly resolve the intent, later stages can stay cheap
+- automatic transforms are limited to low-risk changes
+- all applied transformations must be traceable
 
 ### Stage 3: Flash-Model Interpretation
 
-This stage uses a lightweight model to refine understanding after deterministic cleanup.
+A lightweight model refines understanding after deterministic cleanup, handling the parts that need language understanding but do not justify a larger model by default.
 
 Functions:
 
@@ -207,7 +125,6 @@ Functions:
 - infer likely user target from context
 - identify what detail type the user wants
 - extract task structure for later retrieval
-- output confidence and structured reasoning artifacts
 
 Recommended structured output:
 
@@ -223,13 +140,13 @@ alternative_interpretations
 
 Important constraint:
 
-- the model should shape the query, not silently replace the user's intent with a speculative one
+- the model shapes the query; it never silently replaces the user's intent with a speculative one
 
 ### Stage 4: Confidence and Ambiguity Evaluation
 
-This stage decides whether the current interpretation is safe enough to use.
+This stage decides whether the current interpretation is safe enough to act on.
 
-Possible signals:
+Signals consumed:
 
 - flash model confidence
 - deterministic match strength
@@ -239,104 +156,27 @@ Possible signals:
 - missing required constraints
 - prior clarification failures
 
-Typical conditions:
+Two design rules worth stating explicitly:
 
-- clear single match: proceed
-- several close matches: clarify
-- low confidence on high-impact request: escalate to stronger model
-- repeated unresolved ambiguity: human handoff
+- **model self-confidence alone is not sufficient** — it is always combined with external signals such as deterministic matches and candidate gaps
+- signals are evaluated as a pattern, not averaged into one scalar (the structured confidence assessment lives in `CH02_03_Confidence-Safety-and-Validation.md`)
 
-Important note:
+The emitted signal pattern is the input to the routing contract below.
 
-- model self-confidence alone is not sufficient; confidence should be combined with external signals
+## The Routing Contract
 
-### Stage 5: Routing Logic
+Routing is one first-match-wins decision table. Every row condition must hold; the first matching row returns the action. This table is the intention-layer routing contract.
 
-The routing layer chooses the next action.
-
-### Route A: Cheap Direct Path
-
-Use when:
-
-- task is simple
-- deterministic or flash interpretation is high confidence
-- ambiguity is low
-
-Action:
-
-- proceed with normalized query into retrieval or execution
-
-### Route B: Clarification Path
-
-Use when:
-
-- there are multiple plausible targets
-- the user request is under-specified
-- requested details are unclear
-
-Action:
-
-- ask a short, targeted clarification question
-
-Good clarification examples:
-
-- "Did you mean promotion A, B, or C?"
-- "Are you asking for eligibility, time period, or reward details?"
-- "I found multiple likely matches. Which one should I use?"
-
-Clarification rules:
-
-- ask only when ambiguity materially affects the result
-- use specific candidate options when possible
-- keep friction low
-- avoid vague prompts like "please clarify" without guidance
-
-### Route C: Stronger Model Path
-
-Use when:
-
-- the question is complex
-- the request is high-value or high-risk
-- flash-model output is not stable enough
-- multi-step decomposition is needed
-
-Action:
-
-- send the conditioned query and context to a stronger model
-
-### Route D: Human Handoff Path
-
-Use when:
-
-- deterministic and model methods do not converge
-- bounded retries are exhausted
-- ambiguity remains material
-- business or safety constraints require human judgment
-
-Action:
-
-- escalate with structured context
-
-### Compact Routing Decision Table
-
-The four routes above reduce to one compact decision table for implementation.
-
-The table consumes the current signal pattern and returns one action.
-
-It should be read as:
-
-- the first matching row wins
-- rule-driven facts can override confidence
-- the outcome may be `reject` or `handoff` even when confidence looks usable
+### Decision Table
 
 | # | Condition (all must hold) | Action |
 | --- | --- | --- |
 | 1 | permission denied, policy violation, injection pattern, or off-scope request | `reject` |
-| 2 | any retry, clarification, reinterpretation, or escalation budget is exhausted | `handoff_human` |
+| 2 | any escalation budget exhausted | `handoff_human` |
 | 3 | missing required constraint that only the user can supply | `clarify` |
 | 4 | user-resolvable ambiguity present (multiple close candidates, low policy risk) | `clarify` |
 | 5 | high-risk or write action and confidence is not strong | `stronger_model` |
-| 6 | low confidence and a stronger-model budget is still available | `stronger_model` |
+| 6 | low confidence and stronger-model budget still available | `stronger_model` |
 | 7 | strong evidence, low ambiguity, acceptable confidence | `proceed` |
 | 8 | acceptable confidence but not strong, low-risk read-only path | `proceed_conservative` |
 | 9 | anything else not covered above | `handoff_human` |
@@ -349,19 +189,78 @@ Row order is deliberate:
 - rows 7 and 8 are the normal cheap-success paths
 - row 9 is the safe default that prevents silent or unhandled cases
 
-Notes:
+Note: row 1 (`reject`) is normally decided by the upstream safety gate in [`CH02_03_Confidence-Safety-and-Validation.md`]({{< relref "./CH02_03_Confidence-Safety-and-Validation.md" >}}) before interpretation even starts; it is listed here so this contract stays complete. The execution-stage and validation decision tables also live in `CH02_03`.
 
-- row 1 (`reject`) is normally decided by the upstream safety gate in [`CH02_03_Confidence-Safety-and-Validation.md`]({{< relref "./CH02_03_Confidence-Safety-and-Validation.md" >}}) before interpretation; it is listed here only so the routing contract stays complete.
-- this table is the intention-layer routing contract
-- the execution-stage decision table and the validation decision table live in `CH02_03`
+The four subsections below describe what each non-terminal outcome does in practice.
+
+### Outcome: proceed / proceed_conservative
+
+Use when the task is simple and the signal pattern is strong (row 7) or acceptable on a low-risk read-only path (row 8).
+
+Action:
+
+- pass the normalized query to retrieval or execution
+- conservative mode broadens retrieval slightly instead of trusting the interpretation fully
+
+### Outcome: clarify
+
+Clarification is a first-class design choice, not a failure.
+
+Why it pays:
+
+- one extra turn is often cheaper than broad retrieval plus rerank over the wrong entity space
+- it prevents confident garbage output
+- it increases user trust
+
+A good clarification question answers a concrete missing decision point — which entity is intended, which attribute is requested, which time period or business scope applies.
+
+Rules:
+
+- ask only when ambiguity materially affects the result
+- offer specific candidate options when possible:
+  - "Did you mean promotion A, B, or C?"
+  - "Are you asking for eligibility, time period, or reward details?"
+- keep friction low; avoid vague prompts like "please clarify" without guidance
+
+Each clarification consumes budget from the escalation-budget policy below.
+
+### Outcome: stronger_model
+
+Use when flash-level interpretation genuinely cannot carry the case:
+
+- the question is complex or needs multi-step decomposition
+- the request is high-value or high-risk while confidence is not strong
+- flash-model output remains unstable across candidates
+
+Action:
+
+- send the conditioned query and accumulated context to a stronger model
+- the stronger interpretation re-enters Stage 4 evaluation; it does not bypass the contract
+
+Each stronger-model attempt consumes its own escalation budget.
+
+### Outcome: handoff_human
+
+Use when automation does not converge: budgets exhausted, ambiguity remains material after clarification attempts, or business or safety constraints require human judgment regardless of confidence.
+
+Handoffs are product features, not debug leftovers. The packet handed to a human should be scan-friendly rather than a dump of raw free-form reasoning:
+
+| Packet section | Contents |
+| --- | --- |
+| conversation context | full message history, original user query |
+| system summary | concise current state |
+| candidate interpretations | top likely meanings and why each is plausible |
+| evidence and signals | deterministic matches, scores, normalized query, model interpretation, confidence, ambiguity flags |
+| attempt history | what was tried, clarifications already asked, what stayed unresolved |
+| suggested next step | best next question for the human, or best likely resolution path |
 
 ### Worked Routing Cases
 
-The following cases show how the routing table applies in practice.
+The following cases show how the contract applies in practice.
 
-Signal values in these cases are illustrative examples, not calibrated production thresholds.
+Signal values are illustrative examples, not calibrated production thresholds.
 
-#### Case 1: Ambiguous Entity, Low Risk
+#### Case 1: Ambiguous Entity, Low Risk → `clarify`
 
 Signals:
 
@@ -375,11 +274,11 @@ Decision trace:
 
 - row 1: not a policy or injection violation, skip
 - row 2: budgets not exhausted, skip
-- row 3: the missing piece is which entity, and the user can supply it, so row 3 applies
+- row 3: the missing piece is which entity, and the user can supply it — row 3 applies
 
 Result: `clarify`.
 
-#### Case 2: Off-Scope Request
+#### Case 2: Off-Scope Request → `reject`
 
 Signals:
 
@@ -392,7 +291,7 @@ Decision trace:
 
 Result: `reject`.
 
-#### Case 3: Clear Exact Lookup, High Confidence
+#### Case 3: Clear Exact Lookup, High Confidence → `proceed`
 
 Signals:
 
@@ -405,11 +304,11 @@ Signals:
 Decision trace:
 
 - rows 1 through 6 do not match
-- row 7 matches
+- row 7 applies
 
 Result: `proceed`.
 
-#### Case 4: Repeated Ambiguity After Budgets
+#### Case 4: Budgets Exhausted After Repeated Ambiguity → `handoff_human`
 
 Signals:
 
@@ -420,142 +319,69 @@ Signals:
 Decision trace:
 
 - row 1: no policy violation, skip
-- row 2 matches because a budget is exhausted
+- row 2 applies because an escalation budget is exhausted
 
 Result: `handoff_human`.
 
-These worked cases should be turned into reusable golden cases in the testing note rather than staying only as prose.
+These worked cases should be turned into reusable golden cases in the testing note (`CH04`) rather than staying only as prose.
 
-### Stage 6: Clarification Strategy
+## Cross-Cutting Policies
 
-Clarification is a first-class design choice, not a failure.
+Two controls apply everywhere the pipeline can loop. They are not stages — nothing flows sequentially through them.
 
-Why it matters:
+### Escalation Budgets
 
-- one extra turn is often cheaper than broad retrieval plus rerank over the wrong entity space
-- it prevents confident garbage output
-- it increases user trust
+Every loop-back route — clarification turns, reinterpretations, stronger-model retries — spends a finite budget. Example policy:
 
-Clarification should answer a concrete missing decision point, such as:
-
-- which entity is intended
-- which attribute is requested
-- which time period or business scope applies
-
-### Stage 7: Bounded Retry Policy
-
-Retries should be limited.
-
-Example policy:
-
-1. initial deterministic + flash pass
+1. initial deterministic + flash pass (free)
 2. first clarification turn
 3. second clarification or stronger-model retry
 4. escalate to human agent
 
 Rationale:
 
-- repeated retries can increase latency without improving truth
-- bounded escalation makes the system predictable
+- repeated retries increase latency without improving truth
+- bounded escalation makes system behavior predictable and cost-bounded
+- budget state must be visible to the routing contract at all times (that is how row 2 fires)
 
-### Stage 8: Human Handoff Design
+Whenever this chapter says "budgets" elsewhere — decision-table rows, worked cases — it means these counters.
 
-When the system escalates, the handoff should be structured and compact.
+### Traceability And Auditability
 
-It should not dump raw free-form "AI thinking". It should provide a scan-friendly case packet.
+Every transformation and decision records enough to replay the request end to end:
 
-Recommended handoff packet:
+- original query preserved next to rewritten forms
+- all applied transformations traceable
+- each routing decision stored with the signal pattern that produced it
+- handoff packets retained with full attempt history
 
-### Conversation Context
+The concrete artifacts live in `CH02_01_Runtime-Objects.md`; this chapter only requires that nothing inside the layer be unrecorded.
 
-- full message history
-- original user query
+## Downstream Effects
 
-### System Summary
-
-- concise state summary
-
-### Candidate Interpretations
-
-- top likely meanings
-- why each is plausible
-
-### Evidence and Signals
-
-- deterministic match results
-- candidate scores
-- normalized query
-- model interpretation
-- confidence level
-- ambiguity flags
-
-### Attempt History
-
-- what the system tried
-- clarifications already asked
-- what remained unresolved
-
-### Suggested Next Step
-
-- best next question for the human to ask
-- or best likely resolution path
-
-## Relationship to Retrieval and RAG
-
-This layer should run before expensive retrieval and rerank steps.
-
-Its value is that it improves retrieval quality by making the query more precise.
-
-Effects on downstream RAG:
+This layer runs before expensive retrieval and rerank steps. Its value is entirely upstream leverage:
 
 1. smaller search space
 2. better top-k relevance
 3. lower rerank cost
 4. less reasoning drift
-5. better decomposition for complex tasks
+5. better decomposition for multi-step tasks
 
-For multi-step or agentic RAG, this layer is especially important because retrieval may happen several times in one run.
+If early interpretation is weak, every downstream step becomes more expensive and less reliable — which is why the clarify-first stance exists.
 
-If the early interpretation is weak, every downstream step becomes more expensive and less reliable.
-
-## Relationship to Summary-First Retrieval
-
-This layer works well with summary-based retrieval.
-
-Pattern:
+It pairs naturally with summary-based retrieval:
 
 ```text
 User query
--> Intention recognition and query conditioning
--> Retrieve or rerank over summaries/metadata
--> Select top raw chunks
--> Use raw chunks for final grounding
+-> intention recognition and query conditioning
+-> retrieve or rerank over summaries/metadata
+-> select top raw chunks
+-> use raw chunks for final grounding
 ```
 
-This pairing is useful because:
+Intent recognition narrows what to search, summaries reduce repeated token cost during candidate selection, and raw chunks remain available for exact grounding later.
 
-- intention recognition narrows what to search
-- summaries reduce repeated token cost during candidate selection
-- raw chunks are still available for exact grounding later
-
-## Why This Is a Harness
-
-This design is a harness because the system does not rely on one model call to do everything.
-
-Instead, it surrounds model reasoning with:
-
-- deterministic preprocessing
-- structured outputs
-- confidence gating
-- routing logic
-- clarification policy
-- bounded retries
-- explicit escalation
-- human handoff support
-
-In other words, the model is a component inside a governed system.
-
-## Example Scenario
+## Scenario Walkthrough
 
 User asks:
 
@@ -563,52 +389,37 @@ User asks:
 Tell me about spring saver
 ```
 
-System behavior:
+System behavior through the three constructs:
 
-1. deterministic layer finds several close aliases
-2. flash model infers that this is likely a promotion lookup request
-3. confidence is medium because multiple matches remain
-4. system asks:
-   "I found multiple likely matches for 'spring saver': Spring Saver 2025, Spring Saver Plus, and Student Spring Saver. Which one did you mean?"
-5. user selects one option
-6. retrieval proceeds on the narrowed entity space
-7. if the user never clarifies after bounded attempts, escalate to human agent with summary, candidates, and prior attempts
+1. Pipeline — deterministic normalization finds several close aliases ("spring saver" could map to multiple products); flash-model interpretation infers a promotion lookup and outputs medium confidence with `multiple_candidate_entities`
+2. Contract — the signal pattern hits row 4: user-resolvable ambiguity, low risk → `clarify`; the system asks: "I found multiple likely matches for 'spring saver': Spring Saver 2025, Spring Saver Plus, and Student Spring Saver. Which one did you mean?"
+3. Loop — the clarified answer re-enters Stage 1; the narrowed entity space now routes to `proceed`, and retrieval runs cheaply
+4. Policy boundary — if the user never clarifies within two turns, the escalation budget empties and row 2 hands off with a structured packet: summary, candidate interpretations, attempt history
 
-## Implementation Guidance
+## Implementation Checklist
 
 1. keep all transformations auditable
 2. preserve original query alongside rewritten forms
 3. prefer deterministic transformations for low-risk cleanup
 4. require evidence before high-cost retrieval branches
 5. ask clarification only when ambiguity is material
-6. limit retries and make escalation explicit
-7. treat handoff artifacts as product features, not debug leftovers
+6. keep escalation budgets explicit, visible to routing, and never unlimited
+7. treat handoff packets as product features, not debug leftovers
 
-## Suggested Internal Naming
+In one sentence, this layer is a confidence-gated retrieval harness with clarification-first disambiguation and bounded human escalation.
 
-This layer can be described as:
-
-- query conditioning layer
-- intention recognition layer
-- confidence-gated retrieval harness
-- clarification-first query routing layer
-
-The most complete description is:
-
-> A confidence-gated retrieval harness with clarification-first disambiguation and bounded human escalation.
-
-## Relationship to the Broader Architecture
+## Relationship To The Broader Architecture
 
 In the broader platform design, this layer becomes the front half of the request orchestration layer.
 
-Its main responsibilities remain:
+What stays here:
 
 1. request preservation and conditioning
 2. intent and ambiguity framing
 3. clarification-first disambiguation
 4. confidence-aware routing preparation
 
-The downstream responsibilities move into the broader orchestration layer:
+What moves downstream into orchestration (`CH02_Request-Orchestration-Layer.md`):
 
 1. domain routing
 2. capability selection
