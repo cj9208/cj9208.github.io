@@ -1,7 +1,7 @@
 ---
 title: "State Machine and Control Loop"
 date: 2026-07-20T09:43:56+08:00
-lastmod: 2026-08-27T21:46:07+08:00
+lastmod: 2026-08-28T09:33:00+08:00
 draft: true
 
 description: "How requests move through the orchestration runtime, including states, retries, caps, fallback, and events."
@@ -107,7 +107,19 @@ Minimal transition rules:
 - every transition should record timestamp and trigger
 - clarification and human handoff are terminal for the current turn, but not necessarily for the broader session
 
-The lifecycle model buys predictability: one shared answer to "where is this request now?" instead of spaghetti retry logic spread across handlers, components disagreeing about whether a request is running or done, and ambiguous ownership of next-step decisions. The state machine describes allowed movement; the runtime objects (`CH02_01`) describe what data each state works with.
+Why this exists:
+
+- one shared answer to "where is this request now?" instead of spaghetti retry logic spread across handlers
+
+What it prevents:
+
+- components disagreeing about whether a request is running or done
+- ambiguous ownership of next-step decisions
+
+Boundary with nearby components:
+
+- the state machine describes allowed movement
+- the runtime objects (`CH02_01`) describe what data each state works with
 
 ## Control Loop Principle
 
@@ -138,6 +150,8 @@ Boundary with nearby components:
 - routing decides what happens next
 
 ## Loop Budget And Fallback Policy
+
+This section is the concrete home of the escalation-budget boundary declared in `CH02_Request-Orchestration-Layer.md`: the caps below are the policy behind that boundary.
 
 If the runtime uses an LLM to think about the next step, it still needs a harness-owned limit on how many times each branch may repeat.
 
@@ -266,6 +280,21 @@ Routing then decides whether to:
 - reject
 - fail the request
 
+Why this exists:
+
+- structured results keep retry, escalation, and rejection decisions in one place — the routing loop
+
+What it prevents:
+
+- tools or validators deciding their own retries or escalations
+- control logic being duplicated in multiple places
+- unclear ownership when the system loops or fails
+
+Boundary with nearby components:
+
+- execution and validation report status
+- routing decides what happens next
+
 ### First-Version Default Caps
 
 The canonical values carried by the envelope schema in `CH02_01` are:
@@ -298,4 +327,15 @@ Useful first-version events:
 - `request_rejected`
 - `request_failed`
 
-This makes monitoring and replay easier without requiring a fully event-sourced system. The event list is intentionally small: object snapshots remain the source of truth, and events exist so routing, retry, and escalation behavior can be reconstructed during incident review without raw-log archaeology.
+Why this exists:
+
+- routing, retry, and escalation behavior can be reconstructed during incident review without raw-log archaeology
+
+What it prevents:
+
+- requiring a fully event-sourced system just to gain replayability
+
+Boundary with nearby components:
+
+- object snapshots remain the source of truth
+- events are a small, derived projection for monitoring and replay

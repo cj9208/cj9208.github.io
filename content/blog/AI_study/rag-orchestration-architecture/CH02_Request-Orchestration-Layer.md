@@ -1,7 +1,7 @@
 ---
 title: "Request Orchestration Layer"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-08-28T08:58:00+08:00
+lastmod: 2026-08-28T09:45:00+08:00
 draft: true
 
 description: "The request orchestration layer is the shared control layer for a company-wide agent system."
@@ -99,19 +99,6 @@ Design principle:
 
 > Centralize orchestration patterns; decentralize domain knowledge and capability bundles.
 
-## Why Domains
-
-Even if many agent entry points look like "just QA" at the surface, the system should still split by business functionality or domain — HR, customer support, sales, finance, legal, internal engineering.
-
-Benefits:
-
-1. smaller search space
-2. simpler prompts and tool bundles
-3. clearer ownership by domain teams
-4. less cross-domain ambiguity
-5. easier governance and permission control
-6. safer and cheaper retrieval and execution
-
 ## The Flow
 
 Twelve steps describe a request end to end. Steps 1–4 (input capture, deterministic conditioning, intent framing, ambiguity evaluation) and the clarification gate are inherited from `CH01_Intention-Recognition-Layer.md` unchanged; they appear in the table below only so the sequence stays readable in one place.
@@ -133,9 +120,11 @@ Then  SCHEMA SURFACE smallest tool bundle for the resolved
                      (domain, capability) pair
 ```
 
-Why two levels instead of one: the levels use different signals (business scope and terminology versus task type and economics), fail differently (domain ambiguity asks the user which area; capability mismatch switches or falls back), and are asymmetric in cost — a wrong domain invalidates every downstream capability choice, while a wrong capability can still be corrected by switch or fallback. Each level can therefore fail separately, which is why the clarification gate sits between them in the table: each resolution has its own budget and its own clarification question.
+Domain is not an independent design axis; it exists because tool selection needs a cheaper first cut. Splitting by business functionality — HR, customer support, sales, finance, legal — shrinks the search space, simplifies the prompts and tool bundles that could apply, and reduces cross-domain ambiguity before any capability choice is made. Ownership, permission scoping, and domain-scoped capability products follow from that split and are defined in the Capability Registry section below.
 
-The funnel is also what keeps the schema surface small: resolving domain shrinks the world, resolving capability shrinks the toolkit, and only then does the runtime load schemas.
+Why two levels instead of one: the two resolutions are asymmetric in cost, and that asymmetry is the reason they stay separate. A wrong domain invalidates every downstream capability choice, while a wrong capability can still be corrected by switch or fallback. Because each level can fail on its own, the clarification gate sits between them in the table — each resolution has its own budget and its own clarification question.
+
+The funnel is also what keeps the schema surface small: only after both resolutions does step 8 load schemas.
 
 | Step | Main purpose | Key decisions or rules | Owned by |
 | --- | --- | --- | --- |
@@ -161,17 +150,7 @@ Capabilities are governed products, not ad hoc tool collections.
 
 Some are global — clarification generation, human handoff building, generic reasoning utilities. Some are domain-scoped — HR policy lookup, customer case retrieval, finance workflow actions, legal document retrieval.
 
-Every capability declares nine things:
-
-1. purpose
-2. usage boundary (use_when / avoid_when)
-3. input contract
-4. tool schema bundle
-5. output contract
-6. confidence and validation signals
-7. fallback paths
-8. owner
-9. domain scope
+Every capability declares nine contract elements — purpose, usage boundary (`use_when` / `avoid_when`), input contract, tool schema bundle, output contract, confidence and validation signals, fallback paths, owner, and domain scope. The concrete catalog-entry schema is defined in `CH02_01_Runtime-Objects.md`.
 
 ### Capability Families
 
@@ -251,9 +230,9 @@ Please confirm with the related human agent.
 
 ### Escalation Budgets
 
-Everything that loops spends a finite budget from the same policy family introduced in `CH01`: clarification turns, reinterpretations, stronger-model retries, alternate-capability attempts, tool-call counts, retrieval breadth, and end-to-end wall-clock time.
+Everything that loops spends a finite budget from the same policy family introduced in `CH01`. The full budget model — which branches are capped, how attempt counters are tracked, and what fallback remains legal after a cap — is defined in `CH02_02_State-Machine-and-Control-Loop.md`.
 
-Budget state is visible to routing at all times; an exhausted budget forces `handoff_human` instead of another guess. This is what makes the layered fallback path predictable instead of emergent.
+The boundary itself: budget state is visible to routing at all times; an exhausted budget forces `handoff_human` instead of another guess. This is what makes the layered fallback path predictable instead of emergent.
 
 ### Latency UX
 
@@ -281,13 +260,7 @@ For example: internal tools may accept queue-based throughput over immediacy; cu
 
 ### Human Handoff Contract
 
-When escalation fires, the handoff carries the packet shape defined in `CH01` (conversation context, system summary, candidates, evidence, attempt history, suggested next step), extended with orchestration state:
-
-1. original user request and relevant history
-2. normalized query and framed interpretation
-3. attempted capabilities and outcomes
-4. current budget states
-5. recommended next action
+When escalation fires, the handoff carries the packet shape defined in `CH01` (conversation context, system summary, candidates, evidence, attempt history, suggested next step), extended with orchestration state — original request, framed interpretation, attempted capabilities and outcomes, budget states, and recommended next action. The concrete packet schema, including required fields, is defined in `CH02_01_Runtime-Objects.md`'s human handoff packet object.
 
 Resolved human cases are recorded and fed back: recurring corrections become alias updates, routing-rule adjustments, prompt fixes, and escalation-policy tuning.
 

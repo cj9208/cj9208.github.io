@@ -1,7 +1,7 @@
 ---
 title: "Runtime Objects"
 date: 2026-07-20T09:43:56+08:00
-lastmod: 2026-08-27T22:57:06+08:00
+lastmod: 2026-08-28T09:33:00+08:00
 draft: true
 
 description: "The core runtime objects used by the request orchestration layer."
@@ -49,23 +49,12 @@ and one config-time artifact that the runtime reads during capability selection 
 
 ## Contract Principles
 
-### 1. Preserve Original Input
-
-The untouched user request must remain available throughout the lifecycle.
-
-### 2. Separate Interpretation From Decision
-
-What the model inferred is not the same thing as what the harness decided.
-
-Interpretation artifacts and routing decisions should be stored as separate objects.
-
-### 3. Record Why, Not Only What
-
-The contract should preserve enough reasoning signals to explain later why a route, fallback, or escalation happened.
-
-### 4. Keep The First Version Small
-
-This is a minimum serious contract, not a final enterprise schema catalog.
+| # | Principle | Meaning |
+|---|---|---|
+| 1 | Preserve Original Input | The untouched user request must remain available throughout the lifecycle. |
+| 2 | Separate Interpretation From Decision | What the model inferred is not the same thing as what the harness decided. Interpretation artifacts and routing decisions are stored as separate objects. |
+| 3 | Record Why, Not Only What | The contract should preserve enough reasoning signals to explain later why a route, fallback, or escalation happened. |
+| 4 | Keep The First Version Small | This is a minimum serious contract, not a final enterprise schema catalog. |
 
 ## Why These Objects Exist
 
@@ -550,6 +539,12 @@ attempt_history:
     - route_01JXYZ...
   execution_ids: []
 
+budget_state:
+  total_loops_used: 2
+  clarification_turns_used: 2
+  model_escalations_used: 0
+  execution_retries_used: 0
+
 recommended_next_step:
   type: human_question
   payload: "Confirm the exact promotion name or campaign code before answering."
@@ -562,7 +557,18 @@ Required fields:
 - `reason`
 - `conversation_context`
 - `current_interpretation`
+- `budget_state`
 - `recommended_next_step`
+
+The orchestration-level handoff contract in `CH02_Request-Orchestration-Layer.md` maps onto these fields:
+
+| Contract item (orchestration state) | Packet field |
+| --- | --- |
+| original user request and relevant history | `conversation_context.original_input` |
+| normalized query and framed interpretation | `current_interpretation` |
+| attempted capabilities and outcomes | `attempt_history` |
+| current budget states | `budget_state` |
+| recommended next action | `recommended_next_step` |
 
 Why this exists:
 
@@ -650,6 +656,20 @@ notes:
 ```
 
 Required fields: `name`, `owner`, `domain_scope`, `capability_version`, `rollout_status`, `use_when`, `avoid_when`, `tool_schema_bundle`, `output_contract`, `fallbacks`.
+
+The nine conceptual contract elements in `CH02_Request-Orchestration-Layer.md` map onto the concrete schema like this:
+
+| Conceptual element | Concrete field |
+| --- | --- |
+| purpose | `purpose` |
+| usage boundary (`use_when` / `avoid_when`) | `use_when`, `avoid_when` |
+| input contract | `required_inputs`, `optional_inputs`, `preconditions` |
+| tool schema bundle | `tool_schema_bundle` |
+| output contract | `output_contract` |
+| confidence and validation signals | `confidence_signals`, `validation_rules` |
+| fallback paths | `fallbacks`, `human_escalation_required_when` |
+| owner | `owner` |
+| domain scope | `domain_scope` |
 
 Notes:
 

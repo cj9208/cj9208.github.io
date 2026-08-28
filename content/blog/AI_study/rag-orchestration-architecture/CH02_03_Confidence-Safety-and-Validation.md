@@ -1,7 +1,7 @@
 ---
 title: "Confidence, Safety, and Validation"
 date: 2026-07-20T09:43:56+08:00
-lastmod: 2026-08-27T21:46:07+08:00
+lastmod: 2026-08-28T09:33:00+08:00
 draft: true
 
 description: "How the orchestration runtime stays safe and decides whether to proceed, clarify, retry, reject, or escalate."
@@ -127,15 +127,21 @@ injection_screening_result:
 
 ### Why This Belongs Before Interpretation
 
-If the runtime waits until after full interpretation, it may already have:
+Why this exists:
 
-- accepted the wrong task framing
-- exposed unnecessary capability surface
-- wasted tokens and latency on a request that should have been constrained early
+- early screening is cheaper and safer than fully reasoning over hostile requests first
+- the later layers also perform additional checks, but the gate avoids spending orchestration effort on requests that should be constrained immediately
 
-So the safety gate should sit before normal task interpretation, even if the later layers also perform additional checks. Early screening is cheaper and safer than fully reasoning over hostile requests first: it avoids wasted tokens and latency on requests that should be constrained immediately, avoids exposing capability surface too early, and avoids accepting a wrong task framing before scope has been checked.
+What it prevents:
 
-Boundary with nearby components: the safety gate decides whether the request should enter normal interpretation at all; the confidence policy decides what to do with a valid in-scope request once interpretation begins.
+- accepting the wrong task framing before scope has been checked
+- exposing unnecessary capability surface too early
+- wasted tokens and latency on requests that should have been constrained immediately
+
+Boundary with nearby components:
+
+- the safety gate decides whether the request should enter normal interpretation at all
+- the confidence policy decides what to do with a valid in-scope request once interpretation begins
 
 ## Confidence Policy
 
@@ -444,7 +450,20 @@ This worked case should be turned into a reusable golden case in the testing not
 
 Before marking a request `completed`, the harness must verify that success is real: the outcome matches the selected route, required policy checks passed, grounding exists where the capability requires it, required fields for the task type are present, and escalation budgets were respected.
 
-Successful execution is not the same thing as an acceptable answer; the checks above catch plausible-but-weak outputs, backend success mistaken for user-facing correctness, and requests ended before grounding or completeness were actually verified.
+Why this exists:
+
+- successful execution is not the same thing as an acceptable answer
+
+What it prevents:
+
+- plausible-but-weak outputs being returned as validated
+- backend success being mistaken for user-facing correctness
+- requests ending before grounding or completeness were actually verified
+
+Boundary with nearby components:
+
+- execution produces a result candidate
+- validation decides whether that candidate is good enough to accept
 
 ## Compact Validation Decision Table
 
@@ -483,7 +502,16 @@ The output of this table is one of:
 
 The `partial_answer` option exists so that low-risk read-only cases can return useful information with an explicit missing-part label instead of forcing a full handoff.
 
-Validation and confidence are separate concerns:
+Why this exists:
+
+- acceptance is decided by one explicit contract, never ad hoc
+
+What it prevents:
+
+- validation outcomes drifting per engineer or per incident
+- plausible-but-weak outputs being accepted because they "look done"
+
+Boundary with nearby components:
 
 - confidence decides which path to take next
 - validation decides whether the result already produced is good enough to return
