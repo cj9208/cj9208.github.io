@@ -1,7 +1,7 @@
 ---
 title: "Enrichment Chunking Indexing Layer"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-08-27T11:21:30+08:00
+lastmod: 2026-08-27T16:55:00+08:00
 draft: true
 
 description: "The enrichment, chunking, and indexing layer is the downstream preparation layer that turns validated canonical documents into retrievable knowledge units."
@@ -112,16 +112,6 @@ It determines whether the system can perform exact match, semantic match, filter
 Retrieval should not see half-built or partially inconsistent index states.
 
 Use versioned publish boundaries.
-
-## High-Level Architecture
-
-```text
-Validated canonical document
--> Enrich
--> Chunk
--> Index
--> Publish to retrieval
-```
 
 ## Module Boundaries
 

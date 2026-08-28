@@ -1,7 +1,7 @@
 ---
 title: "Request Orchestration Layer"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-08-27T21:14:40+08:00
+lastmod: 2026-08-28T08:58:00+08:00
 draft: true
 
 description: "The request orchestration layer is the shared control layer for a company-wide agent system."
@@ -30,8 +30,9 @@ Three constructs explain everything in this chapter:
 ```text
 1. FLOW       the request lifecycle:
               inherited CH01 front half
-              -> domain routing -> capability selection -> schema loading
-              -> governed execution -> validation -> fallback / handoff
+              -> two-level tool resolution (domain, then capability)
+              -> schema loading -> governed execution
+              -> validation -> fallback / handoff
 2. REGISTRY   capabilities as governed products with owners, contracts,
               tool bundles, and lifecycle metadata - looked up, never hardcoded
 3. BOUNDARIES three hard controls around the flow:
@@ -115,15 +116,36 @@ Benefits:
 
 Twelve steps describe a request end to end. Steps 1–4 (input capture, deterministic conditioning, intent framing, ambiguity evaluation) and the clarification gate are inherited from `CH01_Intention-Recognition-Layer.md` unchanged; they appear in the table below only so the sequence stays readable in one place.
 
+### Tool Resolution: Domain, Then Capability
+
+Steps 5 and 7 are one decision made at two levels of granularity — finding the right tool means first finding the right neighborhood, then the right instrument inside it:
+
+```text
+Level 1  DOMAIN      which bounded context owns the answer
+                     signals: candidate domains, scope policy, permissions
+                     failure mode: domain ambiguity -> routing clarification
+
+Level 2  CAPABILITY  which execution family solves it inside that domain
+                     signals: task type, risk, latency/cost target, registry
+                     failure mode: capability mismatch -> switch / fallback
+
+Then  SCHEMA SURFACE smallest tool bundle for the resolved
+                     (domain, capability) pair
+```
+
+Why two levels instead of one: the levels use different signals (business scope and terminology versus task type and economics), fail differently (domain ambiguity asks the user which area; capability mismatch switches or falls back), and are asymmetric in cost — a wrong domain invalidates every downstream capability choice, while a wrong capability can still be corrected by switch or fallback. Each level can therefore fail separately, which is why the clarification gate sits between them in the table: each resolution has its own budget and its own clarification question.
+
+The funnel is also what keeps the schema surface small: resolving domain shrinks the world, resolving capability shrinks the toolkit, and only then does the runtime load schemas.
+
 | Step | Main purpose | Key decisions or rules | Owned by |
 | --- | --- | --- | --- |
 | 1. Input capture | preserve original wording and context | always preserve untouched user input for traceability and handoff | CH01 front half |
 | 2. Deterministic conditioning | cheap, auditable cleanup before model reasoning | transforms low-risk and traceable | CH01 front half |
 | 3. Intent and task framing | frame task type, candidate domains, target guess, requested fields | model shapes the request, never silently replaces user intent | CH01 front half |
 | 4. Ambiguity evaluation | decide whether it is safe to proceed | prefer strong deterministic signals; clarify on material conflict between rule and model outputs | CH01 front half |
-| 5. Domain routing | choose the domain-scoped subsystem | if domain confidence is low, ask a short routing clarification before loading domain tools | this chapter |
+| 5. Domain routing | tool resolution level 1: choose the domain-scoped subsystem | if domain confidence is low, ask a short routing clarification before loading domain tools | this chapter |
 | 6. Clarification gate | resolve material ambiguity before capability execution | short specific questions; bounded retries; clarification over confident garbage output | CH01 policy |
-| 7. Capability selection | choose the best execution family in the selected domain | candidate families: resolution, structured lookup, unstructured retrieval, reasoning, action, escalation | this chapter |
+| 7. Capability selection | tool resolution level 2: choose the best execution family in the selected domain | candidate families: resolution, structured lookup, unstructured retrieval, reasoning, action, escalation | this chapter |
 | 8. Adaptive schema loading | expose only the relevant tool surface | smallest relevant schema surface; early reasoning stages stay schema-light | this chapter |
 | 8A. Execution graph planning | let the model propose a tool graph while the harness keeps control | model may describe the graph; harness owns scheduling, permissions, dependency enforcement, partial-result policy | this chapter |
 | 9. Governed execution | execute only after identity, permission, and policy checks | the model suggests, the harness decides, the executor acts; read tools are governed exactly like write tools | this chapter |
@@ -131,22 +153,7 @@ Twelve steps describe a request end to end. Steps 1–4 (input capture, determin
 | 11. Fallback and escalation | recover gracefully when the chosen path fails or stays weak | every recovery path spends an escalation budget: clarification retry, stronger model, alternate capability, human handoff | both halves |
 | 12. Logging and handoff | produce durable traces and escalation artifacts | logs support audit, replay, monitoring, attribution, postmortems | this chapter |
 
-The layer-level responsibility summary follows from the table: preserve and frame requests (front half), route and select capabilities, load minimal schema surfaces, enforce governed execution, validate results, and produce logs and handoffs.
-
-Representative structured log fields:
-
-| Category | Representative fields |
-| --- | --- |
-| request identity | `request_id`, `session_id`, `user_id` |
-| request content | `original_query`, `normalized_query` |
-| routing and framing | `candidate_domains`, `selected_domain`, `task_type`, `selected_capability` |
-| interpretation signals | `deterministic_signals`, `model_output`, `confidence_breakdown` |
-| tool execution | `tool_bundle_loaded`, `tool_call_proposal`, `dependency_status` |
-| governance and policy | `policy_decision`, `risk_level`, `redaction_state` |
-| result and fallback | `execution_result`, `fallback_reason`, `final_outcome`, `upstream_dependency_failures` |
-| timing and versioning | `timestamp_start`, `timestamp_end`, `duration_ms`, `tool_schema_version`, `capability_version`, `domain_subsystem_version`, `queue_or_scheduler_state` |
-
-These field groups are the runtime-facing preview of the durable objects defined in `CH02_01_Runtime-Objects.md`.
+Step 12's logging is structured, not free-form: every step emits typed fields, and the authoritative schema is the set of runtime objects in `CH02_01_Runtime-Objects.md` — request envelope, interpretation record, routing decision, execution record, final outcome, and handoff packet. Later chapters reference those objects rather than redefining field lists.
 
 ## The Capability Registry
 
@@ -179,74 +186,13 @@ Every capability declares nine things:
 
 RAG belongs in the `Unstructured retrieval` family.
 
-### Catalog Template
-
-```yaml
-name: <capability_name>
-display_name: <human_readable_name>
-purpose: <what this capability does>
-owner: <team_or_system_owner>
-domain_scope: <global|hr|customer|finance|legal|engineering|...>
-capability_version: <version>
-schema_version: <version>
-rollout_status: <draft|staging|active|deprecated>
-change_reference: <ticket_or_change_id>
-
-use_when:
-  - <condition>
-
-avoid_when:
-  - <condition>
-
-task_types_supported:
-  - <task_type>
-
-required_inputs:
-  - <field_name>
-
-optional_inputs:
-  - <field_name>
-
-preconditions:
-  - <must_be_true_before_execution>
-
-tool_schema_bundle:
-  - <tool_schema_name>
-
-loading_mode: <single_capability|primary_plus_fallback|staged_supervisor>
-
-output_contract:
-  required_fields:
-    - <field_name>
-  optional_fields:
-    - <field_name>
-
-confidence_signals:
-  - <signal_name>
-
-validation_rules:
-  - <rule>
-
-cost_profile: <low|medium|high>
-latency_profile: <low|medium|high>
-risk_profile: <low|medium|high>
-
-fallbacks:
-  - <fallback_capability_or_action>
-
-human_escalation_required_when:
-  - <condition>
-
-notes:
-  - <implementation_note>
-```
-
 ### Registry Rules
 
 - the orchestration layer looks up capability definitions from a registry; it never hardcodes domain tool logic
 - each domain team owns and updates its own subsystem tools and schemas
 - every tool and capability records an explicit owner in the registry or schema metadata
 - version and rollout metadata are recorded so regressions trace to specific changes
+- the concrete catalog-entry schema lives with the runtime objects in `CH02_01_Runtime-Objects.md`
 
 This owner metadata is what later powers operational attribution (see Measurement And Operations).
 
@@ -347,18 +293,7 @@ Resolved human cases are recorded and fed back: recurring corrections become ali
 
 ## Measurement And Operations
 
-The platform is evaluated offline and monitored online; operations attribute failures to owners.
-
-### Offline Evaluation
-
-Golden datasets and controlled benchmarks cover:
-
-- routing quality
-- tool selection precision
-- schema generation precision
-- answer quality
-- cost reduction
-- safety and policy correctness
+This section is the third layer of `CH04`'s testing-and-evaluation model: `CH04` defines the offline evaluation and production regression layers, and this section supplies the operational monitoring layer that `CH04_Testing-and-Evaluation.md` defers to. What is measured before launch — golden sets, test classes, acceptance thresholds — is defined there. This section covers what happens after launch: live monitoring, ownership attribution, and the nightly review loop that turns runtime telemetry into owner-routed follow-ups.
 
 ### Online Monitoring
 

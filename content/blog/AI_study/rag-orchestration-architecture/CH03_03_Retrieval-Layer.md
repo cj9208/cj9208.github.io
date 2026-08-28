@@ -1,7 +1,7 @@
 ---
 title: "Retrieval Layer"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-08-27T11:21:30+08:00
+lastmod: 2026-08-27T16:55:00+08:00
 draft: true
 
 description: "The retrieval layer is the online evidence-finding subsystem of RAG."
@@ -34,16 +34,7 @@ The key idea is simple:
 
 ## Scope
 
-This document covers:
-
-```text
-Retrieval
--> Query shaping
--> Metadata and security filtering
--> Candidate retrieval
--> Fusion and reranking
--> Context assembly
-```
+This document covers the five-stage online pipeline — query shaping, metadata and security filtering, candidate retrieval, fusion and reranking, and context assembly — detailed stage by stage in Retrieval Architecture below.
 
 This document does not cover:
 
@@ -87,13 +78,7 @@ The retrieval layer should output:
 
 ### 1. Retrieval Is a Pipeline, Not a Single Search Call
 
-High-quality retrieval usually requires several stages:
-
-- query shaping
-- candidate retrieval
-- fusion
-- reranking
-- context assembly
+The five stages in Retrieval Architecture below each exist to correct a distinct failure mode. Treating retrieval as one search call collapses those corrections into an opaque blob; the stage table there is the authoritative breakdown.
 
 ### 2. Exact Match and Semantic Match Are Complementary
 

@@ -1,7 +1,7 @@
 ---
 title: "Confidence, Safety, and Validation"
 date: 2026-07-20T09:43:56+08:00
-lastmod: 2026-08-15T21:52:55+08:00
+lastmod: 2026-08-27T21:46:07+08:00
 draft: true
 
 description: "How the orchestration runtime stays safe and decides whether to proceed, clarify, retry, reject, or escalate."
@@ -61,17 +61,7 @@ The harness should screen early for:
 - requests to expose hidden instructions, policies, or internal data
 - hostile or manipulative instructions such as "ignore previous rules"
 
-This is not only a model-safety concern.
-It is also a product-scope and control-boundary concern.
-
-Why this exists:
-
-- Customer-facing systems need a clear rule that not every incoming message deserves full orchestration effort.
-
-What it prevents:
-
-- treating jailbreaks, irrelevant questions, and scope violations as if they were normal customer tasks
-- confusing product-scope enforcement with generic model politeness
+This is not only a model-safety concern. It is also a product-scope and control-boundary concern: not every incoming message deserves full orchestration effort, and treating jailbreaks, irrelevant questions, and scope violations as normal tasks both wastes the runtime and blurs the boundary between product scope and model politeness.
 
 ## Input Safety Gate
 
@@ -143,22 +133,9 @@ If the runtime waits until after full interpretation, it may already have:
 - exposed unnecessary capability surface
 - wasted tokens and latency on a request that should have been constrained early
 
-So the safety gate should sit before normal task interpretation, even if the later layers also perform additional checks.
+So the safety gate should sit before normal task interpretation, even if the later layers also perform additional checks. Early screening is cheaper and safer than fully reasoning over hostile requests first: it avoids wasted tokens and latency on requests that should be constrained immediately, avoids exposing capability surface too early, and avoids accepting a wrong task framing before scope has been checked.
 
-Why this exists:
-
-- Early safety screening is cheaper and safer than letting the runtime fully reason over hostile or irrelevant requests first.
-
-What it prevents:
-
-- wasting latency and tokens on requests that should be constrained immediately
-- exposing capability surface too early
-- accepting the wrong task framing before scope is checked
-
-Boundary with nearby components:
-
-- the safety gate decides whether the request should enter normal interpretation at all
-- the confidence policy decides what to do with a valid in-scope request once interpretation begins
+Boundary with nearby components: the safety gate decides whether the request should enter normal interpretation at all; the confidence policy decides what to do with a valid in-scope request once interpretation begins.
 
 ## Confidence Policy
 
@@ -354,14 +331,14 @@ Typical actions:
 - handoff
 - partial answer
 
-### Core Routing Rules
+### Ordering Principles Shared By All Decision Tables
 
-The first version should make the following rules explicit.
+The first version should make the following rules explicit. They are the rationale behind the row ordering of every decision table in this set — the intention-layer routing table in `CH01`, the execution table below, and the validation table below that.
 
 1. ambiguity beats raw confidence
 2. policy block beats confidence
 3. missing required constraints beat confidence
-4. exhausted retry budget changes what actions remain legal
+4. exhausted escalation budget changes what actions remain legal
 5. user-resolvable uncertainty should prefer `clarify`
 6. internal dependency failure should prefer `retry` or `switch_capability`, not `clarify`
 7. write or high-risk actions should require stronger evidence than read-only lookups
@@ -435,32 +412,9 @@ What it prevents:
 
 ### Calibration Guidance
 
-The first policy should begin as a decision table, not as a complex weighted formula.
+The first policy should begin as a decision table, not as a complex weighted formula. It then becomes operational by being evaluated against labeled examples — cases that should proceed, clarify, retry, reject, or hand off.
 
-Then evaluate it against labeled examples such as:
-
-- should proceed
-- should clarify
-- should retry
-- should reject
-- should hand off
-
-For each case, compare:
-
-- expected action
-- model-proposed action
-- harness-selected action
-
-That is how the confidence policy becomes operational and reviewable instead of rhetorical.
-
-Why this exists:
-
-- Confidence policy should be judged by decision quality, not by how sophisticated the formula sounds.
-
-What it prevents:
-
-- shipping an uncalibrated policy that looks rigorous on paper but behaves inconsistently in practice
-- confusing policy design with real operational readiness
+The calibration method — comparing expected, model-proposed, and harness-selected actions across labeled cases — is defined once in `CH04_Testing-and-Evaluation.md`; this note adopts it without restating it.
 
 ### Worked Decision Case
 
@@ -488,27 +442,13 @@ This worked case should be turned into a reusable golden case in the testing not
 
 ## Minimal Validation Rules
 
-Before marking a request `completed`, the harness should verify at least:
+Before marking a request `completed`, the harness must verify that success is real: the outcome matches the selected route, required policy checks passed, grounding exists where the capability requires it, required fields for the task type are present, and escalation budgets were respected.
 
-1. the outcome matches the selected route
-2. required policy checks passed
-3. the answer is grounded when the capability requires grounding
-4. the answer is not missing required fields for the task type
-5. retry and escalation budgets were respected
-
-Why this exists:
-
-- Successful execution is not the same thing as an acceptable answer.
-
-What it prevents:
-
-- returning plausible but weak outputs too early
-- confusing backend success with user-facing correctness
-- ending the request before policy, grounding, or completeness have actually been checked
+Successful execution is not the same thing as an acceptable answer; the checks above catch plausible-but-weak outputs, backend success mistaken for user-facing correctness, and requests ended before grounding or completeness were actually verified.
 
 ## Compact Validation Decision Table
 
-The validation stage needs one compact decision contract so acceptance is not decided ad hoc.
+Those rules are operationalized as one compact decision contract, so acceptance is never decided ad hoc.
 
 It is read like the confidence tables: first matching row wins, and policy checks dominate quality judgment.
 
@@ -528,7 +468,7 @@ Validation signals that feed this table:
 - policy compliance: did all required policy checks pass
 - grounding coverage: share of the answer traceable to retrieved evidence
 - completeness: are required fields present for the task type
-- budget status: how many retries and escalations remain
+- budget status: which escalation budgets remain
 
 The output of this table is one of:
 

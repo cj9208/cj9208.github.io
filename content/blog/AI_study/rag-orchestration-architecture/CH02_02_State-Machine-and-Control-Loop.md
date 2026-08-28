@@ -1,7 +1,7 @@
 ---
 title: "State Machine and Control Loop"
 date: 2026-07-20T09:43:56+08:00
-lastmod: 2026-07-20T09:59:39+08:00
+lastmod: 2026-08-27T21:46:07+08:00
 draft: true
 
 description: "How requests move through the orchestration runtime, including states, retries, caps, fallback, and events."
@@ -107,24 +107,7 @@ Minimal transition rules:
 - every transition should record timestamp and trigger
 - clarification and human handoff are terminal for the current turn, but not necessarily for the broader session
 
-Why this exists:
-
-- A request runtime needs one shared lifecycle model so every component understands where the request is now.
-
-What it prevents:
-
-- spaghetti retry logic spread across multiple handlers
-- disagreement between components about whether a request is still running, waiting, failed, or done
-- ambiguous ownership of next-step decisions
-
-Boundary with nearby components:
-
-- the state machine describes allowed lifecycle movement
-- the runtime objects describe what data each state works with
-
-Main tradeoff:
-
-- a defined state model adds lifecycle discipline, but it greatly improves predictability and operator understanding
+The lifecycle model buys predictability: one shared answer to "where is this request now?" instead of spaghetti retry logic spread across handlers, components disagreeing about whether a request is running or done, and ambiguous ownership of next-step decisions. The state machine describes allowed movement; the runtime objects (`CH02_01`) describe what data each state works with.
 
 ## Control Loop Principle
 
@@ -181,19 +164,9 @@ Boundary with nearby components:
 
 ### Attempt Budget Fields
 
-These counters should live on the request runtime state.
-
-Example shape:
+Budget limits and live counters live on the request envelope's `execution_budget` field — the canonical schema is defined in `CH02_01_Runtime-Objects.md`. The runtime additionally tracks attempt counters as state:
 
 ```yaml
-execution_budget:
-  max_total_loops: 6
-  max_reinterpretations: 2
-  max_execution_retries: 2
-  max_clarification_turns: 2
-  max_model_escalations: 1
-  max_wall_clock_ms: 8000
-
 attempt_counters:
   total_loops: 0
   reinterpretations: 0
@@ -202,12 +175,12 @@ attempt_counters:
   model_escalations: 0
 ```
 
-Why separate counters matter:
+Separate counters matter because the loops they bound are different failure modes:
 
-- reinterpretation loops and execution retries are different failure modes
-- clarification loops consume user attention rather than compute only
-- stronger-model escalation is expensive and should usually be tightly capped
-- total loop count prevents the whole request from cycling too long even if individual branch caps are not yet exhausted
+- reinterpretation loops and execution retries fail in different ways and need independent ceilings
+- clarification loops consume user attention, not just compute
+- stronger-model escalation is expensive and should be tightly capped
+- total loop count prevents the whole request from cycling even when no individual branch cap is exhausted
 
 ### Control-Loop Decision Rule
 
@@ -232,9 +205,7 @@ But the harness is the final authority on whether that branch is still legal.
 
 ### Fallback Decision Table
 
-When a branch hits its cap, the system should not fail open or keep looping.
-
-Instead, routing should consult a small fallback policy.
+When a branch hits its cap, the system should not fail open or keep looping. Division of labor with `CH02_03`: the execution decision table there governs how routing reacts to a completed execution attempt; this table governs what remains legal after a cap is hit.
 
 | Cap reached | Typical meaning | Allowed fallback actions | Preferred fallback |
 | --- | --- | --- | --- |
@@ -297,13 +268,14 @@ Routing then decides whether to:
 
 ### First-Version Default Caps
 
-Reasonable first serious defaults are:
+The canonical values carried by the envelope schema in `CH02_01` are:
 
+- `max_total_loops: 6`
 - `max_reinterpretations: 2`
-- `max_execution_retries: 1` or `2`
+- `max_execution_retries: 2`
 - `max_clarification_turns: 2`
 - `max_model_escalations: 1`
-- `max_total_loops: 5` or `6`
+- `max_wall_clock_ms: 8000`
 
 These values are not universal. They are only good starting points until evaluation data justifies tighter or looser bounds.
 
@@ -326,14 +298,4 @@ Useful first-version events:
 - `request_rejected`
 - `request_failed`
 
-This makes monitoring and replay easier without requiring a fully event-sourced system.
-
-Why this exists:
-
-- The runtime needs a lightweight, durable trace of what happened without requiring full event-sourcing complexity.
-
-What it prevents:
-
-- weak observability around routing, retries, and escalation
-- difficulty reconstructing request history during incident review
-- over-reliance on raw logs for operational understanding
+This makes monitoring and replay easier without requiring a fully event-sourced system. The event list is intentionally small: object snapshots remain the source of truth, and events exist so routing, retry, and escalation behavior can be reconstructed during incident review without raw-log archaeology.

@@ -1,7 +1,7 @@
 ---
 title: "Ingestion Validation Layer"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-15T09:00:00+08:00
+lastmod: 2026-08-27T16:50:00+08:00
 draft: true
 
 description: "The ingestion validation layer is the upstream data production layer for the RAG system."
@@ -31,17 +31,7 @@ The key idea is simple:
 
 ## Scope
 
-This document covers the pipeline from:
-
-```text
-Source
--> Acquire
--> Parse / OCR
--> Structure reconstruction
--> Canonicalize / normalize
--> Validate
--> Publish to downstream processing
-```
+This document covers the pipeline from raw source artifacts to published validated canonical documents — including the pass, repair, and quarantine branches at validation. The full flow is shown in High-Level Architecture below.
 
 This document does not cover:
 
@@ -236,27 +226,9 @@ The layer therefore needs three validation views.
 
 ---
 
-The current validation levels in this design are:
+Conceptually, validation spans six levels: OCR and parser confidence, structural, semantic, business-rule, cross-extractor, and cross-language consistency validation. These levels mix deterministic checks, model-assisted checks, business-specific checks, and comparative checks across extractors or languages, so the implementation view below groups them by engineering method and ownership instead.
 
-| Current level | Main purpose |
-| --- | --- |
-| OCR and parser confidence validation | Detect low-confidence extraction and suspicious raw OCR quality |
-| Structural validation | Detect layout, ordering, hierarchy, and table-shape failures |
-| Semantic validation | Detect locally implausible extracted values and field patterns |
-| Business-rule validation | Detect domain-specific violations in important document classes |
-| Cross-extractor validation | Detect disagreement across multiple parser or OCR methods |
-| Cross-language consistency validation | Detect mismatch across bilingual or parallel document versions |
-
-That list is useful conceptually, but it is not the best implementation view because it mixes:
-
-- deterministic technical checks
-- model-based technical checks
-- business-specific checks
-- comparative checks across extractors or languages
-
-For implementation, it is better to group validation by engineering method and ownership.
-
-Recommended flow:
+Runtime flow per document:
 
 ```text
 Canonical document
@@ -334,76 +306,11 @@ They should run on every document before any model-heavy validation is used.
 
 ---
 
-#### 1.1 OCR and Parser Confidence Checks
+Three notes on the areas above:
 
-Useful signals:
-
-- low overall OCR confidence
-- suspicious character substitution density
-- too many unknown characters
-- abnormal page-level quality
-- weak extractor confidence on key blocks
-
-Limitations:
-
-- high OCR confidence does not guarantee correct structure
-- tables can be wrong even when token confidence is acceptable
-
-#### 1.2 Structural and Layout Validation
-
-This is often the highest-value validation layer.
-
-Checks may include:
-
-- reading order sanity
-- heading hierarchy consistency
-- page sequence consistency
-- plausible block boundaries
-- stable section ordering
-
-Table-specific structural checks belong here, not in a separate validation bucket.
-
-Examples:
-
-- table row and column consistency
-- header and body separation
-- stable column count across body rows
-- plausible merged-cell behavior
-- header alignment with body columns
-- monotonic row ordering
-- non-chaotic blank-cell pattern
-- geometric plausibility of cell boundaries
-
-This layer is especially important for layout-heavy documents.
-
-#### 1.3 Deterministic Semantic Validation
-
-Checks whether extracted content makes sense in its local structure.
-
-Examples:
-
-- dates parse as dates
-- identifiers match expected formats
-- enum-like values match known categories
-- totals approximately reconcile when that is expected
-- duplicated keys appear only where valid
-
-Table-specific semantic checks also belong here.
-
-Examples:
-
-- currency columns look like currency columns
-- stable column types
-- valid dates, currencies, percentages, and identifiers
-- plausible value ranges
-- expected enums where applicable
-- approximate consistency of totals or counts when relevant
-
-- metadata completeness checks
-- source version consistency checks
-- ACL field presence checks
-
-This often catches extraction errors that still look superficially plausible.
+- OCR confidence is only an early signal: high token confidence does not guarantee correct structure, and tables can be wrong even when token-level confidence looks acceptable — structural checks must run regardless of what the extractor reports
+- structural and layout validation is often the highest-value layer, especially for layout-heavy documents; table-specific structural checks (row and column consistency, header-body separation, stable column counts, merged-cell plausibility, header alignment, monotonic ordering, cell geometry) belong here rather than in a separate bucket
+- deterministic semantic validation catches extraction that still looks superficially plausible: dates parse as dates, identifiers match expected formats, enum values are valid, totals reconcile, duplicates appear only where valid — with table-specific semantic checks (column-type purity, valid currencies and ranges, key-field consistency) in the same bucket, plus metadata completeness, source-version consistency, and ACL field presence
 
 ### 2. Technical Model-Based Validation
 
@@ -419,25 +326,7 @@ These checks may use LLMs or smaller task-specific models, but they should remai
 | Structural ambiguity resolution | classify ambiguous structural blocks, interpret messy table headers | Do not let the model silently redefine structure without trace | block classification accuracy, header interpretation accuracy | header interpretation confidence, block classification confidence | use only when deterministic checks are inconclusive and confidence is high | repair suggestion, manual review |
 | Repair suggestion support | low-confidence repair suggestions, likely OCR corruption hints | Suggestions must be re-validated deterministically | repair success rate after re-validation | repair confidence, predicted corruption severity | never publish from this alone; require deterministic re-validation after repair | repair then re-validate |
 
----
-
-Typical uses:
-
-- semantic comparison of aligned sections
-- content plausibility checks that go beyond pattern matching
-- low-confidence repair suggestions
-- classification of ambiguous structural blocks
-
-Important rule:
-
-- model-based validation should support technical validation, not replace it
-
-Examples:
-
-- LLM-based section consistency review
-- model-based table header interpretation when header structure is messy
-- semantic comparison between extracted summary and underlying block content
-- model-assisted detection of likely OCR corruption patterns that deterministic rules missed
+The governing rule: model-based validation should support technical validation, not replace it. Concretely that means LLM-based section-consistency review, model interpretation of messy table headers, comparison of extracted summaries against underlying block content, and model-assisted detection of OCR-corruption patterns that deterministic rules missed — all used as support signals or repair suggestions, never as standalone gates.
 
 ### 3. Comparative Consistency Validation
 
@@ -457,14 +346,7 @@ This category can combine deterministic and model-based checks.
 
 #### 3.1 Cross-Extractor Validation
 
-When multiple OCR or parsing methods are available, disagreement is a useful signal.
-
-Checks may include:
-
-- major structure mismatch between extractors
-- table shape mismatch
-- different reading order
-- different field extraction for key attributes
+When multiple OCR or parsing methods are available, disagreement is a useful signal — and typically a stronger one than either extractor's internal confidence.
 
 Design principle:
 
@@ -472,27 +354,9 @@ Design principle:
 
 #### 3.2 Cross-Language Consistency Validation
 
-When documents exist in parallel language versions, cross-language agreement can be a very strong validation signal.
+When documents exist in parallel language versions, cross-language agreement can be a very strong validation signal — especially for bilingual corpora where the same document is maintained in two language versions.
 
-This is especially useful for bilingual corpora where the same document exists in two maintained language versions.
-
-Checks may include:
-
-- same document family or pair id
-- same major section structure
-- same table count and approximate shapes
-- same normalized key fields such as dates, amounts, percentages, or codes
-- semantic consistency of aligned sections
-- coverage consistency so one version is not missing a section, table, or note
-
-Table validation should also use this category when bilingual versions exist.
-
-Examples:
-
-- same approximate table dimensions
-- same key numeric or coded values
-- same row coverage
-- same major field mapping
+Checks compare section structure, table shape and coverage, normalized key fields such as dates, amounts, percentages, and codes, and semantic consistency of aligned sections — so neither version silently misses a section, table, or note. Table validation belongs in this category when bilingual versions exist: compare table dimensions, key numeric or coded values, row coverage, and major field mapping.
 
 Important caution:
 
@@ -505,7 +369,7 @@ Cross-language consistency should therefore be used as:
 - a repair hint
 - a trust-scoring input
 
-not as blind overwrite logic
+not as blind overwrite logic.
 
 ### 4. Business-Specific Validation
 
@@ -693,6 +557,8 @@ Practical recommendation:
 - start with PaddleOCR when you want a lightweight open-source OCR base
 - use MinerU when document understanding quality matters more than minimal footprint
 - use a managed commercial service only when support, compliance, or document complexity justifies it
+
+When parsing quality is the deciding factor, the set-wide default for parsing in `CH03_RAG-Layer.md`'s Reference Stack is MinerU.
 
 ## Final Note
 

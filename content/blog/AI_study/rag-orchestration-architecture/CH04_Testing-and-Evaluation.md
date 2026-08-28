@@ -1,7 +1,7 @@
 ---
 title: "Testing and Evaluation"
 date: 2026-08-15T21:52:55+08:00
-lastmod: 2026-08-27T21:25:59+08:00
+lastmod: 2026-08-27T23:07:27+08:00
 draft: true
 
 description: "The minimum test and evaluation matrix needed before the orchestration and RAG architecture can be treated as operationally credible."
@@ -68,7 +68,7 @@ Testing splits into three layers with different goals and different tolerances f
 
 - **Offline evaluation** selects and calibrates behavior on controlled sets. It owns most of this note's matrix, because it is the only layer where labeled expectations are cheap.
 - **Production regression** protects shipped behavior from silent change, reusing the offline pass criteria through sampling.
-- **Operational monitoring** detects drift and hidden failures after launch; there is no gold truth here, only distributions and alerts feeding owner-routed follow-up.
+- **Operational monitoring** detects drift and hidden failures after launch; there is no gold truth here, only distributions and alerts feeding owner-routed follow-up. The operating model for this layer — measures, nightly review, failure classification — is defined in `CH02_Request-Orchestration-Layer.md`'s Measurement And Operations section.
 
 Designing all three around the same criteria is deliberate: behavior validated offline is protected by regression gates in production, and monitored operationally — one contract, three chances to catch its violation.
 

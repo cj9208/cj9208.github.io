@@ -1,7 +1,7 @@
 ---
 title: "Runtime Objects"
 date: 2026-07-20T09:43:56+08:00
-lastmod: 2026-07-20T09:59:39+08:00
+lastmod: 2026-08-27T22:57:06+08:00
 draft: true
 
 description: "The core runtime objects used by the request orchestration layer."
@@ -34,7 +34,7 @@ Related notes:
 
 ## Scope
 
-This note defines six core objects:
+This note defines six request-lifecycle objects:
 
 1. request envelope
 2. interpretation record
@@ -42,6 +42,10 @@ This note defines six core objects:
 4. capability execution record
 5. final outcome
 6. human handoff packet
+
+and one config-time artifact that the runtime reads during capability selection and schema loading:
+
+7. capability catalog entry (see Registry Object below)
 
 ## Contract Principles
 
@@ -117,9 +121,14 @@ policy_context:
   data_scope: internal
 
 execution_budget:
+  # canonical escalation-budget schema; semantics and first-version
+  # defaults are discussed in CH02_02_State-Machine-and-Control-Loop.md
+  max_total_loops: 6
   max_tool_calls: 4
-  max_model_escalations: 1
+  max_reinterpretations: 2
+  max_execution_retries: 2
   max_clarification_turns: 2
+  max_model_escalations: 1
   max_wall_clock_ms: 8000
 
 state:
@@ -297,9 +306,10 @@ next_action:
     question: "I found multiple likely matches for 'spring saver': Spring Saver 2025, Spring Saver Plus, and Student Spring Saver. Which one did you mean?"
 ```
 
-Allowed `decision` values in the first version:
+Allowed `decision` values in the first version, aligned with the routing contract outcomes in `CH01_Intention-Recognition-Layer.md`:
 
 - `proceed`
+- `proceed_conservative` (the CH01 row-8 low-risk read-only path)
 - `clarify`
 - `stronger_model`
 - `execute_capability`
@@ -320,6 +330,7 @@ Notes:
 
 - `selected_capability` may be null for `reject`
 - `clarify` and `handoff_human` are first-class routing outcomes, not failure afterthoughts
+- `proceed_conservative` exists so a low-confidence but low-risk read-only case can return a narrowly scoped answer instead of being forced into clarification or handoff
 
 Why this exists:
 
@@ -412,6 +423,7 @@ Notes:
 
 - the record should exist for both success and failure
 - read operations are also governed execution and should use the same contract shape
+- deployments may extend the record with environment-specific fields (scheduler or queue state, upstream dependency failures, redaction state, extra version markers) without changing the contract shape
 
 Why this exists:
 
@@ -507,6 +519,8 @@ Purpose:
 - let a human continue without reconstructing the case from raw logs
 - keep escalation compact and operationally useful
 
+This packet implements the handoff contract defined in `CH01_Intention-Recognition-Layer.md`, extended with the orchestration-level state described in `CH02_Request-Orchestration-Layer.md`.
+
 Example shape:
 
 ```yaml
@@ -568,3 +582,77 @@ Boundary with nearby components:
 Main tradeoff:
 
 - this requires more structured escalation data, but it greatly improves operational continuity and reviewability
+
+## Registry Object: Capability Catalog Entry
+
+The six objects above live for the duration of one request. The runtime also reads a config-time artifact: the capability catalog entry, looked up from the capability registry during capability selection and adaptive schema loading (steps 7–8 of the orchestration flow in `CH02_Request-Orchestration-Layer.md`).
+
+Catalog entries are owned by domain teams, versioned, and published through rollout states so regressions trace to specific changes. The orchestration layer only reads the registry; it never hardcodes domain tool logic. The nine conceptual contract elements are summarized in `CH02_Request-Orchestration-Layer.md`; this is the concrete schema:
+
+```yaml
+name: <capability_name>
+display_name: <human_readable_name>
+purpose: <what this capability does>
+owner: <team_or_system_owner>
+domain_scope: <global|hr|customer|finance|legal|engineering|...>
+capability_version: <version>
+schema_version: <version>
+rollout_status: <draft|staging|active|deprecated>
+change_reference: <ticket_or_change_id>
+
+use_when:
+  - <condition>
+
+avoid_when:
+  - <condition>
+
+task_types_supported:
+  - <task_type>
+
+required_inputs:
+  - <field_name>
+
+optional_inputs:
+  - <field_name>
+
+preconditions:
+  - <must_be_true_before_execution>
+
+tool_schema_bundle:
+  - <tool_schema_name>
+
+loading_mode: <single_capability|primary_plus_fallback|staged_supervisor>
+
+output_contract:
+  required_fields:
+    - <field_name>
+  optional_fields:
+    - <field_name>
+
+confidence_signals:
+  - <signal_name>
+
+validation_rules:
+  - <rule>
+
+cost_profile: <low|medium|high>
+latency_profile: <low|medium|high>
+risk_profile: <low|medium|high>
+
+fallbacks:
+  - <fallback_capability_or_action>
+
+human_escalation_required_when:
+  - <condition>
+
+notes:
+  - <implementation_note>
+```
+
+Required fields: `name`, `owner`, `domain_scope`, `capability_version`, `rollout_status`, `use_when`, `avoid_when`, `tool_schema_bundle`, `output_contract`, `fallbacks`.
+
+Notes:
+
+- entries are config-time artifacts, not per-request state; the runtime reads them, requests only reference them by id
+- `loading_mode` drives how step 8 exposes the tool surface (single capability, primary plus fallback, or staged supervisor)
+- `confidence_signals` and `validation_rules` here feed the confidence and validation policies in `CH02_03_Confidence-Safety-and-Validation.md`
