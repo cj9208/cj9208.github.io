@@ -1,7 +1,7 @@
 ---
 title: "实战诊断 —— 某企业 AI Platform 的正确蓝图与五重反模式解构"
 date: 2026-08-29T20:53:49+08:00
-lastmod: 2026-08-29T21:49:56+08:00
+lastmod: 2026-08-29T22:42:35+08:00
 draft: false
 
 categories:
@@ -38,6 +38,8 @@ slug: "ai-platform-blueprint-anti-patterns"
 ### 3. 技术栈收敛而非“薄封装（Thin Wrapper）”
 
 平台团队的职责是**制定统一的技术规范与基础设施选型**（例如：统一规定企业推荐使用某种开源 Vector DB），而不是去造一套剥夺开发者自由度、文档不清的“内部 RAG 组件库”。
+
+> 以上三个锚点刻画的是目标结构，但落地是演进式的——这正是“演进式架构”（Evolutionary Architecture，见《Building Evolutionary Architectures》，Neal Ford / Rebecca Parsons / Patrick Kua）的主张：在最后责任时刻做决策、优先可逆接口、用行走骨架跑通最小切片——**大方向（接口与骨架）第一天就定死，实现随业务演化。** 统一控制面先以抽象接口立起来，即便底层只接一家供应商，业务也能立刻用起来——接口契约不变，后续多供应商接入与配额治理都只是增生；OCR 同理，先以本地 VM 即可部署的轻量版出货（如 Paddle），让用户先拿到价值。飞轮转起来，需求自会拽着架构长成蓝图。
 
 ---
 
