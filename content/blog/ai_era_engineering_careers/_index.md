@@ -1,7 +1,7 @@
 ---
 title: "AI-Era Engineering Careers"
 date: 2026-07-18T10:01:28+08:00
-lastmod: 2026-08-27T10:30:37+08:00
+lastmod: 2026-08-29T20:53:49+08:00
 draft: false
 
 categories:
@@ -26,6 +26,7 @@ slug: "career-development"
 > **💡 组织视角的补充：** 本目录关注技术人如何在组织内生存，其中最贴近"人"的一项能力是沟通——出发点是人、不是机构：从职场晋升博弈、跨部门协作到亲密关系，同一套"降噪 / 契约优先"的表达协议贯穿始终。如果你想追问组织本身为什么会变成这个样子——哪些结构缺陷必然导致内耗、哪些治理设计能把系统稳住——或想从组织层面理解沟通背后的激励与制度结构，可参考 [Corporate / 企业组织与治理]({{< relref "../systems_and_governance/corporate/_index.md" >}})，那里用 Google、三星、字节等公司案例与外包、中台、创新死局等大厂通病做了系统解剖。
 
 ## Career Strategy
+* [存量陷阱与增量现实：基于“个人价值闭环”的职业系统选择]({{< relref "./存量陷阱与增量现实-基于个人价值闭环的职业系统选择.md" >}})
 * [定义 AI 时代的 Staff：从交付负责到确定性负责]({{< relref "./定义AI时代的Staff-从交付负责到确定性负责.md" >}})
 * [从波利亚解题法到技术专家的生存闭环：用同理心换空间，用硬约束造引擎]({{< relref "./从波利亚解题法到技术专家的生存闭环-用同理心换空间-用硬约束造引擎.md" >}})
 * [编码向左，工程向右：AI时代程序员的生存突围]({{< relref "./编码向左-工程向右-AI时代程序员的生存突围.md" >}})
@@ -39,6 +40,7 @@ slug: "career-development"
 * [从原子的深渊到微观的围城：为什么我不建议高智商大脑重仓半导体？]({{< relref "./从原子的深渊到微观的围城-为什么我不建议高智商大脑重仓半导体.md" >}})
 
 ## Engineering Method
+* [实战诊断 —— 某企业 AI Platform 的正确蓝图与五重反模式解构]({{< relref "./实战诊断-某企业AI-Platform的正确蓝图与五重反模式解构.md" >}})
 * [龙舟破局：从"水上苦力"到"动作工程调试"]({{< relref "./龙舟破局-从水上苦力到动作工程调试.md" >}})
 * [The State Machine of Technical Research: Balancing Exploration and Bounded Execution]({{< relref "./The-State-Machine-of-Technical-Research-Balancing-Exploration-and-Bounded-Execution.md" >}})
 * [秩序之重：从系统演进看"变通"的代价]({{< relref "./秩序之重-从系统演进看-变通-的代价.md" >}})
