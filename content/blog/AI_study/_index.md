@@ -1,7 +1,7 @@
 ---
 title: "AI Study"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-08-27T10:30:37+08:00
+lastmod: 2026-09-01T22:21:00+08:00
 draft: false
 
 description: "AI 与大模型的自学笔记与分析：Agent harness 工程、评测治理、算力经济学与 RAG 编排架构。"
@@ -30,6 +30,9 @@ slug: "ai-study"
 * [The Death of the Wrapper: How Agentic Post-Training Is Reshaping AI Architecture]({{< relref "./The-Death-of-the-Wrapper-How-Agentic-Post-Training-Is-Reshaping-AI-Architecture.md" >}})
 * [From Board Games to Reasoning Agents: The Evolution of Reinforcement Learning in Large Language Models]({{< relref "./From-Board-Games-to-Reasoning-Agents-The-Evolution-of-Reinforcement-Learning-in-Large-Language-Models.md" >}})
 * [The-Search-Pathology-Why-Scaling-Test-Time-Compute-Can-Degrade-Code-Agent-Quality]({{< relref "./The-Search-Pathology-Why-Scaling-Test-Time-Compute-Can-Degrade-Code-Agent-Quality.md" >}})
+
+## System Design
+* [System Design 学习地图]({{< relref "./system_design/_index.md" >}})
 
 ## Compute Economics / 算力经济学
 * [算力经济学：从历史沙盘推演AI的百倍通缩终局]({{< relref "./算力经济学-从历史沙盘推演AI的百倍通缩终局.md" >}})
