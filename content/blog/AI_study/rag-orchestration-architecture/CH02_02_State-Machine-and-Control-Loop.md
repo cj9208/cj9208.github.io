@@ -1,7 +1,7 @@
 ---
 title: "State Machine and Control Loop"
 date: 2026-07-20T09:43:56+08:00
-lastmod: 2026-08-28T09:33:00+08:00
+lastmod: 2026-09-01T22:32:00+08:00
 draft: true
 
 description: "How requests move through the orchestration runtime, including states, retries, caps, fallback, and events."
@@ -33,9 +33,9 @@ The main questions are:
 
 Related notes:
 
-- [`CH02_Request-Orchestration-Layer.md`]({{< relref "./CH02_Request-Orchestration-Layer.md" >}})
-- [`CH02_01_Runtime-Objects.md`]({{< relref "./CH02_01_Runtime-Objects.md" >}})
-- [`CH02_03_Confidence-Safety-and-Validation.md`]({{< relref "./CH02_03_Confidence-Safety-and-Validation.md" >}})
+- [`CH02_Request-Orchestration-Layer.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch02_request-orchestration-layer/)
+- [`CH02_01_Runtime-Objects.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch02_01_runtime-objects/)
+- [`CH02_03_Confidence-Safety-and-Validation.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch02_03_confidence-safety-and-validation/)
 
 ## Why This Design Exists
 

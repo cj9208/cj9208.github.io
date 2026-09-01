@@ -1,7 +1,7 @@
 ---
 title: "Intention Recognition Layer"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-08-27T20:47:59+08:00
+lastmod: 2026-09-01T22:32:00+08:00
 draft: true
 
 description: "The intention recognition layer is the control layer that sits between raw user input and retrieval/reasoning."
@@ -189,7 +189,7 @@ Row order is deliberate:
 - rows 7 and 8 are the normal cheap-success paths
 - row 9 is the safe default that prevents silent or unhandled cases
 
-Note: row 1 (`reject`) is normally decided by the upstream safety gate in [`CH02_03_Confidence-Safety-and-Validation.md`]({{< relref "./CH02_03_Confidence-Safety-and-Validation.md" >}}) before interpretation even starts; it is listed here so this contract stays complete. The execution-stage and validation decision tables also live in `CH02_03`.
+Note: row 1 (`reject`) is normally decided by the upstream safety gate in [`CH02_03_Confidence-Safety-and-Validation.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch02_03_confidence-safety-and-validation/) before interpretation even starts; it is listed here so this contract stays complete. The execution-stage and validation decision tables also live in `CH02_03`.
 
 The four subsections below describe what each non-terminal outcome does in practice.
 

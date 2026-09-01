@@ -1,7 +1,7 @@
 ---
 title: "Confidence, Safety, and Validation"
 date: 2026-07-20T09:43:56+08:00
-lastmod: 2026-08-28T09:33:00+08:00
+lastmod: 2026-09-01T22:32:00+08:00
 draft: true
 
 description: "How the orchestration runtime stays safe and decides whether to proceed, clarify, retry, reject, or escalate."
@@ -29,11 +29,11 @@ It focuses on three tightly related concerns:
 
 Related notes:
 
-- [`CH02_Request-Orchestration-Layer.md`]({{< relref "./CH02_Request-Orchestration-Layer.md" >}})
-- [`CH02_01_Runtime-Objects.md`]({{< relref "./CH02_01_Runtime-Objects.md" >}})
-- [`CH02_02_State-Machine-and-Control-Loop.md`]({{< relref "./CH02_02_State-Machine-and-Control-Loop.md" >}})
-- [`CH01_Intention-Recognition-Layer.md`]({{< relref "./CH01_Intention-Recognition-Layer.md" >}})
-- [`CH04_Testing-and-Evaluation.md`]({{< relref "./CH04_Testing-and-Evaluation.md" >}})
+- [`CH02_Request-Orchestration-Layer.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch02_request-orchestration-layer/)
+- [`CH02_01_Runtime-Objects.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch02_01_runtime-objects/)
+- [`CH02_02_State-Machine-and-Control-Loop.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch02_02_state-machine-and-control-loop/)
+- [`CH01_Intention-Recognition-Layer.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch01_intention-recognition-layer/)
+- [`CH04_Testing-and-Evaluation.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch04_testing-and-evaluation/)
 
 ## Why This Design Exists
 
@@ -365,7 +365,7 @@ What it prevents:
 
 For a first implementable version, the policy is expressed as a small set of compact decision tables.
 
-The routing decision table lives in [`CH01_Intention-Recognition-Layer.md`]({{< relref "./CH01_Intention-Recognition-Layer.md" >}}), because routing is an intention-layer decision.
+The routing decision table lives in [`CH01_Intention-Recognition-Layer.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch01_intention-recognition-layer/), because routing is an intention-layer decision.
 
 The execution decision table below governs what happens after a capability runs.
 
@@ -424,7 +424,7 @@ The calibration method — comparing expected, model-proposed, and harness-selec
 
 ### Worked Decision Case
 
-The routing-level worked cases now live in [`CH01_Intention-Recognition-Layer.md`]({{< relref "./CH01_Intention-Recognition-Layer.md" >}}).
+The routing-level worked cases now live in [`CH01_Intention-Recognition-Layer.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch01_intention-recognition-layer/).
 
 The case below exercises the execution decision table in this note.
 

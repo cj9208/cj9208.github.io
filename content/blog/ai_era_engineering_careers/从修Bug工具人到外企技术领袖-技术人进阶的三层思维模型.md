@@ -1,11 +1,11 @@
 ---
 title: "从“修 Bug 工具人”到“外企技术领袖”：技术人进阶的“三层思维”模型"
 date: 2026-06-18T10:52:01+08:00
-lastmod: 2026-08-23T21:39:10+08:00
+lastmod: 2026-09-01T22:32:00+08:00
 draft: false
 
-description: "在 [将组织看作分布式系统：外企高阶沟通的\"高可用\"架构指南]({{< relref \"./将组织看作分布式系统-外企高阶沟通的高可用架构指南.md\" >}}) 中，我们介绍了企业内部的各种交流模式，核心在于对齐双方的 context。这里我们讨论 client-facing 岗位的交流逻辑，核心在于从对方出发。"
-summary: "在 [将组织看作分布式系统：外企高阶沟通的\"高可用\"架构指南]({{< relref \"./将组织看作分布式系统-外企高阶沟通的高可用架构指南.md\" >}}) 中，我们介绍了企业内部的各种交流模式，核心在于对齐双方的 context。这里我们讨论 client-facing 岗位的交流逻辑，核心在于从对方出发。"
+description: "在 [将组织看作分布式系统：外企高阶沟通的\"高可用\"架构指南](https://cj9208.github.io/blog/ai_era_engineering_careers/organization-as-distributed-system/) 中，我们介绍了企业内部的各种交流模式，核心在于对齐双方的 context。这里我们讨论 client-facing 岗位的交流逻辑，核心在于从对方出发。"
+summary: "在 [将组织看作分布式系统：外企高阶沟通的\"高可用\"架构指南](https://cj9208.github.io/blog/ai_era_engineering_careers/organization-as-distributed-system/) 中，我们介绍了企业内部的各种交流模式，核心在于对齐双方的 context。这里我们讨论 client-facing 岗位的交流逻辑，核心在于从对方出发。"
 
 categories:
   - "Communication"
@@ -19,7 +19,7 @@ slug: "bug-fixer-to-tech-leader"
 
 ## 导读
 
-在 [将组织看作分布式系统：外企高阶沟通的“高可用”架构指南]({{< relref "./将组织看作分布式系统-外企高阶沟通的高可用架构指南.md" >}}) 中，我们介绍了企业内部的各种交流模式，核心在于对齐双方的 context。这里我们讨论 **client-facing** 岗位的交流逻辑，核心在于**从对方出发**。
+在 [将组织看作分布式系统：外企高阶沟通的“高可用”架构指南](https://cj9208.github.io/blog/ai_era_engineering_careers/organization-as-distributed-system/) 中，我们介绍了企业内部的各种交流模式，核心在于对齐双方的 context。这里我们讨论 **client-facing** 岗位的交流逻辑，核心在于**从对方出发**。
 
 在外企（尤其是 Big Tech 或大型跨国金融机构）的语境下，当你步入高级工程师、Tech Lead 或者 Solutions Engineer 等偏向 Client-facing（面向客户/业务）的岗位时，你会发现一个残酷的现实：
 

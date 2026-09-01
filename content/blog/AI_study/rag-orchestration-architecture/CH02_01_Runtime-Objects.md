@@ -1,7 +1,7 @@
 ---
 title: "Runtime Objects"
 date: 2026-07-20T09:43:56+08:00
-lastmod: 2026-08-28T09:33:00+08:00
+lastmod: 2026-09-01T22:32:00+08:00
 draft: true
 
 description: "The core runtime objects used by the request orchestration layer."
@@ -25,12 +25,12 @@ Its job is to answer a simple question:
 
 > What durable objects should exist if the orchestration runtime is to be executable, observable, and reviewable?
 
-This note is a concrete extension of [`CH02_Request-Orchestration-Layer.md`]({{< relref "./CH02_Request-Orchestration-Layer.md" >}}).
+This note is a concrete extension of [`CH02_Request-Orchestration-Layer.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch02_request-orchestration-layer/).
 
 Related notes:
 
-- [`CH02_02_State-Machine-and-Control-Loop.md`]({{< relref "./CH02_02_State-Machine-and-Control-Loop.md" >}})
-- [`CH02_03_Confidence-Safety-and-Validation.md`]({{< relref "./CH02_03_Confidence-Safety-and-Validation.md" >}})
+- [`CH02_02_State-Machine-and-Control-Loop.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch02_02_state-machine-and-control-loop/)
+- [`CH02_03_Confidence-Safety-and-Validation.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch02_03_confidence-safety-and-validation/)
 
 ## Scope
 
