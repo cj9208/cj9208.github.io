@@ -1,7 +1,7 @@
 ---
 title: "System Design Master Roadmap: Evolutionary Architecture & Complete Learning Blueprint"
 date: 2026-09-01T21:54:00+08:00
-lastmod: 2026-09-01T23:05:00+08:00
+lastmod: 2026-09-02T00:19:00+08:00
 draft: false
 
 categories:
@@ -65,7 +65,7 @@ Each of these transitions is unpacked in I.2 as a bottleneck → requirement →
 * **Physical Implementation (How):**
   * **Persistence:** Connect the application to an RDBMS (e.g., PostgreSQL) writing to non-volatile disk storage.
   * **Structure:** Build the monolith as a *modular monolith* from the start—"Deep Modules" (Ousterhout): simple interfaces backed by substantial implementation logic, private helpers strictly encapsulated. This is the cheapest architectural insurance you will ever buy.
-  * **Related trade-off axes:** II.3 (storage engine & data-model fit).
+  * **Related trade-off axes:** II.3 (storage engine & data-model fit), II.8 (self-hosted vs managed database).
 
 #### Stage 1 ➔ Stage 2: Read Scaling — Cache & Read Replicas (Availability Axis)
 * **The Bottleneck:** Read traffic saturates relational database CPU and maxes out connection pools, creating point-read latency spikes. Caching raises the ceiling, but hit ratios plateau on working-set-bound or write-heavy data—and the single primary database remains a single point of failure.
@@ -77,7 +77,7 @@ Each of these transitions is unpacked in I.2 as a bottleneck → requirement →
   * **Read Replicas:** Deploy primary-secondary replicas with asynchronous (or synchronous) replication; route reads through read-write splitting in connection pools or proxies (e.g., PgBouncer, HAProxy) while writes stay pinned to the primary.
   * **Failover:** Add automatic promotion tooling (e.g., Patroni for PostgreSQL, managed failover in cloud RDS). Contrast asynchronous replication (replication lag, small data-loss window on failover) with synchronous replication (no data loss, higher write latency).
   * **Consistency Caveats:** Preserve read-your-writes and monotonic reads via session affinity or pinning to the primary; track replication lag as a first-class observable, not an afterthought.
-  * **Related trade-off axes:** II.4 (cache consistency), II.1 (replication consistency & staleness).
+  * **Related trade-off axes:** II.4 (cache consistency), II.1 (replication consistency & staleness), II.7 (data lifecycle & TTL).
 
 #### Stage 2 ➔ Stage 3: Service Decomposition & Decoupling (Microservices + Events)
 * **The Bottleneck:** Multiple engineering teams cannot deploy independently without lockstep testing and deployment collisions; once services are split, synchronous REST/JSON calls cause cascading tail-latency spikes, downstream outages take down upstream callers, and synchronous write processing caps overall throughput.
@@ -95,7 +95,7 @@ Each of these transitions is unpacked in I.2 as a bottleneck → requirement →
 * **Physical Implementation (How):**
   * **Sharding:** Partition/shard data using consistent hashing with virtual nodes; choose partition keys that keep hot keys balanced; plan for cross-shard fan-out queries and secondary-index maintenance.
   * **Replication:** Replicate each shard using leader-follower or leaderless quorums ($R + W > N$). The availability axis applies per shard, not just to the whole cluster.
-  * **Related trade-off axes:** II.1 (quorum tuning), II.3 (partition-key & engine interplay).
+  * **Related trade-off axes:** II.1 (quorum tuning), II.3 (partition-key & engine interplay), II.7 (data lifecycle & tiering).
 
 #### Stage 4 ➔ Stage 5: Distributed Failure Realities, Consensus & Observability
 * **The Bottleneck:** Networks drop packets, garbage collection causes pauses, clocks drift, multi-service transactions cannot use slow blocking 2PC locks, and distributed environments create operational black boxes.
@@ -123,6 +123,8 @@ Each of these transitions is unpacked in I.2 as a bottleneck → requirement →
 
 The ladder in Part I answers *when* a bottleneck appears; it does not answer *which pole to pick* when a decision offers two valid options. Part I and this part are two different angles on the same system: Part I is the *timeline* (when a problem shows up); Part II is the *decision space* (how to choose between the valid alternatives a problem leaves you with). The right pole is decided by workload, access patterns, and business tolerance—not by which rung you currently stand on.
 
+Two of the axes below (II.7, II.8) are operational and economic rather than purely technical—in real engineering, data growth and the cloud bill are often the first bottleneck a system hits, before any single physical threshold.
+
 Each axis follows the same shape: **two poles → the trade-off → the decision criterion → where in the ladder it matters most.** The stage breakdown in I.2 cross-references these axes wherever a choice point hides.
 
 | Decision Axis | The Two Poles | Trade-off Dimension | Decision Criterion | Matters Most At |
@@ -133,6 +135,8 @@ Each axis follows the same shape: **two poles → the trade-off → the decision
 | **II.4 Cache Consistency** | Cache-Aside vs Write-Through vs Write-Back | Read amplification vs write latency vs staleness | Miss cost, staleness bound | Stage 2 |
 | **II.5 Coordination & Transactions** | 2PC vs Saga vs Outbox; Lock vs Optimistic | Atomicity vs availability | Money vs profile data, single-writer need | Stage 4, 5 |
 | **II.6 Observability & Latency** | Logs/Metrics/Traces; SLOs | Debuggability vs effort | p99 SLA, black-box risk | Stage 2, 5 |
+| **II.7 Data Lifecycle & Tiering** | Active vs Archived/Cold | Storage cost vs access latency vs query simplicity | Access distribution, retention compliance | Stage 2–4 |
+| **II.8 Cost & Managed Services** | Self-Hosted vs Managed Cloud | Ops burden vs TCO/velocity | Team capacity, workload variability | All stages |
 
 ### II.1 Consistency Axis: How Much Staleness Can Your Business Tolerate?
 
@@ -159,6 +163,7 @@ Each axis follows the same shape: **two poles → the trade-off → the decision
 
 * **The two poles:** B-Tree vs LSM-Tree (Memtable + Write-Ahead Log + SSTables + Bloom filters); row-oriented vs columnar; relational vs document vs wide-column vs graph.
 * **The trade-off:** B-Trees are read-optimized with predictable point-lookup latency but pay write amplification; LSM-Trees are write-optimized for sequential I/O but pay read amplification and compaction stalls. Row stores serve OLTP point access; column stores compress and scan wide ranges for OLAP. Relational models enforce joins and transactions; NoSQL models trade those for flexible schema and horizontal scaling.
+* **Sub-decisions:** *Delete & expiry handling*—tombstones and TTL compaction; expired or deleted data is the usual trigger behind LSM compaction stalls and B-Tree index bloat (see II.7).
 * **Decision criterion:** Read/write ratio; whether the dataset exceeds the working set (a working set that fits in cache cheapens the read path); query shape (point vs range vs scan).
 * **Matters most at:** Stage 1 (the RDBMS baseline), Stage 4 (partition-key design interacting with the engine), and any point where the workload shifts—Discord's migration in III.2 is exactly this axis in action.
 
@@ -187,6 +192,25 @@ Each axis follows the same shape: **two poles → the trade-off → the decision
 * **Decision criterion:** What p99 SLA must the product promise? How expensive is an undebuggable incident?
 * **Matters most at:** Stage 2 (replication lag as a first-class observable), Stage 5 (SLOs and error budgets), and every whiteboarding session in the Verifying chapter.
 
+### II.7 Data Lifecycle & Cold Tiering Axis: What Happens to Data Nobody Reads Anymore?
+
+* **The two poles:** keeping every record in active hot storage vs tiering data across hot/warm/cold tiers (TTL expiration, cold shards, archival to object storage like S3/Glacier).
+* **The trade-off:** Hot storage answers any query instantly but is expensive, and unbounded retention inflates LSM compaction work and B-Tree index size. Tiering cuts storage cost and shrinks the active working set, but adds pipeline complexity and makes cold-data access slow.
+* **Sub-decisions:**
+  * *TTL & retention policies:* expire records at write time so dead data never reaches the database at all.
+  * *Hot/cold separation:* move cold shards to cheaper storage tiers; archive to object storage with a documented retrieval path when compliance requires it.
+  * *Delete-aware engines:* tombstones and compaction-friendly deletes—expired data is the hidden killer behind compaction stalls and index bloat (see II.3 and the Discord migration in III.2).
+* **Decision criterion:** The access distribution of your data (Zipf-like hotspots vs long tails); retention/compliance requirements; how fast cold data must be recoverable.
+* **Matters most at:** Stage 2–4, as the dataset and retention window grow—often it is the data you stop reading that breaks the system.
+
+### II.8 Cost & Managed Services Axis: Self-Hosted vs Managed Cloud
+
+* **The two poles:** self-hosted infrastructure (running Postgres/Redis/Kafka or Kubernetes yourself) vs managed cloud services (RDS, DynamoDB, Spanner, Lambda, MSK).
+* **The trade-off:** Self-hosting gives full control, predictable fixed cost, and the deepest learning experience, but you own patching, failover, and capacity planning. Managed services outsource that operational burden and ship faster, but add per-request pricing, vendor lock-in, and less control over the internals you are trying to learn.
+* **Key insight:** in real engineering, the cloud bill often hits before the physical bottleneck does—cost is frequently the actual trigger for the migrations the ladder describes (audit question 1 in III.1).
+* **Decision criterion:** Team size and operational capacity; total cost of ownership vs variable spend; fixed vs bursty workload; learning goals vs production goals. There is no universal default—the answer is situational.
+* **Matters most at:** every stage—and it is usually the *first* axis to force a decision, long before a stage rung demands a new mechanism.
+
 ---
 
 ## Part III — Post-Mortems & Empirical Experience
@@ -198,7 +222,7 @@ Theory explains how systems *should* work; experience shows how they *actually* 
 Whenever analyzing an engineering migration or incident post-mortem, systematically extract answers to these 5 audit questions:
 
 1. **The Primary Trigger Metric:** What exact SLA/SLO breach forced the migration or rewrite? (e.g., p99 read latency > 2s, compaction stalls, disk I/O saturation).
-2. **The Mechanical Cause of Failure:** Why did the existing system break down at a physical/hardware level? (e.g., B-Tree index size exceeding RAM, GC pauses, write amplification).
+2. **The Mechanical Cause of Failure:** Why did the existing system break down at a physical/hardware level? (e.g., B-Tree index size exceeding RAM, GC pauses, write amplification, tombstone pressure or table bloat from expired data).
 3. **The Evaluated Alternatives:** What alternative architectures or databases were evaluated, and why were they rejected?
 4. **The Zero-Downtime Migration Strategy:** How was the transition executed without customer interruption? (e.g., dual-writing, shadow traffic validation, backfill pipelines, canary deployments).
 5. **The New Trade-offs Introduced:** What new operational complexity, resource requirements, or consistency guarantees were accepted in exchange?
@@ -252,3 +276,11 @@ Practice whiteboarding system design problems using a structured 3-step audit:
 * [Site Reliability Engineering](https://sre.google/sre-book/table-of-contents/) — Google SRE Book.
 * [Redis Documentation](https://redis.io/docs/latest/develop/) — cache eviction policies, persistence, and cluster architecture.
 * [Microservices.io Pattern Catalog](https://microservices.io/) — transactional outbox, saga, and other microservice patterns.
+
+---
+
+## Closing Note: The Boundary This Roadmap Draws
+
+The ladder above is scoped to *general* distributed systems. One adjacent regime is deliberately excluded: AI / LLM serving. GPU-memory limits (KV-Cache sizing), tensor parallelism, and vector-database indexing are a distinct scaling regime with their own physics—too specific to be a rung of this evolution ladder, and closer to a separate discipline than to another pattern you could reach from Stage 5.
+
+This exclusion is intentional, not a gap. If you look at a problem and find no rung on this ladder, that is the correct answer rather than an omission: the general playbook has a boundary, and knowing where it ends is part of mastering it. (The one exception that *does* generalize: vector-database indexing is a specialization of the storage-engine trade-off in II.3—the serving regime around it is not.)
