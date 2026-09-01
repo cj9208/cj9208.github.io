@@ -1,7 +1,7 @@
 ---
 title: "AI-Era Engineering Careers"
 date: 2026-07-18T10:01:28+08:00
-lastmod: 2026-08-29T20:53:49+08:00
+lastmod: 2026-09-01T13:04:28+08:00
 draft: false
 
 categories:
@@ -40,6 +40,7 @@ slug: "career-development"
 * [从原子的深渊到微观的围城：为什么我不建议高智商大脑重仓半导体？]({{< relref "./从原子的深渊到微观的围城-为什么我不建议高智商大脑重仓半导体.md" >}})
 
 ## Engineering Method
+* [技术的终点是解决问题：从“硬核崇拜”到系统设计与组织管理]({{< relref "./技术的终点是解决问题-从硬核崇拜到系统设计与组织管理.md" >}})
 * [实战诊断 —— 某企业 AI Platform 的正确蓝图与五重反模式解构]({{< relref "./实战诊断-某企业AI-Platform的正确蓝图与五重反模式解构.md" >}})
 * [龙舟破局：从"水上苦力"到"动作工程调试"]({{< relref "./龙舟破局-从水上苦力到动作工程调试.md" >}})
 * [The State Machine of Technical Research: Balancing Exploration and Bounded Execution]({{< relref "./The-State-Machine-of-Technical-Research-Balancing-Exploration-and-Bounded-Execution.md" >}})
