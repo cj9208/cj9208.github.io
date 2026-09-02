@@ -1,7 +1,7 @@
 ---
 title: "AI Study"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-09-01T22:21:00+08:00
+lastmod: 2026-09-02T23:42:00+08:00
 draft: false
 
 description: "AI 与大模型的自学笔记与分析：Agent harness 工程、评测治理、算力经济学与 RAG 编排架构。"
@@ -32,7 +32,8 @@ slug: "ai-study"
 * [The-Search-Pathology-Why-Scaling-Test-Time-Compute-Can-Degrade-Code-Agent-Quality]({{< relref "./The-Search-Pathology-Why-Scaling-Test-Time-Compute-Can-Degrade-Code-Agent-Quality.md" >}})
 
 ## System Design
-* [System Design 学习地图]({{< relref "./system_design/_index.md" >}})
+* [Architecture Learning Map: Machine, Trust & Coordination Regimes]({{< relref "./system_design/_index.md" >}})
+  System design 不只是"机器到极限怎么办"，还回答"外部要你自证时怎么办（Trust/信任与合规 regime）"与"内部协调成本爆炸时怎么办（Coordination/组织架构 regime）"。
 
 ## Compute Economics / 算力经济学
 * [算力经济学：从历史沙盘推演AI的百倍通缩终局]({{< relref "./算力经济学-从历史沙盘推演AI的百倍通缩终局.md" >}})

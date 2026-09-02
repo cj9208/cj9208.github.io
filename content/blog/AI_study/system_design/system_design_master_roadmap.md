@@ -1,7 +1,7 @@
 ---
 title: "System Design Master Roadmap: Evolutionary Architecture & Complete Learning Blueprint"
 date: 2026-09-01T21:54:00+08:00
-lastmod: 2026-09-02T00:19:00+08:00
+lastmod: 2026-09-02T23:42:00+08:00
 draft: false
 
 categories:
@@ -284,3 +284,8 @@ Practice whiteboarding system design problems using a structured 3-step audit:
 The ladder above is scoped to *general* distributed systems. One adjacent regime is deliberately excluded: AI / LLM serving. GPU-memory limits (KV-Cache sizing), tensor parallelism, and vector-database indexing are a distinct scaling regime with their own physics—too specific to be a rung of this evolution ladder, and closer to a separate discipline than to another pattern you could reach from Stage 5.
 
 This exclusion is intentional, not a gap. If you look at a problem and find no rung on this ladder, that is the correct answer rather than an omission: the general playbook has a boundary, and knowing where it ends is part of mastering it. (The one exception that *does* generalize: vector-database indexing is a specialization of the storage-engine trade-off in II.3—the serving regime around it is not.)
+
+**Two further boundaries are deliberately drawn around the *trigger*, not the technology.** This roadmap answers *scale* bottlenecks: every rung is workload-driven. Two sibling articles cover the regimes that arrive through different triggers—and they compose with this ladder rather than replace it:
+
+* **The Trust Regime** ([Architecting Systems That Must Prove Themselves](https://cj9208.github.io/blog/ai_study/system_design/trust-governance-regime/)): obligations, not load, are the trigger—regulators, auditors, courts and enterprise clients demand evidence. It filters *which poles of Part II are legal*; the mechanisms it lands on (audit pipelines as event streams, immutable stores, RPO/RTO contracts) are this ladder's own machinery pointed at proof instead of throughput.
+* **The Coordination Regime** ([Conway's Law, Cognitive Load & the Platform](https://cj9208.github.io/blog/ai_study/system_design/coordination-regime/)): teams, not servers, are the bottleneck—the Stage 2→3 trigger ("multi-team collisions") was organizational before it was technical. Team topology decides which machine patterns can actually ship; the org ladder in that article is this ladder's Stage-0→5 read as team growth.
