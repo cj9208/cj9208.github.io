@@ -1,7 +1,7 @@
 ---
 title: "Presentations 分享记录"
 date: 2026-08-23T09:16:26+08:00
-lastmod: 2026-08-23T09:30:00+08:00
+lastmod: 2026-09-05T23:37:00+08:00
 draft: false
 
 description: "在外部 AI 社区做过的一些 presentation 的记录。"
@@ -16,6 +16,30 @@ slug: "presentations"
 ---
 
 这里记录我在外部 AI 社区做过的分享（presentation），包含每次分享的主题、时间、场合、内容大纲、slides/原文链接，以及相关的博客文章。
+
+## beyond direct answer
+
+* **时间**：2026-09-05
+* **场合**：[EZ.Encoder Academy](https://www.ez-encoder.com/) 社区 · 自我介绍（say-hello）板块
+* **原文链接**：https://www.ez-encoder.com/c/say-hello/beyond-direct-answer
+* **slides**：[2026-9-13-Jack-CS229A-Part4-and-...](https://assets-v2.circle.so/f599kdps4ezya15964vbet9ohjk9)（1.35 MB）
+* **内容大纲**：
+
+1. 历史回顾：ReAct、coding agent、multi-step reasoning 等方向本质上仍是让模型"多想想"，感兴趣可看之前的分享
+2. 两个 agent 的例子——都做 skill 学习，但验证器（verifier）不同，优化的其他部分也不同
+   * wald：选择 **human feedback** 作为 verifier，剩下的就是优化其他部分——降低人类写 feedback 的难度，让 LLM 学习人类如何理解 human feedback，从而最大化利用少量数据
+   * google wiki：选择 **LLM as a judge**，剩下的就是优化 context（不可能把所有历史塞进 context，会产生错误模式）；解法是不记录具体案例，而是把案例抽象成一条条经验，从而记住更多样例、不容易遗忘
+3. airbnb 的经验：GenAI 落地和传统 ML 一样是工程问题，其中最重要的是 **eval pipeline**——上面两个例子没提到的关键：最后怎么上线，核心还是看评估
+   * wald：数据稀少，为防止 overfit，倾向原则性的东西，而不是特定规则
+   * google：数据太多，怕遗忘，所以压缩成简短的经验，生成 skill 不易遗漏
+   * 两者上线前都会跑 eval pipeline，确保更新后的 skill 真的更好——与 airbnb 的做法及传统 ML 一致
+4. 个人建议
+   * 职业要去有增量的地方：试错机会多、杠杆大（见 [存量陷阱与增量现实：基于"个人价值闭环"的职业系统选择](https://cj9208.github.io/blog/ai_era_engineering_careers/stagnation-vs-increment-career-choice/)）
+   * 学习技术基础而不是 buzzwords：上面三家公司的经验本质是一套系统设计案例——选择什么 verifier、eval 定义系统目标、再针对性优化系统其他设计；这也是我下个阶段系统设计计划的原因（见 [System Design Master Roadmap: Evolutionary Architecture & Complete Learning Blueprint](https://cj9208.github.io/blog/ai_study/system_design/system-design-master-roadmap/)）
+
+* **相关博客文章**：
+  * [存量陷阱与增量现实：基于"个人价值闭环"的职业系统选择](https://cj9208.github.io/blog/ai_era_engineering_careers/stagnation-vs-increment-career-choice/)
+  * [System Design Master Roadmap: Evolutionary Architecture & Complete Learning Blueprint](https://cj9208.github.io/blog/ai_study/system_design/system-design-master-roadmap/)
 
 ## Agentic Post Training 分享总结
 
