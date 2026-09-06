@@ -1,7 +1,7 @@
 ---
 title: "Presentations 分享记录"
 date: 2026-08-23T09:16:26+08:00
-lastmod: 2026-09-05T23:37:00+08:00
+lastmod: 2026-09-06T09:20:00+08:00
 draft: false
 
 description: "在外部 AI 社区做过的一些 presentation 的记录。"
@@ -20,8 +20,8 @@ slug: "presentations"
 ## beyond direct answer
 
 * **时间**：2026-09-05
-* **场合**：[EZ.Encoder Academy](https://www.ez-encoder.com/) 社区 · 自我介绍（say-hello）板块
-* **原文链接**：https://www.ez-encoder.com/c/say-hello/beyond-direct-answer
+* **场合**：[EZ.Encoder Academy](https://www.ez-encoder.com/) 社区 · 互需共创板块
+* **原文链接**：https://www.ez-encoder.com/c/492a6d/beyond-direct-answer
 * **slides**：[2026-9-13-Jack-CS229A-Part4-and-...](https://assets-v2.circle.so/f599kdps4ezya15964vbet9ohjk9)（1.35 MB）
 * **内容大纲**：
 
