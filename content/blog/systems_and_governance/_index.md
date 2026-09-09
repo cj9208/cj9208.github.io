@@ -1,7 +1,7 @@
 ---
 title: "Systems, Incentives, and Governance"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-09-07T12:31:08+08:00
+lastmod: 2026-09-09T22:43:05+08:00
 draft: false
 
 description: "A section on systems, incentives, trust, welfare, and governance across teams, firms, and public institutions."
@@ -71,6 +71,7 @@ tags:
 ## Political Economy
 * [全球服务器列表：宏观抉择（Trade-off）与制度摩擦（Friction）的双重精算]({{< relref "./全球服务器列表-宏观抉择Trade-off与制度摩擦Friction的双重精算.md" >}})
 * [新加坡定居：是技术中产的天堂，还是极致精算的围城？]({{< relref "./新加坡定居-是技术中产的天堂还是极致精算的围城.md" >}})
+* [精英择优与阶层分流：中产视角下的新加坡社会筛选机制解析]({{< relref "./精英择优与阶层分流-中产视角下的新加坡社会筛选机制解析.md" >}})
 * [巨象破局：中美结构性博弈的底层逻辑与非线性出路]({{< relref "./巨象破局-中美结构性博弈的底层逻辑与非线性出路.md" >}})
 * [《"工业第一"会自动结出"科学霸权"吗？》]({{< relref "./工业第一会自动结出科学霸权吗.md" >}})
 * [建制化精英的致命回旋：为什么全球最聪明的人总在接周期的盘？]({{< relref "./建制化精英的致命回旋-为什么全球最聪明的人总在接周期的盘.md" >}})
