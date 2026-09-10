@@ -1,7 +1,7 @@
 ---
 title: "Systems, Incentives, and Governance"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-09-09T22:43:05+08:00
+lastmod: 2026-09-10T12:05:28+08:00
 draft: false
 
 description: "A section on systems, incentives, trust, welfare, and governance across teams, firms, and public institutions."
@@ -49,6 +49,7 @@ tags:
 * [赛博地主的哭穷戏法：被黑箱算法"格式化"的中国实体与消费尊严]({{< relref "./赛博地主的哭穷戏法-被黑箱算法格式化的中国实体与消费尊严.md" >}})
 * [个体风控与系统鉴权：“社交平台虚假身份欺诈”的 Post-Mortem 复盘]({{< relref "./个体风控与系统鉴权-社交平台虚假身份欺诈的Post-Mortem复盘.md" >}})
 * [声明式与过程式：系统工程视角下“人治”与“法治”的四大差异]({{< relref "./声明式与过程式-系统工程视角下人治与法治的四大差异.md" >}})
+* [免于提防的自由：论“默认安全”与中产社会的制度成本]({{< relref "./免于提防的自由-论默认安全与中产社会的制度成本.md" >}})
 
 ## Organizational Systems
 * [架构的宿命：康威定律下的组织基因与系统演进]({{< relref "./架构的宿命-康威定律下的组织基因与系统演进.md" >}})
