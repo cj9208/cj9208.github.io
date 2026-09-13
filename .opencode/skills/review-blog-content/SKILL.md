@@ -77,6 +77,11 @@ description: Review blog articles under content/blog by first classifying the ar
 > `sync-subfolder-links` 的 `--apply` 是机械插入，插入位置可能不理想；写完后务必检查 `_index.md` 的分组归属，必要时用 `edit` 手工调整。
 
 4. **lastmod**：任何对 `content/` 下文章的实质性修改，必须把其 front matter `lastmod` 更新到当前实际时间（精确到分钟/秒）
+5. **搜索索引**：合规修复改了 front matter/文件名/互引链接后，刷新 `search-blog-articles` 的检索索引（否则主题检索会漏掉或残留）：
+
+   ```bash
+   python .opencode\skills\search-blog-articles\scripts\build-index.py
+   ```
 
 ## 四、编码与格式注意（重要）
 

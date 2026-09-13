@@ -71,7 +71,17 @@ Always `skill`-load them dynamically so each runs with its own latest instructio
 
 若用户在子 skill 过程中提问，在该子 skill 内解决后再继续。
 
-### 4. Completion
+### 4. Refresh search index
+
+内容已改动（新增/重命名/改 front matter/改互引链接），刷新 `search-blog-articles` 的检索索引，避免检索漏掉新文章或残留旧路径：
+
+```bash
+python .opencode\skills\search-blog-articles\scripts\build-index.py
+```
+
+完成后提醒用户：本次改动若提交，应一并提交 `.opencode\skills\search-blog-articles\index.json`。
+
+### 5. Completion
 
 pipeline 结束后运行 `git status --short` 展示结果。
 
