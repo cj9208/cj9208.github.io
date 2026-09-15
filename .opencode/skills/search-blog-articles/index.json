@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-09-14T21:16:15+08:00",
+ "generated_at": "2026-09-15T22:27:32+08:00",
  "base_url": "https://cj9208.github.io/blog/",
- "source_fingerprint": "141a2ed498fb27e1b4ceb3942bb96a6a76cdc724",
- "count": 220,
+ "source_fingerprint": "12952c2c8b13198b2fd7c5bc088e0f1e2116f84c",
+ "count": 221,
  "articles": [
   {
    "title": "AI 时代的商业困境：从分发共赢到“答案经济”的结构性矛盾",
@@ -1573,6 +1573,32 @@
    "out_links": []
   },
   {
+   "title": "拆穿“父爱”：融资市的控制逻辑",
+   "slug": "financing-market-control-logic",
+   "url": "https://cj9208.github.io/blog/investment/financing-market-control-logic/",
+   "path": "investment/financing-market-control-logic",
+   "dir": "content/blog/investment",
+   "section": "investment",
+   "categories": [
+    "Investment"
+   ],
+   "tags": [
+    "Investor Protection",
+    "Mechanism Design",
+    "Market Structure"
+   ],
+   "date": "2026-09-15T22:10:27+08:00",
+   "lastmod": "2026-09-15T22:27:25+08:00",
+   "excerpt": "每当市场剧烈波动或散户大面积亏损，主流解读往往归因于“政策失灵”“监管经验不足”或“市场培育阶段的阵痛”。这种“庇护性叙事”把监管者设定为一位关切散户的“善意家长”，将工具限制与价格管制解释为防止散户盲目受创的保驾护航。但它遮蔽了资本市场的真实底层功能：一个高效、低成本的股权融资与风险转移平台。市场的主导功能并非财富管理型的“投资市”，而是服务于企业定向输血与政策引导的“融资市”。 “父爱式监管”",
+   "out_links": [
+    "systems_and_governance/chinese_government/all-in-war-of-attrition",
+    "investment/first-principles-finance-guide",
+    "investment/understanding-value-investing",
+    "investment/financial-products-mechanism-design",
+    "investment/momentum-investing-fundamental-illusion"
+   ]
+  },
+  {
    "title": "从第一性原理出发：金融割韭菜的时空降维指南",
    "slug": "first-principles-finance-guide",
    "url": "https://cj9208.github.io/blog/investment/first-principles-finance-guide/",
@@ -1588,9 +1614,11 @@
     "Space-Time Framework"
    ],
    "date": "2026-07-19T11:12:51+08:00",
-   "lastmod": "2026-08-17T14:41:13+08:00",
+   "lastmod": "2026-09-15T22:14:48+08:00",
    "excerpt": "如果剥离掉现代金融体系中那些令人眼花缭乱的数学公式、衍生品外衣和刻意制造的专业术语，你会发现金融世界的底层结构和物理学一样，是一门关于“时空”的科学。 从第一性原理出发，现实世界中任何真正的财富、资产或现金流，都可以抽象为一个时空的复合函数： 其中，$s$（Space）代表空间坐标，即“价值由谁持有、由谁控制、存放在哪里”；$t$（Time）代表时间坐标，即“价值在哪个时间点变现、消耗或折旧”。",
-   "out_links": []
+   "out_links": [
+    "investment/financing-market-control-logic"
+   ]
   },
   {
    "title": "范式的裂痕：周五暴跌背后的“财政主导”叙事与系统性脆弱",
@@ -2776,9 +2804,11 @@
     "Market Structure"
    ],
    "date": "2026-05-27T23:09:23+08:00",
-   "lastmod": "2026-08-23T21:39:10+08:00",
+   "lastmod": "2026-09-15T22:14:48+08:00",
    "excerpt": "在商业舆论中，“长期主义”、“穿越牛熊”、“做时间的朋友”常年被奉为座右铭。然而切入现实会发现，无论是金融市场里基金经理集体“梭哈赛道”拉规模，还是实体产业中类似光伏、锂电行业“巨亏之下比赛谁更能熬”的惨烈内耗，整个生态似乎都在不可逆地滑向短期套利与非理性博弈。 这绝非因为身处其中的精英们不懂巴菲特，也不是因为企业家缺乏战略定力。当全社会的聪明人都在做同一件看似荒谬的事情时，这一定不是道德或智商的",
-   "out_links": []
+   "out_links": [
+    "investment/financing-market-control-logic"
+   ]
   },
   {
    "title": "威权治理系统总纲：从历史大分流到终局死锁",
