@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-09-15T22:27:32+08:00",
+ "generated_at": "2026-09-17T17:16:05+08:00",
  "base_url": "https://cj9208.github.io/blog/",
- "source_fingerprint": "12952c2c8b13198b2fd7c5bc088e0f1e2116f84c",
- "count": 221,
+ "source_fingerprint": "e8ace73d956be549858f7f9a3e5e7b4beddfc3f6",
+ "count": 222,
  "articles": [
   {
    "title": "AI 时代的商业困境：从分发共赢到“答案经济”的结构性矛盾",
@@ -530,6 +530,38 @@
    "out_links": [
     "ai_era_engineering_careers/distributed-symbiosis-tit-for-tat",
     "systems_and_governance/corporate/google-technical-bureaucracy"
+   ]
+  },
+  {
+   "title": "信任的终结与重生：当简历的生成成本归零",
+   "slug": "proof-of-work-trust-recruitment-endgame",
+   "url": "https://cj9208.github.io/blog/ai_era_engineering_careers/proof-of-work-trust-recruitment-endgame/",
+   "path": "ai_era_engineering_careers/proof-of-work-trust-recruitment-endgame",
+   "dir": "content/blog/ai_era_engineering_careers",
+   "section": "ai_era_engineering_careers",
+   "categories": [
+    "AI-Era Engineering Careers"
+   ],
+   "tags": [
+    "Byzantine Fault",
+    "Trust Architecture",
+    "Social Engineering",
+    "Labor Market",
+    "Game Theory",
+    "Agent"
+   ],
+   "date": "2026-09-15T21:40:00+08:00",
+   "lastmod": "2026-09-17T17:09:02+08:00",
+   "excerpt": "招聘市场正在经历一场典型的技术军备竞赛。求职者用 Agent 批量生成定制简历并自动投递，单次\"攻势\"的边际成本只有几分钱和几秒钟；企业若完全依赖人工筛选，吞吐量存在物理上限。当生成成本趋近于零，任何\"限制技术\"的呼吁都退化为道德约束，在博弈中瞬间失效。 本文不讨论某一方 Agent 的胜负，而是把这场博弈拆成三段：囚徒困境决定了军备竞赛的必然；生成成本归零让真实信号被噪声淹没、鉴别失效；而当鉴别",
+   "out_links": [
+    "systems_and_governance/byzantine-trust-reconstruction",
+    "systems_and_governance/declarative-imperative-governance",
+    "systems_and_governance/social-platform-fraud-postmortem",
+    "systems_and_governance/diploma-opportunity-cost",
+    "systems_and_governance/goodharts-law-protocol-reconstruction",
+    "systems_and_governance/chinese_government/breaking-involution-spec-fixed-logic",
+    "systems_and_governance/talent-screening-exam-culture",
+    "ai_era_engineering_careers/distributed-symbiosis-tit-for-tat"
    ]
   },
   {
