@@ -1,8 +1,8 @@
 ---
 title: "DevOps And Infrastructure Family"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-27T09:46:25+08:00
-draft: true
+lastmod: 2026-09-19T10:35:00+08:00
+draft: false
 
 description: "DevOps and infrastructure services define environments, package artifacts, and deliver changes safely and repeatedly."
 summary: "DevOps and infrastructure services define environments, package artifacts, and deliver changes safely and repeatedly."
@@ -13,7 +13,7 @@ tags:
   - "AWS"
   - "Solution Architecture"
 
-slug: "09_DevOps-and-Infrastructure-Family"
+slug: "devops-and-infrastructure-family"
 ---
 ## Family Role
 
@@ -91,7 +91,7 @@ DevOps and infrastructure services define environments, package artifacts, and d
 
 ## Per-Service Drill-Down
 
-Use [`00_Architect-Study-Template.md`]({{< relref "../00_Architect-Study-Template.md" >}}) for:
+Use [`architect-study-template`]({{< relref "../00_Architect-Study-Template.md" >}}) for:
 
 - `CloudFormation`
 - `CDK`
@@ -105,7 +105,7 @@ Use [`00_Architect-Study-Template.md`]({{< relref "../00_Architect-Study-Templat
 
 | Service | Why It Belongs | Link | Status |
 |---|---|---|---|
-| `CloudFormation` | AWS-native IaC foundation and drift-control baseline | [`cloudformation.md`]({{< relref "./cloudformation.md" >}}) | done |
-| `CDK` | Main higher-level code abstraction for AWS-native IaC | [`cdk.md`]({{< relref "./cdk.md" >}}) | done |
-| `ECR` | Main artifact-registry and container supply-chain baseline for AWS workloads | [`ecr.md`]({{< relref "./ecr.md" >}}) | done |
+| `CloudFormation` | AWS-native IaC foundation and drift-control baseline | [`cloudformation`]({{< relref "./cloudformation.md" >}}) | done |
+| `CDK` | Main higher-level code abstraction for AWS-native IaC | [`cdk`]({{< relref "./cdk.md" >}}) | done |
+| `ECR` | Main artifact-registry and container supply-chain baseline for AWS workloads | [`ecr`]({{< relref "./ecr.md" >}}) | done |
 | `CodePipeline` | Add when delivery-pipeline design becomes important enough to deserve its own flagship note | - | conditional |

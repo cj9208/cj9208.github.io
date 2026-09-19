@@ -1,8 +1,8 @@
 ---
 title: "Observability And Operations Family"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-27T09:46:25+08:00
-draft: true
+lastmod: 2026-09-19T10:35:00+08:00
+draft: false
 
 description: "Observability and operations services provide metrics, logs, tracing, auditing, configuration visibility, and operational automation."
 summary: "Observability and operations services provide metrics, logs, tracing, auditing, configuration visibility, and operational automation."
@@ -13,7 +13,7 @@ tags:
   - "AWS"
   - "Solution Architecture"
 
-slug: "07_Observability-and-Operations-Family"
+slug: "observability-and-operations-family"
 ---
 ## Family Role
 
@@ -91,7 +91,7 @@ Observability and operations services provide metrics, logs, tracing, auditing, 
 
 ## Per-Service Drill-Down
 
-Use [`00_Architect-Study-Template.md`]({{< relref "../00_Architect-Study-Template.md" >}}) for:
+Use [`architect-study-template`]({{< relref "../00_Architect-Study-Template.md" >}}) for:
 
 - `CloudWatch`
 - `CloudTrail`
@@ -103,8 +103,8 @@ Use [`00_Architect-Study-Template.md`]({{< relref "../00_Architect-Study-Templat
 
 | Service | Why It Belongs | Link | Status |
 |---|---|---|---|
-| `CloudWatch` | Operational monitoring and alerting baseline | [`cloudwatch.md`]({{< relref "./cloudwatch.md" >}}) | done |
-| `CloudTrail` | API-audit and change-forensics baseline | [`cloudtrail.md`]({{< relref "./cloudtrail.md" >}}) | done |
-| `Systems Manager` | Core fleet-operations and automation toolbox | [`systems-manager.md`]({{< relref "./systems-manager.md" >}}) | done |
-| `AWS Config` | Main drift and compliance-visibility layer | [`aws-config.md`]({{< relref "./aws-config.md" >}}) | done |
+| `CloudWatch` | Operational monitoring and alerting baseline | [`cloudwatch`]({{< relref "./cloudwatch.md" >}}) | done |
+| `CloudTrail` | API-audit and change-forensics baseline | [`cloudtrail`]({{< relref "./cloudtrail.md" >}}) | done |
+| `Systems Manager` | Core fleet-operations and automation toolbox | [`systems-manager`]({{< relref "./systems-manager.md" >}}) | done |
+| `AWS Config` | Main drift and compliance-visibility layer | [`aws-config`]({{< relref "./aws-config.md" >}}) | done |
 | `X-Ray` | Add when distributed-tracing depth becomes central enough to justify a dedicated flagship note | - | conditional |

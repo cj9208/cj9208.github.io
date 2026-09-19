@@ -1,8 +1,8 @@
 ---
 title: "Compute Family"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-27T09:46:25+08:00
-draft: true
+lastmod: 2026-09-19T10:35:00+08:00
+draft: false
 
 description: "Compute services run application logic. The main architect question is where code should run and how much operational responsibility the team should keep."
 summary: "Compute services run application logic. The main architect question is where code should run and how much operational responsibility the team should keep."
@@ -13,7 +13,7 @@ tags:
   - "AWS"
   - "Solution Architecture"
 
-slug: "01_Compute-Family"
+slug: "compute-family"
 ---
 ## Family Role
 
@@ -98,7 +98,7 @@ Compute services run application logic. The main architect question is where cod
 
 ## Per-Service Drill-Down
 
-Use [`00_Architect-Study-Template.md`]({{< relref "../00_Architect-Study-Template.md" >}}) for:
+Use [`architect-study-template`]({{< relref "../00_Architect-Study-Template.md" >}}) for:
 
 - `EC2`
 - `Lambda`
@@ -112,7 +112,7 @@ Use [`00_Architect-Study-Template.md`]({{< relref "../00_Architect-Study-Templat
 
 | Service | Why It Belongs | Link | Status |
 |---|---|---|---|
-| `Lambda` | Best starting point for event-driven, serverless, and elasticity-first compute decisions | [`lambda.md`]({{< relref "./lambda.md" >}}) | done |
-| `ECS` | Best default for modern AWS-native container platforms without Kubernetes overhead | [`ecs.md`]({{< relref "./ecs.md" >}}) | done |
-| `EC2` | Still necessary for host-level control, legacy workloads, and understanding the lowest managed compute layer | [`ec2.md`]({{< relref "./ec2.md" >}}) | done |
+| `Lambda` | Best starting point for event-driven, serverless, and elasticity-first compute decisions | [`lambda`]({{< relref "./lambda.md" >}}) | done |
+| `ECS` | Best default for modern AWS-native container platforms without Kubernetes overhead | [`ecs`]({{< relref "./ecs.md" >}}) | done |
+| `EC2` | Still necessary for host-level control, legacy workloads, and understanding the lowest managed compute layer | [`ec2`]({{< relref "./ec2.md" >}}) | done |
 | `EKS` | Include only when Kubernetes becomes a real operating model requirement rather than optional complexity | conditional | conditional |

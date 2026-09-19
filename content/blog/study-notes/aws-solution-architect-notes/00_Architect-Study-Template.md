@@ -1,8 +1,8 @@
 ---
 title: "Architect Study Template"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-27T09:46:25+08:00
-draft: true
+lastmod: 2026-09-19T10:22:00+08:00
+draft: false
 
 description: "Use this template for any AWS service."
 summary: "Use this template for any AWS service."
@@ -13,7 +13,7 @@ tags:
   - "AWS"
   - "Solution Architecture"
 
-slug: "00_Architect-Study-Template"
+slug: "architect-study-template"
 ---
 Use this template for any AWS service.
 

@@ -1,8 +1,8 @@
 ---
 title: "IAM Service Deep Dive"
 date: 2026-07-16T08:40:18+08:00
-lastmod: 2026-07-27T09:46:25+08:00
-draft: true
+lastmod: 2026-09-19T10:22:00+08:00
+draft: false
 
 description: "An expert-level architect deep dive for AWS IAM."
 summary: "An expert-level architect deep dive for AWS IAM."
@@ -15,7 +15,7 @@ tags:
   - "IAM"
   - "Security"
 
-slug: "14_IAM-Service-Deep-Dive"
+slug: "iam-service-deep-dive"
 ---
 Use this as a flagship expert-level note. `IAM` is not just a permissions service. It is the control surface that determines blast radius, workload trust, and operational safety across AWS.
 

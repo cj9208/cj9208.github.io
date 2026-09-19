@@ -1,8 +1,8 @@
 ---
 title: "Step Functions Service Deep Dive"
 date: 2026-07-16T09:29:12+08:00
-lastmod: 2026-07-27T09:46:25+08:00
-draft: true
+lastmod: 2026-09-19T10:12:00+08:00
+draft: false
 
 description: "An expert-level architect deep dive for AWS Step Functions."
 summary: "An expert-level architect deep dive for AWS Step Functions."

@@ -1,8 +1,8 @@
 ---
 title: "Security And Identity Family"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-27T09:46:25+08:00
-draft: true
+lastmod: 2026-09-19T10:35:00+08:00
+draft: false
 
 description: "Security and identity services control access, protect data, manage secrets, and improve security posture."
 summary: "Security and identity services control access, protect data, manage secrets, and improve security posture."
@@ -13,7 +13,7 @@ tags:
   - "AWS"
   - "Solution Architecture"
 
-slug: "05_Security-and-Identity-Family"
+slug: "security-and-identity-family"
 ---
 ## Family Role
 
@@ -99,7 +99,7 @@ Security and identity services control access, protect data, manage secrets, and
 
 ## Per-Service Drill-Down
 
-Use [`00_Architect-Study-Template.md`]({{< relref "../00_Architect-Study-Template.md" >}}) for:
+Use [`architect-study-template`]({{< relref "../00_Architect-Study-Template.md" >}}) for:
 
 - `IAM`
 - `IAM Identity Center`
@@ -114,8 +114,8 @@ Use [`00_Architect-Study-Template.md`]({{< relref "../00_Architect-Study-Templat
 
 | Service | Why It Belongs | Link | Status |
 |---|---|---|---|
-| `IAM` | Core authorization and trust-boundary service for all AWS design | [`iam.md`]({{< relref "./iam.md" >}}) | done |
-| `KMS` | Core key-governance service for encryption ownership and blast radius | [`kms.md`]({{< relref "./kms.md" >}}) | done |
-| `Secrets Manager` | Main secret-lifecycle service for application credentials and rotation | [`secrets-manager.md`]({{< relref "./secrets-manager.md" >}}) | done |
-| `IAM Identity Center` | Main workforce-access model for multi-account AWS environments | [`iam-identity-center.md`]({{< relref "./iam-identity-center.md" >}}) | done |
+| `IAM` | Core authorization and trust-boundary service for all AWS design | [`iam`]({{< relref "./iam.md" >}}) | done |
+| `KMS` | Core key-governance service for encryption ownership and blast radius | [`kms`]({{< relref "./kms.md" >}}) | done |
+| `Secrets Manager` | Main secret-lifecycle service for application credentials and rotation | [`secrets-manager`]({{< relref "./secrets-manager.md" >}}) | done |
+| `IAM Identity Center` | Main workforce-access model for multi-account AWS environments | [`iam-identity-center`]({{< relref "./iam-identity-center.md" >}}) | done |
 | `GuardDuty` | Add when detection maturity and security-operations workflow become a stronger focus than access and key fundamentals | - | conditional |

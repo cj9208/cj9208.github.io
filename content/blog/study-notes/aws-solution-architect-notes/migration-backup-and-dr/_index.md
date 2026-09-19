@@ -1,8 +1,8 @@
 ---
 title: "Migration Backup And DR Family"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-27T09:46:25+08:00
-draft: true
+lastmod: 2026-09-19T10:35:00+08:00
+draft: false
 
 description: "Migration, backup, and disaster recovery services move workloads into AWS and help protect and restore them."
 summary: "Migration, backup, and disaster recovery services move workloads into AWS and help protect and restore them."
@@ -13,7 +13,7 @@ tags:
   - "AWS"
   - "Solution Architecture"
 
-slug: "10_Migration-Backup-and-DR-Family"
+slug: "migration-backup-and-dr-family"
 ---
 ## Family Role
 
@@ -91,7 +91,7 @@ Migration, backup, and disaster recovery services move workloads into AWS and he
 
 ## Per-Service Drill-Down
 
-Use [`00_Architect-Study-Template.md`]({{< relref "../00_Architect-Study-Template.md" >}}) for:
+Use [`architect-study-template`]({{< relref "../00_Architect-Study-Template.md" >}}) for:
 
 - `AWS Backup`
 - `DMS`
@@ -103,7 +103,7 @@ Use [`00_Architect-Study-Template.md`]({{< relref "../00_Architect-Study-Templat
 
 | Service | Why It Belongs | Link | Status |
 |---|---|---|---|
-| `AWS Backup` | Central backup-governance baseline across AWS workloads | [`aws-backup.md`]({{< relref "./aws-backup.md" >}}) | done |
-| `Elastic Disaster Recovery` | Main server-style disaster-recovery pattern when app-native DR is not yet the answer | [`elastic-disaster-recovery.md`]({{< relref "./elastic-disaster-recovery.md" >}}) | done |
+| `AWS Backup` | Central backup-governance baseline across AWS workloads | [`aws-backup`]({{< relref "./aws-backup.md" >}}) | done |
+| `Elastic Disaster Recovery` | Main server-style disaster-recovery pattern when app-native DR is not yet the answer | [`elastic-disaster-recovery`]({{< relref "./elastic-disaster-recovery.md" >}}) | done |
 | `DMS` | Add when database migration and replication become a stronger practical concern | - | conditional |
 | `Application Migration Service` | Add when rehosting and migration sequencing become central enough to deserve a dedicated flagship note | - | conditional |

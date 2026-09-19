@@ -1,8 +1,8 @@
 ---
 title: "Storage Family"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-27T09:46:25+08:00
-draft: true
+lastmod: 2026-09-19T10:35:00+08:00
+draft: false
 
 description: "Storage services persist data outside compute. The main architect question is what storage model matches the workload: object, block, file, or archive."
 summary: "Storage services persist data outside compute. The main architect question is what storage model matches the workload: object, block, file, or archive."
@@ -13,7 +13,7 @@ tags:
   - "AWS"
   - "Solution Architecture"
 
-slug: "02_Storage-Family"
+slug: "storage-family"
 ---
 ## Family Role
 
@@ -98,7 +98,7 @@ Storage services persist data outside compute. The main architect question is wh
 
 ## Per-Service Drill-Down
 
-Use [`00_Architect-Study-Template.md`]({{< relref "../00_Architect-Study-Template.md" >}}) for:
+Use [`architect-study-template`]({{< relref "../00_Architect-Study-Template.md" >}}) for:
 
 - `S3`
 - `EBS`
@@ -110,7 +110,7 @@ Use [`00_Architect-Study-Template.md`]({{< relref "../00_Architect-Study-Templat
 
 | Service | Why It Belongs | Link | Status |
 |---|---|---|---|
-| `S3` | Foundational object-storage service and the most important storage baseline in AWS | [`s3.md`]({{< relref "./s3.md" >}}) | done |
-| `EBS` | Essential for understanding block storage and EC2-attached stateful design | [`ebs.md`]({{< relref "./ebs.md" >}}) | done |
-| `EFS` | Key representative of shared POSIX-style file storage in AWS | [`efs.md`]({{< relref "./efs.md" >}}) | done |
+| `S3` | Foundational object-storage service and the most important storage baseline in AWS | [`s3`]({{< relref "./s3.md" >}}) | done |
+| `EBS` | Essential for understanding block storage and EC2-attached stateful design | [`ebs`]({{< relref "./ebs.md" >}}) | done |
+| `EFS` | Key representative of shared POSIX-style file storage in AWS | [`efs`]({{< relref "./efs.md" >}}) | done |
 | `FSx` variant | Add only when a workload truly depends on that file model, because the rest of the family is otherwise specialized | conditional | conditional |

@@ -1,8 +1,8 @@
 ---
 title: "Integration And Messaging Family"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-27T09:46:25+08:00
-draft: true
+lastmod: 2026-09-19T10:35:00+08:00
+draft: false
 
 description: "Integration and messaging services decouple systems, absorb spikes, route events, and coordinate workflows."
 summary: "Integration and messaging services decouple systems, absorb spikes, route events, and coordinate workflows."
@@ -13,7 +13,7 @@ tags:
   - "AWS"
   - "Solution Architecture"
 
-slug: "06_Integration-and-Messaging-Family"
+slug: "integration-and-messaging-family"
 ---
 ## Family Role
 
@@ -93,7 +93,7 @@ Integration and messaging services decouple systems, absorb spikes, route events
 
 ## Per-Service Drill-Down
 
-Use [`00_Architect-Study-Template.md`]({{< relref "../00_Architect-Study-Template.md" >}}) for:
+Use [`architect-study-template`]({{< relref "../00_Architect-Study-Template.md" >}}) for:
 
 - `SQS`
 - `SNS`
@@ -106,7 +106,7 @@ Use [`00_Architect-Study-Template.md`]({{< relref "../00_Architect-Study-Templat
 
 | Service | Why It Belongs | Link | Status |
 |---|---|---|---|
-| `SQS` | Default durable queue and async decoupling boundary | [`sqs.md`]({{< relref "./sqs.md" >}}) | done |
-| `EventBridge` | Main event-bus and rule-based fan-out model | [`eventbridge.md`]({{< relref "./eventbridge.md" >}}) | done |
-| `Step Functions` | Main durable orchestration model when workflow state matters | [`step-functions.md`]({{< relref "./step-functions.md" >}}) | done |
+| `SQS` | Default durable queue and async decoupling boundary | [`sqs`]({{< relref "./sqs.md" >}}) | done |
+| `EventBridge` | Main event-bus and rule-based fan-out model | [`eventbridge`]({{< relref "./eventbridge.md" >}}) | done |
+| `Step Functions` | Main durable orchestration model when workflow state matters | [`step-functions`]({{< relref "./step-functions.md" >}}) | done |
 | `SNS` | Add when fan-out and notification patterns need their own explicit architectural note | - | conditional |

@@ -1,8 +1,8 @@
 ---
 title: "Lambda Service Deep Dive"
 date: 2026-07-16T08:34:56+08:00
-lastmod: 2026-07-27T09:46:25+08:00
-draft: true
+lastmod: 2026-09-19T10:22:00+08:00
+draft: false
 
 description: "A completed architect-style deep dive for AWS Lambda."
 summary: "A completed architect-style deep dive for AWS Lambda."
@@ -14,7 +14,7 @@ tags:
   - "Solution Architecture"
   - "Lambda"
 
-slug: "12_Lambda-Service-Deep-Dive"
+slug: "lambda-service-deep-dive"
 ---
 Use this as a worked example of how to fill the study template.
 

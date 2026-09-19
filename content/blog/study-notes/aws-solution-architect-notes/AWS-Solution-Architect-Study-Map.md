@@ -1,8 +1,8 @@
 ---
 title: "AWS Solution Architect Study Map"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-09-01T22:32:00+08:00
-draft: true
+lastmod: 2026-09-19T10:35:00+08:00
+draft: false
 
 description: "A structured study map for building expert-level AWS architecture notes."
 summary: "A structured study map for building expert-level AWS architecture notes."
@@ -13,7 +13,7 @@ tags:
   - "AWS"
   - "Solution Architecture"
 
-slug: "AWS-Solution-Architect-Study-Map"
+slug: "study-map"
 ---
 This file is the detailed study guide for the AWS architecture notes collection.
 
@@ -62,17 +62,17 @@ Deeper service-level study is usually justified by constraints such as:
 
 | Family | Role | Main Architect Question | File |
 |---|---|---|---|
-| Compute | Run application logic | Where should code run? | [`compute/_index.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/compute/) |
-| Storage | Persist objects, blocks, and files | How should data be stored and accessed? | [`storage/_index.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/storage/) |
-| Databases | Persist and query application data | What data model and engine fit the workload? | [`databases/_index.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/databases/) |
-| Networking and Delivery | Connect, route, protect, and accelerate traffic | How do systems communicate and get exposed? | [`networking-and-delivery/_index.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/networking-and-delivery/) |
-| Security and Identity | Control access and protect assets | Who can do what, and how is risk reduced? | [`security-and-identity/_index.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/security-and-identity/) |
-| Integration and Messaging | Decouple systems and coordinate workflows | How should services exchange work and events? | [`integration-and-messaging/_index.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/integration-and-messaging/) |
-| Observability and Operations | Monitor, audit, automate, and operate | How will the platform be seen and run? | [`observability-and-operations/_index.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/observability-and-operations/) |
-| Analytics and Data Engineering | Process and analyze large-scale data | How is data ingested, transformed, queried, and visualized? | [`analytics-and-data-engineering/_index.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/analytics-and-data-engineering/) |
-| DevOps and Infrastructure | Define infra and deliver changes safely | How do teams build, deploy, and standardize systems? | [`devops-and-infrastructure/_index.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/devops-and-infrastructure/) |
-| Migration, Backup, and DR | Move, protect, and recover workloads | How do workloads migrate and recover? | [`migration-backup-and-dr/_index.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/migration-backup-and-dr/) |
-| End-User and Application Services | Add user-facing and app-level managed capabilities | Which managed app services reduce custom build effort? | [`end-user-and-application-services/_index.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/end-user-and-application-services/) |
+| Compute | Run application logic | Where should code run? | [`compute`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/compute/) |
+| Storage | Persist objects, blocks, and files | How should data be stored and accessed? | [`storage`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/storage/) |
+| Databases | Persist and query application data | What data model and engine fit the workload? | [`databases`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/databases/) |
+| Networking and Delivery | Connect, route, protect, and accelerate traffic | How do systems communicate and get exposed? | [`networking-and-delivery`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/networking-and-delivery/) |
+| Security and Identity | Control access and protect assets | Who can do what, and how is risk reduced? | [`security-and-identity`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/security-and-identity/) |
+| Integration and Messaging | Decouple systems and coordinate workflows | How should services exchange work and events? | [`integration-and-messaging`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/integration-and-messaging/) |
+| Observability and Operations | Monitor, audit, automate, and operate | How will the platform be seen and run? | [`observability-and-operations`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/observability-and-operations/) |
+| Analytics and Data Engineering | Process and analyze large-scale data | How is data ingested, transformed, queried, and visualized? | [`analytics-and-data-engineering`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/analytics-and-data-engineering/) |
+| DevOps and Infrastructure | Define infra and deliver changes safely | How do teams build, deploy, and standardize systems? | [`devops-and-infrastructure`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/devops-and-infrastructure/) |
+| Migration, Backup, and DR | Move, protect, and recover workloads | How do workloads migrate and recover? | [`migration-backup-and-dr`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/migration-backup-and-dr/) |
+| End-User and Application Services | Add user-facing and app-level managed capabilities | Which managed app services reduce custom build effort? | [`end-user-and-application-services`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/end-user-and-application-services/) |
 
 ## Main AWS Framework
 
@@ -291,38 +291,38 @@ Use these patterns to connect service-family decisions into end-to-end architect
 
 Use this template when going from overview to deep study:
 
-- [`00_Architect-Study-Template.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/00_architect-study-template/)
+- [`architect-study-template`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/architect-study-template/)
 
 Current flagship deep-dive examples:
 
-- [`compute/lambda.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/compute/12_lambda-service-deep-dive/)
-- [`storage/s3.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/storage/13_s3-service-deep-dive/)
-- [`security-and-identity/iam.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/security-and-identity/14_iam-service-deep-dive/)
-- [`security-and-identity/kms.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/security-and-identity/kms-service-deep-dive/)
-- [`security-and-identity/secrets-manager.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/security-and-identity/secrets-manager-service-deep-dive/)
-- [`security-and-identity/iam-identity-center.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/security-and-identity/iam-identity-center-service-deep-dive/)
-- [`networking-and-delivery/vpc.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/networking-and-delivery/vpc-service-deep-dive/)
-- [`networking-and-delivery/cloudfront.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/networking-and-delivery/cloudfront-service-deep-dive/)
-- [`networking-and-delivery/api-gateway.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/networking-and-delivery/api-gateway-service-deep-dive/)
-- [`networking-and-delivery/route-53.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/networking-and-delivery/route-53-service-deep-dive/)
-- [`databases/aurora.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/databases/aurora-service-deep-dive/)
-- [`databases/dynamodb.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/databases/dynamodb-service-deep-dive/)
-- [`databases/rds.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/databases/rds-service-deep-dive/)
-- [`integration-and-messaging/sqs.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/integration-and-messaging/sqs-service-deep-dive/)
-- [`integration-and-messaging/eventbridge.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/integration-and-messaging/eventbridge-service-deep-dive/)
-- [`observability-and-operations/cloudwatch.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/observability-and-operations/cloudwatch-service-deep-dive/)
-- [`observability-and-operations/systems-manager.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/observability-and-operations/systems-manager-service-deep-dive/)
-- [`observability-and-operations/cloudtrail.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/observability-and-operations/cloudtrail-service-deep-dive/)
-- [`observability-and-operations/aws-config.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/observability-and-operations/aws-config-service-deep-dive/)
-- [`analytics-and-data-engineering/athena.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/analytics-and-data-engineering/athena-service-deep-dive/)
-- [`analytics-and-data-engineering/glue.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/analytics-and-data-engineering/glue-service-deep-dive/)
-- [`devops-and-infrastructure/ecr.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/devops-and-infrastructure/ecr-service-deep-dive/)
-- [`devops-and-infrastructure/cloudformation.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/devops-and-infrastructure/cloudformation-service-deep-dive/)
-- [`devops-and-infrastructure/cdk.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/devops-and-infrastructure/cdk-service-deep-dive/)
-- [`migration-backup-and-dr/aws-backup.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/migration-backup-and-dr/aws-backup-service-deep-dive/)
-- [`migration-backup-and-dr/elastic-disaster-recovery.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/migration-backup-and-dr/elastic-disaster-recovery-service-deep-dive/)
-- [`end-user-and-application-services/cognito.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/end-user-and-application-services/cognito-service-deep-dive/)
-- [`integration-and-messaging/step-functions.md`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/integration-and-messaging/step-functions-service-deep-dive/)
+- [`lambda`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/compute/lambda-service-deep-dive/)
+- [`s3`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/storage/s3-service-deep-dive/)
+- [`iam`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/security-and-identity/iam-service-deep-dive/)
+- [`kms`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/security-and-identity/kms-service-deep-dive/)
+- [`secrets-manager`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/security-and-identity/secrets-manager-service-deep-dive/)
+- [`iam-identity-center`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/security-and-identity/iam-identity-center-service-deep-dive/)
+- [`vpc`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/networking-and-delivery/vpc-service-deep-dive/)
+- [`cloudfront`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/networking-and-delivery/cloudfront-service-deep-dive/)
+- [`api-gateway`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/networking-and-delivery/api-gateway-service-deep-dive/)
+- [`route-53`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/networking-and-delivery/route-53-service-deep-dive/)
+- [`aurora`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/databases/aurora-service-deep-dive/)
+- [`dynamodb`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/databases/dynamodb-service-deep-dive/)
+- [`rds`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/databases/rds-service-deep-dive/)
+- [`sqs`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/integration-and-messaging/sqs-service-deep-dive/)
+- [`eventbridge`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/integration-and-messaging/eventbridge-service-deep-dive/)
+- [`cloudwatch`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/observability-and-operations/cloudwatch-service-deep-dive/)
+- [`systems-manager`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/observability-and-operations/systems-manager-service-deep-dive/)
+- [`cloudtrail`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/observability-and-operations/cloudtrail-service-deep-dive/)
+- [`aws-config`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/observability-and-operations/aws-config-service-deep-dive/)
+- [`athena`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/analytics-and-data-engineering/athena-service-deep-dive/)
+- [`glue`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/analytics-and-data-engineering/glue-service-deep-dive/)
+- [`ecr`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/devops-and-infrastructure/ecr-service-deep-dive/)
+- [`cloudformation`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/devops-and-infrastructure/cloudformation-service-deep-dive/)
+- [`cdk`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/devops-and-infrastructure/cdk-service-deep-dive/)
+- [`aws-backup`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/migration-backup-and-dr/aws-backup-service-deep-dive/)
+- [`elastic-disaster-recovery`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/migration-backup-and-dr/elastic-disaster-recovery-service-deep-dive/)
+- [`cognito`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/end-user-and-application-services/cognito-service-deep-dive/)
+- [`step-functions`](https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/integration-and-messaging/step-functions-service-deep-dive/)
 
 Recommended next expert deep dives:
 

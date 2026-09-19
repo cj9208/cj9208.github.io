@@ -1,8 +1,8 @@
 ---
 title: "End User And Application Services Family"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-27T09:46:25+08:00
-draft: true
+lastmod: 2026-09-19T10:35:00+08:00
+draft: false
 
 description: "These services provide managed application-facing capabilities that reduce custom implementation effort for common product features."
 summary: "These services provide managed application-facing capabilities that reduce custom implementation effort for common product features."
@@ -13,7 +13,7 @@ tags:
   - "AWS"
   - "Solution Architecture"
 
-slug: "11_End-User-and-Application-Services-Family"
+slug: "end-user-and-application-services-family"
 ---
 ## Family Role
 
@@ -91,7 +91,7 @@ These services provide managed application-facing capabilities that reduce custo
 
 ## Per-Service Drill-Down
 
-Use [`00_Architect-Study-Template.md`]({{< relref "../00_Architect-Study-Template.md" >}}) for:
+Use [`architect-study-template`]({{< relref "../00_Architect-Study-Template.md" >}}) for:
 
 - `Cognito`
 - `SES`
@@ -104,6 +104,6 @@ Use [`00_Architect-Study-Template.md`]({{< relref "../00_Architect-Study-Templat
 
 | Service | Why It Belongs | Link | Status |
 |---|---|---|---|
-| `Cognito` | Main managed application-user identity service in AWS | [`cognito.md`]({{< relref "./cognito.md" >}}) | done |
+| `Cognito` | Main managed application-user identity service in AWS | [`cognito`]({{< relref "./cognito.md" >}}) | done |
 | `SES` | Add when application email delivery and deliverability patterns become important enough to deserve a dedicated note | - | conditional |
 | `AppSync` | Add only when GraphQL or client-sync architecture becomes central to the product model | - | conditional |

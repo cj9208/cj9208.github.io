@@ -1,8 +1,8 @@
 ---
 title: "Networking And Delivery Family"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-27T09:46:25+08:00
-draft: true
+lastmod: 2026-09-19T10:35:00+08:00
+draft: false
 
 description: "Networking and delivery services connect systems, isolate environments, route traffic, and improve reachability and performance."
 summary: "Networking and delivery services connect systems, isolate environments, route traffic, and improve reachability and performance."
@@ -13,7 +13,7 @@ tags:
   - "AWS"
   - "Solution Architecture"
 
-slug: "04_Networking-and-Delivery-Family"
+slug: "networking-and-delivery-family"
 ---
 ## Family Role
 
@@ -102,7 +102,7 @@ Networking and delivery services connect systems, isolate environments, route tr
 
 ## Per-Service Drill-Down
 
-Use [`00_Architect-Study-Template.md`]({{< relref "../00_Architect-Study-Template.md" >}}) for:
+Use [`architect-study-template`]({{< relref "../00_Architect-Study-Template.md" >}}) for:
 
 - `VPC`
 - `Route 53`
@@ -118,8 +118,8 @@ Use [`00_Architect-Study-Template.md`]({{< relref "../00_Architect-Study-Templat
 
 | Service | Why It Belongs | Link | Status |
 |---|---|---|---|
-| `VPC` | Primary network boundary and isolation model in AWS | [`vpc.md`]({{< relref "./vpc.md" >}}) | done |
-| `CloudFront` | Main edge, caching, and origin-protection service for public delivery | [`cloudfront.md`]({{< relref "./cloudfront.md" >}}) | done |
-| `API Gateway` | Main managed API-boundary and ingress-governance service | [`api-gateway.md`]({{< relref "./api-gateway.md" >}}) | done |
-| `Route 53` | DNS and traffic-steering control layer that shapes availability behavior | [`route-53.md`]({{< relref "./route-53.md" >}}) | done |
+| `VPC` | Primary network boundary and isolation model in AWS | [`vpc`]({{< relref "./vpc.md" >}}) | done |
+| `CloudFront` | Main edge, caching, and origin-protection service for public delivery | [`cloudfront`]({{< relref "./cloudfront.md" >}}) | done |
+| `API Gateway` | Main managed API-boundary and ingress-governance service | [`api-gateway`]({{< relref "./api-gateway.md" >}}) | done |
+| `Route 53` | DNS and traffic-steering control layer that shapes availability behavior | [`route-53`]({{< relref "./route-53.md" >}}) | done |
 | `Transit Gateway` | Add when multi-account or hybrid network scale makes shared transit architecture a first-class design concern | - | conditional |

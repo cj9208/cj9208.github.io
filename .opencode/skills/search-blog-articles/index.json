@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-09-17T17:16:05+08:00",
+ "generated_at": "2026-09-19T10:19:53+08:00",
  "base_url": "https://cj9208.github.io/blog/",
- "source_fingerprint": "e8ace73d956be549858f7f9a3e5e7b4beddfc3f6",
+ "source_fingerprint": "f3ebc6746ba1a28a7cd1f653f74d8cd1061e8ca1",
  "count": 222,
  "articles": [
   {
@@ -1078,9 +1078,11 @@
     "Architecture"
    ],
    "date": "2026-07-15T09:00:00+08:00",
-   "lastmod": "2026-08-27T14:54:47+08:00",
+   "lastmod": "2026-09-19T09:51:41+08:00",
    "excerpt": "This design started from a concrete RAG problem. The initial issue was simple: So the first architectural move was not to redesign the whole platform. It was to add an intention layer before RAG in or",
-   "out_links": []
+   "out_links": [
+    "ai_study/rag-orchestration-architecture/ch02_01_runtime-objects"
+   ]
   },
   {
    "title": "Intention Recognition Layer",
@@ -1097,10 +1099,12 @@
     "Architecture"
    ],
    "date": "2026-07-15T09:00:00+08:00",
-   "lastmod": "2026-09-01T22:32:00+08:00",
+   "lastmod": "2026-09-19T09:51:41+08:00",
    "excerpt": "The intention recognition layer is the control layer that sits between raw user input and retrieval/reasoning. Its job is not only to \"understand the user\", but to reduce ambiguity, narrow search spac",
    "out_links": [
-    "ai_study/rag-orchestration-architecture/ch02_03_confidence-safety-and-validation"
+    "ai_study/rag-orchestration-architecture/ch02_request-orchestration-layer",
+    "ai_study/rag-orchestration-architecture/ch02_03_confidence-safety-and-validation",
+    "ai_study/rag-orchestration-architecture/ch02_01_runtime-objects"
    ]
   },
   {
@@ -1120,12 +1124,13 @@
     "Runtime Contract"
    ],
    "date": "2026-07-20T09:43:56+08:00",
-   "lastmod": "2026-09-01T22:32:00+08:00",
+   "lastmod": "2026-09-19T09:51:41+08:00",
    "excerpt": "This note defines the main runtime objects used by the request orchestration layer. Its job is to answer a simple question: This note is a concrete extension of CH02Request-Orchestration-Layer.md.",
    "out_links": [
     "ai_study/rag-orchestration-architecture/ch02_request-orchestration-layer",
     "ai_study/rag-orchestration-architecture/ch02_02_state-machine-and-control-loop",
-    "ai_study/rag-orchestration-architecture/ch02_03_confidence-safety-and-validation"
+    "ai_study/rag-orchestration-architecture/ch02_03_confidence-safety-and-validation",
+    "ai_study/rag-orchestration-architecture/ch01_intention-recognition-layer"
    ]
   },
   {
@@ -1145,7 +1150,7 @@
     "Runtime Contract"
    ],
    "date": "2026-07-20T09:43:56+08:00",
-   "lastmod": "2026-09-01T22:32:00+08:00",
+   "lastmod": "2026-09-19T09:51:41+08:00",
    "excerpt": "This note defines how the request orchestration runtime moves. It focuses on lifecycle control rather than object structure. The main questions are: 1. what states can a request enter 2. how control r",
    "out_links": [
     "ai_study/rag-orchestration-architecture/ch02_request-orchestration-layer",
@@ -1170,7 +1175,7 @@
     "Runtime Contract"
    ],
    "date": "2026-07-20T09:43:56+08:00",
-   "lastmod": "2026-09-01T22:32:00+08:00",
+   "lastmod": "2026-09-19T09:51:41+08:00",
    "excerpt": "This note defines how the request orchestration runtime stays safe and reliable. It focuses on three tightly related concerns: 1. input safety and scope control 2. confidence-aware decision making 3. ",
    "out_links": [
     "ai_study/rag-orchestration-architecture/ch02_request-orchestration-layer",
@@ -1195,9 +1200,15 @@
     "Architecture"
    ],
    "date": "2026-07-15T09:00:00+08:00",
-   "lastmod": "2026-08-28T09:45:00+08:00",
+   "lastmod": "2026-09-19T09:51:41+08:00",
    "excerpt": "The request orchestration layer is the shared control layer for a company-wide agent system. It extends the intention recognition layer (CH01) into a broader runtime: the front half — request conditio",
-   "out_links": []
+   "out_links": [
+    "ai_study/rag-orchestration-architecture/ch02_01_runtime-objects",
+    "ai_study/rag-orchestration-architecture/ch02_02_state-machine-and-control-loop",
+    "ai_study/rag-orchestration-architecture/ch02_03_confidence-safety-and-validation",
+    "ai_study/rag-orchestration-architecture/ch01_intention-recognition-layer",
+    "ai_study/rag-orchestration-architecture/ch04_testing-and-evaluation"
+   ]
   },
   {
    "title": "Ingestion Validation Layer",
@@ -1214,9 +1225,11 @@
     "Architecture"
    ],
    "date": "2026-07-15T09:00:00+08:00",
-   "lastmod": "2026-08-27T16:50:00+08:00",
+   "lastmod": "2026-09-19T09:51:41+08:00",
    "excerpt": "The ingestion validation layer is the upstream data production layer for the RAG system. Its job is to transform raw source artifacts into validated canonical documents that are safe enough to pass do",
-   "out_links": []
+   "out_links": [
+    "ai_study/rag-orchestration-architecture/ch03_rag-layer"
+   ]
   },
   {
    "title": "Enrichment Chunking Indexing Layer",
@@ -1233,9 +1246,12 @@
     "Architecture"
    ],
    "date": "2026-07-15T09:00:00+08:00",
-   "lastmod": "2026-08-27T16:55:00+08:00",
+   "lastmod": "2026-09-19T09:51:41+08:00",
    "excerpt": "The enrichment, chunking, and indexing layer is the downstream preparation layer that turns validated canonical documents into retrievable knowledge units. Its job is to: 1. add retrieval-useful annot",
-   "out_links": []
+   "out_links": [
+    "ai_study/rag-orchestration-architecture/ch03_01_ingestion-validation-layer",
+    "ai_study/rag-orchestration-architecture/ch03_rag-layer"
+   ]
   },
   {
    "title": "Retrieval Layer",
@@ -1252,9 +1268,14 @@
     "Architecture"
    ],
    "date": "2026-07-15T09:00:00+08:00",
-   "lastmod": "2026-08-27T16:55:00+08:00",
+   "lastmod": "2026-09-19T09:51:41+08:00",
    "excerpt": "The retrieval layer is the online evidence-finding subsystem of RAG. Its job is to turn a well-shaped user request into a grounded context set that downstream answering can trust. It does this by: 1. ",
-   "out_links": []
+   "out_links": [
+    "ai_study/rag-orchestration-architecture/ch03_01_ingestion-validation-layer",
+    "ai_study/rag-orchestration-architecture/ch03_02_enrichment-chunking-indexing-layer",
+    "ai_study/rag-orchestration-architecture/ch03_04_grounded-answering-layer",
+    "ai_study/rag-orchestration-architecture/ch03_rag-layer"
+   ]
   },
   {
    "title": "Grounded Answering Layer",
@@ -1271,9 +1292,13 @@
     "Architecture"
    ],
    "date": "2026-07-15T09:00:00+08:00",
-   "lastmod": "2026-08-27T11:21:30+08:00",
+   "lastmod": "2026-09-19T09:51:41+08:00",
    "excerpt": "The grounded answering layer turns retrieved evidence into a user-facing output that remains tied to sources. Its job is to: 1. answer from retrieved evidence 2. preserve citation and provenance 3. di",
-   "out_links": []
+   "out_links": [
+    "ai_study/rag-orchestration-architecture/ch03_03_retrieval-layer",
+    "ai_study/rag-orchestration-architecture/ch02_03_confidence-safety-and-validation",
+    "ai_study/rag-orchestration-architecture/ch04_testing-and-evaluation"
+   ]
   },
   {
    "title": "RAG Layer",
@@ -1290,9 +1315,14 @@
     "Architecture"
    ],
    "date": "2026-07-15T09:00:00+08:00",
-   "lastmod": "2026-08-27T21:22:25+08:00",
+   "lastmod": "2026-09-19T09:51:41+08:00",
    "excerpt": "The RAG layer is the knowledge access and grounding capability inside the orchestration runtime. Its job is not simply to \"retrieve documents\". Its real job is to: 1. transform source material into re",
-   "out_links": []
+   "out_links": [
+    "ai_study/rag-orchestration-architecture/ch03_01_ingestion-validation-layer",
+    "ai_study/rag-orchestration-architecture/ch03_02_enrichment-chunking-indexing-layer",
+    "ai_study/rag-orchestration-architecture/ch03_03_retrieval-layer",
+    "ai_study/rag-orchestration-architecture/ch03_04_grounded-answering-layer"
+   ]
   },
   {
    "title": "Testing and Evaluation",
@@ -1311,9 +1341,11 @@
     "Testing"
    ],
    "date": "2026-08-15T21:52:55+08:00",
-   "lastmod": "2026-08-27T23:07:27+08:00",
+   "lastmod": "2026-09-19T09:51:41+08:00",
    "excerpt": "This note defines the minimum testing and evaluation matrix for the orchestration and RAG architecture. Its job is to answer one question: Related notes: CH01–CH03 define behavior; CH0201 provides the",
-   "out_links": []
+   "out_links": [
+    "ai_study/rag-orchestration-architecture/ch02_request-orchestration-layer"
+   ]
   },
   {
    "title": "From Board Games to Reasoning Agents: The Evolution of Reinforcement Learning in Large Language Models",
@@ -1916,41 +1948,19 @@
     "Annual Review"
    ],
    "date": "2026-08-22T15:59:41+08:00",
-   "lastmod": "2026-09-13T00:00:00+08:00",
+   "lastmod": "2026-09-18T17:00:00+08:00",
    "excerpt": "某天突发奇想，让我自己的 blog 来评价我这个人。不是想要夸奖，而是想看看：一个人写下的几百篇文章，能不能拼出一张诚实的自画像。 结果拼出来的画像，比我自己以为的要清晰得多： 1. 用工程/系统语言翻译一切——拜占庭将军解释信任（见《拜占庭的信任重建》），分布式共识解释科层，Reward Hacking 解释聪明人的自毁（见《聪明人的自毁，不过是一场人类版的 Reward Hacking》）。",
    "out_links": [
     "systems_and_governance/byzantine-trust-reconstruction",
     "investment/smart-self-destruction-reward-hacking",
-    "ai_era_engineering_careers/order-and-system-evolution",
-    "systems_and_governance/why-ubi-wont-cause-inflation",
     "systems_and_governance/singapore-tech-middle-class",
-    "investment/wlb-time-autonomy",
     "ai_era_engineering_careers/state-machine-technical-research",
     "ai_era_engineering_careers/dragon-boat-engineering-debug",
+    "ai_era_engineering_careers/disenchantment-tech-management",
     "ai_era_engineering_careers/staff-accountability-ai-era",
     "systems_and_governance/chinese_government/great-cleaning-sword-bearers",
-    "ai_study/agent-routing-safety-harness",
-    "ai_era_engineering_careers/disenchantment-tech-management"
+    "ai_study/agent-routing-safety-harness"
    ]
-  },
-  {
-   "title": "Architect Study Template",
-   "slug": "00_Architect-Study-Template",
-   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/00_architect-study-template/",
-   "path": "study-notes/aws-solution-architect-notes/00_architect-study-template",
-   "dir": "content/blog/study-notes/aws-solution-architect-notes",
-   "section": "study-notes",
-   "categories": [
-    "Study Notes"
-   ],
-   "tags": [
-    "AWS",
-    "Solution Architecture"
-   ],
-   "date": "2026-07-15T09:00:00+08:00",
-   "lastmod": "2026-07-27T09:46:25+08:00",
-   "excerpt": "Use this template for any AWS service. This version is aimed at expert-level architecture notes, not just associate-level summaries. Examples: - Aurora - Lambda - EKS - CloudFront - SQS Answer these:",
-   "out_links": []
   },
   {
    "title": "Athena Service Deep Dive",
@@ -1969,7 +1979,7 @@
     "Analytics"
    ],
    "date": "2026-07-16T09:24:29+08:00",
-   "lastmod": "2026-07-27T09:46:25+08:00",
+   "lastmod": "2026-09-19T10:12:00+08:00",
    "excerpt": "Use this as a fast expert note. Athena is not just serverless SQL. It is a query-on-data-layout service, so storage design and partitioning drive both cost and performance. - Right default for ad hoc ",
    "out_links": []
   },
@@ -1990,15 +2000,15 @@
     "Analytics"
    ],
    "date": "2026-07-16T09:24:29+08:00",
-   "lastmod": "2026-07-27T09:46:25+08:00",
+   "lastmod": "2026-09-19T10:12:00+08:00",
    "excerpt": "Use this as a fast expert note. Glue is not just ETL. It is often the metadata and transformation backbone of an AWS-native data platform. - Right default when AWS-native data-lake catalog and ETL int",
    "out_links": []
   },
   {
-   "title": "AWS Solution Architect Study Map",
-   "slug": "AWS-Solution-Architect-Study-Map",
-   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/aws-solution-architect-study-map/",
-   "path": "study-notes/aws-solution-architect-notes/aws-solution-architect-study-map",
+   "title": "Architect Study Template",
+   "slug": "architect-study-template",
+   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/architect-study-template/",
+   "path": "study-notes/aws-solution-architect-notes/architect-study-template",
    "dir": "content/blog/study-notes/aws-solution-architect-notes",
    "section": "study-notes",
    "categories": [
@@ -2009,7 +2019,654 @@
     "Solution Architecture"
    ],
    "date": "2026-07-15T09:00:00+08:00",
-   "lastmod": "2026-09-01T22:32:00+08:00",
+   "lastmod": "2026-09-19T10:22:00+08:00",
+   "excerpt": "Use this template for any AWS service. This version is aimed at expert-level architecture notes, not just associate-level summaries. Examples: - Aurora - Lambda - EKS - CloudFront - SQS Answer these:",
+   "out_links": []
+  },
+  {
+   "title": "EC2 Service Deep Dive",
+   "slug": "ec2-service-deep-dive",
+   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/compute/ec2-service-deep-dive/",
+   "path": "study-notes/aws-solution-architect-notes/compute/ec2-service-deep-dive",
+   "dir": "content/blog/study-notes/aws-solution-architect-notes/compute",
+   "section": "study-notes",
+   "categories": [
+    "Study Notes"
+   ],
+   "tags": [
+    "AWS",
+    "Solution Architecture",
+    "EC2",
+    "Compute"
+   ],
+   "date": "2026-07-16T09:52:49+08:00",
+   "lastmod": "2026-09-19T10:12:00+08:00",
+   "excerpt": "Use this as a fast expert note. EC2 is not the default for everything anymore, but it remains the clearest model of AWS compute control and is still the right answer when the workload needs host-level",
+   "out_links": []
+  },
+  {
+   "title": "ECS Service Deep Dive",
+   "slug": "ecs-service-deep-dive",
+   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/compute/ecs-service-deep-dive/",
+   "path": "study-notes/aws-solution-architect-notes/compute/ecs-service-deep-dive",
+   "dir": "content/blog/study-notes/aws-solution-architect-notes/compute",
+   "section": "study-notes",
+   "categories": [
+    "Study Notes"
+   ],
+   "tags": [
+    "AWS",
+    "Solution Architecture",
+    "ECS",
+    "Compute"
+   ],
+   "date": "2026-07-16T09:52:49+08:00",
+   "lastmod": "2026-09-19T10:12:00+08:00",
+   "excerpt": "Use this as a fast expert note. ECS is not just containers on AWS. It is often the practical default for long-running AWS-native services when teams want container flexibility without Kubernetes overh",
+   "out_links": []
+  },
+  {
+   "title": "Lambda Service Deep Dive",
+   "slug": "lambda-service-deep-dive",
+   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/compute/lambda-service-deep-dive/",
+   "path": "study-notes/aws-solution-architect-notes/compute/lambda-service-deep-dive",
+   "dir": "content/blog/study-notes/aws-solution-architect-notes/compute",
+   "section": "study-notes",
+   "categories": [
+    "Study Notes"
+   ],
+   "tags": [
+    "AWS",
+    "Solution Architecture",
+    "Lambda"
+   ],
+   "date": "2026-07-16T08:34:56+08:00",
+   "lastmod": "2026-09-19T10:22:00+08:00",
+   "excerpt": "Use this as a worked example of how to fill the study template. - Choose Lambda when workloads are event-driven, bursty, and operational simplicity matters more than host-level control. - It is a stro",
+   "out_links": []
+  },
+  {
+   "title": "Aurora Service Deep Dive",
+   "slug": "aurora-service-deep-dive",
+   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/databases/aurora-service-deep-dive/",
+   "path": "study-notes/aws-solution-architect-notes/databases/aurora-service-deep-dive",
+   "dir": "content/blog/study-notes/aws-solution-architect-notes/databases",
+   "section": "study-notes",
+   "categories": [
+    "Study Notes"
+   ],
+   "tags": [
+    "AWS",
+    "Solution Architecture",
+    "Aurora",
+    "Database"
+   ],
+   "date": "2026-07-16T09:12:29+08:00",
+   "lastmod": "2026-09-19T10:12:00+08:00",
+   "excerpt": "Use this as a flagship expert-level note. Aurora is not just managed relational storage. It is the strategic AWS default when a workload truly needs relational guarantees but also expects high availab",
+   "out_links": []
+  },
+  {
+   "title": "DynamoDB Service Deep Dive",
+   "slug": "dynamodb-service-deep-dive",
+   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/databases/dynamodb-service-deep-dive/",
+   "path": "study-notes/aws-solution-architect-notes/databases/dynamodb-service-deep-dive",
+   "dir": "content/blog/study-notes/aws-solution-architect-notes/databases",
+   "section": "study-notes",
+   "categories": [
+    "Study Notes"
+   ],
+   "tags": [
+    "AWS",
+    "Solution Architecture",
+    "DynamoDB",
+    "Database"
+   ],
+   "date": "2026-07-16T09:12:29+08:00",
+   "lastmod": "2026-09-19T10:12:00+08:00",
+   "excerpt": "Use this as a flagship expert-level note. DynamoDB is not just “NoSQL on AWS.” It is a design-first database that rewards clear access patterns and punishes vague ones. - DynamoDB is the right default",
+   "out_links": []
+  },
+  {
+   "title": "RDS Service Deep Dive",
+   "slug": "rds-service-deep-dive",
+   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/databases/rds-service-deep-dive/",
+   "path": "study-notes/aws-solution-architect-notes/databases/rds-service-deep-dive",
+   "dir": "content/blog/study-notes/aws-solution-architect-notes/databases",
+   "section": "study-notes",
+   "categories": [
+    "Study Notes"
+   ],
+   "tags": [
+    "AWS",
+    "Solution Architecture",
+    "RDS",
+    "Database"
+   ],
+   "date": "2026-07-16T09:24:29+08:00",
+   "lastmod": "2026-09-19T10:12:00+08:00",
+   "excerpt": "Use this as a fast expert note. RDS is not just a smaller Aurora. It is often the practical managed-relational default when engine familiarity, migration ease, and simpler operational posture matter m",
+   "out_links": []
+  },
+  {
+   "title": "CDK Service Deep Dive",
+   "slug": "cdk-service-deep-dive",
+   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/devops-and-infrastructure/cdk-service-deep-dive/",
+   "path": "study-notes/aws-solution-architect-notes/devops-and-infrastructure/cdk-service-deep-dive",
+   "dir": "content/blog/study-notes/aws-solution-architect-notes/devops-and-infrastructure",
+   "section": "study-notes",
+   "categories": [
+    "Study Notes"
+   ],
+   "tags": [
+    "AWS",
+    "Solution Architecture",
+    "CDK",
+    "DevOps"
+   ],
+   "date": "2026-07-16T09:29:12+08:00",
+   "lastmod": "2026-09-19T10:12:00+08:00",
+   "excerpt": "Use this as a fast expert note. CDK is not a replacement for CloudFormation thinking. It is a higher-level way to express infrastructure, but the underlying stack and deployment behavior still matter.",
+   "out_links": []
+  },
+  {
+   "title": "CloudFormation Service Deep Dive",
+   "slug": "cloudformation-service-deep-dive",
+   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/devops-and-infrastructure/cloudformation-service-deep-dive/",
+   "path": "study-notes/aws-solution-architect-notes/devops-and-infrastructure/cloudformation-service-deep-dive",
+   "dir": "content/blog/study-notes/aws-solution-architect-notes/devops-and-infrastructure",
+   "section": "study-notes",
+   "categories": [
+    "Study Notes"
+   ],
+   "tags": [
+    "AWS",
+    "Solution Architecture",
+    "CloudFormation",
+    "DevOps"
+   ],
+   "date": "2026-07-16T09:29:12+08:00",
+   "lastmod": "2026-09-19T10:12:00+08:00",
+   "excerpt": "Use this as a fast expert note. CloudFormation is not just templates. It is the foundation of AWS-native infrastructure control, drift management, and repeatable environment definition. - Right defaul",
+   "out_links": []
+  },
+  {
+   "title": "ECR Service Deep Dive",
+   "slug": "ecr-service-deep-dive",
+   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/devops-and-infrastructure/ecr-service-deep-dive/",
+   "path": "study-notes/aws-solution-architect-notes/devops-and-infrastructure/ecr-service-deep-dive",
+   "dir": "content/blog/study-notes/aws-solution-architect-notes/devops-and-infrastructure",
+   "section": "study-notes",
+   "categories": [
+    "Study Notes"
+   ],
+   "tags": [
+    "AWS",
+    "Solution Architecture",
+    "ECR",
+    "DevOps"
+   ],
+   "date": "2026-07-16T09:24:29+08:00",
+   "lastmod": "2026-09-19T10:12:00+08:00",
+   "excerpt": "Use this as a fast expert note. ECR is not just image storage. It is part of the software supply chain and directly affects artifact immutability, deployment trust, and vulnerability visibility. - Rig",
+   "out_links": []
+  },
+  {
+   "title": "Cognito Service Deep Dive",
+   "slug": "cognito-service-deep-dive",
+   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/end-user-and-application-services/cognito-service-deep-dive/",
+   "path": "study-notes/aws-solution-architect-notes/end-user-and-application-services/cognito-service-deep-dive",
+   "dir": "content/blog/study-notes/aws-solution-architect-notes/end-user-and-application-services",
+   "section": "study-notes",
+   "categories": [
+    "Study Notes"
+   ],
+   "tags": [
+    "AWS",
+    "Solution Architecture",
+    "Cognito",
+    "Identity"
+   ],
+   "date": "2026-07-16T09:24:29+08:00",
+   "lastmod": "2026-09-19T10:12:00+08:00",
+   "excerpt": "Use this as a fast expert note. Cognito is not just user login. It is a managed identity product with opinionated flows, and the fit depends heavily on tenant model, federation, and UX requirements.",
+   "out_links": []
+  },
+  {
+   "title": "EventBridge Service Deep Dive",
+   "slug": "eventbridge-service-deep-dive",
+   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/integration-and-messaging/eventbridge-service-deep-dive/",
+   "path": "study-notes/aws-solution-architect-notes/integration-and-messaging/eventbridge-service-deep-dive",
+   "dir": "content/blog/study-notes/aws-solution-architect-notes/integration-and-messaging",
+   "section": "study-notes",
+   "categories": [
+    "Study Notes"
+   ],
+   "tags": [
+    "AWS",
+    "Solution Architecture",
+    "EventBridge",
+    "Messaging"
+   ],
+   "date": "2026-07-16T09:16:33+08:00",
+   "lastmod": "2026-09-19T10:12:00+08:00",
+   "excerpt": "Use this as a flagship expert-level note. EventBridge is not just event transport. It is an event-routing and ownership boundary that determines how loosely or tightly systems evolve together. - Event",
+   "out_links": []
+  },
+  {
+   "title": "SQS Service Deep Dive",
+   "slug": "sqs-service-deep-dive",
+   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/integration-and-messaging/sqs-service-deep-dive/",
+   "path": "study-notes/aws-solution-architect-notes/integration-and-messaging/sqs-service-deep-dive",
+   "dir": "content/blog/study-notes/aws-solution-architect-notes/integration-and-messaging",
+   "section": "study-notes",
+   "categories": [
+    "Study Notes"
+   ],
+   "tags": [
+    "AWS",
+    "Solution Architecture",
+    "SQS",
+    "Messaging"
+   ],
+   "date": "2026-07-16T09:16:33+08:00",
+   "lastmod": "2026-09-19T10:12:00+08:00",
+   "excerpt": "Use this as a flagship expert-level note. SQS is not just a queue. It is often the main decoupling boundary that determines whether failures stay contained or spread across the system. - SQS is the ri",
+   "out_links": []
+  },
+  {
+   "title": "Step Functions Service Deep Dive",
+   "slug": "step-functions-service-deep-dive",
+   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/integration-and-messaging/step-functions-service-deep-dive/",
+   "path": "study-notes/aws-solution-architect-notes/integration-and-messaging/step-functions-service-deep-dive",
+   "dir": "content/blog/study-notes/aws-solution-architect-notes/integration-and-messaging",
+   "section": "study-notes",
+   "categories": [
+    "Study Notes"
+   ],
+   "tags": [
+    "AWS",
+    "Solution Architecture",
+    "Step Functions",
+    "Messaging"
+   ],
+   "date": "2026-07-16T09:29:12+08:00",
+   "lastmod": "2026-09-19T10:12:00+08:00",
+   "excerpt": "Use this as a fast expert note. Step Functions is not just sequencing. It is explicit durable workflow state, which can be a powerful control point or a source of architecture centralization. - Right ",
+   "out_links": []
+  },
+  {
+   "title": "AWS Backup Service Deep Dive",
+   "slug": "aws-backup-service-deep-dive",
+   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/migration-backup-and-dr/aws-backup-service-deep-dive/",
+   "path": "study-notes/aws-solution-architect-notes/migration-backup-and-dr/aws-backup-service-deep-dive",
+   "dir": "content/blog/study-notes/aws-solution-architect-notes/migration-backup-and-dr",
+   "section": "study-notes",
+   "categories": [
+    "Study Notes"
+   ],
+   "tags": [
+    "AWS",
+    "Solution Architecture",
+    "AWS Backup",
+    "Recovery"
+   ],
+   "date": "2026-07-16T09:24:29+08:00",
+   "lastmod": "2026-09-19T10:12:00+08:00",
+   "excerpt": "Use this as a fast expert note. AWS Backup is not a DR strategy by itself. It is a centralized backup-governance service that improves consistency, visibility, and policy control across workloads. - R",
+   "out_links": []
+  },
+  {
+   "title": "Elastic Disaster Recovery Service Deep Dive",
+   "slug": "elastic-disaster-recovery-service-deep-dive",
+   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/migration-backup-and-dr/elastic-disaster-recovery-service-deep-dive/",
+   "path": "study-notes/aws-solution-architect-notes/migration-backup-and-dr/elastic-disaster-recovery-service-deep-dive",
+   "dir": "content/blog/study-notes/aws-solution-architect-notes/migration-backup-and-dr",
+   "section": "study-notes",
+   "categories": [
+    "Study Notes"
+   ],
+   "tags": [
+    "AWS",
+    "Solution Architecture",
+    "Elastic Disaster Recovery",
+    "Recovery"
+   ],
+   "date": "2026-07-16T09:29:12+08:00",
+   "lastmod": "2026-09-19T10:12:00+08:00",
+   "excerpt": "Use this as a fast expert note. Elastic Disaster Recovery is not a universal DR answer. It is strongest for server-style recovery where infrastructure-level replication is the practical path. - Right ",
+   "out_links": []
+  },
+  {
+   "title": "API Gateway Service Deep Dive",
+   "slug": "api-gateway-service-deep-dive",
+   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/networking-and-delivery/api-gateway-service-deep-dive/",
+   "path": "study-notes/aws-solution-architect-notes/networking-and-delivery/api-gateway-service-deep-dive",
+   "dir": "content/blog/study-notes/aws-solution-architect-notes/networking-and-delivery",
+   "section": "study-notes",
+   "categories": [
+    "Study Notes"
+   ],
+   "tags": [
+    "AWS",
+    "Solution Architecture",
+    "API Gateway",
+    "Networking"
+   ],
+   "date": "2026-07-16T09:16:33+08:00",
+   "lastmod": "2026-09-19T10:12:00+08:00",
+   "excerpt": "Use this as a flagship expert-level note. API Gateway is not just an HTTP entry point. It is a policy, integration, and governance boundary for APIs. - API Gateway is the right default when API lifecy",
+   "out_links": []
+  },
+  {
+   "title": "CloudFront Service Deep Dive",
+   "slug": "cloudfront-service-deep-dive",
+   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/networking-and-delivery/cloudfront-service-deep-dive/",
+   "path": "study-notes/aws-solution-architect-notes/networking-and-delivery/cloudfront-service-deep-dive",
+   "dir": "content/blog/study-notes/aws-solution-architect-notes/networking-and-delivery",
+   "section": "study-notes",
+   "categories": [
+    "Study Notes"
+   ],
+   "tags": [
+    "AWS",
+    "Solution Architecture",
+    "CloudFront",
+    "Networking"
+   ],
+   "date": "2026-07-16T09:16:33+08:00",
+   "lastmod": "2026-09-19T10:12:00+08:00",
+   "excerpt": "Use this as a flagship expert-level note. CloudFront is not just a CDN. It is often the real internet edge of the platform, shaping latency, cache behavior, exposure, and attack surface. - CloudFront ",
+   "out_links": []
+  },
+  {
+   "title": "Route 53 Service Deep Dive",
+   "slug": "route-53-service-deep-dive",
+   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/networking-and-delivery/route-53-service-deep-dive/",
+   "path": "study-notes/aws-solution-architect-notes/networking-and-delivery/route-53-service-deep-dive",
+   "dir": "content/blog/study-notes/aws-solution-architect-notes/networking-and-delivery",
+   "section": "study-notes",
+   "categories": [
+    "Study Notes"
+   ],
+   "tags": [
+    "AWS",
+    "Solution Architecture",
+    "Route 53",
+    "Networking"
+   ],
+   "date": "2026-07-16T09:24:29+08:00",
+   "lastmod": "2026-09-19T10:12:00+08:00",
+   "excerpt": "Use this as a fast expert note. Route 53 is not just DNS hosting. It is a traffic-control and failover decision layer, so DNS behavior becomes part of availability design. - Right default when AWS wor",
+   "out_links": []
+  },
+  {
+   "title": "VPC Service Deep Dive",
+   "slug": "vpc-service-deep-dive",
+   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/networking-and-delivery/vpc-service-deep-dive/",
+   "path": "study-notes/aws-solution-architect-notes/networking-and-delivery/vpc-service-deep-dive",
+   "dir": "content/blog/study-notes/aws-solution-architect-notes/networking-and-delivery",
+   "section": "study-notes",
+   "categories": [
+    "Study Notes"
+   ],
+   "tags": [
+    "AWS",
+    "Solution Architecture",
+    "VPC",
+    "Networking"
+   ],
+   "date": "2026-07-16T09:12:29+08:00",
+   "lastmod": "2026-09-19T10:12:00+08:00",
+   "excerpt": "Use this as a flagship expert-level note. VPC is not just a network container. It is one of the main ways AWS architectures define isolation, traffic control, and blast radius. - VPC is the default ne",
+   "out_links": []
+  },
+  {
+   "title": "AWS Config Service Deep Dive",
+   "slug": "aws-config-service-deep-dive",
+   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/observability-and-operations/aws-config-service-deep-dive/",
+   "path": "study-notes/aws-solution-architect-notes/observability-and-operations/aws-config-service-deep-dive",
+   "dir": "content/blog/study-notes/aws-solution-architect-notes/observability-and-operations",
+   "section": "study-notes",
+   "categories": [
+    "Study Notes"
+   ],
+   "tags": [
+    "AWS",
+    "Solution Architecture",
+    "AWS Config",
+    "Governance"
+   ],
+   "date": "2026-07-16T09:29:12+08:00",
+   "lastmod": "2026-09-19T10:12:00+08:00",
+   "excerpt": "Use this as a fast expert note. AWS Config is not just inventory history. It is a governance and drift-observation layer, which matters most when the organization actually uses it to enforce or invest",
+   "out_links": []
+  },
+  {
+   "title": "CloudTrail Service Deep Dive",
+   "slug": "cloudtrail-service-deep-dive",
+   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/observability-and-operations/cloudtrail-service-deep-dive/",
+   "path": "study-notes/aws-solution-architect-notes/observability-and-operations/cloudtrail-service-deep-dive",
+   "dir": "content/blog/study-notes/aws-solution-architect-notes/observability-and-operations",
+   "section": "study-notes",
+   "categories": [
+    "Study Notes"
+   ],
+   "tags": [
+    "AWS",
+    "Solution Architecture",
+    "CloudTrail",
+    "Audit"
+   ],
+   "date": "2026-07-16T09:24:29+08:00",
+   "lastmod": "2026-09-19T10:12:00+08:00",
+   "excerpt": "Use this as a fast expert note. CloudTrail is not just logs. It is the core API-audit record for who changed what in AWS and often the first place serious incident review begins. - Right default for e",
+   "out_links": []
+  },
+  {
+   "title": "CloudWatch Service Deep Dive",
+   "slug": "cloudwatch-service-deep-dive",
+   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/observability-and-operations/cloudwatch-service-deep-dive/",
+   "path": "study-notes/aws-solution-architect-notes/observability-and-operations/cloudwatch-service-deep-dive",
+   "dir": "content/blog/study-notes/aws-solution-architect-notes/observability-and-operations",
+   "section": "study-notes",
+   "categories": [
+    "Study Notes"
+   ],
+   "tags": [
+    "AWS",
+    "Solution Architecture",
+    "CloudWatch",
+    "Observability"
+   ],
+   "date": "2026-07-16T09:16:33+08:00",
+   "lastmod": "2026-09-19T10:12:00+08:00",
+   "excerpt": "Use this as a flagship expert-level note. CloudWatch is not just dashboards and alarms. It is often the main operational feedback system for AWS workloads, which means poor CloudWatch design can make ",
+   "out_links": []
+  },
+  {
+   "title": "Systems Manager Service Deep Dive",
+   "slug": "systems-manager-service-deep-dive",
+   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/observability-and-operations/systems-manager-service-deep-dive/",
+   "path": "study-notes/aws-solution-architect-notes/observability-and-operations/systems-manager-service-deep-dive",
+   "dir": "content/blog/study-notes/aws-solution-architect-notes/observability-and-operations",
+   "section": "study-notes",
+   "categories": [
+    "Study Notes"
+   ],
+   "tags": [
+    "AWS",
+    "Solution Architecture",
+    "Systems Manager",
+    "Operations"
+   ],
+   "date": "2026-07-16T09:24:29+08:00",
+   "lastmod": "2026-09-19T10:12:00+08:00",
+   "excerpt": "Use this as a fast expert note. Systems Manager is not one thing. It is an operations toolbox, and its value depends on how consistently the organization standardizes remote ops, automation, patching,",
+   "out_links": []
+  },
+  {
+   "title": "IAM Identity Center Service Deep Dive",
+   "slug": "iam-identity-center-service-deep-dive",
+   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/security-and-identity/iam-identity-center-service-deep-dive/",
+   "path": "study-notes/aws-solution-architect-notes/security-and-identity/iam-identity-center-service-deep-dive",
+   "dir": "content/blog/study-notes/aws-solution-architect-notes/security-and-identity",
+   "section": "study-notes",
+   "categories": [
+    "Study Notes"
+   ],
+   "tags": [
+    "AWS",
+    "Solution Architecture",
+    "IAM Identity Center",
+    "Security"
+   ],
+   "date": "2026-07-16T09:29:12+08:00",
+   "lastmod": "2026-09-19T10:12:00+08:00",
+   "excerpt": "Use this as a fast expert note. IAM Identity Center is not just SSO. It is the organizational control point for workforce access across accounts and applications. - Right default for human access in m",
+   "out_links": []
+  },
+  {
+   "title": "IAM Service Deep Dive",
+   "slug": "iam-service-deep-dive",
+   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/security-and-identity/iam-service-deep-dive/",
+   "path": "study-notes/aws-solution-architect-notes/security-and-identity/iam-service-deep-dive",
+   "dir": "content/blog/study-notes/aws-solution-architect-notes/security-and-identity",
+   "section": "study-notes",
+   "categories": [
+    "Study Notes"
+   ],
+   "tags": [
+    "AWS",
+    "Solution Architecture",
+    "IAM",
+    "Security"
+   ],
+   "date": "2026-07-16T08:40:18+08:00",
+   "lastmod": "2026-09-19T10:22:00+08:00",
+   "excerpt": "Use this as a flagship expert-level note. IAM is not just a permissions service. It is the control surface that determines blast radius, workload trust, and operational safety across AWS. - IAM is the",
+   "out_links": []
+  },
+  {
+   "title": "KMS Service Deep Dive",
+   "slug": "kms-service-deep-dive",
+   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/security-and-identity/kms-service-deep-dive/",
+   "path": "study-notes/aws-solution-architect-notes/security-and-identity/kms-service-deep-dive",
+   "dir": "content/blog/study-notes/aws-solution-architect-notes/security-and-identity",
+   "section": "study-notes",
+   "categories": [
+    "Study Notes"
+   ],
+   "tags": [
+    "AWS",
+    "Solution Architecture",
+    "KMS",
+    "Security"
+   ],
+   "date": "2026-07-16T09:16:33+08:00",
+   "lastmod": "2026-09-19T10:12:00+08:00",
+   "excerpt": "Use this as a flagship expert-level note. KMS is not just “turn on encryption.” It is the operational control point for who can use cryptographic keys, under what policies, and with what blast radius.",
+   "out_links": []
+  },
+  {
+   "title": "Secrets Manager Service Deep Dive",
+   "slug": "secrets-manager-service-deep-dive",
+   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/security-and-identity/secrets-manager-service-deep-dive/",
+   "path": "study-notes/aws-solution-architect-notes/security-and-identity/secrets-manager-service-deep-dive",
+   "dir": "content/blog/study-notes/aws-solution-architect-notes/security-and-identity",
+   "section": "study-notes",
+   "categories": [
+    "Study Notes"
+   ],
+   "tags": [
+    "AWS",
+    "Solution Architecture",
+    "Secrets Manager",
+    "Security"
+   ],
+   "date": "2026-07-16T09:24:29+08:00",
+   "lastmod": "2026-09-19T10:12:00+08:00",
+   "excerpt": "Use this as a fast expert note. Secrets Manager is not just secure storage. It is the lifecycle control point for credentials, tokens, and rotation-sensitive application secrets. - Right default when ",
+   "out_links": []
+  },
+  {
+   "title": "EBS Service Deep Dive",
+   "slug": "ebs-service-deep-dive",
+   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/storage/ebs-service-deep-dive/",
+   "path": "study-notes/aws-solution-architect-notes/storage/ebs-service-deep-dive",
+   "dir": "content/blog/study-notes/aws-solution-architect-notes/storage",
+   "section": "study-notes",
+   "categories": [
+    "Study Notes"
+   ],
+   "tags": [
+    "AWS",
+    "Solution Architecture",
+    "EBS",
+    "Storage"
+   ],
+   "date": "2026-07-16T09:52:49+08:00",
+   "lastmod": "2026-09-19T10:12:00+08:00",
+   "excerpt": "Use this as a fast expert note. EBS is not just “disk for EC2.” It is the main block-storage model in AWS and is central to understanding host-attached state, performance tuning, and zonal storage tra",
+   "out_links": []
+  },
+  {
+   "title": "EFS Service Deep Dive",
+   "slug": "efs-service-deep-dive",
+   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/storage/efs-service-deep-dive/",
+   "path": "study-notes/aws-solution-architect-notes/storage/efs-service-deep-dive",
+   "dir": "content/blog/study-notes/aws-solution-architect-notes/storage",
+   "section": "study-notes",
+   "categories": [
+    "Study Notes"
+   ],
+   "tags": [
+    "AWS",
+    "Solution Architecture",
+    "EFS",
+    "Storage"
+   ],
+   "date": "2026-07-16T09:52:49+08:00",
+   "lastmod": "2026-09-19T10:12:00+08:00",
+   "excerpt": "Use this as a fast expert note. EFS is not just network storage. It is the main shared POSIX file model in AWS and matters whenever many compute nodes need the same filesystem view. - Right default wh",
+   "out_links": []
+  },
+  {
+   "title": "S3 Service Deep Dive",
+   "slug": "s3-service-deep-dive",
+   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/storage/s3-service-deep-dive/",
+   "path": "study-notes/aws-solution-architect-notes/storage/s3-service-deep-dive",
+   "dir": "content/blog/study-notes/aws-solution-architect-notes/storage",
+   "section": "study-notes",
+   "categories": [
+    "Study Notes"
+   ],
+   "tags": [
+    "AWS",
+    "Solution Architecture",
+    "S3"
+   ],
+   "date": "2026-07-16T08:34:56+08:00",
+   "lastmod": "2026-09-19T10:22:00+08:00",
+   "excerpt": "Use this as a worked example of how to fill the study template. - Choose S3 when the workload needs durable object storage, simple HTTP-style access, broad AWS integration, and low operational effort.",
+   "out_links": []
+  },
+  {
+   "title": "AWS Solution Architect Study Map",
+   "slug": "study-map",
+   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/study-map/",
+   "path": "study-notes/aws-solution-architect-notes/study-map",
+   "dir": "content/blog/study-notes/aws-solution-architect-notes",
+   "section": "study-notes",
+   "categories": [
+    "Study Notes"
+   ],
+   "tags": [
+    "AWS",
+    "Solution Architecture"
+   ],
+   "date": "2026-07-15T09:00:00+08:00",
+   "lastmod": "2026-09-19T10:35:00+08:00",
    "excerpt": "This file is the detailed study guide for the AWS architecture notes collection. Use it for: - the mental model of AWS - the learning order across service families - the expert-note standard - cross-f",
    "out_links": [
     "study-notes/aws-solution-architect-notes/compute",
@@ -2023,10 +2680,10 @@
     "study-notes/aws-solution-architect-notes/devops-and-infrastructure",
     "study-notes/aws-solution-architect-notes/migration-backup-and-dr",
     "study-notes/aws-solution-architect-notes/end-user-and-application-services",
-    "study-notes/aws-solution-architect-notes/00_architect-study-template",
-    "study-notes/aws-solution-architect-notes/compute/12_lambda-service-deep-dive",
-    "study-notes/aws-solution-architect-notes/storage/13_s3-service-deep-dive",
-    "study-notes/aws-solution-architect-notes/security-and-identity/14_iam-service-deep-dive",
+    "study-notes/aws-solution-architect-notes/architect-study-template",
+    "study-notes/aws-solution-architect-notes/compute/lambda-service-deep-dive",
+    "study-notes/aws-solution-architect-notes/storage/s3-service-deep-dive",
+    "study-notes/aws-solution-architect-notes/security-and-identity/iam-service-deep-dive",
     "study-notes/aws-solution-architect-notes/security-and-identity/kms-service-deep-dive",
     "study-notes/aws-solution-architect-notes/security-and-identity/secrets-manager-service-deep-dive",
     "study-notes/aws-solution-architect-notes/security-and-identity/iam-identity-center-service-deep-dive",
@@ -2053,634 +2710,6 @@
     "study-notes/aws-solution-architect-notes/end-user-and-application-services/cognito-service-deep-dive",
     "study-notes/aws-solution-architect-notes/integration-and-messaging/step-functions-service-deep-dive"
    ]
-  },
-  {
-   "title": "Lambda Service Deep Dive",
-   "slug": "12_Lambda-Service-Deep-Dive",
-   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/compute/12_lambda-service-deep-dive/",
-   "path": "study-notes/aws-solution-architect-notes/compute/12_lambda-service-deep-dive",
-   "dir": "content/blog/study-notes/aws-solution-architect-notes/compute",
-   "section": "study-notes",
-   "categories": [
-    "Study Notes"
-   ],
-   "tags": [
-    "AWS",
-    "Solution Architecture",
-    "Lambda"
-   ],
-   "date": "2026-07-16T08:34:56+08:00",
-   "lastmod": "2026-07-27T09:46:25+08:00",
-   "excerpt": "Use this as a worked example of how to fill the study template. - Choose Lambda when workloads are event-driven, bursty, and operational simplicity matters more than host-level control. - It is a stro",
-   "out_links": []
-  },
-  {
-   "title": "EC2 Service Deep Dive",
-   "slug": "ec2-service-deep-dive",
-   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/compute/ec2-service-deep-dive/",
-   "path": "study-notes/aws-solution-architect-notes/compute/ec2-service-deep-dive",
-   "dir": "content/blog/study-notes/aws-solution-architect-notes/compute",
-   "section": "study-notes",
-   "categories": [
-    "Study Notes"
-   ],
-   "tags": [
-    "AWS",
-    "Solution Architecture",
-    "EC2",
-    "Compute"
-   ],
-   "date": "2026-07-16T09:52:49+08:00",
-   "lastmod": "2026-07-27T09:46:25+08:00",
-   "excerpt": "Use this as a fast expert note. EC2 is not the default for everything anymore, but it remains the clearest model of AWS compute control and is still the right answer when the workload needs host-level",
-   "out_links": []
-  },
-  {
-   "title": "ECS Service Deep Dive",
-   "slug": "ecs-service-deep-dive",
-   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/compute/ecs-service-deep-dive/",
-   "path": "study-notes/aws-solution-architect-notes/compute/ecs-service-deep-dive",
-   "dir": "content/blog/study-notes/aws-solution-architect-notes/compute",
-   "section": "study-notes",
-   "categories": [
-    "Study Notes"
-   ],
-   "tags": [
-    "AWS",
-    "Solution Architecture",
-    "ECS",
-    "Compute"
-   ],
-   "date": "2026-07-16T09:52:49+08:00",
-   "lastmod": "2026-07-27T09:46:25+08:00",
-   "excerpt": "Use this as a fast expert note. ECS is not just containers on AWS. It is often the practical default for long-running AWS-native services when teams want container flexibility without Kubernetes overh",
-   "out_links": []
-  },
-  {
-   "title": "Aurora Service Deep Dive",
-   "slug": "aurora-service-deep-dive",
-   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/databases/aurora-service-deep-dive/",
-   "path": "study-notes/aws-solution-architect-notes/databases/aurora-service-deep-dive",
-   "dir": "content/blog/study-notes/aws-solution-architect-notes/databases",
-   "section": "study-notes",
-   "categories": [
-    "Study Notes"
-   ],
-   "tags": [
-    "AWS",
-    "Solution Architecture",
-    "Aurora",
-    "Database"
-   ],
-   "date": "2026-07-16T09:12:29+08:00",
-   "lastmod": "2026-07-27T09:46:25+08:00",
-   "excerpt": "Use this as a flagship expert-level note. Aurora is not just managed relational storage. It is the strategic AWS default when a workload truly needs relational guarantees but also expects high availab",
-   "out_links": []
-  },
-  {
-   "title": "DynamoDB Service Deep Dive",
-   "slug": "dynamodb-service-deep-dive",
-   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/databases/dynamodb-service-deep-dive/",
-   "path": "study-notes/aws-solution-architect-notes/databases/dynamodb-service-deep-dive",
-   "dir": "content/blog/study-notes/aws-solution-architect-notes/databases",
-   "section": "study-notes",
-   "categories": [
-    "Study Notes"
-   ],
-   "tags": [
-    "AWS",
-    "Solution Architecture",
-    "DynamoDB",
-    "Database"
-   ],
-   "date": "2026-07-16T09:12:29+08:00",
-   "lastmod": "2026-07-27T09:46:25+08:00",
-   "excerpt": "Use this as a flagship expert-level note. DynamoDB is not just “NoSQL on AWS.” It is a design-first database that rewards clear access patterns and punishes vague ones. - DynamoDB is the right default",
-   "out_links": []
-  },
-  {
-   "title": "RDS Service Deep Dive",
-   "slug": "rds-service-deep-dive",
-   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/databases/rds-service-deep-dive/",
-   "path": "study-notes/aws-solution-architect-notes/databases/rds-service-deep-dive",
-   "dir": "content/blog/study-notes/aws-solution-architect-notes/databases",
-   "section": "study-notes",
-   "categories": [
-    "Study Notes"
-   ],
-   "tags": [
-    "AWS",
-    "Solution Architecture",
-    "RDS",
-    "Database"
-   ],
-   "date": "2026-07-16T09:24:29+08:00",
-   "lastmod": "2026-07-27T09:46:25+08:00",
-   "excerpt": "Use this as a fast expert note. RDS is not just a smaller Aurora. It is often the practical managed-relational default when engine familiarity, migration ease, and simpler operational posture matter m",
-   "out_links": []
-  },
-  {
-   "title": "CDK Service Deep Dive",
-   "slug": "cdk-service-deep-dive",
-   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/devops-and-infrastructure/cdk-service-deep-dive/",
-   "path": "study-notes/aws-solution-architect-notes/devops-and-infrastructure/cdk-service-deep-dive",
-   "dir": "content/blog/study-notes/aws-solution-architect-notes/devops-and-infrastructure",
-   "section": "study-notes",
-   "categories": [
-    "Study Notes"
-   ],
-   "tags": [
-    "AWS",
-    "Solution Architecture",
-    "CDK",
-    "DevOps"
-   ],
-   "date": "2026-07-16T09:29:12+08:00",
-   "lastmod": "2026-07-27T09:46:25+08:00",
-   "excerpt": "Use this as a fast expert note. CDK is not a replacement for CloudFormation thinking. It is a higher-level way to express infrastructure, but the underlying stack and deployment behavior still matter.",
-   "out_links": []
-  },
-  {
-   "title": "CloudFormation Service Deep Dive",
-   "slug": "cloudformation-service-deep-dive",
-   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/devops-and-infrastructure/cloudformation-service-deep-dive/",
-   "path": "study-notes/aws-solution-architect-notes/devops-and-infrastructure/cloudformation-service-deep-dive",
-   "dir": "content/blog/study-notes/aws-solution-architect-notes/devops-and-infrastructure",
-   "section": "study-notes",
-   "categories": [
-    "Study Notes"
-   ],
-   "tags": [
-    "AWS",
-    "Solution Architecture",
-    "CloudFormation",
-    "DevOps"
-   ],
-   "date": "2026-07-16T09:29:12+08:00",
-   "lastmod": "2026-07-27T09:46:25+08:00",
-   "excerpt": "Use this as a fast expert note. CloudFormation is not just templates. It is the foundation of AWS-native infrastructure control, drift management, and repeatable environment definition. - Right defaul",
-   "out_links": []
-  },
-  {
-   "title": "ECR Service Deep Dive",
-   "slug": "ecr-service-deep-dive",
-   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/devops-and-infrastructure/ecr-service-deep-dive/",
-   "path": "study-notes/aws-solution-architect-notes/devops-and-infrastructure/ecr-service-deep-dive",
-   "dir": "content/blog/study-notes/aws-solution-architect-notes/devops-and-infrastructure",
-   "section": "study-notes",
-   "categories": [
-    "Study Notes"
-   ],
-   "tags": [
-    "AWS",
-    "Solution Architecture",
-    "ECR",
-    "DevOps"
-   ],
-   "date": "2026-07-16T09:24:29+08:00",
-   "lastmod": "2026-07-27T09:46:25+08:00",
-   "excerpt": "Use this as a fast expert note. ECR is not just image storage. It is part of the software supply chain and directly affects artifact immutability, deployment trust, and vulnerability visibility. - Rig",
-   "out_links": []
-  },
-  {
-   "title": "Cognito Service Deep Dive",
-   "slug": "cognito-service-deep-dive",
-   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/end-user-and-application-services/cognito-service-deep-dive/",
-   "path": "study-notes/aws-solution-architect-notes/end-user-and-application-services/cognito-service-deep-dive",
-   "dir": "content/blog/study-notes/aws-solution-architect-notes/end-user-and-application-services",
-   "section": "study-notes",
-   "categories": [
-    "Study Notes"
-   ],
-   "tags": [
-    "AWS",
-    "Solution Architecture",
-    "Cognito",
-    "Identity"
-   ],
-   "date": "2026-07-16T09:24:29+08:00",
-   "lastmod": "2026-07-27T09:46:25+08:00",
-   "excerpt": "Use this as a fast expert note. Cognito is not just user login. It is a managed identity product with opinionated flows, and the fit depends heavily on tenant model, federation, and UX requirements.",
-   "out_links": []
-  },
-  {
-   "title": "EventBridge Service Deep Dive",
-   "slug": "eventbridge-service-deep-dive",
-   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/integration-and-messaging/eventbridge-service-deep-dive/",
-   "path": "study-notes/aws-solution-architect-notes/integration-and-messaging/eventbridge-service-deep-dive",
-   "dir": "content/blog/study-notes/aws-solution-architect-notes/integration-and-messaging",
-   "section": "study-notes",
-   "categories": [
-    "Study Notes"
-   ],
-   "tags": [
-    "AWS",
-    "Solution Architecture",
-    "EventBridge",
-    "Messaging"
-   ],
-   "date": "2026-07-16T09:16:33+08:00",
-   "lastmod": "2026-07-27T09:46:25+08:00",
-   "excerpt": "Use this as a flagship expert-level note. EventBridge is not just event transport. It is an event-routing and ownership boundary that determines how loosely or tightly systems evolve together. - Event",
-   "out_links": []
-  },
-  {
-   "title": "SQS Service Deep Dive",
-   "slug": "sqs-service-deep-dive",
-   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/integration-and-messaging/sqs-service-deep-dive/",
-   "path": "study-notes/aws-solution-architect-notes/integration-and-messaging/sqs-service-deep-dive",
-   "dir": "content/blog/study-notes/aws-solution-architect-notes/integration-and-messaging",
-   "section": "study-notes",
-   "categories": [
-    "Study Notes"
-   ],
-   "tags": [
-    "AWS",
-    "Solution Architecture",
-    "SQS",
-    "Messaging"
-   ],
-   "date": "2026-07-16T09:16:33+08:00",
-   "lastmod": "2026-07-27T09:46:25+08:00",
-   "excerpt": "Use this as a flagship expert-level note. SQS is not just a queue. It is often the main decoupling boundary that determines whether failures stay contained or spread across the system. - SQS is the ri",
-   "out_links": []
-  },
-  {
-   "title": "Step Functions Service Deep Dive",
-   "slug": "step-functions-service-deep-dive",
-   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/integration-and-messaging/step-functions-service-deep-dive/",
-   "path": "study-notes/aws-solution-architect-notes/integration-and-messaging/step-functions-service-deep-dive",
-   "dir": "content/blog/study-notes/aws-solution-architect-notes/integration-and-messaging",
-   "section": "study-notes",
-   "categories": [
-    "Study Notes"
-   ],
-   "tags": [
-    "AWS",
-    "Solution Architecture",
-    "Step Functions",
-    "Messaging"
-   ],
-   "date": "2026-07-16T09:29:12+08:00",
-   "lastmod": "2026-07-27T09:46:25+08:00",
-   "excerpt": "Use this as a fast expert note. Step Functions is not just sequencing. It is explicit durable workflow state, which can be a powerful control point or a source of architecture centralization. - Right ",
-   "out_links": []
-  },
-  {
-   "title": "AWS Backup Service Deep Dive",
-   "slug": "aws-backup-service-deep-dive",
-   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/migration-backup-and-dr/aws-backup-service-deep-dive/",
-   "path": "study-notes/aws-solution-architect-notes/migration-backup-and-dr/aws-backup-service-deep-dive",
-   "dir": "content/blog/study-notes/aws-solution-architect-notes/migration-backup-and-dr",
-   "section": "study-notes",
-   "categories": [
-    "Study Notes"
-   ],
-   "tags": [
-    "AWS",
-    "Solution Architecture",
-    "AWS Backup",
-    "Recovery"
-   ],
-   "date": "2026-07-16T09:24:29+08:00",
-   "lastmod": "2026-07-27T09:46:25+08:00",
-   "excerpt": "Use this as a fast expert note. AWS Backup is not a DR strategy by itself. It is a centralized backup-governance service that improves consistency, visibility, and policy control across workloads. - R",
-   "out_links": []
-  },
-  {
-   "title": "Elastic Disaster Recovery Service Deep Dive",
-   "slug": "elastic-disaster-recovery-service-deep-dive",
-   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/migration-backup-and-dr/elastic-disaster-recovery-service-deep-dive/",
-   "path": "study-notes/aws-solution-architect-notes/migration-backup-and-dr/elastic-disaster-recovery-service-deep-dive",
-   "dir": "content/blog/study-notes/aws-solution-architect-notes/migration-backup-and-dr",
-   "section": "study-notes",
-   "categories": [
-    "Study Notes"
-   ],
-   "tags": [
-    "AWS",
-    "Solution Architecture",
-    "Elastic Disaster Recovery",
-    "Recovery"
-   ],
-   "date": "2026-07-16T09:29:12+08:00",
-   "lastmod": "2026-07-27T09:46:25+08:00",
-   "excerpt": "Use this as a fast expert note. Elastic Disaster Recovery is not a universal DR answer. It is strongest for server-style recovery where infrastructure-level replication is the practical path. - Right ",
-   "out_links": []
-  },
-  {
-   "title": "API Gateway Service Deep Dive",
-   "slug": "api-gateway-service-deep-dive",
-   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/networking-and-delivery/api-gateway-service-deep-dive/",
-   "path": "study-notes/aws-solution-architect-notes/networking-and-delivery/api-gateway-service-deep-dive",
-   "dir": "content/blog/study-notes/aws-solution-architect-notes/networking-and-delivery",
-   "section": "study-notes",
-   "categories": [
-    "Study Notes"
-   ],
-   "tags": [
-    "AWS",
-    "Solution Architecture",
-    "API Gateway",
-    "Networking"
-   ],
-   "date": "2026-07-16T09:16:33+08:00",
-   "lastmod": "2026-07-27T09:46:25+08:00",
-   "excerpt": "Use this as a flagship expert-level note. API Gateway is not just an HTTP entry point. It is a policy, integration, and governance boundary for APIs. - API Gateway is the right default when API lifecy",
-   "out_links": []
-  },
-  {
-   "title": "CloudFront Service Deep Dive",
-   "slug": "cloudfront-service-deep-dive",
-   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/networking-and-delivery/cloudfront-service-deep-dive/",
-   "path": "study-notes/aws-solution-architect-notes/networking-and-delivery/cloudfront-service-deep-dive",
-   "dir": "content/blog/study-notes/aws-solution-architect-notes/networking-and-delivery",
-   "section": "study-notes",
-   "categories": [
-    "Study Notes"
-   ],
-   "tags": [
-    "AWS",
-    "Solution Architecture",
-    "CloudFront",
-    "Networking"
-   ],
-   "date": "2026-07-16T09:16:33+08:00",
-   "lastmod": "2026-07-27T09:46:25+08:00",
-   "excerpt": "Use this as a flagship expert-level note. CloudFront is not just a CDN. It is often the real internet edge of the platform, shaping latency, cache behavior, exposure, and attack surface. - CloudFront ",
-   "out_links": []
-  },
-  {
-   "title": "Route 53 Service Deep Dive",
-   "slug": "route-53-service-deep-dive",
-   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/networking-and-delivery/route-53-service-deep-dive/",
-   "path": "study-notes/aws-solution-architect-notes/networking-and-delivery/route-53-service-deep-dive",
-   "dir": "content/blog/study-notes/aws-solution-architect-notes/networking-and-delivery",
-   "section": "study-notes",
-   "categories": [
-    "Study Notes"
-   ],
-   "tags": [
-    "AWS",
-    "Solution Architecture",
-    "Route 53",
-    "Networking"
-   ],
-   "date": "2026-07-16T09:24:29+08:00",
-   "lastmod": "2026-07-27T09:46:25+08:00",
-   "excerpt": "Use this as a fast expert note. Route 53 is not just DNS hosting. It is a traffic-control and failover decision layer, so DNS behavior becomes part of availability design. - Right default when AWS wor",
-   "out_links": []
-  },
-  {
-   "title": "VPC Service Deep Dive",
-   "slug": "vpc-service-deep-dive",
-   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/networking-and-delivery/vpc-service-deep-dive/",
-   "path": "study-notes/aws-solution-architect-notes/networking-and-delivery/vpc-service-deep-dive",
-   "dir": "content/blog/study-notes/aws-solution-architect-notes/networking-and-delivery",
-   "section": "study-notes",
-   "categories": [
-    "Study Notes"
-   ],
-   "tags": [
-    "AWS",
-    "Solution Architecture",
-    "VPC",
-    "Networking"
-   ],
-   "date": "2026-07-16T09:12:29+08:00",
-   "lastmod": "2026-07-27T09:46:25+08:00",
-   "excerpt": "Use this as a flagship expert-level note. VPC is not just a network container. It is one of the main ways AWS architectures define isolation, traffic control, and blast radius. - VPC is the default ne",
-   "out_links": []
-  },
-  {
-   "title": "AWS Config Service Deep Dive",
-   "slug": "aws-config-service-deep-dive",
-   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/observability-and-operations/aws-config-service-deep-dive/",
-   "path": "study-notes/aws-solution-architect-notes/observability-and-operations/aws-config-service-deep-dive",
-   "dir": "content/blog/study-notes/aws-solution-architect-notes/observability-and-operations",
-   "section": "study-notes",
-   "categories": [
-    "Study Notes"
-   ],
-   "tags": [
-    "AWS",
-    "Solution Architecture",
-    "AWS Config",
-    "Governance"
-   ],
-   "date": "2026-07-16T09:29:12+08:00",
-   "lastmod": "2026-07-27T09:46:25+08:00",
-   "excerpt": "Use this as a fast expert note. AWS Config is not just inventory history. It is a governance and drift-observation layer, which matters most when the organization actually uses it to enforce or invest",
-   "out_links": []
-  },
-  {
-   "title": "CloudTrail Service Deep Dive",
-   "slug": "cloudtrail-service-deep-dive",
-   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/observability-and-operations/cloudtrail-service-deep-dive/",
-   "path": "study-notes/aws-solution-architect-notes/observability-and-operations/cloudtrail-service-deep-dive",
-   "dir": "content/blog/study-notes/aws-solution-architect-notes/observability-and-operations",
-   "section": "study-notes",
-   "categories": [
-    "Study Notes"
-   ],
-   "tags": [
-    "AWS",
-    "Solution Architecture",
-    "CloudTrail",
-    "Audit"
-   ],
-   "date": "2026-07-16T09:24:29+08:00",
-   "lastmod": "2026-07-27T09:46:25+08:00",
-   "excerpt": "Use this as a fast expert note. CloudTrail is not just logs. It is the core API-audit record for who changed what in AWS and often the first place serious incident review begins. - Right default for e",
-   "out_links": []
-  },
-  {
-   "title": "CloudWatch Service Deep Dive",
-   "slug": "cloudwatch-service-deep-dive",
-   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/observability-and-operations/cloudwatch-service-deep-dive/",
-   "path": "study-notes/aws-solution-architect-notes/observability-and-operations/cloudwatch-service-deep-dive",
-   "dir": "content/blog/study-notes/aws-solution-architect-notes/observability-and-operations",
-   "section": "study-notes",
-   "categories": [
-    "Study Notes"
-   ],
-   "tags": [
-    "AWS",
-    "Solution Architecture",
-    "CloudWatch",
-    "Observability"
-   ],
-   "date": "2026-07-16T09:16:33+08:00",
-   "lastmod": "2026-07-27T09:46:25+08:00",
-   "excerpt": "Use this as a flagship expert-level note. CloudWatch is not just dashboards and alarms. It is often the main operational feedback system for AWS workloads, which means poor CloudWatch design can make ",
-   "out_links": []
-  },
-  {
-   "title": "Systems Manager Service Deep Dive",
-   "slug": "systems-manager-service-deep-dive",
-   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/observability-and-operations/systems-manager-service-deep-dive/",
-   "path": "study-notes/aws-solution-architect-notes/observability-and-operations/systems-manager-service-deep-dive",
-   "dir": "content/blog/study-notes/aws-solution-architect-notes/observability-and-operations",
-   "section": "study-notes",
-   "categories": [
-    "Study Notes"
-   ],
-   "tags": [
-    "AWS",
-    "Solution Architecture",
-    "Systems Manager",
-    "Operations"
-   ],
-   "date": "2026-07-16T09:24:29+08:00",
-   "lastmod": "2026-07-27T09:46:25+08:00",
-   "excerpt": "Use this as a fast expert note. Systems Manager is not one thing. It is an operations toolbox, and its value depends on how consistently the organization standardizes remote ops, automation, patching,",
-   "out_links": []
-  },
-  {
-   "title": "IAM Service Deep Dive",
-   "slug": "14_IAM-Service-Deep-Dive",
-   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/security-and-identity/14_iam-service-deep-dive/",
-   "path": "study-notes/aws-solution-architect-notes/security-and-identity/14_iam-service-deep-dive",
-   "dir": "content/blog/study-notes/aws-solution-architect-notes/security-and-identity",
-   "section": "study-notes",
-   "categories": [
-    "Study Notes"
-   ],
-   "tags": [
-    "AWS",
-    "Solution Architecture",
-    "IAM",
-    "Security"
-   ],
-   "date": "2026-07-16T08:40:18+08:00",
-   "lastmod": "2026-07-27T09:46:25+08:00",
-   "excerpt": "Use this as a flagship expert-level note. IAM is not just a permissions service. It is the control surface that determines blast radius, workload trust, and operational safety across AWS. - IAM is the",
-   "out_links": []
-  },
-  {
-   "title": "IAM Identity Center Service Deep Dive",
-   "slug": "iam-identity-center-service-deep-dive",
-   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/security-and-identity/iam-identity-center-service-deep-dive/",
-   "path": "study-notes/aws-solution-architect-notes/security-and-identity/iam-identity-center-service-deep-dive",
-   "dir": "content/blog/study-notes/aws-solution-architect-notes/security-and-identity",
-   "section": "study-notes",
-   "categories": [
-    "Study Notes"
-   ],
-   "tags": [
-    "AWS",
-    "Solution Architecture",
-    "IAM Identity Center",
-    "Security"
-   ],
-   "date": "2026-07-16T09:29:12+08:00",
-   "lastmod": "2026-07-27T09:46:25+08:00",
-   "excerpt": "Use this as a fast expert note. IAM Identity Center is not just SSO. It is the organizational control point for workforce access across accounts and applications. - Right default for human access in m",
-   "out_links": []
-  },
-  {
-   "title": "KMS Service Deep Dive",
-   "slug": "kms-service-deep-dive",
-   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/security-and-identity/kms-service-deep-dive/",
-   "path": "study-notes/aws-solution-architect-notes/security-and-identity/kms-service-deep-dive",
-   "dir": "content/blog/study-notes/aws-solution-architect-notes/security-and-identity",
-   "section": "study-notes",
-   "categories": [
-    "Study Notes"
-   ],
-   "tags": [
-    "AWS",
-    "Solution Architecture",
-    "KMS",
-    "Security"
-   ],
-   "date": "2026-07-16T09:16:33+08:00",
-   "lastmod": "2026-07-27T09:46:25+08:00",
-   "excerpt": "Use this as a flagship expert-level note. KMS is not just “turn on encryption.” It is the operational control point for who can use cryptographic keys, under what policies, and with what blast radius.",
-   "out_links": []
-  },
-  {
-   "title": "Secrets Manager Service Deep Dive",
-   "slug": "secrets-manager-service-deep-dive",
-   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/security-and-identity/secrets-manager-service-deep-dive/",
-   "path": "study-notes/aws-solution-architect-notes/security-and-identity/secrets-manager-service-deep-dive",
-   "dir": "content/blog/study-notes/aws-solution-architect-notes/security-and-identity",
-   "section": "study-notes",
-   "categories": [
-    "Study Notes"
-   ],
-   "tags": [
-    "AWS",
-    "Solution Architecture",
-    "Secrets Manager",
-    "Security"
-   ],
-   "date": "2026-07-16T09:24:29+08:00",
-   "lastmod": "2026-07-27T09:46:25+08:00",
-   "excerpt": "Use this as a fast expert note. Secrets Manager is not just secure storage. It is the lifecycle control point for credentials, tokens, and rotation-sensitive application secrets. - Right default when ",
-   "out_links": []
-  },
-  {
-   "title": "S3 Service Deep Dive",
-   "slug": "13_S3-Service-Deep-Dive",
-   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/storage/13_s3-service-deep-dive/",
-   "path": "study-notes/aws-solution-architect-notes/storage/13_s3-service-deep-dive",
-   "dir": "content/blog/study-notes/aws-solution-architect-notes/storage",
-   "section": "study-notes",
-   "categories": [
-    "Study Notes"
-   ],
-   "tags": [
-    "AWS",
-    "Solution Architecture",
-    "S3"
-   ],
-   "date": "2026-07-16T08:34:56+08:00",
-   "lastmod": "2026-07-27T09:46:25+08:00",
-   "excerpt": "Use this as a worked example of how to fill the study template. - Choose S3 when the workload needs durable object storage, simple HTTP-style access, broad AWS integration, and low operational effort.",
-   "out_links": []
-  },
-  {
-   "title": "EBS Service Deep Dive",
-   "slug": "ebs-service-deep-dive",
-   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/storage/ebs-service-deep-dive/",
-   "path": "study-notes/aws-solution-architect-notes/storage/ebs-service-deep-dive",
-   "dir": "content/blog/study-notes/aws-solution-architect-notes/storage",
-   "section": "study-notes",
-   "categories": [
-    "Study Notes"
-   ],
-   "tags": [
-    "AWS",
-    "Solution Architecture",
-    "EBS",
-    "Storage"
-   ],
-   "date": "2026-07-16T09:52:49+08:00",
-   "lastmod": "2026-07-27T09:46:25+08:00",
-   "excerpt": "Use this as a fast expert note. EBS is not just “disk for EC2.” It is the main block-storage model in AWS and is central to understanding host-attached state, performance tuning, and zonal storage tra",
-   "out_links": []
-  },
-  {
-   "title": "EFS Service Deep Dive",
-   "slug": "efs-service-deep-dive",
-   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/storage/efs-service-deep-dive/",
-   "path": "study-notes/aws-solution-architect-notes/storage/efs-service-deep-dive",
-   "dir": "content/blog/study-notes/aws-solution-architect-notes/storage",
-   "section": "study-notes",
-   "categories": [
-    "Study Notes"
-   ],
-   "tags": [
-    "AWS",
-    "Solution Architecture",
-    "EFS",
-    "Storage"
-   ],
-   "date": "2026-07-16T09:52:49+08:00",
-   "lastmod": "2026-07-27T09:46:25+08:00",
-   "excerpt": "Use this as a fast expert note. EFS is not just network storage. It is the main shared POSIX file model in AWS and matters whenever many compute nodes need the same filesystem view. - Right default wh",
-   "out_links": []
   },
   {
    "title": "48小时周均工时悖论：工作时间长 $\\neq$ 产出高",

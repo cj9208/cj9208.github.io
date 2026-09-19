@@ -1,8 +1,8 @@
 ---
 title: "Analytics And Data Engineering Family"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-27T09:46:25+08:00
-draft: true
+lastmod: 2026-09-19T10:35:00+08:00
+draft: false
 
 description: "Analytics and data engineering services ingest, process, transform, store, search, and visualize large-scale data."
 summary: "Analytics and data engineering services ingest, process, transform, store, search, and visualize large-scale data."
@@ -13,7 +13,7 @@ tags:
   - "AWS"
   - "Solution Architecture"
 
-slug: "08_Analytics-and-Data-Engineering-Family"
+slug: "analytics-and-data-engineering-family"
 ---
 ## Family Role
 
@@ -97,7 +97,7 @@ Analytics and data engineering services ingest, process, transform, store, searc
 
 ## Per-Service Drill-Down
 
-Use [`00_Architect-Study-Template.md`]({{< relref "../00_Architect-Study-Template.md" >}}) for:
+Use [`architect-study-template`]({{< relref "../00_Architect-Study-Template.md" >}}) for:
 
 - `Athena`
 - `Glue`
@@ -112,7 +112,7 @@ Use [`00_Architect-Study-Template.md`]({{< relref "../00_Architect-Study-Templat
 
 | Service | Why It Belongs | Link | Status |
 |---|---|---|---|
-| `Athena` | Default query-in-place model for AWS-native lake exploration | [`athena.md`]({{< relref "./athena.md" >}}) | done |
-| `Glue` | Main metadata and managed-transformation backbone for the AWS data platform | [`glue.md`]({{< relref "./glue.md" >}}) | done |
+| `Athena` | Default query-in-place model for AWS-native lake exploration | [`athena`]({{< relref "./athena.md" >}}) | done |
+| `Glue` | Main metadata and managed-transformation backbone for the AWS data platform | [`glue`]({{< relref "./glue.md" >}}) | done |
 | `Redshift` | Add when curated warehouse serving becomes important enough to deserve a dedicated flagship note | - | conditional |
 | `Kinesis` | Add when real-time ingestion and streaming become a stronger focus than batch and lake patterns | - | conditional |

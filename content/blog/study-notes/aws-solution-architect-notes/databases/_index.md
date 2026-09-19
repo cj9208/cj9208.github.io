@@ -1,8 +1,8 @@
 ---
 title: "Databases Family"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-07-27T09:46:25+08:00
-draft: true
+lastmod: 2026-09-19T10:35:00+08:00
+draft: false
 
 description: "Database services persist and query application data. The main architect question is which data model, access pattern, and operational model best fit the workload."
 summary: "Database services persist and query application data. The main architect question is which data model, access pattern, and operational model best fit the workload."
@@ -13,7 +13,7 @@ tags:
   - "AWS"
   - "Solution Architecture"
 
-slug: "03_Databases-Family"
+slug: "databases-family"
 ---
 ## Family Role
 
@@ -101,7 +101,7 @@ Database services persist and query application data. The main architect questio
 
 ## Per-Service Drill-Down
 
-Use [`00_Architect-Study-Template.md`]({{< relref "../00_Architect-Study-Template.md" >}}) for:
+Use [`architect-study-template`]({{< relref "../00_Architect-Study-Template.md" >}}) for:
 
 - `RDS`
 - `Aurora`
@@ -116,7 +116,7 @@ Use [`00_Architect-Study-Template.md`]({{< relref "../00_Architect-Study-Templat
 
 | Service | Why It Belongs | Link | Status |
 |---|---|---|---|
-| `Aurora` | Strategic AWS-native relational platform for high-value OLTP systems | [`aurora.md`]({{< relref "./aurora.md" >}}) | done |
-| `DynamoDB` | Main NoSQL and access-pattern-driven database model in AWS | [`dynamodb.md`]({{< relref "./dynamodb.md" >}}) | done |
-| `RDS` | Practical managed-relational default when familiarity and migration ease matter | [`rds.md`]({{< relref "./rds.md" >}}) | done |
+| `Aurora` | Strategic AWS-native relational platform for high-value OLTP systems | [`aurora`]({{< relref "./aurora.md" >}}) | done |
+| `DynamoDB` | Main NoSQL and access-pattern-driven database model in AWS | [`dynamodb`]({{< relref "./dynamodb.md" >}}) | done |
+| `RDS` | Practical managed-relational default when familiarity and migration ease matter | [`rds`]({{< relref "./rds.md" >}}) | done |
 | `Redshift` | Add when analytical warehouse patterns become important enough to deserve a dedicated data-serving flagship | - | conditional |
