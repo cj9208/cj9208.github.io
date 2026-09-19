@@ -1,7 +1,7 @@
 ---
 title: "AWS Notes Progress"
 date: 2026-07-16T09:24:29+08:00
-lastmod: 2026-07-27T09:46:25+08:00
+lastmod: 2026-09-19T10:36:00+08:00
 draft: true
 
 description: "Roadmap and status guide for the AWS solution architect notes collection."
@@ -61,7 +61,7 @@ When this phase starts, focus on:
 - [ ] Make tone consistent across family pages and service deep dives
 - [ ] Standardize front matter fields and slug conventions
 - [ ] Standardize section names and note structure where drift has appeared
-- [ ] Improve cross-link quality between study map, family pages, and deep dives
+- [ ] Improve cross-link quality between the collection page, family pages, and deep dives
 - [ ] Add better landing-page navigation and reading flow
 - [ ] Decide which notes are mature enough to move toward publication
 
@@ -71,13 +71,53 @@ Status: active long-term direction
 
 To evolve this collection into a strong long-term lookup reference:
 
-- [ ] Keep refining the study map as the central mental model of the collection
+- [ ] Keep refining the collection page as the central mental model of the collection
 - [ ] Deepen only the highest-value flagship services instead of expanding the catalog broadly
 - [ ] Add more architecture-pattern notes, not just more service notes
 - [ ] Strengthen cross-links between family pages and flagship deep dives
 - [ ] Add more recovery, cost-shape, and failure-mode realism where notes remain too abstract
 - [ ] Periodically review whether a note still belongs in the flagship set
 - [ ] Periodically review whether a family needs fewer or more flagship services
+
+## 5. Structure Decisions And Backlog
+
+Absorbed from the deleted study map page on 2026-09-19 (internal record; not part of the published tree).
+
+### Folder Naming Choice
+
+The folders intentionally do not include numeric prefixes.
+
+Use the study sequence on the collection page to express learning order instead of encoding sequence into folder names.
+
+Reasons:
+
+- the folders represent topic domains, not a rigid course syllabus
+- the best study order can change as the collection evolves
+- unnumbered names make links, filenames, and future deep dives cleaner
+- service deep dives can be added naturally under each family without inheriting artificial numbering
+
+The earlier numbered flat files made sense in the previous single-layer layout.
+
+### Recommended Next Expert Deep Dives
+
+To raise the collection meaningfully, prioritize these next:
+
+1. `Redshift`
+2. `SES`
+3. `Transit Gateway`
+4. `Application Migration Service`
+5. `X-Ray`
+6. `SNS`
+7. `CloudFormation Guardrails / Service Catalog`
+8. `GuardDuty`
+9. `AppSync`
+10. `DMS`
+
+### Restructure Record (2026-09-19)
+
+- The study map article was merged into the collection page (`_index.md`) and deleted from the published tree; the layered structure is now collection page → family pages → service pages.
+- The old URL is kept as an alias: `/blog/study-notes/aws-solution-architect-notes/study-map/` redirects to the collection root.
+- The public page no longer carries the service-level link list (family pages own their flagship plans) nor this backlog.
 
 ## Operating Rule
 

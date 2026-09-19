@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-09-19T10:19:53+08:00",
+ "generated_at": "2026-09-19T10:36:07+08:00",
  "base_url": "https://cj9208.github.io/blog/",
- "source_fingerprint": "f3ebc6746ba1a28a7cd1f653f74d8cd1061e8ca1",
- "count": 222,
+ "source_fingerprint": "c8cbc48c91d8f50539a0c03bb833868165421136",
+ "count": 221,
  "articles": [
   {
    "title": "AI 时代的商业困境：从分发共赢到“答案经济”的结构性矛盾",
@@ -2650,66 +2650,6 @@
    "lastmod": "2026-09-19T10:22:00+08:00",
    "excerpt": "Use this as a worked example of how to fill the study template. - Choose S3 when the workload needs durable object storage, simple HTTP-style access, broad AWS integration, and low operational effort.",
    "out_links": []
-  },
-  {
-   "title": "AWS Solution Architect Study Map",
-   "slug": "study-map",
-   "url": "https://cj9208.github.io/blog/study-notes/aws-solution-architect-notes/study-map/",
-   "path": "study-notes/aws-solution-architect-notes/study-map",
-   "dir": "content/blog/study-notes/aws-solution-architect-notes",
-   "section": "study-notes",
-   "categories": [
-    "Study Notes"
-   ],
-   "tags": [
-    "AWS",
-    "Solution Architecture"
-   ],
-   "date": "2026-07-15T09:00:00+08:00",
-   "lastmod": "2026-09-19T10:35:00+08:00",
-   "excerpt": "This file is the detailed study guide for the AWS architecture notes collection. Use it for: - the mental model of AWS - the learning order across service families - the expert-note standard - cross-f",
-   "out_links": [
-    "study-notes/aws-solution-architect-notes/compute",
-    "study-notes/aws-solution-architect-notes/storage",
-    "study-notes/aws-solution-architect-notes/databases",
-    "study-notes/aws-solution-architect-notes/networking-and-delivery",
-    "study-notes/aws-solution-architect-notes/security-and-identity",
-    "study-notes/aws-solution-architect-notes/integration-and-messaging",
-    "study-notes/aws-solution-architect-notes/observability-and-operations",
-    "study-notes/aws-solution-architect-notes/analytics-and-data-engineering",
-    "study-notes/aws-solution-architect-notes/devops-and-infrastructure",
-    "study-notes/aws-solution-architect-notes/migration-backup-and-dr",
-    "study-notes/aws-solution-architect-notes/end-user-and-application-services",
-    "study-notes/aws-solution-architect-notes/architect-study-template",
-    "study-notes/aws-solution-architect-notes/compute/lambda-service-deep-dive",
-    "study-notes/aws-solution-architect-notes/storage/s3-service-deep-dive",
-    "study-notes/aws-solution-architect-notes/security-and-identity/iam-service-deep-dive",
-    "study-notes/aws-solution-architect-notes/security-and-identity/kms-service-deep-dive",
-    "study-notes/aws-solution-architect-notes/security-and-identity/secrets-manager-service-deep-dive",
-    "study-notes/aws-solution-architect-notes/security-and-identity/iam-identity-center-service-deep-dive",
-    "study-notes/aws-solution-architect-notes/networking-and-delivery/vpc-service-deep-dive",
-    "study-notes/aws-solution-architect-notes/networking-and-delivery/cloudfront-service-deep-dive",
-    "study-notes/aws-solution-architect-notes/networking-and-delivery/api-gateway-service-deep-dive",
-    "study-notes/aws-solution-architect-notes/networking-and-delivery/route-53-service-deep-dive",
-    "study-notes/aws-solution-architect-notes/databases/aurora-service-deep-dive",
-    "study-notes/aws-solution-architect-notes/databases/dynamodb-service-deep-dive",
-    "study-notes/aws-solution-architect-notes/databases/rds-service-deep-dive",
-    "study-notes/aws-solution-architect-notes/integration-and-messaging/sqs-service-deep-dive",
-    "study-notes/aws-solution-architect-notes/integration-and-messaging/eventbridge-service-deep-dive",
-    "study-notes/aws-solution-architect-notes/observability-and-operations/cloudwatch-service-deep-dive",
-    "study-notes/aws-solution-architect-notes/observability-and-operations/systems-manager-service-deep-dive",
-    "study-notes/aws-solution-architect-notes/observability-and-operations/cloudtrail-service-deep-dive",
-    "study-notes/aws-solution-architect-notes/observability-and-operations/aws-config-service-deep-dive",
-    "study-notes/aws-solution-architect-notes/analytics-and-data-engineering/athena-service-deep-dive",
-    "study-notes/aws-solution-architect-notes/analytics-and-data-engineering/glue-service-deep-dive",
-    "study-notes/aws-solution-architect-notes/devops-and-infrastructure/ecr-service-deep-dive",
-    "study-notes/aws-solution-architect-notes/devops-and-infrastructure/cloudformation-service-deep-dive",
-    "study-notes/aws-solution-architect-notes/devops-and-infrastructure/cdk-service-deep-dive",
-    "study-notes/aws-solution-architect-notes/migration-backup-and-dr/aws-backup-service-deep-dive",
-    "study-notes/aws-solution-architect-notes/migration-backup-and-dr/elastic-disaster-recovery-service-deep-dive",
-    "study-notes/aws-solution-architect-notes/end-user-and-application-services/cognito-service-deep-dive",
-    "study-notes/aws-solution-architect-notes/integration-and-messaging/step-functions-service-deep-dive"
-   ]
   },
   {
    "title": "48小时周均工时悖论：工作时间长 $\\neq$ 产出高",

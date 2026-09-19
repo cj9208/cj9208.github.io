@@ -79,7 +79,7 @@ A/B/C 框架的应用侧已在 `notes/interview/`（银行 Director 岗位面试
 
 | 部分 | 状态 |
 |---|---|
-| Study Map（学习方法论/家族排序/专家标准） | ✅ 完整成文 |
+| Study Map（学习方法论/家族排序/专家标准） | ✅ 完整成文（2026-09-19 发布后并入 collection 页） |
 | `00_Architect-Study-Template.md`（11 维模板：Service Identity / When To Choose / 与替代品对比…） | ✅ 完整 |
 | S3 deep dive（作为 worked example） | ✅ 达到模板要求的专家级深度 |
 | 其余 31 个服务页 | ⚠️ 已按模板批量产出（每页表格化、结构统一），但深度是否都到 S3 的水平未逐一核验 |
@@ -88,6 +88,7 @@ A/B/C 框架的应用侧已在 `notes/interview/`（银行 Director 岗位面试
 1. [x] 快速抽验 3~5 个服务页与 S3 页的深度差（2026-09-19 完成，报告：`notes/aws-notes-review-2026-09-19.md`）
 2. [x] ~~两批按检查单发布（去掉整树 draft，占位 lastmod 更新，索引切换）~~ → 2026-09-19 执行并推送 main：AWS 批全树 46 文件发布（draft 翻转、lastmod 刷新、slug 统一 kebab-case、显示文本与链接清理、搜索索引重建）；RAG 批未发布（发布决策仍暂缓，见批次一第 4 项）
 3. [x] study-notes 根索引的 AWS 条目已改 relref（2026-09-19）
+4. [x] 发布后结构调整（2026-09-19）：study map 并入 collection 页（`_index.md`；家族表按学习顺序、删服务级清单），删除独立文章 + alias 重定向；next-dives backlog 与命名说明移入 `notes/aws-solution-architect-notes-progress.md` §5；搜索索引 222 → 221
 
 ### 批次三：《评估框架祛魅》（1 文件 draft）
 

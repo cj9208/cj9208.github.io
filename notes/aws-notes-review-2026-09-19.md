@@ -47,3 +47,15 @@
 - 无旧 slug / 裸 `_index.md` / 带路径前缀显示文本残留。
 
 部署：随本次提交推送 main，由 `.github/workflows/hugo.yml` 部署至 GitHub Pages。
+
+## 五、发布后结构调整（2026-09-19，当日完成）
+
+起因：用户复查线上页面后指出 study map 两处问题——(a) 越到 service 层：28 个旗舰链接与家族页 Flagship Service Plan 重复，10 项 next-dives 属作者 backlog 非读者内容；(b) 与 collection landing 功能重叠：同一份 11 家族列表、同一套「怎么读」指引，landing 首句即「去看 study map」，读者实际要跳两跳。用户选定方案：合并成单页。
+
+执行：
+
+1. `AWS-Solution-Architect-Study-Map.md` 删除（发布树 46 → 45 文件）；读者向内容全部并入 `_index.md`（collection 页），层级收敛为三层：collection 页 → 家族页 → 服务页。
+2. collection 页重组：家族表按建议学习顺序排列（吸收原「Suggested Study Order」，改为家族名显示）；删 28 服务旗舰清单（家族页已有带状态的 Flagship Service Plan）；删「Study Workflow」（与模板页「Practical Study Loop」逐条重复）；「Expert Note Standard」压缩去重。
+3. 内部内容移入 `aws-solution-architect-notes-progress.md` §5：next-dives backlog、目录命名说明。
+4. 旧 URL 保留：`_index.md` 加 alias，`/blog/study-notes/aws-solution-architect-notes/study-map/` 重定向到 collection 根。
+5. 搜索索引重建：222 → 221 篇。
