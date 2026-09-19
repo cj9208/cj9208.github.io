@@ -1,7 +1,7 @@
 ---
 title: "Ingestion Validation Layer"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-08-27T16:50:00+08:00
+lastmod: 2026-09-19T09:51:41+08:00
 draft: true
 
 description: "The ingestion validation layer is the upstream data production layer for the RAG system."
@@ -558,7 +558,7 @@ Practical recommendation:
 - use MinerU when document understanding quality matters more than minimal footprint
 - use a managed commercial service only when support, compliance, or document complexity justifies it
 
-When parsing quality is the deciding factor, the set-wide default for parsing in `CH03_RAG-Layer.md`'s Reference Stack is MinerU.
+When parsing quality is the deciding factor, the set-wide default for parsing in [`CH03_RAG-Layer.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch03_rag-layer/)'s Reference Stack is MinerU.
 
 ## Final Note
 

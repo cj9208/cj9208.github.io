@@ -1,7 +1,7 @@
 ---
 title: "RAG Orchestration Architecture"
 date: 2026-07-16T14:17:00+08:00
-lastmod: 2026-08-27T14:54:47+08:00
+lastmod: 2026-09-19T09:52:47+08:00
 draft: true
 
 description: "A structured note set on intention recognition, request orchestration, governed execution, and the RAG subsystem design behind them."
@@ -85,7 +85,7 @@ How those principles show up in this set:
 - evaluator contracts sit outside generation because correctness needs an external comparator
 - context discipline exists because state is costly, degradable, and attention-limited
 - layers stay modular so failures remain local and ownership stays clear
-- no platform was designed first; orchestration grew out of a concrete RAG fix (the origin story is `CH00_Preface.md`)
+- no platform was designed first; orchestration grew out of a concrete RAG fix (the origin story is [`CH00_Preface.md`]({{< relref "./CH00_Preface.md" >}}))
 - RAG was split into internal layers only after each layer's responsibility stabilized
 - policy stays central in definition but local in enforcement
 
@@ -100,7 +100,7 @@ Covered:
 - how that control pattern grows into broader request orchestration
 - why the harness is the authority boundary for execution
 - how RAG fits as one capability inside a governed system
-- a named end-to-end reference stack, assembled in `CH03_RAG-Layer.md`
+- a named end-to-end reference stack, assembled in [`CH03_RAG-Layer.md`]({{< relref "./CH03_RAG-Layer.md" >}})
 
 Not yet defined:
 

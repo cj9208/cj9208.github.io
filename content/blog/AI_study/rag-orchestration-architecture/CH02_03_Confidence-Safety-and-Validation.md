@@ -1,7 +1,7 @@
 ---
 title: "Confidence, Safety, and Validation"
 date: 2026-07-20T09:43:56+08:00
-lastmod: 2026-09-01T22:32:00+08:00
+lastmod: 2026-09-19T09:51:41+08:00
 draft: true
 
 description: "How the orchestration runtime stays safe and decides whether to proceed, clarify, retry, reject, or escalate."
@@ -420,7 +420,7 @@ What it prevents:
 
 The first policy should begin as a decision table, not as a complex weighted formula. It then becomes operational by being evaluated against labeled examples — cases that should proceed, clarify, retry, reject, or hand off.
 
-The calibration method — comparing expected, model-proposed, and harness-selected actions across labeled cases — is defined once in `CH04_Testing-and-Evaluation.md`; this note adopts it without restating it.
+The calibration method — comparing expected, model-proposed, and harness-selected actions across labeled cases — is defined once in [`CH04_Testing-and-Evaluation.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch04_testing-and-evaluation/); this note adopts it without restating it.
 
 ### Worked Decision Case
 

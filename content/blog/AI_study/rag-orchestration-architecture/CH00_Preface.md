@@ -1,7 +1,7 @@
 ---
 title: "Preface"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-08-27T14:54:47+08:00
+lastmod: 2026-09-19T09:51:41+08:00
 draft: true
 
 description: "This design started from a concrete RAG problem."
@@ -127,7 +127,7 @@ Even when detailed tool and business contracts are still evolving, some cross-cu
 | version | schema version, capability version, module version | publish boundaries in `CH03_01`/`CH03_02` |
 | status | state, error, fallback reason | `CH02_02` state machine fields |
 
-So the design standardizes this common control envelope early — it later materializes as the typed runtime objects in `CH02_01_Runtime-Objects.md` — while letting business-specific and tool-specific payloads evolve until stable repeated patterns appear. In other words: standardize only what has already proven universal across projects.
+So the design standardizes this common control envelope early — it later materializes as the typed runtime objects in [`CH02_01_Runtime-Objects.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch02_01_runtime-objects/) — while letting business-specific and tool-specific payloads evolve until stable repeated patterns appear. In other words: standardize only what has already proven universal across projects.
 
 ## Why RAG Gets a Full Chapter
 

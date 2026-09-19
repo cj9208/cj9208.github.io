@@ -1,7 +1,7 @@
 ---
 title: "Grounded Answering Layer"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-08-27T11:21:30+08:00
+lastmod: 2026-09-19T09:51:41+08:00
 draft: true
 
 description: "The grounded answering layer turns retrieved evidence into a user-facing output that remains tied to sources."
@@ -46,13 +46,13 @@ This document does not cover:
 
 | Out of scope | Why |
 | --- | --- |
-| finding and ranking evidence | belongs to `CH03_03_Retrieval-Layer.md` |
-| routing-level confidence and permission checks | belongs to `CH02_03_Confidence-Safety-and-Validation.md` |
-| golden-set measurement of grounding quality | belongs to `CH04_Testing-and-Evaluation.md` |
+| finding and ranking evidence | belongs to [`CH03_03_Retrieval-Layer.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch03_03_retrieval-layer/) |
+| routing-level confidence and permission checks | belongs to [`CH02_03_Confidence-Safety-and-Validation.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch02_03_confidence-safety-and-validation/) |
+| golden-set measurement of grounding quality | belongs to [`CH04_Testing-and-Evaluation.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch04_testing-and-evaluation/) |
 
 ## Relationship to Other Layers
 
-The upstream dependency is `CH03_03_Retrieval-Layer.md`.
+The upstream dependency is [`CH03_03_Retrieval-Layer.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch03_03_retrieval-layer/).
 
 This layer expects:
 

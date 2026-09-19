@@ -1,7 +1,7 @@
 ---
 title: "State Machine and Control Loop"
 date: 2026-07-20T09:43:56+08:00
-lastmod: 2026-09-01T22:32:00+08:00
+lastmod: 2026-09-19T09:51:41+08:00
 draft: true
 
 description: "How requests move through the orchestration runtime, including states, retries, caps, fallback, and events."
@@ -151,7 +151,7 @@ Boundary with nearby components:
 
 ## Loop Budget And Fallback Policy
 
-This section is the concrete home of the escalation-budget boundary declared in `CH02_Request-Orchestration-Layer.md`: the caps below are the policy behind that boundary.
+This section is the concrete home of the escalation-budget boundary declared in [`CH02_Request-Orchestration-Layer.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch02_request-orchestration-layer/): the caps below are the policy behind that boundary.
 
 If the runtime uses an LLM to think about the next step, it still needs a harness-owned limit on how many times each branch may repeat.
 
@@ -178,7 +178,7 @@ Boundary with nearby components:
 
 ### Attempt Budget Fields
 
-Budget limits and live counters live on the request envelope's `execution_budget` field — the canonical schema is defined in `CH02_01_Runtime-Objects.md`. The runtime additionally tracks attempt counters as state:
+Budget limits and live counters live on the request envelope's `execution_budget` field — the canonical schema is defined in [`CH02_01_Runtime-Objects.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch02_01_runtime-objects/). The runtime additionally tracks attempt counters as state:
 
 ```yaml
 attempt_counters:

@@ -1,7 +1,7 @@
 ---
 title: "Runtime Objects"
 date: 2026-07-20T09:43:56+08:00
-lastmod: 2026-09-01T22:32:00+08:00
+lastmod: 2026-09-19T09:51:41+08:00
 draft: true
 
 description: "The core runtime objects used by the request orchestration layer."
@@ -295,7 +295,7 @@ next_action:
     question: "I found multiple likely matches for 'spring saver': Spring Saver 2025, Spring Saver Plus, and Student Spring Saver. Which one did you mean?"
 ```
 
-Allowed `decision` values in the first version, aligned with the routing contract outcomes in `CH01_Intention-Recognition-Layer.md`:
+Allowed `decision` values in the first version, aligned with the routing contract outcomes in [`CH01_Intention-Recognition-Layer.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch01_intention-recognition-layer/):
 
 - `proceed`
 - `proceed_conservative` (the CH01 row-8 low-risk read-only path)
@@ -508,7 +508,7 @@ Purpose:
 - let a human continue without reconstructing the case from raw logs
 - keep escalation compact and operationally useful
 
-This packet implements the handoff contract defined in `CH01_Intention-Recognition-Layer.md`, extended with the orchestration-level state described in `CH02_Request-Orchestration-Layer.md`.
+This packet implements the handoff contract defined in [`CH01_Intention-Recognition-Layer.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch01_intention-recognition-layer/), extended with the orchestration-level state described in [`CH02_Request-Orchestration-Layer.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch02_request-orchestration-layer/).
 
 Example shape:
 
@@ -560,7 +560,7 @@ Required fields:
 - `budget_state`
 - `recommended_next_step`
 
-The orchestration-level handoff contract in `CH02_Request-Orchestration-Layer.md` maps onto these fields:
+The orchestration-level handoff contract in [`CH02_Request-Orchestration-Layer.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch02_request-orchestration-layer/) maps onto these fields:
 
 | Contract item (orchestration state) | Packet field |
 | --- | --- |
@@ -591,9 +591,9 @@ Main tradeoff:
 
 ## Registry Object: Capability Catalog Entry
 
-The six objects above live for the duration of one request. The runtime also reads a config-time artifact: the capability catalog entry, looked up from the capability registry during capability selection and adaptive schema loading (steps 7–8 of the orchestration flow in `CH02_Request-Orchestration-Layer.md`).
+The six objects above live for the duration of one request. The runtime also reads a config-time artifact: the capability catalog entry, looked up from the capability registry during capability selection and adaptive schema loading (steps 7–8 of the orchestration flow in [`CH02_Request-Orchestration-Layer.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch02_request-orchestration-layer/)).
 
-Catalog entries are owned by domain teams, versioned, and published through rollout states so regressions trace to specific changes. The orchestration layer only reads the registry; it never hardcodes domain tool logic. The nine conceptual contract elements are summarized in `CH02_Request-Orchestration-Layer.md`; this is the concrete schema:
+Catalog entries are owned by domain teams, versioned, and published through rollout states so regressions trace to specific changes. The orchestration layer only reads the registry; it never hardcodes domain tool logic. The nine conceptual contract elements are summarized in [`CH02_Request-Orchestration-Layer.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch02_request-orchestration-layer/); this is the concrete schema:
 
 ```yaml
 name: <capability_name>
@@ -657,7 +657,7 @@ notes:
 
 Required fields: `name`, `owner`, `domain_scope`, `capability_version`, `rollout_status`, `use_when`, `avoid_when`, `tool_schema_bundle`, `output_contract`, `fallbacks`.
 
-The nine conceptual contract elements in `CH02_Request-Orchestration-Layer.md` map onto the concrete schema like this:
+The nine conceptual contract elements in [`CH02_Request-Orchestration-Layer.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch02_request-orchestration-layer/) map onto the concrete schema like this:
 
 | Conceptual element | Concrete field |
 | --- | --- |
@@ -675,4 +675,4 @@ Notes:
 
 - entries are config-time artifacts, not per-request state; the runtime reads them, requests only reference them by id
 - `loading_mode` drives how step 8 exposes the tool surface (single capability, primary plus fallback, or staged supervisor)
-- `confidence_signals` and `validation_rules` here feed the confidence and validation policies in `CH02_03_Confidence-Safety-and-Validation.md`
+- `confidence_signals` and `validation_rules` here feed the confidence and validation policies in [`CH02_03_Confidence-Safety-and-Validation.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch02_03_confidence-safety-and-validation/)

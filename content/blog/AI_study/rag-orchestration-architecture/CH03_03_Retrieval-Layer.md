@@ -1,7 +1,7 @@
 ---
 title: "Retrieval Layer"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-08-27T16:55:00+08:00
+lastmod: 2026-09-19T09:51:41+08:00
 draft: true
 
 description: "The retrieval layer is the online evidence-finding subsystem of RAG."
@@ -40,9 +40,9 @@ This document does not cover:
 
 | Out of scope | Why |
 | --- | --- |
-| ingestion and validation | belongs to `CH03_01_Ingestion-Validation-Layer.md` |
-| enrichment, chunking, and indexing | belongs to `CH03_02_Enrichment-Chunking-Indexing-Layer.md` |
-| grounded generation | belongs to `CH03_04_Grounded-Answering-Layer.md` |
+| ingestion and validation | belongs to [`CH03_01_Ingestion-Validation-Layer.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch03_01_ingestion-validation-layer/) |
+| enrichment, chunking, and indexing | belongs to [`CH03_02_Enrichment-Chunking-Indexing-Layer.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch03_02_enrichment-chunking-indexing-layer/) |
+| grounded generation | belongs to [`CH03_04_Grounded-Answering-Layer.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch03_04_grounded-answering-layer/) |
 
 ## Relationship to Other Layers
 
@@ -298,7 +298,7 @@ Practical recommendation:
 - use Vespa when you want a stronger unified retrieval platform and can accept higher complexity
 - add reranking after baseline sparse and dense retrieval are already working well
 
-The named default matches the set-wide reference stack in `CH03_RAG-Layer.md`.
+The named default matches the set-wide reference stack in [`CH03_RAG-Layer.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch03_rag-layer/).
 
 ## Final Note
 

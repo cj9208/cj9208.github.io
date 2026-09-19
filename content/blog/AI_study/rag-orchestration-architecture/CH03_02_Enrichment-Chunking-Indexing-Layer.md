@@ -1,7 +1,7 @@
 ---
 title: "Enrichment Chunking Indexing Layer"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-08-27T16:55:00+08:00
+lastmod: 2026-09-19T09:51:41+08:00
 draft: true
 
 description: "The enrichment, chunking, and indexing layer is the downstream preparation layer that turns validated canonical documents into retrievable knowledge units."
@@ -57,7 +57,7 @@ This document does not cover:
 
 ## Relationship to Other Layers
 
-The upstream dependency is `CH03_01_Ingestion-Validation-Layer.md`.
+The upstream dependency is [`CH03_01_Ingestion-Validation-Layer.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch03_01_ingestion-validation-layer/).
 
 That layer produces validated canonical documents with:
 
@@ -69,7 +69,7 @@ That layer produces validated canonical documents with:
 
 This layer assumes those inputs are already present.
 
-The downstream dependency is `CH03_RAG-Layer.md`, where these outputs are used by retrieval.
+The downstream dependency is [`CH03_RAG-Layer.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch03_rag-layer/), where these outputs are used by retrieval.
 
 ## Design Goals
 
@@ -421,7 +421,7 @@ Practical recommendation:
 - use Vespa when you want stronger unified hybrid retrieval and ranking control
 - use pgvector only when simplicity matters more than peak retrieval capability
 
-The named default matches the set-wide reference stack in `CH03_RAG-Layer.md`.
+The named default matches the set-wide reference stack in [`CH03_RAG-Layer.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch03_rag-layer/).
 
 ## Final Note
 

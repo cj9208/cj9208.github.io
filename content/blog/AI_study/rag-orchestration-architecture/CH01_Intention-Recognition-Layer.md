@@ -1,7 +1,7 @@
 ---
 title: "Intention Recognition Layer"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-09-01T22:32:00+08:00
+lastmod: 2026-09-19T09:51:41+08:00
 draft: true
 
 description: "The intention recognition layer is the control layer that sits between raw user input and retrieval/reasoning."
@@ -27,7 +27,7 @@ The key idea is simple:
 
 This is a harnessed design rather than a single-model black box: the model is one component inside a governed pipeline, and every non-model behavior — normalization, confidence evaluation, routing, escalation, handoff — is deterministic application logic.
 
-This document describes the focused upstream component. For the broader company-wide architecture that extends this layer into capability routing, governed execution, domain-scoped subsystems, and human escalation, see `CH02_Request-Orchestration-Layer.md`.
+This document describes the focused upstream component. For the broader company-wide architecture that extends this layer into capability routing, governed execution, domain-scoped subsystems, and human escalation, see [`CH02_Request-Orchestration-Layer.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch02_request-orchestration-layer/).
 
 ## Mental Model
 
@@ -159,7 +159,7 @@ Signals consumed:
 Two design rules worth stating explicitly:
 
 - **model self-confidence alone is not sufficient** — it is always combined with external signals such as deterministic matches and candidate gaps
-- signals are evaluated as a pattern, not averaged into one scalar (the structured confidence assessment lives in `CH02_03_Confidence-Safety-and-Validation.md`)
+- signals are evaluated as a pattern, not averaged into one scalar (the structured confidence assessment lives in [`CH02_03_Confidence-Safety-and-Validation.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch02_03_confidence-safety-and-validation/))
 
 The emitted signal pattern is the input to the routing contract below.
 
@@ -355,7 +355,7 @@ Every transformation and decision records enough to replay the request end to en
 - each routing decision stored with the signal pattern that produced it
 - handoff packets retained with full attempt history
 
-The concrete artifacts live in `CH02_01_Runtime-Objects.md`; this chapter only requires that nothing inside the layer be unrecorded.
+The concrete artifacts live in [`CH02_01_Runtime-Objects.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch02_01_runtime-objects/); this chapter only requires that nothing inside the layer be unrecorded.
 
 ## Downstream Effects
 
@@ -419,7 +419,7 @@ What stays here:
 3. clarification-first disambiguation
 4. confidence-aware routing preparation
 
-What moves downstream into orchestration (`CH02_Request-Orchestration-Layer.md`):
+What moves downstream into orchestration ([`CH02_Request-Orchestration-Layer.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch02_request-orchestration-layer/)):
 
 1. domain routing
 2. capability selection

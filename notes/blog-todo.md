@@ -55,30 +55,21 @@ A/B/C 框架的应用侧已在 `notes/interview/`（银行 Director 岗位面试
 
 ## 草稿库进度盘点（2026-08-27 详查）
 
-### 批次一：rag-orchestration-architecture（16 文件，全 draft）
+### 批次一：rag-orchestration-architecture（CH00–CH04 + `_index.md`，全 draft）
 
-**定位**：RAG→编排架构的设计笔记集，英文，有自维护的进度文件（`progress.md`，含状态分级 done/strong/partial/missing）。
+**定位**：RAG→编排架构的设计笔记集，英文。自维护进度文件已移至 `notes/rag-orchestration-architecture-progress.md`（2026-09-19 移出 `content/`，不再过 Hugo；内含逐项状态与验证证据）。
 
-**内容层次（按 progress.md 自评 + 抽读核实）**：
+**内容层次（2026-08-27 按 blog 标准重估，2026-09-19 逐项核实）**：旧版进度文件误用工程验收标准（golden sets/阈值校准/告警规则）评判设计文集；按 blog 标准——设计故事线、决策表、边界声明三样齐备即达标。三项案头工作已全部完成：
 
-| 模块 | 状态 | 缺口 |
-|---|---|---|
-| 章节结构 CH00→CH04 | **done** | 无 |
-| CH01 意图识别层 | strong | 决策表已有，阈值需标注数据校准 |
-| CH02 编排层 + 三个子章 | strong | confidence policy 需形式化、golden set 校准 |
-| CH03 RAG 内部分层（4 小章） | strong | 太宽泛，未选定一个参考技术栈 |
-| CH04 测试与评估 | partial | 测试矩阵已定义（22 张表），但 golden sets 本身不存在 |
-| 运营策略 | partial | 告警阈值、干预规则未定 |
+1. [x] 重写 `CH03_04_Grounded-Answering-Layer.md`（2026-08-27 完成，275 行 / 12.5KB，叙事密度与 CH04 相当；commit `7581fe7`）
+2. [x] CH03 选定推荐参考栈（2026-08-27 完成：MinerU + Elasticsearch + Qdrant + BGE reranker + 直接 LLM API，见 `CH03_RAG-Layer.md` §Reference Stack；OpenSearch 列为 drop-in 替代）
+3. [x] first-version 阈值标注 illustrative（2026-08-27 完成：CH01 工作案例、CH03_02 region-confidence 处均已加注）
+4. [ ] 发布决策（2026-09-19 复查时暂缓，未定日期；恢复发布时最省事的方式是直接以完成体发布）
+5. [x] `progress.md` 去留已定：移入 `notes/` 长期保留（2026-09-19；比原计划"发布后删除"更利于后续恢复上下文）
 
-**结论（2026-08-27 按 blog 标准重估）**：progress.md 旧版误用工程验收标准（golden sets/阈值校准/告警规则）评判一份设计文集，已重写为 blog 视角——设计故事线、决策表、边界声明三样齐备即达标。真实剩余工作只剩三项案头活：
+~~需要真实环境的 golden sets / 阈值校准 / 告警规则~~ → 明确移出范围，留给未来实际部署或 ops 向的续篇。恢复发布时的机械步骤：全树 `draft: true` → `false`、lastmod 刷新、部署后核对线上链接。
 
-1. [ ] 案头可做：重写 `CH03_04_Grounded-Answering-Layer.md`（结构全但叙事密度低）
-2. [ ] 案头可做：CH03 选定一个推荐参考栈，其余降为次选
-3. [ ] 案头可做：各处 first-version 阈值明确标注为 illustrative example
-4. [ ] 发布决策：现在以 "architecture notes in progress" 发布，或做完 1–3 后发完成体（二选一，勿无限期 draft）
-5. [ ] 发布后删除 `progress.md`（该文件已声明不进索引、仅供内部审查）
-
-~~需要真实环境的 golden sets / 阈值校准 / 告警规则~~ → 明确移出范围，留给未来实际部署或 ops 向的续篇。5 个文件的 lastmod 占位在发布时统一更新即可。
+发布前质量审阅报告：`notes/rag-orchestration-architecture-review-2026-09-19.md`（全树 13 文件核查结论；3 处低风险一致性问题待定；59 处反引号引用已按方案 C 于 2026-09-19 全部转为公开链接，另 `_index.md` 2 处转 relref）。
 
 ### 批次二：study-notes/AWS 笔记（47 文件，全 draft）
 

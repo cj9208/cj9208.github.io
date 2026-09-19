@@ -1,7 +1,7 @@
 ---
 title: "RAG Layer"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-08-27T21:22:25+08:00
+lastmod: 2026-09-19T09:51:41+08:00
 draft: true
 
 description: "The RAG layer is the knowledge access and grounding layer that sits downstream of request understanding and upstream of answer generation."
@@ -97,8 +97,8 @@ Prepares source material into retrievable knowledge through two independent subs
 
 | Subsystem | Scope | Detailed design |
 | --- | --- | --- |
-| Ingestion and validation | acquire, parse / OCR, structure reconstruction, canonicalize / normalize, validate, publish-and-quarantine policy | `CH03_01_Ingestion-Validation-Layer.md` |
-| Enrichment, chunking, and indexing | enrich, chunk, index, publish to retrieval | `CH03_02_Enrichment-Chunking-Indexing-Layer.md` |
+| Ingestion and validation | acquire, parse / OCR, structure reconstruction, canonicalize / normalize, validate, publish-and-quarantine policy | [`CH03_01_Ingestion-Validation-Layer.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch03_01_ingestion-validation-layer/) |
+| Enrichment, chunking, and indexing | enrich, chunk, index, publish to retrieval | [`CH03_02_Enrichment-Chunking-Indexing-Layer.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch03_02_enrichment-chunking-indexing-layer/) |
 
 Compact flow:
 
@@ -132,7 +132,7 @@ Finds, ranks, and assembles evidence for the current request in five stages:
 4. fusion and reranking
 5. context assembly
 
-Detailed design: `CH03_03_Retrieval-Layer.md`.
+Detailed design: [`CH03_03_Retrieval-Layer.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch03_03_retrieval-layer/).
 
 Design rationales carried by this component:
 
@@ -143,7 +143,7 @@ Design rationales carried by this component:
 
 Turns retrieved evidence into a cited, user-facing output with explicit outcomes when evidence is weak: grounded answer, partial answer with uncertainty, clarification, insufficient-evidence statement, or escalation.
 
-Detailed design: `CH03_04_Grounded-Answering-Layer.md`.
+Detailed design: [`CH03_04_Grounded-Answering-Layer.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch03_04_grounded-answering-layer/).
 
 Design rationale carried by this component:
 

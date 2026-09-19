@@ -1,7 +1,7 @@
 ---
 title: "Request Orchestration Layer"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-08-28T09:45:00+08:00
+lastmod: 2026-09-19T09:51:41+08:00
 draft: true
 
 description: "The request orchestration layer is the shared control layer for a company-wide agent system."
@@ -44,9 +44,9 @@ And when the runtime itself must be designed in detail, its three aspects map on
 
 | Aspect | Question | Subchapter |
 | --- | --- | --- |
-| State | what exists now? | `CH02_01_Runtime-Objects.md` |
-| Transition | what can happen next? | `CH02_02_State-Machine-and-Control-Loop.md` |
-| Policy | what should be allowed next? | `CH02_03_Confidence-Safety-and-Validation.md` |
+| State | what exists now? | [`CH02_01_Runtime-Objects.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch02_01_runtime-objects/) |
+| Transition | what can happen next? | [`CH02_02_State-Machine-and-Control-Loop.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch02_02_state-machine-and-control-loop/) |
+| Policy | what should be allowed next? | [`CH02_03_Confidence-Safety-and-Validation.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch02_03_confidence-safety-and-validation/) |
 
 `State`, `Transition`, `Policy` is also the smallest split that keeps the runtime readable: merging them makes the runtime dense, splitting them further fragments the design.
 
@@ -101,7 +101,7 @@ Design principle:
 
 ## The Flow
 
-Twelve steps describe a request end to end. Steps 1–4 (input capture, deterministic conditioning, intent framing, ambiguity evaluation) and the clarification gate are inherited from `CH01_Intention-Recognition-Layer.md` unchanged; they appear in the table below only so the sequence stays readable in one place.
+Twelve steps describe a request end to end. Steps 1–4 (input capture, deterministic conditioning, intent framing, ambiguity evaluation) and the clarification gate are inherited from [`CH01_Intention-Recognition-Layer.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch01_intention-recognition-layer/) unchanged; they appear in the table below only so the sequence stays readable in one place.
 
 ### Tool Resolution: Domain, Then Capability
 
@@ -142,7 +142,7 @@ The funnel is also what keeps the schema surface small: only after both resoluti
 | 11. Fallback and escalation | recover gracefully when the chosen path fails or stays weak | every recovery path spends an escalation budget: clarification retry, stronger model, alternate capability, human handoff | both halves |
 | 12. Logging and handoff | produce durable traces and escalation artifacts | logs support audit, replay, monitoring, attribution, postmortems | this chapter |
 
-Step 12's logging is structured, not free-form: every step emits typed fields, and the authoritative schema is the set of runtime objects in `CH02_01_Runtime-Objects.md` — request envelope, interpretation record, routing decision, execution record, final outcome, and handoff packet. Later chapters reference those objects rather than redefining field lists.
+Step 12's logging is structured, not free-form: every step emits typed fields, and the authoritative schema is the set of runtime objects in [`CH02_01_Runtime-Objects.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch02_01_runtime-objects/) — request envelope, interpretation record, routing decision, execution record, final outcome, and handoff packet. Later chapters reference those objects rather than redefining field lists.
 
 ## The Capability Registry
 
@@ -150,7 +150,7 @@ Capabilities are governed products, not ad hoc tool collections.
 
 Some are global — clarification generation, human handoff building, generic reasoning utilities. Some are domain-scoped — HR policy lookup, customer case retrieval, finance workflow actions, legal document retrieval.
 
-Every capability declares nine contract elements — purpose, usage boundary (`use_when` / `avoid_when`), input contract, tool schema bundle, output contract, confidence and validation signals, fallback paths, owner, and domain scope. The concrete catalog-entry schema is defined in `CH02_01_Runtime-Objects.md`.
+Every capability declares nine contract elements — purpose, usage boundary (`use_when` / `avoid_when`), input contract, tool schema bundle, output contract, confidence and validation signals, fallback paths, owner, and domain scope. The concrete catalog-entry schema is defined in [`CH02_01_Runtime-Objects.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch02_01_runtime-objects/).
 
 ### Capability Families
 
@@ -171,7 +171,7 @@ RAG belongs in the `Unstructured retrieval` family.
 - each domain team owns and updates its own subsystem tools and schemas
 - every tool and capability records an explicit owner in the registry or schema metadata
 - version and rollout metadata are recorded so regressions trace to specific changes
-- the concrete catalog-entry schema lives with the runtime objects in `CH02_01_Runtime-Objects.md`
+- the concrete catalog-entry schema lives with the runtime objects in [`CH02_01_Runtime-Objects.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch02_01_runtime-objects/)
 
 This owner metadata is what later powers operational attribution (see Measurement And Operations).
 
@@ -230,7 +230,7 @@ Please confirm with the related human agent.
 
 ### Escalation Budgets
 
-Everything that loops spends a finite budget from the same policy family introduced in `CH01`. The full budget model — which branches are capped, how attempt counters are tracked, and what fallback remains legal after a cap — is defined in `CH02_02_State-Machine-and-Control-Loop.md`.
+Everything that loops spends a finite budget from the same policy family introduced in `CH01`. The full budget model — which branches are capped, how attempt counters are tracked, and what fallback remains legal after a cap — is defined in [`CH02_02_State-Machine-and-Control-Loop.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch02_02_state-machine-and-control-loop/).
 
 The boundary itself: budget state is visible to routing at all times; an exhausted budget forces `handoff_human` instead of another guess. This is what makes the layered fallback path predictable instead of emergent.
 
@@ -260,13 +260,13 @@ For example: internal tools may accept queue-based throughput over immediacy; cu
 
 ### Human Handoff Contract
 
-When escalation fires, the handoff carries the packet shape defined in `CH01` (conversation context, system summary, candidates, evidence, attempt history, suggested next step), extended with orchestration state — original request, framed interpretation, attempted capabilities and outcomes, budget states, and recommended next action. The concrete packet schema, including required fields, is defined in `CH02_01_Runtime-Objects.md`'s human handoff packet object.
+When escalation fires, the handoff carries the packet shape defined in `CH01` (conversation context, system summary, candidates, evidence, attempt history, suggested next step), extended with orchestration state — original request, framed interpretation, attempted capabilities and outcomes, budget states, and recommended next action. The concrete packet schema, including required fields, is defined in [`CH02_01_Runtime-Objects.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch02_01_runtime-objects/)'s human handoff packet object.
 
 Resolved human cases are recorded and fed back: recurring corrections become alias updates, routing-rule adjustments, prompt fixes, and escalation-policy tuning.
 
 ## Measurement And Operations
 
-This section is the third layer of `CH04`'s testing-and-evaluation model: `CH04` defines the offline evaluation and production regression layers, and this section supplies the operational monitoring layer that `CH04_Testing-and-Evaluation.md` defers to. What is measured before launch — golden sets, test classes, acceptance thresholds — is defined there. This section covers what happens after launch: live monitoring, ownership attribution, and the nightly review loop that turns runtime telemetry into owner-routed follow-ups.
+This section is the third layer of `CH04`'s testing-and-evaluation model: `CH04` defines the offline evaluation and production regression layers, and this section supplies the operational monitoring layer that [`CH04_Testing-and-Evaluation.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch04_testing-and-evaluation/) defers to. What is measured before launch — golden sets, test classes, acceptance thresholds — is defined there. This section covers what happens after launch: live monitoring, ownership attribution, and the nightly review loop that turns runtime telemetry into owner-routed follow-ups.
 
 ### Online Monitoring
 
@@ -331,7 +331,7 @@ The architecture is now largely defined; remaining work is operational detail ra
 
 Confidence-aware routing depends on turning signal patterns into decisions. Candidate inputs: deterministic match strength, model confidence, retrieval agreement, ambiguity signals, execution-outcome signals.
 
-The open question is the exact runtime decision policy mapping these signals to proceed, clarify, retry, escalate, or reject-tool-execution. `CH02_03_Confidence-Safety-and-Validation.md` owns the structural side; calibration against labeled data is still pending.
+The open question is the exact runtime decision policy mapping these signals to proceed, clarify, retry, escalate, or reject-tool-execution. [`CH02_03_Confidence-Safety-and-Validation.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch02_03_confidence-safety-and-validation/) owns the structural side; calibration against labeled data is still pending.
 
 ### 2. Testing Strategy
 
@@ -345,7 +345,7 @@ Beyond prompt or answer-quality evaluation, the orchestration layer needs:
 - high-risk action confirmation tests
 - dependency-graph execution tests
 
-covering both offline validation and production regression protection. See `CH04_Testing-and-Evaluation.md`.
+covering both offline validation and production regression protection. See [`CH04_Testing-and-Evaluation.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch04_testing-and-evaluation/).
 
 ### 3. Operational Alert Thresholds
 
