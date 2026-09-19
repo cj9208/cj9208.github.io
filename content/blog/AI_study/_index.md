@@ -1,7 +1,7 @@
 ---
 title: "AI Study"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-09-02T23:42:00+08:00
+lastmod: 2026-09-19T10:49:38+08:00
 draft: false
 
 description: "AI 与大模型的自学笔记与分析：Agent harness 工程、评测治理、算力经济学与 RAG 编排架构。"
@@ -15,7 +15,7 @@ tags:
 slug: "ai-study"
 ---
 
-这个目录是大模型时代持续自学的记录：从 AI coding 的工程实践，到 Agent harness 的系统设计，再到算力经济学的商业推演。建议先读 `AI Coding` 与 `Harness Engineering` 建立工程直觉，再进入 `Compute Economics` 理解商业账本；`Presentations` 是对外分享的存档，`参考资料`收纳仍在整理中的系列笔记。
+这个目录是大模型时代持续自学的记录：从 AI coding 的工程实践，到 Agent harness 的系统设计，再到算力经济学的商业推演。建议先读 `AI Coding` 与 `Harness Engineering` 建立工程直觉，再进入 `Compute Economics` 理解商业账本；`Presentations` 是对外分享的存档。
 
 ## AI coding
 * [生态式架构：AI 时代的 EMD 演进逻辑]({{< relref "./生态式架构-AI时代的EMD演进逻辑.md" >}})
@@ -42,5 +42,6 @@ slug: "ai-study"
 ## Presentations 分享记录
 * [Presentations 分享记录]({{< relref "./presentations.md" >}})
 
-## 参考资料
-* rag-orchestration-architecture（整理中，未发布）
+## RAG Orchestration Architecture
+* [rag-orchestration-architecture 合集]({{< relref "./rag-orchestration-architecture/_index.md" >}})
+  从“脏输入摧毁 RAG 质量”这一真实问题出发，向上推导出通用请求编排架构：意图识别、能力选择、受治理执行，RAG 是其中一种能力。

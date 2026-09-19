@@ -1,8 +1,8 @@
 ---
 title: "Runtime Objects"
 date: 2026-07-20T09:43:56+08:00
-lastmod: 2026-09-19T09:51:41+08:00
-draft: true
+lastmod: 2026-09-19T10:49:38+08:00
+draft: false
 
 description: "The core runtime objects used by the request orchestration layer."
 summary: "The core runtime objects used by the request orchestration layer."
@@ -295,7 +295,7 @@ next_action:
     question: "I found multiple likely matches for 'spring saver': Spring Saver 2025, Spring Saver Plus, and Student Spring Saver. Which one did you mean?"
 ```
 
-Allowed `decision` values in the first version, aligned with the routing contract outcomes in [`CH01_Intention-Recognition-Layer.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch01_intention-recognition-layer/):
+Allowed `decision` values in the first version, aligned with the routing contract outcomes in [`CH01_Intention-Recognition-Layer.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch01_intention-recognition-layer/) and extended for the orchestration layer:
 
 - `proceed`
 - `proceed_conservative` (the CH01 row-8 low-risk read-only path)
@@ -303,6 +303,7 @@ Allowed `decision` values in the first version, aligned with the routing contrac
 - `stronger_model`
 - `execute_capability`
 - `retry`
+- `switch_capability`
 - `handoff_human`
 - `reject`
 

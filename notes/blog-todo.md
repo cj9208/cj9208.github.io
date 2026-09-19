@@ -64,12 +64,12 @@ A/B/C 框架的应用侧已在 `notes/interview/`（银行 Director 岗位面试
 1. [x] 重写 `CH03_04_Grounded-Answering-Layer.md`（2026-08-27 完成，275 行 / 12.5KB，叙事密度与 CH04 相当；commit `7581fe7`）
 2. [x] CH03 选定推荐参考栈（2026-08-27 完成：MinerU + Elasticsearch + Qdrant + BGE reranker + 直接 LLM API，见 `CH03_RAG-Layer.md` §Reference Stack；OpenSearch 列为 drop-in 替代）
 3. [x] first-version 阈值标注 illustrative（2026-08-27 完成：CH01 工作案例、CH03_02 region-confidence 处均已加注）
-4. [ ] 发布决策（2026-09-19 复查时暂缓，未定日期；恢复发布时最省事的方式是直接以完成体发布）
+4. [~] 发布决策（2026-09-19 晚）：用户已下达「修掉 3 处小问题，准备发布」——3 处修正已应用，13 文件 `draft: false`、lastmod 刷新为 2026-09-19T10:49:38+08:00、`AI_study/_index.md` 新增 `## RAG Orchestration Architecture` 板块（原 `## 参考资料` 占位移除）、Hugo 构建验证 exit 0。**工作区未提交，待用户确认索引板块调整后 commit + push**；部署后核对线上链接（检查单第 4 项）
 5. [x] `progress.md` 去留已定：移入 `notes/` 长期保留（2026-09-19；比原计划"发布后删除"更利于后续恢复上下文）
 
-~~需要真实环境的 golden sets / 阈值校准 / 告警规则~~ → 明确移出范围，留给未来实际部署或 ops 向的续篇。恢复发布时的机械步骤：全树 `draft: true` → `false`、lastmod 刷新、部署后核对线上链接。
+~~需要真实环境的 golden sets / 阈值校准 / 告警规则~~ → 明确移出范围，留给未来实际部署或 ops 向的续篇。发布机械步骤（draft 翻转、lastmod 刷新、索引条目切换）已于 2026-09-19 执行完毕。
 
-发布前质量审阅报告：`notes/rag-orchestration-architecture-review-2026-09-19.md`（全树 13 文件核查结论；3 处低风险一致性问题待定；59 处反引号引用已按方案 C 于 2026-09-19 全部转为公开链接，另 `_index.md` 2 处转 relref）。
+发布前质量审阅报告：`notes/rag-orchestration-architecture-review-2026-09-19.md`（全树 13 文件核查结论；3 处低风险一致性问题已于 2026-09-19 全部修复；59 处反引号引用已按方案 C 于 2026-09-19 全部转为公开链接，另 `_index.md` 2 处转 relref）。
 
 ### 批次二：study-notes/AWS 笔记（47 文件；2026-09-19 发布）
 

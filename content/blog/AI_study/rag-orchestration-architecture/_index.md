@@ -1,8 +1,8 @@
 ---
 title: "RAG Orchestration Architecture"
 date: 2026-07-16T14:17:00+08:00
-lastmod: 2026-09-19T09:52:47+08:00
-draft: true
+lastmod: 2026-09-19T10:49:38+08:00
+draft: false
 
 description: "A structured note set on intention recognition, request orchestration, governed execution, and the RAG subsystem design behind them."
 summary: "A structured note set on intention recognition, request orchestration, governed execution, and the RAG subsystem design behind them."

@@ -1,8 +1,8 @@
 ---
 title: "State Machine and Control Loop"
 date: 2026-07-20T09:43:56+08:00
-lastmod: 2026-09-19T09:51:41+08:00
-draft: true
+lastmod: 2026-09-19T10:49:38+08:00
+draft: false
 
 description: "How requests move through the orchestration runtime, including states, retries, caps, fallback, and events."
 summary: "How requests move through the orchestration runtime, including states, retries, caps, fallback, and events."
@@ -217,6 +217,8 @@ The LLM may propose actions such as:
 
 But the harness is the final authority on whether that branch is still legal.
 
+When an accepted proposal is recorded as a routing decision, it uses the canonical `decision` values from [`CH02_01_Runtime-Objects.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch02_01_runtime-objects/): `reinterpret` and `retry_execution` both record as `retry`, with `decision_reason.primary` distinguishing the two.
+
 ### Fallback Decision Table
 
 When a branch hits its cap, the system should not fail open or keep looping. Division of labor with `CH02_03`: the execution decision table there governs how routing reacts to a completed execution attempt; this table governs what remains legal after a cap is hit.
@@ -300,6 +302,7 @@ Boundary with nearby components:
 The canonical values carried by the envelope schema in `CH02_01` are:
 
 - `max_total_loops: 6`
+- `max_tool_calls: 4`
 - `max_reinterpretations: 2`
 - `max_execution_retries: 2`
 - `max_clarification_turns: 2`

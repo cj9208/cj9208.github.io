@@ -3,7 +3,7 @@
 - 日期：2026-09-19
 - 用途：发布前最终审阅
 - 范围：`content/blog/AI_study/rag-orchestration-architecture/` 全部 13 个文件（CH00–CH04 + `_index.md`），外加 2 处站内引用页
-- 当前状态：全套 `draft: true`；发布决策已于 2026-09-19 暂缓
+- 当前状态（2026-09-19 晚）：3 处修正与发布准备已全部执行完毕（13 文件 `draft: false`、索引页条目就位、lastmod 刷新、Hugo 构建验证通过）；工作区未提交，等用户决定 commit/push
 
 ---
 
@@ -38,26 +38,34 @@
 - **决策表体系**：CH01 routing contract（9 行）→ CH02_03 execution / validation 决策表 → CH04 契约到测试类映射完整，每个契约都有对应测试类。
 - **illustrative 声明**：CH01 工作案例（"not calibrated production thresholds"）、CH03_01 阈值说明、CH03_02 region-confidence 处均已标注。
 
-### 3.2 发现的问题（3 处，低风险，均为表述层）
+### 3.2 发现的问题（3 处，低风险，均为表述层）— ✅ 已于 2026-09-19 全部修复
 
-**问题 1 — CH02 主文边界计数两处不一致（附步数措辞）**
+**问题 1 — CH02 主文边界计数两处不一致（附步数措辞）** ✅ 已修复
 
 - `CH02_Request-Orchestration-Layer.md:38` 概述写作 "three hard controls"（三大类：cross-domain policy / governance / escalation budgets）
 - `:180` 正文写作 "Four boundaries apply"，随后实际有 **5** 个小节：Governance Boundary（`:182`）、Cross-Domain Policy（`:193`）、Escalation Budgets（`:231`）、Latency UX（`:237`）、Human Handoff Contract（`:261`）
 - 附带：`:104` 说 "Twelve steps"，而步骤表（`:129–143`）为 13 行（1–12 + 8A 插行）
 - 修复成本：两处措辞。建议 L38 保留三分法但改称 "three boundary families" 之类，L180 按实际小节数统一；步数处改为泛指或把 8A 并入第 8 步
 
-**问题 2 — CH02_01 的 routing decision 枚举缺少 `switch_capability`**
+修复结果：L38 概述改为 "five boundaries around the flow"（列出五个边界）；L180 改为 "Five boundaries apply to every path through the flow"；L104 改为按阶段概括（"Steps 1–4 … and the clarification gate are inherited from CH01"），不再出现具体步数。
+
+**问题 2 — CH02_01 的 routing decision 枚举缺少 `switch_capability`** ✅ 已修复
 
 - `CH02_01_Runtime-Objects.md:298–307` 列出 8 个决策值（proceed / proceed_conservative / clarify / stronger_model / execute_capability / retry / handoff_human / reject），并声明与 CH01 routing contract 对齐
 - 但 `switch_capability` 在 `CH02_03`（`:165`、`:349`、`:387`、`:478`、`:497`）、`CH02_02`（`:214`）、`CH04`（`:139`）中均作为合法动作 / 期望结果出现
 - 附带：`CH02_02:208–214` 的「LLM 可提议动作」用词（`reinterpret`、`retry_execution`）与 CH02_01 决策值（`retry` 等）不完全对齐，建议补一行映射说明或统一命名
 - 修复成本：枚举补一行 + 一句映射说明
 
-**问题 3 — CH02_02 caps 汇总遗漏 `max_tool_calls: 4`**
+修复结果：CH02_01 枚举补入 `switch_capability`（共 9 值）；CH02_02 在「harness is the final authority」句后补一句映射说明（`reinterpret` / `retry_execution` 记录为 `retry`，由 `decision_reason.primary` 区分）。
+
+**问题 3 — CH02_02 caps 汇总遗漏 `max_tool_calls: 4`** ✅ 已修复
 
 - `CH02_02_State-Machine-and-Control-Loop.md:301–307` 的 "First-Version Default Caps" 列 6 个值；CH02_01 `:116` envelope 共 7 字段（多 `max_tool_calls: 4`）
 - 修复成本：补一行
+
+修复结果：caps 列表补入 `max_tool_calls: 4`（共 7 值，与 CH02_01 envelope 对齐）。
+
+修复后核验：全树 grep 无 `Twelve` / `hard controls` / `Four boundaries` 残留；CH02 全量 diff 逐行核对无内容损伤；Hugo 构建（无 `--buildDrafts`）exit 0，relref 全部解析。
 
 ### 3.3 交叉引用风格（已统一 — 方案 C 于 2026-09-19 执行完毕）
 
@@ -71,25 +79,24 @@
 
 转换后核验：0 处纯反引号残留；59 处公开链接 URL 与 slug 逐一比对无错；14 处 relref 目标文件全部存在；未破坏任何既有链接（负向断言防误伤）。
 
-### 3.4 发布时的外部影响点（2 处）
+### 3.4 发布时的外部影响点（2 处）— ✅ 均已处理
 
-- `content/blog/AI_study/_index.md:46`：`* rag-orchestration-architecture（整理中，未发布）` — 纯文本占位，发布时改为正式条目（链接 + 摘要）
+- `content/blog/AI_study/_index.md:46`：原为 `* rag-orchestration-architecture（整理中，未发布）` 纯文本占位 — ✅ 已改为独立板块 `## RAG Orchestration Architecture`（标题 + relref 合集链接 + 中文摘要）；原 `## 参考资料` 板块已无成员，随之移除（**此项为执行时的判断选择，已在对话中向用户说明待确认**）
 - `content/blog/AI_study/harness-engineering/_index.md:44`：已有公开链接指向本套 overview，当前 404；发布后自动生效（无需改动，仅需部署后确认）
 
 ## 四、发布检查单（恢复发布时执行）
 
 机械步骤（blog-todo 原有约定）：
 
-1. 13 个文件 `draft: true` → `false`
-2. lastmod 刷新为发布日时间
-3. 更新 `AI_study/_index.md:46` 条目为正式链接
-4. 部署后核对：overview 线上可访问、harness-engineering 引用链接生效、各章相互跳转正常
+1. ✅ 13 个文件 `draft: true` → `false`（2026-09-19 执行）
+2. ✅ lastmod 刷新为 `2026-09-19T10:49:38+08:00`（统一时间戳）
+3. ✅ 更新 `AI_study/_index.md:46` 条目为正式链接（见 3.4）
+4. ⏳ 部署后核对：overview 线上可访问、harness-engineering 引用链接生效、各章相互跳转正常（待用户 push 后执行）
+5. ✅ 修复 3.2 的 3 处一致性问题（2026-09-19 执行）
+6. ✅ ~~转化反引号引用~~ 已完成（2026-09-19，方案 C；见 3.3）
 
-可选（建议与发布动作合并执行，避免两次 lastmod 刷新）：
-
-5. 修复 3.2 的 3 处一致性问题
-6. ~~转化反引号引用~~ ✅ 已完成（2026-09-19，方案 C；见 3.3）
+本地验证：Hugo v0.164.0 extended 构建（不含 `--buildDrafts`）exit 0，1056 pages；`blog/ai_study/rag-orchestration-architecture/` 下 12 章 + overview 全部生成；AI_study 索引页新板块链接渲染正确；修正内容渲染核对通过（Five boundaries / `switch_capability` / `max_tool_calls` / ch01 公开链接）。
 
 ## 五、审阅建议
 
-按 blog 标准（设计故事线、决策表、边界声明），本套已达发布条件；3 处问题均为 10–15 分钟可修完的表述层小项，不阻塞发布。交叉引用已按方案 C 统一（3.3）；剩余待决：是否修复 3.2 的 3 处一致性问题（可与发布一步合并执行）。
+按 blog 标准（设计故事线、决策表、边界声明），本套已达发布条件；3 处表述层问题已全部修复，发布准备（draft 翻转、索引条目、lastmod）已完成并通过本地构建验证。剩余动作：用户在确认 `AI_study/_index.md` 板块调整后自行 commit + push，部署后完成检查单第 4 项线上核对即可。

@@ -1,8 +1,8 @@
 ---
 title: "Request Orchestration Layer"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-09-19T09:51:41+08:00
-draft: true
+lastmod: 2026-09-19T10:49:38+08:00
+draft: false
 
 description: "The request orchestration layer is the shared control layer for a company-wide agent system."
 summary: "The request orchestration layer is the shared control layer for a company-wide agent system."
@@ -35,9 +35,10 @@ Three constructs explain everything in this chapter:
               -> validation -> fallback / handoff
 2. REGISTRY   capabilities as governed products with owners, contracts,
               tool bundles, and lifecycle metadata - looked up, never hardcoded
-3. BOUNDARIES three hard controls around the flow:
+3. BOUNDARIES five boundaries around the flow:
               cross-domain policy, security/governance (model proposes,
-              harness decides), and escalation budgets
+              harness decides), escalation budgets, latency UX, and the
+              human handoff contract
 ```
 
 And when the runtime itself must be designed in detail, its three aspects map one-to-one onto the subchapters:
@@ -101,7 +102,7 @@ Design principle:
 
 ## The Flow
 
-Twelve steps describe a request end to end. Steps 1–4 (input capture, deterministic conditioning, intent framing, ambiguity evaluation) and the clarification gate are inherited from [`CH01_Intention-Recognition-Layer.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch01_intention-recognition-layer/) unchanged; they appear in the table below only so the sequence stays readable in one place.
+The steps below trace a request end to end. Steps 1–4 (input capture, deterministic conditioning, intent framing, ambiguity evaluation) and the clarification gate are inherited from [`CH01_Intention-Recognition-Layer.md`](https://cj9208.github.io/blog/ai_study/rag-orchestration-architecture/ch01_intention-recognition-layer/) unchanged; they appear in the table below only so the sequence stays readable in one place.
 
 ### Tool Resolution: Domain, Then Capability
 
@@ -177,7 +178,7 @@ This owner metadata is what later powers operational attribution (see Measuremen
 
 ## Hard Boundaries
 
-Four boundaries apply to every path through the flow. They exist so that safety and cost do not depend on prompt compliance.
+Five boundaries apply to every path through the flow. They exist so that safety and cost do not depend on prompt compliance.
 
 ### Governance Boundary
 

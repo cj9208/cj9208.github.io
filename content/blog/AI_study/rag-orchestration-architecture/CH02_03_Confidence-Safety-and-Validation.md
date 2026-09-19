@@ -1,8 +1,8 @@
 ---
 title: "Confidence, Safety, and Validation"
 date: 2026-07-20T09:43:56+08:00
-lastmod: 2026-09-19T09:51:41+08:00
-draft: true
+lastmod: 2026-09-19T10:49:38+08:00
+draft: false
 
 description: "How the orchestration runtime stays safe and decides whether to proceed, clarify, retry, reject, or escalate."
 summary: "How the orchestration runtime stays safe and decides whether to proceed, clarify, retry, reject, or escalate."

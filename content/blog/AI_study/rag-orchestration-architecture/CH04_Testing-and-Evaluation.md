@@ -1,8 +1,8 @@
 ---
 title: "Testing and Evaluation"
 date: 2026-08-15T21:52:55+08:00
-lastmod: 2026-09-19T09:51:41+08:00
-draft: true
+lastmod: 2026-09-19T10:49:38+08:00
+draft: false
 
 description: "The minimum test and evaluation matrix needed before the orchestration and RAG architecture can be treated as operationally credible."
 summary: "The minimum test and evaluation matrix needed before the orchestration and RAG architecture can be treated as operationally credible."
