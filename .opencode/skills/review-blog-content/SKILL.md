@@ -64,7 +64,7 @@ description: Review blog articles under content/blog by first classifying the ar
 5. 引用规则（遵循 AGENTS.md）：
    - 正文引用必须用公开链接：`https://cj9208.github.io/blog/<目录>/<slug>/`
    - `<目录>` 用 **URL 小写**层级（如 `systems_and_governance/chinese_government`），与 `content/` 文件夹名不一定一致
-   - `<slug>` 从目标文章 front matter 的 `slug` 字段取，用 `grep '^slug:'` 批量核对
+   - `<slug>` 从目标文章 front matter 的 `slug` 字段取，用 `grep '^slug:'` 批量核对；但注意 Hugo 输出路径**全小写**（即使 front matter 的 slug 是大写，如 `CH00_Preface` 也会渲染成 `ch00_preface/`），而 GitHub Pages 对大小写敏感——手写公开链接时目录与 slug **一律小写**，以构建输出为准，不以 front matter 原文为准
    - 例外：仅 `_index.md` 栏目页内部用 `{{< relref >}}` 相对链接
 6. 检查文中已有链接是否与目标 slug 一致，失效/不一致则修正
 
@@ -114,7 +114,14 @@ description: Review blog articles under content/blog by first classifying the ar
    ```
 
 3. 确认页面按预期 URL（`/blog/<目录>/<slug>/`）生成，文中引用链接存在于渲染 HTML
-4. 完成后向用户简要汇报：
+4. **公开链接落点校验**（防大小写与失效）：用构建输出逐段精确匹配正文中的公开链接与根相对链接，在 Windows 上也能抓出大小写错误：
+
+   ```bash
+   python .opencode\skills\review-blog-content\scripts\check-public-links.py --file <仓库相对路径> --build-dir <临时目录>
+   ```
+
+   报 MISSING 时修正**引用侧**链接（原文件 slug 不用动——Hugo 输出已是小写），修正后重建并重跑，直到 `0 missing`。
+5. 完成后向用户简要汇报：
    - **文章类型**判定及所采用的标准
    - 质量评估结论
    - 关联/互引建议清单（区分已落位与待定）
