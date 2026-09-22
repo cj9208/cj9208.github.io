@@ -1,7 +1,7 @@
 ---
 title: "AI Study"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-09-19T10:49:38+08:00
+lastmod: 2026-09-22T16:49:08+08:00
 draft: false
 
 description: "AI 与大模型的自学笔记与分析：Agent harness 工程、评测治理、算力经济学与 RAG 编排架构。"
@@ -45,3 +45,7 @@ slug: "ai-study"
 ## RAG Orchestration Architecture
 * [rag-orchestration-architecture 合集]({{< relref "./rag-orchestration-architecture/_index.md" >}})
   从“脏输入摧毁 RAG 质量”这一真实问题出发，向上推导出通用请求编排架构：意图识别、能力选择、受治理执行，RAG 是其中一种能力。
+
+## Personal Experiments
+* [Technology Comes Last: Value, Action, and the Architecture That Emerged]({{< relref "./Technology-Comes-Last-Value-Action-And-The-Architecture-That-Emerged.md" >}})
+  独立一篇，记录写作系统本身：先定要守住的价值，再做一个会坏的最小版本，技术最后进场——tag 索引、交叉引用、综述框架就是这样被逼出来的三层。
