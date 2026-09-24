@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-09-24T19:20:16+08:00",
+ "generated_at": "2026-09-24T20:06:52+08:00",
  "base_url": "https://cj9208.github.io/blog/",
- "source_fingerprint": "85f7c7d27a46300b637c21d0a3a5b750ca9e1b48",
- "count": 225,
+ "source_fingerprint": "03c700ecae0574fd94fff22f04d91c2f2ac7290a",
+ "count": 226,
  "articles": [
   {
    "title": "AI 时代的商业困境：从分发共赢到“答案经济”的结构性矛盾",
@@ -4446,7 +4446,7 @@
     "Trust Architecture"
    ],
    "date": "2026-09-24T10:00:00+08:00",
-   "lastmod": "2026-09-24T10:00:00+08:00",
+   "lastmod": "2026-09-24T11:30:00+08:00",
    "excerpt": "在新加坡小贩中心，常能看到这样的场景：华裔、印度裔、马来裔以及欧美游客在人声鼎沸中规规矩矩排队，餐后自觉归还托盘，甚至用一包纸巾就能稳稳占住一张桌子；在地铁站，不同族裔的陌生人会因为看到你遇到充值障碍，主动停下脚步、切换语言指引位置。 很多人倾向于将这种现象归结为“国民素质”或“文化差异”。但只要深入观察就会发现，当同一个印度裔摊主或欧美游客换一个混乱的社会环境时，其行为模式也会迅速发生改变。 社",
    "out_links": [
     "systems_and_governance/white-box-black-box-icac-disciplinary-inspection",
@@ -4680,6 +4680,40 @@
     "systems_and_governance/why-we-need-welfare-state",
     "systems_and_governance/why-ubi-wont-cause-inflation"
    ]
+  },
+  {
+   "title": "极简制度论：确定性作为社会秩序的底层协议",
+   "slug": "minimal-institutionalism-certainty",
+   "url": "https://cj9208.github.io/blog/systems_and_governance/minimal-institutionalism-certainty/",
+   "path": "systems_and_governance/minimal-institutionalism-certainty",
+   "dir": "content/blog/systems_and_governance",
+   "section": "systems_and_governance",
+   "categories": [
+    "Systems and Governance"
+   ],
+   "tags": [
+    "Institutional Design",
+    "Game Theory",
+    "Rule of Law",
+    "System Invariants",
+    "Trust Architecture"
+   ],
+   "date": "2026-09-24T12:00:00+08:00",
+   "lastmod": "2026-09-24T20:10:00+08:00",
+   "excerpt": "这组文章写了不少，从新加坡排队到香港反腐，从法治与人治的系统工程对比到社会契约的异化与崩溃。回头看，这些文章看似各自独立——有的讲博弈论，有的讲架构设计，有的讲个体感知，有的讲宏观动力学——但剥掉案例和术语的外壳，说来说去其实在论证同一件事。 物理学里，电、磁、光在麦克斯韦之前是三个完全不同的现象，之后人们发现它们不过是同一个方程组的不同投影。社会治理理论也有类似的时刻：看似百花齐放的各家学说，收",
+   "out_links": [
+    "systems_and_governance/ob-management-overview",
+    "systems_and_governance/expectation-certainty-civilization",
+    "systems_and_governance/white-box-black-box-icac-disciplinary-inspection",
+    "systems_and_governance/freedom-from-vigilance",
+    "systems_and_governance/declarative-imperative-governance",
+    "systems_and_governance/system-invariants-evolution-direction",
+    "systems_and_governance/order-compliance-mobilization",
+    "systems_and_governance/social-contract-exploitation-path-dependence",
+    "systems_and_governance/contract-deletion-technological-replacement",
+    "systems_and_governance/chinese_government/zero-cost-stability-distortion"
+   ],
+   "shorttitle": "极简制度论"
   },
   {
    "title": "极简组织行为学与管理学概论：协议、博弈与系统的次优演化",
