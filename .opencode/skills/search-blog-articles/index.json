@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-09-22T17:16:34+08:00",
+ "generated_at": "2026-09-24T03:39:48+08:00",
  "base_url": "https://cj9208.github.io/blog/",
- "source_fingerprint": "8c9fa335ed51cbb2d93012347150d5cde36184dd",
- "count": 223,
+ "source_fingerprint": "9ed2199571d1c32fad5acd2a63d1134f00869823",
+ "count": 224,
  "articles": [
   {
    "title": "AI 时代的商业困境：从分发共赢到“答案经济”的结构性矛盾",
@@ -1445,6 +1445,34 @@
     "ai_study/system_design/system-design-master-roadmap",
     "ai_study/system_design/trust-governance-regime",
     "ai_study/system_design"
+   ]
+  },
+  {
+   "title": "Good System Design and Good Presentations Both Hide Complexity",
+   "slug": "good-system-design-and-good-presentations-both-hide-complexity",
+   "url": "https://cj9208.github.io/blog/ai_study/system_design/good-system-design-and-good-presentations-both-hide-complexity/",
+   "path": "ai_study/system_design/good-system-design-and-good-presentations-both-hide-complexity",
+   "dir": "content/blog/AI_study/system_design",
+   "section": "AI_study",
+   "categories": [
+    "AI Study"
+   ],
+   "tags": [
+    "Architecture",
+    "LLM",
+    "Harness Engineering"
+   ],
+   "date": "2026-09-24T00:18:35+08:00",
+   "lastmod": "2026-09-24T03:39:05+08:00",
+   "excerpt": "In presenting technical work, a common failure is to treat displayed complexity as proof of capability. Framework names fill the slides, layers fill the diagrams; after a thirty-minute talk the audien",
+   "out_links": [
+    "ai_study/harness-engineering/from-prompts-to-autopilot-why-harness-engineering-is-the-true-key-to-llm-reliability",
+    "ai_study/blog-system-evolution",
+    "ai_study/harness-engineering/the-systems-engineering-of-llm-context-management",
+    "ai_study/harness-engineering/the-algorithm-of-compute-why-modern-agent-harnesses-focus-80-of-their-design-on-context-management",
+    "ai_study/harness-engineering/harness-as-os-reasonix",
+    "ai_study/harness-engineering/the-comparator-trap-why-high-stakes-ai-fails",
+    "ai_study/agent-routing-safety-harness"
    ]
   },
   {

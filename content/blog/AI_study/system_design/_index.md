@@ -1,7 +1,7 @@
 ---
 title: "Architecture Learning Map: Machine, Trust & Coordination Regimes"
 date: 2026-09-01T22:21:00+08:00
-lastmod: 2026-09-02T23:42:00+08:00
+lastmod: 2026-09-24T00:24:00+08:00
 draft: false
 
 categories:
@@ -42,3 +42,5 @@ This section treats architecture as the discipline of resolving *friction* — n
   Organizational milestones (SOC2 → payments → data residency → breach/audit → IPO) as the triggers, and constraint axes (evidence, retention, identity, data protection, control, recovery) that rewrite which poles of the machine roadmap are permissible.
 * [Coordination Regime: Conway's Law, Cognitive Load & the Platform]({{< relref "./org_coordination_regime.md" >}})
   Conway's Law, cognitive load budgets, Team Topologies and platform engineering — the org dimension embedded but never made explicit in the machine ladder.
+* [Good System Design and Good Presentations Both Hide Complexity]({{< relref "./good_system_design_and_good_presentations_both_hide_complexity.md" >}})
+  The aesthetic shared by architecture and reporting: real abstraction encapsulates complexity behind a small interface, and good talks give each audience its own — with the harness-series mechanisms stated as conclusions rather than enumerated.
