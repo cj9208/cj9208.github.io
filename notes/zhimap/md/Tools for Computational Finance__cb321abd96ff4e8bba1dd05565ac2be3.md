@@ -1,0 +1,134 @@
+# Tools for Computational Finance
+- Discrete model
+  - Binomial method
+- Continuous model
+  - modelling tools
+    - stochastic process
+    - Ito lemma
+  - Monte Carlo method
+    - Generating Random Numbers with Specified Distributions
+    - schemes
+      - dynamic
+        - $dX_t = a(X_t,t)dt + b(X_t,t)dW_t$
+      - idea
+        - stochastic Taylor expansion
+      - Euler
+        - $y_{j+1} = y_j +a(y_j,t_j)\Delta t + b(y_j,t_j)\Delta W_j$
+      - Milstein
+        - $y_{j+1} = y_j +a(y_j,t_j)\Delta t + b(y_j,t_j)\Delta W_j + \frac{1}{2}bb'\left( (\Delta W_j)^2-\Delta t_j \right)$
+      - positivity
+        - replace $y$ with $y^+$ or $|y|$
+      - Runge-Kutta
+        - approximate the derivative $b(y+\Delta y) - b(y) = b'(y)\Delta y + O(\Delta y^2) = b'(y)b(y)\Delta W + O(\Delta t)$
+    - pricing steps
+      - represent the value of derivatives by a integral
+      - simulate the dynamic, and calculate the payoff for each sample pathes
+      - get the confidence interval from obtained payoffs
+    - error analysis
+      - behave as $\frac{s}{\sqrt{N}}$ by central limit theorem
+      - variance reduction
+        - antithetic variates
+        - control variates
+    - American option
+      - stopping time
+      - parametric methods
+      - regression methods
+    - sensitivity
+      - estimate how the price V changes when parameters or initial states change
+  - Finite Difference method
+    - explicit $\frac{\partial f_{i,v}}{\partial t} \approx \frac{f_{i,v+1}-f_{i,v}}{\Delta x}$
+    - implicit $\frac{\partial f_{i,v}}{\partial t} \approx \frac{f_{i,v}-f_{i,v-1}}{\Delta x}$
+    - Von Neumann stability analysis
+      - error analysis
+    - Crank-Nicolson method
+      - $\frac{\partial f_{i,v}}{\partial t} \approx \frac{1}{2}\frac{f_{i,v+1}-f_{i,v}}{\Delta x}+ \frac{1}{2}\frac{f_{i,v}-f_{i,v-1}}{\Delta x}$
+      - unconditional stable
+    - American option
+      - Consider put option
+      - Free boundary problem
+        - Black-Scholes equation $\frac{\partial V}{\partial t} + L_{BS}V=0$
+        - $\frac{\partial V(S_f(t),t)}{\partial t}=-1$
+      - Black-Scholes inequality
+        - $\frac{\partial V}{\partial t} + L_{BS}V\leq 0$
+        - '=' holds in continuation region
+      - penalty formulation
+        - $\frac{\partial V}{\partial t} + L_{BS}V +p(V) = 0$
+        - advantegeous especially when an analysis of the early-exercise curve is difficult
+      - linear comlementarity problem(LCP)
+        - $(\frac{\partial V}{\partial t} + L_{BS}V) (V-payoff)= 0$
+    - LCP
+      - $(\frac{\partial y}{\partial t} -\frac{\partial^2y}{\partial x^2}) (y-g)= 0, \frac{\partial y}{\partial t} -\frac{\partial^2y}{\partial x^2}\geq 0, y-g\geq 0$
+      - discretization
+        - $Aw-b\geq 0, w\geq g, (Aw-b)^T(w-g)=0$
+      - iterative method
+        - reformualte as optimization problem
+        - Cryer problem
+          - Motivation
+            - $x = \omega -g, y = A\omega -b$
+          - Let $\hat{b} = b - Ag$ , find x, y s.t. $Ax-y=\hat{b}, x\geq 0,y\geq 0, x^{tr}y=0$
+        - result
+          - Cryer problem is equivalent to the minimization problem (G is strictly convex)
+          - $\min_{x\geq 0} G(x), \text{ with } G(x) = \frac{1}{2}x^{tr}Ax - \hat{b}^{tr}x$
+        - the minimization problem can be solved by an iterative procedure based on SOR (successive overrelaxation)
+      - direct method
+        - Cryer problem restated
+          - solve $A\omega =b$ s.t. $\omega \geq g$
+        - extend the direct method for solving $A\omega =b$
+    - accuracy
+      - errors
+        - modelling error
+        - discretization error
+        - error arising from sloving the linear system
+        - rounding error
+      - extrapolation
+    - analytical methods
+      - numerical methods are designed to converge, so in principle any accuracy can be obtained given time and computation power
+      - some analytic formula may be sufﬁcient that delivers medium accuracy at low cost
+      - approximation based on interpolation
+        - find $V^{low} \leq V^{Am} \leq V^{up}$ and $\alpha$ $\alpha \in [0,1]$ s.t. $V^{Am} = \alpha V^{low} +(1-\alpha) V^{up}$
+      - quadratic approximation
+      - analytic method of lines
+      - integral-equation method
+    - criterions for comparison
+      - reliability
+      - range of applicability
+      - amount of information provided by the method
+      - speed
+      - error
+  - Finite Element method
+    - extension of finite difference method, but allow more flexibility
+  - Exotic option
+    - differences
+      - payoff
+      - increase in dimension (multifactor option)
+        - path-dependent options
+        - options depending on several assets
+    - barrier option
+      - analytical method
+        - first passage time
+      - finite difference method
+        - change of boundary condition
+    - Asian option
+      - finite difference method
+        - add a new variable
+          - $Y_t = \int_0^t S_udu$
+        - extended dynamic
+          - $d Y_t = S_tdt$
+        - PDE
+          - $v_t(t,x,y) + rxv_x(t,x,y) + \frac{1}{2} \sigma^2x^2 v_{xx}(t,x,y) = rv(t,x,y)$
+        - dimension reduction
+    - convection-diffusion problem
+      - why some difference schemes applied to the BS equation exhibit faulty oscillations
+      - consider model problem: $\frac{\partial u}{\partial t} + a \frac{\partial u}{\partial x} = b \frac{\partial^2 u}{\partial x^2}, b\geq 0, u(x,0) = u_0(x)$
+      - Peclet number: the ratio of convection to diffusion
+        - affect the stability
+    - upwind schemes
+      - consider extreme case : $\frac{\partial u}{\partial t} + a \frac{\partial u}{\partial x} = 0$ , $a > 0$
+      - upwind discretization
+        - $\frac{w_{j,v+1}-w_{j,v}}{\Delta t} + a \frac{w_{j,v}-w_{j-1,v}}{\Delta x} = 0$
+        - also called Forward Time Backward Space (FTBS) scheme
+        - von Neumann stability analysis leads Courant–Friedrichs–Lewy (CFL) condition
+      - dispersion
+        - the phenomenon of different modes traveling at different speeds
+    - high-resolution method
+    - penalty method for American option
