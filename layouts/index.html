@@ -8,9 +8,9 @@
   {{ $dayGroups := $pages.GroupByDate "2006-01-02" }}
   {{ $dayCounts := dict }}
   {{ range $dayGroups }}{{ $dayCounts = merge $dayCounts (dict .Key (len .Pages)) }}{{ end }}
-  <p class="lead">共 {{ len $pages }} 篇文章</p>
+  <p class="lead">{{ len $pages }} articles published</p>
 
-  <div id="write-heatmap" aria-label="按天统计的发表热力图"></div>
+  <div id="write-heatmap" aria-label="Publish-date heatmap"></div>
   <script>
   window.__articleDays = {{ $dayCounts | jsonify | safeJS }};
   </script>
@@ -18,7 +18,7 @@
   <div class="mb-3">
     <select id="month-select" class="form-select w-auto" aria-label="Filter by month">
       {{ range $groups }}
-      <option value="{{ .Key }}">{{ .Key }}</option>
+      <option value="{{ .Key }}">{{ dateFormat "Jan 2006" (index .Pages 0).Date }}</option>
       {{ end }}
     </select>
   </div>
@@ -65,7 +65,7 @@
       var day = String(d.getDate()).padStart(2, '0');
       return d.getFullYear() + '-' + m + '-' + day;
     }
-    var MONTHS = ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'];
+    var MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
     var style = document.createElement('style');
     style.textContent =
@@ -107,9 +107,9 @@
           cell.setAttribute('data-l', level(n));
           if (n > 0) {
             total += n; activeDays++;
-            cell.title = key(date) + '：发表 ' + n + ' 篇';
+            cell.title = key(date) + ': ' + n + (n === 1 ? ' article' : ' articles');
           } else {
-            cell.title = key(date) + '：无发表';
+            cell.title = key(date) + ': no articles';
           }
         }
         grid.appendChild(cell);
@@ -121,14 +121,14 @@
 
     var foot = document.createElement('div'); foot.className = 'wh-foot';
     var summary = document.createElement('span');
-    summary.textContent = '近一年发表 ' + total + ' 篇文章，其中 ' + activeDays + ' 天有发表';
+    summary.textContent = total + ' articles published in the last year, across ' + activeDays + ' days';
     var legend = document.createElement('span'); legend.className = 'wh-legend';
-    legend.appendChild(document.createTextNode('少 '));
+    legend.appendChild(document.createTextNode('Less '));
     [0, 1, 2, 3, 4].forEach(function(l) {
       var c = document.createElement('span'); c.className = 'wh-cell'; c.setAttribute('data-l', l);
       legend.appendChild(c);
     });
-    legend.appendChild(document.createTextNode(' 多'));
+    legend.appendChild(document.createTextNode(' More'));
     foot.appendChild(summary); foot.appendChild(legend);
 
     scroll.appendChild(months); scroll.appendChild(grid);
