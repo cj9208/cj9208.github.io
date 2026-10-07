@@ -4,44 +4,113 @@
 
   {{ $pages := where .Site.RegularPages "Section" "blog" }}
   {{ if $pages }}
-  {{ $groups := $pages.GroupByDate "2006-01" }}
   {{ $dayGroups := $pages.GroupByDate "2006-01-02" }}
   {{ $dayCounts := dict }}
   {{ range $dayGroups }}{{ $dayCounts = merge $dayCounts (dict .Key (len .Pages)) }}{{ end }}
+  {{ $monthsWritten := slice }}
+  {{ range $pages.GroupByDate "2006-01" }}{{ $monthsWritten = $monthsWritten | append .Key }}{{ end }}
+  {{ $monthsModified := slice }}
+  {{ range $pages.GroupByLastmod "2006-01" }}{{ $monthsModified = $monthsModified | append .Key }}{{ end }}
   <p class="lead">{{ len $pages }} articles published</p>
 
   <div id="write-heatmap" aria-label="Publish-date heatmap"></div>
   <script>
   window.__articleDays = {{ $dayCounts | jsonify | safeJS }};
+  window.__indexMonths = {{ dict "written" $monthsWritten "modified" $monthsModified | jsonify | safeJS }};
   </script>
 
-  <div class="mb-3">
-    <select id="month-select" class="form-select w-auto" aria-label="Filter by month">
-      {{ range $groups }}
-      <option value="{{ .Key }}">{{ dateFormat "Jan 2006" (index .Pages 0).Date }}</option>
-      {{ end }}
-    </select>
+  <div class="mb-3 d-flex flex-wrap align-items-center gap-2">
+    <div class="btn-group btn-group-sm" role="group" aria-label="Order posts by">
+      <button type="button" class="btn btn-outline-secondary active" id="order-modified" aria-pressed="true">Last modified</button>
+      <button type="button" class="btn btn-outline-secondary" id="order-written" aria-pressed="false">Published</button>
+    </div>
+    <select id="month-select" class="form-select form-select-sm w-auto" aria-label="Filter by month"></select>
   </div>
 
-  <h2>Latest Posts</h2>
+  <h2 id="posts-heading">Recently Updated</h2>
   <ul id="post-list">
-    {{ range $pages.ByDate.Reverse }}
-    <li data-date="{{ .Date.Format "2006-01" }}"><a href="{{ .RelPermalink }}">{{ .Title }}</a> <small class="text-body-secondary">{{ .Date.Format "2006-01-02" }}</small></li>
+    {{ range $pages.ByLastmod.Reverse }}
+    <li data-written-month="{{ .Date.Format "2006-01" }}" data-modified-month="{{ .Lastmod.Format "2006-01" }}" data-written-day="{{ .Date.Format "2006-01-02" }}" data-modified-day="{{ .Lastmod.Format "2006-01-02" }}"><a href="{{ .RelPermalink }}">{{ .Title }}</a> <small class="text-body-secondary"></small></li>
     {{ end }}
   </ul>
   <p><a href="{{ "/blog/" | relURL }}">View all posts →</a></p>
 
   <script>
   (function() {
+    var months = window.__indexMonths || { written: [], modified: [] };
     var sel = document.getElementById('month-select');
-    var items = document.querySelectorAll('#post-list li');
-    function filter(month) {
-      items.forEach(function(el) {
-        el.style.display = el.getAttribute('data-date') === month ? '' : 'none';
+    var heading = document.getElementById('posts-heading');
+    var list = document.getElementById('post-list');
+    var btnModified = document.getElementById('order-modified');
+    var btnWritten = document.getElementById('order-written');
+    if (!sel || !list) return;
+    var items = Array.prototype.slice.call(list.querySelectorAll('li'));
+    var NAMES = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    var mode = 'modified';
+
+    function monthLabel(k) {
+      var p = k.split('-');
+      return NAMES[parseInt(p[1], 10) - 1] + ' ' + p[0];
+    }
+
+    function fillMonths() {
+      var keys = months[mode] || [];
+      sel.textContent = '';
+      keys.forEach(function(k) {
+        var o = document.createElement('option');
+        o.value = k;
+        o.textContent = monthLabel(k);
+        sel.appendChild(o);
       });
     }
-    sel.addEventListener('change', function() { filter(this.value); });
-    filter(sel.value);
+
+    function render() {
+      var day = 'data-' + mode + '-day';
+      var mon = 'data-' + mode + '-month';
+      var other = mode === 'modified' ? 'written' : 'modified';
+      var otherDay = 'data-' + other + '-day';
+      // 主键按当前口径倒序；同一天内（如批量发布日）用另一口径倒序兜底，保证顺序稳定
+      items.sort(function(a, b) {
+        var x = a.getAttribute(day), y = b.getAttribute(day);
+        if (x !== y) return x < y ? 1 : -1;
+        var p = a.getAttribute(otherDay), q = b.getAttribute(otherDay);
+        if (p !== q) return p < q ? 1 : -1;
+        return 0;
+      });
+      var picked = sel.value;
+      items.forEach(function(el) {
+        var d = el.getAttribute(day);
+        var od = el.getAttribute(otherDay);
+        var txt;
+        if (mode === 'modified') {
+          txt = 'updated ' + d;
+          if (od !== d) txt += ' · written ' + od;
+        } else {
+          txt = d;
+          if (od !== d) txt += ' · updated ' + od;
+        }
+        el.querySelector('small').textContent = txt;
+        el.style.display = el.getAttribute(mon) === picked ? '' : 'none';
+        list.appendChild(el);
+      });
+    }
+
+    function setMode(m) {
+      mode = m;
+      var isMod = m === 'modified';
+      btnModified.classList.toggle('active', isMod);
+      btnWritten.classList.toggle('active', !isMod);
+      btnModified.setAttribute('aria-pressed', String(isMod));
+      btnWritten.setAttribute('aria-pressed', String(!isMod));
+      heading.textContent = isMod ? 'Recently Updated' : 'Latest Posts';
+      fillMonths();
+      render();
+    }
+
+    btnModified.addEventListener('click', function() { setMode('modified'); });
+    btnWritten.addEventListener('click', function() { setMode('written'); });
+    sel.addEventListener('change', render);
+    setMode('modified');
   })();
   </script>
 
