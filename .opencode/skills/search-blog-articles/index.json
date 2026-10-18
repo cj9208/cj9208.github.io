@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-10-07T22:16:58+08:00",
+ "generated_at": "2026-10-18T21:26:47+08:00",
  "base_url": "https://cj9208.github.io/blog/",
- "source_fingerprint": "b97efda1ca9415c53516c9680f2a9939b9d978d5",
- "count": 229,
+ "source_fingerprint": "cfea5c41004dbfc57b441d7ddaa6ed5f37be5c92",
+ "count": 230,
  "articles": [
   {
    "title": "AI 时代的商业困境：从分发共赢到“答案经济”的结构性矛盾",
@@ -173,7 +173,7 @@
     "Conway's Law"
    ],
    "date": "2026-09-27T11:11:00+08:00",
-   "lastmod": "2026-09-28T21:27:28+08:00",
+   "lastmod": "2026-10-07T22:36:53+08:00",
    "excerpt": "每当技术范式进入剧变期，组织内部都会浮现同一对矛盾：治理方要求先给出完备的架构蓝图，执行方要求先跑起来再说。移动互联网是这样，大数据平台是这样，如今的 AI 落地也是这样——AI 只是这一同型矛盾的最新标本，而非特例。 这对矛盾通常被叙述成\"人\"的问题：管理层不懂技术、保守、恋恋于 PPT；或者前线不计后果、乱堆技术债。本文的出发点是把这个叙述方式本身纠正过来：这是双目标冲突（dual-objec",
    "out_links": [
     "ai_era_engineering_careers/ai-platform-blueprint-anti-patterns",
@@ -182,6 +182,10 @@
     "systems_and_governance/conway-law-architecture-destiny",
     "ai_study/system_design/trust-governance-regime",
     "ai_study/system_design/coordination-regime",
+    "systems_and_governance/corporate/constraints-contracts-game-theory",
+    "systems_and_governance/order-compliance-mobilization",
+    "ai_era_engineering_careers/gravity-roi-ai-deterministic-billing",
+    "ai_era_engineering_careers/order-and-system-evolution",
     "systems_and_governance/corporate/google-scientist-exit-org-decoupling",
     "ai_study/system_design/system-design-master-roadmap"
    ]
@@ -487,6 +491,41 @@
    "lastmod": "2026-08-23T21:39:10+08:00",
    "excerpt": "在外企（尤其是欧美系、矩阵式架构的企业）中，职场人常常面临一个巨大的悖论：许多在算法、高并发、系统架构上算力拉满的技术大牛，在日常的跨国、跨部门协作中却常常觉得寸步难行，甚至将沟通归结为充满虚无感的“软实力”或“职场漂亮话”。 但这其实是一个严重的认知 Bug。 高阶的外企沟通，从来都不是一门含糊的玄学，而是一门严谨的组织行为工程学。 如果我们将复杂的矩阵式外企看作一个分布式系统（Distribu",
    "out_links": []
+  },
+  {
+   "title": "无主名词与真实指标：次优演化系统中的个体检测器",
+   "slug": "ownerless-nouns-real-metrics-detector",
+   "url": "https://cj9208.github.io/blog/ai_era_engineering_careers/ownerless-nouns-real-metrics-detector/",
+   "path": "ai_era_engineering_careers/ownerless-nouns-real-metrics-detector",
+   "dir": "content/blog/ai_era_engineering_careers",
+   "section": "ai_era_engineering_careers",
+   "categories": [
+    "Career Strategy"
+   ],
+   "tags": [
+    "Organizational Behavior",
+    "Incentive Distortion",
+    "Metric Distortion",
+    "Career Strategy",
+    "Enterprise AI"
+   ],
+   "date": "2026-10-11T12:41:25+08:00",
+   "lastmod": "2026-10-11T14:04:57+08:00",
+   "excerpt": "由理性的人组成的组织，为什么持续产出非理性的结果？多数回答停在\"制度问题\"\"人性问题\"，太笼统。真正的缺口更具体：组织里的大多数\"新东西\"根本没有归属——有预算、有团队、有汇报，却没有一个人的得失押在它成不成上。本文把这个缺口做成一个能反复执行的判据，它也是《极简组织行为学与管理学概论：协议、博弈与系统的次优演化》那套诊断缺失的、可操作的一环。",
+   "out_links": [
+    "systems_and_governance/ob-management-overview",
+    "ai_era_engineering_careers/stagnation-vs-increment-career-choice",
+    "systems_and_governance/goodhart-law-management",
+    "systems_and_governance/goodharts-law-protocol-reconstruction",
+    "systems_and_governance/talent-screening-exam-culture",
+    "systems_and_governance/chinese_government/punctuated-equilibrium-system-reform",
+    "systems_and_governance/corporate/why-non-tech-giant-it-fails",
+    "systems_and_governance/48-hour-workweek-paradox",
+    "ai_era_engineering_careers/ai-platform-blueprint-anti-patterns",
+    "ai_era_engineering_careers/gravity-roi-ai-deterministic-billing",
+    "systems_and_governance/malicious-compliance-organization-game"
+   ],
+   "shorttitle": "无主名词与真实指标"
   },
   {
    "title": "钟摆的宿命：从 DeepSeek 的极限黑客流，看 AI 时代的“契约分离”",
@@ -2975,7 +3014,7 @@
     "Systemic Collapse"
    ],
    "date": "2026-08-19T12:05:08+08:00",
-   "lastmod": "2026-09-21T19:03:23+08:00",
+   "lastmod": "2026-10-07T22:51:21+08:00",
    "excerpt": "人类社会天然的“默认操作系统”是人治（Rule of Man）——基于熟人社会、血缘与父权权威。但随着社会规模扩大，“纯手动微操”的人治面临着物理半径的极限（皇帝只有双眼双耳朵，无法处理亿级事务）。面对这一物理极限，东西方文明在历史关口走向了截然不同的两条技术演化路径： 演化逻辑：法治从来不是统治者的慈悲，而是不同势力打到不可开交、谁也吃不掉谁之后被迫达成的“不战协定”。",
    "out_links": [
     "systems_and_governance/chinese_government/chongzhen-deadlock-collapse",
@@ -4118,9 +4157,11 @@
     "Contract Design"
    ],
    "date": "2026-06-19T15:30:29+08:00",
-   "lastmod": "2026-08-23T21:39:10+08:00",
+   "lastmod": "2026-10-07T22:50:44+08:00",
    "excerpt": "在软件工程与企业架构演进的河流中，“中台平台化（Infra Platformization）”与“业务定制化（Business Customization）”的战争从未停止。 近年来，业界从一窝蜂盲目“建中台”走向集体“拆中台”，业务线抱怨中台响应慢、不灵活，中台则委屈于沦为业务线的“高级外包”和非标需求的泥潭。这绝不仅是一个简单的代码重构问题，而是一场关于机制设计（Mechanism Desig",
-   "out_links": [],
+   "out_links": [
+    "ai_era_engineering_careers/complete-architecture-vs-trial-and-error"
+   ],
    "shorttitle": "约束、契约与博弈"
   },
   {
@@ -4846,9 +4887,11 @@
     "Risk Allocation"
    ],
    "date": "2026-08-06T22:37:54+08:00",
-   "lastmod": "2026-08-17T14:41:13+08:00",
+   "lastmod": "2026-10-07T22:50:44+08:00",
    "excerpt": "在现代行政体制与大型企业组织的治理实践中，管理者经常陷入一种深刻的制度困境：一方面，系统不断下达“敢打硬仗、打破常规、不惜代价完成目标”的高强度动员指令；另一方面，内部控制与监管体系又反复强调“流程留痕、权责清晰、法无授权不可为”的严苛合规要求。 当“攻坚冲锋号”与“安全防护绳”被同时拉紧，组织运行往往产生剧烈的内部摩擦。“动员”与“合规”的冲突，本质上是“结果正义”与“程序正义”在组织资源配置与",
-   "out_links": []
+   "out_links": [
+    "ai_era_engineering_careers/complete-architecture-vs-trial-and-error"
+   ]
   },
   {
    "title": "责任归位与实质穿透：破解外包异化乱象的法治路径",
@@ -4866,7 +4909,7 @@
     "Compliance"
    ],
    "date": "2026-09-07T12:28:20+08:00",
-   "lastmod": "2026-09-07T13:17:24+08:00",
+   "lastmod": "2026-10-18T21:24:12+08:00",
    "excerpt": "从工程建造领域的层层转包、烂尾与甩锅，到商业赛事中“专业”救援在火场前的失位，近年来频频引发争议的安全与履约事故，暴露出一个深刻的结构性困境：外包这一现代商业体系中旨在提升效率的分工工具，正被普遍异化为企业逃避法定责任、规避监管约束的“责任防空洞”。 当“出了事找外包”成为许多企业的惯性避嫌手段，商业文明的基本承诺——终极交付与安全兜底——便遭到了侵蚀。要扭转这一乱象，必须在司法实践与监管逻辑上回",
    "out_links": [
     "systems_and_governance/chinese_government/soe-governance-single-target-rigid-bottom-line",
@@ -4987,10 +5030,11 @@
     "Path Dependence"
    ],
    "date": "2026-08-04T21:02:51+08:00",
-   "lastmod": "2026-08-27T08:43:00+08:00",
+   "lastmod": "2026-10-07T22:42:39+08:00",
    "excerpt": "社会契约（Social Contract）并非具象的法律文本，而是一个社会中公共权力与个体之间关于“权利让渡”与“远期收益预期”的隐性协议。作为一套治理机制，社会契约的完备程度决定了社会系统的运行效率与治理成本。然而，在系统演化的过程中，社会契约往往会面临过度开采与结构性异化，并在信任破裂后陷入以行政控制替代契约重塑的路径依赖。 社会契约的本质，是建立在公共权力与公民个体之间的隐性交易算法：个体让",
    "out_links": [
-    "systems_and_governance/chinese_government/defensive-collusion-bureaucracy"
+    "systems_and_governance/chinese_government/defensive-collusion-bureaucracy",
+    "systems_and_governance/chinese_government/technical-foolishness-tacitus-trap"
    ]
   },
   {

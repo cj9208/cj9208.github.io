@@ -6,9 +6,10 @@ Personal blog site rendered with Hugo and deployed to GitHub Pages.
 ## Site structure
 - Hugo content lives under `content/`.
 - Supplemental static assets and standalone files live under `static/`.
+- Non-blog working notes and drafts live under `notes/` (not rendered by Hugo).
 - Hugo configuration is in `hugo.toml`.
 - Deployment is handled by `.github/workflows/hugo.yml`.
-- Do not modify files outside `content/` and `static/` unless the user explicitly gives permission.
+- Do not modify files outside `content/`, `static/` and `notes/` unless the user explicitly gives permission.
 
 ## Content structure
 - The main site sections live under `content/`, especially `content/blog/`.
@@ -21,6 +22,25 @@ Personal blog site rendered with Hugo and deployed to GitHub Pages.
 - When working on blog content, assume the authoritative source is under `content/`, not the repo root.
 - When moving or adding non-rendered support files, place them under `static/` unless there is a Hugo-specific reason to put them elsewhere.
 - When editing `_index.md`, preserve any introductory or structural content; do not assume it should be reduced to a pure link list.
+
+## 非 blog 内容的默认位置：`notes/`
+凡是**不属于站点发布内容**的文件，默认放到 `notes/`，不要散落在仓库根目录。这样便于集中管理，也避免污染 Hugo 构建。
+
+判断标准：
+
+- 会被 Hugo 渲染、对外发布 → `content/`
+- 站点要用到的静态资源（图片、附件、独立 HTML/JS 等，会随站点一起部署）→ `static/`
+- 其余一切私人工作产物 → `notes/`
+
+`notes/` 下典型的文件包括：选题与大纲草稿、todo 清单（如 `blog-todo.md`）、学习进度与认证笔记、面试与 coffee chat 准备、组织与职业判断的私人记录、以及只在会话间传递、不需要发布的中间分析。
+
+补充约定：
+
+- `notes/` 不参与 Hugo 构建，因此**不受** front matter、`lastmod`、slug 与站内公开链接等发布规则约束。
+- 在 `notes/` 下可以用子目录归类（现有的如 `interview/`、`zhimap/`、`archive/`）；新主题文件多时，优先建子目录而不是继续平铺。
+- `notes/archive/` 专门记录**讨论过但决定不写**的选题：判断依据、残差清单（哪些组件站内已写过、哪几块是真新的）与重开触发条件。格式见 `notes/archive/README.md`，产生这类结论的流程在 `search-blog-articles` 技能 §4。与 `blog-todo.md` 互补——那里放要写的，这里放决定不写的，避免同一话题几个月后被当成新想法重讨论。
+- 文件名仍遵循仓库既有习惯：英文 kebab-case，或中文标题直接使用；含中文或特殊 Unicode 的文件名必须从文件系统读取，不要手写（见下文 Key rule）。
+- 当一篇 `notes/` 草稿成熟到要发布时，再迁移到 `content/` 对应栏目，并按发布规则补齐 front matter 与站内链接。
 
 ## 链接规则（文章正文用公开链接）
 - 文章正文（非 `_index.md` 栏目页）内引用本站文章时，**必须使用公开链接**（`https://cj9208.github.io/blog/<目录>/<slug>/`），不要使用 `{{< relref >}}` 相对路径。
