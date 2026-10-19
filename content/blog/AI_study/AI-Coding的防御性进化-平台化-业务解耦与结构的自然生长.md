@@ -1,7 +1,7 @@
 ---
 title: "AI Coding 的防御性进化：平台化、业务解耦与结构的自然生长"
 date: 2026-06-30T17:04:54+08:00
-lastmod: 2026-08-23T21:39:10+08:00
+lastmod: 2026-10-19T18:31:06+08:00
 draft: false
 
 description: "随着 Cursor、Claude Code 等新一代 AI 编程工具全面进入 Agent（智能体）时代，软件工程的生产力迎来了一次陡峭的跃升。开发者们开始习惯于\"指点江山\"：丢下一个复杂的工单（Ticket），让 Agent 在后台翻阅源码、修改逻辑、自动运行测试，直到红灯变绿。"
@@ -70,6 +70,25 @@ AI Agent 的核心逻辑是“为了完成任务而不择手段”。当它面�
 ### 2. 剥夺 AI 的修改权限
 
 在根目录的 `agent.md` 或相关规则文件中，必须声明 `src/platform/` 和 `src/utils/` 为**绝对只读**。AI 只能检索和调用这些已有工具，严禁自行修改。一旦 AI 发现现有 Utility 无法满足需求，必须中断并向人类报告，由人类决定是否在平台层进行扩展。这直接从源头上杜绝了“野生工具函数”在业务层的无序繁衍。
+
+### 3. 软边界与硬边界：`agent.md` 只是第一道
+
+上面两条防线其实不是同一种东西，把它们混为一谈会高估自己的防御强度：
+
+* **硬边界**由编译器或类型系统强制执行。上一节的“强类型手铐”属于这一类——AI 传错类型，代码根本编译不过，它没有“绕开”这个选项。
+* **软边界**由规则文件、System Prompt、Review 清单声明。本节的 `agent.md` 只读声明属于这一类——它是一条**请求**，不是一道**闸门**。
+
+区分它们的必要性来自一个已被独立验证的观察。Instagram Direct 团队在把数百个 UI 组件从 Android View 迁移到 Jetpack Compose 的过程中明确发现：**guardrails 和 skills 有帮助，但本身不够，因为 AI 遇到摩擦时往往会绕开它们来解锁自己**（原文：[Guardrails and skills help, but they are not enough on their own, because when AI hits friction it will often route around them to unblock itself.](https://android-developers.googleblog.com/2026/09/jetpack-compose-ai-native-ui-instagram-direct.html)）。同一处还有更贴近本文论点的一句：**给 AI 的边界越少，它长期产出的代码质量越低**（the fewer boundaries AI is given, the lower the quality of the code it produces over time）。他们由此提出的原则是：约束必须由架构本身承载，设计要让阻力最小的那条路正好通向正确代码，同时让糟糕的设计**难以表达、代价高昂**。
+
+这与本文 §一.2 讲的“AI 选择阻力最小的路径”是同一件事的两面。既然走捷径是必然的，那么只在文档里禁止捷径就等于没禁止——**得让捷径在语言层面不存在**。
+
+他们的手法值得抄。老写法里，一个列表项的 UI 代码写在类的方法中，于是它能读到类上的可变字段；而那个字段的生命周期与列表行的生命周期并不一致，状态因此在回收复用时跨行泄漏，产生极难复现的 Bug。中间版本把 UI 代码抽成一个独立的 `@Composable` 方法，看起来干净了，**但问题原样存在**——因为类成员对这段代码依然可见。真正的解法是把 UI 代码作为**构造函数参数**（一个 lambda）传入：这段代码因此拿不到任何类成员，唯一的入参来源就是构造函数。改动量很小，性质却变了：从“靠纪律记得别用类字段”，变成“作用域里根本没有类字段”。
+
+**一条可迁移的判据**：给 AI 立的每一条规矩，都问一句“违反它时，代码还能不能通过编译和测试”。能通过的，就是软边界，迟早被绕开；不能通过的，才是硬边界。
+
+这并不意味着软边界不该写。它便宜、覆盖面广、能立刻生效，是防御体系里性价比最高的一层——但要清楚它的作用是**降低概率**，而不是**排除可能**。因此凡是一旦违反就极难排查的地方（跨生命周期的状态、平台层的公共契约、绕过边界的隐式引用），都必须再配一层硬边界兜底：类型、作用域、模块可见性、只读挂载，或者毫秒级能跑完的单测。软边界负责日常，硬边界负责不出事。
+
+> 来源：[How Instagram Direct engineers built AI-native UI architecture with Jetpack Compose and reduced token cost per agent session by 33%](https://android-developers.googleblog.com/2026/09/jetpack-compose-ai-native-ui-instagram-direct.html)，Android Developers Blog，2026-09-30。需说明的是，该文并未使用“软/硬边界”这组提法，上面的判据与分层是我从它的 Example 1–3 与那条 guardrails 论断中提炼的；文中被量化的是 Compose 相对 Android Views 的 agent 效率——按落地代码每字符计，执行时间 −35%、工程师与 agent 的交互轮次 −32%；按一次 agent session 计，token 成本 −33%——而不是“硬边界相对软边界”的对照实验。后者的效果，该文没有单独测过。
 
 ## 三、 限界沙盒：一个业务一个文件夹的“物理截断”
 
