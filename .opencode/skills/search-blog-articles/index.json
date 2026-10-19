@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-18T21:26:47+08:00",
+ "generated_at": "2026-10-19T12:13:47+08:00",
  "base_url": "https://cj9208.github.io/blog/",
- "source_fingerprint": "cfea5c41004dbfc57b441d7ddaa6ed5f37be5c92",
+ "source_fingerprint": "d92f8774bd5e9486a4a2d3a903d479ec425d2a43",
  "count": 230,
  "articles": [
   {
@@ -173,21 +173,21 @@
     "Conway's Law"
    ],
    "date": "2026-09-27T11:11:00+08:00",
-   "lastmod": "2026-10-07T22:36:53+08:00",
+   "lastmod": "2026-10-19T12:12:19+08:00",
    "excerpt": "每当技术范式进入剧变期，组织内部都会浮现同一对矛盾：治理方要求先给出完备的架构蓝图，执行方要求先跑起来再说。移动互联网是这样，大数据平台是这样，如今的 AI 落地也是这样——AI 只是这一同型矛盾的最新标本，而非特例。 这对矛盾通常被叙述成\"人\"的问题：管理层不懂技术、保守、恋恋于 PPT；或者前线不计后果、乱堆技术债。本文的出发点是把这个叙述方式本身纠正过来：这是双目标冲突（dual-objec",
    "out_links": [
     "ai_era_engineering_careers/ai-platform-blueprint-anti-patterns",
-    "systems_and_governance/corporate/rule-of-man-gravity-acl",
     "ai_era_engineering_careers/state-machine-technical-research",
-    "systems_and_governance/conway-law-architecture-destiny",
-    "ai_study/system_design/trust-governance-regime",
-    "ai_study/system_design/coordination-regime",
     "systems_and_governance/corporate/constraints-contracts-game-theory",
     "systems_and_governance/order-compliance-mobilization",
     "ai_era_engineering_careers/gravity-roi-ai-deterministic-billing",
     "ai_era_engineering_careers/order-and-system-evolution",
+    "systems_and_governance/corporate/rule-of-man-gravity-acl",
     "systems_and_governance/corporate/google-scientist-exit-org-decoupling",
-    "ai_study/system_design/system-design-master-roadmap"
+    "ai_study/system_design/system-design-master-roadmap",
+    "systems_and_governance/conway-law-architecture-destiny",
+    "ai_study/system_design/trust-governance-regime",
+    "ai_study/system_design/coordination-regime"
    ]
   },
   {
@@ -510,8 +510,8 @@
     "Enterprise AI"
    ],
    "date": "2026-10-11T12:41:25+08:00",
-   "lastmod": "2026-10-11T14:04:57+08:00",
-   "excerpt": "由理性的人组成的组织，为什么持续产出非理性的结果？多数回答停在\"制度问题\"\"人性问题\"，太笼统。真正的缺口更具体：组织里的大多数\"新东西\"根本没有归属——有预算、有团队、有汇报，却没有一个人的得失押在它成不成上。本文把这个缺口做成一个能反复执行的判据，它也是《极简组织行为学与管理学概论：协议、博弈与系统的次优演化》那套诊断缺失的、可操作的一环。",
+   "lastmod": "2026-10-18T22:40:49+08:00",
+   "excerpt": "由理性的人组成的组织，为什么持续产出非理性的结果？多数回答停在\"制度问题\"\"人性问题\"，太笼统。真正的缺口更具体：组织里的大多数\"新东西\"根本没有归属——有预算、有团队、有汇报，却没有一个人的得失押在它成不成上。本文把这个缺口做成一个能反复执行的判据。 组织引入的任何新东西——系统、流程、平台、方法论、专项运动——在归属上只有两类： 真实指标：存在一个具体的人，他的考核承担这件事的结果，且他可以为",
    "out_links": [
     "systems_and_governance/ob-management-overview",
     "ai_era_engineering_careers/stagnation-vs-increment-career-choice",

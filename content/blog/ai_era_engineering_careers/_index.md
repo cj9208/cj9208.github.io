@@ -48,6 +48,7 @@ slug: "career-development"
 * [Think Beyond the Code: Another Way to Fix Messy Documents]({{< relref "./Think-Beyond-the-Code-Another-Way-to-Fix-Messy-Documents.md" >}})
 * [龙舟破局：从"水上苦力"到"动作工程调试"]({{< relref "./龙舟破局-从水上苦力到动作工程调试.md" >}})
 * [The State Machine of Technical Research: Balancing Exploration and Bounded Execution]({{< relref "./The-State-Machine-of-Technical-Research-Balancing-Exploration-and-Bounded-Execution.md" >}})
+* [完备架构与快速试错：AI 落地双目标冲突的机制设计解法]({{< relref "./完备架构与快速试错-AI落地双目标冲突的机制设计解法.md" >}})
 * [秩序之重：从系统演进看"变通"的代价]({{< relref "./秩序之重-从系统演进看-变通-的代价.md" >}})
 * [编程语言的终局：从"人肉码农"到"意图流片"]({{< relref "./编程语言的终局-从人肉码农到意图流片.md" >}})
 * [破除"单测无用论"：代码不可测，是架构烂，不是单测错]({{< relref "./破除单测无用论-代码不可测是架构烂不是单测错.md" >}})
