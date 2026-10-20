@@ -76,5 +76,6 @@ Agent 层面的 RSI 已有现实路径：不改模型权重，改 Agent Harness�
 ## 延伸阅读
 
 - `notes/reading/dream-rsi-replay-simulator-notes.md` — 同为 Google 的 RSI 工作，但从 meta-strategy 角度切入：把发现历史冻结成 replay simulator 来离线改进探索策略。与 RRSI 互补——Dream-RSI 优化"往哪搜索"，RRSI 优化"搜索结果怎么筛选"。
+- `notes/reading/sift-self-improvement-fast-tree-search-notes.md` — 同期同族的另一条 RSI 路线（MIT+Sakana，arXiv:2609.19526；比本篇 arXiv:2609.24972 略早）。本篇（RRSI）管"selection 不加正则会 overfit"，SIFT 管"selection 太贵→用成对 judge + BT 造一个便宜 rank surrogate + 保真度阶梯（4-task gate → Polyglot-50 → 225 held-out）决定验证谁"。两者互补：SIFT 提供了本篇要正则化的那个 selection 机制的一种便宜实现，而本篇 §二 Selection 端的 noise-adjusted floor / cost gate / pruning 正是 SIFT 那个 4-task / Polyglot-50 便宜 judge 避免 overfit 所缺的部件。SIFT 源文自认补丁会"钻 harness 空子、优化评估 artifact"，就是本篇 §一 的 benchmark-specific fitting / evaluation noise chasing。（这层互补是我的分析）
 - [The Search Pathology: Why Scaling Test-Time Compute Can Degrade Code Agent Quality](https://cj9208.github.io/blog/ai_study/search-pathology-test-time-compute/) — RRSI 的 "complexity accumulation" 是这篇所述 Goodhart's Law 在 harness evolution 层面的投影；两者解法方向一致（硬化评估而非限制搜索）。
 - [Harness Engineering 合集](https://cj9208.github.io/blog/ai_study/harness-engineering/) — 定义了什么是 Agent Harness、为什么它是可靠性的关键层。RRSI 操作的正是这一层。
