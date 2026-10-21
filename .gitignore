@@ -10,3 +10,5 @@ _vendor/
 
 .DS_Store
 *.pyc
+
+notes/scratch
