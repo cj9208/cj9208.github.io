@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-10-21T14:02:27+08:00",
+ "generated_at": "2026-10-22T10:16:19+08:00",
  "base_url": "https://cj9208.github.io/blog/",
- "source_fingerprint": "98f4334b2781cf612a3d44ff34f559bfb895591e",
- "count": 231,
+ "source_fingerprint": "494691286bc09be56127add5e3366cf361657650",
+ "count": 233,
  "articles": [
   {
    "title": "AI 时代的商业困境：从分发共赢到“答案经济”的结构性矛盾",
@@ -1838,7 +1838,7 @@
     "Market Structure"
    ],
    "date": "2026-09-15T22:10:27+08:00",
-   "lastmod": "2026-09-15T22:27:25+08:00",
+   "lastmod": "2026-10-22T09:38:00+08:00",
    "excerpt": "每当市场剧烈波动或散户大面积亏损，主流解读往往归因于“政策失灵”“监管经验不足”或“市场培育阶段的阵痛”。这种“庇护性叙事”把监管者设定为一位关切散户的“善意家长”，将工具限制与价格管制解释为防止散户盲目受创的保驾护航。但它遮蔽了资本市场的真实底层功能：一个高效、低成本的股权融资与风险转移平台。市场的主导功能并非财富管理型的“投资市”，而是服务于企业定向输血与政策引导的“融资市”。 “父爱式监管”",
    "out_links": [
     "systems_and_governance/chinese_government/all-in-war-of-attrition",
@@ -3337,6 +3337,38 @@
    ]
   },
   {
+   "title": "退出权的两种时滞：土地财政撑了二十年，股权财政撑不过一个季度",
+   "slug": "exit-rights-lag-equity-finance-impossibility",
+   "url": "https://cj9208.github.io/blog/systems_and_governance/chinese_government/exit-rights-lag-equity-finance-impossibility/",
+   "path": "systems_and_governance/chinese_government/exit-rights-lag-equity-finance-impossibility",
+   "dir": "content/blog/systems_and_governance/Chinese_government",
+   "section": "systems_and_governance",
+   "categories": [
+    "Systems and Governance"
+   ],
+   "tags": [
+    "Fiscal System",
+    "Macro Transition",
+    "Price Discovery",
+    "Exit Rights",
+    "Trust Collapse"
+   ],
+   "date": "2026-10-22T09:45:00+08:00",
+   "lastmod": "2026-10-22T09:45:00+08:00",
+   "excerpt": "“股权财政接棒土地财政”这个提法近两年被反复提出，它有两个版本：一个是把国有股权划转给社保基金、靠分红和变现充实财政；另一个是让居民财富从不动产切换到股权，把资本市场做成新的融资底座。两个版本共用同一个前提——国资股权能够被定价。 这个前提不成立。定价无法由行政生成，它只能由自愿承担风险的真实交易产生；而一笔交易要有对手盘，对手方就必须拥有退出权，并且愿意不行使它。于是问题变成一个可以被测量的比较",
+   "out_links": [
+    "investment/fiscal-dominance-crash",
+    "systems_and_governance/chinese_government/authoritarian-governance-overview",
+    "systems_and_governance/chinese_government/no-trading-no-accurate-pricing",
+    "systems_and_governance/chinese_government/elastic-authoritarianism-arbitrage",
+    "systems_and_governance/chinese_government/all-in-war-of-attrition",
+    "systems_and_governance/social-contract-exploitation-path-dependence",
+    "systems_and_governance/chinese_government/tech-utopia-second-best",
+    "systems_and_governance/chinese_government/debt-explosion-first-priority",
+    "investment/financing-market-control-logic"
+   ]
+  },
+  {
    "title": "大出清的执剑人：朱镕基、王岐山的治理镜像与时代范式转换",
    "slug": "great-cleaning-sword-bearers",
    "url": "https://cj9208.github.io/blog/systems_and_governance/chinese_government/great-cleaning-sword-bearers/",
@@ -4638,6 +4670,36 @@
     "systems_and_governance/chinese_government/infrastructure-hidden-cost-opportunity-cost"
    ],
    "shorttitle": "免于提防的自由"
+  },
+  {
+   "title": "未来的影子：合作是 δ 的函数，不是道德的成果",
+   "slug": "discount-factor-retroactive-enforcement",
+   "url": "https://cj9208.github.io/blog/systems_and_governance/game_theory/discount-factor-retroactive-enforcement/",
+   "path": "systems_and_governance/game_theory/discount-factor-retroactive-enforcement",
+   "dir": "content/blog/systems_and_governance/game_theory",
+   "section": "systems_and_governance",
+   "categories": [
+    "Systems and Governance"
+   ],
+   "tags": [
+    "Game Theory",
+    "Game Theory Series",
+    "Repeated Games",
+    "Discount Factor",
+    "Retroactive Enforcement",
+    "Tax Audit"
+   ],
+   "date": "2026-10-22T08:32:19+08:00",
+   "lastmod": "2026-10-22T09:40:15+08:00",
+   "excerpt": "本文用的是博弈论的一个判据，不是它的全部。先把不变量定死：当每个人的收益 $u$ 里包含别人的行动作为自变量时，\"我的最优\"就依赖\"你的最优\"；这件事没有最优解，只有不动点。 三条轴决定一个局的形状——玩家能否提前约束（合作／非合作）、是否知道对方的收益与类型（完全／不完全信息）、行动有无先后（静态／动态）。另有两条几乎从不成立的隐含假设：公共知识与完全理性。后面每次\"理论在这里失效\"，都发生在这",
+   "out_links": [
+    "systems_and_governance/unverifiable-labor-protection-trilateral-friction",
+    "ai_era_engineering_careers/distributed-symbiosis-tit-for-tat",
+    "systems_and_governance/chinese_government/retroactive-audit-malicious-compliance",
+    "systems_and_governance/chinese_government/defensive-collusion-bureaucracy",
+    "systems_and_governance/minimal-institutionalism-certainty"
+   ],
+   "shorttitle": "未来的影子"
   },
   {
    "title": "全球服务器列表：宏观抉择（Trade-off）与制度摩擦（Friction）的双重精算",

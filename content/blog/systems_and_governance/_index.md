@@ -1,7 +1,7 @@
 ---
 title: "Systems, Incentives, and Governance"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-09-24T19:47:23+08:00
+lastmod: 2026-10-24T23:17:35+08:00
 draft: false
 
 description: "A section on systems, incentives, trust, welfare, and governance across teams, firms, and public institutions."
@@ -30,6 +30,8 @@ tags:
 
 另外，具体的公司案例解剖（Google、三星、字节、大厂通病等）收敛到了独立子目录 [Corporate / 企业组织与治理]({{< relref "./corporate/_index.md" >}})，方便按公司视角集中阅读，也便于其他目录整体引用。
 
+博弈论模型的单篇推导也单独收在一个子目录 [Game Theory / 博弈论模型系列]({{< relref "./game_theory/_index.md" >}})：一篇一个模型，每篇把它写成一行式子，看它给出什么结果、这个结果在什么条件下会反过来。它按**方法**而不是按题材分栏，所以只有这个系列的文章进去；其余用了博弈论的文章仍按题材留在原处。
+
 如果你是第一次进入这个目录，建议先从 `Systems and Governance` 读起，再进入 `Organizational Systems` 与 `Labor and Welfare`，最后进入 `Political Economy` 与中国治理分支。
 
 > **🚀 新读者入口：** 若想先用最短时间建立整个目录的全局框架，建议先读以下两篇总纲：
@@ -38,6 +40,12 @@ tags:
 > - [《极简组织行为学与管理学概论：协议、博弈与系统的次优演化》]({{< relref "./极简组织行为学与管理学概论-协议博弈与系统的次优演化.md" >}})——以「增量 vs 存量」「间断平衡」为主线，把组织行为学的各条分线串成一条完整的阅读路径。
 >
 > 读完后可按需深入任意子文章。
+
+## China Branch
+* [Chinese_government：治理、财政、医疗与国家能力]({{< relref "./Chinese_government/_index.md" >}})
+
+## Game Theory
+* [game_theory：博弈论模型系列——δ 与重复博弈、结构诊断、信号与筛选、多任务激励、机制设计、承诺、演化、AI 作为玩家]({{< relref "./game_theory/_index.md" >}})
 
 ## Systems and Governance
 * [极简制度论：确定性作为社会秩序的底层协议]({{< relref "./极简制度论-确定性作为社会秩序的底层协议.md" >}})
@@ -86,5 +94,4 @@ tags:
 * [建制化精英的致命回旋：为什么全球最聪明的人总在接周期的盘？]({{< relref "./建制化精英的致命回旋-为什么全球最聪明的人总在接周期的盘.md" >}})
 * [一些金融异象的思考]({{< relref "./一些金融异象的思考.md" >}})
 
-## China Branch
-* [Chinese_government：治理、财政、医疗与国家能力]({{< relref "./Chinese_government/_index.md" >}})
+
