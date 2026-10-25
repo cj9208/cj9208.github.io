@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-10-21T14:02:27+08:00",
+ "generated_at": "2026-10-25T22:56:38+08:00",
  "base_url": "https://cj9208.github.io/blog/",
- "source_fingerprint": "98f4334b2781cf612a3d44ff34f559bfb895591e",
- "count": 231,
+ "source_fingerprint": "be0e3f1ca2dcd2e95e2d2532bb06f93ccba056c4",
+ "count": 233,
  "articles": [
   {
    "title": "AI 时代的商业困境：从分发共赢到“答案经济”的结构性矛盾",
@@ -3337,6 +3337,37 @@
    ]
   },
   {
+   "title": "退出权的两种时滞：土地财政撑了二十年，股权财政撑不过一个季度",
+   "slug": "exit-rights-lag-equity-finance-impossibility",
+   "url": "https://cj9208.github.io/blog/systems_and_governance/chinese_government/exit-rights-lag-equity-finance-impossibility/",
+   "path": "systems_and_governance/chinese_government/exit-rights-lag-equity-finance-impossibility",
+   "dir": "content/blog/systems_and_governance/Chinese_government",
+   "section": "systems_and_governance",
+   "categories": [
+    "Systems and Governance"
+   ],
+   "tags": [
+    "Fiscal System",
+    "Macro Transition",
+    "Price Discovery",
+    "Exit Rights",
+    "Trust Collapse"
+   ],
+   "date": "2026-10-22T09:45:00+08:00",
+   "lastmod": "2026-10-25T22:54:00+08:00",
+   "excerpt": "\"股权财政接棒土地财政\"这个提法近两年被反复提出。它的意思很具体：土地出让金坍塌之后，政府手里还有一笔庞大的国有资本股权，用它来填这个洞。 填洞只有两个通道。通道一是变卖存量——把国资股权卖出去，换成能用的现金。通道二是融资增量——把资本市场做成新的融资底座，让居民财富从不动产和存款切换到股权。两个通道共用同一个前提：国资股权能够被定价。变卖要有成交价，融资要有发行价，而这两个数字都无法由行政生成",
+   "out_links": [
+    "systems_and_governance/chinese_government/no-trading-no-accurate-pricing",
+    "systems_and_governance/chinese_government/elastic-authoritarianism-arbitrage",
+    "investment/fiscal-dominance-crash",
+    "systems_and_governance/chinese_government/authoritarian-governance-overview",
+    "systems_and_governance/chinese_government/all-in-war-of-attrition",
+    "systems_and_governance/social-contract-exploitation-path-dependence",
+    "investment/financing-market-control-logic",
+    "systems_and_governance/chinese_government/debt-explosion-first-priority"
+   ]
+  },
+  {
    "title": "大出清的执剑人：朱镕基、王岐山的治理镜像与时代范式转换",
    "slug": "great-cleaning-sword-bearers",
    "url": "https://cj9208.github.io/blog/systems_and_governance/chinese_government/great-cleaning-sword-bearers/",
@@ -4638,6 +4669,36 @@
     "systems_and_governance/chinese_government/infrastructure-hidden-cost-opportunity-cost"
    ],
    "shorttitle": "免于提防的自由"
+  },
+  {
+   "title": "未来的影子：合作是 δ 的函数，不是道德的成果",
+   "slug": "discount-factor-retroactive-enforcement",
+   "url": "https://cj9208.github.io/blog/systems_and_governance/game_theory/discount-factor-retroactive-enforcement/",
+   "path": "systems_and_governance/game_theory/discount-factor-retroactive-enforcement",
+   "dir": "content/blog/systems_and_governance/game_theory",
+   "section": "systems_and_governance",
+   "categories": [
+    "Systems and Governance"
+   ],
+   "tags": [
+    "Game Theory",
+    "Game Theory Series",
+    "Repeated Games",
+    "Discount Factor",
+    "Retroactive Enforcement",
+    "Tax Audit"
+   ],
+   "date": "2026-10-22T08:32:19+08:00",
+   "lastmod": "2026-10-24T23:01:47+08:00",
+   "excerpt": "合作不是道德成果，是未来值钱时的副产品。而\"未来值多少\"是一个可以被制度改动的参数——这不是比喻，它可以推导，也可以测量。 前两节推导，不带例子：从一张收益表到贴现因子 $\\delta$ 与维持合作的阈值，再逐个检查这个阈值依赖的假设——局会不会结束、昨天的合规今天还算不算、报复会不会真执行、行动会不会被看错。第三节测量：2020 年的社区团购补贴大战给出支付项与 $p{\\text{end}}$ ",
+   "out_links": [
+    "systems_and_governance/unverifiable-labor-protection-trilateral-friction",
+    "systems_and_governance/minimal-institutionalism-certainty",
+    "ai_era_engineering_careers/distributed-symbiosis-tit-for-tat",
+    "systems_and_governance/chinese_government/retroactive-audit-malicious-compliance",
+    "systems_and_governance/chinese_government/defensive-collusion-bureaucracy"
+   ],
+   "shorttitle": "未来的影子"
   },
   {
    "title": "全球服务器列表：宏观抉择（Trade-off）与制度摩擦（Friction）的双重精算",
