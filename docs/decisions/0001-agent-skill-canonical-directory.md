@@ -2,8 +2,7 @@
 
 - 状态：已采纳
 - 日期：2026-10-26
-- 详细调研：`notes/skills-portability/00-通用skill格式设计.md`
-- 遗留债务与优先级：`notes/skills-portability/01-技能债务清单.md`
+- 详细调研、写作契约与遗留债务：[0002-skill-authoring-contract-and-backlog.md](./0002-skill-authoring-contract-and-backlog.md)（本文只留决定；逐条待办在那份的"待办"一节）
 
 ## 背景
 
@@ -21,12 +20,12 @@
 
 - **`npx skills`（Vercel Labs，75+ agent 预设）**：它的价值在"从 GitHub 装别人的技能"，与本项目"一份自有技能、五个 harness"的需求不同；且默认 symlink 在本机需要提权（实测 `os.symlink` 返回 WinError 1314），而它不做 per-harness 的 frontmatter 处理。日后要引入外部技能包时再引入，与本方案不冲突。
 - **rulesync**：会做真格式转换（rules/mcp/hooks），代价是引入一个构建步骤混进 Hugo 流程，且 19 份技能 × N 个 target 的拷贝进 git，diff 噪音大。
-- **给 Claude Code 也建 `.claude/skills` 联接**：OpenCode 项目级会同时扫 `.opencode/skills`、`.claude/skills`、`.agents/skills` 三个根并要求技能名跨根唯一，多一个内容根就是重名源。接入 Claude Code 仍是未决项（01 清单 P0-1）。
+- **给 Claude Code 也建 `.claude/skills` 联接**：OpenCode 项目级会同时扫 `.opencode/skills`、`.claude/skills`、`.agents/skills` 三个根并要求技能名跨根唯一，多一个内容根就是重名源。接入 Claude Code 仍是未决项（0002 待办 P0-1）。
 - **维护 per-harness 拷贝**：任何一份能被独立编辑的拷贝都会漂移，这是本方案要消除的对象。
 
 ## 后果
 
-接受的代价：多了一个 `scripts/bind_skills.py` 需要维护；新克隆仓库后必须先跑一次 `bind`，否则 Qoder 无技能可用；`.qoder/skills` 变成重解析点后，`rm -rf .qoder/skills` 在 Git Bash/MSYS 下可能穿越联接删掉正本——**目前只用文档约束（AGENTS.md 与本文件）而非机制约束**，这是一笔显式欠账（01 清单 P0-3）。
+接受的代价：多了一个 `scripts/bind_skills.py` 需要维护；新克隆仓库后必须先跑一次 `bind`，否则 Qoder 无技能可用；`.qoder/skills` 变成重解析点后，`rm -rf .qoder/skills` 在 Git Bash/MSYS 下可能穿越联接删掉正本——**目前只用文档约束（AGENTS.md 与本文件）而非机制约束**，这是一笔显式欠账（0002 待办 P0-3）。
 
 已验证：联接可被 harness 读取——用一次性探针技能做了双向观测（新建 `junction-probe/` 后下一轮出现在可用技能清单，删除后下一轮消失），顺带证明 Qoder 每轮重扫、新技能无需重启会话。`bind`/`check`/`unbind` 往返与幂等测试全绿。
 

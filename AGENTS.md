@@ -19,7 +19,7 @@ Personal blog site rendered with Hugo and deployed to GitHub Pages.
 - `.qoder/skills` 是一个**目录联接**（junction），指向 `.agents/skills/`，且已被 `.gitignore` 忽略。它由脚本生成，**不要手工编辑里面的文件**——编辑等于编辑正本，但你会以为自己在改副本。
 - 装订命令：`python scripts/bind_skills.py bind`（幂等，可重复执行）；`check` 校验正本与绑定状态；`unbind` 安全解除。新克隆仓库后先跑一次 `bind`，Qoder 才有技能可用。
 - Codex CLI、OpenCode、DeepSeek Harness 原生读取 `.agents/skills/`，**不需要**任何装订动作。
-- **禁止手工创建 `.claude/skills/` 或 `.opencode/skills/`。** OpenCode 项目级会同时扫描 `.opencode/skills`、`.claude/skills` 和 `.agents/skills` 三个根，且要求 skill 名跨根唯一；多一个根就是重名冲突。Claude Code 的接入方式仍是未决项，见 `notes/skills-portability/01-技能债务清单.md`。
+- **禁止手工创建 `.claude/skills/` 或 `.opencode/skills/`。** OpenCode 项目级会同时扫描 `.opencode/skills`、`.claude/skills` 和 `.agents/skills` 三个根，且要求 skill 名跨根唯一；多一个根就是重名冲突。Claude Code 的接入方式仍是未决项，见 `docs/decisions/0002-skill-authoring-contract-and-backlog.md`（P0-1）。
 - ⚠️ **删除风险**：`.qoder/skills` 是链接而非目录内容。在 Git Bash / MSYS 里执行 `rm -rf .qoder/skills` 可能穿越联接**删掉正本**。解除绑定只走 `python scripts/bind_skills.py unbind`（内部用 `os.rmdir` 删重解析点）或 `cmd /c rmdir .qoder\skills`。
 
 ## Content structure
@@ -68,7 +68,7 @@ Personal blog site rendered with Hugo and deployed to GitHub Pages.
 
 两条边界：**变更事实不进 `docs/`**——动了哪些文件、怎么回滚，归宿是 commit message（一次提交对应一个逻辑工作项），手工维护一份变更记录等于给 git 已有的信息做第二份拷贝；**决策记录正文不要写进本文件**——本文件每轮注入，把长文塞进来会稀释真正的指令（与官方文档点名的 "bloated CLAUDE.md 会让模型忽略你实际指令" 同一个失效模式），这里只保留判据与指路。
 
-`docs/` 是根目录，Hugo 不渲染（`hugo.toml` 未覆盖 `contentDir`/`staticDir`，workflow 只发布 `./public`；2026-10-26 实测 `hugo --destination public_test` 构建通过、退出码 0，输出目录中无 `docs` 页面），但它在公开仓库里，写的时候按"公开可读"处理。现有第一篇：`docs/decisions/0001-agent-skill-canonical-directory.md`。
+`docs/` 是根目录，Hugo 不渲染（`hugo.toml` 未覆盖 `contentDir`/`staticDir`，workflow 只发布 `./public`；2026-10-26 实测 `hugo --destination public_test` 构建通过、退出码 0，输出目录中无 `docs` 页面），但它在公开仓库里，写的时候按"公开可读"处理。现有两篇：`0001-agent-skill-canonical-directory.md`（正本目录与装订层）、`0002-skill-authoring-contract-and-backlog.md`（技能写作契约 R1–R7 与未完成的优化顺序——**新增或修改 skill 前先读它的"待办"一节**）。
 
 ## 链接规则（文章正文用公开链接）
 - 文章正文（非 `_index.md` 栏目页）内引用本站文章时，**必须使用公开链接**（`https://cj9208.github.io/blog/<目录>/<slug>/`），不要使用 `{{< relref >}}` 相对路径。

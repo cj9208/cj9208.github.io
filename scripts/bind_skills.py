@@ -14,7 +14,7 @@ Why only .qoder gets bound:
     .opencode/skills, .claude/skills AND .agents/skills at project level and
     requires unique skill names across those roots, so a .claude copy would
     collide with the canonical tree. Binding Claude Code is an open decision
-    (see notes/skills-portability/01-技能债务清单.md).
+    (see docs/decisions/0002-skill-authoring-contract-and-backlog.md, P0-1).
 
 Usage:
   python scripts/bind_skills.py bind     [--mode auto|junction|copy]
