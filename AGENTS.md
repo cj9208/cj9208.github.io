@@ -10,6 +10,17 @@ Personal blog site rendered with Hugo and deployed to GitHub Pages.
 - Hugo configuration is in `hugo.toml`.
 - Deployment is handled by `.github/workflows/hugo.yml`.
 - Do not modify files outside `content/`, `static/` and `notes/` unless the user explicitly gives permission.
+- 例外：`.agents/skills/` 与 `scripts/` 是 agent 工具层（见下"Skill 的唯一真源"），维护它们属于本文件授权范围内的日常工作。
+
+## Skill 的唯一真源：`.agents/skills/`
+本仓库的 agent 技能只有一份真实文件，位于 `.agents/skills/<skill-name>/SKILL.md`（含各自的 `scripts/`、`references/`）。这是 git 跟踪的正本。
+
+- **新增或修改 skill，只在 `.agents/skills/` 下做。** 其他 harness 目录都是生成物，不是内容。
+- `.qoder/skills` 是一个**目录联接**（junction），指向 `.agents/skills/`，且已被 `.gitignore` 忽略。它由脚本生成，**不要手工编辑里面的文件**——编辑等于编辑正本，但你会以为自己在改副本。
+- 装订命令：`python scripts/bind_skills.py bind`（幂等，可重复执行）；`check` 校验正本与绑定状态；`unbind` 安全解除。新克隆仓库后先跑一次 `bind`，Qoder 才有技能可用。
+- Codex CLI、OpenCode、DeepSeek Harness 原生读取 `.agents/skills/`，**不需要**任何装订动作。
+- **禁止手工创建 `.claude/skills/` 或 `.opencode/skills/`。** OpenCode 项目级会同时扫描 `.opencode/skills`、`.claude/skills` 和 `.agents/skills` 三个根，且要求 skill 名跨根唯一；多一个根就是重名冲突。Claude Code 的接入方式仍是未决项，见 `notes/skills-portability/01-技能债务清单.md`。
+- ⚠️ **删除风险**：`.qoder/skills` 是链接而非目录内容。在 Git Bash / MSYS 里执行 `rm -rf .qoder/skills` 可能穿越联接**删掉正本**。解除绑定只走 `python scripts/bind_skills.py unbind`（内部用 `os.rmdir` 删重解析点）或 `cmd /c rmdir .qoder\skills`。
 
 ## Content structure
 - The main site sections live under `content/`, especially `content/blog/`.
@@ -31,6 +42,7 @@ Personal blog site rendered with Hugo and deployed to GitHub Pages.
 - 会被 Hugo 渲染、对外发布 → `content/`
 - 站点要用到的静态资源（图片、附件、独立 HTML/JS 等，会随站点一起部署）→ `static/`
 - 其余一切私人工作产物 → `notes/`
+- 但**会改变未来决策的项目级结构决定** → `docs/decisions/`（判据与门槛见下）
 
 `notes/` 下典型的文件包括：选题与大纲草稿、todo 清单（如 `blog-todo.md`）、学习进度与认证笔记、面试与 coffee chat 准备、组织与职业判断的私人记录、以及只在会话间传递、不需要发布的中间分析。
 
@@ -41,6 +53,22 @@ Personal blog site rendered with Hugo and deployed to GitHub Pages.
 - `notes/archive/` 专门记录**讨论过但决定不写**的选题：判断依据、残差清单（哪些组件站内已写过、哪几块是真新的）与重开触发条件。格式见 `notes/archive/README.md`，产生这类结论的流程在 `search-blog-articles` 技能 §4。与 `blog-todo.md` 互补——那里放要写的，这里放决定不写的，避免同一话题几个月后被当成新想法重讨论。
 - 文件名仍遵循仓库既有习惯：英文 kebab-case，或中文标题直接使用；含中文或特殊 Unicode 的文件名必须从文件系统读取，不要手写（见下文 Key rule）。
 - 当一篇 `notes/` 草稿成熟到要发布时，再迁移到 `content/` 对应栏目，并按发布规则补齐 front matter 与站内链接。
+
+## 项目决策记录：`docs/decisions/`
+一句话判据：**这份东西会不会被未来的 agent 或未来的自己拿来支撑决策？** 会 → `docs/decisions/`；其中短到可以 always-on 的部分直接写进本文件。不会、只是过程记录 → `notes/`。
+
+写入门槛（两条**同时**满足才写）：
+
+1. 改变了别人（或未来的你）会依赖的结构或约定；
+2. 存在被否决的备选方案。
+
+只"改动很大"不够。批量格式迁移之类的动作写进 commit message 即可，不要每改一次就写一篇记录，否则 `docs/` 会退化成第二份 changelog。
+
+格式：`docs/decisions/NNNN-短横线标题.md`（四位递增编号），固定五段——背景 / 决定 / 被否决的备选 / 后果（含接受的代价与未验证项）/ 被推翻的判断。采纳后不重写正文；被后续事实推翻时新增一篇，在新篇写"取代 000N"，旧篇只加一行状态行。
+
+两条边界：**变更事实不进 `docs/`**——动了哪些文件、怎么回滚，归宿是 commit message（一次提交对应一个逻辑工作项），手工维护一份变更记录等于给 git 已有的信息做第二份拷贝；**决策记录正文不要写进本文件**——本文件每轮注入，把长文塞进来会稀释真正的指令（与官方文档点名的 "bloated CLAUDE.md 会让模型忽略你实际指令" 同一个失效模式），这里只保留判据与指路。
+
+`docs/` 是根目录，Hugo 不渲染（`hugo.toml` 未覆盖 `contentDir`/`staticDir`，workflow 只发布 `./public`；2026-10-26 实测 `hugo --destination public_test` 构建通过、退出码 0，输出目录中无 `docs` 页面），但它在公开仓库里，写的时候按"公开可读"处理。现有第一篇：`docs/decisions/0001-agent-skill-canonical-directory.md`。
 
 ## 链接规则（文章正文用公开链接）
 - 文章正文（非 `_index.md` 栏目页）内引用本站文章时，**必须使用公开链接**（`https://cj9208.github.io/blog/<目录>/<slug>/`），不要使用 `{{< relref >}}` 相对路径。
