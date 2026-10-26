@@ -2,7 +2,7 @@
 
 - 状态：已采纳（待办部分持续更新，见文末"待办"）
 - 日期：2026-10-26
-- 关联：取代 `notes/skills-portability/`（两份文档已删除，内容并入本文件；原文在 git 历史 `4c5e752` 可查）；装订层的决定见 [0001-agent-skill-canonical-directory.md](./0001-agent-skill-canonical-directory.md)
+- 关联：取代 `notes/skills-portability/`（两份文档已删除，内容拆入本文件与 `docs/research/2026-10-26-agent-skill-harness-support.md`；原文在 git 历史 `4c5e752` 可查）；装订层的决定见 [0001-agent-skill-canonical-directory.md](./0001-agent-skill-canonical-directory.md)
 
 ## 背景
 
@@ -17,6 +17,7 @@
 3. **优化顺序冻结**：P0-1 → P1-1 与 P1-2 → P2-1 → P1-3 与 P1-4 → P2-2/3/4 → 最后建判据回路。排序原则是"改动面小且直接影响触发准确率的先做"（`description` 字段一处改，风险最低）。
 4. **判据回路建立之前，不合并、不删除任何技能。** `capstone-*` 六个与 `sync-*` 三个看起来像可以合并，但没测过的合并等于把有效部分一起扔掉。
 5. **本文件只有"待办"一节可变**：完成一条在其后追加结果与日期，不删除条目正文，也不改写"决定"与"被否决的备选"。后续事实推翻本决定时新增 000N，不回来改这篇。
+6. **每条待办与快照都带 as-of 标签**（日期 + 当时的提交号）。规则：改动任何技能的 `description` 或正文后，**先跑 `python scripts/skill_snapshot.py` 重测、再更新快照与对应条目的 as-of**，否则该条目视为已过期、不可据以行动。加这个标签是因为下面这些条目的形态是"计数与形状判断"——它们是测量结果，会随被测量对象的变化而失效；没有标签的话，一次编辑之后没人知道这条债务还在不在。**本篇初稿的手抄快照就是反例**：三个字段因词表定义不同而对不上，见快照下的更正块。
 
 ### 写作契约 R1–R7
 
@@ -38,57 +39,49 @@
 - **每条债务单独写一篇记录**：那会把 `docs/decisions/` 变成第二份 changelog，违反 0001 之后写进 `AGENTS.md` 的写入门槛（要同时满足"改变了别人会依赖的结构"和"存在被否决的备选"）。
 - **给 Claude Code 也建 `.claude/skills` 联接**：0001 曾计划这一步，被 OpenCode 的三根扫描否决（见 P0-1）。
 
-## 依据（执行待办时需要的事实）
+## 依据
 
-发现路径与预算，五个 harness 里三个原生读 `.agents/skills/`，只有 Qoder 与 Claude Code 需要链接动作：
+事实不在本文件里维护，在 [../research/2026-10-26-agent-skill-harness-support.md](../research/2026-10-26-agent-skill-harness-support.md)：五个 harness 的发现路径 / 字段解析集 / 截断预算 / 脚本执行（§二）、Windows 联接事实（§三）、写法效果的实测数字（§四）、装订路线对比（§五）、三档验收方法（§六）。那份文档带自己的 as-of 与失效条件，因为它描述的是别家软件——过期不会报错。
 
-| | Qoder | OpenCode | Codex CLI | Claude Code | DeepSeek Harness |
-|---|---|---|---|---|---|
-| 项目级路径 | `.qoder/skills/` | **三根同扫**：`.opencode/`、`.claude/`、`.agents/skills/`，向上走到 git worktree | `.agents/skills/` | `.claude/skills/` | `.agents/`、`.dsh/` |
-| 解析的 frontmatter | `name`/`description`，其余未验证 | 规范六字段，未知字段忽略 | **仅** `name`/`description`/`metadata.short-description` | 一长串私有字段（`when_to_use`、`paths`、`disable-model-invocation` 等） | 至少 `name`/`description` |
-| 描述预算 | ≤1024 | 1–1024 | 目录预算 = **上下文窗口 2%** | `description + when_to_use` 拼接后**截断于 1536 字符** | 未验证 |
-| 调用方式 | 自动 + `/name` | 模型经 `skill` 工具选中，**无斜杠接线** | 自动 + `$name` + `/skills` | 自动 + `/name` | 自动 + 斜杠 |
-| 执行 `scripts/` | 支持 | 只读，agent 自己用 shell 跑 | 执行 | 执行（内联语法可关） | **未验证** |
-
-来源：agentskills.io 规范、Qoder/OpenCode/Claude Code 官方文档、Codex 文档与源码解析器（二手，标注待一手复核）、DeepSeek Harness 用户指南。未验证项见 0001 的后果一节。
-
-三条写法结论（有一手对照实验）：
-
-- **描述里不要有流程摘要**。superpowers 的实测记录：描述写了 "code review between tasks"，流程图规定两次 review，实际只跑一次；修法是删掉流程，机制是"描述一旦概括流程，agent 照摘要走、不读正文"。
-- **产物形状类失败用正面配方，不用禁令**。superpowers 的"Match the Form to the Failure"：规则被跳过→禁令+合理化对照表；产物形状错→**正面配方**（禁令那一组实测反而产出更多不想要的内容）；要素遗漏→必填模板槽位；条件性→可观测谓词。
-- **过程而非散文**：步骤、检查点、退出条件；同时给可选步骤标"可选"并提供快路径——307 例技能致因失败里**最大单一原因是过度验证（67 例）**，第二是重型流水线（30 例）。
-
-Windows 事实：真符号链接需开发者模式或提权（本机 `os.symlink` 返回 WinError 1314），**目录联接 `mklink /J` 不需要**，且 Node `lstat` 对二者返回值一致，对扫描器不可区分。这是自建路线零摩擦的前提。
+本文件的 R1–R7 与待办条目按 § 号引用那份，不再复述数字。引用点：R2/R3 ← §二；R5/R6 ← §六；P1-1/2/3、P2-2、判据回路 ← §四；P0-1 ← §二（OpenCode 三根扫描）；P0-3 ← §三。
 
 ## 待办（唯一可变部分）
 
-### 实测快照（2026-10-26）
+### 实测快照
 
-`禁令` = 正文"不要/不得/禁止/别/不可/不应"次数；`反触发` = "何时不用/不适用/NOT for/When NOT"次数；`H2` = 二级标题数；`scr` = 是否带 `scripts/`。
+as-of：**2026-10-26 / 测量对象 = 提交 `dcd572e` 的 `.agents/skills/` 树**。重跑命令：`python scripts/skill_snapshot.py`（`--json` 出机器可读版）。字段定义写在该脚本 docstring 里，改定义等于改历史数字，所以定义也归 git 管。
 
-| skill | 行 | desc 字符 | H2 | 禁令 | 反触发 | scr |
-|---|---|---|---|---|---|---|
-| stress-test-reasoning | 96 | 369 | 0 | 0 | 0 | – |
-| add-hugo-front-matter | 259 | 192 | 9 | 12 | 0 | S |
-| capstone-coaching-core | 43 | 448 | 0 | 0 | 0 | – |
-| review-blog-content | 130 | 497 | 6 | 12 | 2 | S |
-| add-ez-encoder-presentation | 125 | 350 | 5 | 6 | 1 | S |
-| search-blog-articles | 119 | 468 | 8 | 4 | 0 | S |
-| restore-missing-links | 118 | 363 | 7 | 6 | 0 | S |
-| sync-subfolder-links | 136 | 326 | 6 | 5 | 2 | S |
-| rename-blog-filenames | 108 | 224 | 9 | 2 | 1 | S |
-| capstone-build-expertise | 28 | 376 | 0 | 0 | 0 | – |
-| digest-article | 98 | 256 | 6 | 19 | 3 | – |
-| capstone-fieldwork | 42 | 379 | 10 | 0 | 0 | – |
-| capstone-project-framing | 26 | 318 | 0 | 0 | 0 | – |
-| capstone-deepen-opportunity | 29 | 363 | 0 | 0 | 1 | – |
-| sync-zhihu-migration-status | 88 | 418 | 5 | 4 | 0 | S |
-| pipeline-blog-init | 88 | 206 | 1 | 0 | 0 | S |
-| generate-article | 22 | 359 | 0 | 0 | 0 | – |
-| capstone-compare-opportunities | 27 | 336 | 0 | 0 | 0 | – |
-| generate-outline | 26 | 326 | 1 | 0 | 0 | – |
+`禁令` = 正文禁止词次数；`验证` = 正文验证负载词次数（**不含**"确认"，那是普通散文用词）；`反触发` = 适用边界标记的出现次数，分描述/正文两栏（只认 `何时不用`/`When NOT`/`NOT for`/`不用于` 这类标记词，不认"除非""不涉及"这类散文限定）；`H2` = 正文二级标题数；`scr` = 是否带非空 `scripts/`；`行` = **含 front matter**（19 份的 front matter 一律 4 行，与旧手抄表对照请减 4）。
 
-按行数全部在规范红线（500 行）内；描述最长 497 字符，无一接近截断预算。所以下面的条目不是"太长"，是形状与触发问题。
+| skill | 行 | desc 字符 | H2 | 禁令 | 验证 | 反触发(desc/body) | scr |
+|---|---|---|---|---|---|---|---|
+| digest-article | 102 | 256 | 6 | 19 | 2 | 0 / 1 | – |
+| add-hugo-front-matter | 263 | 192 | 9 | 12 | 1 | 0 / 0 | S |
+| review-blog-content | 134 | 497 | 6 | 11 | 7 | 0 / 0 | S |
+| restore-missing-links | 122 | 363 | 7 | 6 | 3 | 0 / 0 | S |
+| add-ez-encoder-presentation | 129 | 350 | 5 | 6 | 4 | 0 / 0 | S |
+| sync-subfolder-links | 140 | 326 | 6 | 6 | 3 | 0 / 0 | S |
+| search-blog-articles | 123 | 468 | 8 | 3 | 1 | 0 / 0 | S |
+| sync-zhihu-migration-status | 92 | 418 | 5 | 3 | 1 | 0 / 0 | S |
+| rename-blog-filenames | 112 | 224 | 9 | 2 | 2 | 0 / 0 | S |
+| capstone-coaching-core | 47 | 448 | 0 | 0 | 0 | 0 / 0 | – |
+| capstone-fieldwork | 46 | 379 | 10 | 0 | 1 | 0 / 0 | – |
+| capstone-build-expertise | 32 | 376 | 0 | 0 | 0 | 0 / 0 | – |
+| stress-test-reasoning | 100 | 369 | 0 | 0 | 0 | 0 / 0 | – |
+| capstone-deepen-opportunity | 33 | 363 | 0 | 0 | 0 | 0 / 0 | – |
+| generate-article | 26 | 359 | 0 | 0 | 0 | 0 / 0 | – |
+| capstone-compare-opportunities | 31 | 336 | 0 | 0 | 0 | 0 / 0 | – |
+| generate-outline | 30 | 326 | 1 | 0 | 0 | 0 / 0 | – |
+| capstone-project-framing | 30 | 318 | 0 | 0 | 0 | 0 / 0 | – |
+| pipeline-blog-init | 92 | 206 | 1 | 0 | 0 | 0 / 0 | S |
+
+汇总：19 份，`禁令` 合计 68，`验证` 合计 25，最长描述 497 字符，超 500 行者 0，**无任何适用边界标记者 18/19**。
+
+**【2026-10-26 更正】** 本篇初稿的快照是临时 grep 手抄的，三个字段与脚本定义不一致，已按脚本重测替换，差异如下——这正是决定第 6 条要给 as-of 标签的原因，债务条目是测量结果而不是事实：
+
+- `反触发` 严重虚高。旧值（digest 3、review-blog 2、sync-subfolder 2、add-ez 1、rename 1、capstone-deepen 1）里绝大部分匹配的是"除非用户明确要求""不涉及 `static/`"这类散文限定，不是适用边界声明。按标记词重测后：**只有 `digest-article` 有**（正文"## 何时用 / 何时不用"），且**19 份的描述里没有一份**有边界标记。于是 P1-2 原来的"11/19 缺"实际是"18/19 缺、19/19 描述层缺"，方向不变但严重程度翻倍。
+- `行` 旧值不含 front matter（每份恰好 4 行），故全部少 4。
+- `禁令` 与 `验证` 旧值用了更宽的词表（`验证` 含"确认"）。重测后排名变了：`禁令` 前三仍是 `digest-article` 19 / `add-hugo-front-matter` 12，第三位由 review-blog 12 变 11；`验证` 第一由 `sync-subfolder-links` 12 变 `review-blog-content` 7（全场 `sync-subfolder-links` 为 3）。
 
 ### P0：会静默失效
 
@@ -99,15 +92,15 @@ Windows 事实：真符号链接需开发者模式或提权（本机 `os.symlink
 ### P1：触发与产物形状（有一手依据）
 
 - [ ] **P1-1 描述里不该有流程摘要**（违反依据第一条）。命中：`digest-article`（描述含"先抓正文→降级 browser-use→对话给摘要→确认后落盘"完整链路，另有一句属正文的元规则）、`review-blog-content`（497 字符里塞了类型分类逻辑）、`search-blog-articles`、`sync-zhihu-migration-status`。目标形状见 R3 模板。
-- [ ] **P1-2 11/19 个技能没有"何时不用"**：`stress-test-reasoning`、`add-hugo-front-matter`、`search-blog-articles`、`restore-missing-links`、`sync-zhihu-migration-status`、`pipeline-blog-init` 与 5 个 `capstone-*`。依据：Claude Code 与 Codex 官方写法都把"何时不使用"列为描述必备成分；SkillsBench 归纳的第二种伤害是"技能覆盖掉模型本来更强的策略"，对策原话是 *include applicability boundaries, not just preferred procedures*。六个 `capstone-*` 相互边界只写在各自描述开头一句，近似反例缺位——同族技能最容易互相误选的形状。
-- [ ] **P1-3 判断型技能用禁令而非正面配方**。计数前三：`digest-article` 19、`add-hugo-front-matter` 12、`review-blog-content` 12。依据是"禁令组反而产出更多不想要内容"那条对照结论。修法是把每条禁令**翻译成一个形状描述**，而不是删掉——本仓库作者偏好禁令式表达，这条特别对症。
+- [ ] **P1-2 几乎没有技能声明适用边界。** 重测后的事实（快照 as-of `dcd572e`）：**19/19 的 `description` 里没有"不用于"**，正文里只有 `digest-article` 有"## 何时用 / 何时不用"一节——即 18/19 两处都没有。初稿写的"11/19 缺"是把散文限定当标记，虚高了，严重程度实际更高。依据：R3 要求边界进描述，因为多数 harness 只把 name+description 注入目录（../research/2026-10-26-agent-skill-harness-support.md §二）；Claude Code 与 Codex 官方写法都把"何时不使用"列为描述必备成分；SkillsBench 归纳的第二种伤害是"技能覆盖掉模型本来更强的策略"，对策原话是 *include applicability boundaries, not just preferred procedures*。六个 `capstone-*` 相互边界只写在各自描述开头一句，近似反例缺位——同族技能最容易互相误选的形状，优先补这六个。
+- [ ] **P1-3 判断型技能用禁令而非正面配方**。重测计数前三：`digest-article` 19、`add-hugo-front-matter` 12、`review-blog-content` 11（全场合计 68）。依据是"禁令组反而产出更多不想要内容"那条对照结论（../research/… §四）。修法是把每条禁令**翻译成一个形状描述**，而不是删掉——本仓库作者偏好禁令式表达，这条特别对症。
 - [ ] **P1-4 编排技能可能复述了被编排者的纪律**。待核对 `pipeline-blog-init`（88 行 / 1 个 H2 / 0 反触发）是否把三步技能的内部步骤抄了一遍。依据：user-invoked 只管编排、model-invoked 才持有纪律，编排技能不得调用另一个编排技能，复述即同一规则两份拷贝。
 
 ### P2：结构与体量（依据较弱，但便宜）
 
-- [ ] **P2-1 7/19 正文零个二级标题**：`stress-test-reasoning`（96 行 / 9389 字符纯段落流）、`capstone-coaching-core`、`capstone-build-expertise`、`capstone-project-framing`、`capstone-deepen-opportunity`、`capstone-compare-opportunities`、`generate-article`。目标形态是"祈使句过程 + 可勾选清单 + 检查点"。`stress-test-reasoning` 优先——它是最常在对话里手动调用的那个。
-- [ ] **P2-2 验证步骤要设上限并标快路径**：`sync-subfolder-links` 验证类词 12 次、`review-blog-content` 11、`add-ez-encoder-presentation` 10。依据：过度验证是技能致因失败的最大单一原因（67/307）。注意这条不是说验证习惯错，而是**写进技能后它会变成强制工作**，代价不同。
-- [ ] **P2-3 `add-hugo-front-matter` 是唯一接近体量线的（259 行）**。拆分触发条件与做法：把按变体切的参考资料移入 `references/`，让 agent 只读到需要的那份；它里面 12 条禁令（P1-3）和命名细则多数属"被选中后才需要"。
+- [ ] **P2-1 7/19 正文零个二级标题**（快照 as-of `dcd572e`）：`stress-test-reasoning`（100 行的纯段落流）、`capstone-coaching-core`、`capstone-build-expertise`、`capstone-project-framing`、`capstone-deepen-opportunity`、`capstone-compare-opportunities`、`generate-article`。目标形态是"祈使句过程 + 可勾选清单 + 检查点"。`stress-test-reasoning` 优先——它是最常在对话里手动调用的那个。
+- [ ] **P2-2 验证步骤要设上限并标快路径**。重测（窄定义，不含"确认"）：`review-blog-content` 7、`add-ez-encoder-presentation` 4、`restore-missing-links` 与 `sync-subfolder-links` 各 3，全场合计 25。初稿的"12/11/10"用了宽词表，已撤回；排序变了，但结论没变——验证负载集中在两个审阅类技能上。依据：过度验证是技能致因失败的最大单一原因（67/307，../research/… §四）。注意这条不是说验证习惯错，而是**写进技能后它会变成强制工作**，代价不同。
+- [ ] **P2-3 `add-hugo-front-matter` 是唯一接近体量线的（263 行，含 front matter）**——19 份里其余全部 ≤140 行，所以"太长"这一类只有这一条站得住，别的都是形状问题。规范的拆分触发条件是 "When SKILL.md becomes unwieldy, split into separate files"。做法：把按变体切的参考资料移入 `references/`，让 agent 只读到需要的那份；它里面 12 条禁令（P1-3）和命名细则多数属"被选中后才需要"。
 - [ ] **P2-4 两处文件位置**：`add-hugo-front-matter/tags-registry.md` 在技能根而非 `references/` 下；`search-blog-articles/index.json` 是 299KB 生成物也在根目录。规范归位是参考→`references/`、模板与资源→`assets/`；生成物放技能根还会随目录被复制、打包和 diff。
 
 ### 判据回路（排在最后，但是验收前提）

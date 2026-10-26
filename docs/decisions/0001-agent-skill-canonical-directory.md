@@ -2,7 +2,8 @@
 
 - 状态：已采纳
 - 日期：2026-10-26
-- 详细调研、写作契约与遗留债务：[0002-skill-authoring-contract-and-backlog.md](./0002-skill-authoring-contract-and-backlog.md)（本文只留决定；逐条待办在那份的"待办"一节）
+- 事实依据（五个 harness 的路径/字段/预算、Windows 联接、三条路线对比）：[../research/2026-10-26-agent-skill-harness-support.md](../research/2026-10-26-agent-skill-harness-support.md)
+- 写作契约、遗留债务与优化顺序：[0002-skill-authoring-contract-and-backlog.md](./0002-skill-authoring-contract-and-backlog.md)
 
 ## 背景
 

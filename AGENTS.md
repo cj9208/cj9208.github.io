@@ -68,6 +68,10 @@ Personal blog site rendered with Hugo and deployed to GitHub Pages.
 
 两条边界：**变更事实不进 `docs/`**——动了哪些文件、怎么回滚，归宿是 commit message（一次提交对应一个逻辑工作项），手工维护一份变更记录等于给 git 已有的信息做第二份拷贝；**决策记录正文不要写进本文件**——本文件每轮注入，把长文塞进来会稀释真正的指令（与官方文档点名的 "bloated CLAUDE.md 会让模型忽略你实际指令" 同一个失效模式），这里只保留判据与指路。
 
+`docs/research/` 放**支撑决策的外部事实**（`YYYY-MM-DD-短横线标题.md`）：描述别家软件、平台或规范的调研结果。它与 `decisions/` 的分工是"事实 vs 选择"——ADR 不复述数字，按 §号引用研究篇，这样同一份调研可被多篇决策共用；数字变了只需改一处。日期写在文件名里是**故意的**：这类文档会因为外部变化而过期，且过期时不会报错，所以必须有 as-of 标签与失效条件（"什么变化发生时需要重测"）。反过来，**描述本仓库自身状态的数字**（技能快照、行数、计数）必须带 as-of + 提交号，并配有再生成它的脚本——手抄的计数不可重跑，等于没有标签。
+
+现有记录：`decisions/0001-agent-skill-canonical-directory.md`（正本目录与装订层）、`decisions/0002-skill-authoring-contract-and-backlog.md`（技能写作契约 R1–R7 与未完成的优化顺序——**新增或修改 skill 前先读它的"待办"一节**）、`research/2026-10-26-agent-skill-harness-support.md`（支撑这两篇的事实）。
+
 `docs/` 是根目录，Hugo 不渲染（`hugo.toml` 未覆盖 `contentDir`/`staticDir`，workflow 只发布 `./public`；2026-10-26 实测 `hugo --destination public_test` 构建通过、退出码 0，输出目录中无 `docs` 页面），但它在公开仓库里，写的时候按"公开可读"处理。现有两篇：`0001-agent-skill-canonical-directory.md`（正本目录与装订层）、`0002-skill-authoring-contract-and-backlog.md`（技能写作契约 R1–R7 与未完成的优化顺序——**新增或修改 skill 前先读它的"待办"一节**）。
 
 ## 链接规则（文章正文用公开链接）
