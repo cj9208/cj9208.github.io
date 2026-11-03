@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-10-25T22:56:38+08:00",
+ "generated_at": "2026-11-03T13:04:19+08:00",
  "base_url": "https://cj9208.github.io/blog/",
- "source_fingerprint": "be0e3f1ca2dcd2e95e2d2532bb06f93ccba056c4",
- "count": 233,
+ "source_fingerprint": "35202954b7af77016a53280cbe714df394dc7fce",
+ "count": 235,
  "articles": [
   {
    "title": "AI 时代的商业困境：从分发共赢到“答案经济”的结构性矛盾",
@@ -3337,7 +3337,7 @@
    ]
   },
   {
-   "title": "退出权的两种时滞：土地财政撑了二十年，股权财政撑不过一个季度",
+   "title": "股权财政接不了土地财政的班：存量被社保认领，增量也走不通",
    "slug": "exit-rights-lag-equity-finance-impossibility",
    "url": "https://cj9208.github.io/blog/systems_and_governance/chinese_government/exit-rights-lag-equity-finance-impossibility/",
    "path": "systems_and_governance/chinese_government/exit-rights-lag-equity-finance-impossibility",
@@ -3349,21 +3349,22 @@
    "tags": [
     "Fiscal System",
     "Macro Transition",
-    "Price Discovery",
+    "State-owned Capital",
     "Exit Rights",
     "Trust Collapse"
    ],
    "date": "2026-10-22T09:45:00+08:00",
-   "lastmod": "2026-10-25T22:54:00+08:00",
-   "excerpt": "\"股权财政接棒土地财政\"这个提法近两年被反复提出。它的意思很具体：土地出让金坍塌之后，政府手里还有一笔庞大的国有资本股权，用它来填这个洞。 填洞只有两个通道。通道一是变卖存量——把国资股权卖出去，换成能用的现金。通道二是融资增量——把资本市场做成新的融资底座，让居民财富从不动产和存款切换到股权。两个通道共用同一个前提：国资股权能够被定价。变卖要有成交价，融资要有发行价，而这两个数字都无法由行政生成",
+   "lastmod": "2026-10-31T22:38:29+08:00",
+   "excerpt": "\"股权财政接棒土地财政\"这个提法近两年被反复提出。它的意思很具体：土地出让金坍塌之后，政府手里还有一笔庞大的国有资本股权——国资平台、政府引导基金直接或间接持有的企业股权——用它来填这个洞。说白了，就是从经营土地变成经营公司：过去卖地，现在当股东。 这个提法站不住。国资股权这条路其实是两问：手里那笔存量能不能拿来填，新的增量能不能造出来。存量先被一个排在财政前面的索取人——社保——认领出局；增量唯",
    "out_links": [
+    "systems_and_governance/chinese_government/no-settlement-social-security",
     "systems_and_governance/chinese_government/no-trading-no-accurate-pricing",
     "systems_and_governance/chinese_government/elastic-authoritarianism-arbitrage",
-    "investment/fiscal-dominance-crash",
-    "systems_and_governance/chinese_government/authoritarian-governance-overview",
-    "systems_and_governance/chinese_government/all-in-war-of-attrition",
     "systems_and_governance/social-contract-exploitation-path-dependence",
     "investment/financing-market-control-logic",
+    "systems_and_governance/chinese_government/all-in-war-of-attrition",
+    "systems_and_governance/chinese_government/authoritarian-governance-overview",
+    "investment/fiscal-dominance-crash",
     "systems_and_governance/chinese_government/debt-explosion-first-priority"
    ]
   },
@@ -4671,6 +4672,38 @@
    "shorttitle": "免于提防的自由"
   },
   {
+   "title": "昂贵不等于可分离：信号与筛选",
+   "slug": "costly-signals-are-not-separating",
+   "url": "https://cj9208.github.io/blog/systems_and_governance/game_theory/costly-signals-are-not-separating/",
+   "path": "systems_and_governance/game_theory/costly-signals-are-not-separating",
+   "dir": "content/blog/systems_and_governance/game_theory",
+   "section": "systems_and_governance",
+   "categories": [
+    "Systems and Governance"
+   ],
+   "tags": [
+    "Game Theory",
+    "Game Theory Series",
+    "Signaling",
+    "Screening",
+    "Single-Crossing",
+    "Adverse Selection",
+    "Cheap Talk"
+   ],
+   "date": "2026-10-29T23:38:03+08:00",
+   "lastmod": "2026-10-31T22:57:52+08:00",
+   "excerpt": "一个信号能不能把两种人分开，不看它有多贵，看它对不同人贵得是否一样。 学历、考分、题海里熬出来的熟练度，这些信号都很贵——贵到足以劝退一部分人。但\"贵\"本身不产生区分：如果一份成本对能力强的人和能力弱的人一样重，付得起的和付不起的各占一半，信号并没有把谁从谁里择出来。真正让信号能分开人的，是成本随能力递减——同一道门槛，没本事的人翻起来更费劲。这一条有精确的名字，叫单一交叉条件（single-cr",
+   "out_links": [
+    "systems_and_governance/diploma-opportunity-cost",
+    "systems_and_governance/goodharts-law-protocol-reconstruction",
+    "ai_era_engineering_careers/architect-communication-protocol",
+    "systems_and_governance/talent-screening-exam-culture",
+    "ai_era_engineering_careers/proof-of-work-trust-recruitment-endgame",
+    "systems_and_governance/game_theory/discount-factor-retroactive-enforcement"
+   ],
+   "shorttitle": "昂贵不等于可分离"
+  },
+  {
    "title": "未来的影子：合作是 δ 的函数，不是道德的成果",
    "slug": "discount-factor-retroactive-enforcement",
    "url": "https://cj9208.github.io/blog/systems_and_governance/game_theory/discount-factor-retroactive-enforcement/",
@@ -4689,11 +4722,11 @@
     "Tax Audit"
    ],
    "date": "2026-10-22T08:32:19+08:00",
-   "lastmod": "2026-10-24T23:01:47+08:00",
-   "excerpt": "合作不是道德成果，是未来值钱时的副产品。而\"未来值多少\"是一个可以被制度改动的参数——这不是比喻，它可以推导，也可以测量。 前两节推导，不带例子：从一张收益表到贴现因子 $\\delta$ 与维持合作的阈值，再逐个检查这个阈值依赖的假设——局会不会结束、昨天的合规今天还算不算、报复会不会真执行、行动会不会被看错。第三节测量：2020 年的社区团购补贴大战给出支付项与 $p{\\text{end}}$ ",
+   "lastmod": "2026-10-31T23:12:23+08:00",
+   "excerpt": "合作不是道德成果，是未来值钱时的副产品。而\"未来值多少\"是一个可以被制度改动的参数——这不是比喻，它可以推导，也可以测量。 两个对手，各自有两个选择：合作，或者背叛。收益写出来是一张表。 每格是（我的收益，对方的收益）。数字是示意的，重要的是它们的排序，习惯上写成四个字母： - $T=5$（Temptation）：我背叛、对方合作，我拿到的诱惑值 - $R=3$（Reward）：双方都合作 - $",
    "out_links": [
-    "systems_and_governance/unverifiable-labor-protection-trilateral-friction",
     "systems_and_governance/minimal-institutionalism-certainty",
+    "systems_and_governance/unverifiable-labor-protection-trilateral-friction",
     "ai_era_engineering_careers/distributed-symbiosis-tit-for-tat",
     "systems_and_governance/chinese_government/retroactive-audit-malicious-compliance",
     "systems_and_governance/chinese_government/defensive-collusion-bureaucracy"
@@ -5162,6 +5195,34 @@
     "systems_and_governance/malicious-compliance-organization-game",
     "systems_and_governance/diploma-opportunity-cost",
     "systems_and_governance/conway-law-architecture-destiny"
+   ]
+  },
+  {
+   "title": "税收的锚点与契约：为什么技术解决了“能不能收”，解决不了“该归谁”",
+   "slug": "tax-anchor-and-contract",
+   "url": "https://cj9208.github.io/blog/systems_and_governance/tax-anchor-and-contract/",
+   "path": "systems_and_governance/tax-anchor-and-contract",
+   "dir": "content/blog/systems_and_governance",
+   "section": "systems_and_governance",
+   "categories": [
+    "Political Economy"
+   ],
+   "tags": [
+    "Tax System",
+    "Fiscal System",
+    "Institutional Design",
+    "Comparative Systems",
+    "State Capacity",
+    "Urban Governance"
+   ],
+   "date": "2026-11-02T14:30:00+08:00",
+   "lastmod": "2026-11-03T13:00:40+08:00",
+   "excerpt": "税基归谁、成本谁付、争议谁裁，这三件事本来该由规则决定，而它们背后是同一个要求：政府收走的钱，要和它为这笔钱提供的服务对得上。规则不在的时候，征收机关只能按最容易抓的锚点收：企业的注册地、商品的生产环节、社保的缴纳地。锚点是征管的便利，不是归属的依据，但它决定了钱流向哪里、成本留在哪里。 汽车是观察这套错位最省力的物件，因为它必须登记上牌才能合法上路，于是天然带着一个行政锚点。而一辆车在哪里买、在",
+   "out_links": [
+    "systems_and_governance/chinese_government/tech-utopia-second-best",
+    "systems_and_governance/chinese_government/infrastructure-fiscal-transfer-economic-truth",
+    "systems_and_governance/chinese_government/targeted-subsidy-deadlock",
+    "systems_and_governance/game_theory/discount-factor-retroactive-enforcement"
    ]
   },
   {
