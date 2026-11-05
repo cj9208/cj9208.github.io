@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-03T13:04:19+08:00",
+ "generated_at": "2026-11-05T10:16:00+08:00",
  "base_url": "https://cj9208.github.io/blog/",
- "source_fingerprint": "35202954b7af77016a53280cbe714df394dc7fce",
+ "source_fingerprint": "472ab598afe67857eb02592a3c0f95f372cc4c8d",
  "count": 235,
  "articles": [
   {
@@ -2134,7 +2134,7 @@
     "Annual Review"
    ],
    "date": "2026-08-22T15:59:41+08:00",
-   "lastmod": "2026-09-18T17:00:00+08:00",
+   "lastmod": "2026-11-03T13:26:02+08:00",
    "excerpt": "某天突发奇想，让我自己的 blog 来评价我这个人。不是想要夸奖，而是想看看：一个人写下的几百篇文章，能不能拼出一张诚实的自画像。 结果拼出来的画像，比我自己以为的要清晰得多： 1. 用工程/系统语言翻译一切——拜占庭将军解释信任（见《拜占庭的信任重建》），分布式共识解释科层，Reward Hacking 解释聪明人的自毁（见《聪明人的自毁，不过是一场人类版的 Reward Hacking》）。",
    "out_links": [
     "systems_and_governance/byzantine-trust-reconstruction",
@@ -2144,8 +2144,7 @@
     "ai_era_engineering_careers/dragon-boat-engineering-debug",
     "ai_era_engineering_careers/disenchantment-tech-management",
     "ai_era_engineering_careers/staff-accountability-ai-era",
-    "systems_and_governance/chinese_government/great-cleaning-sword-bearers",
-    "ai_study/agent-routing-safety-harness"
+    "systems_and_governance/chinese_government/great-cleaning-sword-bearers"
    ]
   },
   {
@@ -5216,8 +5215,8 @@
     "Urban Governance"
    ],
    "date": "2026-11-02T14:30:00+08:00",
-   "lastmod": "2026-11-03T13:00:40+08:00",
-   "excerpt": "税基归谁、成本谁付、争议谁裁，这三件事本来该由规则决定，而它们背后是同一个要求：政府收走的钱，要和它为这笔钱提供的服务对得上。规则不在的时候，征收机关只能按最容易抓的锚点收：企业的注册地、商品的生产环节、社保的缴纳地。锚点是征管的便利，不是归属的依据，但它决定了钱流向哪里、成本留在哪里。 汽车是观察这套错位最省力的物件，因为它必须登记上牌才能合法上路，于是天然带着一个行政锚点。而一辆车在哪里买、在",
+   "lastmod": "2026-11-04T23:48:21+08:00",
+   "excerpt": "税收是一种契约：政府收走的钱，要和它为这笔钱办的事对得上。对不上的时候，财政学给过四种改法——上收、配套补助、重划辖区、向外部受益者收费——四种都不是算出一个更公平的比例，都是在改这件事划给谁。规则不在的时候，征收机关只能按最容易抓的锚点收：企业的注册地、商品的生产环节、社保的缴纳地。锚点是征管的便利，不是归属的依据，但它决定了钱流向哪里、事由谁来办。 汽车是观察这套错位最省力的物件，因为它必须登",
    "out_links": [
     "systems_and_governance/chinese_government/tech-utopia-second-best",
     "systems_and_governance/chinese_government/infrastructure-fiscal-transfer-economic-truth",
