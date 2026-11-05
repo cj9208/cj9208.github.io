@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-05T10:38:07+08:00",
+ "generated_at": "2026-11-05T17:44:11+08:00",
  "base_url": "https://cj9208.github.io/blog/",
- "source_fingerprint": "e77274fa5bd3c3107ae04b0ccdd13a1217e58bf4",
+ "source_fingerprint": "b20152e40568285f0c833261e7b13d24d269d324",
  "count": 235,
  "articles": [
   {
@@ -5197,7 +5197,7 @@
    ]
   },
   {
-   "title": "税收的锚点与契约：为什么技术解决了“能不能收”，解决不了“该归谁”",
+   "title": "钱落在哪一侧，激励就钉在哪一侧：一辆车、两种税与“该归谁”",
    "slug": "tax-anchor-and-contract",
    "url": "https://cj9208.github.io/blog/systems_and_governance/tax-anchor-and-contract/",
    "path": "systems_and_governance/tax-anchor-and-contract",
@@ -5215,13 +5215,12 @@
     "Urban Governance"
    ],
    "date": "2026-11-02T14:30:00+08:00",
-   "lastmod": "2026-11-04T23:48:21+08:00",
-   "excerpt": "税收是一种契约：政府收走的钱，要和它为这笔钱办的事对得上。对不上的时候，财政学给过四种改法——上收、配套补助、重划辖区、向外部受益者收费——四种都不是算出一个更公平的比例，都是在改这件事划给谁。规则不在的时候，征收机关只能按最容易抓的锚点收：企业的注册地、商品的生产环节、社保的缴纳地。锚点是征管的便利，不是归属的依据，但它决定了钱流向哪里、事由谁来办。 汽车是观察这套错位最省力的物件，因为它必须登",
+   "lastmod": "2026-11-05T17:42:43+08:00",
+   "excerpt": "税收是一种契约：政府收走的钱，要和它为这笔钱办的事对得上。对不上的时候，财政学给过四种改法——上收、配套补助、重划辖区、向外部受益者收费——四种求的都是更合理的分配，但动的不是既有划分里的百分比，是这件事由谁办、钱由谁收，对齐收上来的钱和办的事。对不齐，激励就错位。 汽车是观察这套不匹配最省力的物件，因为它必须登记上牌才能合法上路，于是天然带着一个行政锚点。而一辆车在哪里买、在哪里上牌、在哪里跑、",
    "out_links": [
     "systems_and_governance/chinese_government/tech-utopia-second-best",
     "systems_and_governance/chinese_government/infrastructure-fiscal-transfer-economic-truth",
-    "systems_and_governance/chinese_government/targeted-subsidy-deadlock",
-    "systems_and_governance/game_theory/discount-factor-retroactive-enforcement"
+    "systems_and_governance/chinese_government/targeted-subsidy-deadlock"
    ]
   },
   {
