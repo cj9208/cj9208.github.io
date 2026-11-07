@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-07T08:42:58+08:00",
+ "generated_at": "2026-11-07T11:14:28+08:00",
  "base_url": "https://cj9208.github.io/blog/",
- "source_fingerprint": "c4f559b4a9e0e7e2b9f3419aa7ad3d3d448d8033",
- "count": 236,
+ "source_fingerprint": "b20152e40568285f0c833261e7b13d24d269d324",
+ "count": 235,
  "articles": [
   {
    "title": "AI 时代的商业困境：从分发共赢到“答案经济”的结构性矛盾",
@@ -4096,35 +4096,6 @@
     "systems_and_governance/chinese_government/labor-rights-deterrence",
     "systems_and_governance/chinese_government/involvement-individual-survival",
     "systems_and_governance/financial-anomalies"
-   ]
-  },
-  {
-   "title": "小圈子不是内耗：利益对齐只杀掉分蛋糕的联盟",
-   "slug": "cliques-survive-profit-alignment",
-   "url": "https://cj9208.github.io/blog/systems_and_governance/cliques-survive-profit-alignment/",
-   "path": "systems_and_governance/cliques-survive-profit-alignment",
-   "dir": "content/blog/systems_and_governance",
-   "section": "systems_and_governance",
-   "categories": [
-    "Organizational Systems"
-   ],
-   "tags": [
-    "Mechanism Design",
-    "Office Politics",
-    "Team Trust",
-    "Game Theory"
-   ],
-   "date": "2026-11-07T08:39:08+08:00",
-   "lastmod": "2026-11-07T08:39:08+08:00",
-   "excerpt": "《破局》给过一条可以拿到现场去检验的预测：奖金池一旦与公开财报利润挂钩，\"内部的拉帮结派与政治斗争会瞬间失去土壤\"。在若干外资机构的业务线上，这句话的前提是齐的——奖金挂业务线利润，结果落到一个具名负责人头上——而小圈子仍然在。",
-   "out_links": [
-    "systems_and_governance/corporate/mechanism-design-governance",
-    "ai_era_engineering_careers/distributed-symbiosis-tit-for-tat",
-    "systems_and_governance/game_theory/discount-factor-retroactive-enforcement",
-    "ai_era_engineering_careers/ownerless-nouns-real-metrics-detector",
-    "ai_era_engineering_careers/productivity-relations-architecture",
-    "ai_era_engineering_careers/role-over-status-egalitarianism-desymbolization",
-    "systems_and_governance/elites-cycle-reversal"
    ]
   },
   {
