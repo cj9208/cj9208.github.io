@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-07T11:14:28+08:00",
+ "generated_at": "2026-11-10T19:23:03+08:00",
  "base_url": "https://cj9208.github.io/blog/",
- "source_fingerprint": "b20152e40568285f0c833261e7b13d24d269d324",
- "count": 235,
+ "source_fingerprint": "b8a2f29deba415b9090f0941b714d397b4735d35",
+ "count": 236,
  "articles": [
   {
    "title": "AI 时代的商业困境：从分发共赢到“答案经济”的结构性矛盾",
@@ -4731,6 +4731,35 @@
     "systems_and_governance/chinese_government/defensive-collusion-bureaucracy"
    ],
    "shorttitle": "未来的影子"
+  },
+  {
+   "title": "绑住才可信：相机权是逐期最优，却给出更坏的均衡",
+   "slug": "tied-hands-credible-commitment",
+   "url": "https://cj9208.github.io/blog/systems_and_governance/game_theory/tied-hands-credible-commitment/",
+   "path": "systems_and_governance/game_theory/tied-hands-credible-commitment",
+   "dir": "content/blog/systems_and_governance/game_theory",
+   "section": "systems_and_governance",
+   "categories": [
+    "Systems and Governance"
+   ],
+   "tags": [
+    "Game Theory",
+    "Game Theory Series",
+    "Commitment",
+    "Time Inconsistency",
+    "Discretion"
+   ],
+   "date": "2026-11-10T15:29:39+08:00",
+   "lastmod": "2026-11-10T19:22:14+08:00",
+   "excerpt": "一句话值不值钱，不看它说得多重，看说话的人当场关掉了哪扇门、门把手交到了谁手里。 本文介绍博弈论里的承诺问题：一个手里握着规则的人，为什么说\"我保证不改\"没人信；以及要让这句话有人信，他必须付出什么。前半部分是标准内容：一个两期模型，规则与相机权各自给出什么均衡，承诺的价格怎么写成一条可以比的不等式，以及\"我改不了\"要成为事实需要哪三个条件。后半部分拿两块留了痕的制度做案例：一块是被国际协议改写的",
+   "out_links": [
+    "systems_and_governance/game_theory/discount-factor-retroactive-enforcement",
+    "systems_and_governance/order-compliance-mobilization",
+    "systems_and_governance/game_theory/costly-signals-are-not-separating",
+    "systems_and_governance/goodharts-law-protocol-reconstruction",
+    "systems_and_governance/chinese_government/retroactive-audit-malicious-compliance"
+   ],
+   "shorttitle": "绑住才可信"
   },
   {
    "title": "全球服务器列表：宏观抉择（Trade-off）与制度摩擦（Friction）的双重精算",
