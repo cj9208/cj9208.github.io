@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-10T19:23:03+08:00",
+ "generated_at": "2026-11-11T10:43:49+08:00",
  "base_url": "https://cj9208.github.io/blog/",
- "source_fingerprint": "b8a2f29deba415b9090f0941b714d397b4735d35",
- "count": 236,
+ "source_fingerprint": "a7777fd05643ab2b3725f3641038848975e214d5",
+ "count": 237,
  "articles": [
   {
    "title": "AI 时代的商业困境：从分发共赢到“答案经济”的结构性矛盾",
@@ -1776,6 +1776,33 @@
    "lastmod": "2026-08-17T14:41:13+08:00",
    "excerpt": "在近年的网络公共讨论中，“高认知穷人”这一概念频繁出现。该词汇通常被用来指代一类特定群体：他们熟知宏观经济学词汇、地缘政治流行语、商业模式黑话以及各种高阶社会学理论，但在现实的职业路径、资源配置与个人发展中，却长期处于低效率竞争与高摩擦损耗的困境之中。 网友常将这种现象归因于“普惠教育的普及”——即教育降低了高阶概念的获取门槛。然而，若从系统分析与组织行为学的角度审视，这一现象揭示了更深层次的认知",
    "out_links": []
+  },
+  {
+   "title": "承诺写在哪一层：央行预期工具的六次返工",
+   "slug": "commitment-layer-six-reworkings",
+   "url": "https://cj9208.github.io/blog/investment/commitment-layer-six-reworkings/",
+   "path": "investment/commitment-layer-six-reworkings",
+   "dir": "content/blog/investment",
+   "section": "investment",
+   "categories": [
+    "Investment"
+   ],
+   "tags": [
+    "Macroeconomics",
+    "Federal Reserve",
+    "Game Theory",
+    "Monetary Policy"
+   ],
+   "date": "2026-11-10T20:26:49+08:00",
+   "lastmod": "2026-11-10T20:26:49+08:00",
+   "excerpt": "2012 年 12 月 12 日，FOMC 在声明里写下三个条件：只要失业率维持在 6½% 以上、一至两年后的通胀预测不超过 2½%、长期通胀预期继续得到良好锚定，就维持异常低的联邦基金利率区间。2026 年 10 月 28 日的声明里没有这类句子。两份文件相隔不到十四年，同一个变量的方向相反：一份把未来的行动写成条件，另一份把条件的表述删掉。 这中间发生的事通常被叙述成\"央行沟通越来越透明\"。这",
+   "out_links": [
+    "systems_and_governance/game_theory/tied-hands-credible-commitment",
+    "systems_and_governance/game_theory/costly-signals-are-not-separating",
+    "systems_and_governance/expectation-certainty-civilization",
+    "investment/fiscal-dominance-crash",
+    "systems_and_governance/game_theory/discount-factor-retroactive-enforcement"
+   ]
   },
   {
    "title": "具身智能的泡沫：通用形态的商业悖论与“聪明专机”的真相",
@@ -4750,13 +4777,13 @@
     "Discretion"
    ],
    "date": "2026-11-10T15:29:39+08:00",
-   "lastmod": "2026-11-10T19:22:14+08:00",
-   "excerpt": "一句话值不值钱，不看它说得多重，看说话的人当场关掉了哪扇门、门把手交到了谁手里。 本文介绍博弈论里的承诺问题：一个手里握着规则的人，为什么说\"我保证不改\"没人信；以及要让这句话有人信，他必须付出什么。前半部分是标准内容：一个两期模型，规则与相机权各自给出什么均衡，承诺的价格怎么写成一条可以比的不等式，以及\"我改不了\"要成为事实需要哪三个条件。后半部分拿两块留了痕的制度做案例：一块是被国际协议改写的",
+   "lastmod": "2026-11-11T10:42:18+08:00",
+   "excerpt": "一句话值不值钱，不看它说得多重，看说话的人当场关掉了哪扇门、门把手交到了谁手里。 一个手里握着规则的人，说\"我保证不改\"没人信；要让这句话有人信，他必须付出什么。可信是靠放弃选择权买来的，而它的价格就是事后最优与守约之间的那道落差，不随耐心走。 玩家两个：一个要把资产放进来的人（建厂、把资金账户迁过来、签十年长约），一个定税率的人。定税率的人先宣布规则，放资产的人先动，然后规则可以再定一次。宣布不",
    "out_links": [
     "systems_and_governance/game_theory/discount-factor-retroactive-enforcement",
-    "systems_and_governance/order-compliance-mobilization",
     "systems_and_governance/game_theory/costly-signals-are-not-separating",
     "systems_and_governance/goodharts-law-protocol-reconstruction",
+    "systems_and_governance/order-compliance-mobilization",
     "systems_and_governance/chinese_government/retroactive-audit-malicious-compliance"
    ],
    "shorttitle": "绑住才可信"
