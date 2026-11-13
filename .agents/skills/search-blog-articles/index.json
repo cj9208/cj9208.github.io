@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-13T22:53:45+08:00",
+ "generated_at": "2026-11-14T00:17:15+08:00",
  "base_url": "https://cj9208.github.io/blog/",
- "source_fingerprint": "2af51cf43a2cbfb6013c8769bdcb6b33eb1c8dd1",
+ "source_fingerprint": "f94c9734862c75e7e7e4f0d9a00539c8d4c18f0a",
  "count": 237,
  "articles": [
   {
@@ -4777,7 +4777,7 @@
     "Discretion"
    ],
    "date": "2026-11-10T15:29:39+08:00",
-   "lastmod": "2026-11-13T22:52:40+08:00",
+   "lastmod": "2026-11-14T00:02:31+08:00",
    "excerpt": "一句话值不值钱，不看它说得多重，看说话的人当场关掉了哪扇门、门把手交到了谁手里。 这话对手里握着规则的人格外刺耳。改与不改还是他说了算，那\"我保证不改\"就不可信——同一句再说三遍、说得更重，能改的余地一分没少。要让它可信，交出去的必须是\"改不改\"这个选择本身——可信是靠放弃选择权买来的。 买这份可信有两种付法：一种当场就把退路拆掉，另一种不收当场的钱，用以前攒下的表现顶住。 玩家两个：一个要把资产",
    "out_links": [
     "systems_and_governance/game_theory/discount-factor-retroactive-enforcement",
@@ -5271,8 +5271,8 @@
     "Urban Governance"
    ],
    "date": "2026-11-02T14:30:00+08:00",
-   "lastmod": "2026-11-05T17:42:43+08:00",
-   "excerpt": "税收是一种契约：政府收走的钱，要和它为这笔钱办的事对得上。对不上的时候，财政学给过四种改法——上收、配套补助、重划辖区、向外部受益者收费——四种求的都是更合理的分配，但动的不是既有划分里的百分比，是这件事由谁办、钱由谁收，对齐收上来的钱和办的事。对不齐，激励就错位。 汽车是观察这套不匹配最省力的物件，因为它必须登记上牌才能合法上路，于是天然带着一个行政锚点。而一辆车在哪里买、在哪里上牌、在哪里跑、",
+   "lastmod": "2026-11-14T00:12:56+08:00",
+   "excerpt": "求是网刊文《当前我国经济运行中供强需弱矛盾的症结所在》，把症结点名到了财税体制——“资源向生产端倾斜具有内在激励”。 税收是一种契约：政府收走的钱，要和它为这笔钱办的事对得上。对不上不会停在账面上：激励跟着钱走，办事的动力就落在不承担后果的那一侧。",
    "out_links": [
     "systems_and_governance/chinese_government/tech-utopia-second-best",
     "systems_and_governance/chinese_government/infrastructure-fiscal-transfer-economic-truth",
