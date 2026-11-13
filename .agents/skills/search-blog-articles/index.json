@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-11T15:11:18+08:00",
+ "generated_at": "2026-11-13T22:53:45+08:00",
  "base_url": "https://cj9208.github.io/blog/",
- "source_fingerprint": "7ae622d6adc979e723951448a6e3a8e45de0d970",
+ "source_fingerprint": "2af51cf43a2cbfb6013c8769bdcb6b33eb1c8dd1",
  "count": 237,
  "articles": [
   {
@@ -3793,7 +3793,7 @@
     "Fiscal Risk"
    ],
    "date": "2026-07-10T09:00:00+08:00",
-   "lastmod": "2026-09-01T22:32:00+08:00",
+   "lastmod": "2026-11-13T13:00:36+08:00",
    "excerpt": "在现代宏观经济治理的范畴内，公共政策的设计本质上是一种大型分布式软件系统的架构编写。一个具备高鲁棒性、可持续运行的社会治理系统，必须依赖于三个底层支柱：清晰且不可篡改的接口契约（Contract-First）、明确的产权隔离边界（Decoupling），以及标准的异常故障出清机制（Fault Tolerance）。如果一个系统在设计之初就选择无视产权边界，并依靠不断推迟故障出清来维持表面运转，那么",
    "out_links": [
     "systems_and_governance/chinese_government/great-cleaning-sword-bearers",
@@ -4777,8 +4777,8 @@
     "Discretion"
    ],
    "date": "2026-11-10T15:29:39+08:00",
-   "lastmod": "2026-11-11T15:10:37+08:00",
-   "excerpt": "一句话值不值钱，不看它说得多重，看说话的人当场关掉了哪扇门、门把手交到了谁手里。 这话对手里握着规则的人格外刺耳。改与不改还是他说了算，所以同一句\"我保证不改\"说第三遍、说得更重，能改的余地一分没少——他要交出去的选择权，一条也没交出去。于是问题不在他有没有诚意，在他必须当场付出什么，这句话才有人肯信。可信是靠放弃选择权买来的，而它的价格就是事后最优与守约之间的那道落差，不随耐心走。 玩家两个：一",
+   "lastmod": "2026-11-13T22:52:40+08:00",
+   "excerpt": "一句话值不值钱，不看它说得多重，看说话的人当场关掉了哪扇门、门把手交到了谁手里。 这话对手里握着规则的人格外刺耳。改与不改还是他说了算，那\"我保证不改\"就不可信——同一句再说三遍、说得更重，能改的余地一分没少。要让它可信，交出去的必须是\"改不改\"这个选择本身——可信是靠放弃选择权买来的。 买这份可信有两种付法：一种当场就把退路拆掉，另一种不收当场的钱，用以前攒下的表现顶住。 玩家两个：一个要把资产",
    "out_links": [
     "systems_and_governance/game_theory/discount-factor-retroactive-enforcement",
     "systems_and_governance/game_theory/costly-signals-are-not-separating",
