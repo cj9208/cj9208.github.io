@@ -1,7 +1,7 @@
 ---
-title: "有界陈旧（Bounded Staleness）：TTM 依赖治理作为一种一致性级别"
+title: "有界陈旧（Bounded Staleness）：TTM 作为依赖治理的一致性标准"
 date: 2026-11-20T13:59:06+08:00
-lastmod: 2026-11-20T15:54:20+08:00
+lastmod: 2026-11-20T19:00:10+08:00
 draft: false
 
 categories:
