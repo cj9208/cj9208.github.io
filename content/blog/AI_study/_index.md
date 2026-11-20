@@ -1,7 +1,7 @@
 ---
 title: "AI Study"
 date: 2026-07-15T09:00:00+08:00
-lastmod: 2026-11-20T15:54:20+08:00
+lastmod: 2026-11-20T19:00:10+08:00
 draft: false
 
 description: "AI 与大模型的自学笔记与分析：Agent harness 工程、评测治理、算力经济学与 RAG 编排架构。"
@@ -21,7 +21,7 @@ slug: "ai-study"
 * [生态式架构：AI 时代的 EMD 演进逻辑]({{< relref "./生态式架构-AI时代的EMD演进逻辑.md" >}})
 * [AI-Coding的防御性进化：平台化、业务解耦与结构的自然生长]({{< relref "./AI-Coding的防御性进化-平台化-业务解耦与结构的自然生长.md" >}})
 * [文艺复兴：从Linux老派教条看AI时代的函数开发]({{< relref "./文艺复兴-从Linux老派教条看AI时代的函数开发.md" >}})
-* [有界陈旧（Bounded Staleness）：TTM 依赖治理作为一种一致性级别]({{< relref "./有界陈旧-TTM依赖治理作为一种一致性级别.md" >}})
+* [有界陈旧（Bounded Staleness）：TTM 作为依赖治理的一致性标准]({{< relref "./有界陈旧-Bounded-Staleness-TTM作为依赖治理的一致性标准.md" >}})
 * [程序员的顶级偷懒秘籍：控制论视角的四大底层逻辑与现代AI工程实践]({{< relref "./程序员的顶级偷懒秘籍-控制论视角的四大底层逻辑与现代AI工程实践.md" >}})
 
 ## Harness Engineering
