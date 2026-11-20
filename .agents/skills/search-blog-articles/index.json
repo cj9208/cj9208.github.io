@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-20T15:43:56+08:00",
+ "generated_at": "2026-11-20T15:54:49+08:00",
  "base_url": "https://cj9208.github.io/blog/",
- "source_fingerprint": "747368b23bb87a8549a50f51b4c4497d961fde1a",
+ "source_fingerprint": "c9e49ae666dbc81e63fe31cb91576ebf7d65e201",
  "count": 238,
  "articles": [
   {
@@ -1692,7 +1692,7 @@
     "Governance"
    ],
    "date": "2026-11-20T13:59:06+08:00",
-   "lastmod": "2026-11-20T15:43:14+08:00",
+   "lastmod": "2026-11-20T15:54:20+08:00",
    "excerpt": "一个基础库发布新版本之后，数万人组织里的几百个调用方要不要立刻跟进、何时必须跟进——这个看似流程管理的问题，本质上是一致性问题：系统是否允许各节点暂时处于不同版本（版本偏斜，version skew），以及偏斜被容忍多久。 分布式系统的一致性光谱恰好提供了三个档位： - 强一致（strong consistency）：任何变更原子地传播到所有节点，不存在偏斜。代价是协调成本——每次写入都要等所有相",
    "out_links": [
     "systems_and_governance/corporate/google-technical-bureaucracy",

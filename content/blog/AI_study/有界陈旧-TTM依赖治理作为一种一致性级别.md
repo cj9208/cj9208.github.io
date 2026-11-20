@@ -1,8 +1,8 @@
 ---
 title: "有界陈旧（Bounded Staleness）：TTM 依赖治理作为一种一致性级别"
 date: 2026-11-20T13:59:06+08:00
-lastmod: 2026-11-20T15:43:14+08:00
-draft: true
+lastmod: 2026-11-20T15:54:20+08:00
+draft: false
 
 categories:
   - "AI Study"
