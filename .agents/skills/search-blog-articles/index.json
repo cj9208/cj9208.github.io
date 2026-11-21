@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-21T11:35:55+08:00",
+ "generated_at": "2026-11-21T12:13:49+08:00",
  "base_url": "https://cj9208.github.io/blog/",
- "source_fingerprint": "0dd4ae6d61bf71a7cddc3d542716a2efd3343b3a",
- "count": 238,
+ "source_fingerprint": "a8a00430febdb2bf893ed2c95265be4e7d5b766e",
+ "count": 239,
  "articles": [
   {
    "title": "AI 时代的商业困境：从分发共赢到“答案经济”的结构性矛盾",
@@ -721,7 +721,7 @@
     "Career Strategy"
    ],
    "date": "2026-08-16T20:56:28+08:00",
-   "lastmod": "2026-11-21T11:35:38+08:00",
+   "lastmod": "2026-11-21T12:13:38+08:00",
    "excerpt": "衡量一位工程师的水位，市面上有三套默认尺子，全部失准： 工龄：年资是时间的积分，不是深度。深度的本质是失败模式的复利密度，而非投入的年份。 黑话：RAG、Agentic Framework 可以堆砌成完美的叙事，却掩盖不了“说不出代价与边界”的逻辑空洞。 职级头衔：头衔是组织政治与薪酬预算的产物，同一公司的同一头衔在不同 BU 对应完全不同的水位。 这些尺子共同的病根：它们都在测“标签”，而不是测",
    "out_links": [
     "ai_era_engineering_careers/fde-first-principles-software-engineering",
@@ -4786,6 +4786,37 @@
     "systems_and_governance/chinese_government/defensive-collusion-bureaucracy"
    ],
    "shorttitle": "未来的影子"
+  },
+  {
+   "title": "四条腿的桌子：定规则的人放弃了哪一条",
+   "slug": "mechanism-design-who-sets-the-rules",
+   "url": "https://cj9208.github.io/blog/systems_and_governance/game_theory/mechanism-design-who-sets-the-rules/",
+   "path": "systems_and_governance/game_theory/mechanism-design-who-sets-the-rules",
+   "dir": "content/blog/systems_and_governance/game_theory",
+   "section": "systems_and_governance",
+   "categories": [
+    "Systems and Governance"
+   ],
+   "tags": [
+    "Game Theory",
+    "Game Theory Series",
+    "Mechanism Design",
+    "Incentive Compatibility",
+    "Impossibility Theorem",
+    "Platform Regulation"
+   ],
+   "date": "2026-11-21T11:38:42+08:00",
+   "lastmod": "2026-11-21T11:38:42+08:00",
+   "excerpt": "一条规则能不能立住，不看它写得多严，看它同时答应了几件事：该做的交易全做成、人肯说真话、没人被迫参加、也没人从外面贴钱。 这四件事是一张桌子的四条腿。《未来的影子》量过支付那根——罚款加到法定上限，说明这根杠杆已经用到头。《昂贵不等于可分离》量过信息那根——一个信号能分开人，靠的是成本对不同人贵得不一样。《绑住才可信》量过承诺那根——可信不是把话说重，是当场关掉一扇门。三根都在，桌子还是塌，因为定",
+   "out_links": [
+    "systems_and_governance/game_theory/discount-factor-retroactive-enforcement",
+    "systems_and_governance/game_theory/costly-signals-are-not-separating",
+    "systems_and_governance/game_theory/tied-hands-credible-commitment",
+    "systems_and_governance/corporate/mechanism-design-governance",
+    "systems_and_governance/goodharts-law-protocol-reconstruction",
+    "systems_and_governance/chinese_government/retroactive-audit-malicious-compliance"
+   ],
+   "shorttitle": "四条腿的桌子"
   },
   {
    "title": "绑住才可信：相机权是逐期最优，却给出更坏的均衡",
