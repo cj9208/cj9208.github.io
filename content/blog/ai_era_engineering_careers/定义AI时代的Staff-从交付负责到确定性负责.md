@@ -1,7 +1,7 @@
 ---
 title: "定义 AI 时代的 Staff：从交付负责到确定性负责"
 date: 2026-08-16T20:56:28+08:00
-lastmod: 2026-11-21T09:44:32+08:00
+lastmod: 2026-11-21T11:35:38+08:00
 draft: false
 
 categories:
@@ -133,10 +133,10 @@ Senior 处理的是“代码层面的防崩溃”——专注异常捕获、重�
 | Staff 物理维度与心理体验 | 已覆盖的既有文章 | 缺口 / 系列支柱文章 |
 | --- | --- | --- |
 | **问责对象** (技术域健康) | 《[祛魅 FDE：软件工程第一性原理、演进史与商业剪刀](https://cj9208.github.io/blog/ai_era_engineering_careers/fde-first-principles-software-engineering/)》(2×2 控制矩阵)，《[编程语言的终局：从"人肉码农"到"意图流片"](https://cj9208.github.io/blog/ai_era_engineering_careers/intent-language-endgame/)》(Spec 立宪) | 无 |
-| **决策自由度** (取舍) | 《[祛魅 FDE：软件工程第一性原理、演进史与商业剪刀](https://cj9208.github.io/blog/ai_era_engineering_careers/fde-first-principles-software-engineering/)》(商业剪刀)，《[秩序之重：从系统演进看"变通"的代价](https://cj9208.github.io/blog/ai_era_engineering_careers/order-and-system-evolution/)》(契约 vs 变通) | **支柱一：《取舍方法论 (A)》** （"放弃什么、代价账本、防御设计、如何交代"成体系处理） |
+| **决策自由度** (取舍) | 《[祛魅 FDE：软件工程第一性原理、演进史与商业剪刀](https://cj9208.github.io/blog/ai_era_engineering_careers/fde-first-principles-software-engineering/)》(商业剪刀)，《[秩序之重：从系统演进看"变通"的代价](https://cj9208.github.io/blog/ai_era_engineering_careers/order-and-system-evolution/)》(契约 vs 变通) | **支柱一：《取舍方法论》** （"放弃什么、代价账本、防御设计、如何交代"成体系处理） |
 | **权威来源** (机制与跨界 Spec) | 《[架构师的通信协议：用分布式系统与博弈论重构高阶沟通](https://cj9208.github.io/blog/ai_era_engineering_careers/architect-communication-protocol/)》(机制设计/激励相容)，《[从"修 Bug 工具人"到"外企技术领袖"：技术人进阶的"三层思维"模型](https://cj9208.github.io/blog/ai_era_engineering_careers/bug-fixer-to-tech-leader/)》(技术公信力) | 无 |
-| **概率控制力** (系统风险/ROI) | 《[重力回归：企业 ROI 约束与 AI "确定性账单"的控盘人](https://cj9208.github.io/blog/ai_era_engineering_careers/gravity-roi-ai-deterministic-billing/)》(确定性账本)，《[Harness Engineering 合集](https://cj9208.github.io/blog/ai_study/harness-engineering/)》(系统确定性工程) | **支柱二：《残余风险声明 (B)》** （Risk Waiver 的结构、ROI 损益精算与表达模板） |
-| **[心理价格] 视角与心理跃迁** | 《[走出「工单驱动」的无意识退化：软件工程中的达克效应与技术破产](https://cj9208.github.io/blog/ai_era_engineering_careers/dunning-kruger-ticket-driven/)》(自我欺骗)，《[祛魅与自省：大厂技术管理退化录与防异化指南](https://cj9208.github.io/blog/ai_era_engineering_careers/disenchantment-tech-management/)》(防异化) | **支柱三：《身份跃迁 (C)》** （方向焦虑、孤独兜底与心理护城河建设） |
+| **概率控制力** (系统风险/ROI) | 《[重力回归：企业 ROI 约束与 AI "确定性账单"的控盘人](https://cj9208.github.io/blog/ai_era_engineering_careers/gravity-roi-ai-deterministic-billing/)》(确定性账本)，《[Harness Engineering 合集](https://cj9208.github.io/blog/ai_study/harness-engineering/)》(系统确定性工程) | **支柱二：《残余风险声明》** （Risk Waiver 的结构、ROI 损益精算与表达模板） |
+| **[心理价格] 视角与心理跃迁** | 《[走出「工单驱动」的无意识退化：软件工程中的达克效应与技术破产](https://cj9208.github.io/blog/ai_era_engineering_careers/dunning-kruger-ticket-driven/)》(自我欺骗)，《[祛魅与自省：大厂技术管理退化录与防异化指南](https://cj9208.github.io/blog/ai_era_engineering_careers/disenchantment-tech-management/)》(防异化) | **支柱三：《身份跃迁》** （方向焦虑、孤独兜底与心理护城河建设） |
 
 ---
 

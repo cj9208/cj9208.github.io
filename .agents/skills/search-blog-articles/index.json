@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-21T09:46:29+08:00",
+ "generated_at": "2026-11-21T11:35:55+08:00",
  "base_url": "https://cj9208.github.io/blog/",
- "source_fingerprint": "d381a31f0ea3ce32e2c1decf3df2438dc746d05c",
+ "source_fingerprint": "0dd4ae6d61bf71a7cddc3d542716a2efd3343b3a",
  "count": 238,
  "articles": [
   {
@@ -721,7 +721,7 @@
     "Career Strategy"
    ],
    "date": "2026-08-16T20:56:28+08:00",
-   "lastmod": "2026-11-21T09:44:32+08:00",
+   "lastmod": "2026-11-21T11:35:38+08:00",
    "excerpt": "衡量一位工程师的水位，市面上有三套默认尺子，全部失准： 工龄：年资是时间的积分，不是深度。深度的本质是失败模式的复利密度，而非投入的年份。 黑话：RAG、Agentic Framework 可以堆砌成完美的叙事，却掩盖不了“说不出代价与边界”的逻辑空洞。 职级头衔：头衔是组织政治与薪酬预算的产物，同一公司的同一头衔在不同 BU 对应完全不同的水位。 这些尺子共同的病根：它们都在测“标签”，而不是测",
    "out_links": [
     "ai_era_engineering_careers/fde-first-principles-software-engineering",
